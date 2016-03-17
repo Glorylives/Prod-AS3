@@ -3,32 +3,31 @@
 
 //1Wd.Gf
 
-package 1Wd{
-    import 04m.1S-;
-    import __AS3__.vec.Vector;
-    import 04m.0so;
-    import _0OG._22M;
+package _1Wd{
+import _04m._0so;
+import _04m._1S;
+
+import _0OG._22M;
     import flash.utils.Dictionary;
-    import __AS3__.vec.*;
     import zr.*;
 
-    public class Gf implements 1yq {
+    public class _Gf implements _1yq {
 
-        private static const 1fv:int = 6;
+        private static const _1fv:int = 6;
 
-        private var 1ck:1S-;
+        private var _1ck:_1S;
 
-        public function Gf(_arg1:0so):void{
+        public function Gf(_arg1:_0so):void{
             var _local2:Vector.<uint> = Vector.<uint>([0, 1, 2, 2, 1, 3]);
             if (_arg1 != null)
             {
-                this.1ck = _arg1.createIndexBuffer(1fv);
-                this.1ck.uploadFromVector(_local2, 0, 1fv);
+                this._1ck = _arg1.createIndexBuffer(_1fv);
+                this._1ck.uploadFromVector(_local2, 0, _1fv);
             };
         }
 
         public function apply(_arg1:Class, _arg2:_22M, _arg3:Dictionary):Object{
-            return (this.1ck);
+            return (this._1ck);
         }
 
         public function destroy():void{

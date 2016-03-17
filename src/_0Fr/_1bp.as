@@ -3,8 +3,8 @@
 
 //0Fr.1bp
 
-package 0Fr{
-    public interface 1bp {
+package _0Fr{
+    public interface _1bp {
 
         function configure():void;
 

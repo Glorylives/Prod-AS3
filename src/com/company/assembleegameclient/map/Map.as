@@ -6,9 +6,13 @@
 package com.company.assembleegameclient.map{
 import _04w.Background;
 
+import _1Np._0F;
+
 import _1Wd._01j;
 
 import _1Wd._uo;
+
+import _1m9._0lt;
 
 import _1m9._14d;
 
@@ -493,7 +497,7 @@ public class Map extends _1qi {
             {
                 for each (_local6 in this._1IV)
                 {
-                    _local6._1tc(this.graphicsData_, _arg1, _arg2);
+                    _local6._1tC(this.graphicsData_, _arg1, _arg2);
                 };
             };
             if (((((!((player_ == null))) && ((player_.breath_ >= 0)))) && ((player_.breath_ < Parameters.kk))))
@@ -526,14 +530,15 @@ public class Map extends _1qi {
                 _local23 = 0;
                 while (_local23 < this.graphicsData_.length)
                 {
-                    if ((((this.graphicsData_[_local23] is GraphicsBitmapFill)) && (14d.M8(GraphicsBitmapFill(this.graphicsData_[_local23])))))
+                    if ((((this.graphicsData_[_local23] is GraphicsBitmapFill)) && (_14d.M8(GraphicsBitmapFill(this.graphicsData_[_local23])))))
                     {
                         this._0wL.push(this.graphicsData_[_local23]);
                         this._0wL.push(this.graphicsData_[(_local23 + 1)]);
                         this._0wL.push(this.graphicsData_[(_local23 + 2)]);
-                    } else
+                    }
+                else
                     {
-                        if ((((this.graphicsData_[_local23] is GraphicsSolidFill)) && (14d.eK(GraphicsSolidFill(this.graphicsData_[_local23])))))
+                        if ((((this.graphicsData_[_local23] is GraphicsSolidFill)) && (_14d.eK(GraphicsSolidFill(this.graphicsData_[_local23])))))
                         {
                             this._0wL.push(this.graphicsData_[_local23]);
                             this._0wL.push(this.graphicsData_[(_local23 + 1)]);

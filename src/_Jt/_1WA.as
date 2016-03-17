@@ -3,15 +3,14 @@
 
 //Jt.1WA
 
-package Jt{
+package _Jt{
     import flash.geom.Matrix3D;
     import flash.utils.ByteArray;
-    import __AS3__.vec.*;
 
-    public class 1WA {
+    public class _1WA {
 
 
-        public static function 1p0(_arg1:Number=90, _arg2:Number=1, _arg3:Number=1, _arg4:Number=0x0800):Matrix3D{
+        public static function _1p0(_arg1:Number=90, _arg2:Number=1, _arg3:Number=1, _arg4:Number=0x0800):Matrix3D{
             var _local5:Number = (_arg3 * Math.tan(((_arg1 * Math.PI) / 360)));
             var _local6:Number = -(_local5);
             var _local7:Number = (_local6 * _arg2);
@@ -43,7 +42,7 @@ package Jt{
             return (_local3);
         }
 
-        public static function 0De(_arg1:uint):uint{
+        public static function _0De(_arg1:uint):uint{
             _arg1--;
             _arg1 = (_arg1 | (_arg1 >> 1));
             _arg1 = (_arg1 | (_arg1 >> 2));

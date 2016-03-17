@@ -4,13 +4,11 @@
 //com.company.assembleegameclient.objects.22S
 
 package com.company.assembleegameclient.objects{
-    import __AS3__.vec.Vector;
     import flash.utils.Dictionary;
     import com.company.assembleegameclient.util.ConditionEffect;
-    import __AS3__.vec.*;
     import com.company.assembleegameclient.util.*;
 
-    public class 22S {
+    public class _22S {
 
         public var bulletType_:int;
         public var objectId_:String;
@@ -20,22 +18,22 @@ package com.company.assembleegameclient.objects{
         public var minDamage_:int;
         public var maxDamage_:int;
         public var effects_:Vector.<uint> = null;
-        public var 1y4:Boolean;
-        public var 1CA:Boolean;
-        public var 0f-:Boolean;
+        public var _1y4:Boolean;
+        public var _1CA:Boolean;
+        public var _0f:Boolean;
         public var Nh:Boolean;
-        public var 1uD:int = -1;
+        public var _1uD:int = -1;
         public var gm:int = -1;
-        public var 0y7:int = 0xFF00FF;
-        public var 1NQ:Boolean;
-        public var 12m:Boolean;
-        public var 1vX:Boolean;
+        public var _0y7:int = 0xFF00FF;
+        public var _1NQ:Boolean;
+        public var _12m:Boolean;
+        public var _1vX:Boolean;
         public var UH:Number;
-        public var 0RU:Number;
+        public var _0RU:Number;
         public var E2:Number;
-        public var 0b6:Dictionary;
+        public var _0b6:Dictionary;
 
-        public function 22S(_arg1:XML){
+        public function _22S(_arg1:XML){
             var _local2:XML;
             super();
             this.bulletType_ = int(_arg1.@id);
@@ -57,38 +55,38 @@ package com.company.assembleegameclient.objects{
                 {
                     this.effects_ = new Vector.<uint>();
                 };
-                this.effects_.push(ConditionEffect.1WI(String(_local2)));
+                this.effects_.push(ConditionEffect._1WI(String(_local2)));
                 if (_local2.attribute("target") == "1")
                 {
-                    if (this.0b6 == null)
+                    if (this._0b6 == null)
                     {
-                        this.0b6 = new Dictionary();
+                        this._0b6 = new Dictionary();
                     };
-                    this.0b6[ConditionEffect.1WI(String(_local2))] = true;
+                    this._0b6[ConditionEffect._1WI(String(_local2))] = true;
                 };
             };
-            this.1y4 = _arg1.hasOwnProperty("MultiHit");
-            this.1CA = _arg1.hasOwnProperty("PassesCover");
-            this.0f- = _arg1.hasOwnProperty("ArmorPiercing");
+            this._1y4 = _arg1.hasOwnProperty("MultiHit");
+            this._1CA = _arg1.hasOwnProperty("PassesCover");
+            this._0f = _arg1.hasOwnProperty("ArmorPiercing");
             this.Nh = _arg1.hasOwnProperty("ParticleTrail");
             if (_arg1.ParticleTrail.hasOwnProperty("@intensity"))
             {
-                this.1uD = (Number(_arg1.ParticleTrail.@intensity) * 100);
+                this._1uD = (Number(_arg1.ParticleTrail.@intensity) * 100);
             };
             if (_arg1.ParticleTrail.hasOwnProperty("@lifetimeMS"))
             {
                 this.gm = Number(_arg1.ParticleTrail.@lifetimeMS);
             };
-            this.0y7 = ((this.Nh) ? Number(_arg1.ParticleTrail) : Number(0xFF00FF));
-            if (this.0y7 == 0)
+            this._0y7 = ((this.Nh) ? Number(_arg1.ParticleTrail) : Number(0xFF00FF));
+            if (this._0y7 == 0)
             {
-                this.0y7 = 0xFF00FF;
+                this._0y7 = 0xFF00FF;
             };
-            this.1NQ = _arg1.hasOwnProperty("Wavy");
-            this.12m = _arg1.hasOwnProperty("Parametric");
-            this.1vX = _arg1.hasOwnProperty("Boomerang");
+            this._1NQ = _arg1.hasOwnProperty("Wavy");
+            this._12m = _arg1.hasOwnProperty("Parametric");
+            this._1vX = _arg1.hasOwnProperty("Boomerang");
             this.UH = ((_arg1.hasOwnProperty("Amplitude")) ? Number(_arg1.Amplitude) : 0);
-            this.0RU = ((_arg1.hasOwnProperty("Frequency")) ? Number(_arg1.Frequency) : 1);
+            this._0RU = ((_arg1.hasOwnProperty("Frequency")) ? Number(_arg1.Frequency) : 1);
             this.E2 = ((_arg1.hasOwnProperty("Magnitude")) ? Number(_arg1.Magnitude) : 3);
         }
 

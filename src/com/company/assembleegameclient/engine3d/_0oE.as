@@ -4,18 +4,16 @@
 //com.company.assembleegameclient.engine3d.0oE
 
 package com.company.assembleegameclient.engine3d{
-    import __AS3__.vec.Vector;
     import flash.geom.Matrix3D;
     import flash.geom.Vector3D;
     import flash.geom.Utils3D;
     import flash.display.IGraphicsData;
-    import com.company.assembleegameclient.map.1C8;
+    import com.company.assembleegameclient.map._1C8;
     import flash.display.BitmapData;
-    import __AS3__.vec.*;
 
-    public class 0oE {
+    public class _0oE {
 
-        public var bk:1hA = null;
+        public var bk:_1hA = null;
         public var vL_:Vector.<Number>;
         public var uvts_:Vector.<Number>;
         public var faces_:Vector.<ObjectFace3D>;
@@ -23,8 +21,8 @@ package com.company.assembleegameclient.engine3d{
         public var vW_:Vector.<Number>;
         public var jJ:Matrix3D;
 
-        public function 0oE(_arg1:1hA=null){
-            var _local2:10H;
+        public function _0oE(_arg1:_1hA=null){
+            var _local2:_10H;
             this.faces_ = new Vector.<ObjectFace3D>();
             this.vS_ = new Vector.<Number>();
             this.vW_ = new Vector.<Number>();
@@ -37,7 +35,7 @@ package com.company.assembleegameclient.engine3d{
                 this.uvts_ = this.bk.uvts_.concat();
                 for each (_local2 in this.bk.faces_)
                 {
-                    this.faces_.push(new ObjectFace3D(this, _local2.0Vc, _local2.18b));
+                    this.faces_.push(new ObjectFace3D(this, _local2._0Vc, _local2._18b));
                 };
             } else
             {
@@ -47,9 +45,9 @@ package com.company.assembleegameclient.engine3d{
             this.setPosition(0, 0, 0, 0);
         }
 
-        public static function getObject(_arg1:String):0oE{
-            var _local2:1hA = 1hA.Bb(_arg1);
-            return (new 0oE(_local2));
+        public static function getObject(_arg1:String):_0oE{
+            var _local2:_1hA = _1hA.Bb(_arg1);
+            return (new _0oE(_local2));
         }
 
 
@@ -76,11 +74,11 @@ package com.company.assembleegameclient.engine3d{
             this.jJ.transformVectors(this.vL_, this.vW_);
             for each (_local5 in this.faces_)
             {
-                _local5.1sg();
+                _local5._1sg();
             };
         }
 
-        public function 0-m(_arg1:int):Vector3D{
+        public function _0m(_arg1:int):Vector3D{
             var _local2:int = (_arg1 * 3);
             if (_local2 >= this.vW_.length)
             {
@@ -89,7 +87,7 @@ package com.company.assembleegameclient.engine3d{
             return (new Vector3D(this.vW_[_local2], this.vW_[(_local2 + 1)], this.vW_[(_local2 + 2)]));
         }
 
-        public function draw(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:uint, _arg4:BitmapData):void{
+        public function draw(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:uint, _arg4:BitmapData):void{
             var _local5:ObjectFace3D;
             Utils3D.projectVectors(_arg2.wToS_, this.vW_, this.vS_, this.uvts_);
             for each (_local5 in this.faces_)

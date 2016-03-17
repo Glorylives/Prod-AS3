@@ -3,27 +3,28 @@
 
 //1Wd.Graphic3DHelper
 
-package 1Wd{
-    import _0OG._22M;
-    import 04m.1S-;
-    import 04m.0eX;
+package _1Wd{
+import _04m._0eX;
+import _04m._1S;
+
+import _0OG._22M;
 
     public class Graphic3DHelper {
 
 
         public static function map(_arg1:_22M):void{
-            1oI(_arg1);
+            _1oI(_arg1);
             mF(_arg1);
         }
 
-        private static function 1oI(_arg1:_22M):void{
-            var _local2:Gf = _arg1.getInstance(Gf);
-            _arg1.map(1S-).0ta(_local2);
+        private static function _1oI(_arg1:_22M):void{
+            var _local2:_Gf = _arg1.getInstance(_Gf);
+            _arg1.map(_1S)._0ta(_local2);
         }
 
         private static function mF(_arg1:_22M):void{
-            var _local2:3m = _arg1.getInstance(3m);
-            _arg1.map(0eX).0ta(_local2);
+            var _local2:_3m = _arg1.getInstance(_3m);
+            _arg1.map(_0eX)._0ta(_local2);
         }
 
 

@@ -3,10 +3,10 @@
 
 //qG.0GV
 
-package qG{
-    public interface 0GV {
+package _qG{
+    public interface _0GV {
 
-        function 0cv():Boolean;
+        function _0cv():Boolean;
 
     }
 }//package qG

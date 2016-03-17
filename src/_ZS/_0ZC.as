@@ -3,11 +3,12 @@
 
 //__ZS.0ZC
 
-package __ZS{
-    import flash.utils.Dictionary;
+package _ZS{
+import _qG._0bJ;
+
+import flash.utils.Dictionary;
     import flash.media.Sound;
     import flash.events.IOErrorEvent;
-    import qG.0bJ;
     import _04_._1JZ;
     import flash.net.URLRequest;
     import flash.media.SoundTransform;
@@ -15,33 +16,33 @@ package __ZS{
     import com.company.assembleegameclient.parameters.Parameters;
     import flash.events.Event;
 
-    public class 0ZC {
+    public class _0ZC {
 
-        private static const 211:String = "{URLBASE}/sfx/{NAME}.mp3";
+        private static const _211:String = "{URLBASE}/sfx/{NAME}.mp3";
 
         private static var iM:String;
-        public static var 1HK:Dictionary = new Dictionary();
+        public static var _1HK:Dictionary = new Dictionary();
         private static var R6:Dictionary = new Dictionary(true);
 
 
         public static function load(_arg1:String):Sound{
-            return ((1HK[_arg1] = ((1HK[_arg1]) || (11N(_arg1)))));
+            return ((_1HK[_arg1] = ((_1HK[_arg1]) || (_11N(_arg1)))));
         }
 
-        public static function 11N(_arg1:String):Sound{
+        public static function _11N(_arg1:String):Sound{
             var _local2:Sound = new Sound();
             _local2.addEventListener(IOErrorEvent.IO_ERROR, onIOError);
-            _local2.load(1e4(_arg1));
+            _local2.load(_1e4(_arg1));
             return (_local2);
         }
 
-        private static function 1Wl():String{
-            var setup:0bJ;
+        private static function _1Wl():String{
+            var setup:_0bJ;
             var base:String = "";
             try
             {
-                setup = _1JZ.0JF().getInstance(0bJ);
-                base = setup.1HF(true);
+                setup = _1JZ._0JF().getInstance(_0bJ);
+                base = setup._1HF(true);
             } catch(error:Error)
             {
                 base = "localhost";
@@ -49,9 +50,9 @@ package __ZS{
             return (base);
         }
 
-        private static function 1e4(_arg1:String):URLRequest{
-            iM = ((iM) || (1Wl()));
-            var _local2:String = 211.replace("{URLBASE}", iM).replace("{NAME}", _arg1);
+        private static function _1e4(_arg1:String):URLRequest{
+            iM = ((iM) || (_1Wl()));
+            var _local2:String = _211.replace("{URLBASE}", iM).replace("{NAME}", _arg1);
             return (new URLRequest(_local2));
         }
 
@@ -69,19 +70,19 @@ package __ZS{
                 actualVolume = ((((((Parameters.data_.playSFX) && (isFX))) || (((!(isFX)) && (Parameters.data_.playPewPew))))) ? volume : 0);
                 trans = new SoundTransform(actualVolume);
                 channel = sound.play(0, 0, trans);
-                channel.addEventListener(Event.SOUND_COMPLETE, 1xx, false, 0, true);
+                channel.addEventListener(Event.SOUND_COMPLETE, _1xx, false, 0, true);
                 R6[channel] = volume;
             } catch(error:Error)
             {
             };
         }
 
-        private static function 1xx(_arg1:Event):void{
+        private static function _1xx(_arg1:Event):void{
             var _local2:SoundChannel = (_arg1.target as SoundChannel);
             delete R6[_local2];
         }
 
-        public static function 0kN(_arg1:Number):void{
+        public static function _0kN(_arg1:Number):void{
             var _local2:SoundChannel;
             var _local3:SoundTransform;
             for each (_local2 in R6)
@@ -93,7 +94,7 @@ package __ZS{
             };
         }
 
-        public static function 1NS():void{
+        public static function _1NS():void{
             var _local1:SoundChannel;
             var _local2:SoundTransform;
             for each (_local1 in R6)

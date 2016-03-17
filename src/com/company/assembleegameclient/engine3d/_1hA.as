@@ -4,47 +4,46 @@
 //com.company.assembleegameclient.engine3d.1hA
 
 package com.company.assembleegameclient.engine3d{
-    import __AS3__.vec.Vector;
-    import Jt.192;
-    import flash.utils.ByteArray;
+import _Jt._192;
+import _Jt._4b;
+
+import flash.utils.ByteArray;
     import flash.display3D.Context3D;
     import com.company.util.ConversionUtil;
-    import Jt.4b;
-    import __AS3__.vec.*;
 
-    public class 1hA {
+    public class _1hA {
 
-        private static var 1DN:Object = new Object();
-        private static var 0OY:Object = new Object();
+        private static var _1DN:Object = new Object();
+        private static var _0OY:Object = new Object();
 
         public var vL_:Vector.<Number>;
         public var uvts_:Vector.<Number>;
-        public var faces_:Vector.<10H>;
+        public var faces_:Vector.<_10H>;
 
-        public function 1hA(){
+        public function _1hA(){
             this.vL_ = new Vector.<Number>();
             this.uvts_ = new Vector.<Number>();
-            this.faces_ = new Vector.<10H>();
+            this.faces_ = new Vector.<_10H>();
             super();
         }
 
         public static function f0(_arg1:String, _arg2:ByteArray):void{
-            var _local3:192 = new 192();
+            var _local3:_192 = new _192();
             _local3.readBytes(_arg2);
-            0OY[_arg1] = _local3;
+            _0OY[_arg1] = _local3;
         }
 
-        public static function 0W7(_arg1:Context3D):void{
-            var _local2:192;
-            for each (_local2 in 0OY)
+        public static function _0W7(_arg1:Context3D):void{
+            var _local2:_192;
+            for each (_local2 in _0OY)
             {
-                _local2.1T(_arg1);
+                _local2._1T(_arg1);
             };
         }
 
-        public static function 0bS(_arg1:String, _arg2:String):void{
+        public static function _0bS(_arg1:String, _arg2:String):void{
             var _local11:String;
-            var _local12:1hA;
+            var _local12:_1hA;
             var _local13:String;
             var _local14:int;
             var _local15:Array;
@@ -117,14 +116,14 @@ package com.company.assembleegameclient.engine3d{
                     };
                 };
             };
-            _local12 = new (1hA)();
+            _local12 = new (_1hA)();
             for each (_local13 in _local6)
             {
                 _local18 = _local13.split("/");
-                ConversionUtil.0ld(_local4[(int(_local18[0]) - 1)], _local12.vL_);
+                ConversionUtil._0ld(_local4[(int(_local18[0]) - 1)], _local12.vL_);
                 if ((((_local18.length > 1)) && ((_local18[1].length > 0))))
                 {
-                    ConversionUtil.0ld(_local5[(int(_local18[1]) - 1)], _local12.uvts_);
+                    ConversionUtil._0ld(_local5[(int(_local18[1]) - 1)], _local12.uvts_);
                     _local12.uvts_.push(0);
                 } else
                 {
@@ -143,33 +142,33 @@ package com.company.assembleegameclient.engine3d{
                     _local21.push(_local7[_local19[_local22]]);
                     _local22++;
                 };
-                _local12.faces_.push(new 10H(_local12, _local21, (((_local20 == null)) || (!((_local20.substr(0, 5) == "Solid"))))));
+                _local12.faces_.push(new _10H(_local12, _local21, (((_local20 == null)) || (!((_local20.substr(0, 5) == "Solid"))))));
                 _local14++;
             };
-            _local12.01J();
-            1DN[_arg1] = _local12;
+            _local12._01J();
+            _1DN[_arg1] = _local12;
         }
 
-        public static function Bb(_arg1:String):1hA{
-            return (1DN[_arg1]);
+        public static function Bb(_arg1:String):_1hA{
+            return (_1DN[_arg1]);
         }
 
-        public static function 0ux(_arg1:String):0oE{
-            var _local2:1hA = 1DN[_arg1];
+        public static function _0ux(_arg1:String):_0oE{
+            var _local2:_1hA = _1DN[_arg1];
             if (_local2 == null)
             {
                 return (null);
             };
-            return (new 0oE(_local2));
+            return (new _0oE(_local2));
         }
 
-        public static function 2-e(_arg1:String):4b{
-            var _local2:192 = 0OY[_arg1];
+        public static function _2e(_arg1:String):_4b{
+            var _local2:_192 = _0OY[_arg1];
             if (_local2 == null)
             {
                 return (null);
             };
-            return (new 4b(_local2));
+            return (new _4b(_local2));
         }
 
 
@@ -181,8 +180,8 @@ package com.company.assembleegameclient.engine3d{
             return (_local1);
         }
 
-        public function 01J():void{
-            this.faces_.sort(10H.0Ys);
+        public function _01J():void{
+            this.faces_.sort(_10H._0Ys);
         }
 
 

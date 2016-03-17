@@ -4,9 +4,10 @@
 //com.company.assembleegameclient.engine3d.ObjectFace3D
 
 package com.company.assembleegameclient.engine3d{
-    import flash.display.BitmapData;
+import _1m9._14d;
+
+import flash.display.BitmapData;
     import flash.display.GraphicsBitmapFill;
-    import __AS3__.vec.Vector;
     import flash.geom.Vector3D;
     import flash.display.GraphicsPath;
     import flash.display.GraphicsSolidFill;
@@ -17,37 +18,35 @@ package com.company.assembleegameclient.engine3d{
     import flash.geom.ColorTransform;
     import com.company.assembleegameclient.util.TextureRedrawer;
     import com.company.util._tu;
-    import 1m9.14d;
     import flash.display.IGraphicsData;
-    import __AS3__.vec.*;
 
     public class ObjectFace3D {
 
-        public static const 0QU:BitmapData = new BitmapData(1, 1, true, 0xFF000000);
+        public static const _0QU:BitmapData = new BitmapData(1, 1, true, 0xFF000000);
 
         public const bitmapFill_:GraphicsBitmapFill = new GraphicsBitmapFill();
 
-        public var obj_:0oE;
+        public var obj_:_0oE;
         public var sS:Vector.<int>;
-        public var 18b:Boolean;
-        public var 1W4:Boolean = false;
+        public var _18b:Boolean;
+        public var _1W4:Boolean = false;
         public var texture_:BitmapData = null;
         public var normalL_:Vector3D = null;
-        public var 1OL:Vector3D;
+        public var _1OL:Vector3D;
         public var Bq:Number = 1;
         private var path_:GraphicsPath;
-        private var 18a:GraphicsSolidFill;
+        private var _18a:GraphicsSolidFill;
         private var tToS_:Matrix;
         private var tempMatrix_:Matrix;
 
-        public function ObjectFace3D(_arg1:0oE, _arg2:Vector.<int>, _arg3:Boolean=true){
-            this.18a = new GraphicsSolidFill(0xFFFFFF, 1);
+        public function ObjectFace3D(_arg1:_0oE, _arg2:Vector.<int>, _arg3:Boolean=true){
+            this._18a = new GraphicsSolidFill(0xFFFFFF, 1);
             this.tToS_ = new Matrix();
             this.tempMatrix_ = new Matrix();
             super();
             this.obj_ = _arg1;
             this.sS = _arg2;
-            this.18b = _arg3;
+            this._18b = _arg3;
             var _local4:Vector.<int> = new Vector.<int>();
             var _local5:int;
             while (_local5 < this.sS.length)
@@ -67,13 +66,13 @@ package com.company.assembleegameclient.engine3d{
             this.path_ = null;
         }
 
-        public function 1sg():void{
-            this.1OL = new Vector3D();
-            0Ru.Dw(this.obj_.0-m(this.sS[0]), this.obj_.0-m(this.sS[1]), this.obj_.0-m(this.sS[(this.sS.length - 1)]), this.1OL);
-            this.Bq = 0fX.QV(this.1OL, 0.75);
+        public function _1sg():void{
+            this._1OL = new Vector3D();
+            _0Ru.Dw(this.obj_._0m(this.sS[0]), this.obj_._0m(this.sS[1]), this.obj_._0m(this.sS[(this.sS.length - 1)]), this._1OL);
+            this.Bq = _0fX.QV(this._1OL, 0.75);
             if (this.normalL_ != null)
             {
-                this.1OL = this.obj_.jJ.deltaTransformVector(this.normalL_);
+                this._1OL = this.obj_.jJ.deltaTransformVector(this.normalL_);
             };
         }
 
@@ -91,21 +90,21 @@ package com.company.assembleegameclient.engine3d{
             {
                 return;
             };
-            if (((!(Parameters.data_.GPURender)) && (((!(this.18b)) || ((_arg3 == null))))))
+            if (((!(Parameters.data_.GPURender)) && (((!(this._18b)) || ((_arg3 == null))))))
             {
-                this.18a.color = MoreColorUtil.09-(new ColorTransform(this.Bq, this.Bq, this.Bq), _arg2);
-                _arg1.push(this.18a);
+                this._18a.color = MoreColorUtil._09(new ColorTransform(this.Bq, this.Bq, this.Bq), _arg2);
+                _arg1.push(this._18a);
             } else
             {
                 if ((((_arg3 == null)) && (Parameters.data_.GPURender)))
                 {
-                    _arg3 = 0QU;
+                    _arg3 = _0QU;
                 } else
                 {
                     _arg3 = TextureRedrawer.WQ(_arg3, this.Bq);
                 };
                 this.bitmapFill_.bitmapData = _arg3;
-                this.bitmapFill_.matrix = this.0CE(_arg3);
+                this.bitmapFill_.matrix = this._0CE(_arg3);
                 _arg1.push(this.bitmapFill_);
             };
             var _local12:int;
@@ -118,13 +117,13 @@ package com.company.assembleegameclient.engine3d{
             };
             _arg1.push(this.path_);
             _arg1.push(_tu.END_FILL);
-            if (((((this.1W4) && (Parameters.TP()))) && (!((this.bitmapFill_ == null)))))
+            if (((((this._1W4) && (Parameters.TP()))) && (!((this.bitmapFill_ == null)))))
             {
-                14d.0Sd(this.bitmapFill_, true);
+                _14d._0Sd(this.bitmapFill_, true);
             };
         }
 
-        private function 0CE(_arg1:BitmapData):Matrix{
+        private function _0CE(_arg1:BitmapData):Matrix{
             var _local2:Vector.<Number> = this.obj_.uvts_;
             var _local3:int = (this.sS[0] * 3);
             var _local4:int = (this.sS[1] * 3);

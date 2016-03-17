@@ -8,37 +8,37 @@ package com.company.util{
 
     public class MoreColorUtil {
 
-        public static const 1Z6:Array = [0.3, 0.59, 0.11, 0, 0, 0.3, 0.59, 0.11, 0, 0, 0.3, 0.59, 0.11, 0, 0, 0, 0, 0, 1, 0];
-        public static const 1OG:Array = [0.3, 0.59, 0.11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0];
+        public static const _1Z6:Array = [0.3, 0.59, 0.11, 0, 0, 0.3, 0.59, 0.11, 0, 0, 0.3, 0.59, 0.11, 0, 0, 0, 0, 0, 1, 0];
+        public static const _1OG:Array = [0.3, 0.59, 0.11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0];
         public static const identity:ColorTransform = new ColorTransform();
         public static const invisible:ColorTransform = new ColorTransform(1, 1, 1, 0, 0, 0, 0, 0);
-        public static const 0Lm:ColorTransform = new ColorTransform(1, 1, 1, 0.3, 0, 0, 0, 0);
-        public static const 0H6:ColorTransform = new ColorTransform(1, 1, 1, 0.7, 0, 0, 0, 0);
-        public static const 1Lq:ColorTransform = new ColorTransform(0.6, 1, 0.6, 1, 0, 0, 0, 0);
+        public static const _0Lm:ColorTransform = new ColorTransform(1, 1, 1, 0.3, 0, 0, 0, 0);
+        public static const _0H6:ColorTransform = new ColorTransform(1, 1, 1, 0.7, 0, 0, 0, 0);
+        public static const _1Lq:ColorTransform = new ColorTransform(0.6, 1, 0.6, 1, 0, 0, 0, 0);
         public static const Qq:ColorTransform = new ColorTransform(0.8, 1, 0.8, 1, 0, 0, 0, 0);
-        public static const 1rD:ColorTransform = new ColorTransform(0.2, 1, 0.2, 1, 0, 100, 0, 0);
-        public static const class:ColorTransform = new ColorTransform(0.5, 1, 0.5, 0.3, 0, 0, 0, 0);
-        public static const 0Lh:ColorTransform = new ColorTransform(0.3, 1, 0.3, 0.5, 0, 0, 0, 0);
-        public static const 0YM:ColorTransform = new ColorTransform(1, 0.5, 0.5, 1, 0, 0, 0, 0);
-        public static const 2V:ColorTransform = new ColorTransform(1, 0.7, 0.7, 1, 0, 0, 0, 0);
-        public static const 0zZ:ColorTransform = new ColorTransform(1, 0.2, 0.2, 1, 100, 0, 0, 0);
+        public static const _1rD:ColorTransform = new ColorTransform(0.2, 1, 0.2, 1, 0, 100, 0, 0);
+        public static const _class:ColorTransform = new ColorTransform(0.5, 1, 0.5, 0.3, 0, 0, 0, 0);
+        public static const _0Lh:ColorTransform = new ColorTransform(0.3, 1, 0.3, 0.5, 0, 0, 0, 0);
+        public static const _0YM:ColorTransform = new ColorTransform(1, 0.5, 0.5, 1, 0, 0, 0, 0);
+        public static const _2V:ColorTransform = new ColorTransform(1, 0.7, 0.7, 1, 0, 0, 0, 0);
+        public static const _0zZ:ColorTransform = new ColorTransform(1, 0.2, 0.2, 1, 100, 0, 0, 0);
         public static const xL:ColorTransform = new ColorTransform(1, 0.5, 0.5, 0.3, 0, 0, 0, 0);
-        public static const 0jF:ColorTransform = new ColorTransform(1, 0.3, 0.3, 0.5, 0, 0, 0, 0);
-        public static const 8c:ColorTransform = new ColorTransform(0.5, 0.5, 1, 1, 0, 0, 0, 0);
+        public static const _0jF:ColorTransform = new ColorTransform(1, 0.3, 0.3, 0.5, 0, 0, 0, 0);
+        public static const _8c:ColorTransform = new ColorTransform(0.5, 0.5, 1, 1, 0, 0, 0, 0);
         public static const ke:ColorTransform = new ColorTransform(0.7, 0.7, 1, 1, 0, 0, 100, 0);
-        public static const 3R:ColorTransform = new ColorTransform(0.3, 0.3, 1, 1, 0, 0, 100, 0);
-        public static const 10B:ColorTransform = new ColorTransform(0.5, 0.5, 1, 0.3, 0, 0, 0, 0);
-        public static const 0Qg:ColorTransform = new ColorTransform(0.3, 0.3, 1, 0.5, 0, 0, 0, 0);
-        public static const 0ZV:ColorTransform = new ColorTransform(1, 0.5, 1, 1, 0, 0, 0, 0);
+        public static const _3R:ColorTransform = new ColorTransform(0.3, 0.3, 1, 1, 0, 0, 100, 0);
+        public static const _10B:ColorTransform = new ColorTransform(0.5, 0.5, 1, 0.3, 0, 0, 0, 0);
+        public static const _0Qg:ColorTransform = new ColorTransform(0.3, 0.3, 1, 0.5, 0, 0, 0, 0);
+        public static const _0ZV:ColorTransform = new ColorTransform(1, 0.5, 1, 1, 0, 0, 0, 0);
         public static const Vn:ColorTransform = new ColorTransform(1, 0.2, 1, 1, 100, 0, 100, 0);
-        public static const 1lu:ColorTransform = new ColorTransform(0.6, 0.6, 0.6, 1, 0, 0, 0, 0);
-        public static const 0gn:ColorTransform = new ColorTransform(0.4, 0.4, 0.4, 1, 0, 0, 0, 0);
-        public static const 7n:ColorTransform = new ColorTransform(1, 1, 1, 1, 0xFF, 0xFF, 0xFF, 0);
+        public static const _1lu:ColorTransform = new ColorTransform(0.6, 0.6, 0.6, 1, 0, 0, 0, 0);
+        public static const _0gn:ColorTransform = new ColorTransform(0.4, 0.4, 0.4, 1, 0, 0, 0, 0);
+        public static const _7n:ColorTransform = new ColorTransform(1, 1, 1, 1, 0xFF, 0xFF, 0xFF, 0);
 
         public function MoreColorUtil(_arg1:StaticEnforcer){
         }
 
-        public static function 0uJ(_arg1:Number, _arg2:Number, _arg3:Number):int{
+        public static function _0uJ(_arg1:Number, _arg2:Number, _arg3:Number):int{
             var _local9:Number;
             var _local10:Number;
             var _local11:Number;
@@ -83,7 +83,7 @@ package com.company.util{
             return ((((int(Math.min(0xFF, Math.floor((_local9 * 0xFF)))) << 16) | (int(Math.min(0xFF, Math.floor((_local10 * 0xFF)))) << 8)) | int(Math.min(0xFF, Math.floor((_local11 * 0xFF))))));
         }
 
-        public static function 10Q():uint{
+        public static function _10Q():uint{
             return (uint((0xFFFFFF * Math.random())));
         }
 
@@ -91,7 +91,7 @@ package com.company.util{
             return ((uint((0xFFFFFF * Math.random())) | 0xFF000000));
         }
 
-        public static function 09-(_arg1:ColorTransform, _arg2:uint):uint{
+        public static function _09(_arg1:ColorTransform, _arg2:uint):uint{
             var _local3:int = ((((_arg2 & 0xFF0000) >> 16) * _arg1.redMultiplier) + _arg1.redOffset);
             _local3 = (((_local3 < 0)) ? 0 : (((_local3 > 0xFF)) ? 0xFF : _local3));
             var _local4:int = ((((_arg2 & 0xFF00) >> 8) * _arg1.greenMultiplier) + _arg1.greenOffset);
@@ -119,7 +119,7 @@ package com.company.util{
             return (_local5);
         }
 
-        public static function 0pA(_arg1:uint, _arg2:uint, _arg3:Number):uint{
+        public static function _0pA(_arg1:uint, _arg2:uint, _arg3:Number):uint{
             var _local4:Number = (1 - _arg3);
             var _local5:uint = ((_arg1 >> 24) & 0xFF);
             var _local6:uint = ((_arg1 >> 16) & 0xFF);
@@ -144,7 +144,7 @@ package com.company.util{
             return ((_local4 / 0xFF));
         }
 
-        public static function 5H(_arg1:uint, _arg2:Number):uint{
+        public static function _5H(_arg1:uint, _arg2:Number):uint{
             var _local3:int = (((_arg1 & 0xFF0000) >> 16) * _arg2);
             _local3 = (((_local3 < 0)) ? 0 : (((_local3 > 0xFF)) ? 0xFF : _local3));
             var _local4:int = (((_arg1 & 0xFF00) >> 8) * _arg2);
@@ -154,7 +154,7 @@ package com.company.util{
             return ((((_local3 << 16) | (_local4 << 8)) | _local5));
         }
 
-        public static function 0wD(_arg1:uint, _arg2:Number):uint{
+        public static function _0wD(_arg1:uint, _arg2:Number):uint{
             var _local3:uint = (_arg1 & 0xFF000000);
             var _local4:int = (((_arg1 & 0xFF0000) >> 16) + (_arg2 * 0xFF));
             _local4 = (((_local4 < 0)) ? 0 : (((_local4 > 0xFF)) ? 0xFF : _local4));
@@ -165,12 +165,12 @@ package com.company.util{
             return ((((_local3 | (_local4 << 16)) | (_local5 << 8)) | _local6));
         }
 
-        public static function 0K-(_arg1:uint):Array{
+        public static function _0K(_arg1:uint):Array{
             var _local2:Number = (((_arg1 >> 24) & 0xFF) / 0x0100);
             return ([(_local2 * (((_arg1 >> 16) & 0xFF) / 0x0100)), (_local2 * (((_arg1 >> 8) & 0xFF) / 0x0100)), (_local2 * ((_arg1 & 0xFF) / 0x0100)), _local2]);
         }
 
-        public static function 1cc(_arg1:uint):uint{
+        public static function _1cc(_arg1:uint):uint{
             var _local2:uint = (((((_arg1 & 0xFF0000) >> 16) * 0.3) + (((_arg1 & 0xFF00) >> 8) * 0.59)) + ((_arg1 & 0xFF) * 0.11));
             return ((((((_arg1) && (0xFF000000)) | (_local2 << 16)) | (_local2 << 8)) | _local2));
         }
