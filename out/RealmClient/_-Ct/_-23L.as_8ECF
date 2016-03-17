@@ -1,0 +1,27 @@
+﻿// Decompiled by AS3 Sorcerer 1.40
+// http://www.as3sorcerer.com/
+
+//Ct.23L
+
+package Ct{
+    import flash.display.Sprite;
+    import com.company.assembleegameclient.util.0sg;
+    import 2--.*;
+
+    public class 23L extends Sprite implements _ZS {
+
+        public var Wy:0sg;
+
+        public function 23L(){
+            this.Wy = new 0sg(this);
+        }
+
+        protected function cp():void{
+            this.x = ((this.Wy.5m() - this.width) * 0.5);
+            this.y = ((this.Wy.Hc() - this.height) * 0.5);
+        }
+
+
+    }
+}//package Ct
+

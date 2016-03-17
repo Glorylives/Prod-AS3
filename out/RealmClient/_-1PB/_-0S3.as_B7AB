@@ -1,0 +1,35 @@
+﻿// Decompiled by AS3 Sorcerer 1.40
+// http://www.as3sorcerer.com/
+
+//1PB.0S3
+
+package 1PB{
+    import 1uF.1Mf;
+    import _1aA.1oj;
+    import 1Bg.0Yk;
+
+    public class 0S3 extends 1Mf {
+
+        [Inject]
+        public var view:1oj;
+        [Inject]
+        public var 0fg:0Yk;
+
+
+        override public function initialize():void{
+            this.0fg.add(this.SL);
+            this.view.2-Y("Loading.text");
+        }
+
+        override public function destroy():void{
+            this.0fg.remove(this.SL);
+        }
+
+        private function SL(_arg1:String):void{
+            this.view.2-Y(_arg1);
+        }
+
+
+    }
+}//package 1PB
+

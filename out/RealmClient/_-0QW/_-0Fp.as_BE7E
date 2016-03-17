@@ -1,0 +1,54 @@
+﻿// Decompiled by AS3 Sorcerer 1.40
+// http://www.as3sorcerer.com/
+
+//0QW.0Fp
+
+package 0QW{
+    import 0QW.0VH;
+    import __AS3__.vec.Vector;
+    import flash.display.Shape;
+    import flash.display.IGraphicsData;
+    import com.company.assembleegameclient.map.1C8;
+    import flash.geom.Rectangle;
+    import com.company.assembleegameclient.map.0s6;
+    import flash.display.BitmapData;
+    import com.company.assembleegameclient.map.1Nw;
+    import com.company.assembleegameclient.map.1Ad;
+    import 0QW.09K;
+    import 0qj.1ae;
+    import __AS3__.vec.*;
+    import 0QW.*;
+
+    class 0Fp extends 0VH {
+
+        private static const 235:Vector.<Number> = new <Number>[0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0];
+        private static const 1Ra:Number = 0.6;
+
+        public var NW:XML;
+        private var 0XR:Shape;
+
+        public function 0Fp(_arg1:XML){
+            super(int(_arg1.@type));
+            this.NW = _arg1;
+            var _local2:Vector.<IGraphicsData> = new Vector.<IGraphicsData>();
+            var _local3:1C8 = new 1C8();
+            _local3.configure(0.5, 0.5, 12, (Math.PI / 4), new Rectangle(-100, -100, 200, 200));
+            var _local4:BitmapData = 0s6.getBitmapData(type_);
+            var _local5:1Nw = new 1Nw(_local4, 235, 0, 0, 1Ad.15O, 0, 0);
+            _local5.draw(_local2, _local3, 0);
+            this.0XR = new Shape();
+            this.0XR.graphics.drawGraphicsData(_local2);
+            this.0XR.scaleX = (this.0XR.scaleY = 1Ra);
+            this.0XR.x = (WIDTH / 2);
+            this.0XR.y = (HEIGHT / 2);
+            addChild(this.0XR);
+        }
+
+        override protected function getToolTip():1ae{
+            return (new 09K(this.NW));
+        }
+
+
+    }
+}//package 0QW
+
