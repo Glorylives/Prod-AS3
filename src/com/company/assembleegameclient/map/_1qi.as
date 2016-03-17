@@ -6,11 +6,16 @@
 package com.company.assembleegameclient.map{
 import _04w.Background;
 
+import _1so._QF;
+
+import _9T._Zf;
+
 import _Jy._1HZ;
 
 import com.company.assembleegameclient.game.nx;
 import com.company.assembleegameclient.objects.BasicObject;
 import com.company.assembleegameclient.objects.Player;
+import com.company.assembleegameclient.objects._08T;
 
 import flash.display.Sprite;
 import flash.geom.Point;
@@ -32,8 +37,8 @@ public class _1qi extends Sprite {
         public var map_:Sprite;
         public var _0Jb:Js = null;
         public var _0I4:_1Bu = null;
-        public var mapOverlay_:Zf = null;
-        public var partyOverlay_:QF = null;
+        public var mapOverlay_:_Zf = null;
+        public var partyOverlay_:_QF = null;
         public var _64:Vector.<Square>;
         public var squares_:Vector.<Square>;
         public var _1n5:Dictionary;

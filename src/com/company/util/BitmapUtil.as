@@ -121,7 +121,7 @@ package com.company.util{
             return (_local5);
         }
 
-        public static function 1Fx(_arg1:BitmapData, _arg2:IntPoint, _arg3:IntPoint):Boolean{
+        public static function _1Fx(_arg1:BitmapData, _arg2:IntPoint, _arg3:IntPoint):Boolean{
             var _local11:int;
             var _local19:int;
             var _local20:int;

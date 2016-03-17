@@ -4,7 +4,9 @@
 //com.company.assembleegameclient.map.Square
 
 package com.company.assembleegameclient.map{
-    import flash.geom.Vector3D;
+import com.company.assembleegameclient.util._0Sw;
+
+import flash.geom.Vector3D;
     import com.company.assembleegameclient.objects.GameObject;
     import flash.display.BitmapData;
     import com.company.assembleegameclient.engine3d.TextureMatrix;
@@ -97,16 +99,16 @@ package com.company.assembleegameclient.map{
             {
                 if (!_local4.draw(_arg1, _arg2, _arg3))
                 {
-                    if (_local4.face_.vout_[1] < _arg2.0KH.bottom)
+                    if (_local4.face_.vout_[1] < _arg2._0KH.bottom)
                     {
-                        this.05K = 0;
+                        this._05K = 0;
                     };
                     return;
                 };
             };
         }
 
-        public function 1tC(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:int):void{
+        public function _1tC(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             this.i6.draw(_arg1, _arg2, _arg3);
         }
 
@@ -121,11 +123,11 @@ package com.company.assembleegameclient.map{
             var _local1:BitmapData;
             if (this.props_.animate_.type_ != _1Ad._15O)
             {
-                this.faces_.push(new 1Nw(this.texture_, this._0y2, this.props_._1mN, this.props_._1mN, this.props_.animate_.type_, this.props_.animate_.dx_, this.props_.animate_.dy_));
+                this.faces_.push(new _1Nw(this.texture_, this._0y2, this.props_._1mN, this.props_._1mN, this.props_.animate_.type_, this.props_.animate_.dx_, this.props_.animate_.dy_));
                 _local1 = _0Sw.redraw(this, false);
                 if (_local1 != null)
                 {
-                    this.faces_.push(new 1Nw(_local1, this._0y2, 0, 0, _1Ad._15O, 0, 0));
+                    this.faces_.push(new _1Nw(_local1, this._0y2, 0, 0, _1Ad._15O, 0, 0));
                 };
             } else
             {
