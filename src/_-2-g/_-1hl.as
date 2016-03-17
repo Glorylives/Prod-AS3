@@ -75,7 +75,7 @@ package 2-g{
             var _local2:int = style.menuFontSize;
             console.cl.addCLCmd("filter", this.0ET, "Filter console logs to matching string. When done, click on the * (global channel) at top.", true);
             console.cl.addCLCmd("filterexp", this.1Y9, "Filter console logs to matching regular expression", true);
-            console.cl.addCLCmd("clearhistory", this.0A1, "Clear history of commands you have entered.", true);
+            console.cl.addCLCmd("clearhistory", this.0A1, "Clear history _of commands you have entered.", true);
             name = NAME;
             1St = 50;
             1Iq = 18;

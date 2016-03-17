@@ -351,7 +351,7 @@ package 1Tb{
 
         private function q-():void{
             report("Make sure your flash file is 'trusted' in Global Security Settings.", -2);
-            report("Go to Settings Manager [<a href='event:settings'>click here</a>] &gt; 'Global Security Settings Panel' (on left) &gt; add the location of the local flash (swf) file.", -2);
+            report("Go to Settings Manager [<a href='event:settings'>click here</a>] &gt; 'Global Security Settings Panel' (on left) &gt; add the location _of the local flash (swf) file.", -2);
         }
 
         private function 1xs():String{

@@ -44,9 +44,9 @@ package 1Tb{
             this.addCLCmd("help", this.11o, "How to use command line");
             this.addCLCmd("save|store", this.16N, "Save current scope as weak reference. (same as Cc.store(...))");
             this.addCLCmd("savestrong|storestrong", this.0OQ, "Save current scope as strong reference");
-            this.addCLCmd("saved|stored", this.1G-, "Show a list of all saved references");
+            this.addCLCmd("saved|stored", this.1G-, "Show a list _of all saved references");
             this.addCLCmd("string", this.7, "Create String, useful to paste complex strings without worrying about \" or '", false, null);
-            this.addCLCmd("commands", this.bi, "Show a list of all slash commands", true);
+            this.addCLCmd("commands", this.bi, "Show a list _of all slash commands", true);
             this.addCLCmd("inspect", this.0px, "Inspect current scope");
             this.addCLCmd("explode", this.0Yn, "Explode current scope to its properties and values (similar to JSON)");
             this.addCLCmd("map", this.26, "Get display list map starting from current scope");
@@ -351,7 +351,7 @@ package 1Tb{
                 };
             } else
             {
-                report("Undefined command <b>/commands</b> for list of all commands.", 10);
+                report("Undefined command <b>/commands</b> for list _of all commands.", 10);
             };
         }
 

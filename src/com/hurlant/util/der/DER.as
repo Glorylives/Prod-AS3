@@ -119,7 +119,7 @@ package com.hurlant.util.der{
                     _local6.position = 0;
                     return (new ObjectIdentifier(_local3, _local5, _local6));
                 default:
-                    trace(("I DONT KNOW HOW TO HANDLE DER stuff of TYPE " + _local3));
+                    trace(("I DONT KNOW HOW TO HANDLE DER stuff _of TYPE " + _local3));
                 case 3:
                     if (_arg1[_arg1.position] == 0)
                     {

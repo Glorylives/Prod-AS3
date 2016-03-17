@@ -37,7 +37,7 @@ package com.company.assembleegameclient.parameters{
         public static const _0AM:int = -3;
         public static const _1qH:int = -6;
         public static const _0vd:Number = 18;
-        public static const _dynamic:String = "https://www.kabam.com/corporate/terms-of-service";
+        public static const _dynamic:String = "https://www.kabam.com/corporate/terms-_of-service";
         public static const _0ku:String = "https://www.kabam.com/corporate/privacy-policy";
         public static const RANDOM1:String = "311f80691451c71b09a13a2a6e";
         public static const RANDOM2:String = "72c5583cafb6818995cbd74b80";

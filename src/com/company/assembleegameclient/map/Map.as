@@ -116,7 +116,7 @@ public class Map extends _1qi {
             this.Hz[PET_YARD_4] = true;
             this.Hz[PET_YARD_5] = true;
             this.Hz["Nexus"] = true;
-            this.Hz["Tomb of the Ancients"] = true;
+            this.Hz["Tomb _of the Ancients"] = true;
             this.Hz["Mad Lab"] = true;
             this.Hz["Guild Hall"] = true;
             this.Hz["Guild Hall 2"] = true;

@@ -32,7 +32,7 @@ package AB{
             var tag:XML;
             var innerLineBuilder:1cA;
             var itemXML:XML = _arg1;
-            if (itemXML.@id == "Shield of Ogmur")
+            if (itemXML.@id == "Shield _of Ogmur")
             {
                 tag = itemXML.ConditionEffect.(text() == "Armor Broken")[0];
                 innerLineBuilder = new 1cA().setParams(du.0P9, {

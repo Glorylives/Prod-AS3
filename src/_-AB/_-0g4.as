@@ -43,14 +43,14 @@ package AB{
                 1Tf.pushParams(du.0HX, {effect:innerStringBuilder});
                 ZX[nova.toXMLString()] = true;
             };
-            if (itemXML.@id == "Tome of Purification")
+            if (itemXML.@id == "Tome _of Purification")
             {
                 tag = itemXML.Activate.(text() == "RemoveNegativeConditions")[0];
                 1Tf.pushParams(du.OC, {}, TR.1pw(2-W), TR.17H());
                 ZX[tag.toXMLString()] = true;
             } else
             {
-                if (itemXML.@id == "Tome of Holy Protection")
+                if (itemXML.@id == "Tome _of Holy Protection")
                 {
                     tag = itemXML.Activate.(text() == "ConditionEffectSelf")[0];
                     1Tf.pushParams(du.1Dr, {effect:""});

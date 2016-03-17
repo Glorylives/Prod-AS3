@@ -721,7 +721,7 @@ package 0qj{
             };
             if (this.0o4.hasOwnProperty("@setType"))
             {
-                this.1Qz.push(new Restriction(("This item is a part of " + this.0o4.attribute("setName")), 0xFF9900, false));
+                this.1Qz.push(new Restriction(("This item is a part _of " + this.0o4.attribute("setName")), 0xFF9900, false));
             };
             if (this.0Bw)
             {
@@ -764,7 +764,7 @@ package 0qj{
                 {
                     _local4 = int(_local2.@stat);
                     _local5 = int(_local2.@value);
-                    this.1Qz.push(new Restriction(((("Requires " + StatData.1Ky(_local4)) + " of ") + _local5), ((_local3) ? 0xB3B3B3 : 16549442), ((_local3) ? false : true)));
+                    this.1Qz.push(new Restriction(((("Requires " + StatData.1Ky(_local4)) + " _of ") + _local5), ((_local3) ? 0xB3B3B3 : 16549442), ((_local3) ? false : true)));
                 };
             };
         }

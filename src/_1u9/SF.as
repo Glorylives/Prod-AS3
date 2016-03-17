@@ -172,7 +172,7 @@ private function _1re(_arg1:_3A):void{
                 {
                     if (!_local10)
                     {
-                        throw (new _03A((('Error in method definition of injectee "' + this._0XM.@type) + "Required parameters can't have type \"*\".")));
+                        throw (new _03A((('Error in method definition _of injectee "' + this._0XM.@type) + "Required parameters can't have type \"*\".")));
                     };
                     _local9 = null;
                 };

@@ -95,7 +95,7 @@ package 0oP{
         private function un():Object{
             if (this.token == null)
             {
-                this. true.1xT("Unexpected end of input");
+                this. true.1xT("Unexpected end _of input");
             };
             switch (this.token.type)
             {

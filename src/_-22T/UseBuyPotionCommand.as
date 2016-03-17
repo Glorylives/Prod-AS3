@@ -63,7 +63,7 @@ package 22T{
         private function 1IK():void{
             if (this.3i())
             {
-                this.u3.info("UseBuyPotionCommand.execute: User has MAX of that attribute, not requesting a use/buy from server.");
+                this.u3.info("UseBuyPotionCommand.execute: User has MAX _of that attribute, not requesting a use/buy from server.");
             } else
             {
                 this.XA();

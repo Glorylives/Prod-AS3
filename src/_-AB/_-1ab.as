@@ -44,7 +44,7 @@ package AB{
             var speedy:XML;
             var damaging:XML;
             var itemXML:XML = _arg1;
-            if (itemXML.@id == "Orb of Conflict")
+            if (itemXML.@id == "Orb _of Conflict")
             {
                 selfTags = itemXML.Activate.(text() == "ConditionEffectSelf");
                 speedy = selfTags.(@effect == "Speedy")[0];

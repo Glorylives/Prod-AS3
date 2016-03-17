@@ -38,7 +38,7 @@ package 0O7{
             _local3.description = "closes the console";
             var _local4:0xD = new 0xD();
             _local4.name = "copy";
-            _local4.description = "copies the contents of the console to the clipboard";
+            _local4.description = "copies the contents _of the console to the clipboard";
             this.register.dispatch(_local1, this.sA);
             this.register.dispatch(_local2, this.0jJ);
             this.register.dispatch(_local3, this.0WK);

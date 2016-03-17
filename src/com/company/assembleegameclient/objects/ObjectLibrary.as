@@ -4,6 +4,13 @@
 //com.company.assembleegameclient.objects.ObjectLibrary
 
 package com.company.assembleegameclient.objects{
+import _0Px._0J9;
+import _0Px._1zw;
+
+import _0W4._Zv;
+
+import _1yZ._1go;
+
 import com.company.assembleegameclient.util.TextureRedrawer;
 import com.company.util.AssetLibrary;
 
@@ -107,7 +114,7 @@ import g0.StatData;
                     118[_local5] = _local4;
                     if (String(_local2.Class) == "Player")
                     {
-                        hR[_local5] = String(_local2.@id).substr(0, 2);
+                        _hR[_local5] = String(_local2.@id).substr(0, 2);
                         _local6 = false;
                         _local7 = 0;
                         while (_local7 < _1wa.length)
@@ -131,7 +138,7 @@ import g0.StatData;
                     };
                     if (_local2.hasOwnProperty("Animation"))
                     {
-                        Kx[_local5] = new Zv(_local2);
+                        Kx[_local5] = new _Zv(_local2);
                     };
                 };
             };

@@ -31,7 +31,7 @@ package zr{
         private function 0fD(_arg1:_22M):Object{
             if (this.1Rr)
             {
-                throw (new 03A(("Forbidden usage of unmapped singleton provider for type " + getQualifiedClassName(this.00m))));
+                throw (new 03A(("Forbidden usage _of unmapped singleton provider for type " + getQualifiedClassName(this.00m))));
             };
             return (_arg1.SsInternal::18Y(this.00m));
         }

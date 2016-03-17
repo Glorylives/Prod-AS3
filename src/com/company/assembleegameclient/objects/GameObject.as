@@ -4,7 +4,15 @@
 //com.company.assembleegameclient.objects.GameObject
 
 package com.company.assembleegameclient.objects{
-    import flash.filters.ColorMatrixFilter;
+import _0W4.Animations;
+
+import _1Np._0F;
+
+import _Jt._4b;
+
+import com.company.assembleegameclient.engine3d._0oE;
+
+import flash.filters.ColorMatrixFilter;
     import com.company.util.MoreColorUtil;
     import flash.geom.Matrix;
     import flash.display.BitmapData;

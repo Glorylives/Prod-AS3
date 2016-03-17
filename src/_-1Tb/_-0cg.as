@@ -125,7 +125,7 @@ package 1Tb{
                 } catch(e:Error)
                 {
                 };
-                str = ("Manual garbage collection " + ((ok) ? "successful." : "FAILED. You need debugger version of flash player."));
+                str = ("Manual garbage collection " + ((ok) ? "successful." : "FAILED. You need debugger version _of flash player."));
                 report(str, ((ok) ? -1 : 10));
             };
         }

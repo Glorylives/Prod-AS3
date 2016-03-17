@@ -334,7 +334,7 @@ package 2-g{
             var _local2:String = ((_arg1.text) ? _arg1.text.replace("event:", "") : null);
             if (_local2 == "gc")
             {
-                _local2 = "Garbage collect::Requires debugger version of flash player";
+                _local2 = "Garbage collect::Requires debugger version _of flash player";
             };
             console.panels.tooltip(_local2, this);
         }

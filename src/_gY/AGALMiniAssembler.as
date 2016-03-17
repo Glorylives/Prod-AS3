@@ -331,7 +331,7 @@ package _gY{
                     _local17 = _local11.match(/vc\[([vof][actps]?)(\d*)?(\.[xyzw](\+\d{1,3})?)?\](\.[xyzw]{1,4})?|([vof][actps]?)(\d*)?(\.[xyzw]{1,4})?/gi);
                     if (_local17.length != _local16.numRegister)
                     {
-                        this._0fE = (((("error: wrong number of operands. found " + _local17.length) + " but expected ") + _local16.numRegister) + ".");
+                        this._0fE = (((("error: wrong number _of operands. found " + _local17.length) + " but expected ") + _local16.numRegister) + ".");
                         break;
                     };
                     _local18 = false;
@@ -395,7 +395,7 @@ package _gY{
                         };
                         if (_local25.range < _local27)
                         {
-                            this._0fE = (((((("error: register operand " + _local21) + " (") + _local17[_local21]) + ") index exceeds limit of ") + (_local25.range + 1)) + ".");
+                            this._0fE = (((((("error: register operand " + _local21) + " (") + _local17[_local21]) + ") index exceeds limit _of ") + (_local25.range + 1)) + ".");
                             _local18 = true;
                             break;
                         };
@@ -475,7 +475,7 @@ package _gY{
                             };
                             if ((((_local34 < 0)) || ((_local34 > 0xFF))))
                             {
-                                this._0fE = (("error: index offset " + _local34) + " out of bounds. [_0..255]");
+                                this._0fE = (("error: index offset " + _local34) + " out _of bounds. [_0..255]");
                                 _local18 = true;
                                 break;
                             };

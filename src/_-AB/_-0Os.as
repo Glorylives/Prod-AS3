@@ -29,7 +29,7 @@ package AB{
             {
                 this.8a();
                 this.Ap();
-                if (itemXML.@id == "Seal of Blasphemous Prayer")
+                if (itemXML.@id == "Seal _of Blasphemous Prayer")
                 {
                     tag = itemXML.Activate.(text() == "ConditionEffectSelf")[0];
                     1Tf.pushParams(du.1Dr, {effect:""});

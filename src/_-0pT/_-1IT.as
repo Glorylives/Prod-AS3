@@ -781,10 +781,10 @@ package 0pT{
                 _local4 = _1JZ.0JF().getInstance(0io);
                 if (this.state == STATE_ROUND_1)
                 {
-                    _local4.dispatch(new tg("You have run out of time to choose, but an item has been chosen for you.", "Oh no!"));
+                    _local4.dispatch(new tg("You have run out _of time to choose, but an item has been chosen for you.", "Oh no!"));
                 } else
                 {
-                    _local4.dispatch(new tg("You have run out of time to choose.", "Oh no!"));
+                    _local4.dispatch(new tg("You have run out _of time to choose.", "Oh no!"));
                 };
             };
         }

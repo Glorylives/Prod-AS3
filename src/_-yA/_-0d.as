@@ -103,10 +103,10 @@ package yA{
         private function 2-k(_arg1:TimerEvent):void{
             if (Math.random() < 0.5)
             {
-                this.view.init(1, 3205, "AAAAAAHHH we are in need of this {goal} now. Help help help.", "http://i.imgur.com/ceobPxd.png");
+                this.view.init(1, 3205, "AAAAAAHHH we are in need _of this {goal} now. Help help help.", "http://i.imgur.com/ceobPxd.png");
             } else
             {
-                this.view.init(1, 1793, "WOAAH we are in need of this {goal} now. Help help.", "https://www.google.com/images/srpr/logo11w.png");
+                this.view.init(1, 1793, "WOAAH we are in need _of this {goal} now. Help help.", "https://www.google.com/images/srpr/logo11w.png");
             };
         }
 

@@ -62,7 +62,7 @@ package _Jy{
             var _local3:int = _args.length;
             if (_local3 < _local2)
             {
-                throw (new ArgumentError(((((("Incorrect number of arguments. " + "Expected at least ") + _local2) + " but received ") + _local3) + ".")));
+                throw (new ArgumentError(((((("Incorrect number _of arguments. " + "Expected at least ") + _local2) + " but received ") + _local3) + ".")));
             };
             var _local4:int;
             while (_local4 < _local2)
@@ -71,7 +71,7 @@ package _Jy{
                 {
                 } else
                 {
-                    throw (new ArgumentError((((("Value object <" + _args[_local4]) + "> is not an instance of <") + this._0Sq[_local4]) + ">.")));
+                    throw (new ArgumentError((((("Value object <" + _args[_local4]) + "> is not an instance _of <") + this._0Sq[_local4]) + ">.")));
                 };
                 _local4++;
             };

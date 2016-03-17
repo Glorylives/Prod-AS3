@@ -20,7 +20,7 @@ import flash.utils.getQualifiedClassName;
         }
 
         override public function describeTo(_arg1:Description):void{
-            _arg1.appendText("an instance of ").appendText(_c);
+            _arg1.appendText("an instance _of ").appendText(_c);
         }
 
         override public function matches(_arg1:Object):Boolean{

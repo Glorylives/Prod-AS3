@@ -52,7 +52,7 @@ package com.hurlant.crypto.symmetric{
             var _local2:uint = this.key.getBlockSize();
             if ((_arg1.length % _local2) != 0)
             {
-                throw (new Error(("ECB mode cipher length must be a multiple of blocksize " + _local2)));
+                throw (new Error(("ECB mode cipher length must be a multiple _of blocksize " + _local2)));
             };
             var _local3:ByteArray = new ByteArray();
             var _local4:ByteArray = new ByteArray();

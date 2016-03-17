@@ -173,7 +173,7 @@ import flash.utils.getQualifiedClassName;
                 {
                     if (!_local7.optional)
                     {
-                        throw (new _03A((('Error in method definition of injectee "' + _arg3) + ". Required parameters can't have type \"*\".")));
+                        throw (new _03A((('Error in method definition _of injectee "' + _arg3) + ". Required parameters can't have type \"*\".")));
                     };
                     _local9 = null;
                 };

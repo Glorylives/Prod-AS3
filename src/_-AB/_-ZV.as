@@ -33,7 +33,7 @@ package AB{
         private function 05j(_arg1:XML):void{
             var teleportTag:XML;
             var itemXML:XML = _arg1;
-            if (itemXML.@id == "Cloak of the Planewalker")
+            if (itemXML.@id == "Cloak _of the Planewalker")
             {
                 1Tf.pushParams(du.1l7, {}, TR.1pw(2-W), TR.17H());
                 teleportTag = XML(itemXML.Activate.(text() == 0MX.TELEPORT))[0];

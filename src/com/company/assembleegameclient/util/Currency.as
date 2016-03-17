@@ -7,16 +7,16 @@ package com.company.assembleegameclient.util{
     public class Currency {
 
         public static const INVALID:int = -1;
-        public static const 1Jg:int = 0;
+        public static const _1Jg:int = 0;
         public static const FAME:int = 1;
         public static const py:int = 2;
         public static const Ls:int = 3;
 
 
-        public static function 19M(_arg1:int):String{
+        public static function _19M(_arg1:int):String{
             switch (_arg1)
             {
-                case 1Jg:
+                case _1Jg:
                     return ("Gold");
                 case FAME:
                     return ("Fame");
