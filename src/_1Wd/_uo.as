@@ -3,37 +3,38 @@
 
 //1Wd.uo
 
-package 1Wd{
-    import flash.utils.Dictionary;
-    import 04m.0so;
+package _1Wd{
+import _04m._0so;
+import _04m._jP;
+
+import flash.utils.Dictionary;
     import flash.display.BitmapData;
     import flash.geom.Matrix;
-    import 04m.jP;
     import flash.display3D.Context3DTextureFormat;
     import flash.geom.Point;
 
-    public class uo {
+    public class _uo {
 
         private static var textures:Dictionary = new Dictionary();
-        private static var 1Y5:Dictionary = new Dictionary();
+        private static var _1Y5:Dictionary = new Dictionary();
         private static var count:int = 0;
 
         [Inject]
-        public var context3D:0so;
+        public var context3D:_0so;
 
 
         public static function wJ(_arg1:BitmapData):BitmapData{
             var _local2:BitmapData;
-            if ((_arg1 in 1Y5))
+            if ((_arg1 in _1Y5))
             {
-                return (1Y5[_arg1]);
+                return (_1Y5[_arg1]);
             };
-            _local2 = 1s-(_arg1, "y");
-            1Y5[_arg1] = _local2;
+            _local2 = _1s(_arg1, "y");
+            _1Y5[_arg1] = _local2;
             return (_local2);
         }
 
-        private static function 1s-(_arg1:BitmapData, _arg2:String="x"):BitmapData{
+        private static function _1s(_arg1:BitmapData, _arg2:String="x"):BitmapData{
             var _local4:Matrix;
             var _local3:BitmapData = new BitmapData(_arg1.width, _arg1.height, true, 0);
             if (_arg2 == "x")
@@ -47,7 +48,7 @@ package 1Wd{
             return (_local3);
         }
 
-        private static function 1yE(_arg1:int):Number{
+        private static function _1yE(_arg1:int):Number{
             _arg1--;
             _arg1 = (_arg1 | (_arg1 >> 1));
             _arg1 = (_arg1 | (_arg1 >> 2));
@@ -59,23 +60,23 @@ package 1Wd{
         }
 
         public static function Xx():void{
-            var _local1:jP;
+            var _local1:_jP;
             var _local2:BitmapData;
             for each (_local1 in textures)
             {
                 _local1.dispose();
             };
             textures = new Dictionary();
-            for each (_local2 in 1Y5)
+            for each (_local2 in _1Y5)
             {
                 _local2.dispose();
             };
-            1Y5 = new Dictionary();
+            _1Y5 = new Dictionary();
             count = 0;
         }
 
-        public static function 0Uo():void{
-            var _local1:jP;
+        public static function _0Uo():void{
+            var _local1:_jP;
             for each (_local1 in textures)
             {
                 _local1.dispose();
@@ -84,10 +85,10 @@ package 1Wd{
         }
 
 
-        public function make(_arg1:BitmapData):jP{
+        public function make(_arg1:BitmapData):_jP{
             var _local2:int;
             var _local3:int;
-            var _local4:jP;
+            var _local4:_jP;
             var _local5:BitmapData;
             if (_arg1 == null)
             {
@@ -97,15 +98,15 @@ package 1Wd{
             {
                 return (textures[_arg1]);
             };
-            _local2 = 1yE(_arg1.width);
-            _local3 = 1yE(_arg1.height);
+            _local2 = _1yE(_arg1.width);
+            _local3 = _1yE(_arg1.height);
             _local4 = this.context3D.createTexture(_local2, _local3, Context3DTextureFormat.BGRA, false);
             _local5 = new BitmapData(_local2, _local3, true, 0);
             _local5.copyPixels(_arg1, _arg1.rect, new Point(0, 0));
             _local4.uploadFromBitmapData(_local5);
             if (count > 1000)
             {
-                0Uo();
+                _0Uo();
                 count = 0;
             };
             textures[_arg1] = _local4;

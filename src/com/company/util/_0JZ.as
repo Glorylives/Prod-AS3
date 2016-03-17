@@ -7,7 +7,7 @@ package com.company.util{
     import flash.geom.Rectangle;
     import flash.geom.Point;
 
-    public class 0JZ {
+    public class _0JZ {
 
         public var x0_:Number;
         public var y0_:Number;
@@ -20,7 +20,7 @@ package com.company.util{
         public var vx2_:Number;
         public var vy2_:Number;
 
-        public function 0JZ(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number){
+        public function _0JZ(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number){
             this.x0_ = _arg1;
             this.y0_ = _arg2;
             this.x1_ = _arg3;
@@ -33,7 +33,7 @@ package com.company.util{
             this.vy2_ = (this.y2_ - this.y0_);
         }
 
-        public static function 0w3(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number, _arg7:Number, _arg8:Number):Boolean{
+        public static function _0w3(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number, _arg7:Number, _arg8:Number):Boolean{
             var _local9:Number = (_arg3 - _arg1);
             var _local10:Number = (_arg4 - _arg2);
             var _local11:Number = (_arg5 - _arg1);
@@ -43,7 +43,7 @@ package com.company.util{
             return ((((((_local13 >= 0)) && ((_local14 >= 0)))) && (((_local13 + _local14) <= 1))));
         }
 
-        public static function 1Mv(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number, _arg7:Number, _arg8:Number, _arg9:Number, _arg10:Number):Boolean{
+        public static function _1Mv(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number, _arg7:Number, _arg8:Number, _arg9:Number, _arg10:Number):Boolean{
             if ((((((((((((_arg7 > _arg1)) && ((_arg7 > _arg3)))) && ((_arg7 > _arg5)))) || ((((((_arg9 < _arg1)) && ((_arg9 < _arg3)))) && ((_arg9 < _arg5)))))) || ((((((_arg8 > _arg2)) && ((_arg8 > _arg4)))) && ((_arg8 > _arg6)))))) || ((((((_arg10 < _arg2)) && ((_arg10 < _arg4)))) && ((_arg10 < _arg6))))))
             {
                 return (false);
@@ -86,7 +86,7 @@ package com.company.util{
         }
 
 
-        public function 1lG():Rectangle{
+        public function _1lG():Rectangle{
             var _local1:Number = Math.min(this.x0_, this.x1_, this.x2_);
             var _local2:Number = Math.max(this.x0_, this.x1_, this.x2_);
             var _local3:Number = Math.min(this.y0_, this.y1_, this.y2_);
@@ -94,7 +94,7 @@ package com.company.util{
             return (new Rectangle(_local1, _local3, (_local2 - _local1), (_local4 - _local3)));
         }
 
-        public function 06D():Number{
+        public function _06D():Number{
             return (Math.abs(((((this.x0_ * (this.y1_ - this.y2_)) + (this.x1_ * (this.y2_ - this.y0_))) + (this.x2_ * (this.y0_ - this.y1_))) / 2)));
         }
 
@@ -117,11 +117,11 @@ package com.company.util{
             {
                 return (0);
             };
-            return (Math.min(V2.0eG(_arg1, _arg2, this.x0_, this.y0_, this.x1_, this.y1_), V2.0eG(_arg1, _arg2, this.x1_, this.y1_, this.x2_, this.y2_), V2.0eG(_arg1, _arg2, this.x0_, this.y0_, this.x2_, this.y2_)));
+            return (Math.min(_V2._0eG(_arg1, _arg2, this.x0_, this.y0_, this.x1_, this.y1_), _V2._0eG(_arg1, _arg2, this.x1_, this.y1_, this.x2_, this.y2_), _V2._0eG(_arg1, _arg2, this.x0_, this.y0_, this.x2_, this.y2_)));
         }
 
         public function cr(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number):Boolean{
-            return (1Mv(this.x0_, this.y0_, this.x1_, this.y1_, this.x2_, this.y2_, _arg1, _arg2, _arg3, _arg4));
+            return (_1Mv(this.x0_, this.y0_, this.x1_, this.y1_, this.x2_, this.y2_, _arg1, _arg2, _arg3, _arg4));
         }
 
 

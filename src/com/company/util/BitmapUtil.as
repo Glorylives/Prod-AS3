@@ -36,7 +36,7 @@ package com.company.util{
             return (_local3);
         }
 
-        public static function 0E6(_arg1:BitmapData, _arg2:int):BitmapData{
+        public static function _0E6(_arg1:BitmapData, _arg2:int):BitmapData{
             var _local3:Matrix = new Matrix();
             _local3.translate((-(_arg1.width) / 2), (-(_arg1.height) / 2));
             _local3.rotate(((_arg2 * Math.PI) / 2));
@@ -46,7 +46,7 @@ package com.company.util{
             return (_local4);
         }
 
-        public static function 0Bs(_arg1:BitmapData, _arg2:int, _arg3:int, _arg4:int, _arg5:int):BitmapData{
+        public static function _0Bs(_arg1:BitmapData, _arg2:int, _arg3:int, _arg4:int, _arg5:int):BitmapData{
             var _local6:BitmapData = new BitmapData(_arg4, _arg5);
             _local6.copyPixels(_arg1, new Rectangle(_arg2, _arg3, _arg4, _arg5), new Point(0, 0));
             return (_local6);
@@ -74,7 +74,7 @@ package com.company.util{
             return ((_local2 / (_arg1.width * _arg1.height)));
         }
 
-        public static function 1WN(_arg1:BitmapData):uint{
+        public static function _1WN(_arg1:BitmapData):uint{
             var _local3:uint;
             var _local7:String;
             var _local8:int;

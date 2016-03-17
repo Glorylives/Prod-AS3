@@ -17,30 +17,30 @@ package com.company.util{
         }
 
 
-        public function 0Vw():uint{
-            return (this.0CF());
+        public function _0Vw():uint{
+            return (this._0CF());
         }
 
-        public function 1o9():Number{
-            return ((this.0CF() / 2147483647));
+        public function _1o9():Number{
+            return ((this._0CF() / 2147483647));
         }
 
-        public function 0r5(_arg1:Number=0, _arg2:Number=1):Number{
-            var _local3:Number = (this.0CF() / 2147483647);
-            var _local4:Number = (this.0CF() / 2147483647);
+        public function _0r5(_arg1:Number=0, _arg2:Number=1):Number{
+            var _local3:Number = (this._0CF() / 2147483647);
+            var _local4:Number = (this._0CF() / 2147483647);
             var _local5:Number = (Math.sqrt((-2 * Math.log(_local3))) * Math.cos(((2 * _local4) * Math.PI)));
             return ((_arg1 + (_local5 * _arg2)));
         }
 
-        public function 1AH(_arg1:uint, _arg2:uint):uint{
-            return ((((_arg1)==_arg2) ? _arg1 : (_arg1 + (this.0CF() % (_arg2 - _arg1)))));
+        public function _1AH(_arg1:uint, _arg2:uint):uint{
+            return ((((_arg1)==_arg2) ? _arg1 : (_arg1 + (this._0CF() % (_arg2 - _arg1)))));
         }
 
-        public function 1Qb(_arg1:Number, _arg2:Number):Number{
-            return ((_arg1 + ((_arg2 - _arg1) * this.1o9())));
+        public function _1Qb(_arg1:Number, _arg2:Number):Number{
+            return ((_arg1 + ((_arg2 - _arg1) * this._1o9())));
         }
 
-        private function 0CF():uint{
+        private function _0CF():uint{
             var _local1:uint;
             var _local2:uint;
             _local2 = (16807 * (this.seed & 0xFFFF));

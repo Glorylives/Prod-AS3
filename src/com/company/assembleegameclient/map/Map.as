@@ -6,11 +6,17 @@
 package com.company.assembleegameclient.map{
 import _04w.Background;
 
+import _1m9._BK;
+
+import _Jt._4b;
+
 import flash.filters.ColorMatrixFilter;
     import flash.geom.ColorTransform;
     import flash.display.BitmapData;
     import com.company.assembleegameclient.objects.BasicObject;
-    import flash.utils.Dictionary;
+
+import flash.geom.Rectangle;
+import flash.utils.Dictionary;
     import flash.display.DisplayObject;
     import flash.display.IGraphicsData;
     import _04_._1JZ;
@@ -321,7 +327,7 @@ public class Map extends _1qi {
             return (squares_[(_arg1 + (_arg2 * width_))]);
         }
 
-        override public function draw(_arg1:1C8, _arg2:int):void{
+        override public function draw(_arg1:_1C8, _arg2:int):void{
             var _local6:Square;
             var _local13:GameObject;
             var _local14:BasicObject;
@@ -332,13 +338,13 @@ public class Map extends _1qi {
             var _local19:Number;
             var _local20:Number;
             var _local21:uint;
-            var _local22:BK;
+            var _local22:_BK;
             var _local23:int;
             var _local24:Array;
             var _local25:Number;
-            if (0O4 != Parameters.TP())
+            if (_0O4 != Parameters.TP())
             {
-                if ((((((0O4 == true)) && (!((WebMain._0Kr.stage3Ds[0].context3D == null))))) && (!(((!((WebMain._0Kr.stage3Ds[0].context3D == null))) && (!((WebMain._0Kr.stage3Ds[0].context3D.driverInfo.toLowerCase().indexOf("disposed") == -1))))))))
+                if ((((((_0O4 == true)) && (!((WebMain._0Kr.stage3Ds[0].context3D == null))))) && (!(((!((WebMain._0Kr.stage3Ds[0].context3D == null))) && (!((WebMain._0Kr.stage3Ds[0].context3D.driverInfo.toLowerCase().indexOf("disposed") == -1))))))))
                 {
                     WebMain._0Kr.stage3Ds[0].context3D.clear();
                     WebMain._0Kr.stage3Ds[0].context3D.present();
@@ -346,10 +352,10 @@ public class Map extends _1qi {
                 {
                     map_.graphics.clear();
                 };
-                signalRenderSwitch.dispatch(0O4);
-                0O4 = Parameters.TP();
+                signalRenderSwitch.dispatch(_0O4);
+                _0O4 = Parameters.TP();
             };
-            var _local3:Rectangle = _arg1.0KH;
+            var _local3:Rectangle = _arg1._0KH;
             x = -(_local3.x);
             y = -(_local3.y);
             var _local4:Number = ((-(_local3.y) - (_local3.height / 2)) / 50);
@@ -358,18 +364,18 @@ public class Map extends _1qi {
             {
                 background_.draw(_arg1, _arg2);
             };
-            this.1rK.length = 0;
+            this._1rK.length = 0;
             this.po.length = 0;
-            this.1Nz.length = 0;
-            this.1IV.length = 0;
+            this._1Nz.length = 0;
+            this._1IV.length = 0;
             var _local7:int = _arg1.maxDist_;
             var _local8:int = Math.max(0, (_local5.x - _local7));
             var _local9:int = Math.min((width_ - 1), (_local5.x + _local7));
             var _local10:int = Math.max(0, (_local5.y - _local7));
             var _local11:int = Math.min((height_ - 1), (_local5.y + _local7));
             this.graphicsData_.length = 0;
-            this.0wL.length = 0;
-            this.0yx.length = 0;
+            this._0wL.length = 0;
+            this._0yx.length = 0;
             var _local12:int = _local8;
             while (_local12 <= _local9)
             {
@@ -382,16 +388,16 @@ public class Map extends _1qi {
                         _local16 = (_local5.x - _local6.center_.x);
                         _local17 = (_local5.y - _local6.center_.y);
                         _local18 = ((_local16 * _local16) + (_local17 * _local17));
-                        if (_local18 > _arg1.03g)
+                        if (_local18 > _arg1._03g)
                         {
                         } else
                         {
-                            _local6.05K = _arg2;
+                            _local6._05K = _arg2;
                             _local6.draw(this.graphicsData_, _arg1, _arg2);
-                            this.1Nz.push(_local6);
+                            this._1Nz.push(_local6);
                             if (_local6.i6 != null)
                             {
-                                this.1IV.push(_local6);
+                                this._1IV.push(_local6);
                             };
                         };
                     };
@@ -401,15 +407,15 @@ public class Map extends _1qi {
             };
             for each (_local13 in goDict_)
             {
-                _local13.1th = false;
+                _local13._1th = false;
                 if (!_local13.RK)
                 {
                     _local6 = _local13.xy;
-                    if (!(((_local6 == null)) || (!((_local6.05K == _arg2)))))
+                    if (!(((_local6 == null)) || (!((_local6._05K == _arg2)))))
                     {
-                        _local13.1th = true;
-                        _local13.14-(_arg1);
-                        if (_local13.props_.1Gr)
+                        _local13._1th = true;
+                        _local13._14(_arg1);
+                        if (_local13.props_._1Gr)
                         {
                             if (_local13.props_.EP)
                             {
@@ -420,38 +426,38 @@ public class Map extends _1qi {
                             };
                         } else
                         {
-                            this.1rK.push(_local13);
+                            this._1rK.push(_local13);
                         };
                     };
                 };
             };
-            for each (_local14 in 1n5)
+            for each (_local14 in _1n5)
             {
-                _local14.1th = false;
+                _local14._1th = false;
                 _local6 = _local14.xy;
-                if ((((_local6 == null)) || (!((_local6.05K == _arg2)))))
+                if ((((_local6 == null)) || (!((_local6._05K == _arg2)))))
                 {
                 } else
                 {
-                    _local14.1th = true;
-                    _local14.14-(_arg1);
-                    this.1rK.push(_local14);
+                    _local14._1th = true;
+                    _local14._14(_arg1);
+                    this._1rK.push(_local14);
                 };
             };
             if (this.po.length > 0)
             {
-                this.po.sortOn(1uA, 113);
+                this.po.sortOn(_1uA, _113);
                 for each (_local14 in this.po)
                 {
                     _local14.draw(this.graphicsData_, _arg1, _arg2);
                 };
             };
-            this.1rK.sortOn(1uA, 113);
+            this._1rK.sortOn(_1uA, 113);
             if (Parameters.data_.drawShadows)
             {
-                for each (_local14 in this.1rK)
+                for each (_local14 in this._1rK)
                 {
-                    if (!_local14.1QM)
+                    if (!_local14._1QM)
                     {
                     } else
                     {
@@ -459,86 +465,86 @@ public class Map extends _1qi {
                     };
                 };
             };
-            for each (_local14 in this.1rK)
+            for each (_local14 in this._1rK)
             {
                 _local14.draw(this.graphicsData_, _arg1, _arg2);
                 if (Parameters.TP())
                 {
-                    _local14.draw3d(this.0yx);
+                    _local14.draw3d(this._0yx);
                 };
             };
-            if (this.1IV.length > 0)
+            if (this._1IV.length > 0)
             {
-                for each (_local6 in this.1IV)
+                for each (_local6 in this._1IV)
                 {
-                    _local6.1tC(this.graphicsData_, _arg1, _arg2);
+                    _local6._1tc(this.graphicsData_, _arg1, _arg2);
                 };
             };
             if (((((!((player_ == null))) && ((player_.breath_ >= 0)))) && ((player_.breath_ < Parameters.kk))))
             {
                 _local19 = ((Parameters.kk - player_.breath_) / Parameters.kk);
                 _local20 = (Math.abs(Math.sin((_arg2 / 300))) * 0.75);
-                0sr.alphaMultiplier = (_local19 * _local20);
-                0Jb.transform.colorTransform = 0sr;
-                0Jb.visible = true;
-                0Jb.x = _local3.left;
-                0Jb.y = _local3.top;
+                _0sr.alphaMultiplier = (_local19 * _local20);
+                _0Jb.transform.colorTransform = _0sr;
+                _0Jb.visible = true;
+                _0Jb.x = _local3.left;
+                _0Jb.y = _local3.top;
             } else
             {
-                0Jb.visible = false;
+                _0Jb.visible = false;
             };
-            if (((!((player_ == null))) && (!(Parameters.1Wc))))
+            if (((!((player_ == null))) && (!(Parameters._1Wc))))
             {
-                0I4.visible = true;
-                0I4.x = (_local3.right - 10);
-                0I4.y = _local3.top;
+                _0I4.visible = true;
+                _0I4.x = (_local3.right - 10);
+                _0I4.y = _local3.top;
             } else
             {
-                0I4.visible = false;
+                _0I4.visible = false;
             };
-            if (((Parameters.TP()) && (0lt.0uZ)))
+            if (((Parameters.TP()) && (_0lt._0uZ)))
             {
-                _local21 = this.0ye();
-                _local22 = _1JZ.0JF().getInstance(BK);
-                _local22.dispatch(this.graphicsData_, this.0yx, width_, height_, _arg1, _local21);
+                _local21 = this._0ye();
+                _local22 = _1JZ._0JF().getInstance(_BK);
+                _local22.dispatch(this.graphicsData_, this._0yx, width_, height_, _arg1, _local21);
                 _local23 = 0;
                 while (_local23 < this.graphicsData_.length)
                 {
                     if ((((this.graphicsData_[_local23] is GraphicsBitmapFill)) && (14d.M8(GraphicsBitmapFill(this.graphicsData_[_local23])))))
                     {
-                        this.0wL.push(this.graphicsData_[_local23]);
-                        this.0wL.push(this.graphicsData_[(_local23 + 1)]);
-                        this.0wL.push(this.graphicsData_[(_local23 + 2)]);
+                        this._0wL.push(this.graphicsData_[_local23]);
+                        this._0wL.push(this.graphicsData_[(_local23 + 1)]);
+                        this._0wL.push(this.graphicsData_[(_local23 + 2)]);
                     } else
                     {
                         if ((((this.graphicsData_[_local23] is GraphicsSolidFill)) && (14d.eK(GraphicsSolidFill(this.graphicsData_[_local23])))))
                         {
-                            this.0wL.push(this.graphicsData_[_local23]);
-                            this.0wL.push(this.graphicsData_[(_local23 + 1)]);
-                            this.0wL.push(this.graphicsData_[(_local23 + 2)]);
+                            this._0wL.push(this.graphicsData_[_local23]);
+                            this._0wL.push(this.graphicsData_[(_local23 + 1)]);
+                            this._0wL.push(this.graphicsData_[(_local23 + 2)]);
                         };
                     };
                     _local23++;
                 };
-                if (this.0wL.length > 0)
+                if (this._0wL.length > 0)
                 {
                     map_.graphics.clear();
-                    map_.graphics.drawGraphicsData(this.0wL);
-                    if (this.14h)
+                    map_.graphics.drawGraphicsData(this._0wL);
+                    if (this._14h)
                     {
-                        this.14h = false;
+                        this._14h = false;
                     };
                 } else
                 {
-                    if (!this.14h)
+                    if (!this._14h)
                     {
                         map_.graphics.clear();
-                        this.14h = true;
+                        this._14h = true;
                     };
                 };
                 if ((_arg2 % 149) == 0)
                 {
-                    14d.1GN();
+                    _14d._1GN();
                 };
             } else
             {
@@ -546,7 +552,7 @@ public class Map extends _1qi {
                 map_.graphics.drawGraphicsData(this.graphicsData_);
             };
             map_.filters.length = 0;
-            if (((!((player_ == null))) && (!(((player_.condition_[ConditionEffect.26x] & ConditionEffect.1De) == 0)))))
+            if (((!((player_ == null))) && (!(((player_.condition_[ConditionEffect._26x] & ConditionEffect._1De) == 0)))))
             {
                 _local24 = [];
                 if (player_.isDrunk())
@@ -556,7 +562,7 @@ public class Map extends _1qi {
                 };
                 if (player_.isBlind())
                 {
-                    _local24.push(1LB);
+                    _local24.push(_1LB);
                 };
                 map_.filters = _local24;
             } else
@@ -570,36 +576,36 @@ public class Map extends _1qi {
             partyOverlay_.draw(_arg1, _arg2);
             if (((player_) && (player_.isDarkness())))
             {
-                this.0Yo.x = -300;
-                this.0Yo.y = ((Parameters.data_.centerOnPlayer) ? -525 : -515);
-                this.0Yo.alpha = 0.95;
-                addChild(this.0Yo);
+                this._0Yo.x = -300;
+                this._0Yo.y = ((Parameters.data_.centerOnPlayer) ? -525 : -515);
+                this._0Yo.alpha = 0.95;
+                addChild(this._0Yo);
             } else
             {
-                if (contains(this.0Yo))
+                if (contains(this._0Yo))
                 {
-                    removeChild(this.0Yo);
+                    removeChild(this._0Yo);
                 };
             };
         }
 
-        private function 0ye():uint{
+        private function _0ye():uint{
             var _local1:uint;
-            if (((!((player_ == null))) && (!(((player_.condition_[ConditionEffect.26x] & ConditionEffect.1De) == 0)))))
+            if (((!((player_ == null))) && (!(((player_.condition_[ConditionEffect._26x] & ConditionEffect._1De) == 0)))))
             {
                 if (player_.isPaused())
                 {
-                    _local1 = 0lt.STAGE3D_FILTER_PAUSE;
+                    _local1 = _0lt.STAGE3D_FILTER_PAUSE;
                 } else
                 {
                     if (player_.isBlind())
                     {
-                        _local1 = 0lt.STAGE3D_FILTER_BLIND;
+                        _local1 = _0lt.STAGE3D_FILTER_BLIND;
                     } else
                     {
                         if (player_.isDrunk())
                         {
-                            _local1 = 0lt.STAGE3D_FILTER_DRUNK;
+                            _local1 = _0lt.STAGE3D_FILTER_DRUNK;
                         };
                     };
                 };

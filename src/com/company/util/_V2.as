@@ -1,15 +1,15 @@
 ﻿// Decompiled by AS3 Sorcerer 1.40
 // http://www.as3sorcerer.com/
 
-//com.company.util.V2
+//com.company.util._V2
 
 package com.company.util{
     import flash.geom.Point;
 
-    public class V2 {
+    public class _V2 {
 
 
-        public static function 1bX(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number, _arg7:Number, _arg8:Number):Point{
+        public static function _1bX(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number, _arg7:Number, _arg8:Number):Point{
             var _local9:Number = (((_arg8 - _arg6) * (_arg3 - _arg1)) - ((_arg7 - _arg5) * (_arg4 - _arg2)));
             if (_local9 == 0)
             {
@@ -25,7 +25,7 @@ package com.company.util{
             return (_local12);
         }
 
-        public static function 0eG(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number):Number{
+        public static function _0eG(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Number, _arg6:Number):Number{
             var _local10:Number;
             var _local11:Number;
             var _local12:Number;

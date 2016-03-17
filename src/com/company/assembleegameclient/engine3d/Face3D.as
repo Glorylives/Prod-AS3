@@ -4,9 +4,10 @@
 //com.company.assembleegameclient.engine3d.Face3D
 
 package com.company.assembleegameclient.engine3d{
-    import flash.display.GraphicsSolidFill;
+import com.company.util._0JZ;
+
+import flash.display.GraphicsSolidFill;
     import flash.display.BitmapData;
-    import __AS3__.vec.Vector;
     import flash.display.GraphicsBitmapFill;
     import flash.display.GraphicsPath;
     import flash.geom.Vector3D;
@@ -14,24 +15,22 @@ package com.company.assembleegameclient.engine3d{
     import flash.geom.Utils3D;
     import com.company.util._tu;
     import flash.display.IGraphicsData;
-    import com.company.assembleegameclient.map.1C8;
-    import com.company.util.0JZ;
+    import com.company.assembleegameclient.map._1C8;
     import com.company.assembleegameclient.util.TextureRedrawer;
-    import __AS3__.vec.*;
 
     public class Face3D {
 
         private static const Ne:GraphicsSolidFill = new GraphicsSolidFill(0, 1);
 
         public var iB:BitmapData;
-        public var 0y2:Vector.<Number>;
+        public var _0y2:Vector.<Number>;
         public var yL:Vector.<Number>;
         public var vout_:Vector.<Number>;
-        public var 1va:Boolean;
+        public var _1va:Boolean;
         public var Bq:Number = 1;
-        public var 0XV:Boolean = false;
-        private var 0KB:Boolean = true;
-        private var 20L:TextureMatrix = null;
+        public var _0XV:Boolean = false;
+        private var _0KB:Boolean = true;
+        private var _20L:TextureMatrix = null;
         public var bitmapFill_:GraphicsBitmapFill;
         private var path_:GraphicsPath;
 
@@ -42,18 +41,18 @@ package com.company.assembleegameclient.engine3d{
             this.path_ = new GraphicsPath(new Vector.<int>(), null);
             super();
             this.iB = _arg1;
-            this.0y2 = _arg2;
+            this._0y2 = _arg2;
             this.yL = _arg3;
-            this.1va = _arg4;
+            this._1va = _arg4;
             if (_arg5)
             {
                 _local7 = new Vector3D();
-                0Ru.0x0(_arg2, _local7);
-                this.Bq = 0fX.QV(_local7, 0.75);
+                _0Ru._0x0(_arg2, _local7);
+                this.Bq = _0fX.QV(_local7, 0.75);
             };
             this.path_.commands.push(GraphicsPathCommand.MOVE_TO);
             var _local6:int = 3;
-            while (_local6 < this.0y2.length)
+            while (_local6 < this._0y2.length)
             {
                 this.path_.commands.push(GraphicsPathCommand.LINE_TO);
                 _local6 = (_local6 + 3);
@@ -63,31 +62,31 @@ package com.company.assembleegameclient.engine3d{
 
         public function dispose():void{
             this.iB = null;
-            this.0y2 = null;
+            this._0y2 = null;
             this.yL = null;
             this.vout_ = null;
-            this.20L = null;
+            this._20L = null;
             this.bitmapFill_ = null;
             this.path_.commands = null;
             this.path_.data = null;
             this.path_ = null;
         }
 
-        public function 2-H(_arg1:BitmapData):void{
+        public function _2H(_arg1:BitmapData):void{
             if (this.iB == _arg1)
             {
                 return;
             };
             this.iB = _arg1;
-            this.0KB = true;
+            this._0KB = true;
         }
 
-        public function 0tI(_arg1:Vector.<Number>):void{
+        public function _0tI(_arg1:Vector.<Number>):void{
             this.yL = _arg1;
-            this.0KB = true;
+            this._0KB = true;
         }
 
-        public function 1q4():Number{
+        public function _1q4():Number{
             var _local1:Number = -(Number.MAX_VALUE);
             var _local2:int = this.vout_.length;
             var _local3:int;
@@ -102,15 +101,15 @@ package com.company.assembleegameclient.engine3d{
             return (_local1);
         }
 
-        public function draw(_arg1:Vector.<IGraphicsData>, _arg2:1C8):Boolean{
+        public function draw(_arg1:Vector.<IGraphicsData>, _arg2:_1C8):Boolean{
             var _local10:Vector.<Number>;
             var _local11:Number;
             var _local12:Number;
             var _local13:Number;
             var _local14:Number;
             var _local15:int;
-            Utils3D.projectVectors(_arg2.wToS_, this.0y2, this.vout_, this.yL);
-            if (this.1va)
+            Utils3D.projectVectors(_arg2.wToS_, this._0y2, this.vout_, this.yL);
+            if (this._1va)
             {
                 _local10 = this.vout_;
                 _local11 = (_local10[2] - _local10[0]);
@@ -122,10 +121,10 @@ package com.company.assembleegameclient.engine3d{
                     return (false);
                 };
             };
-            var _local3:Number = (_arg2.0KH.x - 10);
-            var _local4:Number = (_arg2.0KH.y - 10);
-            var _local5:Number = (_arg2.0KH.right + 10);
-            var _local6:Number = (_arg2.0KH.bottom + 10);
+            var _local3:Number = (_arg2._0KH.x - 10);
+            var _local4:Number = (_arg2._0KH.y - 10);
+            var _local5:Number = (_arg2._0KH.right + 10);
+            var _local6:Number = (_arg2._0KH.bottom + 10);
             var _local7:Boolean = true;
             var _local8:int = this.vout_.length;
             var _local9:int;
@@ -143,20 +142,20 @@ package com.company.assembleegameclient.engine3d{
             {
                 return (false);
             };
-            if (this.0XV)
+            if (this._0XV)
             {
                 _arg1.push(Ne);
                 _arg1.push(this.path_);
                 _arg1.push(tu.END_FILL);
                 return (true);
             };
-            if (this.0KB)
+            if (this._0KB)
             {
-                this.16c();
+                this._16c();
             };
-            this.20L.calculateTextureMatrix(this.vout_);
-            this.bitmapFill_.bitmapData = this.20L.texture_;
-            this.bitmapFill_.matrix = this.20L.tToS_;
+            this._20L.calculateTextureMatrix(this.vout_);
+            this.bitmapFill_.bitmapData = this._20L.texture_;
+            this.bitmapFill_.matrix = this._20L.tToS_;
             _arg1.push(this.bitmapFill_);
             _arg1.push(this.path_);
             _arg1.push(tu.END_FILL);
@@ -164,28 +163,28 @@ package com.company.assembleegameclient.engine3d{
         }
 
         public function contains(_arg1:Number, _arg2:Number):Boolean{
-            if (0JZ.0w3(this.vout_[0], this.vout_[1], this.vout_[2], this.vout_[3], this.vout_[4], this.vout_[5], _arg1, _arg2))
+            if (_0JZ._0w3(this.vout_[0], this.vout_[1], this.vout_[2], this.vout_[3], this.vout_[4], this.vout_[5], _arg1, _arg2))
             {
                 return (true);
             };
-            if ((((this.vout_.length == 8)) && (0JZ.0w3(this.vout_[0], this.vout_[1], this.vout_[4], this.vout_[5], this.vout_[6], this.vout_[7], _arg1, _arg2))))
+            if ((((this.vout_.length == 8)) && (_0JZ._0w3(this.vout_[0], this.vout_[1], this.vout_[4], this.vout_[5], this.vout_[6], this.vout_[7], _arg1, _arg2))))
             {
                 return (true);
             };
             return (false);
         }
 
-        private function 16c():void{
+        private function _16c():void{
             var _local1:BitmapData = TextureRedrawer.WQ(this.iB, this.Bq);
-            if (this.20L == null)
+            if (this._20L == null)
             {
-                this.20L = new TextureMatrix(_local1, this.yL);
+                this._20L = new TextureMatrix(_local1, this.yL);
             } else
             {
-                this.20L.texture_ = _local1;
-                this.20L.0PR(this.yL);
+                this._20L.texture_ = _local1;
+                this._20L._0PR(this.yL);
             };
-            this.0KB = false;
+            this._0KB = false;
         }
 
 

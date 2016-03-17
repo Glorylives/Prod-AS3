@@ -6,13 +6,12 @@
 package com.company.assembleegameclient.engine3d{
     import flash.display.BitmapData;
     import flash.geom.Matrix;
-    import __AS3__.vec.Vector;
 
     public class TextureMatrix {
 
         public var texture_:BitmapData = null;
         public var tToS_:Matrix;
-        private var 1Xl:Matrix = null;
+        private var _1Xl:Matrix = null;
         private var tempMatrix_:Matrix;
 
         public function TextureMatrix(_arg1:BitmapData, _arg2:Vector.<Number>){
@@ -20,24 +19,24 @@ package com.company.assembleegameclient.engine3d{
             this.tempMatrix_ = new Matrix();
             super();
             this.texture_ = _arg1;
-            this.0PR(_arg2);
+            this._0PR(_arg2);
         }
 
-        public function 0tI(_arg1:Vector.<Number>):void{
-            this.0PR(_arg1);
+        public function _0tI(_arg1:Vector.<Number>):void{
+            this._0PR(_arg1);
         }
 
-        public function 1HW(_arg1:Vector.<Number>):void{
+        public function _1HW(_arg1:Vector.<Number>):void{
             this.calculateTextureMatrix(_arg1);
         }
 
         public function calculateTextureMatrix(_arg1:Vector.<Number>):void{
-            this.tToS_.a = this.1Xl.a;
-            this.tToS_.b = this.1Xl.b;
-            this.tToS_.c = this.1Xl.c;
-            this.tToS_.d = this.1Xl.d;
-            this.tToS_.tx = this.1Xl.tx;
-            this.tToS_.ty = this.1Xl.ty;
+            this.tToS_.a = this._1Xl.a;
+            this.tToS_.b = this._1Xl.b;
+            this.tToS_.c = this._1Xl.c;
+            this.tToS_.d = this._1Xl.d;
+            this.tToS_.tx = this._1Xl.tx;
+            this.tToS_.ty = this._1Xl.ty;
             var _local2:int = (_arg1.length - 2);
             var _local3:int = (_local2 + 1);
             this.tempMatrix_.a = (_arg1[2] - _arg1[0]);
@@ -49,10 +48,10 @@ package com.company.assembleegameclient.engine3d{
             this.tToS_.concat(this.tempMatrix_);
         }
 
-        public function 0PR(_arg1:Vector.<Number>):void{
+        public function _0PR(_arg1:Vector.<Number>):void{
             if (this.texture_ == null)
             {
-                this.1Xl = null;
+                this._1Xl = null;
                 return;
             };
             var _local2:int = (_arg1.length - 3);
@@ -66,8 +65,8 @@ package com.company.assembleegameclient.engine3d{
             var _local10:Number = (_local6 - _local4);
             var _local11:Number = (_local7 - _local3);
             var _local12:Number = (_local8 - _local4);
-            this.1Xl = new Matrix(_local9, _local10, _local11, _local12, _local3, _local4);
-            this.1Xl.invert();
+            this._1Xl = new Matrix(_local9, _local10, _local11, _local12, _local3, _local4);
+            this._1Xl.invert();
         }
 
 

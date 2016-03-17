@@ -5,37 +5,37 @@
 
 package com.company.assembleegameclient.map{
     import flash.utils.Dictionary;
-    import com.company.assembleegameclient.objects.1J1;
+    import com.company.assembleegameclient.objects._1J1;
     import flash.display.BitmapData;
     import com.company.util.BitmapUtil;
 
-    public class 0s6 {
+    public class _0s6 {
 
-        public static const 0Ri:Dictionary = new Dictionary();
+        public static const _0Ri:Dictionary = new Dictionary();
         public static const GD:Dictionary = new Dictionary();
         public static const hE:Dictionary = new Dictionary();
 
         private static var LS:Dictionary = new Dictionary();
         public static var get:Dictionary = new Dictionary();
-        public static var 8v:1je;
+        public static var _8v:_1je;
 
 
-        public static function 1ty(_arg1:XML):void{
+        public static function _1ty(_arg1:XML):void{
             var _local2:XML;
             var _local3:int;
             for each (_local2 in _arg1.Ground)
             {
                 _local3 = int(_local2.@type);
-                0Ri[_local3] = new 1je(_local2);
+                _0Ri[_local3] = new _1je(_local2);
                 GD[_local3] = _local2;
-                hE[_local3] = new 1J1(_local2);
+                hE[_local3] = new _1J1(_local2);
                 get[String(_local2.@id)] = _local3;
             };
-            8v = 0Ri[0xFF];
+            _8v = _0Ri[0xFF];
         }
 
         public static function Uq(_arg1:int):String{
-            var _local2:1je = 0Ri[_arg1];
+            var _local2:_1je = _0Ri[_arg1];
             if (_local2 == null)
             {
                 return (null);
@@ -57,10 +57,11 @@ package com.company.assembleegameclient.map{
                 if (_local2.hasOwnProperty("Color"))
                 {
                     _local3 = uint(_local2.Color);
-                } else
+                }
+                else
                 {
                     _local4 = getBitmapData(_arg1);
-                    _local3 = BitmapUtil.1WN(_local4);
+                    _local3 = BitmapUtil._1WN(_local4);
                 };
                 LS[_arg1] = _local3;
             };

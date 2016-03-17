@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.map.1Ad
 
 package com.company.assembleegameclient.map{
-    public class 1Ad {
+    public class _1Ad {
 
-        public static const 15O:int = 0;
+        public static const _15O:int = 0;
         public static const ms:int = 1;
         public static const sT:int = 2;
 
@@ -15,7 +15,7 @@ package com.company.assembleegameclient.map{
         public var dy_:Number = 0;
 
 
-        public function 1tW(_arg1:XML):void{
+        public function _1tW(_arg1:XML):void{
             switch (String(_arg1))
             {
                 case "Wave":

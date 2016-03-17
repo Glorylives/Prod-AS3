@@ -17,7 +17,7 @@ package com.company.util{
             this.y_ = _arg2;
         }
 
-        public static function 1Qm():void{
+        public static function _1Qm():void{
             var _local1:UnitTest = new UnitTest();
         }
 
@@ -34,7 +34,7 @@ package com.company.util{
             return (this.y_);
         }
 
-        public function 16d(_arg1:int):void{
+        public function _16d(_arg1:int):void{
             this.x_ = _arg1;
         }
 
@@ -50,19 +50,19 @@ package com.company.util{
             return ((((this.x_ == _arg1.x_)) && ((this.y_ == _arg1.y_))));
         }
 
-        public function 0Vk(_arg1:IntPoint):int{
+        public function _0Vk(_arg1:IntPoint):int{
             var _local2:int = (_arg1.x_ - this.x_);
             var _local3:int = (_arg1.y_ - this.y_);
             return (Math.round(Math.sqrt(((_local2 * _local2) + (_local3 * _local3)))));
         }
 
-        public function 1kQ(_arg1:IntPoint):Number{
+        public function _1kQ(_arg1:IntPoint):Number{
             var _local2:int = (_arg1.x_ - this.x_);
             var _local3:int = (_arg1.y_ - this.y_);
             return (Math.sqrt(((_local2 * _local2) + (_local3 * _local3))));
         }
 
-        public function 0HS(_arg1:Point):Number{
+        public function _0HS(_arg1:Point):Number{
             var _local2:int = (_arg1.x - this.x_);
             var _local3:int = (_arg1.y - this.y_);
             return (Math.sqrt(((_local2 * _local2) + (_local3 * _local3))));
@@ -76,18 +76,18 @@ package com.company.util{
             return (new IntPoint((Math.round((this.x_ / 1000)) * 1000), (Math.round((this.y_ / 1000)) * 1000)));
         }
 
-        public function 1sQ(_arg1:IntPoint):int{
+        public function _1sQ(_arg1:IntPoint):int{
             var _local2:int = (_arg1.x() - this.x_);
             var _local3:int = (_arg1.y() - this.y_);
             return (((_local2 * _local2) + (_local3 * _local3)));
         }
 
-        public function 16e():Point{
+        public function _16e():Point{
             return (new Point(this.x_, this.y_));
         }
 
         public function transform(_arg1:Matrix):IntPoint{
-            var _local2:Point = _arg1.transformPoint(this.16e());
+            var _local2:Point = _arg1.transformPoint(this._16e());
             return (new IntPoint(Math.round(_local2.x), Math.round(_local2.y)));
         }
 
