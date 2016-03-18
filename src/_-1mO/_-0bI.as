@@ -9,7 +9,7 @@ package 1mO{
     import flash.utils.Timer;
     import flash.events.TimerEvent;
     import _04_._1JZ;
-    import AO.nz;
+    import AO._nz;
 
     public class 0bI extends Sprite {
 
@@ -98,7 +98,7 @@ package 1mO{
         private function 0IA():TextField{
             var _local1:TextField;
             _local1 = new TextField();
-            var _local2:nz = _1JZ.0JF().getInstance(nz);
+            var _local2:_nz = _1JZ.0JF().getInstance(_nz);
             _local2.apply(_local1, 16, 0xFFFFFF, false);
             _local1.selectable = false;
             _local1.doubleClickEnabled = false;

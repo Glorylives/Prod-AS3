@@ -3,20 +3,19 @@
 
 //1Np.HitEffect
 
-package 1Np{
-    import __AS3__.vec.Vector;
+package _1Np{
 
-    public class HitEffect extends 0F- {
+    public class HitEffect extends _0F {
 
         public var xq:Vector.<uint>;
-        public var 0hC:int;
+        public var _0hC:int;
         public var angle_:Number;
         public var speed_:Number;
 
         public function HitEffect(_arg1:Vector.<uint>, _arg2:int, _arg3:int, _arg4:Number, _arg5:Number){
             this.xq = _arg1;
             size_ = _arg2;
-            this.0hC = _arg3;
+            this._0hC = _arg3;
             this.angle_ = _arg4;
             this.speed_ = _arg5;
         }
@@ -31,7 +30,7 @@ package 1Np{
             var _local3:Number = ((this.speed_ / 600) * Math.cos((this.angle_ + Math.PI)));
             var _local4:Number = ((this.speed_ / 600) * Math.sin((this.angle_ + Math.PI)));
             var _local5:int;
-            while (_local5 < this.0hC)
+            while (_local5 < this._0hC)
             {
                 _local6 = this.xq[int((this.xq.length * Math.random()))];
                 _local7 = new HitParticle(_local6, 0.5, size_, (200 + (Math.random() * 100)), (_local3 + ((Math.random() - 0.5) * 0.4)), (_local4 + ((Math.random() - 0.5) * 0.4)), 0);
@@ -50,9 +49,9 @@ package 1Np{
             };
             var _local3:Number = ((this.speed_ / 600) * Math.cos((this.angle_ + Math.PI)));
             var _local4:Number = ((this.speed_ / 600) * Math.sin((this.angle_ + Math.PI)));
-            this.0hC = (this.0hC * 0.2);
+            this._0hC = (this._0hC * 0.2);
             var _local5:int;
-            while (_local5 < this.0hC)
+            while (_local5 < this._0hC)
             {
                 _local6 = this.xq[int((this.xq.length * Math.random()))];
                 _local7 = new HitParticle(_local6, 0.5, 10, (5 + (Math.random() * 100)), (_local3 + ((Math.random() - 0.5) * 0.4)), (_local4 + ((Math.random() - 0.5) * 0.4)), 0);
@@ -66,7 +65,7 @@ package 1Np{
     }
 }//package 1Np
 
-import 1Np.Particle;
+import _1Np.Particle;
 import flash.geom.Vector3D;
 
 class HitParticle extends Particle {

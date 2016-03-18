@@ -4,7 +4,7 @@
 //yA.oF
 
 package yA{
-    import ZE.Panel;
+    import _ZE.Panel;
     import _CU._13j;
     import 0IN.1qO;
     import flash.display.Bitmap;

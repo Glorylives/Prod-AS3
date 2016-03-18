@@ -6,14 +6,14 @@
 package _CU{
     import _04_._1JZ;
     import _0OG._22M;
-    import AO.nz;
+    import AO._nz;
     import AO.Xk;
 
     public class sb extends 0FW {
 
         public function sb(){
             var _local1:_22M = _1JZ.0JF();
-            super(_local1.getInstance(nz), _local1.getInstance(Xk));
+            super(_local1.getInstance(_nz), _local1.getInstance(Xk));
         }
 
     }

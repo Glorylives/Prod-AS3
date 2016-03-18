@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.objects.CharacterChanger
 
 package com.company.assembleegameclient.objects{
-    import ZE.CharacterChangerPanel;
+    import _ZE.CharacterChangerPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class CharacterChanger extends GameObject implements 18p {
 

@@ -5,7 +5,7 @@
 
 package sC{
     import 1uF.1Mf;
-    import ZE.ArenaPortalPanel;
+    import _ZE.ArenaPortalPanel;
     import 1E8.Rc;
     import 0qs.J1;
     import 1qg.0io;

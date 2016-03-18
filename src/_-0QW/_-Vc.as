@@ -8,7 +8,7 @@ package 0QW{
     import __AS3__.vec.Vector;
     import flash.display.IGraphicsData;
     import com.company.util._tu;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsStroke;
     import flash.display.GraphicsPath;
@@ -32,8 +32,8 @@ package 0QW{
         private const graphicsData_:Vector.<IGraphicsData> = new <flash.display.IGraphicsData>[Vc.1F4, Vc.0B9, Vc.path_, com.company.util._tu.END_FILL, com.company.util._tu.1l4];
 
         private var 1TR:1c1;
-        private var 0hw:eG;
-        private var 02l:eG;
+        private var 0hw:_eG;
+        private var 02l:_eG;
         private var outlineFill_:GraphicsSolidFill;
         private var 1F4:GraphicsStroke;
         private var 0B9:GraphicsSolidFill;
@@ -47,12 +47,12 @@ package 0QW{
             super();
             this.1TR = _arg1;
             this.0aJ();
-            this.0hw = new eG(12, 0xFFFFFF, false, (WIDTH - 10), 0);
+            this.0hw = new _eG(12, 0xFFFFFF, false, (WIDTH - 10), 0);
             this.0hw.filters = [new DropShadowFilter(0, 0, 0)];
             this.0hw.y = 4;
             this.0hw.x = 4;
             addChild(this.0hw);
-            this.02l = new eG(12, 0xFFFFFF, false, (WIDTH - 10), 0);
+            this.02l = new _eG(12, 0xFFFFFF, false, (WIDTH - 10), 0);
             this.02l.wordWrap = true;
             this.02l.filters = [new DropShadowFilter(0, 0, 0)];
             this.02l.x = 4;

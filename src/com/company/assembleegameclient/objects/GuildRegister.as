@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.objects.GuildRegister
 
 package com.company.assembleegameclient.objects{
-    import ZE.GuildRegisterPanel;
+    import _ZE.GuildRegisterPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class GuildRegister extends GameObject implements 18p {
 

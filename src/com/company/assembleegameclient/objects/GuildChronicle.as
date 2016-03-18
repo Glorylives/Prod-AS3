@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.objects.GuildChronicle
 
 package com.company.assembleegameclient.objects{
-    import ZE.GuildChroniclePanel;
+    import _ZE.GuildChroniclePanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class GuildChronicle extends GameObject implements 18p {
 

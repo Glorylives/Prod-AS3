@@ -6,7 +6,7 @@
 package 06t{
     import 1uF.1Mf;
     import _CU.else;
-    import AO.nz;
+    import AO._nz;
     import AO.Xk;
 
     public class Np extends 1Mf {
@@ -14,7 +14,7 @@ package 06t{
         [Inject]
         public var 1S3:else;
         [Inject]
-        public var 0sQ:nz;
+        public var 0sQ:_nz;
         [Inject]
         public var eL:Xk;
 

@@ -4,7 +4,7 @@
 //h0.1mR
 
 package h0{
-    import ZE.Panel;
+    import _ZE.Panel;
     import _Jy._1HZ;
     import 0qj.1ae;
     import com.company.assembleegameclient.objects.GameObject;

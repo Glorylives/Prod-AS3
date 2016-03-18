@@ -6,7 +6,7 @@
 package com.company.assembleegameclient.objects{
     import BG.FortuneGroundPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class FortuneGround extends GameObject implements 18p {
 

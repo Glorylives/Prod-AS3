@@ -6,7 +6,7 @@
 package com.company.assembleegameclient.objects{
     import yA.oF;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class QuestRewards extends GameObject implements 18p {
 

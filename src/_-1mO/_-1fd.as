@@ -22,7 +22,7 @@ package 1mO{
     import 1n4.1cA;
     import flash.text.TextFieldAutoSize;
     import flash.text.TextFormatAlign;
-    import AO.nz;
+    import AO._nz;
     import flash.events.MouseEvent;
     import _ZS.0ZC;
     import flash.display.DisplayObject;
@@ -126,7 +126,7 @@ package 1mO{
             this.wz[1] = this.1pU;
             this.wz[2] = this.13W;
             this.wz[3] = this.wH;
-            var _local2:nz = _1JZ.0JF().getInstance(nz);
+            var _local2:_nz = _1JZ.0JF().getInstance(_nz);
             var _local3:int = 1;
             for each (_local4 in this.wz)
             {

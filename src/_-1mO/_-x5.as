@@ -7,7 +7,7 @@ package 1mO{
     import flash.display.Sprite;
     import flash.text.TextField;
     import _04_._1JZ;
-    import AO.nz;
+    import AO._nz;
     import flash.filters.DropShadowFilter;
     import _CU._13j;
 
@@ -22,7 +22,7 @@ package 1mO{
             this.doubleClickEnabled = false;
             this.mouseEnabled = false;
             _local3 = new TextField();
-            var _local4:nz = _1JZ.0JF().getInstance(nz);
+            var _local4:_nz = _1JZ.0JF().getInstance(_nz);
             _local4.apply(_local3, 16, 15792127, false, true);
             _local3.width = (1fd.jO - (1Mz * 2));
             _local3.height = (1fd.1YC - 101);

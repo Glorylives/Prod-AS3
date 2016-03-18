@@ -137,7 +137,7 @@ import flash.text.TextFormatAlign;
             return (_local7);
         }
 
-        public static function _19W(_arg1:int):KC{
+        public static function _19W(_arg1:int):_KC{
             var _local2:KC = new KC();
             _local2.y = 4;
             _local2.x = ((_arg1 - _local2.width) - 5);
@@ -157,7 +157,7 @@ import flash.text.TextFormatAlign;
         }
 
         public static function _2j():Bitmap{
-            return (1AI(6466));
+            return (_1AI(6466));
         }
 
         public static function _74(_arg1:uint):Bitmap{
@@ -178,7 +178,7 @@ import flash.text.TextFormatAlign;
             return (_local2);
         }
 
-        public static function _P():FusionStrength{
+        public static function P():FusionStrength{
             var _local1:FusionStrength = new FusionStrength();
             _local1.y = _h._1ri;
             _local1.x = (_h._1h9 - _local1.width) * 0.5);

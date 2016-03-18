@@ -5,12 +5,14 @@
 
 package com.company.assembleegameclient.objects{
 import _0W4.Animations;
+import _0W4._Zv;
 
 import _1Np._0F;
 
 import _Jt._4b;
 
 import com.company.assembleegameclient.engine3d._0oE;
+import com.company.assembleegameclient.engine3d._1hA;
 
 import flash.filters.ColorMatrixFilter;
     import com.company.util.MoreColorUtil;
@@ -146,7 +148,7 @@ import flash.filters.ColorMatrixFilter;
             this.t9 = _local2.t9;
             if (_local2._0Wd != null)
             {
-                this.effect_ = _0F-._1qK(_local2._0Wd, this);
+                this.effect_ = _0F._1qK(_local2._0Wd, this);
             };
             if (this.texture_ != null)
             {
@@ -161,7 +163,7 @@ import flash.filters.ColorMatrixFilter;
                     this._6Q._11F(this.texture_);
                 };
             };
-            var _local3:Zv = ObjectLibrary.Kx[this.objectType_];
+            var _local3:_Zv = ObjectLibrary.Kx[this.objectType_];
             if (_local3 != null)
             {
                 this._0dP = new Animations(_local3);
@@ -353,10 +355,10 @@ import flash.filters.ColorMatrixFilter;
                 this._0rb.dispose();
                 this._0rb = null;
             };
-            if (this.6Q != null)
+            if (this._6Q != null)
             {
-                this.6Q.dispose();
-                this.6Q = null;
+                this._6Q.dispose();
+                this._6Q = null;
             };
             this.px = null;
             this._1Wz = null;
@@ -461,15 +463,15 @@ import flash.filters.ColorMatrixFilter;
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._1WM) == 0)));
         }
 
-        public function 0Iz():Boolean{
+        public function _0Iz():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._1bo) == 0)));
         }
 
-        public function 0mQ():Boolean{
+        public function _0mQ():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._0pU) == 0)));
         }
 
-        public function 1lC():Boolean{
+        public function _1lC():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect.uW) == 0)));
         }
 
@@ -481,11 +483,11 @@ import flash.filters.ColorMatrixFilter;
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._0Sa) == 0)));
         }
 
-        public function 1ag():Boolean{
+        public function _1ag():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._1m) == 0)));
         }
 
-        public function 1E-():Boolean{
+        public function _1E():Boolean{
             return (!(((this.condition_[ConditionEffect.ex] & ConditionEffect._1ND) == 0)));
         }
 
@@ -505,11 +507,11 @@ import flash.filters.ColorMatrixFilter;
             return (((this._0to) || (!(((this.condition_[ConditionEffect.ex] & ConditionEffect._0AT) == 0)))));
         }
 
-        public function 0ya():Boolean{
+        public function _0ya():Boolean{
             return (((this._0Iw) || (!(((this.condition_[ConditionEffect.ex] & ConditionEffect._22v) == 0)))));
         }
 
-        public function 0fu():Boolean{
+        public function _0fu():Boolean{
             return (!(((this.condition_[ConditionEffect.ex] & ConditionEffect._1GL) == 0)));
         }
 
@@ -521,11 +523,11 @@ import flash.filters.ColorMatrixFilter;
             return (!(((this.condition_[ConditionEffect.ex] & ConditionEffect._0Du) == 0)));
         }
 
-        public function 01G():Boolean{
+        public function _01G():Boolean{
             return (!(((this.condition_[ConditionEffect.ex] & ConditionEffect._1HL) == 0)));
         }
 
-        public function 1v-(_arg1:int=20):Boolean{
+        public function _1v(_arg1:int=20):Boolean{
             var _local2:GameObject;
             var _local3:int;
             var _local4:int;
@@ -552,13 +554,13 @@ import flash.filters.ColorMatrixFilter;
             return (BitmapUtil._1WN(this.texture_));
         }
 
-        public function 0E1():uint{
+        public function _0E1():uint{
             var _local1:uint = this._0ed;
             this._0ed = ((this._0ed + 1) % 128);
             return (_local1);
         }
 
-        public function Gi(_arg1:1tk):Number{
+        public function Gi(_arg1:_1tk):Number{
             var _local2:Number = (_arg1.x_ - x_);
             var _local3:Number = (_arg1.y_ - y_);
             return (Math.sqrt(((_local2 * _local2) + (_local3 * _local3))));
@@ -575,7 +577,7 @@ import flash.filters.ColorMatrixFilter;
             };
         }
 
-        public function 0MR(_arg1:Boolean):void{
+        public function _0MR(_arg1:Boolean):void{
             if (_arg1)
             {
                 this.ty = true;
@@ -640,9 +642,9 @@ import flash.filters.ColorMatrixFilter;
             {
                 this._0rb.setPosition(x_, y_, 0, this.props_.rotation_);
             };
-            if (this.6Q != null)
+            if (this._6Q != null)
             {
-                this.6Q.setPosition(x_, y_, 0, this.props_.rotation_);
+                this._6Q.setPosition(x_, y_, 0, this.props_.rotation_);
             };
             return (true);
         }
@@ -694,9 +696,29 @@ import flash.filters.ColorMatrixFilter;
             this.moveVec_.y = 0;
         }
 
+import _04_._1JZ;
+
+import _1n4._1Jo;
+import _1n4._1WS;
+
 import _9T._1zh;
 
+import _AO._du;
+
+import _CU._1CD;
+
+import com.company.assembleegameclient.map._1C8;
+import com.company.assembleegameclient.objects.Projectile;
+
 import com.company.assembleegameclient.util.ConditionEffect;
+import com.company.util.AssetLibrary;
+
+import flash.display.BitmapData;
+
+import flash.display.GraphicsBitmapFill;
+import flash.display.GraphicsPath;
+import flash.display.IGraphicsData;
+import flash.geom.Matrix;
 
 public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             if (this._0Tz < map_.gs_.gsc_.lastTickId_)
@@ -717,9 +739,9 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             var _local8:int;
             var _local9:uint;
             var _local10:ConditionEffect;
-            var _local11:1zh;
+            var _local11:_1zh;
             var _local12:zL;
-            var _local13:0tK;
+            var _local13:_0tK;
             var _local14:String;
             var _local15:Boolean;
             var _local6:Boolean;
@@ -773,7 +795,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                                     if (this._1E-())
                                     {
                                         _local11 = new _1zh(this, 0xFF0000, 3000);
-                                        _local11.setStringBuilder(new 1cA().setParams(du._1Tm));
+                                        _local11.setStringBuilder(new 1cA().setParams(_du._1Tm));
                                         map_.mapOverlay_.addStatusText(_local11);
                                     } else
                                     {
@@ -910,12 +932,12 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
         }
 
         protected function makeNameBitmapData():BitmapData{
-            var _local1:1Jo = new 1WS(this.name_);
-            var _local2:1CD = _1JZ._0JF().getInstance(1CD);
-            return (_local2.make(_local1, 16, 0xFFFFFF, true, 1Ab, true));
+            var _local1:_1Jo = new _1WS(this.name_);
+            var _local2:_1CD = _1JZ._0JF().getInstance(_1CD);
+            return (_local2.make(_local1, 16, 0xFFFFFF, true, _1Ab, true));
         }
 
-        public function 0lq(_arg1:Vector.<IGraphicsData>, _arg2:1C8):void{
+        public function _0lq(_arg1:Vector.<IGraphicsData>, _arg2:_1C8):void{
             if (this._1LO == null)
             {
                 this._1LO = this.makeNameBitmapData();
@@ -926,7 +948,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             var _local4:int = 30;
             var _local5:Vector.<Number> = this._1wR.data;
             _local5.length = 0;
-            _local5.push((4M[0] - _local3), 4M[1], (4M[0] + _local3), 4M[1], (4M[0] + _local3), (4M[1] + _local4), (4M[0] - _local3), (4M[1] + _local4));
+            _local5.push((_4M[0] - _local3), _4M[1], (_4M[0] + _local3), _4M[1], (_4M[0] + _local3), (_4M[1] + _local4), (_4M[0] - _local3), (_4M[1] + _local4));
             this._0mZ.bitmapData = this._1LO;
             var _local6:Matrix = this._0mZ.matrix;
             _local6.identity();
@@ -944,7 +966,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             return (this._1R6);
         }
 
-        protected function getTexture(_arg1:1C8, _arg2:int):BitmapData{
+        protected function getTexture(_arg1:_1C8, _arg2:int):BitmapData{
             var _local6:Pet;
             var _local7:Number;
             var _local8:int;
@@ -1083,9 +1105,9 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
         }
 
         override public function draw3d(_arg1:Vector.<4b>):void{
-            if (this.6Q != null)
+            if (this._6Q != null)
             {
-                _arg1.push(this.6Q);
+                _arg1.push(this._6Q);
             };
         }
 
@@ -1112,7 +1134,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             var _local5:int = 4;
             var _local6:int = 6;
             this.V-.data.length = 0;
-            this.V-.data.push((4M[0] - _local4), (4M[1] + _local5), (4M[0] + _local4), (4M[1] + _local5), (4M[0] + _local4), ((4M[1] + _local5) + _local6), (4M[0] - _local4), ((4M[1] + _local5) + _local6));
+            this.V-.data.push((_4M[0] - _local4), (_4M[1] + _local5), (_4M[0] + _local4), (_4M[1] + _local5), (_4M[0] + _local4), ((_4M[1] + _local5) + _local6), (_4M[0] - _local4), ((_4M[1] + _local5) + _local6));
             _arg1.push(this._1h7);
             _arg1.push(this.V-);
             _arg1.push(tu.END_FILL);
@@ -1120,7 +1142,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             {
                 _local8 = (((this._1VZ / this.ba) * 2) * _local4);
                 this._0IY.data.length = 0;
-                this._0IY.data.push((4M[0] - _local4), (4M[1] + _local5), ((4M[0] - _local4) + _local8), (4M[1] + _local5), ((4M[0] - _local4) + _local8), ((4M[1] + _local5) + _local6), (4M[0] - _local4), ((4M[1] + _local5) + _local6));
+                this._0IY.data.push((_4M[0] - _local4), (_4M[1] + _local5), ((_4M[0] - _local4) + _local8), (_4M[1] + _local5), ((_4M[0] - _local4) + _local8), ((_4M[1] + _local5) + _local6), (_4M[0] - _local4), ((_4M[1] + _local5) + _local6));
                 _arg1.push(this._1-M);
                 _arg1.push(this._0IY);
                 _arg1.push(tu.END_FILL);
@@ -1129,7 +1151,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             14d.MM(this._1h7, true);
         }
 
-        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:int):void{
+        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             var _local8:BitmapData;
             var _local9:uint;
             var _local10:uint;
@@ -1181,7 +1203,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 };
             };
             this.vS_.length = 0;
-            this.vS_.push((4M[3] - (_local5 / 2)), ((4M[4] - _local6) + _local7), (4M[3] + (_local5 / 2)), ((4M[4] - _local6) + _local7), (4M[3] + (_local5 / 2)), 4M[4], (4M[3] - (_local5 / 2)), 4M[4]);
+            this.vS_.push((_4M[3] - (_local5 / 2)), ((_4M[4] - _local6) + _local7), (_4M[3] + (_local5 / 2)), ((_4M[4] - _local6) + _local7), (_4M[3] + (_local5 / 2)), _4M[4], (_4M[3] - (_local5 / 2)), _4M[4]);
             this.path_.data = this.vS_;
             if (this._1Ia != null)
             {
@@ -1259,7 +1281,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             };
         }
 
-        public function WR(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:int):void{
+        public function WR(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             var _local9:BitmapData;
             var _local10:GraphicsBitmapFill;
             var _local11:GraphicsPath;
@@ -1276,7 +1298,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             var _local4:int = (_arg3 / 500);
             ConditionEffect._1xP(this.condition_[ConditionEffect._26x], this._1e, _local4);
             ConditionEffect.getConditionEffectIcons2(this.condition_[ConditionEffect.ex], this._1e, _local4);
-            var _local5:Number = 4M[3];
+            var _local5:Number = _4M[3];
             var _local6:Number = this.vS_[1];
             var _local7:int = this._1e.length;
             var _local8:int;
@@ -1305,7 +1327,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             };
         }
 
-        override public function drawShadow(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:int):void{
+        override public function drawShadow(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             if (this._0xz == null)
             {
                 this._0xz = new GraphicsGradientFill(GradientType.RADIAL, [this.props_._0Mn, this.props_._0Mn], [0.5, 0], null, new Matrix());
@@ -1314,10 +1336,10 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             var _local4:Number = (((this.size_ / 100) * (this.props_._0Qf / 100)) * this._1MJ);
             var _local5:Number = (30 * _local4);
             var _local6:Number = (15 * _local4);
-            this._0xz.matrix.createGradientBox((_local5 * 2), (_local6 * 2), 0, (4M[0] - _local5), (4M[1] - _local6));
+            this._0xz.matrix.createGradientBox((_local5 * 2), (_local6 * 2), 0, (_4M[0] - _local5), (_4M[1] - _local6));
             _arg1.push(this._0xz);
             this._0ND.data.length = 0;
-            this._0ND.data.push((4M[0] - _local5), (4M[1] - _local6), (4M[0] + _local5), (4M[1] - _local6), (4M[0] + _local5), (4M[1] + _local6), (4M[0] - _local5), (4M[1] + _local6));
+            this._0ND.data.push((_4M[0] - _local5), (_4M[1] - _local6), (_4M[0] + _local5), (_4M[1] - _local6), (_4M[0] + _local5), (_4M[1] + _local6), (_4M[0] - _local5), (_4M[1] + _local6));
             _arg1.push(this._0ND);
             _arg1.push(tu.END_FILL);
         }

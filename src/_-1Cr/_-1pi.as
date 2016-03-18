@@ -9,7 +9,7 @@ package 1Cr{
     import __AS3__.vec.Vector;
     import eC.1u2;
     import flash.events.MouseEvent;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import eC.0Pl;
     import eC.55;
     import flash.display.GraphicsSolidFill;
@@ -56,9 +56,9 @@ package 1Cr{
             this.Gy = null;
         }
 
-        public function Mg(_arg1:eG, _arg2:Sprite):void{
+        public function Mg(_arg1:_eG, _arg2:Sprite):void{
             var _local3:int = this.ug.length;
-            var _local4:1u2 = this.1DC(_local3, (_arg1 as eG));
+            var _local4:1u2 = this.1DC(_local3, (_arg1 as _eG));
             this.ug.push(_local4);
             this.f7.addChild(_local4);
             _arg2.y = (this.0vi + 5);
@@ -121,7 +121,7 @@ package 1Cr{
             };
         }
 
-        private function 1DC(_arg1:int, _arg2:eG):0Pl{
+        private function 1DC(_arg1:int, _arg2:_eG):0Pl{
             var _local4:0Pl;
             var _local3:Sprite = new 55(this.lr, this.0vi);
             _local4 = new 0Pl(_arg1, _local3, _arg2);

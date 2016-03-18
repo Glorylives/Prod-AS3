@@ -9,7 +9,7 @@ package 0Fa{
     import flash.text.TextField;
     import _CU.1CD;
     import 1u-.tM;
-    import AO.nz;
+    import AO._nz;
     import com.company.assembleegameclient.util.0sg;
     import 1u-.1Ys;
     import __AS3__.vec.Vector;
@@ -38,7 +38,7 @@ package 0Fa{
         [Inject]
         public var model:tM;
         [Inject]
-        public var 0sQ:nz;
+        public var 0sQ:_nz;
         [Inject]
         public var Wy:0sg;
         private var message:1Ys;

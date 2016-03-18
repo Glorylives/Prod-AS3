@@ -11,7 +11,7 @@ package com.company.assembleegameclient.objects{
     import 0qj.1ae;
     import BG.TextPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class ClosedGiftChest extends GameObject implements 18p {
 

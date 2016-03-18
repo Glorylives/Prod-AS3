@@ -28,7 +28,7 @@ package 1Cr{
     import AO.du;
     import flash.text.TextFieldAutoSize;
     import 1n4.1cA;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.text.TextFormatAlign;
     import __AS3__.vec.*;
     import 1t6.*;
@@ -201,7 +201,7 @@ package 1Cr{
             this.14Q.x = 3;
             this.14Q.y = 80;
             _local1.addChild(this.14Q);
-            var _local2:eG = new eG(18, 0xFFFFFF, false, 100, 26);
+            var _local2:_eG = new _eG(18, 0xFFFFFF, false, 100, 26);
             _local2.const(TextFormatAlign.CENTER);
             _local2.text = 21H.5A;
             this.1D7.Mg(_local2, _local1);
@@ -219,7 +219,7 @@ package 1Cr{
             this.r.x = 250;
             this.r.y = 200;
             _local1.addChild(this.r);
-            var _local2:eG = new eG(18, 0xFFFFFF, false, 100, 26);
+            var _local2:_eG = new _eG(18, 0xFFFFFF, false, 100, 26);
             _local2.text = 21H.0XG;
             _local2.const(TextFormatAlign.CENTER);
             this.1D7.Mg(_local2, _local1);

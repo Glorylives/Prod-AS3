@@ -5,7 +5,7 @@
 
 package 5I{
     import flash.display.Sprite;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.events.MouseEvent;
 
     public class 1AD extends Sprite {
@@ -18,12 +18,12 @@ package 5I{
         private var over_:Boolean = false;
         private var 1w1:Boolean = false;
         private var selected_:Boolean = false;
-        private var text_:eG;
+        private var text_:_eG;
 
         public function 1AD(_arg1:String, _arg2:Function, _arg3:int){
             this.callback_ = _arg2;
             this.94 = _arg3;
-            this.text_ = new eG(16, 0xFFFFFF, false, 0, 0);
+            this.text_ = new _eG(16, 0xFFFFFF, false, 0, 0);
             this.text_.setBold(true);
             this.text_.text = _arg1;
             this.text_.re();

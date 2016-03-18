@@ -14,7 +14,7 @@ package com.company.assembleegameclient.objects{
     import 0qj.1ae;
     import 0nG.PetPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
     import com.company.assembleegameclient.util.0s0;
     import com.company.assembleegameclient.util._V4;
 

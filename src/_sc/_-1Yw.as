@@ -5,7 +5,7 @@
 
 package sC{
     import 1uF.1Mf;
-    import ZE.GuildRegisterPanel;
+    import _ZE.GuildRegisterPanel;
     import 1qg.0io;
     import 1qg.11S;
     import 0xo.lZ;

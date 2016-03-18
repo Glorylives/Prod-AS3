@@ -4,15 +4,17 @@
 //com.company.assembleegameclient.objects.MoneyChanger
 
 package com.company.assembleegameclient.objects{
-    import BG.MoneyChangerPanel;
-    import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
 
-    public class MoneyChanger extends GameObject implements 18p {
+import _BG.MoneyChangerPanel;
+
+import com.company.assembleegameclient.game.GameSprite;
+    import _ZE.Panel;
+
+    public class MoneyChanger extends GameObject implements _18p {
 
         public function MoneyChanger(_arg1:XML){
             super(_arg1);
-            10J = true;
+            _10J = true;
         }
 
         public function getPanel(_arg1:GameSprite):Panel{

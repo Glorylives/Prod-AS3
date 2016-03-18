@@ -7,7 +7,7 @@ package 0Fa{
     import 1uF.1Mf;
     import 1u-.tM;
     import AO.Xk;
-    import AO.nz;
+    import AO._nz;
     import 0N9.1Qk;
     import 0N9.0hf;
     import 1u-.0xT;
@@ -25,7 +25,7 @@ package 0Fa{
         [Inject]
         public var eL:Xk;
         [Inject]
-        public var 0sQ:nz;
+        public var 0sQ:_nz;
         [Inject]
         public var 0Wu:1Qk;
         [Inject]

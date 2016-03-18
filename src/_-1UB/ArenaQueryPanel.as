@@ -4,7 +4,7 @@
 //1UB.ArenaQueryPanel
 
 package 1UB{
-    import ZE.Panel;
+    import _ZE.Panel;
     import _CU._13j;
     import with.26q;
     import flash.display.Bitmap;

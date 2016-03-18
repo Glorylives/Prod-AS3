@@ -70,7 +70,7 @@ package bD{
     import 1PB.fi;
     import BG.NameChangerPanel;
     import BG.NameChangerPanelMediator;
-    import ZE.GuildRegisterPanel;
+    import _ZE.GuildRegisterPanel;
     import sC.1Yw;
     import 0hd.0pS;
     import 0hd.1Im;
@@ -82,7 +82,7 @@ package bD{
     import 1PB.AgeVerificationDialog;
     import 0Np.24b;
     import 0Np.0bT;
-    import ZE.ArenaPortalPanel;
+    import _ZE.ArenaPortalPanel;
     import sC.0AL;
     import 1PB.1dr;
     import 1PB.12w;

@@ -5,7 +5,7 @@
 
 package 0sC{
     import _CU._13j;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import 1n4.1cA;
     import flash.filters.DropShadowFilter;
     import _Jy._1HZ;
@@ -13,7 +13,7 @@ package 0sC{
     public class 1xl extends 7h {
 
         public var nameText_:_13j;
-        public var inputText_:eG;
+        public var inputText_:_eG;
         public var jp:Boolean;
 
         public function 1xl(_arg1:String, _arg2:Boolean, _arg3:uint=238, _arg4:uint=30){
@@ -22,7 +22,7 @@ package 0sC{
             this.nameText_.setStringBuilder(new 1cA().setParams(_arg1));
             this.nameText_.filters = [new DropShadowFilter(0, 0, 0)];
             addChild(this.nameText_);
-            this.inputText_ = new eG(20, 6U, true, _arg3, _arg4);
+            this.inputText_ = new _eG(20, 6U, true, _arg3, _arg4);
             this.inputText_.y = 30;
             this.inputText_.x = 6;
             this.inputText_.border = false;

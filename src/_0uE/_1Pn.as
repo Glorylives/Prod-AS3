@@ -4,7 +4,7 @@
 //0uE.1Pn
 
 package _0uE{
-    import ZE.Panel;
+    import _ZE.Panel;
 
 import _0IN._1qO;
 

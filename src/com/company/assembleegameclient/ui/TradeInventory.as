@@ -6,7 +6,7 @@
 package com.company.assembleegameclient.ui{
     import flash.display.Sprite;
     import com.company.assembleegameclient.game.nx;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import _CU._13j;
     import __AS3__.vec.Vector;
     import g0.1RN;
@@ -30,7 +30,7 @@ package com.company.assembleegameclient.ui{
         public var gs_:nx;
         public var 09T:String;
         private var 2-b:int;
-        private var nameText_:eG;
+        private var nameText_:_eG;
         private var taglineText_:_13j;
         public var iI:Vector.<07I>;
 
@@ -41,7 +41,7 @@ package com.company.assembleegameclient.ui{
             super();
             this.gs_ = _arg1;
             this.09T = _arg2;
-            this.nameText_ = new eG(20, 0xB3B3B3, false, 0, 0);
+            this.nameText_ = new _eG(20, 0xB3B3B3, false, 0, 0);
             this.nameText_.setBold(true);
             this.nameText_.x = 0;
             this.nameText_.y = 0;

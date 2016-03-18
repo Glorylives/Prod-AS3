@@ -4,7 +4,7 @@
 //23a.ReskinPanel
 
 package 23a{
-    import ZE.Panel;
+    import _ZE.Panel;
     import _CU._13j;
     import com.company.assembleegameclient.ui.1nN;
     import _Jy._1HZ;

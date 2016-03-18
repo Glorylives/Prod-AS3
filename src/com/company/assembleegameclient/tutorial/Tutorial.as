@@ -6,10 +6,8 @@
 package com.company.assembleegameclient.tutorial{
     import flash.display.Sprite;
     import com.company.assembleegameclient.game.GameSprite;
-    import __AS3__.vec.Vector;
     import flash.display.Shape;
     import flash.display.Graphics;
-    import kabam.rotmg.assets.24A;
     import com.company.assembleegameclient.parameters.Parameters;
     import flash.events.Event;
     import com.company.assembleegameclient.objects.Player;
@@ -17,48 +15,49 @@ package com.company.assembleegameclient.tutorial{
     import flash.utils.getTimer;
     import flash.filters.BlurFilter;
     import com.company.util.PointUtil;
-    import __AS3__.vec.*;
 
-    public class Tutorial extends Sprite {
+import kabam.rotmg.assets._24A;
 
-        public static const 1oF:String = "Next";
-        public static const 1i0:String = "MoveForward";
-        public static const 1nn:String = "MoveBackward";
+public class Tutorial extends Sprite {
+
+        public static const _1oF:String = "Next";
+        public static const _1i0:String = "MoveForward";
+        public static const _1nn:String = "MoveBackward";
         public static const BH:String = "RotateLeft";
-        public static const 0PU:String = "RotateRight";
-        public static const 18V:String = "MoveLeft";
-        public static const 1N4:String = "MoveRight";
-        public static const 1Te:String = "Update";
-        public static const 1i3:String = "Attack";
-        public static const 0_Jy:String = "Damage";
-        public static const 1Fo:String = "Kill";
+        public static const _0PU:String = "RotateRight";
+        public static const _18V:String = "MoveLeft";
+        public static const _1N4:String = "MoveRight";
+        public static const _1Te:String = "Update";
+        public static const _1i3:String = "Attack";
+        public static const _0_Jy:String = "Damage";
+        public static const _1Fo:String = "Kill";
         public static const JD:String = "ShowLoot";
-        public static const 0Lf:String = "Text";
-        public static const 1as:String = "ShowPortal";
-        public static const 0-K:String = "EnterPortal";
-        public static const 1M-:String = "Near";
+        public static const _0Lf:String = "Text";
+        public static const _1as:String = "ShowPortal";
+        public static const _0K:String = "EnterPortal";
+        public static const _1M:String = "Near";
         public static const yO:String = "Equip";
 
         public var gs_:GameSprite;
-        public var 1fO:Vector.<Step>;
-        public var 0NX:int = 0;
+        public var _1fO:Vector.<Step>;
+        public var _0NX:int = 0;
         private var PD:Sprite;
         private var z2:Shape;
         private var CC:Shape;
-        private var 0x8:1KY = null;
+        private var _0x8:_1KY = null;
 
         public function Tutorial(_arg1:GameSprite){
             var _local2:XML;
             var _local3:Graphics;
-            this.1fO = new Vector.<Step>();
+            this._1fO = new Vector.<Step>();
             this.PD = new Sprite();
             this.z2 = new Shape();
             this.CC = new Shape();
             super();
             this.gs_ = _arg1;
-            for each (_local2 in 24A.0H0.Step)
+            for each (_local2 in _24A._0H0.Step)
             {
-                this.1fO.push(new Step(_local2));
+                this._1fO.push(new Step(_local2));
             };
             addChild(this.z2);
             addChild(this.CC);
@@ -98,16 +97,16 @@ package com.company.assembleegameclient.tutorial{
             this.CC.graphics.clear();
             this.z2.graphics.clear();
             var _local3:int;
-            while (_local3 < this.1fO.length)
+            while (_local3 < this._1fO.length)
             {
-                _local4 = this.1fO[_local3];
+                _local4 = this._1fO[_local3];
                 _local5 = true;
                 for each (_local6 in _local4.ic)
                 {
                     _local10 = this.gs_.map.player_;
                     switch (_local6.type_)
                     {
-                        case 1M-:
+                        case _1M:
                             _local11 = false;
                             for each (_local12 in this.gs_.map.goDict_)
                             {
@@ -132,20 +131,20 @@ package com.company.assembleegameclient.tutorial{
                 };
                 if (!_local5)
                 {
-                    _local4.1hp = 0;
+                    _local4._1hp = 0;
                 } else
                 {
-                    if (_local4.1hp == 0)
+                    if (_local4._1hp == 0)
                     {
-                        _local4.1hp = getTimer();
+                        _local4._1hp = getTimer();
                     };
-                    _local7 = (getTimer() - _local4.1hp);
-                    for each (_local8 in _local4.1rf)
+                    _local7 = (getTimer() - _local4._1hp);
+                    for each (_local8 in _local4._1rf)
                     {
                         _local8.draw((5 * _local2), this.CC.graphics, _local7);
                         _local8.draw((6 * _local2), this.z2.graphics, _local7);
                     };
-                    for each (_local9 in _local4.1hu)
+                    for each (_local9 in _local4._1hu)
                     {
                         _local9.draw((5 * _local2), this.CC.graphics, _local7);
                         _local9.draw((6 * _local2), this.z2.graphics, _local7);
@@ -161,11 +160,11 @@ package com.company.assembleegameclient.tutorial{
             var _local5:Boolean;
             var _local6:GameObject;
             var _local7:Number;
-            if (this.0NX >= this.1fO.length)
+            if (this._0NX >= this._1fO.length)
             {
                 return;
             };
-            var _local2:Step = this.1fO[this.0NX];
+            var _local2:Step = this._1fO[this._0NX];
             if (_arg1 != _local2.action_)
             {
                 return;
@@ -175,7 +174,7 @@ package com.company.assembleegameclient.tutorial{
                 _local4 = this.gs_.map.player_;
                 switch (_local3.type_)
                 {
-                    case 1M-:
+                    case _1M:
                         _local5 = false;
                         for each (_local6 in this.gs_.map.goDict_)
                         {
@@ -197,14 +196,14 @@ package com.company.assembleegameclient.tutorial{
                         };
                         break;
                     case yO:
-                        if (_local4.1Wz[_local3.1fn] != _local3.objectType_)
+                        if (_local4._1Wz[_local3._1fn] != _local3.objectType_)
                         {
                             return;
                         };
                         break;
                 };
             };
-            this.0NX++;
+            this._0NX++;
             this.draw();
         }
 

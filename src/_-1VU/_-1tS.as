@@ -19,7 +19,7 @@ package 1VU{
     import 0UV.1P9;
     import com.company.assembleegameclient.map.04H;
     import 1E8.0M1;
-    import ZE.PortalPanel;
+    import _ZE.PortalPanel;
     import BG.Ga;
     import ZE.0lo;
     import sC.0AP;

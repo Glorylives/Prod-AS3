@@ -6,7 +6,7 @@
 package 0hd{
     import flash.display.Sprite;
     import _CU._13j;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import 1n4.1cA;
     import flash.filters.DropShadowFilter;
     import flash.display.LineScaleMode;
@@ -20,7 +20,7 @@ package 0hd{
         public static const HEIGHT:int = 88;
 
         public var nameText_:_13j;
-        public var inputText_:eG;
+        public var inputText_:_eG;
         public var errorText_:_13j;
 
         public function pv(_arg1:String, _arg2:Boolean){
@@ -29,7 +29,7 @@ package 0hd{
             this.nameText_.setStringBuilder(new 1cA().setParams(_arg1));
             this.nameText_.filters = [new DropShadowFilter(0, 0, 0)];
             addChild(this.nameText_);
-            this.inputText_ = new eG(20, 0xB3B3B3, true, 238, 30);
+            this.inputText_ = new _eG(20, 0xB3B3B3, true, 238, 30);
             this.inputText_.y = 30;
             this.inputText_.x = 6;
             this.inputText_.border = false;

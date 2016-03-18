@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.objects.ArenaPortal
 
 package com.company.assembleegameclient.objects{
-    import ZE.ArenaPortalPanel;
+    import _ZE.ArenaPortalPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
     import __AS3__.vec.Vector;
     import flash.display.IGraphicsData;
     import com.company.assembleegameclient.map.1C8;

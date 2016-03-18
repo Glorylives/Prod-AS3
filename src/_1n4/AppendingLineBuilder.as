@@ -3,16 +3,14 @@
 
 //1n4.AppendingLineBuilder
 
-package 1n4{
-    import __AS3__.vec.Vector;
-    import 1qQ.0oB;
-    import __AS3__.vec.*;
+package _1n4{
+import _1qQ._0oB;
 
-    public class AppendingLineBuilder implements 1Jo {
+public class AppendingLineBuilder implements _1Jo {
 
         private var data:Vector.<LineData>;
-        private var 3G:String = "\n";
-        private var provider:0oB;
+        private var _3G:String = "\n";
+        private var provider:_0oB;
 
         public function AppendingLineBuilder(){
             this.data = new Vector.<LineData>();
@@ -25,11 +23,11 @@ package 1n4{
         }
 
         public function setDelimiter(_arg1:String):AppendingLineBuilder{
-            this.3G = _arg1;
+            this._3G = _arg1;
             return (this);
         }
 
-        public function 1jM(_arg1:0oB):void{
+        public function _1jM(_arg1:_0oB):void{
             this.provider = _arg1;
         }
 
@@ -40,10 +38,10 @@ package 1n4{
             {
                 _local1.push(_local2.getString(this.provider));
             };
-            return (_local1.join(this.3G));
+            return (_local1.join(this._3G));
         }
 
-        public function 0My():Boolean{
+        public function _0My():Boolean{
             return (!((this.data.length == 0)));
         }
 
@@ -55,9 +53,9 @@ package 1n4{
     }
 }//package 1n4
 
-import 1n4.1Jo;
-import AO.du;
-import 1qQ.0oB;
+import _1n4._1Jo;
+import _AO._du;
+import _1qQ._0oB;
 
 class LineData {
 
@@ -87,13 +85,13 @@ class LineData {
         return (this);
     }
 
-    public function getString(_arg1:0oB):String{
+    public function getString(_arg1:_0oB):String{
         var _local3:String;
         var _local4:String;
-        var _local5:1Jo;
+        var _local5:_1Jo;
         var _local6:String;
         var _local2:String = this.openingHTMLTags;
-        _local3 = _arg1.getValue(du.1I(this.key));
+        _local3 = _arg1.getValue(_du._1I(this.key));
         if (_local3 == null)
         {
             _local3 = this.key;
@@ -101,10 +99,10 @@ class LineData {
         _local2 = _local2.concat(_local3);
         for (_local4 in this.tokens)
         {
-            if ((this.tokens[_local4] is 1Jo))
+            if ((this.tokens[_local4] is _1Jo))
             {
-                _local5 = 1Jo(this.tokens[_local4]);
-                _local5.1jM(_arg1);
+                _local5 = _1Jo(this.tokens[_local4]);
+                _local5._1jM(_arg1);
                 _local2 = _local2.replace((("{" + _local4) + "}"), _local5.getString());
             } else
             {

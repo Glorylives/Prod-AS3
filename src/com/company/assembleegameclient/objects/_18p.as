@@ -5,7 +5,7 @@
 
 package com.company.assembleegameclient.objects{
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public interface _18p {
 

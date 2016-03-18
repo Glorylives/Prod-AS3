@@ -6,7 +6,7 @@
 package 1oo{
     import flash.display.Sprite;
     import _CU._13j;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import 1aj.14n;
     import 1n4.1cA;
     import flash.filters.DropShadowFilter;
@@ -30,9 +30,9 @@ package 1oo{
         private static const UC:uint = 0x555555;
 
         public var label:_13j;
-        public var days:eG;
-        public var pG:eG;
-        public var 00H:eG;
+        public var days:_eG;
+        public var pG:_eG;
+        public var 00H:_eG;
         private var WM:_13j;
         private var 0G3:_13j;
         private var 18B:_13j;
@@ -47,7 +47,7 @@ package 1oo{
             this.label.setStringBuilder(new 1cA().setParams(name));
             this.label.filters = [new DropShadowFilter(0, 0, 0)];
             addChild(this.label);
-            this.pG = new eG(20, 6U, true, 35, 30);
+            this.pG = new _eG(20, 6U, true, 35, 30);
             this.pG.restrict = DQ;
             this.pG.maxChars = 2;
             this.pG.y = 30;
@@ -60,7 +60,7 @@ package 1oo{
             this.0G3 = this.0te(this.pG, du.17);
             addChild(this.0G3);
             addChild(this.pG);
-            this.days = new eG(20, 6U, true, 35, 30);
+            this.days = new _eG(20, 6U, true, 35, 30);
             this.days.restrict = DQ;
             this.days.maxChars = 2;
             this.days.y = 30;
@@ -73,7 +73,7 @@ package 1oo{
             this.WM = this.0te(this.days, du.0CX);
             addChild(this.WM);
             addChild(this.days);
-            this.00H = new eG(20, 6U, true, 55, 30);
+            this.00H = new _eG(20, 6U, true, 55, 30);
             this.00H.restrict = DQ;
             this.00H.maxChars = 4;
             this.00H.y = 30;
@@ -99,7 +99,7 @@ package 1oo{
             this.1lZ(this.00H, 0, 0, _arg1);
         }
 
-        private function 1lZ(_arg1:eG, _arg2:int, _arg3:int, _arg4:Boolean):void{
+        private function 1lZ(_arg1:_eG, _arg2:int, _arg3:int, _arg4:Boolean):void{
             var _local5:uint = ((_arg4) ? 0xl : 1IM);
             graphics.lineStyle(2, _local5, 1, false, LineScaleMode.NORMAL, CapsStyle.ROUND, JointStyle.ROUND);
             graphics.beginFill(1Vo, 1);
@@ -108,7 +108,7 @@ package 1oo{
             graphics.lineStyle();
         }
 
-        private function 0te(_arg1:eG, _arg2:String):_13j{
+        private function 0te(_arg1:_eG, _arg2:String):_13j{
             var _local3:_13j = new _13j().setSize(16).setColor(UC);
             _local3.setTextWidth((_arg1.width + 4)).setTextHeight(_arg1.height);
             _local3.x = (_arg1.x - 6);

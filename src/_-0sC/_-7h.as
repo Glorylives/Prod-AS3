@@ -8,7 +8,7 @@ package 0sC{
     import flash.display.LineScaleMode;
     import flash.display.CapsStyle;
     import flash.display.JointStyle;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
 
     public class 7h extends Sprite {
 
@@ -22,7 +22,7 @@ package 0sC{
             return (0);
         }
 
-        protected function 1lZ(_arg1:eG, _arg2:int, _arg3:int, _arg4:Boolean):void{
+        protected function 1lZ(_arg1:_eG, _arg2:int, _arg3:int, _arg4:Boolean):void{
             var _local5:uint = ((_arg4) ? 0xl : 1IM);
             graphics.lineStyle(2, _local5, 1, false, LineScaleMode.NORMAL, CapsStyle.ROUND, JointStyle.ROUND);
             graphics.beginFill(1Vo, 1);

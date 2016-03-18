@@ -7,7 +7,7 @@ package _1aA{
     import flash.display.Sprite;
     import _Jy._1HZ;
     import flash.display.Bitmap;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.filters.DropShadowFilter;
     import flash.events.MouseEvent;
     import flash.display.BitmapData;
@@ -23,9 +23,9 @@ package _1aA{
 
         public var 1bO:_1HZ;
         public var e4:Bitmap;
-        public var 064:eG;
-        public var taglineText_:eG;
-        public var TY:eG;
+        public var 064:_eG;
+        public var taglineText_:_eG;
+        public var TY:_eG;
         public var link:String;
         public var accountId:String;
 
@@ -42,20 +42,20 @@ package _1aA{
             this.e4.x = 12;
             this.e4.y = (((HEIGHT / 2) - (_arg1.height / 2)) - 3);
             addChild(this.e4);
-            this.064 = new eG(18, 1C-, false, 0, 0);
+            this.064 = new _eG(18, 1C-, false, 0, 0);
             this.064.text = _arg2;
             this.064.re();
             this.064.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
             this.064.x = 73;
             addChild(this.064);
-            this.taglineText_ = new eG(14, 1C-, false, 0, 0);
+            this.taglineText_ = new _eG(14, 1C-, false, 0, 0);
             this.taglineText_.text = _arg3;
             this.taglineText_.re();
             this.taglineText_.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
             this.taglineText_.x = 73;
             this.taglineText_.y = 24;
             addChild(this.taglineText_);
-            this.TY = new eG(16, 1C-, false, 0, 0);
+            this.TY = new _eG(16, 1C-, false, 0, 0);
             this.TY.text = this.ad(_arg5);
             this.TY.re();
             this.TY.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];

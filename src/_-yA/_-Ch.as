@@ -28,7 +28,7 @@ package yA{
     import flash.display.Sprite;
     import 0uE.KC;
     import _04_._1JZ;
-    import AO.nz;
+    import AO._nz;
     import flash.filters.GlowFilter;
     import com.company.assembleegameclient.map.Jw;
     import flash.filters.DropShadowFilter;

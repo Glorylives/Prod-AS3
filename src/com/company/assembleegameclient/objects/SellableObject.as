@@ -8,7 +8,7 @@ package com.company.assembleegameclient.objects{
     import flash.display.BitmapData;
     import BG.SellableObjectPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class SellableObject extends GameObject implements 18p {
 

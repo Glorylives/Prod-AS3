@@ -6,7 +6,7 @@
 package 1xS{
     import flash.display.Sprite;
     import __AS3__.vec.Vector;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.events.MouseEvent;
     import flash.events.Event;
     import flash.geom.Point;
@@ -16,7 +16,7 @@ package 1xS{
         protected var uz:Vector.<String>;
         protected var w_:int;
         protected var h_:int;
-        protected var labelText_:eG;
+        protected var labelText_:_eG;
         protected var 1mN:int = 0;
         protected var selected_:1Wu;
         protected var 1IE:Sprite;
@@ -29,7 +29,7 @@ package 1xS{
             this.h_ = _arg3;
             if (_arg4 != null)
             {
-                this.labelText_ = new eG(16, 0xFFFFFF, false, 0, 0);
+                this.labelText_ = new _eG(16, 0xFFFFFF, false, 0, 0);
                 this.labelText_.setBold(true);
                 this.labelText_.text = (_arg4 + ":");
                 this.labelText_.re();

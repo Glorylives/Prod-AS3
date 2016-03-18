@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.objects.GuildHallPortal
 
 package com.company.assembleegameclient.objects{
-    import ZE.GuildHallPortalPanel;
+    import _ZE.GuildHallPortalPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class GuildHallPortal extends GameObject implements 18p {
 

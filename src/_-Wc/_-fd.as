@@ -8,7 +8,7 @@ package Wc{
     import __AS3__.vec.Vector;
     import flash.display.IGraphicsData;
     import com.company.util._tu;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import com.company.assembleegameclient.ui.0DJ;
     import com.company.assembleegameclient.ui.1nN;
     import flash.display.GraphicsSolidFill;
@@ -37,7 +37,7 @@ package Wc{
         private var text_:String;
         public var w_:int;
         public var h_:int;
-        private var 0i7:eG;
+        private var 0i7:_eG;
         private var 1Nq:Sprite;
         private var VQ:0DJ;
         private var 21s:1nN;
@@ -65,7 +65,7 @@ package Wc{
             addChild(this.1Nq);
             var _local5:String = 0Yz.escape(_arg1);
             _local5 = _local5.replace(0ak, ('<font color="#7777EE"><a href="$1" target="_blank">' + "$1</a></font>"));
-            this.0i7 = new eG(16, 0xB3B3B3, false, r-, 0);
+            this.0i7 = new _eG(16, 0xB3B3B3, false, r-, 0);
             this.0i7.border = false;
             this.0i7.mouseEnabled = true;
             this.0i7.multiline = true;

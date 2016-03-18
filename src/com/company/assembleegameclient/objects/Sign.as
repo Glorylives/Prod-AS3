@@ -5,7 +5,7 @@
 
 package com.company.assembleegameclient.objects{
     import 1qQ.0oB;
-    import AO.nz;
+    import AO._nz;
     import _04_._1JZ;
     import flash.text.TextField;
     import flash.text.TextFieldAutoSize;
@@ -18,13 +18,13 @@ package com.company.assembleegameclient.objects{
     public class Sign extends GameObject {
 
         private var 0C0:0oB;
-        private var 0sQ:nz;
+        private var 0sQ:_nz;
 
         public function Sign(_arg1:XML){
             super(_arg1);
             texture_ = null;
             this.0C0 = _1JZ.0JF().getInstance(0oB);
-            this.0sQ = _1JZ.0JF().getInstance(nz);
+            this.0sQ = _1JZ.0JF().getInstance(_nz);
         }
 
         override protected function getTexture(_arg1:1C8, _arg2:int):BitmapData{

@@ -17,7 +17,7 @@ package eC{
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import flash.display.Bitmap;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import __AS3__.vec.*;
 
     public class WK extends Sprite {

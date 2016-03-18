@@ -9,7 +9,7 @@ package com.company.assembleegameclient.tutorial{
     public class Requirement {
 
         public var type_:String;
-        public var 1fn:int = -1;
+        public var _1fn:int = -1;
         public var objectType_:int = -1;
         public var s:String = "";
         public var radius_:Number = 1;
@@ -26,7 +26,7 @@ package com.company.assembleegameclient.tutorial{
             {
                 this.s = "";
             };
-            this.1fn = int(_arg1.@slot);
+            this._1fn = int(_arg1.@slot);
             this.radius_ = Number(_arg1.@radius);
         }
 

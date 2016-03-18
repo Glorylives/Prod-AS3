@@ -5,7 +5,7 @@
 
 package 1xS{
     import flash.display.Sprite;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.filters.DropShadowFilter;
     import flash.events.MouseEvent;
 
@@ -13,12 +13,12 @@ package 1xS{
 
         public var w_:int;
         public var h_:int;
-        private var nameText_:eG;
+        private var nameText_:_eG;
 
         public function 1Wu(_arg1:String, _arg2:int, _arg3:int){
             this.w_ = _arg2;
             this.h_ = _arg3;
-            this.nameText_ = new eG(16, 0xB3B3B3, false, 0, 0);
+            this.nameText_ = new _eG(16, 0xB3B3B3, false, 0, 0);
             this.nameText_.setBold(true);
             this.nameText_.text = _arg1;
             this.nameText_.re();

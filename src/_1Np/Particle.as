@@ -3,19 +3,17 @@
 
 //1Np.Particle
 
-package 1Np{
+package _1Np{
     import com.company.assembleegameclient.objects.BasicObject;
     import flash.display.GraphicsBitmapFill;
     import flash.display.GraphicsPath;
-    import __AS3__.vec.Vector;
     import flash.geom.Matrix;
     import com.company.util._tu;
     import com.company.assembleegameclient.map.Square;
     import com.company.assembleegameclient.util.TextureRedrawer;
     import flash.display.BitmapData;
     import flash.display.IGraphicsData;
-    import com.company.assembleegameclient.map.1C8;
-    import __AS3__.vec.*;
+    import com.company.assembleegameclient.map._1C8;
 
     public class Particle extends BasicObject {
 
@@ -24,16 +22,16 @@ package 1Np{
         protected var bitmapFill_:GraphicsBitmapFill;
         protected var path_:GraphicsPath;
         protected var vS_:Vector.<Number>;
-        protected var 1rx:Matrix;
+        protected var _1rx:Matrix;
 
         public function Particle(_arg1:uint, _arg2:Number, _arg3:int){
             this.bitmapFill_ = new GraphicsBitmapFill(null, null, false, false);
-            this.path_ = new GraphicsPath(_tu.0xS, null);
+            this.path_ = new GraphicsPath(_tu._0xS, null);
             this.vS_ = new Vector.<Number>();
-            this.1rx = new Matrix();
+            this._1rx = new Matrix();
             super();
-            objectId_ = 0Zh();
-            this.0Rj(_arg2);
+            objectId_ = _0Zh();
+            this._0Rj(_arg2);
             this.setColor(_arg1);
             this.setSize(_arg3);
         }
@@ -61,7 +59,7 @@ package 1Np{
             this.color_ = _arg1;
         }
 
-        public function 0Rj(_arg1:Number):void{
+        public function _0Rj(_arg1:Number):void{
             z_ = _arg1;
         }
 
@@ -69,17 +67,17 @@ package 1Np{
             this.size_ = ((_arg1 / 100) * 5);
         }
 
-        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:int):void{
+        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             var _local4:BitmapData = TextureRedrawer.redrawSolidSquare(this.color_, this.size_);
             var _local5:int = _local4.width;
             var _local6:int = _local4.height;
             this.vS_.length = 0;
-            this.vS_.push((4M[3] - (_local5 / 2)), (4M[4] - (_local6 / 2)), (4M[3] + (_local5 / 2)), (4M[4] - (_local6 / 2)), (4M[3] + (_local5 / 2)), (4M[4] + (_local6 / 2)), (4M[3] - (_local5 / 2)), (4M[4] + (_local6 / 2)));
+            this.vS_.push((_4M[3] - (_local5 / 2)), (_4M[4] - (_local6 / 2)), (_4M[3] + (_local5 / 2)), (_4M[4] - (_local6 / 2)), (_4M[3] + (_local5 / 2)), (_4M[4] + (_local6 / 2)), (_4M[3] - (_local5 / 2)), (_4M[4] + (_local6 / 2)));
             this.path_.data = this.vS_;
             this.bitmapFill_.bitmapData = _local4;
-            this.1rx.identity();
-            this.1rx.translate(this.vS_[0], this.vS_[1]);
-            this.bitmapFill_.matrix = this.1rx;
+            this._1rx.identity();
+            this._1rx.translate(this.vS_[0], this.vS_[1]);
+            this.bitmapFill_.matrix = this._1rx;
             _arg1.push(this.bitmapFill_);
             _arg1.push(this.path_);
             _arg1.push(_tu.END_FILL);

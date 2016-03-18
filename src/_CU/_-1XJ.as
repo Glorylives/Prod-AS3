@@ -5,15 +5,15 @@
 
 package _CU{
     import 1uF.1Mf;
-    import com.company.ui.eG;
-    import AO.nz;
+    import com.company.ui._eG;
+    import AO._nz;
 
     public class 1XJ extends 1Mf {
 
         [Inject]
-        public var view:eG;
+        public var view:_eG;
         [Inject]
-        public var model:nz;
+        public var model:_nz;
 
 
         override public function initialize():void{

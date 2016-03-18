@@ -5,7 +5,7 @@
 
 package eC{
     import flash.display.Sprite;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.display.Bitmap;
     import com.company.util.AssetLibrary;
     import flash.geom.ColorTransform;
@@ -13,11 +13,11 @@ package eC{
     public class 0Pl extends 1u2 {
 
         private var background:Sprite;
-        private var text:eG;
+        private var text:_eG;
         private var 0ie:Bitmap;
         private var Fi:Bitmap;
 
-        public function 0Pl(_arg1:int, _arg2:Sprite, _arg3:eG){
+        public function 0Pl(_arg1:int, _arg2:Sprite, _arg3:_eG){
             super(_arg1);
             this.Os(_arg2);
             if (_arg3)
@@ -50,7 +50,7 @@ package eC{
             addChild(_arg1);
         }
 
-        private function 1Gi(_arg1:eG):void{
+        private function 1Gi(_arg1:_eG):void{
             this.text = _arg1;
             _arg1.x = 5;
             addChild(_arg1);

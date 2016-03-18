@@ -12,7 +12,7 @@ import _0uE._1Pn;
 import _AO._du;
 
 import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class PetUpgrader extends GameObject implements _18p {
 

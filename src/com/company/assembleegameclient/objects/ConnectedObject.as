@@ -10,15 +10,14 @@ package com.company.assembleegameclient.objects{
     import flash.display.BitmapData;
     import com.company.assembleegameclient.map.Square;
     import flash.geom.Utils3D;
-    import __AS3__.vec.Vector;
     import flash.display.IGraphicsData;
-    import com.company.assembleegameclient.map.1C8;
-    import com.company.assembleegameclient.engine3d.0oE;
+    import com.company.assembleegameclient.map._1C8;
+    import com.company.assembleegameclient.engine3d._0oE;
 
     public class ConnectedObject extends GameObject {
 
         protected static const l9:int = 0;
-        protected static const 0xe:int = 1;
+        protected static const _0xe:int = 1;
         protected static const Yd:int = 2;
         protected static const km:int = 3;
         protected static const tN:int = 4;
@@ -39,17 +38,17 @@ package com.company.assembleegameclient.objects{
 
         public function ConnectedObject(_arg1:XML){
             super(_arg1);
-            1QM = false;
+            _1QM = false;
         }
 
         private static function init():void{
             oY = new Dictionary();
-            0Wn(33686018, l9);
-            0Wn(16908802, 0xe);
-            0Wn(16843266, Yd);
-            0Wn(16908546, km);
-            0Wn(16843265, tN);
-            0Wn(16843009, y1);
+            _0Wn(33686018, l9);
+            _0Wn(16908802, 0xe);
+            _0Wn(16843266, Yd);
+            _0Wn(16908546, km);
+            _0Wn(16843265, tN);
+            _0Wn(16843009, y1);
         }
 
         private static function GW(_arg1:int):ConnectedResults{
@@ -61,7 +60,7 @@ package com.company.assembleegameclient.objects{
             return (oY[_local2]);
         }
 
-        private static function 0Wn(_arg1:int, _arg2:int):void{
+        private static function _0Wn(_arg1:int, _arg2:int):void{
             var _local4:int;
             var _local3:int;
             while (_local3 < 4)
@@ -79,21 +78,21 @@ package com.company.assembleegameclient.objects{
         }
 
 
-        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:int):void{
+        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             var _local4:ObjectFace3D;
             var _local5:int;
             var _local6:int;
             var _local7:BitmapData;
             var _local8:Square;
-            if (0rb == null)
+            if (_0rb == null)
             {
                 this.Me();
             };
-            Utils3D.projectVectors(_arg2.wToS_, 0rb.vW_, 0rb.vS_, 0rb.uvts_);
-            for each (_local4 in 0rb.faces_)
+            Utils3D.projectVectors(_arg2.wToS_, _0rb.vW_, _0rb.vS_, _0rb.uvts_);
+            for each (_local4 in _0rb.faces_)
             {
-                _local5 = (((_local4.1OL.x > 0.4)) ? 1 : (((_local4.1OL.x < -0.4)) ? -1 : 0));
-                _local6 = (((_local4.1OL.y > 0.4)) ? 1 : (((_local4.1OL.y < -0.4)) ? -1 : 0));
+                _local5 = (((_local4._1OL.x > 0.4)) ? 1 : (((_local4._1OL.x < -0.4)) ? -1 : 0));
+                _local6 = (((_local4._1OL.y > 0.4)) ? 1 : (((_local4._1OL.y < -0.4)) ? -1 : 0));
                 _local7 = _local4.texture_;
                 if (((!((_local5 == 0))) || (!((_local6 == 0)))))
                 {
@@ -108,11 +107,11 @@ package com.company.assembleegameclient.objects{
         }
 
         public function Me():void{
-            0rb = new 0oE();
-            var _local1:ConnectedResults = GW(0mm);
+            _0rb = new _0oE();
+            var _local1:ConnectedResults = GW(_0mm);
             if (_local1 == null)
             {
-                0rb = null;
+                _0rb = null;
                 return;
             };
             this.rotation_ = _local1.rotation_;
@@ -137,10 +136,10 @@ package com.company.assembleegameclient.objects{
                     this.buildCross();
                     break;
                 default:
-                    0rb = null;
+                    _0rb = null;
                     return;
             };
-            0rb.setPosition(x_, y_, 0, (this.rotation_ * 90));
+            _0rb.setPosition(x_, y_, 0, (this.rotation_ * 90));
         }
 
         protected function buildDot():void{

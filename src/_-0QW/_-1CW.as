@@ -5,20 +5,20 @@
 
 package 0QW{
     import 0qj.1ae;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.filters.DropShadowFilter;
 
     public class 1CW extends 1ae {
 
         private static const 1bH:int = 180;
 
-        private var 064:eG;
-        private var 0ms:eG;
+        private var 064:_eG;
+        private var 0ms:_eG;
 
         public function 1CW(_arg1:XML){
             var _local3:XML;
             super(0x363636, 1, 0x9B9B9B, 1, true);
-            this.064 = new eG(16, 0xFFFFFF, false, (1bH - 4), 0);
+            this.064 = new _eG(16, 0xFFFFFF, false, (1bH - 4), 0);
             this.064.setBold(true);
             this.064.wordWrap = true;
             this.064.text = String(_arg1.@id);
@@ -92,7 +92,7 @@ package 0QW{
                     _local2 = (_local2 + "\tParametric\n");
                 };
             };
-            this.0ms = new eG(14, 0xB3B3B3, false, 1bH, 0);
+            this.0ms = new _eG(14, 0xB3B3B3, false, 1bH, 0);
             this.0ms.wordWrap = true;
             this.0ms.text = String(_local2);
             this.0ms.1zx();

@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.objects.GuildBoard
 
 package com.company.assembleegameclient.objects{
-    import ZE.GuildBoardPanel;
+    import _ZE.GuildBoardPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class GuildBoard extends GameObject implements 18p {
 

@@ -6,7 +6,7 @@
 package com.company.assembleegameclient.objects{
     import 23a.ReskinPanel;
     import com.company.assembleegameclient.game.GameSprite;
-    import ZE.Panel;
+    import _ZE.Panel;
 
     public class ReskinVendor extends GameObject implements 18p {
 

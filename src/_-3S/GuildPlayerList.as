@@ -7,7 +7,7 @@ package 3S{
     import flash.display.Sprite;
     import _0BB.Fu;
     import _CU._13j;
-    import com.company.ui.eG;
+    import com.company.ui._eG;
     import flash.display.Bitmap;
     import flash.display.Shape;
     import com.company.assembleegameclient.ui.0DJ;
@@ -30,8 +30,8 @@ package 3S{
         private var 0U4:int;
         private var 0LR:Fu;
         private var YT:_13j;
-        private var 064:eG;
-        private var cg:eG;
+        private var 064:_eG;
+        private var cg:_eG;
         private var 2f:Bitmap;
         private var 0mg:Shape;
         private var 1Nq:Sprite;
@@ -89,7 +89,7 @@ package 3S{
             var _local8:int;
             var _local9:Te;
             removeChild(this.YT);
-            this.064 = new eG(32, 0xB3B3B3, false, 0, 0);
+            this.064 = new _eG(32, 0xB3B3B3, false, 0, 0);
             this.064.setBold(true);
             this.064.text = _arg1.@name;
             this.064.1zx();
@@ -97,7 +97,7 @@ package 3S{
             this.064.y = 24;
             this.064.x = ((stage.stageWidth / 2) - (this.064.width / 2));
             addChild(this.064);
-            this.cg = new eG(22, 0xFFFFFF, false, 0, 0);
+            this.cg = new _eG(22, 0xFFFFFF, false, 0, 0);
             this.cg.text = _arg1.CurrentFame;
             this.cg.1zx();
             this.cg.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];

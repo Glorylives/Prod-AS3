@@ -155,7 +155,7 @@ package 1r4{
     import com.company.assembleegameclient.util.0Ep;
     import tn.1iY;
     import tn.Lm;
-    import ZE.TradeRequestPanel;
+    import _ZE.TradeRequestPanel;
     import g0.ge;
     import 0xo.0Fn;
     import g0.0kZ;

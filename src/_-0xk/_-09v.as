@@ -15,7 +15,7 @@ package 0xk{
     import 0IN.1qO;
     import flash.events.Event;
     import 0pT.1qk;
-    import AO.nz;
+    import AO._nz;
     import flash.text.TextFormat;
     import flash.text.TextFieldAutoSize;
     import _04_._1JZ;
@@ -135,7 +135,7 @@ package 0xk{
         }
 
         private function 1sX():TextField{
-            var _local1:nz = new nz();
+            var _local1:_nz = new _nz();
             var _local2:TextField = new TextField();
             var _local3:TextFormat = _local2.defaultTextFormat;
             _local3.size = 36;
@@ -183,7 +183,7 @@ package 0xk{
             this.0tS = new TextField();
             this.0tS.text = _arg1;
             this.0tS.autoSize = TextFieldAutoSize.LEFT;
-            var _local4:nz = _1JZ.0JF().getInstance(nz);
+            var _local4:_nz = _1JZ.0JF().getInstance(_nz);
             _local4.apply(this.0tS, _arg2, _arg3, false, true);
             this.0tS.y = (this.y + this.height);
             this.0tS.x = ((this.x + (this.width / 2)) - (this.0tS.width / 2));

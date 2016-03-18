@@ -4,7 +4,7 @@
 //0nG.PetPanel
 
 package 0nG{
-    import ZE.Panel;
+    import _ZE.Panel;
     import _Jy._1HZ;
     import 0qj.1ae;
     import _CU._13j;
