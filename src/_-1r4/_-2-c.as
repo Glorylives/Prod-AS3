@@ -1120,7 +1120,7 @@ package 1r4{
             {
                 gs_.hudView.interactPanel.setOverride(new TradeRequestPanel(gs_, _arg1.name_));
             };
-            this.12K.dispatch(1Ys.make("", ((((_arg1.name_ + " wants to ") + 'trade with you.  Type "/trade ') + _arg1.name_) + '" to trade.')));
+            this.12K.dispatch(1Ys.make("", ((((_arg1.name_ + " wants to ") + 'trade _with you.  Type "/trade ') + _arg1.name_) + '" to trade.')));
         }
 
         private function 09Q(_arg1:ff):void{

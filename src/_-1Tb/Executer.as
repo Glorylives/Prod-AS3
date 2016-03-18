@@ -610,7 +610,7 @@ package 1Tb{
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2], _local7[3], _local7[4], _local7[5], _local7[6], _local7[7], _local7[8], _local7[9]));
                 };
-                throw (new Error("CommandLine can't create new class instances with more than 10 arguments."));
+                throw (new Error("CommandLine can't create new class instances _with more than 10 arguments."));
             };
             return (null);
         }

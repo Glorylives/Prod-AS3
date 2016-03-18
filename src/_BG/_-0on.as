@@ -10,7 +10,7 @@ package BG{
     import gx.0Xo;
     import aq.Account;
     import 9T.0b7;
-    import gx.Wl;
+    import gx._Wl;
 
     public class 0on extends 1Mf {
 
@@ -32,7 +32,7 @@ package BG{
             this.addSpeechBalloon.remove(this.1Zv);
         }
 
-        private function 1Zv(_arg1:Wl):void{
+        private function 1Zv(_arg1:_Wl):void{
             var _local2:String = ((((this.account.0D3()) || (this.zB.09N(_arg1.go.name_)))) ? _arg1.text : ". . .");
             var _local3:* = new 0b7(_arg1.go, _local2, _arg1.name, _arg1.17n, _arg1.140, _arg1.background, _arg1.mo, _arg1.Je, _arg1.nT, _arg1.textColor, _arg1.14B, _arg1.bold, _arg1.nA);
             this.view.addSpeechBalloon(_local3);

@@ -215,7 +215,7 @@ package 1Tb{
             {
                 if (!this.1e2(2-q))
                 {
-                    report("Could not create remoting client service. You will not be able to control this console with remote.", 10);
+                    report("Could not create remoting client service. You will not be able to control this console _with remote.", 10);
                 };
                 this.0Z6 = new ByteArray();
                 this.0m8.addEventListener(StatusEvent.STATUS, this.14g, false, 0, true);
@@ -341,7 +341,7 @@ package 1Tb{
         }
 
         private function 24l(_arg1:AsyncErrorEvent):void{
-            report("Problem with remote sync. [<a href='event:remote'>Click here</a>] to restart.", 10);
+            report("Problem _with remote sync. [<a href='event:remote'>Click here</a>] to restart.", 10);
             this.remoting = NONE;
         }
 

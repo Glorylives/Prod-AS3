@@ -37,7 +37,7 @@ package 0sC{
             this.13A = new Timer(2000, 0);
             super(500, 220, "Maintenance Needed");
             this.18T = false;
-            J-((("Press OK to begin maintenance on \n\n" + _arg1.j2()) + "\n\nor cancel to login with a different account"), true);
+            J-((("Press OK to begin maintenance on \n\n" + _arg1.j2()) + "\n\nor cancel to login _with a different account"), true);
             this.1Mr("Cancel");
             this.PF("OK");
             this.account = _arg1;
@@ -177,7 +177,7 @@ package 0sC{
 
         private function reset():void{
             setTitle("Error, please try again. Maintenance needed", true);
-            J-((("Press OK to begin maintenance on \n\n" + this.account.j2()) + "\n\nor cancel to login with a different account"), true);
+            J-((("Press OK to begin maintenance on \n\n" + this.account.j2()) + "\n\nor cancel to login _with a different account"), true);
             this.094();
             this.1Dk.addOnce(this.1Y7);
             this.9u.setEnabled(true);

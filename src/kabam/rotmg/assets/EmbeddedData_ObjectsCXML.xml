@@ -1504,7 +1504,7 @@
         </Texture>
         <StasisImmune/>
     </Object>
-    <Object type="0x1757" id="ft Vases with rug">
+    <Object type="0x1757" id="ft Vases _with rug">
         <Class>GameObject</Class>
         <ShowName/>
         <Size>100</Size>

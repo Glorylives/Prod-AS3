@@ -23,7 +23,7 @@ package 0N9{
     import 1n4.1cA;
     import 0y3.0gx;
     import _04_._1JZ;
-    import gx.Wl;
+    import gx._Wl;
     import com.company.assembleegameclient.objects.GameObject;
     import 0Fa.053;
 
@@ -219,14 +219,14 @@ package 0N9{
             var _local4:1Xc;
             var _local5:Boolean;
             var _local6:Boolean;
-            var _local7:Wl;
+            var _local7:_Wl;
             var _local3:GameObject = this.model.1db(_arg1.objectId_);
             if (_local3 != null)
             {
                 _local4 = this.GK(_arg1, _local3);
                 _local5 = 053.1ln(_arg1.numStars_, _arg1.objectId_, _arg2);
                 _local6 = 053.0VV(_arg1.name_);
-                _local7 = new Wl(_local3, _arg2, _arg1.name_, _local5, _local6, _local4.back, 1, _local4.Je, 1, _local4.text, _arg1.bubbleTime_, false, true);
+                _local7 = new _Wl(_local3, _arg2, _arg1.name_, _local5, _local6, _local4.back, 1, _local4.Je, 1, _local4.text, _arg1.bubbleTime_, false, true);
                 this.addSpeechBalloon.dispatch(_local7);
             };
         }

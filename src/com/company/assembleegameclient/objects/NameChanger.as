@@ -8,21 +8,21 @@ package com.company.assembleegameclient.objects{
     import com.company.assembleegameclient.game.GameSprite;
     import _ZE.Panel;
 
-    public class NameChanger extends GameObject implements 18p {
+    public class NameChanger extends GameObject implements _18p {
 
-        public var 0Bf:int = 0;
+        public var _0Bf:int = 0;
 
         public function NameChanger(_arg1:XML){
             super(_arg1);
-            10J = true;
+            _10J = true;
         }
 
-        public function 00U(_arg1:int):void{
-            this.0Bf = _arg1;
+        public function _00U(_arg1:int):void{
+            this._0Bf = _arg1;
         }
 
         public function getPanel(_arg1:GameSprite):Panel{
-            return (new NameChangerPanel(_arg1, this.0Bf));
+            return (new NameChangerPanel(_arg1, this._0Bf));
         }
 
 

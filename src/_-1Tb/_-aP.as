@@ -78,7 +78,7 @@ package 1Tb{
             {
                 if (i.key == key)
                 {
-                    report((((("Graph with key [" + key) + "] already exists in [") + n) + "]"), 10);
+                    report((((("Graph _with key [" + key) + "] already exists in [") + n) + "]"), 10);
                     return;
                 };
             };
@@ -97,7 +97,7 @@ package 1Tb{
                 v = interest.setObject(obj, prop);
             } catch(e:Error)
             {
-                report(((((("Error with graph value for [" + key) + "] in [") + n) + "]. ") + e), 10);
+                report(((((("Error _with graph value for [" + key) + "] in [") + n) + "]. ") + e), 10);
                 return;
             };
             if (isNaN(v))
@@ -358,7 +358,7 @@ package 1Tb{
                     i.setValue(v, group.1QT);
                 } catch(e:Error)
                 {
-                    report(((((("Error with graph value for key [" + i.key) + "] in [") + group.name) + "]. ") + e), 10);
+                    report(((((("Error _with graph value for key [" + i.key) + "] in [") + group.name) + "]. ") + e), 10);
                     remove(group.name, i.obj, i.prop);
                 };
                 group.0BX(v);

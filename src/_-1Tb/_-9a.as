@@ -25,7 +25,7 @@ package 1Tb{
         public function 0cJ(_arg1:1L8, _arg2:Function, _arg3:Array=null):void{
             if (((config.keystrokePassword) && (((!(_arg1.14w)) && ((_arg1.key.charAt(0) == config.keystrokePassword.charAt(0)))))))
             {
-                report((("Error: KeyBind [" + _arg1.key) + "] is conflicting with Console password."), 9);
+                report((("Error: KeyBind [" + _arg1.key) + "] is conflicting _with Console password."), 9);
                 return;
             };
             if (_arg2 == null)

@@ -915,7 +915,7 @@ package 2-g{
             {
                 if (_local3 == ("channel_" + Console.ss))
                 {
-                    _local3 = "Default channel::Logs with no channel";
+                    _local3 = "Default channel::Logs _with no channel";
                 } else
                 {
                     if (_local3 == ("channel_" + Console.24a))

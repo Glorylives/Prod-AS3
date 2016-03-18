@@ -36,7 +36,7 @@ package com.hurlant.math{
             {
                 if (((_arg2) && (!((_arg2 == 16)))))
                 {
-                    throw (new Error("BigInteger construction with radix!=16 is not supported."));
+                    throw (new Error("BigInteger construction _with radix!=16 is not supported."));
                 };
                 _arg1 = Hex.toArray(_arg1);
                 _arg2 = 0;

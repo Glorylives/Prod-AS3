@@ -5,12 +5,12 @@
 
 package _0UV{
     import _Jy._1HZ;
-    import gx.Wl;
+    import gx._Wl;
 
     public class _105 extends _1HZ {
 
         public function _105(){
-            super(Wl);
+            super(_Wl);
         }
 
     }

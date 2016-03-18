@@ -442,7 +442,7 @@ public class Options extends Sprite {
             this.10y(new 0kr("textBubbles", 1TT(), [true, false], _du.03-, _du.Mk, null));
             this.10y(new 0kr("showTradePopup", 1TT(), [true, false], _du.pQ, _du.1nP, null));
             this.10y(new 0kr("showGuildInvitePopup", 1TT(), [true, false], _du.1fu, _du.14j, null));
-            this.10y(new 0kr("cursorSelect", 1ur(), [MouseCursor.AUTO, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], "Custom Cursor", "Click here to change the mouse cursor. May help with aiming.", rX));
+            this.10y(new 0kr("cursorSelect", 1ur(), [MouseCursor.AUTO, "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"], "Custom Cursor", "Click here to change the mouse cursor. May help _with aiming.", rX));
             if (!Parameters.0Td)
             {
                 _local1 = _du.25B;
