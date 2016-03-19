@@ -3,10 +3,10 @@
 
 //21k.0LB
 
-package 21k{
+package _21k{
     import _Jy._1HZ;
 
-    public class 0LB extends _1HZ {
+    public class _0LB extends _1HZ {
 
 
     }

@@ -4,19 +4,19 @@
 //yo.0HK
 
 package yo{
-    import g0.Tz;
+    import g0._Tz;
     import g0.1tk;
     import flash.utils.IDataOutput;
 
     public class 0HK extends 0j1 {
 
         public var time_:int;
-        public var slotObject_:Tz;
+        public var slotObject_:_Tz;
         public var itemUsePos_:1tk;
         public var useType_:int;
 
         public function 0HK(_arg1:uint, _arg2:Function){
-            this.slotObject_ = new Tz();
+            this.slotObject_ = new _Tz();
             this.itemUsePos_ = new 1tk();
             super(_arg1, _arg2);
         }

@@ -3,29 +3,29 @@
 
 //0xo.25Q
 
-package 0xo{
+package _0xo{
     import flash.utils.Timer;
-    import XF.1eq;
+    import _XF._1eq;
     import _Jy._1HZ;
     import flash.events.TimerEvent;
 
-    public class 25Q {
+    public class _25Q {
 
         public var objectId:uint;
         private var mz:Array;
-        private var 1Ok:uint;
+        private var _1Ok:uint;
         public var dY:uint;
-        public var 0kC:int;
+        public var _0kC:int;
         public var position:int;
         public var available:Boolean;
-        private var 1JX:int;
+        private var _1JX:int;
         private var g:Timer;
-        private var yK:1eq;
-        private var 1qF:Timer;
-        private var 1yD:1eq;
+        private var yK:_1eq;
+        private var _1qF:Timer;
+        private var _1yD:_1eq;
         public var update:_1HZ;
 
-        public function 25Q(){
+        public function _25Q(){
             this.update = new _1HZ(int);
             this.available = true;
         }
@@ -34,7 +34,7 @@ package 0xo{
             this.mz = _arg1;
             if (((!((_arg1 == null))) && ((_arg1.length > 0))))
             {
-                this.1JX = 0;
+                this._1JX = 0;
             };
         }
 
@@ -43,58 +43,58 @@ package 0xo{
         }
 
         public function set xK(_arg1:uint):void{
-            this.1Ok = _arg1;
+            this._1Ok = _arg1;
             this.g = new Timer(_arg1, 0);
-            this.yK = new 1eq(this.g, TimerEvent.TIMER, TimerEvent);
-            this.yK.add(this.0J8);
+            this.yK = new _1eq(this.g, TimerEvent.TIMER, TimerEvent);
+            this.yK.add(this._0J8);
         }
 
         public function set lF(_arg1:uint):void{
             this.dY = _arg1;
-            this.1qF = new Timer(_arg1, 0);
-            this.1yD = new 1eq(this.1qF, TimerEvent.TIMER, TimerEvent);
-            this.1yD.add(this.1Ae);
+            this._1qF = new Timer(_arg1, 0);
+            this._1yD = new _1eq(this._1qF, TimerEvent.TIMER, TimerEvent);
+            this._1yD.add(this._1Ae);
         }
 
-        public function 0Xk():void{
+        public function _0Xk():void{
             if (this.available)
             {
                 this.g.reset();
                 this.g.start();
-                this.1qF.reset();
-                this.1qF.start();
+                this._1qF.reset();
+                this._1qF.start();
                 this.available = false;
-                if (this.1JX < (this.t8.length - 1))
+                if (this._1JX < (this.t8.length - 1))
                 {
-                    this.1JX++;
+                    this._1JX++;
                 };
                 this.update.dispatch(this.position);
             };
         }
 
-        private function 1Ae(_arg1:TimerEvent):void{
-            if (this.1JX == 0)
+        private function _1Ae(_arg1:TimerEvent):void{
+            if (this._1JX == 0)
             {
-                this.1qF.stop();
+                this._1qF.stop();
             };
             this.available = true;
             this.update.dispatch(this.position);
         }
 
-        private function 0J8(_arg1:TimerEvent):void{
-            this.1JX--;
-            if (this.1JX == 0)
+        private function _0J8(_arg1:TimerEvent):void{
+            this._1JX--;
+            if (this._1JX == 0)
             {
                 this.g.stop();
             };
             this.update.dispatch(this.position);
         }
 
-        public function 18j(_arg1:int):int{
+        public function _18j(_arg1:int):int{
             var _local2:int;
             if (_arg1 <= 0)
             {
-                _local2 = this.t8[this.1JX];
+                _local2 = this.t8[this._1JX];
             };
             return (_local2);
         }

@@ -5,10 +5,8 @@
 
 package com.company.assembleegameclient.util{
     import flash.utils.Dictionary;
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
 
-    public class 0Ep {
+    public class _0Ep {
 
         private static var oY:Dictionary = new Dictionary();
 
@@ -52,7 +50,7 @@ package com.company.assembleegameclient.util{
             delete oY[_arg1];
         }
 
-        public static function 23n(_arg1:Object):void{
+        public static function _23n(_arg1:Object):void{
             var _local2:Class = Object(_arg1).constructor;
             var _local3:Vector.<Object> = oY[_local2];
             if (_local3 == null)

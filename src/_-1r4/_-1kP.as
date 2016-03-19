@@ -5,7 +5,7 @@
 
 package 1r4{
     import yo.0j1;
-    import g0.Tz;
+    import g0._Tz;
     import flash.utils.IDataOutput;
 
     public class 1kP extends 0j1 {
@@ -17,11 +17,11 @@ package 1r4{
         public var 0Hb:int;
         public var f:int;
         public var objectId:int;
-        public var 0qR:Tz;
+        public var 0qR:_Tz;
         public var 0m1:int;
 
         public function 1kP(_arg1:uint, _arg2:Function){
-            this.0qR = new Tz();
+            this.0qR = new _Tz();
             super(_arg1, _arg2);
         }
 

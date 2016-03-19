@@ -3,26 +3,25 @@
 
 //2--.7B
 
-package 2--{
+package _2_
+{
     import flash.display.Sprite;
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsPath;
     import flash.display.IGraphicsData;
     import com.company.util._tu;
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
 
-    public class 7B extends Sprite {
+    public class _7B extends Sprite {
 
-        private var 0B9:GraphicsSolidFill;
+        private var _0B9:GraphicsSolidFill;
         private var path_:GraphicsPath;
 
-        public function 7B(_arg1:int, _arg2:Array){
-            this.0B9 = new GraphicsSolidFill(0x545454);
+        public function _7B(_arg1:int, _arg2:Array){
+            this._0B9 = new GraphicsSolidFill(0x545454);
             this.path_ = new GraphicsPath(new Vector.<int>(), new Vector.<Number>());
             super();
-            var _local3:Vector.<IGraphicsData> = new <IGraphicsData>[this.0B9, this.path_, _tu.END_FILL];
-            _tu.0S-(0, 0, _arg1, _arg1, (_arg1 / 12), _arg2, this.path_);
+            var _local3:Vector.<IGraphicsData> = new <IGraphicsData>[this._0B9, this.path_, _tu.END_FILL];
+            _tu._0S(0, 0, _arg1, _arg1, (_arg1 / 12), _arg2, this.path_);
             graphics.drawGraphicsData(_local3);
         }
 

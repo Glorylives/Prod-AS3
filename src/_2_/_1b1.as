@@ -3,10 +3,10 @@
 
 //2--.1b1
 
-package 2--{
+package _2_{
     import flash.events.*;
 
-    public interface 1b1 extends IEventDispatcher {
+    public interface _1b1 extends IEventDispatcher {
 
         function disable():void;
         function isEnabled():Boolean;

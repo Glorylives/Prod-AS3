@@ -8,6 +8,9 @@ import _04_._1JZ;
 
 import _0OG._22M;
 
+import _0Px._0MX;
+import _0Px._12v;
+
 import _0Px._1zw;
 
 import _0UV._0rh;
@@ -24,6 +27,8 @@ import _1n4._1WS;
 
 import _1n4._1cA;
 
+import _1u._1Ys;
+
 import _1yZ._1go;
 
 import _9T._1zh;
@@ -34,13 +39,17 @@ import _ZS._0ZC;
 
 import _eC._0A3;
 
+import _gx._1z1;
+
 import com.company.assembleegameclient.map.Square;
 import com.company.assembleegameclient.map._1C8;
+import com.company.assembleegameclient.parameters.Parameters;
 import com.company.assembleegameclient.tutorial.Tutorial;
 import com.company.assembleegameclient.tutorial.doneAction;
 import com.company.assembleegameclient.util.ConditionEffect;
 import com.company.assembleegameclient.util.TextureRedrawer;
 import com.company.assembleegameclient.util._09g;
+import com.company.assembleegameclient.util._0Ep;
 import com.company.assembleegameclient.util._0s0;
 
 import com.company.assembleegameclient.util._BJ;
@@ -196,7 +205,7 @@ public class Player extends Character {
             if (this._1MS == null)
             {
                 this._1MS = new Point();
-            };
+            }
             this._1x7 = _arg1;
             this._1MS.x = _arg2;
             this._1MS.y = _arg3;
@@ -206,7 +215,7 @@ public class Player extends Character {
                 this._1MS.x = -(this._1MS.y);
                 this._1MS.y = -(_local4);
                 this._1x7 = -(this._1x7);
-            };
+            }
         }
 
         public function _1Ep(_arg1:int):void{
@@ -215,7 +224,6 @@ public class Player extends Character {
 
 import _AO._du;
 
-import com.company.assembleegameclient.objects.Player;
 
 import com.company.util.PointUtil;
 import com.company.util._hd;
@@ -243,8 +251,8 @@ public function setTokens(_arg1:int):void{
                     if (((!((_local4 == null))) && (!((_local4 == this)))))
                     {
                         _local4._1E5(_local4.guildName_);
-                    };
-                };
+                    }
+                }
             } else
             {
                 _local5 = ((((((!((_local2 == null))) && (!((_local2.guildName_ == null))))) && (!((_local2.guildName_ == ""))))) && ((_local2.guildName_ == this.guildName_)));
@@ -252,8 +260,8 @@ public function setTokens(_arg1:int):void{
                 {
                     this._0kh = _local5;
                     _1LO = null;
-                };
-            };
+                }
+            }
         }
 
         public function _0dw(_arg1:Player):Boolean{
@@ -270,13 +278,13 @@ public function setTokens(_arg1:int):void{
             {
                 this._12K.dispatch(this._0Bb(_du._a6));
                 return (false);
-            };
+            }
             var _local2:int = this._1pO();
             if (_local2 > 0)
             {
                 this._12K.dispatch(this._0Bb(_du._Ha, {seconds:int(((_local2 / 1000) + 1))}));
                 return (false);
-            };
+            }
             if (!this._0dw(_arg1))
             {
                 if (_arg1._1vK())
@@ -285,9 +293,9 @@ public function setTokens(_arg1:int):void{
                 } else
                 {
                     this._12K.dispatch(this._0Bb(_du._20Y, {player:_arg1.name_}));
-                };
+                }
                 return (false);
-            };
+            }
             map_.gs_.gsc_.teleport(_arg1.objectId_);
             this.IQ = (getTimer() + b9);
             return (true);
@@ -301,7 +309,7 @@ public function setTokens(_arg1:int):void{
             if (_arg2)
             {
                 this._8k();
-            };
+            }
             var _local3:_0A3 = new _0A3(this, new _1cA().setParams(_arg1), 0xFF00, 2000);
             map_.mapOverlay_.addQueuedText(_local3);
         }
@@ -315,7 +323,7 @@ public function setTokens(_arg1:int):void{
             } else
             {
                 this.Cc(_du._03F);
-            };
+            }
         }
 
         public function _8k(_arg1:uint=0xFF00FF00):void{
@@ -326,7 +334,7 @@ public function setTokens(_arg1:int):void{
             if (_0Sj == 20)
             {
                 return;
-            };
+            }
             var _local2:_1zh = new _1zh(this, 0xFF00, 1000);
             _local2.setStringBuilder(new _1cA().setParams(_du._ev, {exp:_arg1}));
             map_.mapOverlay_.addStatusText(_local2);
@@ -345,14 +353,14 @@ public function setTokens(_arg1:int):void{
                 if (_local4 != null)
                 {
                     return ((((PointUtil._21u(_local4.x_, _local4.y_, x_, y_) < 1)) ? _local4 : null));
-                };
-            };
+                }
+            }
             return (null);
         }
 
         public function _1wy(_arg1:Number, _arg2:Number):Boolean{
-            this._0Ww(_arg1, _arg2, _lH);
-            return (this.moveTo(_lH.x, _lH.y));
+            this._0Ww(_arg1, _arg2, lH);
+            return (this.moveTo(lH.x, lH.y));
         }
 
         override public function moveTo(_arg1:Number, _arg2:Number):Boolean{
@@ -360,7 +368,7 @@ public function setTokens(_arg1:int):void{
             if (map_.gs_.evalIsNotInCombatMapArea())
             {
                 this._3 = this._27E();
-            };
+            }
             return (_local3);
         }
 
@@ -370,14 +378,14 @@ public function setTokens(_arg1:int):void{
                 _arg3.x = x_;
                 _arg3.y = y_;
                 return;
-            };
+            }
             var _local4:Number = (_arg1 - x_);
             var _local5:Number = (_arg2 - y_);
             if ((((((((_local4 < hy)) && ((_local4 > -(hy))))) && ((_local5 < hy)))) && ((_local5 > -(hy)))))
             {
                 this._0pi(_arg1, _arg2, _arg3);
                 return;
-            };
+            }
             var _local6:Number = (hy / Math.max(Math.abs(_local4), Math.abs(_local5)));
             var _local7:Number = 0;
             _arg3.x = x_;
@@ -389,10 +397,10 @@ public function setTokens(_arg1:int):void{
                 {
                     _local6 = (1 - _local7);
                     _local8 = true;
-                };
+                }
                 this._0pi((_arg3.x + (_local4 * _local6)), (_arg3.y + (_local5 * _local6)), _arg3);
                 _local7 = (_local7 + _local6);
-            };
+            }
         }
 
         public function _0pi(_arg1:Number, _arg2:Number, _arg3:Point):void{
@@ -405,23 +413,23 @@ public function setTokens(_arg1:int):void{
                 _arg3.x = _arg1;
                 _arg3.y = _arg2;
                 return;
-            };
+            }
             if (_local4)
             {
                 _local6 = (((_arg1)>x_) ? (int((_arg1 * 2)) / 2) : (int((x_ * 2)) / 2));
                 if (int(_local6) > int(x_))
                 {
                     _local6 = (_local6 - 0.01);
-                };
-            };
+                }
+            }
             if (_local5)
             {
                 _local7 = (((_arg2)>y_) ? (int((_arg2 * 2)) / 2) : (int((y_ * 2)) / 2));
                 if (int(_local7) > int(y_))
                 {
                     _local7 = (_local7 - 0.01);
-                };
-            };
+                }
+            }
             if (!_local4)
             {
                 _arg3.x = _arg1;
@@ -429,9 +437,9 @@ public function setTokens(_arg1:int):void{
                 if (((!((xy == null))) && (!((xy.props_.slideAmount_ == 0)))))
                 {
                     this.xF(false);
-                };
+                }
                 return;
-            };
+            }
             if (!_local5)
             {
                 _arg3.x = _local6;
@@ -439,9 +447,9 @@ public function setTokens(_arg1:int):void{
                 if (((!((xy == null))) && (!((xy.props_.slideAmount_ == 0)))))
                 {
                     this.xF(true);
-                };
+                }
                 return;
-            };
+            }
             var _local8:Number = (((_arg1)>x_) ? (_arg1 - _local6) : (_local6 - _arg1));
             var _local9:Number = (((_arg2)>y_) ? (_arg2 - _local7) : (_local7 - _arg2));
             if (_local8 > _local9)
@@ -451,13 +459,13 @@ public function setTokens(_arg1:int):void{
                     _arg3.x = _arg1;
                     _arg3.y = _local7;
                     return;
-                };
+                }
                 if (this._0co(_local6, _arg2))
                 {
                     _arg3.x = _local6;
                     _arg3.y = _arg2;
                     return;
-                };
+                }
             } else
             {
                 if (this._0co(_local6, _arg2))
@@ -465,14 +473,14 @@ public function setTokens(_arg1:int):void{
                     _arg3.x = _local6;
                     _arg3.y = _arg2;
                     return;
-                };
+                }
                 if (this._0co(_arg1, _local7))
                 {
                     _arg3.x = _arg1;
                     _arg3.y = _local7;
                     return;
-                };
-            };
+                }
+            }
             _arg3.x = _local6;
             _arg3.y = _local7;
         }
@@ -485,7 +493,7 @@ public function setTokens(_arg1:int):void{
             } else
             {
                 moveVec_.x = (moveVec_.x * -1);
-            };
+            }
         }
 
         public function _0co(_arg1:Number, _arg2:Number):Boolean{
@@ -493,7 +501,7 @@ public function setTokens(_arg1:int):void{
             if (((!((xy == _local3))) && ((((_local3 == null)) || (!(_local3._0BK()))))))
             {
                 return (false);
-            };
+            }
             var _local4:Number = (_arg1 - int(_arg1));
             var _local5:Number = (_arg2 - int(_arg2));
             if (_local4 < 0.5)
@@ -501,13 +509,13 @@ public function setTokens(_arg1:int):void{
                 if (this._20I((_arg1 - 1), _arg2))
                 {
                     return (false);
-                };
+                }
                 if (_local5 < 0.5)
                 {
                     if (((this._20I(_arg1, (_arg2 - 1))) || (this._20I((_arg1 - 1), (_arg2 - 1)))))
                     {
                         return (false);
-                    };
+                    }
                 } else
                 {
                     if (_local5 > 0.5)
@@ -515,9 +523,9 @@ public function setTokens(_arg1:int):void{
                         if (((this._20I(_arg1, (_arg2 + 1))) || (this._20I((_arg1 - 1), (_arg2 + 1)))))
                         {
                             return (false);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
             } else
             {
                 if (_local4 > 0.5)
@@ -525,13 +533,13 @@ public function setTokens(_arg1:int):void{
                     if (this._20I((_arg1 + 1), _arg2))
                     {
                         return (false);
-                    };
+                    }
                     if (_local5 < 0.5)
                     {
                         if (((this._20I(_arg1, (_arg2 - 1))) || (this._20I((_arg1 + 1), (_arg2 - 1)))))
                         {
                             return (false);
-                        };
+                        }
                     } else
                     {
                         if (_local5 > 0.5)
@@ -539,9 +547,9 @@ public function setTokens(_arg1:int):void{
                             if (((this._20I(_arg1, (_arg2 + 1))) || (this._20I((_arg1 + 1), (_arg2 + 1)))))
                             {
                                 return (false);
-                            };
-                        };
-                    };
+                            }
+                        }
+                    }
                 } else
                 {
                     if (_local5 < 0.5)
@@ -549,7 +557,7 @@ public function setTokens(_arg1:int):void{
                         if (this._20I(_arg1, (_arg2 - 1)))
                         {
                             return (false);
-                        };
+                        }
                     } else
                     {
                         if (_local5 > 0.5)
@@ -557,11 +565,11 @@ public function setTokens(_arg1:int):void{
                             if (this._20I(_arg1, (_arg2 + 1)))
                             {
                                 return (false);
-                            };
-                        };
-                    };
-                };
-            };
+                            }
+                        }
+                    }
+                }
+            }
             return (true);
         }
 
@@ -584,43 +592,43 @@ public function setTokens(_arg1:int):void{
                 if (this._198 < 0)
                 {
                     this._198 = 0;
-                };
-            };
+                }
+            }
             if (((this._0OA) && (!(isPaused()))))
             {
                 this._0OA = (this._0OA - _arg2);
                 if (this._0OA < 0)
                 {
                     this._0OA = 0;
-                };
-            };
+                }
+            }
             if (((this._0bF) && (!(isPaused()))))
             {
                 this._0bF = (this._0bF - _arg2);
                 if (this._0bF < 0)
                 {
                     this._0bF = 0;
-                };
-            };
+                }
+            }
             if (((_0tJ()) && (!(isPaused()))))
             {
                 if (this.eu == null)
                 {
                     this.eu = new _0t0(this);
                     map_.addObj(this.eu, x_, y_);
-                };
+                }
             } else
             {
                 if (this.eu != null)
                 {
                     map_.removeObj(this.eu.objectId_);
                     this.eu = null;
-                };
-            };
+                }
+            }
             if ((((map_.player_ == this)) && (isPaused())))
             {
                 return (true);
-            };
+            }
             if (this._1MS != null)
             {
                 _local3 = Parameters.data_.cameraAngle;
@@ -628,7 +636,7 @@ public function setTokens(_arg1:int):void{
                 {
                     _local3 = (_local3 + ((_arg2 * Parameters._0g8) * this._1x7));
                     Parameters.data_.cameraAngle = _local3;
-                };
+                }
                 if (((!((this._1MS.x == 0))) || (!((this._1MS.y == 0)))))
                 {
                     _local4 = this._1t5();
@@ -645,12 +653,12 @@ public function setTokens(_arg1:int):void{
                         if (moveVec_.length < _local7)
                         {
                             moveVec_ = moveVec_.add(_local6);
-                        };
+                        }
                     } else
                     {
                         moveVec_.x = (_local4 * Math.cos((_local3 + _local5)));
                         moveVec_.y = (_local4 * Math.sin((_local3 + _local5)));
-                    };
+                    }
                 } else
                 {
                     if ((((moveVec_.length > 0.00012)) && ((xy.props_.slideAmount_ > 0))))
@@ -660,21 +668,21 @@ public function setTokens(_arg1:int):void{
                     {
                         moveVec_.x = 0;
                         moveVec_.y = 0;
-                    };
-                };
+                    }
+                }
                 if (((!((xy == null))) && (xy.props_.push_)))
                 {
                     moveVec_.x = (moveVec_.x - (xy.props_.animate_.dx_ / 1000));
                     moveVec_.y = (moveVec_.y - (xy.props_.animate_.dy_ / 1000));
-                };
-                this.1wy((x_ + (_arg2 * moveVec_.x)), (y_ + (_arg2 * moveVec_.y)));
+                }
+                this._1wy((x_ + (_arg2 * moveVec_.x)), (y_ + (_arg2 * moveVec_.y)));
             } else
             {
                 if (!super.update(_arg1, _arg2))
                 {
                     return (false);
-                };
-            };
+                }
+            }
             if ((((((((((map_.player_ == this)) && ((xy.props_.maxDamage_ > 0)))) && (((xy.lastDamage_ + 500) < _arg1)))) && (!(_0mQ())))) && ((((xy.obj_ == null)) || (!(xy.obj_.props_.protectFromGroundDamage_))))))
             {
                 _local8 = map_.gs_.gsc_.getNextDamage(xy.props_.minDamage_, xy.props_.maxDamage_);
@@ -683,7 +691,7 @@ public function setTokens(_arg1:int):void{
                 damage(-1, _local8, _local9, (_1VZ <= _local8), null);
                 map_.gs_.gsc_.groundDamage(_arg1, x_, y_);
                 xy.lastDamage_ = _arg1;
-            };
+            }
             return (true);
         }
 
@@ -691,7 +699,7 @@ public function setTokens(_arg1:int):void{
             if (map_ == null)
             {
                 return;
-            };
+            }
             var _local1:Square = map_.getSquare(x_, y_);
             if (_local1.props_._1rv)
             {
@@ -701,7 +709,7 @@ public function setTokens(_arg1:int):void{
             {
                 _0Km = 0;
                 this.TG = _local1.props_.speed_;
-            };
+            }
         }
 
         override protected function makeNameBitmapData():BitmapData{
@@ -716,11 +724,11 @@ public function setTokens(_arg1:int):void{
             if (this._0kh)
             {
                 return (Parameters._19c);
-            };
+            }
             if (this._1TS)
             {
                 return (Parameters._0zj);
-            };
+            }
             return (0xFFFFFF);
         }
 
@@ -733,7 +741,7 @@ public function setTokens(_arg1:int):void{
                 this.gD = new GraphicsPath(tu._0xS, new Vector.<Number>());
                 this.nc = new GraphicsSolidFill(2542335);
                 this._24R = new GraphicsPath(tu._0xS, new Vector.<Number>());
-            };
+            }
             if (this.breath_ <= Parameters.kk)
             {
                 _local7 = ((Parameters.kk - this.breath_) / Parameters.kk);
@@ -741,7 +749,7 @@ public function setTokens(_arg1:int):void{
             } else
             {
                 this._0XC.color = 0x545454;
-            };
+            }
             var _local3:int = 20;
             var _local4:int = 8;
             var _local5:int = 6;
@@ -761,7 +769,7 @@ public function setTokens(_arg1:int):void{
                 _arg1.push(this.nc);
                 _arg1.push(this._24R);
                 _arg1.push(tu.END_FILL);
-            };
+            }
             _14d.MM(this.nc, true);
             _14d.MM(this._0XC, true);
         }
@@ -773,26 +781,26 @@ public function setTokens(_arg1:int):void{
                 if (!Parameters._1Wc)
                 {
                     _0lq(_arg1, _arg2);
-                };
+                }
             } else
             {
                 if (this.breath_ >= 0)
                 {
                     this._23A(_arg1, _arg3);
-                };
-            };
+                }
+            }
         }
 
         private function _1t5():Number{
             if (_19q())
             {
                 return ((Rq * this.TG));
-            };
+            }
             var _local1:Number = (Rq + ((this.speed_ / 75) * (_01k - Rq)));
             if (((_0Wy()) || (ul())))
             {
                 _local1 = (_local1 * 1.5);
-            };
+            }
             _local1 = (_local1 * this.TG);
             return (_local1);
         }
@@ -801,12 +809,12 @@ public function setTokens(_arg1:int):void{
             if (c6())
             {
                 return (_0Ox);
-            };
+            }
             var _local1:Number = (_0Ox + ((this._0B0 / 75) * (_0Ck - _0Ox)));
             if ( _use())
             {
                 _local1 = (_local1 * 1.5);
-            };
+            }
             return (_local1);
         }
 
@@ -814,12 +822,12 @@ public function setTokens(_arg1:int):void{
             if (_0RC())
             {
                 return (_0I9);
-            };
+            }
             var _local1:Number = (_0I9 + ((this._17R / 75) * (_0eV - _0I9)));
             if (_1Ka())
             {
                 _local1 = (_local1 * 1.5);
-            };
+            }
             return (_local1);
         }
 
@@ -839,7 +847,7 @@ public function setTokens(_arg1:int):void{
             texture_ = _local4.texture_;
             mask_ = _local4.mask_;
             _3q = _local4._3q;
-            this.13O = false;
+            this._13O = false;
         }
 
         override protected function getTexture(_arg1:_1C8, _arg2:int):BitmapData{
@@ -864,11 +872,11 @@ public function setTokens(_arg1:int):void{
                     if (((!((moveVec_.y == 0))) || (!((moveVec_.x == 0)))))
                     {
                         Kn = Math.atan2(moveVec_.y, moveVec_.x);
-                    };
+                    }
                     _local3 = ((_arg2 % _local10) / _local10);
                     _local4 = _BJ._1xM;
-                };
-            };
+                }
+            }
             if (this.AG())
             {
                 ((this._13O) && (this._0IX()));
@@ -877,15 +885,15 @@ public function setTokens(_arg1:int):void{
                 if (!this._13O)
                 {
                     this.hM();
-                };
-            };
+                }
+            }
             if (_arg1._1kT)
             {
                 _local5 = new _0s0(XZ(), null);
             } else
             {
                 _local5 = _3q.imageFromFacing(Kn, _arg1, _local4, _local3);
-            };
+            }
             var _local6:int = tex1Id_;
             var _local7:int = tex2Id_;
             var _local8:BitmapData;
@@ -898,37 +906,37 @@ public function setTokens(_arg1:int):void{
                 } else
                 {
                     _local8 = _local11[_local5];
-                };
+                }
                 _local6 = this._3.getTex1Id(tex1Id_);
                 _local7 = this._3.getTex2Id(tex2Id_);
             } else
             {
                 _local8 = _0Rx[_local5];
-            };
+            }
             if (_local8 == null)
             {
                 _local8 = TextureRedrawer.resize(_local5.image_, _local5.mask_, size_, false, _local6, _local7);
                 if (this._3 != null)
                 {
-                    _0Rx[this.3][_local5] = _local8;
+                    _0Rx[this._3][_local5] = _local8;
                 } else
                 {
                     _0Rx[_local5] = _local8;
-                };
-            };
+                }
+            }
             if (_1VZ < (ba * 0.2))
             {
                 _local12 = (int((Math.abs(Math.sin((_arg2 / 200))) * 10)) / 10);
                 _local13 = 128;
                 _local14 = new ColorTransform(1, 1, 1, 1, (_local12 * _local13), (-(_local12) * _local13), (-(_local12) * _local13));
                 _local8 = _hd._07J(_local8, _local14);
-            };
+            }
             var _local9:BitmapData = _0Rx[_local8];
             if (_local9 == null)
             {
                 _local9 = _1go._0Lr(_local8, (((this._0Lv == -1)) ? 0 : 0xFF0000));
                 _0Rx[_local8] = _local9;
-            };
+            }
             if (((((isPaused()) || (_0Iz()))) || (_0fu())))
             {
                 _local9 = _hd._1H9(_local9, _1hD);
@@ -937,8 +945,8 @@ public function setTokens(_arg1:int):void{
                 if (_1vK())
                 {
                     _local9 = _hd._1Ko(_local9, 0.4);
-                };
-            };
+                }
+            }
             return (_local9);
         }
 
@@ -951,7 +959,7 @@ public function setTokens(_arg1:int):void{
                 _local2 = ((4 / _local1.image_.width) * 100);
                 _0Sz = TextureRedrawer.resize(_local1.image_, _local1.mask_, _local2, true, tex1Id_, tex2Id_);
                 _0Sz = _1go._0Lr(_0Sz, 0);
-            };
+            }
             return (_0Sz);
         }
 
@@ -964,23 +972,23 @@ public function setTokens(_arg1:int):void{
             if ((((map_ == null)) || (isPaused())))
             {
                 return (false);
-            };
+            }
             var _local4:int = _1Wz[1];
             if (_local4 == -1)
             {
                 return (false);
-            };
+            }
             var _local5:XML = ObjectLibrary.GD[_local4];
             if ((((_local5 == null)) || (!(_local5.hasOwnProperty("Usable")))))
             {
                 return (false);
-            };
+            }
             var _local6:Point = map_.pSTopW(_arg1, _arg2);
             if (_local6 == null)
             {
                 _0ZC.play("error");
                 return (false);
-            };
+            }
             for each (_local7 in _local5.Activate)
             {
                 if (_local7.toString() == _0MX.TELEPORT)
@@ -989,9 +997,9 @@ public function setTokens(_arg1:int):void{
                     {
                         _0ZC.play("error");
                         return (false);
-                    };
-                };
-            };
+                    }
+                }
+            }
             _local8 = getTimer();
             if (_arg3 == _12v._1Oc)
             {
@@ -999,25 +1007,25 @@ public function setTokens(_arg1:int):void{
                 {
                     _0ZC.play("error");
                     return (false);
-                };
+                }
                 _local10 = int(_local5.MpCost);
                 if (_local10 > this._12a)
                 {
                     _0ZC.play("no_mana");
                     return (false);
-                };
+                }
                 _local11 = 500;
                 if (_local5.hasOwnProperty("Cooldown"))
                 {
                     _local11 = (Number(_local5.Cooldown) * 1000);
-                };
+                }
                 this._0T6 = (_local8 + _local11);
                 map_.gs_.gsc_.useItem(_local8, objectId_, 1, _local4, _local6.x, _local6.y, _arg3);
                 if (_local5.Activate == _0MX.SHOOT)
                 {
                     _local9 = Math.atan2(_arg2, _arg1);
                     this._04U(_local8, _local4, _local5, (Parameters.data_.cameraAngle + _local9), false);
-                };
+                }
             } else
             {
                 if (_local5.hasOwnProperty("MultiPhase"))
@@ -1027,10 +1035,10 @@ public function setTokens(_arg1:int):void{
                     if (_local10 <= this._12a)
                     {
                         _local9 = Math.atan2(_arg2, _arg1);
-                        this.04U(_local8, _local4, _local5, (Parameters.data_.cameraAngle + _local9), false);
-                    };
-                };
-            };
+                        this._04U(_local8, _local4, _local5, (Parameters.data_.cameraAngle + _local9), false);
+                    }
+                }
+            }
             return (true);
         }
 
@@ -1043,7 +1051,7 @@ public function setTokens(_arg1:int):void{
             if ((((_local3 == null)) || (!(_local3.hasOwnProperty("RateOfFire")))))
             {
                 return;
-            };
+            }
             var _local4:Number = Number(_local3.RateOfFire);
             this._1ff = ((1 / this.Au()) * (1 / _local4));
             super.setAttack(_arg1, _arg2);
@@ -1053,13 +1061,13 @@ public function setTokens(_arg1:int):void{
             if ((((((((map_ == null)) || (_05R()))) || (isPaused()))) || (_0fu())))
             {
                 return;
-            };
+            }
             var _local2:int = _1Wz[0];
             if (_local2 == -1)
             {
                 this._12K.dispatch(_1Ys.make(Parameters._1Wj, _du._0tb));
                 return;
-            };
+            }
             var _local3:XML = ObjectLibrary.GD[_local2];
             var _local4:int = getTimer();
             var _local5:Number = Number(_local3.RateOfFire);
@@ -1067,7 +1075,7 @@ public function setTokens(_arg1:int):void{
             if (_local4 < (_0FE + this._1ff))
             {
                 return;
-            };
+            }
             doneAction(map_.gs_, Tutorial._1i3);
             SB = _arg1;
             _0FE = _local4;
@@ -1097,7 +1105,7 @@ public function setTokens(_arg1:int):void{
                 } else
                 {
                     _local12.reset(_arg2, 0, objectId_, _local11, _local9, _arg1);
-                };
+                }
                 _local13 = int(_local12.gF.minDamage_);
                 _local14 = int(_local12.gF.maxDamage_);
                 _local15 = ((_arg5) ? this._0NN() : 1);
@@ -1105,17 +1113,17 @@ public function setTokens(_arg1:int):void{
                 if (_arg1 > (map_.gs_.moveRecords_.lastClearTime_ + 600))
                 {
                     _local16 = 0;
-                };
+                }
                 _local12._1gy(_local16);
                 if ((((_local10 == 0)) && (!((_local12._0Q == null)))))
                 {
                     _0ZC.play(_local12._0Q, 0.75, false);
-                };
+                }
                 map_.addObj(_local12, (x_ + (Math.cos(_arg4) * 0.3)), (y_ + (Math.sin(_arg4) * 0.3)));
                 map_.gs_.gsc_.playerShoot(_arg1, _local12);
                 _local9 = (_local9 + _local7);
                 _local10++;
-            };
+            }
         }
 
         public function AG():Boolean{
@@ -1130,9 +1138,9 @@ public function setTokens(_arg1:int):void{
                 if (_1Wz[_local2] <= 0)
                 {
                     return (false);
-                };
+                }
                 _local2++;
-            };
+            }
             return (true);
         }
 
@@ -1144,9 +1152,9 @@ public function setTokens(_arg1:int):void{
                 if (_1Wz[_local2] <= 0)
                 {
                     return (_local2);
-                };
+                }
                 _local2++;
-            };
+            }
             return (-1);
         }
 
@@ -1159,9 +1167,9 @@ public function setTokens(_arg1:int):void{
                 if (_1Wz[_local3] <= 0)
                 {
                     _local2++;
-                };
+                }
                 _local3++;
-            };
+            }
             return (_local2);
         }
 
@@ -1171,7 +1179,7 @@ public function setTokens(_arg1:int):void{
             if (!this._0Th)
             {
                 return (-1);
-            };
+            }
             if (_arg1 == _1Js._1yQ)
             {
                 _local2 = _1zw._1ye;
@@ -1180,16 +1188,16 @@ public function setTokens(_arg1:int):void{
             {
                 _local2 = (_1zw._1ye + _1zw._1dg);
                 _local3 = _1Wz.length;
-            };
+            }
             var _local4:uint = _local2;
             while (_local4 < _local3)
             {
                 if (_1Wz[_local4] <= 0)
                 {
                     return (_local4);
-                };
+                }
                 _local4++;
-            };
+            }
             return (-1);
         }
 
@@ -1200,7 +1208,7 @@ public function setTokens(_arg1:int):void{
                     return (this._0R8);
                 case _1z1.Ww:
                     return (this._03y);
-            };
+            }
             return (0);
         }
 

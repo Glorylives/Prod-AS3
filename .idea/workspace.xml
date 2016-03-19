@@ -26,31 +26,7 @@
     <favorites_list name="Rotmg123.5.1" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="GameObject.as" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/objects/GameObject.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1157" column="29" selection-start-line="1157" selection-start-column="29" selection-end-line="1157" selection-end-column="29" />
-              <folding>
-                <element signature="e#170#193#0" expanded="true" />
-                <element signature="e#24082#24099#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.as" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Player.as">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.42668864">
-              <caret line="933" column="35" selection-start-line="933" selection-start-column="35" selection-end-line="933" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,34 +43,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/ui/StatusBar.as" />
-        <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Sign.as" />
-        <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/GuildHallPortal.as" />
-        <option value="$PROJECT_DIR$/src/_-Wn/_0EB.as" />
-        <option value="$PROJECT_DIR$/src/_Wn/_0EB.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_-0dE.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_1Ta.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_-0a0.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_-1iY.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_-Lm.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_Lm.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_1iY.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_0a0.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_-0dS.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_0dS.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_0dE.as" />
-        <option value="$PROJECT_DIR$/src/_tn/_0ec.as" />
-        <option value="$PROJECT_DIR$/src/_Wn/_-1ot.as" />
-        <option value="$PROJECT_DIR$/src/_Wn/_1ot.as" />
-        <option value="$PROJECT_DIR$/src/_0Uq/_0uI.as" />
-        <option value="$PROJECT_DIR$/src/_1Gb/_-1aM.as" />
-        <option value="$PROJECT_DIR$/src/_1Gb/_1aM.as" />
-        <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/FortuneTeller.as" />
-        <option value="$PROJECT_DIR$/src/_1Np/_-1JY.as" />
-        <option value="$PROJECT_DIR$/src/_1zG/_0r.as" />
-        <option value="$PROJECT_DIR$/src/_0YY/ null.as" />
-        <option value="$PROJECT_DIR$/src/_0YY/_null.as" />
-        <option value="$PROJECT_DIR$/src/_1a/_Y3.as" />
         <option value="$PROJECT_DIR$/src/_1Np/_1JY.as" />
         <option value="$PROJECT_DIR$/src/_1Np/_0Xn.as" />
         <option value="$PROJECT_DIR$/src/_g0/_1tk.as" />
@@ -118,6 +66,34 @@
         <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Container.as" />
         <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/util/_BJ.as" />
         <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/GameObject.as" />
+        <option value="$PROJECT_DIR$/src/_g0/_Tz.as" />
+        <option value="$PROJECT_DIR$/src/_5z/_0Q7.as" />
+        <option value="$PROJECT_DIR$/src/_5z/_-2w.as" />
+        <option value="$PROJECT_DIR$/src/_5z/_2w.as" />
+        <option value="$PROJECT_DIR$/src/_5z/_0OH.as" />
+        <option value="$PROJECT_DIR$/src/_-21k/_-0LB.as" />
+        <option value="$PROJECT_DIR$/src/_21k/_0LB.as" />
+        <option value="$PROJECT_DIR$/src/_Ct/_-uX.as" />
+        <option value="$PROJECT_DIR$/src/_0Z/_0Aq.as" />
+        <option value="$PROJECT_DIR$/src/_-2--/_-08G.as" />
+        <option value="$PROJECT_DIR$/src/_2_/_7B.as" />
+        <option value="$PROJECT_DIR$/src/_2_/_mG.as" />
+        <option value="$PROJECT_DIR$/src/_0uE/_-Py.as" />
+        <option value="$PROJECT_DIR$/src/_0uE/_Py.as" />
+        <option value="$PROJECT_DIR$/src/_2_/_1b1.as" />
+        <option value="$PROJECT_DIR$/src/_2_/_08G.as" />
+        <option value="$PROJECT_DIR$/src/_0uE/_-0Gd.as" />
+        <option value="$PROJECT_DIR$/src/_0uE/_0Gd.as" />
+        <option value="$PROJECT_DIR$/src/_Ct/_uX.as" />
+        <option value="$PROJECT_DIR$/src/_Ct/_0LH.as" />
+        <option value="$PROJECT_DIR$/src/_0Px/_0MX.as" />
+        <option value="$PROJECT_DIR$/src/_0Px/_12v.as" />
+        <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/util/_-0Ep.as" />
+        <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/util/_0Ep.as" />
+        <option value="$PROJECT_DIR$/src/_gx/_-1z1.as" />
+        <option value="$PROJECT_DIR$/src/_0xo/_25Q.as" />
+        <option value="$PROJECT_DIR$/src/_gx/_1z1.as" />
+        <option value="$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Player.as" />
       </list>
     </option>
   </component>
@@ -261,6 +237,10 @@
               <option name="myItemId" value="assembleegameclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -285,28 +265,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assembleegameclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="objects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rotmg123.5.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Production AS3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_ZS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,42 +426,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="_OZ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rotmg123.5.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Production AS3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_Jy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rotmg123.5.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Production AS3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="_Jv" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -577,24 +499,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_gY" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rotmg123.5.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Production AS3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_g0" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -756,6 +660,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="_5z" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rotmg123.5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Production AS3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_2_" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rotmg123.5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Production AS3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="_1Wd" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -811,24 +751,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_1qg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rotmg123.5.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Production AS3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_1PB" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1026,7 +948,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="_0Z" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rotmg123.5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Production AS3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_0xo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rotmg123.5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Production AS3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_0uE" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rotmg123.5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Production AS3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="_0q4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Rotmg123.5.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Production AS3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="_0Px" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1084,42 +1078,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rotmg123.5.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Production AS3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_0DE" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Rotmg123.5.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Production AS3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_0aT" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -1130,7 +1088,7 @@
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="play&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/assembleegameclient/objects/Player.as&#10;gam&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/assembleegameclient/objects/GameObject.as&#10;OI&#9;null&#9;null&#10;WE&#9;null&#9;null&#10;0ep&#9;null&#9;null&#10;14l&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0DE/_-14l.as&#10;1f&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0DE/_-1f.as&#10;0bw&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0DE/_-0bw.as&#10;k&#9;null&#9;null&#10;1mR&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_h0/_-1mR.as&#10;1st&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1js/_-1sT.as&#10;0t7&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-h0/_-0t7.as&#10;0Qy&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/assembleegameclient/objects/_-0Qy.as&#10;ExplosionEffect&#9;null&#9;null&#10;1tk&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-g0/_-1tk.as&#10;Y3&#9;null&#9;null&#10;_-0-r&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zG/_-0-r.as&#10;1JY&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1Np/_-1JY.as&#10;0Xn&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1Np/_-0Xn.as&#10;1aM&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-1Gb/_-1aM.as&#10;1ot&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_Wn/_-1ot.as&#10;0ec&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-0ec.as&#10;0dS&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-0dS.as&#10;1iY&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-1iY.as&#10;0a0&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-0a0.as&#10;1Ta&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-1Ta.as&#10;0dE&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-0dE.as&#10;0EB&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-Wn/_-0EB.as&#10;0ui&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-0Uq/_-0uI.as&#10;0Ug&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/kabam/rotmg/assets/model/_-0Ug.as&#10;_0Uj&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zp/_-0Uj.as&#10;13w&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zp/_-13w.as&#10;0H7&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_ZS/_-0H7.as&#10;0GF&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zp/_-0GF.as&#10;0kr&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zp/_-0kr.as&#10;0Kt&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zp/_-0Kt.as&#10;0vQ&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zp/_-0vQ.as&#10;Options&#9;null&#9;null&#10;1Ys&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-1u-/_-1Ys.as&#10;0pH&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-1nb/_-0pH.as&#10;0Vx&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/kabam/rotmg/assets/services/_-0Vx.as&#10;0rh&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0UV/_-0rh.as&#10;072&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1Np/_-072.as&#10;0t0&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1Np/_-0t0.as&#10;LevelUpEffect&#9;null&#9;null&#10;25C&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/util/_-25C.as&#10;1Nr&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_099/_-1Nr.as&#10;_0DJ&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/assembleegameclient/ui/_-0DJ.as&#10;0DJ&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-0q4/_-0DJ.as&#10;TeleportMenuOption&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="25Q&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0xo/_-25Q.as&#10;1z1&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_gx/_-1z1.as&#10;0Ep&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/assembleegameclient/util/_-0Ep.as&#10;12v&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0Px/_-12v.as&#10;0MX&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0Px/_-0MX.as&#10;lH&#9;null&#9;null&#10;_0Gd&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0uE/_-0Gd.as&#10;Py&#9;null&#9;null&#10;mG&#9;null&#9;null&#10;7B&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_2_/_-7B.as&#10;08G&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-2--/_-08G.as&#10;0Aq&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0Z/_-0Aq.as&#10;0LB&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-21k/_-0LB.as&#10;2w&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_5z/_-2w.as&#10;0Q7&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_5z/_-0Q7.as&#10;0OH&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_5z/_-0OH.as&#10;lH.as&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-Ct/_-0LH.as&#10;play&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/assembleegameclient/objects/Player.as&#10;gam&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/assembleegameclient/objects/GameObject.as&#10;OI&#9;null&#9;null&#10;WE&#9;null&#9;null&#10;0ep&#9;null&#9;null&#10;14l&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0DE/_-14l.as&#10;1f&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0DE/_-1f.as&#10;0bw&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_0DE/_-0bw.as&#10;k&#9;null&#9;null&#10;1mR&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_h0/_-1mR.as&#10;1st&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1js/_-1sT.as&#10;0t7&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-h0/_-0t7.as&#10;0Qy&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/com/company/assembleegameclient/objects/_-0Qy.as&#10;ExplosionEffect&#9;null&#9;null&#10;1tk&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-g0/_-1tk.as&#10;Y3&#9;null&#9;null&#10;_-0-r&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zG/_-0-r.as&#10;1JY&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1Np/_-1JY.as&#10;0Xn&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1Np/_-0Xn.as&#10;1aM&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-1Gb/_-1aM.as&#10;1ot&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_Wn/_-1ot.as&#10;0ec&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-0ec.as&#10;0dS&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-0dS.as&#10;1iY&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-1iY.as&#10;0a0&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-0a0.as&#10;1Ta&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-1Ta.as&#10;0dE&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_tn/_-0dE.as&#10;0EB&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-Wn/_-0EB.as&#10;0ui&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_-0Uq/_-0uI.as&#10;0Ug&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/kabam/rotmg/assets/model/_-0Ug.as&#10;_0Uj&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zp/_-0Uj.as&#10;13w&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_1zp/_-13w.as&#10;0H7&#9;FILE&#9;file://C:/Users/Kieron/Documents/Production AS3/src/_ZS/_-0H7.as" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
@@ -1474,12 +1432,12 @@
       <workItem from="1458214886329" duration="338000" />
       <workItem from="1458231962645" duration="14685000" />
       <workItem from="1458293358777" duration="6559000" />
-      <workItem from="1458413730716" duration="12603000" />
+      <workItem from="1458413730716" duration="14431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84867000" />
+    <option name="totallyTimeSpent" value="86695000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1492,7 +1450,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32463294" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
@@ -1505,7 +1463,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.49394855" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2510981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2510981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21732284" sideWeight="0.442899" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1534,7 +1492,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="73" />
+      <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1543,241 +1501,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/_1zp/_13w.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.112026356">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/parameters/Parameters.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33217993">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1zp/Options.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="7.3591433">
-          <caret line="432" column="0" selection-start-line="432" selection-start-column="0" selection-end-line="432" selection-end-column="0" />
-          <folding>
-            <element signature="e#98#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1u/_rH.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44810542">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#90#110#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kabam/rotmg/assets/model/_0Ug.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kabam/rotmg/assets/services/_0Vx.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.092257">
-          <caret line="48" column="52" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_bD/_0A.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42009884">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kabam/rotmg/assets/model/Animation.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33217993">
-          <caret line="45" column="27" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="27" />
-          <folding>
-            <element signature="e#143#171#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/ui/StatusBar.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14168039">
-          <caret line="78" column="54" selection-start-line="78" selection-start-column="54" selection-end-line="78" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_0Uq/_-1E7.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Sign.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1892583">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/objects/GuildHallPortal.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3478261">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_Wn/_0EB.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2173913">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#94#126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_tn/_1Ta.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_tn/_Lm.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6721582">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_tn/_1iY.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19604613">
-          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#94#110#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_tn/_0a0.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14003295">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_tn/_0dS.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14003295">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_tn/_0dE.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16803955">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_tn/_0ec.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16144976">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_Wn/_1ot.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6523888">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#94#110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_0Uq/_0uI.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.276771">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#92#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/_1Gb/_1aM.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44810542">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/objects/FortuneTeller.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42009884">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding>
-            <element signature="e#173#190#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/_1m9/_14d.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33248082">
@@ -2021,6 +1744,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/_1u/_1Ys.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14003295">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/objects/GameObject.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2032,11 +1763,243 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/_g0/_Tz.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5041186">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_5z/_0Q7.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08401977">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_5z/_2w.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2800659">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_5z/_0OH.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22075783">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#90#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_21k/_0LB.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.112026356">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0Z/_0Aq.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.324547">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#95#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_OZ/_08g.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19604613">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0uE/PetFeeder.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3360791">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#98#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_2_/_7B.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3014827">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#95#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_2_/_mG.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14003295">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_2_/_1b1.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14003295">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0uE/_Py.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5848435">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="e#92#106#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_2_/_08G.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.056013178">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#95#123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0uE/_0Gd.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70016474">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_Ct/_uX.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.184514">
+          <caret line="79" column="28" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+          <folding>
+            <element signature="e#90#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_Ct/_0LH.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44810542">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#91#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0Px/_0J9.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0Px/_0MX.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0Px/_1zw.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0Px/_12v.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08401977">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/util/_0Ep.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3047776">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_0xo/_25Q.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5041186">
+          <caret line="88" column="14" selection-start-line="88" selection-start-column="14" selection-end-line="88" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#96#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/_gx/_1z1.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2948929">
+          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/assembleegameclient/objects/Player.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.42668864">
-          <caret line="933" column="35" selection-start-line="933" selection-start-column="35" selection-end-line="933" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="0.38385502">
+          <caret line="1210" column="13" selection-start-line="1210" selection-start-column="13" selection-end-line="1210" selection-end-column="13" />
+          <folding>
+            <element signature="e#166#183#0" expanded="true" />
+            <element signature="e#7264#7279#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

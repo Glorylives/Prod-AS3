@@ -3,10 +3,10 @@
 
 //5z.0Q7
 
-package 5z{
+package _5z{
     import mx.core.ByteArrayAsset;
 
-    public class 0Q7 extends ByteArrayAsset {
+    public class _0Q7 extends ByteArrayAsset {
 
 
     }

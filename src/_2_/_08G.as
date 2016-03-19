@@ -3,32 +3,32 @@
 
 //2--.08G
 
-package 2--{
+package _2_{
     import flash.display.Sprite;
-    import 0uE.Py;
-    import 5z.0tK;
+    import _0uE._Py;
+    import _5z._0tK;
 
-    public class 08G extends Sprite implements 1b1 {
+    public class _08G extends Sprite implements _1b1 {
 
-        public static const 0yr:String = "topLeft";
-        public static const 1BI:String = "topRight";
-        public static const 1ky:String = "bottomRight";
-        public static const 1Q3:String = "bottomLeft";
+        public static const _0yr:String = "topLeft";
+        public static const _1BI:String = "topRight";
+        public static const _1ky:String = "bottomRight";
+        public static const _1Q3:String = "bottomLeft";
         public static const HJ:String = "regular";
-        private static const 23z:Array = [0yr, 1BI, 1ky, 1Q3];
+        private static const _23z:Array = [_0yr, _1BI, _1ky, _1Q3];
 
-        public var 1Xj:mG;
-        private var BX:Py;
+        public var _1Xj:_mG;
+        private var BX:_Py;
         private var background:String;
         private var size:int;
-        private var 0g9:7B;
+        private var _0g9:_7B;
 
-        public function 08G(){
-            this.1Xj = new mG();
+        public function _08G(){
+            this._1Xj = new _mG();
             super();
         }
 
-        public function mL(_arg1:Py):void{
+        public function mL(_arg1:_Py):void{
             this.BX = _arg1;
             addChild(_arg1);
         }
@@ -45,21 +45,21 @@ package 2--{
             this.size = _arg1;
         }
 
-        public function 0mR(_arg1:String):void{
+        public function _0mR(_arg1:String):void{
             this.background = _arg1;
-            if (this.0g9)
+            if (this._0g9)
             {
-                removeChild(this.0g9);
+                removeChild(this._0g9);
             };
-            this.0g9 = 7B(this.1Xj.create(this.size, this.X0()));
-            addChildAt(this.0g9, 0);
+            this._0g9 = _7B(this._1Xj.create(this.size, this.X0()));
+            addChildAt(this._0g9, 0);
         }
 
         private function X0():Array{
             var _local1:Array = [0, 0, 0, 0];
             if (this.background != HJ)
             {
-                _local1[23z.indexOf(this.background)] = 1;
+                _local1[_23z.indexOf(this.background)] = 1;
             };
             return (_local1);
         }
@@ -68,7 +68,7 @@ package 2--{
             return (this.background);
         }
 
-        public function getPetVO():0tK{
+        public function getPetVO():_0tK{
             return (this.BX.getPetVO());
         }
 

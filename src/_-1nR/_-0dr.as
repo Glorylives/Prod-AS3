@@ -5,15 +5,15 @@
 
 package 1nR{
     import yo.0j1;
-    import g0.Tz;
+    import g0._Tz;
     import flash.utils.IDataOutput;
 
     public class 0dr extends 0j1 {
 
-        public var 0qR:Tz;
+        public var 0qR:_Tz;
 
         public function 0dr(_arg1:uint, _arg2:Function){
-            this.0qR = new Tz();
+            this.0qR = new _Tz();
             super(_arg1, _arg2);
         }
 
