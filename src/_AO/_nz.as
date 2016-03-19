@@ -38,7 +38,7 @@ import flash.text.Font;
             if (_arg5)
             {
                 _local6.align = "center";
-            };
+            }
             _arg1.defaultTextFormat = _local6;
             _arg1.setTextFormat(_local6);
             return (_local6);

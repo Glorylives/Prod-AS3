@@ -36,10 +36,10 @@ package Av{
                 if (((_local2) && (_local2.length)))
                 {
                     _local1 = _local2;
-                };
+                }
             } catch(error:Error)
             {
-            };
+            }
             return (_local1);
         }
 

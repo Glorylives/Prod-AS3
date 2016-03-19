@@ -27,7 +27,7 @@ package 0N9{
             } else
             {
                 this.11u.ja.gsc_.playerText(this.data);
-            };
+            }
         }
 
 

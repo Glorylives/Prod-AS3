@@ -43,7 +43,7 @@ import flash.utils.Timer;
                 removeEventListener(MouseEvent.MOUSE_DOWN, this.onMouseDown);
                 removeEventListener(MouseEvent.MOUSE_UP, this.onMouseUp);
                 removeEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
-            };
+            }
         }
 
         public function _0dV():DisplayObject{
@@ -64,7 +64,7 @@ import flash.utils.Timer;
             if (this.eZ)
             {
                 return;
-            };
+            }
             if (_arg1.shiftKey)
             {
                 this.oz(false);
@@ -84,9 +84,9 @@ import flash.utils.Timer;
                     {
                         this.oz(false);
                         dispatchEvent(new _WE(_WE.ITEM_DOUBLE_CLICK, this));
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function onMouseDown(_arg1:MouseEvent):void{
@@ -102,7 +102,7 @@ import flash.utils.Timer;
             } else
             {
                 this._1kH.stop();
-            };
+            }
         }
 
         private function _1EC(_arg1:MouseEvent):void{
@@ -127,7 +127,7 @@ import flash.utils.Timer;
                 this._1pe(null);
                 this.oz(false);
                 this.gE(_arg1);
-            };
+            }
         }
 
         private function _OI(_arg1:TimerEvent):void{
@@ -159,7 +159,7 @@ import flash.utils.Timer;
             if (this.eZ)
             {
                 _0ep.stopDrag();
-            };
+            }
         }
 
 

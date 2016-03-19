@@ -26,7 +26,7 @@ package 0ud{
             var _local2:Object = {
                 identifier:_local1.id_,
                 data:_local1.data_
-            };
+            }
             this. each.1oG.addOnce(this.nV);
             this. each.purchaseItems(_local2);
         }

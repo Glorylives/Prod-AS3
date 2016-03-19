@@ -25,7 +25,7 @@ import flash.display.IGraphicsData;
             {
                 this._07r();
                 _local1++;
-            };
+            }
         }
 
         override public function draw(_arg1:_1C8, _arg2:int):void{
@@ -34,7 +34,7 @@ import flash.display.IGraphicsData;
             for each (_local3 in this._20S)
             {
                 _local3.draw(this.graphicsData_, _arg1, _arg2);
-            };
+            }
             graphics.clear();
             graphics.drawGraphicsData(this.graphicsData_);
         }
@@ -48,8 +48,8 @@ import flash.display.IGraphicsData;
                 if (PointUtil.Fg(_local2.x_, _local2.y_, _local3.x_, _local3.y_) < 3)
                 {
                     return;
-                };
-            };
+                }
+            }
             this._20S.push(_local2);
         }
 

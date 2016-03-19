@@ -37,16 +37,16 @@ import com.company.util.PointUtil;
             if (!super.addTo(_arg1, _arg2, _arg3))
             {
                 return (false);
-            };
+            }
             if (map_.player_ == null)
             {
                 return (true);
-            };
+            }
             var _local4:Number = PointUtil.Fg(map_.player_.x_, map_.player_.y_, _arg2, _arg3);
             if (((this._11L) && ((_local4 < 10))))
             {
                 _0ZC.play("loot_appears");
-            };
+            }
             return (true);
         }
 

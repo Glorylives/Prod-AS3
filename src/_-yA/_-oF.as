@@ -46,7 +46,7 @@ package yA{
             } else
             {
                 this.0qB();
-            };
+            }
         }
 
         public static function Ft():void{
@@ -56,7 +56,7 @@ package yA{
             {
                 _local2.add(0WM);
                 _local1.ja.gsc_.questFetch();
-            };
+            }
         }
 
         public static function 0WM(_arg1:1lm):void{
@@ -67,14 +67,14 @@ package yA{
             } else
             {
                 3a = false;
-            };
+            }
         }
 
         public static function 08Y():Boolean{
             if (((3a) || (((!((0d.1E0 == -1))) && ((0d.1E0 == new Date().dayUTC))))))
             {
                 return (true);
-            };
+            }
             return (false);
         }
 

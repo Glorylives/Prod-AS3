@@ -31,9 +31,9 @@ package 0QW{
                 if (this.18A[_local1] != -1)
                 {
                     return (false);
-                };
+                }
                 _local1++;
-            };
+            }
             return (true);
         }
 

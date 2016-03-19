@@ -43,7 +43,7 @@ package 0Z-{
                 0ep.filters = ((_arg1) ? [this.1q-] : []);
                 _local2 = ((_arg1) ? MoreColorUtil.1lu : new ColorTransform());
                 0ep.transform.colorTransform = _local2;
-            };
+            }
         }
 
         override protected function onRemovedFromStage(_arg1:Event):void{
@@ -62,7 +62,7 @@ package 0Z-{
                 0Pi();
                 this.updateTitle();
                 this.fo = _arg4;
-            };
+            }
         }
 
         public function 15s(_arg1:int):void{
@@ -82,7 +82,7 @@ package 0Z-{
             {
                 setTitle(du.rq, {});
                 iY(du.1h6, {data:""});
-            };
+            }
         }
 
         public function 1EY(_arg1:Function):void{
@@ -120,8 +120,8 @@ package 0Z-{
                 {
                     removeChild(0ep);
                     stage.addChild(0ep);
-                };
-            };
+                }
+            }
         }
 
         private function KP(_arg1:MouseEvent):void{
@@ -139,7 +139,7 @@ package 0Z-{
                 this.1t8();
                 this.1F3.dispatch();
                 this.updateTitle();
-            };
+            }
         }
 
 

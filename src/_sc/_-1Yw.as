@@ -47,7 +47,7 @@ package sC{
             if ((((_local1.map == null)) || ((_local1.map.player_ == null))))
             {
                 return;
-            };
+            }
             var _local2:Player = _local1.map.player_;
             var _local3:Dialog = new Dialog(du.0l7, du.DL, du.20z, du.1jq, "/renounceGuild");
             _local3.12Z(du.DL, {guildName:_local2.guildName_});
@@ -65,7 +65,7 @@ package sC{
             if ((((_local2.map == null)) || ((_local2.map.player_ == null))))
             {
                 return;
-            };
+            }
             var _local3:Player = _local2.map.player_;
             _local2.gsc_.guildRemove(_local3.name_);
             this.KW.dispatch();

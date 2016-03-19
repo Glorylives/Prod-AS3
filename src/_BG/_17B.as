@@ -75,7 +75,7 @@ import flash.display.Sprite;
             {
                 _2 = false;
                 addChild(this.background2);
-            };
+            }
             addChild(this.kN);
         }
 

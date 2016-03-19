@@ -47,7 +47,7 @@ import flash.display.Sprite;
             if (_arg1)
             {
                 this.1KD.dispatch(_arg1);
-            };
+            }
         }
 
         public function 0Ng():void{
@@ -90,7 +90,7 @@ import flash.display.Sprite;
                 this.nL.1ZU((this.state.1f0 == -1));
                 this.1LD.1ZU((this.state.06h == null));
                 this.Ba.1ZU(false);
-            };
+            }
         }
 
         public function dm(_arg1:Boolean):void{
@@ -104,7 +104,7 @@ import flash.display.Sprite;
             } else
             {
                 this.update();
-            };
+            }
         }
 
 

@@ -47,8 +47,8 @@ package AB{
                 if (tag.@effect == typeName)
                 {
                     return (tag);
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -63,8 +63,8 @@ package AB{
                 if (tag.@effect == typeName)
                 {
                     return (tag);
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -72,7 +72,7 @@ package AB{
             if ((((this.02t == null)) || ((this.19C == null))))
             {
                 return;
-            };
+            }
             var _local1:Number = Number(this.02t.@range);
             var _local2:Number = Number(this.19C.@range);
             var _local3:Number = Number(this.02t.@duration);
@@ -113,8 +113,8 @@ package AB{
                         duration:this.speedy.@duration
                     }, TR.1pw(1HG), TR.17H());
                     ZX[this.speedy.toXMLString()] = true;
-                };
-            };
+                }
+            }
         }
 
         private function 0V8():void{
@@ -126,7 +126,7 @@ package AB{
                     duration:this.22O.@duration
                 }, TR.1pw(2-W), TR.17H());
                 ZX[this.22O.toXMLString()] = true;
-            };
+            }
         }
 
 

@@ -52,7 +52,7 @@ package D5{
                 this.label_.x = ((this.e4.x + this.e4.width) - 8);
                 this.label_.y = 0;
                 addChild(this.label_);
-            };
+            }
             addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
             addEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
             this.NB(_arg3);
@@ -60,7 +60,7 @@ package D5{
             if (this.Sp != "")
             {
                 this.0C9(du.1zo, {hotkey:02E.24x[Parameters.data_[this.Sp]]});
-            };
+            }
         }
 
         public function destroy():void{
@@ -84,9 +84,9 @@ package D5{
                     this.toolTip_ = new 6P(0x363636, 0x9B9B9B, "", "", 200);
                     this.1-P.1pS(this);
                     this.1-P.tooltip = this.toolTip_;
-                };
+                }
                 this.toolTip_.setTitle(new 1cA().setParams(_arg1, _arg2));
-            };
+            }
         }
 
         public function 0C9(_arg1:String, _arg2:Object=null):void{
@@ -97,16 +97,16 @@ package D5{
                     this.toolTip_ = new 6P(0x363636, 0x9B9B9B, "", "", 200);
                     this.1-P.1pS(this);
                     this.1-P.tooltip = this.toolTip_;
-                };
+                }
                 this.toolTip_.1wG(new 1cA().setParams(_arg1, _arg2));
-            };
+            }
         }
 
         public function 0bB(_arg1:ColorTransform):void{
             if (_arg1 == this.1Tp)
             {
                 return;
-            };
+            }
             this.1Tp = _arg1;
             if (this.1Tp == null)
             {
@@ -114,7 +114,7 @@ package D5{
             } else
             {
                 transform.colorTransform = this.1Tp;
-            };
+            }
         }
 
         public function set enabled(_arg1:Boolean):void{
@@ -130,7 +130,7 @@ package D5{
                 removeEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
                 this.0bB(1Ws);
                 mouseEnabled = (mouseChildren = false);
-            };
+            }
         }
 
         protected function onMouseOver(_arg1:MouseEvent):void{

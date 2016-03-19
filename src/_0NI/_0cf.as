@@ -15,7 +15,7 @@ package _0NI{
             if ((_arg1 is Class))
             {
                 _arg1 = getQualifiedClassName(_arg1).split("::").pop();
-            };
+            }
             return ((((((_arg1) ? (_arg1 + "-") : "") + Nt++).toString() + "-") + (Math.random() * 0xFF).toString(16)));
         }
 

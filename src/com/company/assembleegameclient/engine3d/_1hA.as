@@ -38,7 +38,7 @@ import flash.utils.ByteArray;
             for each (_local2 in _0OY)
             {
                 _local2._1T(_arg1);
-            };
+            }
         }
 
         public static function _0bS(_arg1:String, _arg2:String):void{
@@ -58,7 +58,7 @@ import flash.utils.ByteArray;
             var _local4:Array = [];
             var _local5:Array = [];
             var _local6:Array = [];
-            var _local7:Object = {};
+            var _local7:Object = {}
             var _local8:Array = [];
             var _local9:String;
             var _local10:Array = [];
@@ -78,21 +78,21 @@ import flash.utils.ByteArray;
                                     if (_local15.length != 3)
                                     {
                                         return;
-                                    };
+                                    }
                                     _local4.push(_local15);
                                     break;
                                 case "vt":
                                     if (_local15.length != 2)
                                     {
                                         return;
-                                    };
+                                    }
                                     _local5.push(_local15);
                                     break;
                                 case "f":
                                     if (_local15.length < 3)
                                     {
                                         return;
-                                    };
+                                    }
                                     _local8.push(_local15);
                                     _local10.push(_local9);
                                     for each (_local17 in _local15)
@@ -101,21 +101,21 @@ import flash.utils.ByteArray;
                                         {
                                             _local7[_local17] = _local6.length;
                                             _local6.push(_local17);
-                                        };
-                                    };
+                                        }
+                                    }
                                     break;
                                 case "usemtl":
                                     if (_local15.length != 1)
                                     {
                                         return;
-                                    };
+                                    }
                                     _local9 = _local15[0];
                                     break;
-                            };
-                        };
-                    };
-                };
-            };
+                            }
+                        }
+                    }
+                }
+            }
             _local12 = new (_1hA)();
             for each (_local13 in _local6)
             {
@@ -128,8 +128,8 @@ import flash.utils.ByteArray;
                 } else
                 {
                     _local12.uvts_.push(0, 0, 0);
-                };
-            };
+                }
+            }
             _local14 = 0;
             while (_local14 < _local8.length)
             {
@@ -141,10 +141,10 @@ import flash.utils.ByteArray;
                 {
                     _local21.push(_local7[_local19[_local22]]);
                     _local22++;
-                };
+                }
                 _local12.faces_.push(new _10H(_local12, _local21, (((_local20 == null)) || (!((_local20.substr(0, 5) == "Solid"))))));
                 _local14++;
-            };
+            }
             _local12._01J();
             _1DN[_arg1] = _local12;
         }
@@ -158,7 +158,7 @@ import flash.utils.ByteArray;
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             return (new _0oE(_local2));
         }
 
@@ -167,7 +167,7 @@ import flash.utils.ByteArray;
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             return (new _4b(_local2));
         }
 

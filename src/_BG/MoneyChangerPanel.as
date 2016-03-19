@@ -40,7 +40,7 @@ import _AO._du;
             if ((((_arg1.keyCode == Parameters.data_.interact)) && ((stage.focus == null))))
             {
                 this._1DL.dispatch();
-            };
+            }
         }
 
 

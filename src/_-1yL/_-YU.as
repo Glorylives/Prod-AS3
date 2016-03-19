@@ -21,7 +21,7 @@ package 1YL{
             if (((_arg1) && (stage)))
             {
                 stage.focus = this.input;
-            };
+            }
         }
 
 

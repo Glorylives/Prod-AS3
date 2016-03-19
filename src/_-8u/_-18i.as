@@ -44,8 +44,8 @@ package 8u{
                     _local4.0Qz = (_local3.@accountId == this.qH);
                     _local4.0dy = _arg2;
                     this.legends.push(_local4);
-                };
-            };
+                }
+            }
         }
 
         private function 0du(_arg1:XML):Boolean{
@@ -55,8 +55,8 @@ package 8u{
                 if ((((_local2.accountId == _arg1.@accountId)) && ((_local2.charId == _arg1.@charId))))
                 {
                     return (true);
-                };
-            };
+                }
+            }
             return (false);
         }
 

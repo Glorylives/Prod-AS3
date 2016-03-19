@@ -47,7 +47,7 @@ package 1Np{
             if (_arg1.en != null)
             {
                 this.0dP = new Animations(_arg1.en);
-            };
+            }
             this.moveVec_ = new Vector3D();
             var _local2:Number = ((Math.PI * 2) * Math.random());
             this.moveVec_.x = ((Math.cos(_local2) * 0.1) * 5);
@@ -59,7 +59,7 @@ package 1Np{
             if (_local3 == null)
             {
                 return (false);
-            };
+            }
             x_ = _arg1;
             y_ = _arg2;
             xy = _local3;
@@ -73,7 +73,7 @@ package 1Np{
             if (this.0Cd <= 0)
             {
                 return (false);
-            };
+            }
             x_ = (x_ + (this.moveVec_.x * _local3));
             y_ = (y_ + (this.moveVec_.y * _local3));
             return (true);
@@ -88,8 +88,8 @@ package 1Np{
                 if (_local7 != null)
                 {
                     _local4 = _local7;
-                };
-            };
+                }
+            }
             _local4 = TextureRedrawer.redraw(_local4, this.size_, true, 0);
             var _local5:int = _local4.width;
             var _local6:int = _local4.height;

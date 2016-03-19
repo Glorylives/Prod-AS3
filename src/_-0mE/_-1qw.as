@@ -47,7 +47,7 @@ package 0mE{
             if (this.xA.1oO() == FameView)
             {
                 return (new CharacterSelectionAndNewsScreen());
-            };
+            }
             return (new (((this.xA.1oO()) || (CharacterSelectionAndNewsScreen)))());
         }
 

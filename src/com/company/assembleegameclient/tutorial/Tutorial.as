@@ -58,7 +58,7 @@ public class Tutorial extends Sprite {
             for each (_local2 in _24A._0H0.Step)
             {
                 this._1fO.push(new Step(_local2));
-            };
+            }
             addChild(this.z2);
             addChild(this.CC);
             _local3 = this.PD.graphics;
@@ -119,16 +119,16 @@ public class Tutorial extends Sprite {
                                     {
                                         _local11 = true;
                                         break;
-                                    };
-                                };
-                            };
+                                    }
+                                }
+                            }
                             if (!_local11)
                             {
                                 _local5 = false;
-                            };
+                            }
                             break;
-                    };
-                };
+                    }
+                }
                 if (!_local5)
                 {
                     _local4._1hp = 0;
@@ -137,21 +137,21 @@ public class Tutorial extends Sprite {
                     if (_local4._1hp == 0)
                     {
                         _local4._1hp = getTimer();
-                    };
+                    }
                     _local7 = (getTimer() - _local4._1hp);
                     for each (_local8 in _local4._1rf)
                     {
                         _local8.draw((5 * _local2), this.CC.graphics, _local7);
                         _local8.draw((6 * _local2), this.z2.graphics, _local7);
-                    };
+                    }
                     for each (_local9 in _local4._1hu)
                     {
                         _local9.draw((5 * _local2), this.CC.graphics, _local7);
                         _local9.draw((6 * _local2), this.z2.graphics, _local7);
-                    };
-                };
+                    }
+                }
                 _local3++;
-            };
+            }
         }
 
         function doneAction(_arg1:String):void{
@@ -163,12 +163,12 @@ public class Tutorial extends Sprite {
             if (this._0NX >= this._1fO.length)
             {
                 return;
-            };
+            }
             var _local2:Step = this._1fO[this._0NX];
             if (_arg1 != _local2.action_)
             {
                 return;
-            };
+            }
             for each (_local3 in _local2.ic)
             {
                 _local4 = this.gs_.map.player_;
@@ -187,22 +187,22 @@ public class Tutorial extends Sprite {
                                 {
                                     _local5 = true;
                                     break;
-                                };
-                            };
-                        };
+                                }
+                            }
+                        }
                         if (!_local5)
                         {
                             return;
-                        };
+                        }
                         break;
                     case yO:
                         if (_local4._1Wz[_local3._1fn] != _local3.objectType_)
                         {
                             return;
-                        };
+                        }
                         break;
-                };
-            };
+                }
+            }
             this._0NX++;
             this.draw();
         }

@@ -24,7 +24,7 @@ package 06I{
             for each (_local2 in this.n3.pr)
             {
                 this.1Yf(_local2.container);
-            };
+            }
         }
 
         public function destroy():void{
@@ -34,7 +34,7 @@ package 06I{
             for each (_local1 in this.n3.pr)
             {
                 this.1a9(_local1.container);
-            };
+            }
         }
 
         private function o4(_arg1:Cv):void{
@@ -64,14 +64,14 @@ package 06I{
             if (_local4)
             {
                 return;
-            };
+            }
             var _local5:Class = _local2["constructor"];
             var _local6:Ko = this.n3.0p(_local2);
             while (_local6)
             {
                 _local6.27D(_local2, _local5);
                 _local6 = _local6.parent;
-            };
+            }
         }
 
         private function wM(_arg1:Event):void{

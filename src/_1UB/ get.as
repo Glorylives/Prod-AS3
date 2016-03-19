@@ -53,7 +53,7 @@ package 1UB{
                 _local2 = this.kf.getInstance(1E7);
                 _local2.filter = _arg1;
                 _local2.start();
-            };
+            }
         }
 
         private function N7():void{

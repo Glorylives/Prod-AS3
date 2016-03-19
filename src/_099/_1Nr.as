@@ -50,7 +50,7 @@ package _099{
             if (_arg1 == this._1Tp)
             {
                 return;
-            };
+            }
             this._1Tp = _arg1;
             if (this._1Tp == null)
             {
@@ -62,7 +62,7 @@ package _099{
                 _local2 = TextureRedrawer.redraw(_local2, this._1C0(), true, 0);
                 this.e4.bitmapData = _local2;
                 this.text_.transform.colorTransform = this._1Tp;
-            };
+            }
         }
 
         protected function onMouseOver(_arg1:MouseEvent):void{

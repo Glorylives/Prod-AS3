@@ -42,11 +42,11 @@ package 1oP{
             if (!_arg1)
             {
                 _local2 = (_local2 + 1v8.1KI);
-            };
+            }
             for each (_local3 in this.1YB)
             {
                 _local3.setWidth(_local2);
-            };
+            }
         }
 
         public function 2a():Number{

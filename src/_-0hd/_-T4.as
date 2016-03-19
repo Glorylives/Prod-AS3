@@ -78,7 +78,7 @@ package 0hd{
             if (this.IT)
             {
                 this.IT.visible = _arg1;
-            };
+            }
         }
 
         private function 0ze():void{
@@ -129,7 +129,7 @@ package 0hd{
             if (!this.15W())
             {
                 return;
-            };
+            }
             this.IT = new _13j().setSize(18).setColor(0xFFFFFF).setBold(true);
             this.IT.setStringBuilder(new 1cA().setParams(du.3F, {percent:this.offer.bonus}));
             this.IT.filters = [new DropShadowFilter(0, 0, 0)];
@@ -141,7 +141,7 @@ package 0hd{
             if (this.0ZA())
             {
                 this.makeTaglineText();
-            };
+            }
         }
 
         private function makeTaglineText():void{
@@ -169,12 +169,12 @@ package 0hd{
             {
                 this.IT.x = 280;
                 this.IT.y = ((this.0Ku.height / 2) - (this.IT.height / 2));
-            };
+            }
             if (((this.0ZA()) && (!((this.taglineText == null)))))
             {
                 this.taglineText.x = 400;
                 this.taglineText.y = ((this.0Ku.height / 2) - (this.taglineText.height / 2));
-            };
+            }
         }
 
         private function 2-K():void{

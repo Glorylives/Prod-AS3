@@ -40,7 +40,7 @@ package _1Np{
                 this.oo = 0.7;
                 this.Bj = 2;
                 this._14F = 40;
-            };
+            }
         }
 
         private function _1iw():void{
@@ -53,18 +53,18 @@ package _1Np{
             {
                 _8y.push(TextureRedrawer.redraw(_local1._7D[_local2], this._14F, true, 0, true));
                 _local2++;
-            };
+            }
         }
 
         override public function update(_arg1:int, _arg2:int):Boolean{
             if (this.K4)
             {
                 return (false);
-            };
+            }
             if (!this.timer)
             {
                 this.initialize();
-            };
+            }
             x_ = this.go.x_;
             y_ = this.go.y_;
             return (true);
@@ -85,7 +85,7 @@ package _1Np{
                 this.start_ = new Point((this.go.x_ + (Math.sin(this._04s) * this.oo)), (this.go.y_ + (Math.cos(this._04s) * this.oo)));
                 this.end_ = new Point((this.go.x_ + (Math.sin(this._04s) * this.Bj)), (this.go.y_ + (Math.cos(this._04s) * this.Bj)));
                 map_.addObj(new _1JY(this.objectId, 25, this._14F, this.start_, this.end_, this._04s, this.go, _8y), this.start_.x, this.start_.y);
-            };
+            }
         }
 
         private function _1Yl(_arg1:TimerEvent):void{
@@ -99,7 +99,7 @@ package _1Np{
                 this.timer.removeEventListener(TimerEvent.TIMER, this._1Yl);
                 this.timer.stop();
                 this.timer = null;
-            };
+            }
             this.go = null;
             this.K4 = true;
         }

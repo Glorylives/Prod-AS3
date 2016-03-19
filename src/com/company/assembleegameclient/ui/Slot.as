@@ -127,7 +127,7 @@ package com.company.assembleegameclient.ui{
                     return ("Scepter");
                 case 08C:
                     return ("Shuriken");
-            };
+            }
             return ("Invalid Type!");
         }
 
@@ -143,7 +143,7 @@ package com.company.assembleegameclient.ui{
                 case 0or:
                     _local4.y = -2;
                     break;
-            };
+            }
             return (_local4);
         }
 
@@ -227,7 +227,7 @@ package com.company.assembleegameclient.ui{
                 case av:
                     _local1 = AssetLibrary.1JR("lofiObj6", 192);
                     break;
-            };
+            }
             if (this.0pq == null)
             {
                 if (_local1 != null)
@@ -250,9 +250,9 @@ package com.company.assembleegameclient.ui{
                         this.0pq.x = ((WIDTH / 2) - (_local1.width / 2));
                         this.0pq.y = ((HEIGHT / 2) - 18);
                         addChild(this.0pq);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
 

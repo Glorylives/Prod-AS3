@@ -85,7 +85,7 @@ package 1RB{
             {
                 _local2 = 14l(_local1.next());
                 _local2.Q5(false);
-            };
+            }
             this.18q.setItems(this.0nV.1AM);
             this.18q.x = 400;
             this.18q.y = ((HEIGHT / 2) - (Slot.HEIGHT / 2));
@@ -123,8 +123,8 @@ package 1RB{
                 } else
                 {
                     _local1 = 0xFFFFFF;
-                };
-            };
+                }
+            }
             return (_local1);
         }
 

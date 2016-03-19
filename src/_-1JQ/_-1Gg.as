@@ -43,7 +43,7 @@ package 1JQ{
             {
                 delete this.Xn[_local1.1Y1];
                 this._handler.oE(_local1);
-            };
+            }
         }
 
         private function pN(_arg1:Class):04G{
@@ -58,7 +58,7 @@ package 1JQ{
             if (_local2)
             {
                 _local2.0gc();
-            };
+            }
             return (_local2);
         }
 

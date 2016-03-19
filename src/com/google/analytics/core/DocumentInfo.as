@@ -29,7 +29,7 @@ package com.google.analytics.core{
             if (!_utmr)
             {
                 return ("-");
-            };
+            }
             return (_utmr);
         }
 
@@ -47,8 +47,8 @@ package com.google.analytics.core{
                 if (_arg1 == "")
                 {
                     _arg1 = "/";
-                };
-            };
+                }
+            }
             return (_arg1);
         }
 
@@ -69,7 +69,7 @@ package com.google.analytics.core{
             {
                 _local1 = Math.round((Math.random() * 2147483647));
                 _adSense.hid = String(_local1);
-            };
+            }
             return (_local1);
         }
 
@@ -79,7 +79,7 @@ package com.google.analytics.core{
             if (((_config.detectTitle) && (!((utmdt == "")))))
             {
                 _local1.utmdt = utmdt;
-            };
+            }
             _local1.utmhid = utmhid;
             _local1.utmr = utmr;
             _local1.utmp = utmp;

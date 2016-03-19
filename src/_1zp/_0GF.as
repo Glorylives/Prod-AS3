@@ -72,17 +72,17 @@ package _1zp{
                     if (_local3 == this._1Uv)
                     {
                         return;
-                    };
+                    }
                     this._1Uv = _local3;
                     break;
-                };
+                }
                 _local3++;
-            };
+            }
             this.setSelected(this._1Uv);
             if (_arg2)
             {
                 dispatchEvent(new Event(Event.CHANGE));
-            };
+            }
         }
 
         public function value(){
@@ -119,7 +119,7 @@ package _1zp{
             if ((((this._1Uv < 0)) || ((this._1Uv >= this._4B.length))))
             {
                 this._1Uv = 0;
-            };
+            }
             this._1wG(this._4B[this._1Uv]);
         }
 

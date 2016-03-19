@@ -28,7 +28,7 @@ package AB{
             {
                 defense = int(this.0rt.@amount);
                 otherDefense = int(this.dK.@amount);
-            };
+            }
         }
 
         private function 1Hr(_arg1:int, _arg2:int):String{

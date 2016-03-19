@@ -39,7 +39,7 @@ package 0sC{
                 addChild(this.1UU("Attention!", -165, -85).setColor(0xFF0000));
                 addChild(this.1UU("A new password was sent to your Sign In Email Address.", -165, -65));
                 addChild(this.1UU("Please use the new password to Sign In.", -165, -45));
-            };
+            }
             this.forgot = new lY(this.1HY, MouseEvent.CLICK);
             this.register = new lY(this.1K4, MouseEvent.CLICK);
             this.0-e = new _1HZ(1T5);
@@ -68,7 +68,7 @@ package 0sC{
             if (_arg1.keyCode == 02E.ENTER)
             {
                 this.1Oe();
-            };
+            }
         }
 
         private function 1Mi(_arg1:MouseEvent):void{
@@ -83,7 +83,7 @@ package 0sC{
                 _local1.username = this.email.text();
                 _local1.password = this.password.text();
                 this.0-e.dispatch(_local1);
-            };
+            }
         }
 
         private function PH():Boolean{
@@ -91,7 +91,7 @@ package 0sC{
             if (!_local1)
             {
                 this.password.07n(du.1Dy);
-            };
+            }
             return (_local1);
         }
 
@@ -100,7 +100,7 @@ package 0sC{
             if (!_local1)
             {
                 this.email.07n(du.l2);
-            };
+            }
             return (_local1);
         }
 

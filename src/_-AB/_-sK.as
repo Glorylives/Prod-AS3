@@ -34,7 +34,7 @@ package AB{
             for (tagStr in this.va.ZX)
             {
                 ZX[tagStr] = true;
-            };
+            }
             if ((((this.condition.length() == 1)) && ((this.1fX.length() == 1))))
             {
                 duration = Number(this.condition[0].@duration);
@@ -45,7 +45,7 @@ package AB{
                     duration:duration
                 }, TR.1pw(1U4), TR.17H());
                 ZX[this.condition[0].toXMLString()] = true;
-            };
+            }
         }
 
 

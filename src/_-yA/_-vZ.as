@@ -32,8 +32,8 @@ package yA{
                 } else
                 {
                     Ch.closed.add(this.0FO);
-                };
-            };
+                }
+            }
         }
 
         override public function destroy():void{
@@ -50,7 +50,7 @@ package yA{
                 this.view.1kJ.removeEventListener(MouseEvent.CLICK, this.oq);
                 WebMain._0Kr.removeEventListener(KeyboardEvent.KEY_DOWN, this.1lw);
                 Ch.closed.add(this.0FO);
-            };
+            }
         }
 
         private function 0FO():void{
@@ -63,7 +63,7 @@ package yA{
             if ((((_arg1.keyCode == Parameters.data_.interact)) && ((WebMain._0Kr.focus == null))))
             {
                 this.oq(null);
-            };
+            }
         }
 
 

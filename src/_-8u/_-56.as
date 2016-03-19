@@ -8,7 +8,7 @@ package 8u{
 
     public class 56 {
 
-        private const map:Object = {};
+        private const map:Object = {}
 
         private var timespan:Timespan;
 
@@ -43,7 +43,7 @@ package 8u{
             {
                 this.dispose(this.map[_local1]);
                 delete this.map[_local1];
-            };
+            }
         }
 
         private function dispose(_arg1:Vector.<1QY>):void{
@@ -51,7 +51,7 @@ package 8u{
             for each (_local2 in _arg1)
             {
                 ((_local2.character) && (this.3u(_local2)));
-            };
+            }
         }
 
         private function 3u(_arg1:1QY):void{

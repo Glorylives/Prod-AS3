@@ -69,7 +69,7 @@ package 0uE{
             if (this.0rf())
             {
                 return (h.qE);
-            };
+            }
             return (h.YE);
         }
 
@@ -80,7 +80,7 @@ package 0uE{
             } else
             {
                 this.XR.dispatch(this.view.petVO.try ());
-            };
+            }
         }
 
         private function 0xJ(_arg1:1ae):void{

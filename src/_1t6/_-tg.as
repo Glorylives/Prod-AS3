@@ -17,7 +17,7 @@ package 1t6{
             if (this.parent != null)
             {
                 this.parent.removeChild(this);
-            };
+            }
         }
 
 

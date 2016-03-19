@@ -26,7 +26,7 @@ package _Jt{
             {
                 this._1ck.dispose();
                 this._1ck = null;
-            };
+            }
             this.VU.length = 0;
             this._1rN.length = 0;
         }

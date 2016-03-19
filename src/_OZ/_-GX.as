@@ -48,8 +48,8 @@ package OZ{
                 if (WebMain._0Kr)
                 {
                     WebMain._0Kr.addEventListener(MouseEvent.MOUSE_WHEEL, this.1Av);
-                };
-            };
+                }
+            }
         }
 
         protected function 1Av(_arg1:MouseEvent):void{
@@ -61,8 +61,8 @@ package OZ{
                 if (_arg1.delta < 0)
                 {
                     this.l1.dispatch(0.25);
-                };
-            };
+                }
+            }
         }
 
         public function Z2():void{
@@ -77,8 +77,8 @@ package OZ{
                 if (WebMain._0Kr)
                 {
                     WebMain._0Kr.removeEventListener(MouseEvent.MOUSE_WHEEL, this.1Av);
-                };
-            };
+                }
+            }
             this.onMouseUp();
         }
 
@@ -88,7 +88,7 @@ package OZ{
             if (stage != null)
             {
                 stage.addEventListener(MouseEvent.MOUSE_UP, this.onMouseUp);
-            };
+            }
             addEventListener(Event.ENTER_FRAME, this.3C);
             this.redraw();
         }
@@ -98,7 +98,7 @@ package OZ{
             if (stage != null)
             {
                 stage.removeEventListener(MouseEvent.MOUSE_UP, this.onMouseUp);
-            };
+            }
             removeEventListener(Event.ENTER_FRAME, this.3C);
             this.redraw();
         }

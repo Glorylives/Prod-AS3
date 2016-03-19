@@ -44,9 +44,9 @@ package 0QW{
                     _local8 = Math.min(1OC, (this.height_ - (_local6 * 1OC)));
                     this.1z0[(_local5 + (_local6 * this.25j))] = new HL(_local7, _local8, _arg3, this.0ah);
                     _local6++;
-                };
+                }
                 _local5++;
-            };
+            }
         }
 
         public function copyTo(_arg1:BitmapData, _arg2:Rectangle, _arg3:Rectangle):void{
@@ -73,9 +73,9 @@ package 0QW{
                     _local14 = new Rectangle((_arg3.x - (_local11 * 1OC)), (_arg3.y - (_local12 * 1OC)), _arg3.width, _arg3.height);
                     _local13.draw(_arg1, _local10, null, null, _local14, false);
                     _local12++;
-                };
+                }
                 _local11++;
-            };
+            }
         }
 
         public function Hn(_arg1:Rectangle, _arg2:BitmapData, _arg3:Rectangle):void{
@@ -101,9 +101,9 @@ package 0QW{
                     _local11.scale(_local4, _local5);
                     _arg2.draw(_local14, _local11, null, null, _arg3, false);
                     _local13++;
-                };
+                }
                 _local12++;
-            };
+            }
         }
 
         public function 09R(_arg1:Rectangle):void{
@@ -127,9 +127,9 @@ package 0QW{
                     _local6.bottom = (_arg1.bottom - (_local8 * 1OC));
                     _local9.fillRect(_local6, this.0ah);
                     _local8++;
-                };
+                }
                 _local7++;
-            };
+            }
         }
 
         public function 0nb():Sprite{
@@ -149,9 +149,9 @@ package 0QW{
                     _local5.y = (_local3 * 1OC);
                     _local1.addChild(_local5);
                     _local3++;
-                };
+                }
                 _local2++;
-            };
+            }
             return (_local1);
         }
 

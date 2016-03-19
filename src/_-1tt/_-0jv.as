@@ -34,12 +34,12 @@ package 1tt{
 
         public function sZ(_arg1:Array):void{
             var _local2:kM;
-            this.0OY = {};
+            this.0OY = {}
             for each (_local2 in _arg1)
             {
                 _local2.0vG.add(this.DP);
                 this.0OY[_local2.packageID] = _local2;
-            };
+            }
             this.initialized = true;
             this.0vG.dispatch();
         }
@@ -61,8 +61,8 @@ package 1tt{
                 if ((((_local1 == null)) || ((_local2.priority < _local1.priority))))
                 {
                     _local1 = _local2;
-                };
-            };
+                }
+            }
             return (_local2);
         }
 
@@ -75,7 +75,7 @@ package 1tt{
             for each (_local1 in this.0OY)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 

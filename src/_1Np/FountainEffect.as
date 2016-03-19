@@ -22,11 +22,11 @@ package 1Np{
             if (this.go_.map_ == null)
             {
                 return (false);
-            };
+            }
             if (this.lastUpdate_ < 0)
             {
                 this.lastUpdate_ = Math.max(0, (_arg1 - 400));
-            };
+            }
             x_ = this.go_.x_;
             y_ = this.go_.y_;
             var _local3:int = (this.lastUpdate_ / 50);
@@ -37,7 +37,7 @@ package 1Np{
                 _local5.restart(_local4, _arg1);
                 map_.addObj(_local5, x_, y_);
                 _local3++;
-            };
+            }
             this.lastUpdate_ = _arg1;
             return (true);
         }

@@ -53,13 +53,13 @@ package com.hurlant.crypto.symmetric{
                 XtimeD[i] = _XtimeD[i];
                 XtimeE[i] = _XtimeE[i];
                 i++;
-            };
+            }
             i = 0;
             while (i < _Rcon.length)
             {
                 Rcon[i] = _Rcon[i];
                 i++;
-            };
+            }
         }
 
         public function AESKey(_arg1:ByteArray){
@@ -102,14 +102,14 @@ package com.hurlant.crypto.symmetric{
                         _local2 = Sbox[_local2];
                         _local3 = Sbox[_local3];
                         _local4 = Sbox[_local4];
-                    };
-                };
+                    }
+                }
                 this.key[((4 * _local6) + 0)] = (this.key[(((4 * _local6) - (4 * _local7)) + 0)] ^ _local1);
                 this.key[((4 * _local6) + 1)] = (this.key[(((4 * _local6) - (4 * _local7)) + 1)] ^ _local2);
                 this.key[((4 * _local6) + 2)] = (this.key[(((4 * _local6) - (4 * _local7)) + 2)] ^ _local3);
                 this.key[((4 * _local6) + 3)] = (this.key[(((4 * _local6) - (4 * _local7)) + 3)] ^ _local4);
                 _local6++;
-            };
+            }
         }
 
         public function getBlockSize():uint{
@@ -130,10 +130,10 @@ package com.hurlant.crypto.symmetric{
                 } else
                 {
                     this.shiftRows();
-                };
+                }
                 this.addRoundKey(this.key, ((_local3 * Nb) * 4));
                 _local3++;
-            };
+            }
             _arg1.position = _arg2;
             _arg1.writeBytes(this.state);
         }
@@ -151,8 +151,8 @@ package com.hurlant.crypto.symmetric{
                 if (_local3)
                 {
                     this.invMixSubColumns();
-                };
-            };
+                }
+            }
             _arg1.position = _arg2;
             _arg1.writeBytes(this.state);
         }
@@ -165,20 +165,20 @@ package com.hurlant.crypto.symmetric{
             {
                 this.key[_local1] = _local2.nextByte();
                 _local1++;
-            };
+            }
             this.Nr = _local2.nextByte();
             _local1 = 0;
             while (_local1 < this.state.length)
             {
                 this.state[_local1] = _local2.nextByte();
                 _local1++;
-            };
+            }
             _local1 = 0;
             while (_local1 < this.tmp.length)
             {
                 this.tmp[_local1] = _local2.nextByte();
                 _local1++;
-            };
+            }
             this.key.length = 0;
             this.keyLength = 0;
             this.state.length = 0;
@@ -284,7 +284,7 @@ package com.hurlant.crypto.symmetric{
             {
                 this.state[_local1] = InvSbox[this.tmp[_local1]];
                 _local1++;
-            };
+            }
         }
 
         protected function addRoundKey(_arg1:ByteArray, _arg2:uint):void{
@@ -294,7 +294,7 @@ package com.hurlant.crypto.symmetric{
             {
                 this.state[_local3] = (this.state[_local3] ^ _arg1[(_local3 + _arg2)]);
                 _local3++;
-            };
+            }
         }
 
         public function toString():String{

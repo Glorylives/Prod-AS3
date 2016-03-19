@@ -81,7 +81,7 @@ package 0QW{
             if (_local4 == null)
             {
                 return (-1);
-            };
+            }
             return (_local4.18A[_arg3]);
         }
 
@@ -94,7 +94,7 @@ package 0QW{
             if (_local5.18A[_arg3] == _arg4)
             {
                 return;
-            };
+            }
             _local5.18A[_arg3] = _arg4;
             this.0Wb(_arg1, _arg2, _local5);
         }
@@ -104,7 +104,7 @@ package 0QW{
             if (_local3 == null)
             {
                 return (null);
-            };
+            }
             return (_local3.0hD);
         }
 
@@ -121,7 +121,7 @@ package 0QW{
             {
                 _local3 = int(_local2);
                 _local1.push(new IntPoint((_local3 % b7), (_local3 / b7)));
-            };
+            }
             return (_local1);
         }
 
@@ -143,7 +143,7 @@ package 0QW{
             {
                 _local2 = int(_local1);
                 this.0lr((_local2 % b7), (_local2 / b7));
-            };
+            }
         }
 
         public function 1xY():Rectangle{
@@ -167,25 +167,25 @@ package 0QW{
                     if (_local8 < _local1)
                     {
                         _local1 = _local8;
-                    };
+                    }
                     if (_local9 < _local2)
                     {
                         _local2 = _local9;
-                    };
+                    }
                     if ((_local8 + 1) > _local3)
                     {
                         _local3 = (_local8 + 1);
-                    };
+                    }
                     if ((_local9 + 1) > _local4)
                     {
                         _local4 = (_local9 + 1);
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (_local1 > _local3)
             {
                 return (null);
-            };
+            }
             return (new Rectangle(_local1, _local2, (_local3 - _local1), (_local4 - _local2)));
         }
 
@@ -197,7 +197,7 @@ package 0QW{
             if ((((((_arg1 > 1)) && ((this.function >= 1vy)))) || ((((_arg1 < 1)) && ((this.function <= 1gw))))))
             {
                 return;
-            };
+            }
             var _local2:IntPoint = this.1wM();
             this.function = (this.function * _arg1);
             var _local3:IntPoint = this.1wM();
@@ -212,7 +212,7 @@ package 0QW{
             if (!this.1ls())
             {
                 return;
-            };
+            }
             this._ZS(2);
             this.draw();
         }
@@ -221,7 +221,7 @@ package 0QW{
             if (!this.1ls())
             {
                 return;
-            };
+            }
             this._ZS(0.5);
             this.draw();
         }
@@ -230,7 +230,7 @@ package 0QW{
             if (!this.1ls())
             {
                 return;
-            };
+            }
             this.0mN(-1, 0);
             this.draw();
         }
@@ -239,7 +239,7 @@ package 0QW{
             if (!this.1ls())
             {
                 return;
-            };
+            }
             this.0mN(1, 0);
             this.draw();
         }
@@ -248,7 +248,7 @@ package 0QW{
             if (!this.1ls())
             {
                 return;
-            };
+            }
             this.0mN(0, -1);
             this.draw();
         }
@@ -257,7 +257,7 @@ package 0QW{
             if (!this.1ls())
             {
                 return;
-            };
+            }
             this.0mN(0, 1);
             this.draw();
         }
@@ -280,7 +280,7 @@ package 0QW{
             if (this.0B5 == null)
             {
                 return (new Rectangle(_local1.x_, _local1.y_, 1, 1));
-            };
+            }
             return (new Rectangle(Math.min(_local1.x_, this.0B5.x_), Math.min(_local1.y_, this.0B5.y_), (Math.abs((_local1.x_ - this.0B5.x_)) + 1), (Math.abs((_local1.y_ - this.0B5.y_)) + 1)));
         }
 
@@ -329,7 +329,7 @@ package 0QW{
                     if (this.1qe != null)
                     {
                         break;
-                    };
+                    }
                     this.1qe = this.1wM();
                     break;
                 case Keyboard.LEFT:
@@ -350,7 +350,7 @@ package 0QW{
                 case 02E.1oQ:
                     this.12Q();
                     break;
-            };
+            }
             this.draw();
         }
 
@@ -363,7 +363,7 @@ package 0QW{
                 case Keyboard.CONTROL:
                     this.1qe = null;
                     break;
-            };
+            }
             this.draw();
         }
 
@@ -376,8 +376,8 @@ package 0QW{
                 if (_arg1.delta < 0)
                 {
                     this.18r();
-                };
-            };
+                }
+            }
         }
 
         private function onMouseDown(_arg1:MouseEvent):void{
@@ -394,9 +394,9 @@ package 0QW{
                 {
                     _local3.push(new IntPoint(_local6, _local7));
                     _local7++;
-                };
+                }
                 _local6++;
-            };
+            }
             dispatchEvent(new je(_local3));
         }
 
@@ -421,8 +421,8 @@ package 0QW{
                 if (this.0B5 == null)
                 {
                     this.0B5 = this.1wM();
-                };
-            };
+                }
+            }
             if (!_arg1.ctrlKey)
             {
                 this.1qe = null;
@@ -431,12 +431,12 @@ package 0QW{
                 if (this.1qe == null)
                 {
                     this.1qe = this.1wM();
-                };
-            };
+                }
+            }
             if (_arg1.buttonDown)
             {
                 dispatchEvent(new je(new <IntPoint>[this.1wM()]));
-            };
+            }
             if (this.1qe != null)
             {
                 _local2 = this.1wM();
@@ -445,7 +445,7 @@ package 0QW{
             } else
             {
                 this.1KN();
-            };
+            }
         }
 
         private function OR(_arg1:int, _arg2:int):172{
@@ -454,7 +454,7 @@ package 0QW{
             if (_local4 != null)
             {
                 return (_local4);
-            };
+            }
             _local4 = new 172();
             this.1Oz[_local3] = _local4;
             return (_local4);
@@ -474,12 +474,12 @@ package 0QW{
             if (_arg3 == null)
             {
                 return;
-            };
+            }
             if (_arg3.18A[1KM.1Xh] != -1)
             {
                 _local5 = 0s6.getBitmapData(_arg3.18A[1KM.1Xh]);
                 this.1q3.copyTo(_local5, _local5.rect, _local4);
-            };
+            }
             if (_arg3.18A[1KM.ti] != -1)
             {
                 _local6 = ObjectLibrary.getTextureFromType(_arg3.18A[1KM.ti]);
@@ -489,13 +489,13 @@ package 0QW{
                 } else
                 {
                     this.1q3.copyTo(_local6, _local6.rect, _local4);
-                };
-            };
+                }
+            }
             if (_arg3.18A[1KM.0eT] != -1)
             {
                 _local7 = T8.getColor(_arg3.18A[1KM.0eT]);
                 this.lN.setPixel32(_arg1, _arg2, (0x5F000000 | _local7));
-            };
+            }
         }
 
         private function 1KN():void{
@@ -530,7 +530,7 @@ package 0QW{
                 _local2.translate(-(this.ET.x_), -(this.ET.y_));
                 _local2.scale(_local3, _local3);
                 this.map_.draw(this.lN, _local2, null, null, this.map_.rect);
-            };
+            }
             this.1KN();
         }
 

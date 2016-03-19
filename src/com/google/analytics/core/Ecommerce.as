@@ -41,7 +41,7 @@ package com.google.analytics.core{
                 _local9.city = _arg6;
                 _local9.state = _arg7;
                 _local9.country = _arg8;
-            };
+            }
             return (_local9);
         }
 
@@ -53,9 +53,9 @@ package com.google.analytics.core{
                 if (_trans[_local2].id == _arg1)
                 {
                     return (_trans[_local2]);
-                };
+                }
                 _local2++;
-            };
+            }
             return (null);
         }
 

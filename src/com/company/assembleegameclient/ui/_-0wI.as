@@ -50,7 +50,7 @@ package com.company.assembleegameclient.ui{
             if (this.D-)
             {
                 removeChild(this.D-);
-            };
+            }
         }
 
 

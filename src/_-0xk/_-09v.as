@@ -48,7 +48,7 @@ package 0xk{
             {
                 this.21i = _arg1;
                 addEventListener(MouseEvent.ROLL_OVER, this.14z);
-            };
+            }
             1ZU(true, 16689154, true);
             if (_arg2)
             {
@@ -59,10 +59,10 @@ package 0xk{
                     addChild(_local3);
                     this.0v.push(_local3);
                     _local4++;
-                };
+                }
                 this.I0 = (this.0v.length - 1);
                 addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
         override public function updateTitle():void{
@@ -74,29 +74,29 @@ package 0xk{
                 {
                     this.0jW.05w(196098);
                     this.0jW.draw();
-                };
+                }
                 if (((!((this.1a0 == null))) && (!((this.1a0.parent == null)))))
                 {
                     this.1dL.visible = false;
                     this.1dL.alpha = 0;
                     this.1a0.alpha = 1;
-                };
+                }
             } else
             {
                 if (this.0v.length > 0)
                 {
                     addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-                };
+                }
                 if (((!((this.1a0 == null))) && (!((this.1a0.parent == null)))))
                 {
                     this.1dL.visible = true;
-                };
+                }
                 if (this.0jW)
                 {
                     this.0jW.05w(0x545454);
                     this.0jW.draw();
-                };
-            };
+                }
+            }
         }
 
         public function 1T0():void{
@@ -113,7 +113,7 @@ package 0xk{
                 this.1F7.textColor = 0xFF00;
                 addChild(this.1F7);
                 this.1F7.y = Math.round((((height / 2) - (this.1F7.textHeight / 2)) / 7));
-            };
+            }
         }
 
         public function 1Re():void{
@@ -124,14 +124,14 @@ package 0xk{
                 this.1F7.textColor = 0xFF0000;
                 addChild(this.1F7);
                 this.1F7.y = Math.round((((height / 2) - (this.1F7.textHeight / 2)) / 7));
-            };
+            }
         }
 
         public function 16():void{
             if (((!((this.1F7 == null))) && (!((this.1F7.parent == null)))))
             {
                 removeChild(this.1F7);
-            };
+            }
         }
 
         private function 1sX():TextField{
@@ -156,10 +156,10 @@ package 0xk{
                 if (((!((this.0tS == null))) && ((this.0tS.parent == null))))
                 {
                     addChild(this.0tS);
-                };
+                }
                 removeEventListener(MouseEvent.ROLL_OVER, this.14z);
                 addEventListener(MouseEvent.ROLL_OUT, this.0Cy);
-            };
+            }
         }
 
         private function 0Cy(_arg1:Event):void{
@@ -169,14 +169,14 @@ package 0xk{
                 new 1qk(0.5, this.0eD);
                 addEventListener(MouseEvent.ROLL_OVER, this.14z);
                 removeEventListener(MouseEvent.ROLL_OUT, this.0Cy);
-            };
+            }
         }
 
         private function 0eD():void{
             if ((((((this.5h == false)) && (!((this.0tS == null))))) && (!((this.0tS.parent == null)))))
             {
                 removeChild(this.0tS);
-            };
+            }
         }
 
         public function 27L(_arg1:String, _arg2:int, _arg3:int):void{
@@ -209,18 +209,18 @@ package 0xk{
                     _local3.alphaMultiplier = (1 - (_local4 * 0.3));
                     this.0v[_local4].transform.colorTransform = _local3;
                     _local4++;
-                };
+                }
                 _local5 = (this.I0 - (this.1tN * this.1qP));
                 _local3 = this.0v[_local5].transform.colorTransform;
                 _local3.color = 196098;
                 this.0v[_local5].transform.colorTransform = _local3;
-            };
+            }
             if (this.YQ)
             {
                 if ((((this.1a0.alpha == 1)) || ((this.1a0.alpha == 0))))
                 {
                     this.2-m = (this.2-m * -1);
-                };
+                }
                 this.1a0.alpha = (this.1a0.alpha + this.2-m);
                 this.1dL.alpha = (this.1dL.alpha - this.2-m);
                 if (this.1a0.alpha >= 1)
@@ -233,9 +233,9 @@ package 0xk{
                     {
                         this.1a0.alpha = 0;
                         this.1dL.alpha = 1;
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function ZA(_arg1:int):void{
@@ -248,7 +248,7 @@ package 0xk{
                 _local3.alphaMultiplier = (1 - (_local2 * 0.3));
                 this.0v[_local2].transform.colorTransform = _local3;
                 _local2--;
-            };
+            }
         }
 
         public function 041(_arg1:int):void{
@@ -261,8 +261,8 @@ package 0xk{
                 if (_arg1 == 1)
                 {
                     this.I0 = (this.0v.length - 1);
-                };
-            };
+                }
+            }
             addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
         }
 
@@ -287,7 +287,7 @@ package 0xk{
             {
                 removeChild(0ep);
                 addChild(0ep);
-            };
+            }
             this.1a0.filters = [1q-];
             var _local3:ColorTransform = new ColorTransform();
             _local3.color = 0x292929;

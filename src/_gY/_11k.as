@@ -15,7 +15,7 @@ package _gY{
             for (_local3 in _arg1)
             {
                 _local2.push(_local3);
-            };
+            }
             return (_local2);
         }
 
@@ -25,7 +25,7 @@ package _gY{
             for each (_local3 in _arg1)
             {
                 _local2.push(_local3);
-            };
+            }
             return (_local2);
         }
 

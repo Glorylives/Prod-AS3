@@ -22,7 +22,7 @@ package IN{
             {
                 this.228(this.classes.1Pg(_local2));
                 _local2++;
-            };
+            }
         }
 
         private function 228(_arg1:0dE):void{
@@ -41,9 +41,9 @@ package IN{
                 if (_local5 != _local2)
                 {
                     this.22C(_arg1.0sP.0c(_local4));
-                };
+                }
                 _local4++;
-            };
+            }
         }
 
         private function 22C(_arg1:1iY):void{

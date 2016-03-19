@@ -26,7 +26,7 @@ package 1Np{
             if (FlowParticle.total_ > 200)
             {
                 return (false);
-            };
+            }
             x_ = this.start_.x;
             y_ = this.start_.y;
             var _local3:int = 5;
@@ -37,7 +37,7 @@ package 1Np{
                 _local6 = new FlowParticle(0.5, _local5, this.color_, this.start_, this.go_);
                 map_.addObj(_local6, x_, y_);
                 _local4++;
-            };
+            }
             return (false);
         }
 
@@ -47,7 +47,7 @@ package 1Np{
             if (FlowParticle.total_ > 200)
             {
                 return (false);
-            };
+            }
             x_ = this.start_.x;
             y_ = this.start_.y;
             var _local3:int = 3;
@@ -58,7 +58,7 @@ package 1Np{
                 _local6 = new FlowParticle(0.5, _local5, this.color_, this.start_, this.go_);
                 map_.addObj(_local6, x_, y_);
                 _local4++;
-            };
+            }
             return (false);
         }
 
@@ -99,14 +99,14 @@ class FlowParticle extends Particle {
         {
             total-;
             return (false);
-        };
+        }
         this.flowSpeed_ = (this.flowSpeed_ + ((_local3 * _arg2) / 1000));
         this.maxDist_ = (this.maxDist_ - ((this.flowSpeed_ * _arg2) / 1000));
         var _local7:Number = (_local6 - ((this.flowSpeed_ * _arg2) / 1000));
         if (_local7 > this.maxDist_)
         {
             _local7 = this.maxDist_;
-        };
+        }
         var _local8:Number = (this.go_.x_ - x_);
         var _local9:Number = (this.go_.y_ - y_);
         _local8 = (_local8 * (_local7 / _local6));
@@ -141,7 +141,7 @@ class FlowParticle2 extends Particle {
         if (_local5 < 0.5)
         {
             return (false);
-        };
+        }
         var _local6:Number = Math.atan2((this.go_.y_ - y_), (this.go_.x_ - x_));
         this.dx_ = (this.dx_ + (((this.accel_ * Math.cos(_local6)) * _arg2) / 1000));
         this.dy_ = (this.dy_ + (((this.accel_ * Math.sin(_local6)) * _arg2) / 1000));

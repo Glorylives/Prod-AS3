@@ -68,7 +68,7 @@ package 1UB{
             {
                 this.view.dm(true);
                 this.1yT.dispatch();
-            };
+            }
         }
 
         private function 1Kq():void{

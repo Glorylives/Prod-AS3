@@ -38,8 +38,8 @@ package AB{
                         duration:tag.@duration
                     }, TR.1pw(2-W), TR.17H());
                     ZX[tag.toXMLString()] = true;
-                };
-            };
+                }
+            }
         }
 
         private function ai():Boolean{
@@ -57,8 +57,8 @@ package AB{
                 if (tag.@effect == effectName)
                 {
                     return (tag);
-                };
-            };
+                }
+            }
             return (null);
         }
 

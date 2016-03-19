@@ -57,7 +57,7 @@ package com.company.assembleegameclient.screens.charrects{
                 _local9.y = _local3;
                 addChild(_local9);
                 _local3 = (_local3 + (CharacterRect.HEIGHT + 4));
-            };
+            }
             if (this.model.hasAvailableCharSlot())
             {
                 _local10 = 0;
@@ -69,8 +69,8 @@ package com.company.assembleegameclient.screens.charrects{
                     addChild(_local11);
                     _local3 = (_local3 + (CharacterRect.HEIGHT + 4));
                     _local10++;
-                };
-            };
+                }
+            }
             _local6 = new BuyCharacterRect(this.model);
             _local6.addEventListener(MouseEvent.MOUSE_DOWN, this.onBuyCharSlot);
             _local6.y = _local3;

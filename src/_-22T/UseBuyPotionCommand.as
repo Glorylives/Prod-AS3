@@ -41,7 +41,7 @@ package 22T{
             if (this.player == null)
             {
                 return;
-            };
+            }
             this.0Fx = this.vo.objectId;
             this.count = this.player.getPotionCount(this.0Fx);
             this.0NJ = this.010.08L(this.0Fx);
@@ -51,7 +51,7 @@ package 22T{
             } else
             {
                 this.u3.info("Not safe to purchase potion");
-            };
+            }
         }
 
         private function wi():Boolean{
@@ -68,18 +68,18 @@ package 22T{
             {
                 this.XA();
                 0ZC.play("use_potion");
-            };
+            }
         }
 
         private function 3i():Boolean{
             if (this.0Fx == 1z1.0Rl)
             {
                 return ((this.player.1VZ >= this.player.ba));
-            };
+            }
             if (this.0Fx == 1z1.Ww)
             {
                 return ((this.player.12a >= this.player.1nC));
-            };
+            }
             return (false);
         }
 
@@ -90,7 +90,7 @@ package 22T{
             if (this.player.getPotionCount(this.vo.objectId) == 0)
             {
                 this.010.08L(this.vo.objectId).0Xk();
-            };
+            }
         }
 
 

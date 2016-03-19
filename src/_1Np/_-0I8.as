@@ -37,12 +37,12 @@ package 1Np{
             if (this.go_.map_ == null)
             {
                 return (false);
-            };
+            }
             if (!this.lastUpdate_)
             {
                 this.lastUpdate_ = _arg1;
                 return (true);
-            };
+            }
             _local3 = int((this.lastUpdate_ / this.fw));
             var _local4:int = int((_arg1 / this.fw));
             _local8 = this.go_.x_;
@@ -50,7 +50,7 @@ package 1Np{
             if (this.lastUpdate_ < 0)
             {
                 this.lastUpdate_ = Math.max(0, (_arg1 - 15m));
-            };
+            }
             x_ = _local8;
             y_ = _local9;
             var _local10:int = _local3;
@@ -65,7 +65,7 @@ package 1Np{
                 _local13 = (_local9 + (_local7 * Math.sin(_local6)));
                 map_.addObj(_local11, _local12, _local13);
                 _local10++;
-            };
+            }
             this.lastUpdate_ = _arg1;
             return (true);
         }

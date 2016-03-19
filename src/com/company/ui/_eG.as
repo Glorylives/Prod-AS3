@@ -25,12 +25,12 @@ package com.company.ui{
             if (this._0iB != 0)
             {
                 width = _arg4;
-            };
+            }
             this._0rc = _arg5;
             if (this._0rc != 0)
             {
                 height = _arg5;
-            };
+            }
             Font.registerFont(MyriadPro);
             var _local6:Font = new MyriadPro();
             var _local7:TextFormat = this.defaultTextFormat;
@@ -51,7 +51,7 @@ package com.company.ui{
             {
                 selectable = false;
                 mouseEnabled = false;
-            };
+            }
         }
 
         public function _9j(_arg1:String):void{
@@ -112,10 +112,10 @@ package com.company.ui{
                 if (_local3 > this._0z6)
                 {
                     this._0z6 = _local3;
-                };
+                }
                 this._1GJ = (this._1GJ + _local4);
                 _local1++;
-            };
+            }
             width = (((this._0iB)==0) ? this._0z6 : this._0iB);
             height = (((this._0rc)==0) ? this._1GJ : this._0rc);
         }

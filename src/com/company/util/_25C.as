@@ -19,19 +19,19 @@ package com.company.util{
             if (_arg1 < this.LR)
             {
                 this.LR = _arg1;
-            };
+            }
             if (_arg2 < this._8J)
             {
                 this._8J = _arg2;
-            };
+            }
             if (_arg1 > this._0yj)
             {
                 this._0yj = _arg1;
-            };
+            }
             if (_arg2 > this._0B8)
             {
                 this._0B8 = _arg2;
-            };
+            }
         }
 
         public function clear():void{

@@ -47,8 +47,8 @@ package OZ{
                 } else
                 {
                     this.Z2();
-                };
-            };
+                }
+            }
         }
 
         private function 1TG():void{
@@ -98,8 +98,8 @@ package OZ{
                 if (_arg1 > 1)
                 {
                     _arg1 = 1;
-                };
-            };
+                }
+            }
             this.position = _arg1;
             this.1eH.y = (1ss + (this.range * this.position));
             ((this.1lf) && (this.1lf.dispatch(this.position)));

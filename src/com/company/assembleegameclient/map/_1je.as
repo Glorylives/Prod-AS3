@@ -47,32 +47,32 @@ import flash.display.BitmapData;
             if (_arg1.hasOwnProperty("MinDamage"))
             {
                 this.minDamage_ = int(_arg1.MinDamage);
-            };
+            }
             if (_arg1.hasOwnProperty("MaxDamage"))
             {
                 this.maxDamage_ = int(_arg1.MaxDamage);
-            };
+            }
             this.push_ = _arg1.hasOwnProperty("Push");
             if (_arg1.hasOwnProperty("Animate"))
             {
                 this.animate_._1tW(XML(_arg1.Animate));
-            };
+            }
             if (_arg1.hasOwnProperty("BlendPriority"))
             {
                 this.ie = int(_arg1.BlendPriority);
-            };
+            }
             if (_arg1.hasOwnProperty("CompositePriority"))
             {
                 this._0Qw = int(_arg1.CompositePriority);
-            };
+            }
             if (_arg1.hasOwnProperty("Speed"))
             {
                 this.speed_ = Number(_arg1.Speed);
-            };
+            }
             if (_arg1.hasOwnProperty("SlideAmount"))
             {
                 this.slideAmount_ = Number(_arg1.SlideAmount);
-            };
+            }
             this._1mN = ((_arg1.hasOwnProperty("XOffset")) ? Number(_arg1.XOffset) : 0);
             this._1FK = ((_arg1.hasOwnProperty("YOffset")) ? Number(_arg1.YOffset) : 0);
             this.push_ = _arg1.hasOwnProperty("Push");
@@ -86,12 +86,12 @@ import flash.display.BitmapData;
                 if (_arg1.hasOwnProperty("Corner"))
                 {
                     this._21I = new _1J1(XML(_arg1.Corner));
-                };
+                }
                 if (_arg1.hasOwnProperty("InnerCorner"))
                 {
                     this._0SB = new _1J1(XML(_arg1.InnerCorner));
-                };
-            };
+                }
+            }
             this._1j7 = _arg1.hasOwnProperty("SameTypeEdgeMode");
             if (_arg1.hasOwnProperty("Top"))
             {
@@ -100,15 +100,15 @@ import flash.display.BitmapData;
                 if (_arg1.hasOwnProperty("TopAnimate"))
                 {
                     this._1yw._1tW(XML(_arg1.TopAnimate));
-                };
-            };
+                }
+            }
         }
 
         public function _1SF():Vector.<BitmapData>{
             if (((!(this._0Ly)) || (!((this._247 == null)))))
             {
                 return (this._247);
-            };
+            }
             this._247 = new Vector.<BitmapData>(9);
             this._247[3] = this._0sJ.getTexture(0);
             this._247[1] = BitmapUtil._0E6(this._247[3], 1);
@@ -120,7 +120,7 @@ import flash.display.BitmapData;
                 this._247[2] = BitmapUtil._0E6(this._247[0], 1);
                 this._247[8] = BitmapUtil._0E6(this._247[0], 2);
                 this._247[6] = BitmapUtil._0E6(this._247[0], 3);
-            };
+            }
             return (this._247);
         }
 
@@ -128,7 +128,7 @@ import flash.display.BitmapData;
             if ((((this._0SB == null)) || (!((this._27 == null)))))
             {
                 return (this._27);
-            };
+            }
             this._27 = this._247.concat();
             this._27[0] = this._0SB.getTexture(0);
             this._27[2] = BitmapUtil._0E6(this._27[0], 1);

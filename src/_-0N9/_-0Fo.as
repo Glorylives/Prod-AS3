@@ -22,7 +22,7 @@ package 0N9{
             {
                 _local1[_local3.charCodeAt(0)] = _local3.charAt(1);
                 _local1[_local3.charCodeAt(1)] = _local3.charAt(1);
-            };
+            }
             return (_local1);
         }
 
@@ -39,7 +39,7 @@ package 0N9{
             while (_local1 < this.1Oy.length)
             {
                 _local1++;
-            };
+            }
         }
 
         public function 02f(_arg1:String):Boolean{
@@ -59,9 +59,9 @@ package 0N9{
                 if (_local4 !== null)
                 {
                     _local2.push(_local4);
-                };
+                }
                 _local3++;
-            };
+            }
             return (_local2.join(""));
         }
 
@@ -78,12 +78,12 @@ package 0N9{
                     if (((!((this.03J[_local1].charAt(_local4) == "'"))) && (!((this.03J[_local1].charAt(_local4) == '"')))))
                     {
                         _local3 = _local3.concat(this.03J[_local1].charAt(_local4));
-                    };
+                    }
                     _local4++;
-                };
+                }
                 this.03J[_local1] = _local3;
                 _local1++;
-            };
+            }
             var _local2:Array = this.03J;
             _local2.sort();
             return (this.1Oy);

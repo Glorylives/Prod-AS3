@@ -65,11 +65,11 @@ package com.company.assembleegameclient.ui{
                 if (((_arg4) && (_local6.1sy)))
                 {
                     _local7.addEventListener(MouseEvent.MOUSE_DOWN, this.1hC);
-                };
+                }
                 this.iI.push(_local7);
                 addChild(_local7);
                 _local5++;
-            };
+            }
         }
 
         public function 9W():Vector.<Boolean>{
@@ -79,7 +79,7 @@ package com.company.assembleegameclient.ui{
             {
                 _local1.push(this.iI[_local2].included_);
                 _local2++;
-            };
+            }
             return (_local1);
         }
 
@@ -89,7 +89,7 @@ package com.company.assembleegameclient.ui{
             {
                 this.iI[_local2].setIncluded(_arg1[_local2]);
                 _local2++;
-            };
+            }
         }
 
         public function 16Z(_arg1:Vector.<Boolean>):Boolean{
@@ -99,9 +99,9 @@ package com.company.assembleegameclient.ui{
                 if (_arg1[_local2] != this.iI[_local2].included_)
                 {
                     return (false);
-                };
+                }
                 _local2++;
-            };
+            }
             return (true);
         }
 
@@ -113,9 +113,9 @@ package com.company.assembleegameclient.ui{
                 if (this.iI[_local2].included_)
                 {
                     _local1++;
-                };
+                }
                 _local2++;
-            };
+            }
             return (_local1);
         }
 
@@ -127,9 +127,9 @@ package com.company.assembleegameclient.ui{
                 if (this.iI[_local2].isEmpty())
                 {
                     _local1++;
-                };
+                }
                 _local2++;
-            };
+            }
             return (_local1);
         }
 
@@ -157,7 +157,7 @@ package com.company.assembleegameclient.ui{
                     this.taglineText_.setColor(0xB3B3B3);
                     _local2 = du.oR;
                     break;
-            };
+            }
             this.taglineText_.setStringBuilder(new 1cA().setParams(_local2));
         }
 

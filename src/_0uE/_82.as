@@ -72,7 +72,7 @@ import flash.display.Sprite;
             if (this.vo._1AV())
             {
                 this._0Lw();
-            };
+            }
         }
 
         private function _0Lw():void{
@@ -87,7 +87,7 @@ import flash.display.Sprite;
             if (this.Rz)
             {
                 this.Rz.setStringBuilder(new _1cA().setParams(this._0sI(this.vo), {level:this.vo.level}));
-            };
+            }
         }
 
         private function _1VH():void{

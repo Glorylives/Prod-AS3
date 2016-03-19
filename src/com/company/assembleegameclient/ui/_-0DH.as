@@ -29,7 +29,7 @@ package com.company.assembleegameclient.ui{
             if (_local4)
             {
                 this.0G9 = _local4.starred_;
-            };
+            }
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
@@ -57,8 +57,8 @@ package com.company.assembleegameclient.ui{
                 if (!this.enabled)
                 {
                     this.1-P.Bs().dispatch(this.1-P.tooltip);
-                };
-            };
+                }
+            }
         }
 
         override public function draw(_arg1:GameObject, _arg2:ColorTransform=null):void{
@@ -67,7 +67,7 @@ package com.company.assembleegameclient.ui{
             {
                 transform.colorTransform = ((_arg2) || (MoreColorUtil.identity));
                 this.0G9 = _local3.starred_;
-            };
+            }
             super.draw(_arg1, _arg2);
         }
 

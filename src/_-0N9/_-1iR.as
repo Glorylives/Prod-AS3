@@ -64,11 +64,11 @@ package 0N9{
             if ((((((((_arg1.numStars_ < Parameters.data_.chatStarRequirement)) && (!((_arg1.name_ == this.model.player.name_))))) && (!(_local2)))) && (!(this.0gb(_arg1.recipient_)))))
             {
                 return;
-            };
+            }
             if (((((!((_arg1.recipient_ == ""))) && (Parameters.data_.chatFriend))) && (!(this.1RW.19L(_arg1.recipient_)))))
             {
                 return;
-            };
+            }
             if (((((((!(Parameters.data_.chatAll)) && (!((_arg1.name_ == this.model.player.name_))))) && (!(_local2)))) && (!(this.0gb(_arg1.recipient_)))))
             {
                 if (!(((_arg1.recipient_ == Parameters.PB)) && (Parameters.data_.chatGuild)))
@@ -76,9 +76,9 @@ package 0N9{
                     if (!((!((_arg1.recipient_ == ""))) && (Parameters.data_.chatWhisper)))
                     {
                         return;
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (this.0AI(_arg1))
             {
                 _local3 = _arg1.cleanText_;
@@ -87,19 +87,19 @@ package 0N9{
             {
                 _local3 = _arg1.text_;
                 _arg1.text_ = this.oi(_arg1.text_);
-            };
+            }
             if (((_local2) && (this.Yg(_local3))))
             {
                 _local3 = this.1ud(_local3);
-            };
+            }
             if (((!(_local2)) && (this.9R.02f(_local3))))
             {
                 if (_arg1.name_ == this.model.player.name_)
                 {
                     this.12K.dispatch(1Ys.make(Parameters.1Wj, "This message has been flagged as spam."));
-                };
+                }
                 return;
-            };
+            }
             if (_arg1.recipient_)
             {
                 if (((!((_arg1.recipient_ == this.model.player.name_))) && (!(this.0gb(_arg1.recipient_)))))
@@ -112,9 +112,9 @@ package 0N9{
                     {
                         this.0KU.push(_arg1.name_);
                         this.0KU.1Wf();
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (((_local2) && ((1J1.ng == true))))
             {
                 1J1.ng = false;
@@ -125,7 +125,7 @@ package 0N9{
                 this.0sW(_arg1);
                 _arg1.name_ = _local4;
                 _arg1.text_ = _local5;
-            };
+            }
             if (_local2)
             {
                 if ((((((((_arg1.text_ == "Please verify your email before chat")) && (!((this.11u == null))))) && ((this.11u.ja.map.name_ == "Nexus")))) && (!((this.1qM == null)))))
@@ -141,24 +141,24 @@ package 0N9{
                         } else
                         {
                             0bI.Vs(_arg1.text_);
-                        };
+                        }
                     } else
                     {
                         if ((((_arg1.name_ == "#{objects.ft_shopkeep}")) && (!(1aM.0ui))))
                         {
                             return;
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             if (_arg1.objectId_ >= 0)
             {
                 this.pR(_arg1, _local3);
-            };
+            }
             if (((_local2) || (((this.account.0D3()) && (((!(Parameters.data_["hidePlayerChat"])) || (this.0gb(_arg1.name_))))))))
             {
                 this.0sW(_arg1);
-            };
+            }
         }
 
         private function 0gb(_arg1:String):Boolean{
@@ -189,7 +189,7 @@ package 0N9{
             } catch(error:Error)
             {
                 message.text = ((0AI(text)) ? text.cleanText_ : text.text_);
-            };
+            }
         }
 
         private function oi(_arg1:String):String{
@@ -200,8 +200,8 @@ package 0N9{
                 if (((_local2) && (_local2.Zz())))
                 {
                     return (_arg1.replace("74026S9", (_local2.Zz().name + ", ")));
-                };
-            };
+                }
+            }
             return (_arg1);
         }
 
@@ -228,22 +228,22 @@ package 0N9{
                 _local6 = 053.0VV(_arg1.name_);
                 _local7 = new _Wl(_local3, _arg2, _arg1.name_, _local5, _local6, _local4.back, 1, _local4.Je, 1, _local4.text, _arg1.bubbleTime_, false, true);
                 this.addSpeechBalloon.dispatch(_local7);
-            };
+            }
         }
 
         private function GK(_arg1:Text, _arg2:GameObject):1Xc{
             if (_arg2.props_.isEnemy_)
             {
                 return (this.1c3);
-            };
+            }
             if (_arg1.recipient_ == Parameters.PB)
             {
                 return (this.AJ);
-            };
+            }
             if (_arg1.recipient_ != "")
             {
                 return (this.0pP);
-            };
+            }
             return (this.0L5);
         }
 

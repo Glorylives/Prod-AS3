@@ -47,7 +47,7 @@ package 1UB{
             } else
             {
                 this.view.show();
-            };
+            }
         }
 
         private function 0dD():void{
@@ -73,7 +73,7 @@ package 1UB{
             if (this.W2.1Nd.contains(this.view))
             {
                 this.W2.1Nd.removeChild(this.view);
-            };
+            }
         }
 
 

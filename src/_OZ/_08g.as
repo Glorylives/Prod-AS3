@@ -92,7 +92,7 @@ public class _08g extends Lr {
                 _local3 = (((this._24n)!="") ? this.zM.setParams(this._24n, {cost:_arg1.toString()}) : this._0f5.setString(_arg1.toString()));
                 this.text.setStringBuilder(_local3);
                 this.vi();
-            };
+            }
         }
 
         public function setStringBuilder(_arg1:_1Jo){
@@ -115,7 +115,7 @@ public class _08g extends Lr {
                 mouseEnabled = _arg1;
                 filters = ((_arg1) ? [] : [_1c9]);
                 this.draw();
-            };
+            }
         }
 
         override public function setWidth(_arg1:int):void{
@@ -152,7 +152,7 @@ public class _08g extends Lr {
                     break;
                 default:
                     this.icon.bitmapData = null;
-            };
+            }
             this._24E();
         }
 
@@ -188,7 +188,7 @@ public class _08g extends Lr {
             if (this.PT)
             {
                 this.ih(graphics);
-            };
+            }
         }
 
         private function Pj():int{

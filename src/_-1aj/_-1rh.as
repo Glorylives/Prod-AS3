@@ -13,7 +13,7 @@ package 1aj{
             for each (_local3 in _arg1)
             {
                 _local2.push(_local3);
-            };
+            }
             return (_local2);
         }
 

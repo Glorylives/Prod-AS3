@@ -150,8 +150,8 @@ import flash.filters.GlowFilter;
                 {
                     g1[effects_[_local2].name_] = _local2;
                     _local2++;
-                };
-            };
+                }
+            }
             return (g1[_arg1]);
         }
 
@@ -162,8 +162,8 @@ import flash.filters.GlowFilter;
                 if (_local2.name_ == _arg1)
                 {
                     return (_local2);
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -179,9 +179,9 @@ import flash.filters.GlowFilter;
                 if (_local6 != null)
                 {
                     _arg2.push(_local6[(_arg3 % _local6.length)]);
-                };
+                }
                 _arg1 = _local4;
-            };
+            }
         }
 
         public static function getConditionEffectIcons2(_arg1:uint, _arg2:Vector.<BitmapData>, _arg3:int):void{
@@ -196,9 +196,9 @@ import flash.filters.GlowFilter;
                 if (_local6 != null)
                 {
                     _arg2.push(_local6[(_arg3 % _local6.length)]);
-                };
+                }
                 _arg1 = _local4;
-            };
+            }
         }
 
         public static function cY(_arg1:Vector.<BitmapData>, _arg2:int, _arg3:Boolean):void{
@@ -207,8 +207,8 @@ import flash.filters.GlowFilter;
             var _local6:Matrix;
             if (_131 == null)
             {
-                _131 = {};
-            };
+                _131 = {}
+            }
             if (131[_arg2])
             {
                 _local4 = 131[_arg2];
@@ -226,11 +226,11 @@ import flash.filters.GlowFilter;
                 {
                     _local4 = new HL(16, 16, true, 0);
                     _local4.draw(AssetLibrary._1JR("lofiInterface2", _arg2), _local5);
-                };
+                }
                 _local4 = _1go._0Lr(_local4, 0xFFFFFFFF);
                 _local4.applyFilter(_local4, _local4.rect, PointUtil._1EH, GLOW_FILTER);
                 131[_arg2] = _local4;
-            };
+            }
             _arg1.push(_local4);
         }
 
@@ -261,12 +261,12 @@ import flash.filters.GlowFilter;
                             _local6.applyFilter(_local6, _local6.rect, PointUtil._1EH, GLOW_FILTER);
                             _local4.push(_local6);
                             _local5++;
-                        };
-                    };
+                        }
+                    }
                     Gk[effects_[_local3].bit_] = _local4;
                     _local3++;
-                };
-            };
+                }
+            }
             return (Gk[_arg1]);
         }
 
@@ -303,21 +303,21 @@ import flash.filters.GlowFilter;
                             {
                                 _local3 = new HL(16, 16, true, 0);
                                 _local3.draw(AssetLibrary._1JR("lofiInterface2", effects_[_local6].iconOffsets_[_local7]), _local4);
-                            };
+                            }
                             _local3 = _1go._0Lr(_local3, 0xFFFFFFFF);
                             _local3.applyFilter(_local3, _local3.rect, PointUtil._1EH, GLOW_FILTER);
                             _local2.push(_local3);
                             _local7++;
-                        };
-                    };
+                        }
+                    }
                     _03M[effects_[_local6].bit_] = _local2;
                     _local6++;
-                };
-            };
+                }
+            }
             if (((!((_03M == null))) && (!((_03M[_arg1] == null)))))
             {
                 return (_03M[_arg1]);
-            };
+            }
             return (null);
         }
 

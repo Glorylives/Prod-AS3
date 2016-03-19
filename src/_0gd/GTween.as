@@ -19,7 +19,7 @@ package _0gd{
         public static var _20R:Boolean = false;
         public static var Qb:Number = 1;
         protected static var _9q:Boolean = false;
-        protected static var wF:Object = {};
+        protected static var wF:Object = {}
         protected static var _03U:Shape;
         protected static var time:Number;
         protected static var _3r:Dictionary = new Dictionary(true);
@@ -71,17 +71,17 @@ package _0gd{
             {
                 _local6 = _arg4.swapValues;
                 delete _arg4.swapValues;
-            };
+            }
             this.copy(_arg4, this);
             this.T9(_arg3);
             if (_local6)
             {
                 this.swapValues();
-            };
+            }
             if ((((((this.duration == 0)) && ((this.delay == 0)))) && (this.lw)))
             {
                 this.position = 0;
-            };
+            }
         }
 
         public static function _0Nw(_arg1:Object, _arg2:Array, _arg3:Boolean=false):void{
@@ -93,7 +93,7 @@ package _0gd{
                 if (_local5 == "*")
                 {
                     9q = true;
-                };
+                }
                 if (wF[_local5] == null)
                 {
                     wF[_local5] = [_arg1];
@@ -105,10 +105,10 @@ package _0gd{
                     } else
                     {
                         wF[_local5].push(_arg1);
-                    };
-                };
+                    }
+                }
                 _local4++;
-            };
+            }
         }
 
         public static function _08R(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number):Number{
@@ -128,13 +128,13 @@ package _0gd{
             if (20R)
             {
                 return;
-            };
+            }
             var _local3:Number = ((time - _local2) * Qb);
             for (_local4 in 3r)
             {
                 _local5 = (_local4 as GTween);
                 _local5.position = (_local5.17b + (((_local5.Rn) ? Qb : _local3) * _local5.wY));
-            };
+            }
         }
 
 
@@ -146,7 +146,7 @@ package _0gd{
             if (_arg1 == this._0dF)
             {
                 return;
-            };
+            }
             this._0dF = _arg1;
             if (this._0dF)
             {
@@ -154,7 +154,7 @@ package _0gd{
                 if ((this.target is IEventDispatcher))
                 {
                     this.target.removeEventListener("_1yq", this._0gc);
-                };
+                }
                 delete _0K6[this];
             } else
             {
@@ -163,7 +163,7 @@ package _0gd{
                     this._08B = false;
                     this._1x2 = (this.Z- = (this.aW = (this._1L = (this._0i4 = 0))));
                     this._17b = -(this.delay);
-                };
+                }
                 _3r[this] = true;
                 if ((this.target is IEventDispatcher))
                 {
@@ -171,8 +171,8 @@ package _0gd{
                 } else
                 {
                     _0K6[this] = true;
-                };
-            };
+                }
+            }
         }
 
         public function get position():Number{
@@ -197,7 +197,7 @@ package _0gd{
                 if (this.Z == _local2)
                 {
                     return;
-                };
+                }
                 this._17b = _local2;
                 this._1x2 = ((((this._1Bs) && (!((this._01V & 1))))) ? 0 : this.duration);
             } else
@@ -207,15 +207,15 @@ package _0gd{
                 if (((this._1Bs) && (((this._17b / this.duration) & 1))))
                 {
                     this._1x2 = (this.duration - this._1x2);
-                };
-            };
+                }
+            }
             this.aW = (((((this.duration == 0)) && ((this._17b >= 0)))) ? 1 : this.ease((this._1x2 / this.duration), 0, 1, 1));
             if (((((this.target) && ((((this._17b >= 0)) || ((this._0i4 >= 0)))))) && (!((this._1x2 == this.Z)))))
             {
                 if (!this._08B)
                 {
                     this.init();
-                };
+                }
                 for (_local4 in this._0w4)
                 {
                     _local5 = this._1Ez[_local4];
@@ -230,17 +230,17 @@ package _0gd{
                         {
                             _local7 = _local8[_local10].tween(this, _local4, _local7, _local5, _local6, this.aW, _local3);
                             _local10++;
-                        };
+                        }
                         if (!isNaN(_local7))
                         {
                             this.target[_local4] = _local7;
-                        };
+                        }
                     } else
                     {
                         this.target[_local4] = _local7;
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (_9q)
             {
                 _local8 = wF["*"];
@@ -250,38 +250,38 @@ package _0gd{
                 {
                     _local8[_local10].tween(this, "*", NaN, NaN, NaN, this.aW, _local3);
                     _local10++;
-                };
-            };
+                }
+            }
             if (!this._1DK)
             {
                 if (this._194)
                 {
                     this._0kQ("change");
-                };
+                }
                 if (this._1c0 != null)
                 {
                     this._1c0(this);
-                };
-            };
+                }
+            }
             if (_local3)
             {
                 this.paused = true;
                 if (this._0aM)
                 {
                     this._0aM.paused = false;
-                };
+                }
                 if (!this._1DK)
                 {
                     if (this._194)
                     {
                         this._0kQ("complete");
-                    };
+                    }
                     if (this.onComplete != null)
                     {
                         this.onComplete(this);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function get delay():Number{
@@ -292,7 +292,7 @@ package _0gd{
             if (this._17b <= 0)
             {
                 this._17b = -(_arg1);
-            };
+            }
             this.t7 = _arg1;
         }
 
@@ -300,7 +300,7 @@ package _0gd{
             if (this._proxy == null)
             {
                 this._proxy = new TargetProxy(this);
-            };
+            }
             return (this._proxy);
         }
 
@@ -325,7 +325,7 @@ package _0gd{
         }
 
         public function T9(_arg1:Object=null):void{
-            this._0w4 = {};
+            this._0w4 = {}
             this._06x(_arg1);
         }
 
@@ -343,14 +343,14 @@ package _0gd{
             if (!this._08B)
             {
                 this.init();
-            };
+            }
             var _local1:Object = this._0w4;
             this._0w4 = this._1Ez;
             this._1Ez = _local1;
             for (_local2 in this.r6)
             {
                 this.r6[_local2] = (this.r6[_local2] * -1);
-            };
+            }
             if (this._17b < 0)
             {
                 _local3 = this._0i4;
@@ -360,7 +360,7 @@ package _0gd{
             } else
             {
                 this.position = this._17b;
-            };
+            }
         }
 
         public function init():void{
@@ -370,8 +370,8 @@ package _0gd{
             var _local4:Number;
             var _local5:uint;
             this._08B = true;
-            this._1Ez = {};
-            this.r6 = {};
+            this._1Ez = {}
+            this.r6 = {}
             for (_local1 in this._0w4)
             {
                 if (wF[_local1])
@@ -384,16 +384,16 @@ package _0gd{
                     {
                         _local4 = _local2[_local5].init(this, _local1, _local4);
                         _local5++;
-                    };
+                    }
                     if (!isNaN(_local4))
                     {
                         this.r6[_local1] = (this._0w4[_local1] - (this._1Ez[_local1] = _local4));
-                    };
+                    }
                 } else
                 {
                     this.r6[_local1] = (this._0w4[_local1] - (this._1Ez[_local1] = this.target[_local1]));
-                };
-            };
+                }
+            }
             if (_9q)
             {
                 _local2 = wF["*"];
@@ -403,19 +403,19 @@ package _0gd{
                 {
                     _local2[_local5].init(this, "*", NaN);
                     _local5++;
-                };
-            };
+                }
+            }
             if (!this._1DK)
             {
                 if (this._194)
                 {
                     this._0kQ("init");
-                };
+                }
                 if (this._2k != null)
                 {
                     this._2k(this);
-                };
-            };
+                }
+            }
         }
 
         public function o1():void{
@@ -432,11 +432,11 @@ package _0gd{
             if (this._17b > 0)
             {
                 this._17b = 0;
-            };
+            }
             if (this.lw)
             {
                 this.paused = false;
-            };
+            }
         }
 
         protected function copy(_arg1:Object, _arg2:Object, _arg3:Boolean=false):Object{
@@ -449,8 +449,8 @@ package _0gd{
                 } else
                 {
                     _arg2[_local4] = _arg1[_local4];
-                };
-            };
+                }
+            }
             return (_arg2);
         }
 
@@ -458,7 +458,7 @@ package _0gd{
             if (hasEventListener(_arg1))
             {
                 dispatchEvent(new Event(_arg1));
-            };
+            }
         }
 
 
@@ -493,7 +493,7 @@ dynamic class TargetProxy extends Proxy {
         } else
         {
             this.tween.setValue(String(_arg1), Number(_arg2));
-        };
+        }
     }
 
     override flash_proxy function deleteProperty(_arg1):Boolean{

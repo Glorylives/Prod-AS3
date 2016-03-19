@@ -56,14 +56,14 @@ package eC{
             if (!stage.contains(this.toolTip_))
             {
                 stage.addChild(this.toolTip_);
-            };
+            }
         }
 
         public function 1Di():void{
             if (this.toolTip_.parent != null)
             {
                 this.toolTip_.parent.removeChild(this.toolTip_);
-            };
+            }
         }
 
         public function draw(_arg1:int, _arg2:int, _arg3:int):void{
@@ -71,7 +71,7 @@ package eC{
             if ((((_arg1 == this.val_)) && ((_arg2 == this.boost_))))
             {
                 return;
-            };
+            }
             this.val_ = _arg1;
             this.boost_ = _arg2;
             if ((_arg1 - _arg2) >= _arg3)
@@ -90,19 +90,19 @@ package eC{
                     } else
                     {
                         _local4 = 0xB3B3B3;
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (this.0tt != _local4)
             {
                 this.0tt = _local4;
                 this.wy.setColor(this.0tt);
-            };
+            }
             var _local5:String = this.val_.toString();
             if (this.boost_ != 0)
             {
                 _local5 = (_local5 + (((" (" + (((this.boost_ > 0)) ? "+" : "")) + this.boost_.toString()) + ")"));
-            };
+            }
             this.wy.setStringBuilder(new 1WS(_local5));
             this.wy.x = this.nameText_.getBounds(this).right;
         }

@@ -34,15 +34,15 @@ package com.google.analytics.utils{
                 } else
                 {
                     _arg2 = "Flash";
-                };
-            };
+                }
+            }
             if (_arg3 == "")
             {
                 _local6 = flashVersion;
             } else
             {
                 _local6 = Version.fromString(_arg3);
-            };
+            }
             _url = _arg1;
             _appName = _arg2;
             _appVersion = _local6;
@@ -67,7 +67,7 @@ package com.google.analytics.utils{
             if (_local1)
             {
                 return (_local1);
-            };
+            }
             return ("");
         }
 
@@ -75,7 +75,7 @@ package com.google.analytics.utils{
             if (!_protocol)
             {
                 _findProtocol();
-            };
+            }
             return (_protocol);
         }
 
@@ -88,7 +88,7 @@ package com.google.analytics.utils{
             if (!_userAgent)
             {
                 _userAgent = new UserAgent(this, appName, appVersion.toString(4));
-            };
+            }
             return (_userAgent);
         }
 
@@ -100,9 +100,9 @@ package com.google.analytics.utils{
                 if (_local1)
                 {
                     return (_local1);
-                };
+                }
                 return ("-");
-            };
+            }
             return ("UTF-8");
         }
 
@@ -123,12 +123,12 @@ package com.google.analytics.utils{
                 case "color":
                 default:
                     _local1 = "24";
-            };
+            }
             var _local2:String = _dom.colorDepth;
             if (_local2)
             {
                 _local1 = _local2;
-            };
+            }
             return (_local1);
         }
 
@@ -152,18 +152,18 @@ package com.google.analytics.utils{
                         if (_local4.charAt(5) == ":")
                         {
                             _local1 = Protocols.HTTPS;
-                        };
+                        }
                         break;
                     default:
                         _protocol = Protocols.none;
-                };
-            };
+                }
+            }
             var _local2:String = _dom.protocol;
             var _local3:String = (_local1.toString() + ":").toLowerCase();
             if (((((_local2) && (!((_local2 == _local3))))) && (_debug)))
             {
                 _debug.warning(((("Protocol mismatch: SWF=" + _local3) + ", DOM=") + _local2));
-            };
+            }
             _protocol = _local1;
         }
 
@@ -194,11 +194,11 @@ package com.google.analytics.utils{
             if (_local1)
             {
                 return (_local1);
-            };
+            }
             if (protocol == Protocols.file)
             {
                 return ("localhost");
-            };
+            }
             return ("");
         }
 
@@ -214,8 +214,8 @@ package com.google.analytics.utils{
                 if ((((_local1.length > _local2.length)) && ((_local1.substr(0, _local2.length) == _local2))))
                 {
                     _local2 = _local1;
-                };
-            };
+                }
+            }
             return (_local2);
         }
 
@@ -234,19 +234,19 @@ package com.google.analytics.utils{
                     if (protocol == Protocols.HTTPS)
                     {
                         _local2 = _local1.split("https://").join("");
-                    };
-                };
+                    }
+                }
                 _local3 = _local2.indexOf("/");
                 if (_local3 > -1)
                 {
                     _local2 = _local2.substring(0, _local3);
-                };
+                }
                 return (_local2);
-            };
+            }
             if (protocol == Protocols.file)
             {
                 return ("localhost");
-            };
+            }
             return ("");
         }
 
@@ -268,7 +268,7 @@ package com.google.analytics.utils{
             if (_local1)
             {
                 return (_local1);
-            };
+            }
             return ("");
         }
 
@@ -277,7 +277,7 @@ package com.google.analytics.utils{
             if (_local1)
             {
                 return (_local1);
-            };
+            }
             return ("");
         }
 

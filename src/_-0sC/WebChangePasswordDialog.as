@@ -41,7 +41,7 @@ package 0sC{
                 _local2.1pf = this.password_.text();
                 _local2.newPassword = this.rr.text();
                 this.change.dispatch(_local2);
-            };
+            }
         }
 
         private function 0Ec():Boolean{
@@ -49,7 +49,7 @@ package 0sC{
             if (!_local1)
             {
                 this.password_.07n(du.18m);
-            };
+            }
             return (_local1);
         }
 
@@ -58,7 +58,7 @@ package 0sC{
             if (!_local1)
             {
                 this.rr.07n(du.0u8);
-            };
+            }
             return (_local1);
         }
 
@@ -67,7 +67,7 @@ package 0sC{
             if (!_local1)
             {
                 this.96.07n(du.1vt);
-            };
+            }
             return (_local1);
         }
 

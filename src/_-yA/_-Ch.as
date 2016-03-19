@@ -86,7 +86,7 @@ package yA{
                 _local10 = title.getTextFormat(0, _local5.length);
                 _local10.leading = 10;
                 title.setTextFormat(_local10, 0, _local5.length);
-            };
+            }
             var _local6:TextFormat = new TextFormat();
             _local6.size = 13;
             _local6.font = "Myraid Pro";
@@ -112,7 +112,7 @@ package yA{
             if (_arg1 == 1)
             {
                 this.ay.visible = false;
-            };
+            }
             addChild(this.1HC);
             this.1HC.1Re();
             this.nL.27L("Drag the item from your inventory into the slot", 14, 0xFFFF);
@@ -153,7 +153,7 @@ package yA{
             if (this.1c5 == null)
             {
                 return;
-            };
+            }
             this.1c5.alpha = 0;
             addChild(this.1c5);
             var _local1:int = 8;
@@ -177,7 +177,7 @@ package yA{
             if (((!((this.1c5 == null))) && (!((this.1c5.parent == null)))))
             {
                 removeChild(this.1c5);
-            };
+            }
             this.1c5 = DisplayObject(this.mV);
             this.jZ();
         }
@@ -266,7 +266,7 @@ package yA{
             } else
             {
                 _local4 = _arg1;
-            };
+            }
             J-(_local4, true);
             desc.setColor(16689154);
             desc.setBold(false);
@@ -287,7 +287,7 @@ package yA{
                 _local6.color = 196098;
                 _local6.bold = true;
                 desc.setTextFormat(_local6, _local3, (_local3 + _arg2.length));
-            };
+            }
         }
 
         public function Sb():void{

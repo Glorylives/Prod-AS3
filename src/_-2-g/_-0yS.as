@@ -59,7 +59,7 @@ package 2-g{
             if (this._config.p8)
             {
                 Mouse.hide();
-            };
+            }
             this.0Q1.report("<b>Ruler started. Click on two locations to measure.</b>", -1);
         }
 
@@ -84,7 +84,7 @@ package 2-g{
             } catch(err:Error)
             {
                 bmd = null;
-            };
+            }
             this.037.bitmapData = bmd;
             var d:int = 10;
             this.0T3.x = ((mouseX - this.0T3.width) - d);
@@ -95,12 +95,12 @@ package 2-g{
             {
                 this.0T3.x = (mouseX + d);
                 this.037.x = this.0T3.x;
-            };
+            }
             if (this.0T3.y < 38)
             {
                 this.0T3.y = (mouseY + d);
                 this.037.y = (this.0T3.y + this.0T3.height);
-            };
+            }
         }
 
         private function 05M(_arg1:MouseEvent):void{
@@ -133,7 +133,7 @@ package 2-g{
                     if (this._config.p8)
                     {
                         Mouse.show();
-                    };
+                    }
                     removeChild(this.0nF);
                     removeChild(this.0T3);
                     removeEventListener(MouseEvent.MOUSE_MOVE, this.onMouseMove);
@@ -157,14 +157,14 @@ package 2-g{
                     {
                         _local6 = _local4;
                         _local7 = _local2;
-                    };
+                    }
                     _local8 = _local2;
                     _local9 = _local4;
                     if (_local2.y > _local4.y)
                     {
                         _local8 = _local4;
                         _local9 = _local2;
-                    };
+                    }
                     _local10 = (_local7.x - _local6.x);
                     _local11 = (_local9.y - _local8.y);
                     _local12 = Point.distance(_local2, _local4);
@@ -185,7 +185,7 @@ package 2-g{
                         _local13.x = _local5.x;
                         _local13.y = _local5.y;
                         addChild(_local13);
-                    };
+                    }
                     graphics.lineStyle(1, 0xAACC00, 0.5);
                     graphics.moveTo(this.0ly.x, _local8.y);
                     graphics.lineTo((this.0ly.x + this.0ly.width), _local8.y);
@@ -213,8 +213,8 @@ package 2-g{
                 } else
                 {
                     this.exit();
-                };
-            };
+                }
+            }
         }
 
         public function exit():void{
@@ -241,7 +241,7 @@ package 2-g{
             if (_local3 > 180)
             {
                 _local3 = (_local3 - 360);
-            };
+            }
             return (_local3);
         }
 
@@ -255,7 +255,7 @@ package 2-g{
             {
                 _local6 = true;
                 _arg4 = Math.abs(_arg4);
-            };
+            }
             var _local7:Number = ((_arg4 * Math.PI) / 180);
             var _local8:Number = ((_arg5 * Math.PI) / 180);
             var _local9:Point = this.200(_arg2, _local8);
@@ -275,7 +275,7 @@ package 2-g{
                 _arg1.curveTo(_local15.x, _local15.y, _local9.x, _local9.y);
                 _local10 = _local12;
                 _local11++;
-            };
+            }
             return (_local9);
         }
 

@@ -37,7 +37,7 @@ package 0g5{
             {
                 this.LF.0kc = _arg1;
                 this.1R7();
-            };
+            }
         }
 
         public function oE(_arg1:1Mq):void{
@@ -45,7 +45,7 @@ package 0g5{
             if (!this.LF.0kc)
             {
                 this.cd();
-            };
+            }
         }
 
         private function 1As(_arg1:1Mq):void{
@@ -53,7 +53,7 @@ package 0g5{
             if (describeType(mapping.commandClass).factory.method.(@name == "execute").length() == 0)
             {
                 throw (new Error("Command Class must expose an execute method"));
-            };
+            }
         }
 
         private function 1R7():void{

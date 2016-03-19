@@ -88,7 +88,7 @@ package com.company.assembleegameclient.screens.charrects{
                     nextStarFame:this.getNextStarFame()
                 }));
                 taglineText.x = (taglineText.x + taglineIcon.width);
-            };
+            }
         }
 
         private function getNextStarFame():int{

@@ -45,11 +45,11 @@ package BG{
                 } else
                 {
                     this.view.gs_.gsc_.buy(_arg1.objectId_, _arg1.022());
-                };
+                }
             } else
             {
                 this.0n2.dispatch(this.1au(_arg1));
-            };
+            }
         }
 
         private function 1au(_arg1:SellableObject):0KD{

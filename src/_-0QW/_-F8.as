@@ -79,8 +79,8 @@ package 0QW{
                 {
                     this.setSelected(_local2);
                     return;
-                };
-            };
+                }
+            }
         }
 
         protected function 1An(_arg1:0VH):void{
@@ -92,7 +92,7 @@ package 0QW{
             if (_local2 == 0)
             {
                 this.setSelected(_arg1);
-            };
+            }
             _arg1.addEventListener(MouseEvent.MOUSE_DOWN, this.onMouseDown);
             this.0sz.push(_arg1);
         }
@@ -106,7 +106,7 @@ package 0QW{
             if (this.selected_ != null)
             {
                 this.selected_.setSelected(false);
-            };
+            }
             this.selected_ = _arg1;
             this.selected_.setSelected(true);
         }

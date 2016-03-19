@@ -54,7 +54,7 @@ import flash.display.Sprite;
                 this.reset();
                 this._0zw.dispatch();
                 return;
-            };
+            }
             var _local1:Number = this.At;
             this._02J(this._0oQ);
             var _local2:GTween = new GTween(this.mR, 1, {width:_local1});
@@ -84,7 +84,7 @@ import flash.display.Sprite;
                 _local2 = this._0dR();
                 this.mR.graphics.beginFill(this.i7, 1);
                 this.mR.graphics.drawRect(0, 0, _local2, this._1wI);
-            };
+            }
             this._22s = _arg1;
             this._3Z();
         }
@@ -98,7 +98,7 @@ import flash.display.Sprite;
                 this._02J(this._0oQ);
                 _local2 = new GTween(this.mR, 2, {width:_local1});
                 _local2.onComplete = this._0qP;
-            };
+            }
         }
 
         private function _0dR():int{

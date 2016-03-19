@@ -14,16 +14,16 @@ package 0NI{
             {
                 if ((_local3 as Function)()) continue;
                 return (false);
-            };
+            }
             if ((_local3 is Class))
             {
                 _local3 = ((_arg2) ? _arg2.getInstance((_local3 as Class)) : new ((_local3 as Class))());
-            };
+            }
             if (_local3.approve() == false)
             {
                 return (false);
-            };
-        };
+            }
+        }
         return (true);
     }
 

@@ -13,7 +13,7 @@ package _1i{
             "\n": "\\n",
             "\r": "\\r",
             "\t": "\\t"
-        };
+        }
 
 
         public function _1n8(_arg1:_0TR):Description{
@@ -90,13 +90,13 @@ package _1i{
                                         append("<");
                                         append(_arg1);
                                         append(">");
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
-            };
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             return (this);
         }
 
@@ -109,16 +109,16 @@ package _1i{
                 if (_local5)
                 {
                     append(_arg2);
-                };
+                }
                 if ((_local6 is _0TR))
                 {
                     _1n8((_local6 as _0TR));
                 } else
                 {
                     _1VJ(_local6);
-                };
+                }
                 _local5 = true;
-            };
+            }
             append(_arg3);
             return (this);
         }

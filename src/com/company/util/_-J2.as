@@ -36,9 +36,9 @@ package com.company.util{
                 {
                     this._7D.push(BitmapUtil._0Bs(_arg1, (_local7 * _arg2), (_local6 * _arg3), _arg2, _arg3));
                     _local7++;
-                };
+                }
                 _local6++;
-            };
+            }
         }
 
 

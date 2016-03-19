@@ -70,7 +70,7 @@ package com.company.assembleegameclient.ui{
             if (this.0b2.getSellableType() != -1)
             {
                 _local8 = new g-(this.0b2.getSellableType(), 64);
-            };
+            }
             _local8.x = (((WIDTH * 1) / 2) - (_local8.width / 2));
             _local8.y = 100;
             addChild(_local8);
@@ -160,15 +160,15 @@ package com.company.assembleegameclient.ui{
                     if (this.quantity_ < this.09C)
                     {
                         this.quantity_ = (this.quantity_ + 1);
-                    };
+                    }
                     break;
                 case this.1ex:
                     if (this.quantity_ > 1)
                     {
                         this.quantity_ = (this.quantity_ - 1);
-                    };
+                    }
                     break;
-            };
+            }
             this.0Lo();
             var _local2:int = (this.0b2.price_ * this.quantity_);
             this.buyButton.setPrice(_local2, this.0b2.currency_);

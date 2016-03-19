@@ -28,7 +28,7 @@ package 1cI{
             } else
             {
                 1d5(true);
-            };
+            }
         }
 
         override protected function onReset():void{
@@ -36,7 +36,7 @@ package 1cI{
             for each (_local1 in this.fk)
             {
                 _local1.reset();
-            };
+            }
         }
 
         private function 0MA():void{
@@ -45,7 +45,7 @@ package 1cI{
             {
                 this.fk[_local1].lastly.addOnce(this.0kG);
                 this.fk[_local1].start();
-            };
+            }
         }
 
         private function 0kG(_arg1:1iz, _arg2:Boolean, _arg3:String):void{
@@ -54,11 +54,11 @@ package 1cI{
                 if (--this.0A4 == 0)
                 {
                     1d5(true);
-                };
+                }
             } else
             {
                 1d5(false, _arg3);
-            };
+            }
         }
 
         public function toString():String{

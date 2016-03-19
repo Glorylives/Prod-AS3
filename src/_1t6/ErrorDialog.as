@@ -108,7 +108,7 @@ package 1t6{
                 this.064.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8, 1)];
                 this.064.setStringBuilder(new 1WS(_arg1));
                 this.0GR(this.064);
-            };
+            }
         }
 
         private function 0fe(_arg1:String, _arg2:String):void{
@@ -116,12 +116,12 @@ package 1t6{
             {
                 this.button1_ = new 1nN(16, _arg1, 120);
                 this.button1_.addEventListener(MouseEvent.CLICK, this.onButton1Click);
-            };
+            }
             if (_arg2 != null)
             {
                 this.button2_ = new 1nN(16, _arg2, 120);
                 this.button2_.addEventListener(MouseEvent.CLICK, this.onButton2Click);
-            };
+            }
         }
 
         private function onComplete():void{
@@ -135,7 +135,7 @@ package 1t6{
             if (this.ZM != null)
             {
                 this.t6();
-            };
+            }
         }
 
         private function t6():void{
@@ -144,7 +144,7 @@ package 1t6{
                 GA.global().trackPageview(this.ZM);
             } catch(error:Error)
             {
-            };
+            }
         }
 
         private function draw():void{
@@ -160,7 +160,7 @@ package 1t6{
             if (this.box_.contains(this.rect_))
             {
                 this.box_.removeChild(this.rect_);
-            };
+            }
             this.08w();
             this.26X();
             this.0aJ();
@@ -196,19 +196,19 @@ package 1t6{
                     this.box_.addChild(this.button2_);
                     this.button2_.x = (((3 * WIDTH) / 4) - (this.button2_.width / 2));
                     this.button2_.y = _local1;
-                };
-            };
+                }
+            }
         }
 
         private function 08w():void{
             if (((this.button1_) && (this.box_.contains(this.button1_))))
             {
                 this.box_.removeChild(this.button1_);
-            };
+            }
             if (((this.button2_) && (this.box_.contains(this.button2_))))
             {
                 this.box_.removeChild(this.button2_);
-            };
+            }
         }
 
         private function 1mo():void{
@@ -219,7 +219,7 @@ package 1t6{
             } else
             {
                 this.a.y = 4;
-            };
+            }
         }
 
         private function onButton1Click(_arg1:MouseEvent):void{

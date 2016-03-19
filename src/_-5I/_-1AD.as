@@ -72,8 +72,8 @@ package 5I{
                     graphics.drawRect(0, 0, WIDTH, HEIGHT);
                     graphics.endFill();
                     graphics.lineStyle();
-                };
-            };
+                }
+            }
         }
 
         private function onMouseOver(_arg1:MouseEvent):void{

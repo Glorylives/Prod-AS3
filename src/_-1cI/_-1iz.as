@@ -24,7 +24,7 @@ package 1cI{
                 this.Cb = true;
                 ((this.1iD) && (this.1iD.dispatch(this)));
                 this.startTask();
-            };
+            }
         }
 
         final public function reset():void{
@@ -34,8 +34,8 @@ package 1cI{
                 if (!this.Ki)
                 {
                     throw (new IllegalOperationError("Unable to Task.reset() when a task is ongoing"));
-                };
-            };
+                }
+            }
             ((this.1iD) && (this.1iD.removeAll()));
             ((this.TA) && (this.TA.removeAll()));
             ((this.1ub) && (this.1ub.removeAll()));

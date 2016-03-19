@@ -25,14 +25,14 @@ public class _01j {
             if (_arg1 != "yoThisIsInternal")
             {
                 throw (new Error("Program3DFactory is a singleton. Use Program3DFactory.getInstance()"));
-            };
+            }
         }
 
         public static function getInstance():_01j{
             if (_1hP == null)
             {
                 _1hP = new _01j("yoThisIsInternal");
-            };
+            }
             return (_1hP);
         }
 
@@ -41,11 +41,11 @@ public class _01j {
             if (this._2k != null)
             {
                 this._2k._0PJ().dispose();
-            };
+            }
             if (this._1ax != null)
             {
                 this._1ax._0PJ().dispose();
-            };
+            }
             _1hP = null;
         }
 
@@ -58,7 +58,7 @@ public class _01j {
                     {
                         this._2k = _arg1.createProgram();
                         this._2k.upload(new _0P4().getVertexProgram(), new _0o5().getVertexProgram());
-                    };
+                    }
                     _local3 = this._2k;
                     break;
                 case _1pA:
@@ -66,7 +66,7 @@ public class _01j {
                     {
                         this._1ax = _arg1.createProgram();
                         this._1ax.upload(new _0P4().getVertexProgram(), new _20i().getVertexProgram());
-                    };
+                    }
                     _local3 = this._1ax;
                     break;
                 default:
@@ -74,9 +74,9 @@ public class _01j {
                     {
                         this._2k = _arg1.createProgram();
                         this._2k.upload(new _0P4().getVertexProgram(), new _0o5().getVertexProgram());
-                    };
+                    }
                     _local3 = this._2k;
-            };
+            }
             return (_local3);
         }
 

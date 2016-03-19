@@ -38,7 +38,7 @@ package 1Np{
                 _local10 = new Md(_local3, this.color_, _local5, _local9, _local8);
                 map_.addObj(_local10, x_, y_);
                 _local6++;
-            };
+            }
             return (false);
         }
 
@@ -61,7 +61,7 @@ package 1Np{
                 _local10 = new Md(_local3, this.color_, _local5, _local9, _local8);
                 map_.addObj(_local10, x_, y_);
                 _local6++;
-            };
+            }
             return (false);
         }
 

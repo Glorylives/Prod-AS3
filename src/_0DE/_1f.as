@@ -111,7 +111,7 @@ import flash.filters.ColorMatrixFilter;
                 case _0J9._08C:
                     _local2 = AssetLibrary._1JR("lofiObj3", 555);
                     break;
-            };
+            }
             if (_local2 != null)
             {
                 this._1BD = new Bitmap(_local2);
@@ -121,7 +121,7 @@ import flash.filters.ColorMatrixFilter;
                 this._1BD.scaleY = 4;
                 this._1BD.filters = [_0LS];
                 addChildAt(this._1BD, 0);
-            };
+            }
             this.itemType = _arg1;
         }
 
@@ -131,7 +131,7 @@ import flash.filters.ColorMatrixFilter;
             {
                 this._1BD.visible = (_0ep.itemId <= 0);
                 this._04L();
-            };
+            }
             return (_local2);
         }
 
@@ -149,9 +149,9 @@ import flash.filters.ColorMatrixFilter;
                     } else
                     {
                         this._00v = _local1.MpCost;
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function updateDim(_arg1:Player):void{

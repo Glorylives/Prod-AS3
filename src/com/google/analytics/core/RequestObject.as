@@ -37,7 +37,7 @@ package com.google.analytics.core{
             if (!hasCompleted())
             {
                 return (0);
-            };
+            }
             return ((end - start));
         }
 

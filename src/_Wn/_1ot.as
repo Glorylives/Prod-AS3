@@ -47,7 +47,7 @@ package _Wn{
             {
                 this._1Ui.R++;
                 this.cB.dispatch();
-            };
+            }
         }
 
         public function _2Z():Boolean{

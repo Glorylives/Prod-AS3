@@ -35,7 +35,7 @@ package 1cW{
             for each (_local2 in _local1.Protip)
             {
                 this.15F.push(_local2.toString());
-            };
+            }
             this.count = this.15F.length;
         }
 
@@ -46,12 +46,12 @@ package 1cW{
             {
                 _local1.push(_local2);
                 _local2++;
-            };
+            }
             this.Ea = new <int>[];
             while (_local2 > 0)
             {
                 this.Ea.push(_local1.splice(Math.floor((Math.random() * _local2--)), 1)[0]);
-            };
+            }
             this.Ea.fixed = true;
         }
 

@@ -59,8 +59,8 @@ package com.company.assembleegameclient.ui{
                 {
                     this.1Z();
                     this.1E4();
-                };
-            };
+                }
+            }
         }
 
         private function 1AW():void{
@@ -101,7 +101,7 @@ package com.company.assembleegameclient.ui{
             } else
             {
                 _local1.complete.addOnce(this.11y);
-            };
+            }
         }
 
         private function 08c(_arg1:cO):void{
@@ -109,7 +109,7 @@ package com.company.assembleegameclient.ui{
             {
                 this.1Dx = this.1x0(new 1cA().setParams(du.1yF), this.player.198);
                 this.u6(_arg1, this.1Dx);
-            };
+            }
         }
 
         private function RL(_arg1:cO):void{
@@ -119,7 +119,7 @@ package com.company.assembleegameclient.ui{
                 _local2 = "1.5x";
                 this.0ua = this.1x0(new 1cA().setParams(du.1X8, {rate:_local2}), this.player.0OA);
                 this.u6(_arg1, this.0ua);
-            };
+            }
         }
 
         private function u6(_arg1:cO, _arg2:iK):void{
@@ -134,11 +134,11 @@ package com.company.assembleegameclient.ui{
             if (((this.1Dx) && (this.1Dx.parent)))
             {
                 removeChild(this.1Dx);
-            };
+            }
             if (((this.0ua) && (this.0ua.parent)))
             {
                 removeChild(this.0ua);
-            };
+            }
             this.1Dx = null;
             this.0ua = null;
         }

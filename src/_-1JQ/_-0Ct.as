@@ -28,7 +28,7 @@ package 1JQ{
             if (_local2 > -1)
             {
                 return;
-            };
+            }
             this.Xn.push(_arg1);
             this.31();
         }
@@ -38,7 +38,7 @@ package 1JQ{
             if (_local2 == -1)
             {
                 return;
-            };
+            }
             this.Xn.splice(_local2, 1);
             this.31();
         }
@@ -48,7 +48,7 @@ package 1JQ{
             if (_local3)
             {
                 this._factory.ek(_arg1, _arg2, _local3);
-            };
+            }
         }
 
         public function 25M(_arg1:Object, _arg2:Class):void{
@@ -56,7 +56,7 @@ package 1JQ{
             if (_local3)
             {
                 this._factory.ek(_arg1, _arg2, _local3);
-            };
+            }
         }
 
         private function 31():void{
@@ -68,7 +68,7 @@ package 1JQ{
             if (this.23o[_arg2] === false)
             {
                 return (null);
-            };
+            }
             if (this.23o[_arg2] == undefined)
             {
                 this.23o[_arg2] = false;
@@ -79,13 +79,13 @@ package 1JQ{
                     {
                         this.23o[_arg2] = ((this.23o[_arg2]) || ([]));
                         this.23o[_arg2].push(_local3);
-                    };
-                };
+                    }
+                }
                 if (this.23o[_arg2] === false)
                 {
                     return (null);
-                };
-            };
+                }
+            }
             return ((this.23o[_arg2] as Array));
         }
 

@@ -36,7 +36,7 @@ import com.company.assembleegameclient.objects.GameObject;
                     return (new XMLEffect(_arg2, _arg1));
                 case "CustomParticles":
                     return (_02L._1WJ(_arg1, _arg2));
-            };
+            }
             return (null);
         }
 
@@ -45,7 +45,7 @@ import com.company.assembleegameclient.objects.GameObject;
             if (this._1Jm)
             {
                 return (this.runEasyRendering(_arg1, _arg2));
-            };
+            }
             return (this.runNormalRendering(_arg1, _arg2));
         }
 

@@ -32,11 +32,11 @@ package XF{
             if (_arg1 == this.1kW)
             {
                 return;
-            };
+            }
             if (this.1kW)
             {
                 this.removeAll();
-            };
+            }
             this.1kW = _arg1;
         }
 
@@ -83,7 +83,7 @@ package XF{
             if (_local2 != 0LG.nonEmpty)
             {
                 this.target.removeEventListener(this.0g6, this.onNativeEvent);
-            };
+            }
             return (_local3);
         }
 
@@ -91,7 +91,7 @@ package XF{
             if (this.target)
             {
                 this.target.removeEventListener(this.0g6, this.onNativeEvent);
-            };
+            }
             super.removeAll();
         }
 
@@ -99,11 +99,11 @@ package XF{
             if (null == _args)
             {
                 throw (new ArgumentError("Event object expected."));
-            };
+            }
             if (_args.length != 1)
             {
                 throw (new ArgumentError("No more than one Event object expected."));
-            };
+            }
             this.dispatchEvent((_args[0] as Event));
         }
 
@@ -111,19 +111,19 @@ package XF{
             if (!this.target)
             {
                 throw (new ArgumentError("Target object cannot be null."));
-            };
+            }
             if (!_arg1)
             {
                 throw (new ArgumentError("Event object cannot be null."));
-            };
+            }
             if (!(_arg1 is this.eventClass))
             {
                 throw (new ArgumentError((((("Event object " + _arg1) + " is not an instance _of ") + this.eventClass) + ".")));
-            };
+            }
             if (_arg1.type != this.0g6)
             {
                 throw (new ArgumentError((((("Event object has incorrect type. Expected <" + this.0g6) + "> but was <") + _arg1.type) + ">.")));
-            };
+            }
             return (this.target.dispatchEvent(_arg1));
         }
 
@@ -133,14 +133,14 @@ package XF{
             {
                 _local2.0kc.execute1(_arg1);
                 _local2 = _local2.0wv;
-            };
+            }
         }
 
         protected function nk(_arg1:Function, _arg2:Boolean=false, _arg3:int=0):_201{
             if (!this.target)
             {
                 throw (new ArgumentError("Target object cannot be null."));
-            };
+            }
             var _local4:Boolean = 0LG.nonEmpty;
             var _local5:_201;
             if (0rK(_arg1, _arg2))
@@ -150,11 +150,11 @@ package XF{
             } else
             {
                 _local5 = 0LG.find(_arg1);
-            };
+            }
             if (_local4 != 0LG.nonEmpty)
             {
                 this.target.addEventListener(this.0g6, this.onNativeEvent, false, _arg3);
-            };
+            }
             return (_local5);
         }
 

@@ -25,7 +25,7 @@ package BG{
             } else
             {
                 this.view.1By();
-            };
+            }
         }
 
         private function 0MO():void{
@@ -35,7 +35,7 @@ package BG{
             } else
             {
                 this.view.1By();
-            };
+            }
         }
 
 

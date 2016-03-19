@@ -41,7 +41,7 @@ package 1PV{
         }
 
         public function 1Y():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             _local1.guid = this.getUserId();
             _local1.secret = this.1hW();
             _local1.steamid = this. each.0RA();

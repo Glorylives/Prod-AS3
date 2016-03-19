@@ -62,18 +62,18 @@ package _1aA{
                 this.K6.x = 450;
                 this.K6.filters = [new DropShadowFilter(0, 0, 0, 1, 4, 4, 2)];
                 addChild(this.K6);
-            };
+            }
             if (_arg10 != null)
             {
                 this.ud = _arg10;
                 this.nameText_.textChanged.addOnce(this.onTextChanged);
                 addChild(this.ud);
-            };
+            }
             this.1-P.1pS(this);
             if (_arg5)
             {
                 this.1-P.tooltip = 0GU;
-            };
+            }
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
@@ -87,7 +87,7 @@ package _1aA{
             {
                 this.ud.x = 450;
                 this.ud.y = (((this.nameText_.height / 2) - (this.ud.height / 2)) + 2);
-            };
+            }
         }
 
         public function 4-(_arg1:1hy):void{
@@ -114,7 +114,7 @@ package _1aA{
             if (this.startTime_ == 0)
             {
                 this.startTime_ = getTimer();
-            };
+            }
             addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
             addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
         }
@@ -135,12 +135,12 @@ package _1aA{
                 {
                     this.ud.x = ((this.K6.x + this.K6.width) - 4);
                     this.ud.y = (((this.K6.height / 2) - (this.ud.height / 2)) + 2);
-                };
-            };
+                }
+            }
             if (_local2 == 1)
             {
                 removeEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
         public function onMouseOver(_arg1:Event):void{
@@ -148,7 +148,7 @@ package _1aA{
             {
                 0GU.1wG(this.l7());
                 stage.addChild(0GU);
-            };
+            }
         }
 
         private function l7():1Jo{
@@ -160,7 +160,7 @@ package _1aA{
                 _local1.pushParams(du.1h6, {data:" ("});
                 _local1.pushParams("FameBonus.LevelRequirement", {level:this.level});
                 _local1.pushParams(du.1h6, {data:")"});
-            };
+            }
             return (_local1);
         }
 

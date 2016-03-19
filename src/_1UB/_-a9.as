@@ -69,7 +69,7 @@ package 1UB{
             if (!this.jf)
             {
                 this.selected.dispatch(this);
-            };
+            }
         }
 
         private function redraw():void{
@@ -84,8 +84,8 @@ package 1UB{
                 } else
                 {
                     this.label.setColor(1eR);
-                };
-            };
+                }
+            }
         }
 
         private function onMouseUp(_arg1:MouseEvent):void{

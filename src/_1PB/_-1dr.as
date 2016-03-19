@@ -43,12 +43,12 @@ package 1PB{
                 if (this.y2)
                 {
                     this.y2.update(_arg1.0bF);
-                };
+                }
                 if (!this.oO.visible)
                 {
                     this.oO.visible = true;
                     this.00O.visible = false;
-                };
+                }
                 this.oO.draw(_arg1.exp_, _arg1.0Iq, 0);
                 if (this.1mw != _arg1.1lt)
                 {
@@ -59,8 +59,8 @@ package 1PB{
                     } else
                     {
                         this.oO.0zD();
-                    };
-                };
+                    }
+                }
                 if (_arg1.0bF)
                 {
                     if (!this.1Ut)
@@ -68,7 +68,7 @@ package 1PB{
                         this.oO.addEventListener("MULTIPLIER_OVER", this.1fi);
                         this.oO.addEventListener("MULTIPLIER_OUT", this.rp);
                         this.1Ut = true;
-                    };
+                    }
                 } else
                 {
                     if (this.1Ut)
@@ -76,22 +76,22 @@ package 1PB{
                         this.oO.removeEventListener("MULTIPLIER_OVER", this.1fi);
                         this.oO.removeEventListener("MULTIPLIER_OUT", this.rp);
                         this.1Ut = false;
-                    };
+                    }
                     if (((this.y2) && (this.y2.parent)))
                     {
                         removeChild(this.y2);
                         this.y2 = null;
-                    };
-                };
+                    }
+                }
             } else
             {
                 if (!this.00O.visible)
                 {
                     this.00O.visible = true;
                     this.oO.visible = false;
-                };
+                }
                 this.00O.draw(_arg1.0fz, _arg1.0m2, 0);
-            };
+            }
             this.0Mt.draw(_arg1.1VZ, _arg1.ba, _arg1.1j8, _arg1.1w7);
             this.uV.draw(_arg1.12a, _arg1.1nC, _arg1.24q, _arg1.0NB);
         }
@@ -105,7 +105,7 @@ package 1PB{
             {
                 removeChild(this.y2);
                 this.y2 = null;
-            };
+            }
         }
 
 

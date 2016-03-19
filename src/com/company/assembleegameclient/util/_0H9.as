@@ -25,13 +25,13 @@ public class _0H9 {
             {
                 _local6 = new J2();
                 _local6.addFromBitmapData(_arg2, _arg3, _arg4);
-            };
+            }
             var _local7:int;
             while (_local7 < _local5._7D.length)
             {
                 this._7D.push(new _0s0(_local5._7D[_local7], (((_local6 == null)) ? null : _local6._7D[_local7])));
                 _local7++;
-            };
+            }
         }
 
         public function _1ee(_arg1:_0s0, _arg2:int, _arg3:int):void{

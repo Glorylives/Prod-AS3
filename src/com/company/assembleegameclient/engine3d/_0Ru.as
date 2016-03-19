@@ -22,7 +22,7 @@ package com.company.assembleegameclient.engine3d{
                 this._1tU = new Vector3D();
                 Dw(_arg1, _arg2, _arg3, this._1tU);
                 this._01p = -(this._1tU.dotProduct(_arg1));
-            };
+            }
         }
 
         public static function Dw(_arg1:Vector3D, _arg2:Vector3D, _arg3:Vector3D, _arg4:Vector3D):void{
@@ -57,11 +57,11 @@ package com.company.assembleegameclient.engine3d{
             if (_local2 > 0.001)
             {
                 return (_1az);
-            };
+            }
             if (_local2 < -0.001)
             {
                 return (_0yz);
-            };
+            }
             return (_1oQ);
         }
 
@@ -71,7 +71,7 @@ package com.company.assembleegameclient.engine3d{
             if (_local3 == 0)
             {
                 return (NaN);
-            };
+            }
             return ((_local2 / _local3));
         }
 

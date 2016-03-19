@@ -60,14 +60,14 @@ package 1ki{
             } else
             {
                 this.jN();
-            };
+            }
         }
 
         private function 1F8():void{
             while (numChildren)
             {
                 removeChildAt(0);
-            };
+            }
         }
 
         public function get register():_1HZ{
@@ -92,7 +92,7 @@ package 1ki{
             {
                 _local3 = _args[_local2];
                 addChild(_local3);
-            };
+            }
         }
 
 

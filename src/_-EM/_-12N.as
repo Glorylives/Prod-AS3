@@ -39,11 +39,11 @@ package EM{
             this.04h = Console.FATAL;
             this.traceCall = function (_arg1:String, _arg2:String, ... _args):void{
                 trace(((("[" + _arg1) + "] ") + _arg2));
-            };
+            }
             this.timeStampFormatter = function (_arg1:uint):String{
                 var _local2:uint = (_arg1 * 0.001);
                 return (((this.1ft((_local2 / 60)) + ":") + this.1ft((_local2 % 60))));
-            };
+            }
             super();
             this.1-e = new 1LM();
         }
@@ -52,7 +52,7 @@ package EM{
             if (_arg1 < 10)
             {
                 return (("0" + _arg1));
-            };
+            }
             return (String(_arg1));
         }
 

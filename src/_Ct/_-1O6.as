@@ -76,7 +76,7 @@ package Ct{
                 _arg1[_local3].initComplete.add(this.1L-);
                 this.0I1.addChild(_arg1[_local3]);
                 _local3++;
-            };
+            }
         }
 
         public function 1L-(){
@@ -85,7 +85,7 @@ package Ct{
             {
                 this.0Yq();
                 this.10Z.dispatch();
-            };
+            }
         }
 
         private function 0Yq():void{
@@ -97,7 +97,7 @@ package Ct{
                 this.0Er[_local1].y = this.03I;
                 this.03I = (this.03I + this.0Er[_local1].height);
                 _local1++;
-            };
+            }
             this.23f.y = (this.03I + 10);
             this.background.height = (this.03I + 50);
         }
@@ -158,7 +158,7 @@ package Ct{
                 if (contains(this.0I1))
                 {
                     removeChild(this.0I1);
-                };
+                }
             } else
             {
                 if (_arg1 == 0cu.SKINPICKER)
@@ -167,9 +167,9 @@ package Ct{
                     if (contains(this.1yf))
                     {
                         removeChild(this.1yf);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
 

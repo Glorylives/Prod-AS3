@@ -90,7 +90,7 @@ package _1zp{
             {
                 stage.addEventListener(MouseEvent.MOUSE_MOVE, this.onMouseMove);
                 stage.addEventListener(MouseEvent.MOUSE_UP, this.onMouseUp);
-            };
+            }
         }
 
         private function onMouseUp(_arg1:MouseEvent):void{
@@ -98,14 +98,14 @@ package _1zp{
             if (stage)
             {
                 stage.removeEventListener(MouseEvent.MOUSE_MOVE, this.onMouseMove);
-            };
+            }
         }
 
         private function onMouseMove(_arg1:MouseEvent):void{
             if (!this.Ao)
             {
                 return;
-            };
+            }
             this._case.x = _arg1.currentTarget.mouseX;
             this.LL = this.globalToLocal(this._case);
             this._1nh = (this.LL.x / 100);

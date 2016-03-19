@@ -81,7 +81,7 @@ import flash.display.Sprite;
                 _local4.y = (86 + (17 * _local1));
                 this._catch.addChild(_local4);
                 _local1++;
-            };
+            }
         }
 
         private function _16p():uint{
@@ -89,7 +89,7 @@ import flash.display.Sprite;
             if (_local1)
             {
                 return (2);
-            };
+            }
             return (3);
         }
 

@@ -80,11 +80,11 @@ package Ct{
                 {
                     this.Si.Yo();
                     this.Si.setPrefix(du.261);
-                };
+                }
             } else
             {
                 this.Si.setPrefix(du.00V);
-            };
+            }
         }
 
         private function 1qf():void{
@@ -100,7 +100,7 @@ package Ct{
             for each (_local1 in this.0Io)
             {
                 _local1.0O-.remove(this.dp);
-            };
+            }
             this.Si.1yi.remove(this.1Xa);
         }
 
@@ -114,8 +114,8 @@ package Ct{
                 for each (_local5 in this.0Io)
                 {
                     _local5.visible = false;
-                };
-            };
+                }
+            }
             for each (_local4 in _arg1)
             {
                 if (_local3 < this.0Io.length)
@@ -127,8 +127,8 @@ package Ct{
                     _local6.1PF(_local4);
                     _local6.0O-.add(this.dp);
                     _local3++;
-                };
-            };
+                }
+            }
         }
 
         private function dp(_arg1:PetAbilityMeter, _arg2:Boolean):void{
@@ -148,8 +148,8 @@ package Ct{
                 {
                     _local1 = true;
                     break;
-                };
-            };
+                }
+            }
             return (_local1);
         }
 
@@ -165,7 +165,7 @@ package Ct{
             {
                 _local1.visible = false;
                 addChild(_local1);
-            };
+            }
         }
 
         private function 1bZ():void{
@@ -185,7 +185,7 @@ package Ct{
             for each (_local2 in this.0Io)
             {
                 _local1.push(_local2.1yi);
-            };
+            }
             _local1.complete.addOnce(this.08o);
             this.Si.1yi.add(this.1Xa);
         }
@@ -203,7 +203,7 @@ package Ct{
                 _local2.x = ((h.1h9 - 227) * 0.5);
                 _local2.y = _local1;
                 _local1 = (_local1 + (_local2.height + 10));
-            };
+            }
         }
 
         private function 0rz():void{

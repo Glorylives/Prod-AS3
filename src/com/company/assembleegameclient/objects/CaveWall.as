@@ -33,8 +33,8 @@ package com.company.assembleegameclient.objects{
                 for each (_local6 in 0rb.faces_)
                 {
                     14d.0Sd(_local6.bitmapFill_, true);
-                };
-            };
+                }
+            }
         }
 
         override protected function buildShortLine():void{
@@ -56,8 +56,8 @@ package com.company.assembleegameclient.objects{
                 for each (_local9 in 0rb.faces_)
                 {
                     14d.0Sd(_local9.bitmapFill_, true);
-                };
-            };
+                }
+            }
         }
 
         override protected function buildL():void{
@@ -81,8 +81,8 @@ package com.company.assembleegameclient.objects{
                 for each (_local11 in 0rb.faces_)
                 {
                     14d.0Sd(_local11.bitmapFill_, true);
-                };
-            };
+                }
+            }
         }
 
         override protected function buildLine():void{
@@ -103,8 +103,8 @@ package com.company.assembleegameclient.objects{
                 for each (_local9 in 0rb.faces_)
                 {
                     14d.0Sd(_local9.bitmapFill_, true);
-                };
-            };
+                }
+            }
         }
 
         override protected function buildT():void{
@@ -130,8 +130,8 @@ package com.company.assembleegameclient.objects{
                 for each (_local13 in 0rb.faces_)
                 {
                     14d.0Sd(_local13.bitmapFill_, true);
-                };
-            };
+                }
+            }
         }
 
         override protected function buildCross():void{
@@ -162,8 +162,8 @@ package com.company.assembleegameclient.objects{
                 for each (_local17 in 0rb.faces_)
                 {
                     14d.0Sd(_local17.bitmapFill_, true);
-                };
-            };
+                }
+            }
         }
 
         protected function 12j(_arg1:int, _arg2:int):Vector3D{
@@ -181,7 +181,7 @@ package com.company.assembleegameclient.objects{
                 case 2:
                     _local4++;
                     break;
-            };
+            }
             switch (_arg2)
             {
                 case 0:
@@ -192,7 +192,7 @@ package com.company.assembleegameclient.objects{
                 case 2:
                     _local6 = (3 + (((_local3 * 2179) ^ (_local4 * 1237)) % 35));
                     break;
-            };
+            }
             switch (_arg2)
             {
                 case 0:
@@ -211,7 +211,7 @@ package com.company.assembleegameclient.objects{
                     _local7 = (_local6 / 100);
                     _local8 = 0;
                     break;
-            };
+            }
             switch (_arg1)
             {
                 case 0:
@@ -222,7 +222,7 @@ package com.company.assembleegameclient.objects{
                     return (new Vector3D(_local7, 0.5, _local8));
                 case 3:
                     return (new Vector3D(-0.5, _local7, _local8));
-            };
+            }
             return (null);
         }
 
@@ -234,7 +234,7 @@ package com.company.assembleegameclient.objects{
             for each (_local5 in _args)
             {
                 0rb.vL_.push(_local5.x, _local5.y, _local5.z);
-            };
+            }
             _local6 = 0rb.faces_.length;
             if (_args.length == 4)
             {
@@ -245,7 +245,7 @@ package com.company.assembleegameclient.objects{
                 } else
                 {
                     0rb.faces_.push(new ObjectFace3D(0rb, new <int>[_local4, (_local4 + 2), (_local4 + 3)]), new ObjectFace3D(0rb, new <int>[_local4, (_local4 + 1), (_local4 + 2)]));
-                };
+                }
             } else
             {
                 if (_args.length == 3)
@@ -270,11 +270,11 @@ package com.company.assembleegameclient.objects{
                             {
                                 0rb.uvts_.push(0, 0, 0, 0.2, 0, 0, 1, 0.2, 0, 1, 0.8, 0, 0.8, 1, 0, 0.2, 1, 0, 0, 0.8, 0, 0, 0.2, 0);
                                 0rb.faces_.push(new ObjectFace3D(0rb, new <int>[_local4, (_local4 + 1), (_local4 + 2), (_local4 + 3), (_local4 + 4), (_local4 + 5), (_local4 + 6), (_local4 + 7)]));
-                            };
-                        };
-                    };
-                };
-            };
+                            }
+                        }
+                    }
+                }
+            }
             if (((!((_arg1 == null))) || (!((_arg2 == null)))))
             {
                 _local7 = _local6;
@@ -283,8 +283,8 @@ package com.company.assembleegameclient.objects{
                     0rb.faces_[_local7].normalL_ = _arg1;
                     0rb.faces_[_local7].texture_ = _arg2;
                     _local7++;
-                };
-            };
+                }
+            }
         }
 
 

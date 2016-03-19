@@ -31,12 +31,12 @@ package 06I{
             if (!this.Ed(_arg1))
             {
                 return;
-            };
+            }
             this.0cS.push(_arg1);
             for each (_local2 in this._handlers)
             {
                 this.n3.1Nt(_arg1).25l(_local2);
-            };
+            }
             dispatchEvent(new 1Be(1Be.1fg, _arg1));
         }
 
@@ -46,13 +46,13 @@ package 06I{
             if (_local2 == -1)
             {
                 return;
-            };
+            }
             this.0cS.splice(_local2, 1);
             var _local3:Ko = this.n3.E(_arg1);
             for each (_local4 in this._handlers)
             {
                 _local3.1j0(_local4);
-            };
+            }
             dispatchEvent(new 1Be(1Be.0PQ, _arg1));
         }
 
@@ -61,12 +61,12 @@ package 06I{
             if (this._handlers.indexOf(_arg1) != -1)
             {
                 return;
-            };
+            }
             this._handlers.push(_arg1);
             for each (_local2 in this.0cS)
             {
                 this.n3.1Nt(_local2).25l(_arg1);
-            };
+            }
             dispatchEvent(new 1Be(1Be.0ob, null, _arg1));
         }
 
@@ -76,12 +76,12 @@ package 06I{
             if (_local2 == -1)
             {
                 return;
-            };
+            }
             this._handlers.splice(_local2, 1);
             for each (_local3 in this.0cS)
             {
                 this.n3.E(_local3).1j0(_arg1);
-            };
+            }
             dispatchEvent(new 1Be(1Be.1my, null, _arg1));
         }
 
@@ -95,8 +95,8 @@ package 06I{
                 for each (_local3 in this._handlers)
                 {
                     _local2.1j0(_local3);
-                };
-            };
+                }
+            }
         }
 
         private function Ed(_arg1:DisplayObjectContainer):Boolean{
@@ -106,12 +106,12 @@ package 06I{
                 if (_arg1 == _local2)
                 {
                     return (false);
-                };
+                }
                 if (((_local2.contains(_arg1)) || (_arg1.contains(_local2))))
                 {
                     throw (new Error("Containers can not be nested"));
-                };
-            };
+                }
+            }
             return (true);
         }
 

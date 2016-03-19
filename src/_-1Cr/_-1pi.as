@@ -50,7 +50,7 @@ package 1Cr{
             while (numChildren > 0)
             {
                 this.removeChildAt((numChildren - 1));
-            };
+            }
             this.f7.removeEventListener(MouseEvent.CLICK, this.1Et);
             this.ug = null;
             this.Gy = null;
@@ -72,7 +72,7 @@ package 1Cr{
                 _local4.setSelected(true);
                 this.19Q(0);
                 this.0IV.dispatch(_arg2.name);
-            };
+            }
         }
 
         public function df():void{
@@ -85,7 +85,7 @@ package 1Cr{
                 this.f7.removeChild(this.ug[_local1]);
                 this.Un.removeChild(this.Gy[_local1]);
                 _local1++;
-            };
+            }
             this.ug = new Vector.<1u2>();
             this.Gy = new Vector.<Sprite>();
         }
@@ -117,8 +117,8 @@ package 1Cr{
                     _arg1.setSelected(true);
                     this.19Q(_arg1.index);
                     this.0IV.dispatch(this.Gy[_arg1.index].name);
-                };
-            };
+                }
+            }
         }
 
         private function 1DC(_arg1:int, _arg2:_eG):0Pl{
@@ -140,7 +140,7 @@ package 1Cr{
                 _local2.visible = false;
                 _local3.visible = true;
                 this.ce = _arg1;
-            };
+            }
         }
 
         private function 0aJ():void{

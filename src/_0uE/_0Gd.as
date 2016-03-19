@@ -33,7 +33,7 @@ package _0uE{
                 _local5 = TextureRedrawer.resize(_local3, _arg1._09F().mask_, 100, true, 0, 0, _local4);
                 _local5 = _1go._0Lr(_local5, 0, this._0YD);
                 return (_local5);
-            };
+            }
             return (new HL(_arg2, _arg2));
         }
 

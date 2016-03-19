@@ -45,9 +45,9 @@ package 1n4{
                 if ((((_local3.charAt(0) == "{")) && ((_local3.charAt((_local3.length - 1)) == "}"))))
                 {
                     _local3 = this.provider.getValue(_local3.substr(1, (_local3.length - 2)));
-                };
+                }
                 _local1 = _local1.replace((("{" + _local2) + "}"), _local3);
-            };
+            }
             _local1 = _local1.replace(/\\n/g, "\n");
             return (((this.24n + _local1) + this.P));
         }

@@ -45,7 +45,7 @@ package 0Uq{
         }
 
         private function 0J4():Object{
-            var _local1:Object = {type:this.filter.getKey()};
+            var _local1:Object = {type:this.filter.getKey()}
             1X3.1J7(_local1, this.account.1Y());
             return (_local1);
         }

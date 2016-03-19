@@ -49,7 +49,7 @@ package 1tt{
             } else
             {
                 this.UM(_local3);
-            };
+            }
             1d5(true, _arg2);
         }
 
@@ -57,14 +57,14 @@ package 1tt{
             if (this.ww.quantity != kM.1W5)
             {
                 this.ww.quantity--;
-            };
+            }
             this.ww.numPurchased++;
             this.04N.dispatch(du.true , 11495650);
             this.0Kx.dispatch();
             if (this.ww.quantity <= 0)
             {
                 this.24c.start();
-            };
+            }
         }
 
         private function UM(_arg1:XML):void{
@@ -77,7 +77,7 @@ package 1tt{
             if (0jQ.indexOf(_arg1) != -1)
             {
                 this.24c.start();
-            };
+            }
         }
 
 

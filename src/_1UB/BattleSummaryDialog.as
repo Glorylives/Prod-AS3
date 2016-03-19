@@ -56,7 +56,7 @@ package 1UB{
             if (this.21X)
             {
                 removeChild(this.21X);
-            };
+            }
             this.21X = new BattleSummaryText(du.0td, _arg1, _arg2);
             this.21X.y = ((60 - (this.21X.height / 2)) + 132);
             this.21X.x = ((this.WIDTH / 4) - (this.21X.width / 2));
@@ -67,7 +67,7 @@ package 1UB{
             if (this.1TJ)
             {
                 removeChild(this.1TJ);
-            };
+            }
             this.1TJ = new BattleSummaryText(du.03Y, _arg1, _arg2);
             this.1TJ.y = ((60 - (this.1TJ.height / 2)) + 132);
             this.1TJ.x = (((this.WIDTH / 4) - (this.1TJ.width / 2)) + (this.WIDTH / 2));

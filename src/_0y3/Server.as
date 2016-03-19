@@ -48,11 +48,11 @@ package _0y3{
             if (this._1t7)
             {
                 return (2);
-            };
+            }
             if (this._04())
             {
                 return (1);
-            };
+            }
             return (0);
         }
 

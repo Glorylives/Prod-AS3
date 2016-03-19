@@ -35,7 +35,7 @@ package _0xo{
             if (((!((_arg1 == null))) && ((_arg1.length > 0))))
             {
                 this._1JX = 0;
-            };
+            }
         }
 
         public function get t8():Array{
@@ -67,16 +67,16 @@ package _0xo{
                 if (this._1JX < (this.t8.length - 1))
                 {
                     this._1JX++;
-                };
+                }
                 this.update.dispatch(this.position);
-            };
+            }
         }
 
         private function _1Ae(_arg1:TimerEvent):void{
             if (this._1JX == 0)
             {
                 this._1qF.stop();
-            };
+            }
             this.available = true;
             this.update.dispatch(this.position);
         }
@@ -86,7 +86,7 @@ package _0xo{
             if (this._1JX == 0)
             {
                 this.g.stop();
-            };
+            }
             this.update.dispatch(this.position);
         }
 
@@ -95,7 +95,7 @@ package _0xo{
             if (_arg1 <= 0)
             {
                 _local2 = this.t8[this._1JX];
-            };
+            }
             return (_local2);
         }
 

@@ -61,7 +61,7 @@ public class NexusBackground extends Background {
                 _local4 = this._0Zi[_local3];
                 _local4.draw(_arg1, _arg2, this.graphicsData_);
                 _local3++;
-            };
+            }
         }
 
 

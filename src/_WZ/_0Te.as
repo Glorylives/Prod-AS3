@@ -89,7 +89,7 @@ import com.company.assembleegameclient.appengine._Cp;
             {
                 this._1ka.credits_ = _arg1;
                 this.J8.dispatch(_arg1);
-            };
+            }
         }
 
         public function _15g():int{
@@ -101,7 +101,7 @@ import com.company.assembleegameclient.appengine._Cp;
             {
                 this._1ka._1iQ = _arg1;
                 this._1l6.dispatch(_arg1);
-            };
+            }
         }
 
         public function N4():int{
@@ -113,7 +113,7 @@ import com.company.assembleegameclient.appengine._Cp;
             {
                 this._1ka._0NG = _arg1;
                 this._0XD.dispatch(_arg1);
-            };
+            }
         }
 
         public function _1pq():int{
@@ -131,7 +131,7 @@ import com.company.assembleegameclient.appengine._Cp;
             {
                 this._1ka.savedChars_.splice(_local3, 1);
                 this._1ka.numChars_;
-            };
+            }
         }
 
         public function _0YA():String{
@@ -173,8 +173,8 @@ import com.company.assembleegameclient.appengine._Cp;
                 if (_local2.charId() == _arg1)
                 {
                     return (_local2);
-                };
-            };
+                }
+            }
             return (null);
         }
 

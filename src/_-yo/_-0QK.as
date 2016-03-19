@@ -27,14 +27,14 @@ package yo{
             {
                 _arg1.writeBoolean(this.myOffer_[_local2]);
                 _local2++;
-            };
+            }
             _arg1.writeShort(this.yourOffer_.length);
             _local2 = 0;
             while (_local2 < this.yourOffer_.length)
             {
                 _arg1.writeBoolean(this.yourOffer_[_local2]);
                 _local2++;
-            };
+            }
         }
 
         override public function toString():String{

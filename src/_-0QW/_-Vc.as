@@ -76,7 +76,7 @@ package 0QW{
             if ((((_local2.width > 1)) || ((_local2.height > 1))))
             {
                 this.0hw.text = (this.0hw.text + ((("\nRect: " + _local2.width) + ", ") + _local2.height));
-            };
+            }
             this.0hw.1zx();
             var _local3:172 = this.1TR.0hm(_local2.x, _local2.y);
             var _local4:Vector.<int> = (((_local3 == null)) ? 1KM.10c : _local3.18A);

@@ -35,23 +35,23 @@ import flash.display.Sprite;
             if (_1dm(_arg1))
             {
                 return (Dr);
-            };
+            }
             if (_arg1 > 0.8)
             {
                 return (_1RC);
-            };
+            }
             if (_arg1 > 0.6)
             {
                 return (_1O4);
-            };
+            }
             if (_arg1 > 0.4)
             {
                 return (_2C);
-            };
+            }
             if (_arg1 > 0.2)
             {
                 return (LOW);
-            };
+            }
             return (_1XZ);
         }
 
@@ -107,8 +107,8 @@ import flash.display.Sprite;
                 } else
                 {
                     this.Vx.setColor(Oj);
-                };
-            };
+                }
+            }
         }
 
 

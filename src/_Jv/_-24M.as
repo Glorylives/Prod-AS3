@@ -59,7 +59,7 @@ package Jv{
         }
 
         private function yJ():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             _local1.accountId = this.accountId;
             _local1.charId = (((this.accountId == "")) ? -1 : this.charId);
             return (_local1);
@@ -72,7 +72,7 @@ package Jv{
             } else
             {
                 this.24U(_arg2);
-            };
+            }
         }
 
         private function kK(_arg1:String):void{
@@ -118,7 +118,7 @@ package Jv{
             {
                 this.for  = false;
                 this.0n2.dispatch(new ErrorDialog(_arg1));
-            };
+            }
         }
 
 

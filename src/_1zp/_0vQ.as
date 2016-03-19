@@ -62,7 +62,7 @@ package _1zp{
             if (((!((this._0Xr == null))) && (parent.contains(this._0Xr))))
             {
                 parent.removeChild(this._0Xr);
-            };
+            }
         }
 
 

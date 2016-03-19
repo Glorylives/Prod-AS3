@@ -27,7 +27,7 @@ package Kb{
             } else
             {
                 this.0vB();
-            };
+            }
         }
 
         private function CF():void{

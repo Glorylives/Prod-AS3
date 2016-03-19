@@ -36,7 +36,7 @@ package 0sC{
             {
                 disable();
                 this.submit.dispatch(this.0G1.text());
-            };
+            }
         }
 
         private function 0n5():Boolean{
@@ -44,7 +44,7 @@ package 0sC{
             if (!_local1)
             {
                 this.0G1.07n("Not a valid email address");
-            };
+            }
             return (_local1);
         }
 

@@ -81,7 +81,7 @@ package com.company.assembleegameclient.ui{
             if (_arg3)
             {
                 this.Gx(0);
-            };
+            }
         }
 
         public function Gx(_arg1:Number):void{
@@ -123,7 +123,7 @@ package com.company.assembleegameclient.ui{
             } else
             {
                 this._1qD();
-            };
+            }
         }
 
         protected function onAddedToStage(_arg1:Event):void{
@@ -138,8 +138,8 @@ package com.company.assembleegameclient.ui{
                 } else
                 {
                     WebMain._0Kr.addEventListener(MouseEvent.MOUSE_WHEEL, this._1Av);
-                };
-            };
+                }
+            }
         }
 
         protected function onRemovedFromStage(_arg1:Event):void{
@@ -154,8 +154,8 @@ package com.company.assembleegameclient.ui{
                 } else
                 {
                     WebMain._0Kr.removeEventListener(MouseEvent.MOUSE_WHEEL, this._1Av);
-                };
-            };
+                }
+            }
             removeEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
             removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
@@ -169,8 +169,8 @@ package com.company.assembleegameclient.ui{
                 if (_arg1.delta < 0)
                 {
                     this._1qD();
-                };
-            };
+                }
+            }
         }
 
         private function u(_arg1:MouseEvent):void{

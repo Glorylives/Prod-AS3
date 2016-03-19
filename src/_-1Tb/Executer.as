@@ -53,18 +53,18 @@ package 1Tb{
             if (this.H0)
             {
                 throw (new Error("CommandExec.exec() is already runnnig. Does not support loop backs."));
-            };
+            }
             this.H0 = true;
             this.xI = s;
             this.0w4 = [];
             if (!this.0au)
             {
                 this.0au = new Object();
-            };
+            }
             if (!this.0cs)
             {
                 this.0cs = new Array();
-            };
+            }
             try
             {
                 this.0PA(str);
@@ -72,7 +72,7 @@ package 1Tb{
             {
                 reset();
                 throw (e);
-            };
+            }
             this.reset();
             return (this.0WH);
         }
@@ -103,11 +103,11 @@ package 1Tb{
                 _local10 = _local6.substring((_local8 + 1), _local9).replace(/\\(.)/g, "$1");
                 _arg1 = this.kG(_arg1, new ExeValue(_local10), (_local3.index + _local8), ((_local3.index + _local9) + 1));
                 _local3 = _local2.exec(_arg1);
-            };
+            }
             if (_arg1.search(new RegExp("'|\"")) >= 0)
             {
                 throw (new Error("Bad syntax extra quotation marks"));
-            };
+            }
             var _local4:Array = _arg1.split(/\s*;\s*/);
             for each (_local5 in _local4)
             {
@@ -121,9 +121,9 @@ package 1Tb{
                     } else
                     {
                         this.co(_local5);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function co(_arg1:String){
@@ -152,7 +152,7 @@ package 1Tb{
                         _local4++;
                         _local4 = _arg1.indexOf("(", _local4);
                         _local5 = _arg1.indexOf(")", (_local5 + 1));
-                    };
+                    }
                     _local6 = _arg1.substring((_local2 + 1), _local5);
                     _local7 = false;
                     _local8 = (_local2 - 1);
@@ -164,11 +164,11 @@ package 1Tb{
                             if (_local9.match(/\w/))
                             {
                                 _local7 = true;
-                            };
+                            }
                             break;
-                        };
+                        }
                         _local8--;
-                    };
+                    }
                     if (_local7)
                     {
                         _local10 = _local6.split(",");
@@ -176,16 +176,16 @@ package 1Tb{
                         for (_local11 in _local10)
                         {
                             _local10[_local11] = this.0lb(this.1FN(_local10[_local11])).value;
-                        };
+                        }
                     } else
                     {
                         _local12 = new ExeValue(_local12);
                         _arg1 = this.kG(_arg1, _local12, _local2, (_local5 + 1));
                         _local12.setValue(this.0lb(this.1FN(_local6)).value);
-                    };
-                };
+                    }
+                }
                 _local2 = _arg1.lastIndexOf("(", (_local2 - 1));
-            };
+            }
             this.0WH = this.0lb(_arg1).value;
             if (((this.0WH) && (this.1A4)))
             {
@@ -193,8 +193,8 @@ package 1Tb{
                 if ((((_local13 == "object")) || ((_local13 == "xml"))))
                 {
                     this.xI = this.0WH;
-                };
-            };
+                }
+            }
             dispatchEvent(new Event(Event.COMPLETE));
             return (this.0WH);
         }
@@ -237,16 +237,16 @@ package 1Tb{
                         _local4.push(_arg1.substring(_local11, _local12));
                         _local4.push(this.1FN(_local13));
                         _local11 = (_local12 + _local13.length);
-                    };
-                };
-            };
+                    }
+                }
+            }
             var _local5:int = _local4.length;
             var _local6:int;
             while (_local6 < _local5)
             {
                 _local4[_local6] = this.0Dz(_local4[_local6]);
                 _local6 = (_local6 + 2);
-            };
+            }
             var _local9:RegExp = /((\|\||\&\&|[+|\-|*|\/|\%|\||\&|\^]|\>\>\>?|\<\<)\=)|=/;
             _local6 = 1;
             while (_local6 < _local5)
@@ -260,9 +260,9 @@ package 1Tb{
                     _local4.splice(_local6, 2);
                     _local6 = (_local6 - 2);
                     _local5 = (_local5 - 2);
-                };
+                }
                 _local6 = (_local6 + 2);
-            };
+            }
             _local4.reverse();
             var _local10:ExeValue = _local4[0];
             _local6 = 1;
@@ -276,12 +276,12 @@ package 1Tb{
                     if (_local7.length > 1)
                     {
                         _local7 = _local7.substring(0, (_local7.length - 1));
-                    };
+                    }
                     _local8 = this.0j5(_local15, _local7, _local10);
                     _local15.setValue(_local8);
-                };
+                }
                 _local6 = (_local6 + 2);
-            };
+            }
             return (_local10);
         }
 
@@ -313,16 +313,16 @@ package 1Tb{
                 if (defclose >= 0)
                 {
                     newstr = str.substring(0, (defclose + 1));
-                };
+                }
                 newobj = this.n5(newstr.substring(4));
                 str = this.kG(str, new ExeValue(newobj), 0, newstr.length);
-            };
+            }
             var reg:RegExp = /\.|\(/g;
             var result:Object = reg.exec(str);
             if ((((result == null)) || (!(isNaN(Number(str))))))
             {
                 return (this.kt(str, this.xI));
-            };
+            }
             firstparts = String(str.split("(")[0]).split(".");
             if (firstparts.length > 0)
             {
@@ -341,14 +341,14 @@ package 1Tb{
                         } else
                         {
                             return (this.kt(str));
-                        };
+                        }
                         break;
                     } catch(e:Error)
                     {
                         firstparts.pop();
-                    };
-                };
-            };
+                    }
+                }
+            }
             var previndex:int;
             while (result != null)
             {
@@ -366,7 +366,7 @@ package 1Tb{
                     if (paramstr)
                     {
                         params = this.kt(paramstr).value;
-                    };
+                    }
                     if (!(newbase is Function))
                     {
                         try
@@ -379,23 +379,23 @@ package 1Tb{
                                 {
                                     newbase = nsv;
                                     break;
-                                };
-                            };
+                                }
+                            }
                         } catch(e:Error)
                         {
-                        };
+                        }
                         if (!(newbase is Function))
                         {
                             throw (new Error((basestr + " is not a function.")));
-                        };
-                    };
+                        }
+                    }
                     v.obj = (newbase as Function).apply(v.value, params);
                     v.prop = null;
                     index = (closeindex + 1);
                 } else
                 {
                     v = newv;
-                };
+                }
                 previndex = (index + 1);
                 reg.lastIndex = (index + 1);
                 result = reg.exec(str);
@@ -404,10 +404,10 @@ package 1Tb{
                     if ((index + 1) < str.length)
                     {
                         reg.lastIndex = str.length;
-                        result = {index:str.length};
-                    };
-                };
-            };
+                        result = {index:str.length}
+                    }
+                }
+            }
             return (v);
         }
 
@@ -464,8 +464,8 @@ package 1Tb{
                                             } else
                                             {
                                                 v.obj = this.0au[key];
-                                            };
-                                        };
+                                            }
+                                        }
                                     } else
                                     {
                                         try
@@ -475,14 +475,14 @@ package 1Tb{
                                         {
                                             v.obj = base;
                                             v.prop = str;
-                                        };
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
-            };
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             return (v);
         }
 
@@ -543,7 +543,7 @@ package 1Tb{
                     return (!((_arg1.value == _arg3.value)));
                 case "!==":
                     return (!((_arg1.value === _arg3.value)));
-            };
+            }
         }
 
         private function n5(_arg1:String){
@@ -564,54 +564,54 @@ package 1Tb{
                 if (_local6)
                 {
                     _local7 = this.kt(_local6).value;
-                };
+                }
                 _local8 = _local7.length;
                 if (_local8 == 0)
                 {
                     return (new (_local4)());
-                };
+                }
                 if (_local8 == 1)
                 {
                     return (new _local4(_local7[0]));
-                };
+                }
                 if (_local8 == 2)
                 {
                     return (new _local4(_local7[0], _local7[1]));
-                };
+                }
                 if (_local8 == 3)
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2]));
-                };
+                }
                 if (_local8 == 4)
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2], _local7[3]));
-                };
+                }
                 if (_local8 == 5)
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2], _local7[3], _local7[4]));
-                };
+                }
                 if (_local8 == 6)
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2], _local7[3], _local7[4], _local7[5]));
-                };
+                }
                 if (_local8 == 7)
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2], _local7[3], _local7[4], _local7[5], _local7[6]));
-                };
+                }
                 if (_local8 == 8)
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2], _local7[3], _local7[4], _local7[5], _local7[6], _local7[7]));
-                };
+                }
                 if (_local8 == 9)
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2], _local7[3], _local7[4], _local7[5], _local7[6], _local7[7], _local7[8]));
-                };
+                }
                 if (_local8 == 10)
                 {
                     return (new _local4(_local7[0], _local7[1], _local7[2], _local7[3], _local7[4], _local7[5], _local7[6], _local7[7], _local7[8], _local7[9]));
-                };
+                }
                 throw (new Error("CommandLine can't create new class instances _with more than 10 arguments."));
-            };
+            }
             return (null);
         }
 
@@ -626,9 +626,9 @@ package 1Tb{
                 } else
                 {
                     break;
-                };
+                }
                 _local2--;
-            };
+            }
             return (_arg1);
         }
 
@@ -657,7 +657,7 @@ class ExeValue {
         } else
         {
             this.obj = _arg1;
-        };
+        }
     }
 
 

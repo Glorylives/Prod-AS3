@@ -39,22 +39,22 @@ package com.company.assembleegameclient.game{
             if (this.IW < (05U * 0lK))
             {
                 return (false);
-            };
+            }
             if ((((this.IW >= (05U * 0lK))) && ((_local2 < (05U * 0lK)))))
             {
                 this.12K.dispatch(this.1Qp());
                 return (false);
-            };
+            }
             if ((((this.IW >= (1lJ * 0lK))) && ((_local2 < (1lJ * 0lK)))))
             {
                 this.12K.dispatch(this.Sl());
                 return (false);
-            };
+            }
             if ((((this.IW >= (0YN * 0lK))) && ((_local2 < (0YN * 0lK)))))
             {
                 this.12K.dispatch(this.1Ji());
                 return (true);
-            };
+            }
             return (false);
         }
 

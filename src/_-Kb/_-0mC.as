@@ -43,7 +43,7 @@ package Kb{
             if (((this.player.kU()) && (this.death.UD())))
             {
                 return (this.death.17C().charId_);
-            };
+            }
             return (-1);
         }
 

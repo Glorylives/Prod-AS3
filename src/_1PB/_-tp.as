@@ -58,7 +58,7 @@ package 1PB{
                 case 6M.1hw:
                     _local1 = new 0AH();
                     break;
-            };
+            }
             return (_local1);
         }
 

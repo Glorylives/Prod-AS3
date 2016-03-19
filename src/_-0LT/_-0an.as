@@ -29,7 +29,7 @@ package 0LT{
             for each (_local3 in _local1)
             {
                 _local2.push(this.0k5(_local3));
-            };
+            }
             return (_local2);
         }
 

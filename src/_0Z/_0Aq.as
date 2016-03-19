@@ -78,7 +78,7 @@ package _0Z{
                 _local5 = this._0C3.transform.colorTransform;
                 _local5.color = ((_arg3) ? _arg2 : 0x545454);
                 this._0C3.transform.colorTransform = _local5;
-            };
+            }
         }
 
         protected function _0Pi():void{

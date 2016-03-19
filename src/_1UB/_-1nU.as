@@ -82,7 +82,7 @@ package 1UB{
                 this.ML.addEventListener(TimerEvent.TIMER, this.an);
                 this.ML.start();
                 this.center();
-            };
+            }
         }
 
         private function an(_arg1:TimerEvent):void{

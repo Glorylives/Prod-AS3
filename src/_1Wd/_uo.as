@@ -28,7 +28,7 @@ import flash.utils.Dictionary;
             if ((_arg1 in _1Y5))
             {
                 return (_1Y5[_arg1]);
-            };
+            }
             _local2 = _1s(_arg1, "y");
             _1Y5[_arg1] = _local2;
             return (_local2);
@@ -43,7 +43,7 @@ import flash.utils.Dictionary;
             } else
             {
                 _local4 = new Matrix(1, 0, 0, -1, 0, _arg1.height);
-            };
+            }
             _local3.draw(_arg1, _local4, null, null, null, true);
             return (_local3);
         }
@@ -65,12 +65,12 @@ import flash.utils.Dictionary;
             for each (_local1 in textures)
             {
                 _local1.dispose();
-            };
+            }
             textures = new Dictionary();
             for each (_local2 in _1Y5)
             {
                 _local2.dispose();
-            };
+            }
             _1Y5 = new Dictionary();
             count = 0;
         }
@@ -80,7 +80,7 @@ import flash.utils.Dictionary;
             for each (_local1 in textures)
             {
                 _local1.dispose();
-            };
+            }
             textures = new Dictionary();
         }
 
@@ -93,11 +93,11 @@ import flash.utils.Dictionary;
             if (_arg1 == null)
             {
                 return (null);
-            };
+            }
             if ((_arg1 in textures))
             {
                 return (textures[_arg1]);
-            };
+            }
             _local2 = _1yE(_arg1.width);
             _local3 = _1yE(_arg1.height);
             _local4 = this.context3D.createTexture(_local2, _local3, Context3DTextureFormat.BGRA, false);
@@ -108,7 +108,7 @@ import flash.utils.Dictionary;
             {
                 _0Uo();
                 count = 0;
-            };
+            }
             textures[_arg1] = _local4;
             count++;
             return (_local4);

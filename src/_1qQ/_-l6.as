@@ -10,14 +10,14 @@ package 1qQ{
         private var 4U:Object;
 
         public function l6(){
-            this.25Z = {};
-            this.4U = {};
+            this.25Z = {}
+            this.4U = {}
             super();
         }
 
         public function clear():void{
-            this.25Z = {};
-            this.4U = {};
+            this.25Z = {}
+            this.4U = {}
         }
 
         public function setValue(_arg1:String, _arg2:String, _arg3:String):void{

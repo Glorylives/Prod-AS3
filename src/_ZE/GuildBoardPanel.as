@@ -22,7 +22,7 @@ package _ZE{
             if (_local2 == null)
             {
                 return;
-            };
+            }
             gs_.addChild(new uZ((_local2.guildRank_ >= GuildUtil.d8)));
         }
 

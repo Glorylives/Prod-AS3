@@ -32,18 +32,18 @@ package g0{
             {
                 0Ep.23n(this.Zg[_local3]);
                 _local3++;
-            };
+            }
             this.Zg.length = Math.min(_local2, this.Zg.length);
             while (this.Zg.length < _local2)
             {
                 this.Zg.push((0Ep.sH(StatData) as StatData));
-            };
+            }
             _local3 = 0;
             while (_local3 < _local2)
             {
                 this.Zg[_local3].parseFromInput(_arg1);
                 _local3++;
-            };
+            }
         }
 
         public function writeToOutput(_arg1:IDataOutput):void{
@@ -55,7 +55,7 @@ package g0{
             {
                 this.Zg[_local2].writeToOutput(_arg1);
                 _local2++;
-            };
+            }
         }
 
         public function toString():String{

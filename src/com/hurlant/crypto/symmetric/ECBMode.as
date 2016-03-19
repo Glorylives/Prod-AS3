@@ -20,7 +20,7 @@ package com.hurlant.crypto.symmetric{
             } else
             {
                 _arg2.setBlockSize(_arg1.getBlockSize());
-            };
+            }
             this.padding = _arg2;
         }
 
@@ -42,7 +42,7 @@ package com.hurlant.crypto.symmetric{
                 this.key.encrypt(_local3);
                 _local4.writeBytes(_local3);
                 _local5 = (_local5 + _local2);
-            };
+            }
             _arg1.length = 0;
             _arg1.writeBytes(_local4);
         }
@@ -53,7 +53,7 @@ package com.hurlant.crypto.symmetric{
             if ((_arg1.length % _local2) != 0)
             {
                 throw (new Error(("ECB mode cipher length must be a multiple _of blocksize " + _local2)));
-            };
+            }
             var _local3:ByteArray = new ByteArray();
             var _local4:ByteArray = new ByteArray();
             var _local5:uint;
@@ -64,7 +64,7 @@ package com.hurlant.crypto.symmetric{
                 this.key.decrypt(_local3);
                 _local4.writeBytes(_local3);
                 _local5 = (_local5 + _local2);
-            };
+            }
             this.padding.unpad(_local4);
             _arg1.length = 0;
             _arg1.writeBytes(_local4);

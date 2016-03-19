@@ -44,7 +44,7 @@ package AB{
                 }).setPrefix(TR.1pw(1kE((damage - otherDamage)))).setPostfix(TR.17H());
                 1Tf.pushParams(du.07W, {data:innerLineBuilder});
                 ZX[result[0].toXMLString()] = true;
-            };
+            }
             if (String(itemXML.Activate.@condEffect))
             {
                 condition = itemXML.Activate.@condEffect;
@@ -56,7 +56,7 @@ package AB{
                     effect:condition,
                     duration:duration.toString()
                 }, TR.1pw(1U4), TR.17H());
-            };
+            }
         }
 
 

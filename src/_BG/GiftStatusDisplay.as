@@ -86,15 +86,15 @@ package BG{
             if (((this.background) && ((this.background.parent == this))))
             {
                 removeChild(this.background);
-            };
+            }
             if (((this.text) && ((this.text.parent == this))))
             {
                 removeChild(this.text);
-            };
+            }
             if (((this.kN) && ((this.kN.parent == this))))
             {
                 removeChild(this.kN);
-            };
+            }
         }
 
 

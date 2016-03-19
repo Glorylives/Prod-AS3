@@ -21,7 +21,7 @@ package com.company.assembleegameclient.map{
                 _local3 = int(_local2.@type);
                 GD[_local3] = _local2;
                 get[String(_local2.@id)] = _local3;
-            };
+            }
         }
 
         public static function Uq(_arg1:int):String{
@@ -29,7 +29,7 @@ package com.company.assembleegameclient.map{
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             return (String(_local2.@id));
         }
 
@@ -38,7 +38,7 @@ package com.company.assembleegameclient.map{
             if (_local2 == null)
             {
                 return (0);
-            };
+            }
             return (uint(_local2.Color));
         }
 

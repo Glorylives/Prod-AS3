@@ -37,14 +37,14 @@ package c4{
                 if (requestDetails.length != 2)
                 {
                     throw (new Error("Invalid signed request"));
-                };
+                }
                 payload = this.1JF(requestDetails[1]);
                 userSession = this.1SD.parse(payload);
             } catch(error:Error)
             {
                 u3.info(((("Failed to get user session: " + error.toString()) + ", signed request: ") + signedRequest));
                 userSession = null;
-            };
+            }
             return (userSession);
         }
 
@@ -55,7 +55,7 @@ package c4{
             while (_local4--)
             {
                 _arg1 = (_arg1 + "=");
-            };
+            }
             _arg1 = _arg1.replace(_local2, "+").replace(_local3, "/");
             return (this.1-Q.decode(_arg1));
         }

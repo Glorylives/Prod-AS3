@@ -32,7 +32,7 @@ package 1t6{
             for each (_local2 in this.1Gf)
             {
                 this.1WQ.removeEventListener(_local2, this.1WO);
-            };
+            }
             this.1WQ.PC().dispatch();
         }
 

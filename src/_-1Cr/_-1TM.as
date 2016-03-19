@@ -29,14 +29,14 @@ package 1Cr{
             if (_arg1 != "")
             {
                 this.NB(_arg1, _arg2, _arg3);
-            };
+            }
         }
 
         public function destroy():void{
             while (numChildren > 0)
             {
                 this.removeChildAt((numChildren - 1));
-            };
+            }
             this.toolTip_ = null;
             this.1-P.0I0();
             this.1-P = null;

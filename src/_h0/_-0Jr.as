@@ -31,7 +31,7 @@ package h0{
                 _local6.setType(_arg2[_local5]);
                 this.0Hv[_local5] = _local6;
                 _local5++;
-            };
+            }
         }
 
         public function Pr():0Rw{
@@ -53,11 +53,11 @@ package h0{
                     } else
                     {
                         this.0Hv[_local4].setItem(-1);
-                    };
+                    }
                     this.0Hv[_local4].updateDim(curPlayer);
                     _local4++;
-                };
-            };
+                }
+            }
         }
 
 

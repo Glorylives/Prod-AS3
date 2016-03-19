@@ -53,14 +53,14 @@ import flash.utils.Dictionary;
             if (_arg1 == null)
             {
                 return;
-            };
+            }
             this.type_ = int(_arg1.@type);
             this.id_ = String(_arg1.@id);
             this._1cL = this.id_;
             if (_arg1.hasOwnProperty("DisplayId"))
             {
                 this._1cL = _arg1.DisplayId;
-            };
+            }
             this._0Qf = ((_arg1.hasOwnProperty("ShadowSize")) ? _arg1.ShadowSize : 100);
             this.a3 = _arg1.hasOwnProperty("Player");
             this.isEnemy_ = _arg1.hasOwnProperty("Enemy");
@@ -68,7 +68,7 @@ import flash.utils.Dictionary;
             if (((this.EP) || (_arg1.hasOwnProperty("DrawUnder"))))
             {
                 this._1Gr = true;
-            };
+            }
             this.occupySquare_ = _arg1.hasOwnProperty("OccupySquare");
             this.yk = _arg1.hasOwnProperty("FullOccupy");
             this.enemyOccupySquare_ = _arg1.hasOwnProperty("EnemyOccupySquare");
@@ -82,11 +82,11 @@ import flash.utils.Dictionary;
             if (_arg1.hasOwnProperty("Z"))
             {
                 this.z_ = Number(_arg1.Z);
-            };
+            }
             if (_arg1.hasOwnProperty("Color"))
             {
                 this.color_ = uint(_arg1.Color);
-            };
+            }
             if (_arg1.hasOwnProperty("Size"))
             {
                 this.WO = (this.XV = _arg1.Size);
@@ -95,52 +95,52 @@ import flash.utils.Dictionary;
                 if (_arg1.hasOwnProperty("MinSize"))
                 {
                     this.WO = _arg1.MinSize;
-                };
+                }
                 if (_arg1.hasOwnProperty("MaxSize"))
                 {
                     this.XV = _arg1.MaxSize;
-                };
+                }
                 if (_arg1.hasOwnProperty("SizeStep"))
                 {
                     this._0iW = _arg1.SizeStep;
-                };
-            };
+                }
+            }
             this._26M = ((_arg1.hasOwnProperty("OldSound")) ? String(_arg1.OldSound) : null);
             for each (_local2 in _arg1.Projectile)
             {
                 _local4 = int(_local2.@id);
                 this._0xK[_local4] = new _22S(_local2);
-            };
+            }
             this._1CM = ((_arg1.hasOwnProperty("AngleCorrection")) ? ((Number(_arg1.AngleCorrection) * Math.PI) / 4) : 0);
             this.rotation_ = ((_arg1.hasOwnProperty("Rotation")) ? _arg1.Rotation : 0);
             if (_arg1.hasOwnProperty("BloodProb"))
             {
                 this.kF = Number(_arg1.BloodProb);
-            };
+            }
             if (_arg1.hasOwnProperty("BloodColor"))
             {
                 this._0jq = uint(_arg1.BloodColor);
-            };
+            }
             if (_arg1.hasOwnProperty("ShadowColor"))
             {
                 this._0Mn = uint(_arg1.ShadowColor);
-            };
+            }
             for each (_local3 in _arg1.Sound)
             {
                 if (this._1MX == null)
                 {
-                    this._1MX = {};
-                };
+                    this._1MX = {}
+                }
                 this._1MX[int(_local3.@id)] = _local3.toString();
-            };
+            }
             if (_arg1.hasOwnProperty("Portrait"))
             {
                 this._0Sz = new _1J1(XML(_arg1.Portrait));
-            };
+            }
             if (_arg1.hasOwnProperty("WhileMoving"))
             {
                 this._0m = new WhileMovingProperties(XML(_arg1.WhileMoving));
-            };
+            }
         }
 
         public function _0l5():void{
@@ -148,18 +148,18 @@ import flash.utils.Dictionary;
             if (this._1MX == null)
             {
                 return;
-            };
+            }
             for each (_local1 in this._1MX)
             {
                 _0ZC.load(_local1);
-            };
+            }
         }
 
         public function _02p():int{
             if (this.WO == this.XV)
             {
                 return (this.WO);
-            };
+            }
             var _local1:int = ((this.XV - this.WO) / this._0iW);
             return ((this.WO + (int((Math.random() * _local1)) * this._0iW)));
         }
@@ -177,7 +177,7 @@ class WhileMovingProperties {
         if (_arg1.hasOwnProperty("Z"))
         {
             this.z_ = Number(_arg1.Z);
-        };
+        }
         this.flying_ = _arg1.hasOwnProperty("Flying");
     }
 

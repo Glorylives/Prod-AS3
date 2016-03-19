@@ -62,7 +62,7 @@ package 0av{
         }
 
         public function 0JS():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             _local1.steamid = (this.19g = ((this.19g) || (this. each.getSteamID())));
             _local1.sessionticket = this.1C2;
             return (_local1);

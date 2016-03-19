@@ -37,8 +37,8 @@ package com.company.assembleegameclient.util{
                 if (_local2.label_ == _arg1)
                 {
                     return (_local2);
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -61,7 +61,7 @@ package com.company.assembleegameclient.util{
                     _local6["price"] = _arg3.price_.toString();
                     _local6["paymentid"] = this.HH;
                     break;
-            };
+            }
             return (((_local5.1HF(true) + "/credits/add?") + _local6.toString()));
         }
 

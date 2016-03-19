@@ -35,7 +35,7 @@ package 1hz{
             if (_arg1 == null)
             {
                 return (null);
-            };
+            }
             0js = _arg1;
             buffer = new ByteArray();
             18o = 4;
@@ -43,11 +43,11 @@ package 1hz{
             if (0js.readUnsignedInt() != 2303741511)
             {
                 return (0Ni());
-            };
+            }
             if (0js.readUnsignedInt() != 218765834)
             {
                 return (0Ni());
-            };
+            }
             var _local2:Array = 1ol();
             var _local3:int;
             _local5 = 0;
@@ -64,18 +64,18 @@ package 1hz{
                     } else
                     {
                         _local4 = false;
-                    };
-                };
+                    }
+                }
                 if (_local2[_local5].type == 1hF)
                 {
                     buffer.writeBytes(0js, 0js.position, _local2[_local5].length);
-                };
+                }
                 if (((!(_local4)) || ((_local3 > 1))))
                 {
                     return (0Ni());
-                };
+                }
                 _local5++;
-            };
+            }
             var _local6:BitmapData = am();
             0js = null;
             buffer = null;
@@ -87,19 +87,19 @@ package 1hz{
             if (_arg1 == null)
             {
                 return (null);
-            };
+            }
             0js = _arg1;
             0js.position = 0;
             if (0js.readUnsignedInt() != 2303741511)
             {
                 0js = null;
                 return (null);
-            };
+            }
             if (0js.readUnsignedInt() != 218765834)
             {
                 0js = null;
                 return (null);
-            };
+            }
             var _local2:Array = 1ol();
             var _local3:XML = <information/>
             ;
@@ -109,17 +109,17 @@ package 1hz{
                 if (_local2[_local4].type == OP)
                 {
                     _local3.appendChild(0rs(_local2[_local4].position, _local2[_local4].length));
-                };
+                }
                 if (_local2[_local4].type == 1z2)
                 {
                     _local3.appendChild(070(_local2[_local4].position, _local2[_local4].length));
-                };
+                }
                 if (_local2[_local4].type == 0il)
                 {
                     _local3.appendChild(T7(_local2[_local4].position, _local2[_local4].length));
-                };
+                }
                 _local4++;
-            };
+            }
             0js = null;
             return (_local3);
         }
@@ -140,8 +140,8 @@ package 1hz{
                 } else
                 {
                     break;
-                };
-            };
+                }
+            }
             _local5 = 0js.readUTFBytes(((_arg1 + _arg2) - 0js.position));
             _local3.appendChild(new XML((("<keyword>" + _local4) + "</keyword>")));
             _local3.appendChild(new XML((("<text>" + _local5) + "</text>")));
@@ -165,8 +165,8 @@ package 1hz{
                 } else
                 {
                     break;
-                };
-            };
+                }
+            }
             var _local7:int = 0js.readUnsignedByte();
             if (_local7 == 0)
             {
@@ -174,7 +174,7 @@ package 1hz{
                 _local8.writeBytes(0js, 0js.position, ((_arg1 + _arg2) - 0js.position));
                 _local8.uncompress();
                 _local5 = _local8.readUTFBytes(_local8.length);
-            };
+            }
             _local3.appendChild(new XML((("<keyword>" + _local4) + "</keyword>")));
             _local3.appendChild(new XML((("<text>" + _local5) + "</text>")));
             return (_local3);
@@ -199,8 +199,8 @@ package 1hz{
                 } else
                 {
                     break;
-                };
-            };
+                }
+            }
             var _local9 = (0js.readUnsignedByte() == 1);
             var _local10:int = 0js.readUnsignedByte();
             while (0js.position < (_arg1 + _arg2))
@@ -212,8 +212,8 @@ package 1hz{
                 } else
                 {
                     break;
-                };
-            };
+                }
+            }
             while (0js.position < (_arg1 + _arg2))
             {
                 _local8 = 0js.readUnsignedByte();
@@ -223,8 +223,8 @@ package 1hz{
                 } else
                 {
                     break;
-                };
-            };
+                }
+            }
             if (_local9)
             {
                 if (_local10 == 0)
@@ -233,11 +233,11 @@ package 1hz{
                     _local11.writeBytes(0js, 0js.position, ((_arg1 + _arg2) - 0js.position));
                     _local11.uncompress();
                     _local7 = _local11.readUTFBytes(_local11.length);
-                };
+                }
             } else
             {
                 _local7 = 0js.readUTFBytes(((_arg1 + _arg2) - 0js.position));
-            };
+            }
             _local3.appendChild(new XML((("<keyword>" + _local4) + "</keyword>")));
             _local3.appendChild(new XML((("<text>" + _local7) + "</text>")));
             _local3.appendChild(new XML((("<languageTag>" + _local5) + "</languageTag>")));
@@ -273,7 +273,7 @@ package 1hz{
             if (_arg1 != 13)
             {
                 return (false);
-            };
+            }
             1ws = 0js.readUnsignedInt();
             0VR = 0js.readUnsignedInt();
             3t = 0js.readUnsignedByte();
@@ -284,7 +284,7 @@ package 1hz{
             if ((((1ws <= 0)) || ((0VR <= 0))))
             {
                 return (false);
-            };
+            }
             switch (3t)
             {
                 case 1:
@@ -294,14 +294,14 @@ package 1hz{
                 case 16:
                     break;
                     return (false);
-            };
+            }
             switch (0pg)
             {
                 case 0:
                     if (((((((((!((3t == 1))) && (!((3t == 2))))) && (!((3t == 4))))) && (!((3t == 8))))) && (!((3t == 16)))))
                     {
                         return (false);
-                    };
+                    }
                     break;
                 case 2:
                 case 4:
@@ -309,24 +309,24 @@ package 1hz{
                     if (((!((3t == 8))) && (!((3t == 16)))))
                     {
                         return (false);
-                    };
+                    }
                     break;
                 case 3:
                     if (((((((!((3t == 1))) && (!((3t == 2))))) && (!((3t == 4))))) && (!((3t == 8)))))
                     {
                         return (false);
-                    };
+                    }
                     break;
                     return (false);
-            };
+            }
             if (((!((1-G == 0))) || (!((1Yc == 0)))))
             {
                 return (false);
-            };
+            }
             if (((!((0SH == 0))) && (!((0SH == 1)))))
             {
                 return (false);
-            };
+            }
             return (true);
         }
 
@@ -345,7 +345,7 @@ package 1hz{
             } catch(err)
             {
                 return (null);
-            };
+            }
             0Ii = 0;
             bufferLen = buffer.length;
             while (buffer.position < bufferLen)
@@ -362,7 +362,7 @@ package 1hz{
                         a = (Hv() << 24);
                         bd.setPixel32(i, 0Ii, (((a + r) + g) + b));
                         i = (i + 1);
-                    };
+                    }
                 } else
                 {
                     if (filter == 1)
@@ -376,7 +376,7 @@ package 1hz{
                             a = (1xR() << 24);
                             bd.setPixel32(i, 0Ii, (((a + r) + g) + b));
                             i = (i + 1);
-                        };
+                        }
                     } else
                     {
                         if (filter == 2)
@@ -390,7 +390,7 @@ package 1hz{
                                 a = (Px() << 24);
                                 bd.setPixel32(i, 0Ii, (((a + r) + g) + b));
                                 i = (i + 1);
-                            };
+                            }
                         } else
                         {
                             if (filter == 3)
@@ -404,7 +404,7 @@ package 1hz{
                                     a = (VP() << 24);
                                     bd.setPixel32(i, 0Ii, (((a + r) + g) + b));
                                     i = (i + 1);
-                                };
+                                }
                             } else
                             {
                                 if (filter == 4)
@@ -418,17 +418,17 @@ package 1hz{
                                         a = (_1aA() << 24);
                                         bd.setPixel32(i, 0Ii, (((a + r) + g) + b));
                                         i = (i + 1);
-                                    };
+                                    }
                                 } else
                                 {
                                     buffer.position = (buffer.position + (18o * 1ws));
-                                };
-                            };
-                        };
-                    };
-                };
+                                }
+                            }
+                        }
+                    }
+                }
                 0Ii++;
-            };
+            }
             return (bd);
         }
 
@@ -492,8 +492,8 @@ package 1hz{
                 } else
                 {
                     _local8 = _local3;
-                };
-            };
+                }
+            }
             return (_local8);
         }
 
@@ -503,7 +503,7 @@ package 1hz{
             if (_local2 <= _local1)
             {
                 return (0);
-            };
+            }
             return (buffer[_local2]);
         }
 
@@ -512,7 +512,7 @@ package 1hz{
             if (_local1 < 0)
             {
                 return (0);
-            };
+            }
             return (buffer[_local1]);
         }
 
@@ -521,13 +521,13 @@ package 1hz{
             if (_local1 < 0)
             {
                 return (0);
-            };
+            }
             var _local2:int = ((0Ii - 1) * ((1ws * 18o) + 1));
             _local1 = (_local1 - 18o);
             if (_local1 <= _local2)
             {
                 return (0);
-            };
+            }
             return (buffer[_local1]);
         }
 

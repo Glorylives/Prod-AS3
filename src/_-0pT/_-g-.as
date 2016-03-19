@@ -47,7 +47,7 @@ package 0pT{
                 addEventListener(Event.REMOVED_FROM_STAGE, this.15K);
                 addEventListener(MouseEvent.ROLL_OVER, this.0bV);
                 addEventListener(MouseEvent.ROLL_OUT, this.onRollOut);
-            };
+            }
         }
 
         public function 0uv():void{

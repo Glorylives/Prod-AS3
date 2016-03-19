@@ -47,29 +47,29 @@ import flash.utils.Dictionary;
                         } else
                         {
                             this.parse(_arg1);
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             for each (_local2 in _arg1.AltTexture)
             {
                 this.parse(_local2);
-            };
+            }
             if (_arg1.hasOwnProperty("Mask"))
             {
                 this.parse(XML(_arg1.Mask));
-            };
+            }
             if (_arg1.hasOwnProperty("Effect"))
             {
                 this.parse(XML(_arg1.Effect));
-            };
+            }
         }
 
         public override function getTexture(_arg1:int=0):BitmapData{
             if (t9 == null)
             {
                 return (texture_);
-            };
+            }
             var _local2:_27S = t9[(_arg1 % t9.length)];
             return (_local2.getTexture(_arg1));
         }
@@ -78,7 +78,7 @@ import flash.utils.Dictionary;
             if (_1te == null)
             {
                 return (null);
-            };
+            }
             return (_1te[_arg1]);
         }
 
@@ -117,8 +117,8 @@ import flash.utils.Dictionary;
                         if (!_1l9.cQ)
                         {
                             ng = true;
-                        };
-                    };
+                        }
+                    }
                     LN = ((_arg1.hasOwnProperty("Right")) ? _BJ.RIGHT : _BJ.DOWN);
                     return;
                 case "RandomTexture":
@@ -126,16 +126,16 @@ import flash.utils.Dictionary;
                     for each (_local4 in _arg1.children())
                     {
                         t9.push(new _1J1(_local4));
-                    };
+                    }
                     return;
                 case "AltTexture":
                     if (_1te == null)
                     {
                         _1te = new Dictionary();
-                    };
+                    }
                     _1te[int(_arg1.@id)] = new _1J1(_arg1);
                     return;
-            };
+            }
         }
 
         private function _1RG(_arg1:BitmapData):void{
@@ -147,7 +147,7 @@ import flash.utils.Dictionary;
             } else
             {
                 texture_ = _arg1;
-            };
+            }
         }
 
 

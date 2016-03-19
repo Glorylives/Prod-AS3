@@ -78,7 +78,7 @@ package 0hd{
                 this.0er.buttonMode = true;
                 this.0er.x = 109;
                 addChild(this.0er);
-            };
+            }
         }
 
         private function PF(_arg1:String):void{
@@ -89,7 +89,7 @@ package 0hd{
                 this.9u.x = ((this.w_ - this.9u.width) - 26);
                 this.9u.setAutoSize(TextFieldAutoSize.RIGHT);
                 addChild(this.9u);
-            };
+            }
         }
 
         public function 0Bj(_arg1:1xl):void{
@@ -129,7 +129,7 @@ package 0hd{
             position = function ():void{
                 positionText(text);
                 draw();
-            };
+            }
             text = new _13j().setSize(12).setColor(0xFFFFFF);
             text.setStringBuilder(new 1cA().setParams(plainText, tokens));
             text.filters = [new DropShadowFilter(0, 0, 0)];
@@ -178,7 +178,7 @@ package 0hd{
             for each (_local1 in this.0S9)
             {
                 _local1.hs(0xB3B3B3);
-            };
+            }
             this.0er.hs(0xB3B3B3);
             this.9u.hs(0xB3B3B3);
         }
@@ -190,7 +190,7 @@ package 0hd{
             for each (_local1 in this.0S9)
             {
                 _local1.hs(0xFFFFFF);
-            };
+            }
             this.0er.hs(0xFFFFFF);
             this.9u.hs(0xFFFFFF);
         }
@@ -202,7 +202,7 @@ package 0hd{
             if (this.0gy.length > 0)
             {
                 stage.focus = this.0gy[0].inputText_;
-            };
+            }
             ((this.ZM) && (GA.global().trackPageview(this.ZM)));
         }
 

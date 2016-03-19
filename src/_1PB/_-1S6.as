@@ -25,7 +25,7 @@ package 1PB{
                 _local2.x = (_local1 * (1Zk.0um + 0SK));
                 addChild(_local2);
                 _local1++;
-            };
+            }
         }
 
     }

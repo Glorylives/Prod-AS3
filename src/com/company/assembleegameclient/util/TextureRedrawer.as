@@ -39,13 +39,13 @@ package com.company.assembleegameclient.util{
             if (((_arg5) && (_0bK(_arg1, _local7))))
             {
                 return (_02m[_arg1][_local7]);
-            };
+            }
             var _local8:BitmapData = resize(_arg1, null, _arg2, _arg3, 0, 0, _arg6);
             _local8 = _1go._0Lr(_local8, _arg4, 1.4, _arg5);
             if (_arg5)
             {
                 _0Yu(_arg1, _local7, _local8);
-            };
+            }
             return (_local8);
         }
 
@@ -56,8 +56,8 @@ package com.company.assembleegameclient.util{
         private static function _0Yu(_arg1:BitmapData, _arg2:String, _arg3:BitmapData):void{
             if (!(_arg1 in _02m))
             {
-                _02m[_arg1] = {};
-            };
+                _02m[_arg1] = {}
+            }
             _02m[_arg1][_arg2] = _arg3;
         }
 
@@ -67,8 +67,8 @@ package com.company.assembleegameclient.util{
                 if ((_arg2 in _02m[_arg1]))
                 {
                     return (true);
-                };
-            };
+                }
+            }
             return (false);
         }
 
@@ -77,7 +77,7 @@ package com.company.assembleegameclient.util{
             {
                 _arg1 = retexture(_arg1, _arg2, _arg5, _arg6);
                 _arg3 = (_arg3 / 5);
-            };
+            }
             var _local8:int = ((_arg7 * (_arg3 / 100)) * _arg1.width);
             var _local9:int = ((_arg7 * (_arg3 / 100)) * _arg1.height);
             var _local10:Matrix = new Matrix();
@@ -94,12 +94,12 @@ package com.company.assembleegameclient.util{
             {
                 _local3 = new Dictionary();
                 cache_[_arg2] = _local3;
-            };
+            }
             var _local4:BitmapData = _local3[_arg1];
             if (_local4 != null)
             {
                 return (_local4);
-            };
+            }
             _local4 = new HL(((_arg2 + 4) + 4), ((_arg2 + 4) + 4), true, 0);
             _local4.fillRect(new Rectangle(4, 4, _arg2, _arg2), (0xFF000000 | _arg1));
             _local4.applyFilter(_local4, _local4.rect, PointUtil._1EH, OUTLINE_FILTER);
@@ -116,16 +116,16 @@ package com.company.assembleegameclient.util{
                 for each (_local1 in _local2)
                 {
                     _local1.dispose();
-                };
-            };
+                }
+            }
             cache_ = new Dictionary();
             for each (_local3 in _0mk)
             {
                 for each (_local1 in _local3)
                 {
                     _local1.dispose();
-                };
-            };
+                }
+            }
             _0mk = new Dictionary();
         }
 
@@ -133,18 +133,18 @@ package com.company.assembleegameclient.util{
             if (_arg2 == 1)
             {
                 return (_arg1);
-            };
+            }
             var _local3:Dictionary = _0mk[_arg2];
             if (_local3 == null)
             {
                 _local3 = new Dictionary();
                 _0mk[_arg2] = _local3;
-            };
+            }
             var _local4:BitmapData = _local3[_arg1];
             if (_local4 != null)
             {
                 return (_local4);
-            };
+            }
             _local4 = _arg1.clone();
             _local4.colorTransform(_local4.rect, new ColorTransform(_arg2, _arg2, _arg2));
             _local3[_arg1] = _local4;
@@ -181,7 +181,7 @@ package com.company.assembleegameclient.util{
                     break;
                 default:
                     _local3 = _arg2;
-            };
+            }
             return (_local3);
         }
 

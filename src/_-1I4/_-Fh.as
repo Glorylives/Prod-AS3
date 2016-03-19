@@ -37,14 +37,14 @@ package 1I4{
             } else
             {
                 this.sendRequest();
-            };
+            }
         }
 
         private function sendRequest():void{
             var _local1:Object = {
                 signedRequest:this.kabam.signedRequest,
                 entrytag:this.account.0lC()
-            };
+            }
             this.client.1Je(2);
             this.client.complete.addOnce(this.onComplete);
             this.client.sendRequest("/kabam/getcredentials", _local1);

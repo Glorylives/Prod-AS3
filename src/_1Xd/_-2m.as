@@ -19,15 +19,15 @@ package 1Xd{
             if (isNaN((_arg1 as Number)))
             {
                 return (isNaN((_arg2 as Number)));
-            };
+            }
             if (_arg1 == null)
             {
                 return ((_arg2 == null));
-            };
+            }
             if ((_arg1 is Array))
             {
                 return ((((_arg2 is Array)) && (20N((_arg1 as Array), (_arg2 as Array)))));
-            };
+            }
             return ((_arg1 == _arg2));
         }
 
@@ -47,9 +47,9 @@ package 1Xd{
                 if (!1zq(_arg1[_local3], _arg2[_local3]))
                 {
                     return (false);
-                };
+                }
                 _local3++;
-            };
+            }
             return (true);
         }
 

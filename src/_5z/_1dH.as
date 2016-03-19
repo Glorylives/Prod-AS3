@@ -33,8 +33,8 @@ package _5z{
                 if (_arg1 == _local3.value)
                 {
                     _local2 = _local3;
-                };
-            };
+                }
+            }
             return (_local2);
         }
 
@@ -46,8 +46,8 @@ package _5z{
                 if (_arg1 == _local3._17h)
                 {
                     _local2 = _local3;
-                };
-            };
+                }
+            }
             return (_local2);
         }
 

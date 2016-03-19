@@ -34,7 +34,7 @@ package 1fx{
         }
 
         public function 21S():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             _local1.game_net_user_id = this.account.0yO();
             _local1.game_net = this.account.Gc();
             _local1.play_platform = this.account.229();

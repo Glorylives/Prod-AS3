@@ -61,7 +61,7 @@ package 0hd{
             } else
             {
                 this.0MK();
-            };
+            }
         }
 
         private function 0MK():void{
@@ -76,14 +76,14 @@ package 0hd{
             } else
             {
                 this.0n2.dispatch(new ErrorDialog("Unable to get gold offer information"));
-            };
+            }
         }
 
         override public function destroy():void{
             if (this.11u.ja.map.name_ == "Arena")
             {
                 this.0n2.dispatch(new ContinueOrQuitDialog(this.21B.M-, true));
-            };
+            }
             this.view.buyNow.add(this.0Xf);
             this.view.cancel.add(this.onCancel);
         }

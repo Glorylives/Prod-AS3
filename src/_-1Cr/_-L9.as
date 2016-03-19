@@ -93,7 +93,7 @@ package 1Cr{
             while (numChildren > 0)
             {
                 this.removeChildAt((numChildren - 1));
-            };
+            }
             this.Tb.removeEventListener(MouseEvent.CLICK, this.1Kj);
             this.Tb = null;
             this.1D7.destroy();
@@ -114,7 +114,7 @@ package 1Cr{
             {
                 this.14Q.removeChildAt((this.14Q.014() - 1));
                 _local5--;
-            };
+            }
             _local5 = 0;
             while (_local5 < this.14Q.014())
             {
@@ -123,16 +123,16 @@ package 1Cr{
                 {
                     _local4 = (this.14Q.getChildAt(_local5) as 0QO);
                     _local4.update(_local3, _arg2);
-                };
+                }
                 _local5++;
-            };
+            }
             for each (_local3 in _arg1)
             {
                 _local4 = new 1DQ(_local3, hS, 176, _arg2);
                 _local4.WY.add(this.017);
                 _local4.x = 2;
                 this.14Q.vL(_local4);
-            };
+            }
             _arg1.length = 0;
             _arg1 = null;
         }
@@ -148,7 +148,7 @@ package 1Cr{
             {
                 this.0HH.removeChildAt((this.0HH.014() - 1));
                 _local4--;
-            };
+            }
             _local4 = 0;
             while (_local4 < this.0HH.014())
             {
@@ -157,15 +157,15 @@ package 1Cr{
                 {
                     _local3 = (this.0HH.getChildAt(_local4) as 0QO);
                     _local3.update(_local2, "");
-                };
+                }
                 _local4++;
-            };
+            }
             for each (_local2 in _arg1)
             {
                 _local3 = new tj(_local2, hS, 176);
                 _local3.WY.add(this.017);
                 this.0HH.vL(_local3);
-            };
+            }
             _arg1.length = 0;
             _arg1 = null;
         }

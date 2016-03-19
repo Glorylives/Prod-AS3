@@ -58,7 +58,7 @@ package 1Tb{
             if (_arg2)
             {
                 return (wA(_local3));
-            };
+            }
             return (_local3);
         }
 
@@ -71,8 +71,8 @@ package 1Tb{
                     this.0lV = this.Q9;
                     this.Q9 = new Array();
                     this.0aA = _arg1;
-                };
-            };
+                }
+            }
         }
 
         public function setLogRef(_arg1):uint{
@@ -80,7 +80,7 @@ package 1Tb{
             if (!config.useObjectLinking)
             {
                 return (0);
-            };
+            }
             var _local2:uint = this.eF[_arg1];
             if (!_local2)
             {
@@ -90,7 +90,7 @@ package 1Tb{
                 if (config.objectHardReferenceTimer)
                 {
                     this.Q9.push(_arg1);
-                };
+                }
                 this.1Kp++;
                 _local3 = (_local2 - 50);
                 while (_local3 >= 0)
@@ -98,10 +98,10 @@ package 1Tb{
                     if (this.23i[_local3] === null)
                     {
                         delete this.23i[_local3];
-                    };
+                    }
                     _local3 = (_local3 - 50);
-                };
-            };
+                }
+            }
             return (_local2);
         }
 
@@ -134,7 +134,7 @@ package 1Tb{
             } catch(err:Error)
             {
                 return ((("<p0><i>" + err.toString()) + "</i></p0>"));
-            };
+            }
             if ((v is Error))
             {
                 err = (v as Error);
@@ -142,17 +142,17 @@ package 1Tb{
                 if (stackstr)
                 {
                     return (stackstr);
-                };
+                }
                 return (err.toString());
-            };
+            }
             if ((((v is XML)) || ((v is XMLList))))
             {
                 return (this.4C(wA(v.toXMLString()), maxlen, o, prop));
-            };
+            }
             if ((v is QName))
             {
                 return (String(v));
-            };
+            }
             if ((((v is Array)) || ((getQualifiedClassName(v).indexOf("__AS3__.vec::Vector.") == 0))))
             {
                 str = "[";
@@ -168,11 +168,11 @@ package 1Tb{
                     {
                         str = (str + (", " + this.0Kb(o, prop, "...")));
                         break;
-                    };
+                    }
                     i = (i + 1);
-                };
+                }
                 return ((str + "]"));
-            };
+            }
             if (((((config.useObjectLinking) && (v))) && ((typeof(v) == "object"))))
             {
                 add = "";
@@ -189,9 +189,9 @@ package 1Tb{
                         if ((((v is DisplayObject)) && (v.name)))
                         {
                             add = (" " + v.name);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 txt = ((("{" + this.0Kb(o, prop, 0Ds(v))) + wA(add)) + "}");
             } else
             {
@@ -201,12 +201,12 @@ package 1Tb{
                 } else
                 {
                     txt = String(v);
-                };
+                }
                 if (!html)
                 {
                     return (this.4C(wA(txt), maxlen, o, prop));
-                };
-            };
+                }
+            }
             return (txt);
         }
 
@@ -214,7 +214,7 @@ package 1Tb{
             if (((((_arg1) && ((typeof(_arg1) == "object")))) && (!((_arg1 is QName)))))
             {
                 return ((("{" + this.0Kb(_arg1, null, 0Ds(_arg1))) + "}"));
-            };
+            }
             return (0Ds(_arg1));
         }
 
@@ -223,12 +223,12 @@ package 1Tb{
             {
                 _arg1 = _arg1[_arg2];
                 _arg2 = null;
-            };
+            }
             var _local4:uint = this.setLogRef(_arg1);
             if (_local4)
             {
                 return (((((("<menu><a href='event:ref_" + _local4) + ((_arg2) ? ("_1yq" + _arg2) : "")) + "'>") + _arg3) + "</a></menu>"));
-            };
+            }
             return (_arg3);
         }
 
@@ -237,7 +237,7 @@ package 1Tb{
             {
                 _arg1 = _arg1.substring(0, _arg2);
                 return ((_arg1 + this.0Kb(_arg3, _arg4, " ...")));
-            };
+            }
             return (_arg1);
         }
 
@@ -247,7 +247,7 @@ package 1Tb{
             if (_local2)
             {
                 this.focus(_local2, this.Ax);
-            };
+            }
         }
 
         public function handleRefEvent(_arg1:String):void{
@@ -260,7 +260,7 @@ package 1Tb{
             } else
             {
                 this.handleString(_arg1);
-            };
+            }
         }
 
         private function handleString(_arg1:String):void{
@@ -302,12 +302,12 @@ package 1Tb{
                                 } else
                                 {
                                     _local3 = uint(_arg1.substring(_local2));
-                                };
+                                }
                                 _local6 = this.getRefById(_local3);
                                 if (_local4)
                                 {
                                     _local6 = _local6[_local4];
-                                };
+                                }
                                 if (_local6)
                                 {
                                     if (_arg1.indexOf("refe_") == 0)
@@ -316,15 +316,15 @@ package 1Tb{
                                     } else
                                     {
                                         this.focus(_local6, this.Ax);
-                                    };
+                                    }
                                     return;
-                                };
-                            };
+                                }
+                            }
                             report("Reference no longer exist (garbage collected).", -2);
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
         }
 
         public function focus(_arg1, _arg2:Boolean=false):void{
@@ -334,7 +334,7 @@ package 1Tb{
             if (!this.qu)
             {
                 this.qu = new Array();
-            };
+            }
             if (this.Cq != _arg1)
             {
                 this.Cq = _arg1;
@@ -344,9 +344,9 @@ package 1Tb{
                 } else
                 {
                     this.qu[this.jb] = _arg1;
-                };
+                }
                 this.jb++;
-            };
+            }
             this.Ax = _arg2;
             this.inspect(_arg1, this.Ax);
         }
@@ -367,7 +367,7 @@ package 1Tb{
                 _local1 = new ByteArray();
                 _local1.writeUTF("refexit");
                 remoter.send("ref", _local1);
-            };
+            }
             console.clear(1-T.1lI);
         }
 
@@ -406,40 +406,40 @@ package 1Tb{
             {
                 report(obj, -2, true, ch);
                 return;
-            };
+            }
             var refIndex:uint = this.setLogRef(obj);
             var showInherit:String = "";
             if (!viewAll)
             {
                 showInherit = " [<a href='event:refi'>show inherited</a>]";
-            };
+            }
             if (this.qu)
             {
                 menuStr = "<b>[<a href='event:refexit'>exit</a>]";
                 if (this.jb > 1)
                 {
                     menuStr = (menuStr + " [<a href='event:refprev'>previous</a>]");
-                };
+                }
                 if (((this.qu) && ((this.jb < this.qu.length))))
                 {
                     menuStr = (menuStr + " [<a href='event:reffwd'>forward</a>]");
-                };
+                }
                 menuStr = (menuStr + (("</b> || [<a href='event:ref_" + refIndex) + "'>refresh</a>]"));
                 menuStr = (menuStr + (("</b> [<a href='event:refe_" + refIndex) + "'>explode</a>]"));
                 if (config.commandLineAllowed)
                 {
                     menuStr = (menuStr + ((" [<a href='event:cl_" + refIndex) + "'>scope</a>]"));
-                };
+                }
                 if (viewAll)
                 {
                     menuStr = (menuStr + " [<a href='event:refi'>hide inherited</a>]");
                 } else
                 {
                     menuStr = (menuStr + showInherit);
-                };
+                }
                 report(menuStr, -1, true, ch);
                 report("", 1, true, ch);
-            };
+            }
             var V:XML = describeType(obj);
             var cls:Object = (((obj is Class)) ? obj : obj.constructor);
             var clsV:XML = describeType(cls);
@@ -451,19 +451,19 @@ package 1Tb{
             if (V.@isStatic == "true")
             {
                 props.push("<b>static</b>");
-            };
+            }
             if (V.@isDynamic == "true")
             {
                 props.push("dynamic");
-            };
+            }
             if (V.@isFinal == "true")
             {
                 props.push("final");
-            };
+            }
             if (props.length > 0)
             {
                 str = (str + ((" <p-1>" + props.join(" | ")) + "</p-1>"));
-            };
+            }
             report(str, -2, true, ch);
             nodes = V.extendsClass;
             if (nodes.length())
@@ -474,9 +474,9 @@ package 1Tb{
                     st = extendX.@type.toString();
                     props.push((((st.indexOf("*") < 0)) ? this.0AO(getDefinitionByName(st)) : wA(st)));
                     if (!viewAll) break;
-                };
+                }
                 report(("<p10>Extends:</p10> " + props.join(" &gt; ")), 1, true, ch);
-            };
+            }
             nodes = V.implementsInterface;
             if (nodes.length())
             {
@@ -484,9 +484,9 @@ package 1Tb{
                 for each (implementX in nodes)
                 {
                     props.push(this.0AO(getDefinitionByName(implementX.@type.toString())));
-                };
+                }
                 report(("<p10>Implements:</p10> " + props.join(", ")), 1, true, ch);
-            };
+            }
             report("", 1, true, ch);
             props = [];
             nodes = V.metadata.(@name == "Event");
@@ -503,11 +503,11 @@ package 1Tb{
                     } else
                     {
                         props.push((((en + "<p0>(") + et) + ")</p0>"));
-                    };
-                };
+                    }
+                }
                 report(("<p10>Events:</p10> " + props.join("<p-1>; </p-1>")), 1, true, ch);
                 report("", 1, true, ch);
-            };
+            }
             if ((obj is DisplayObject))
             {
                 disp = (obj as DisplayObject);
@@ -521,10 +521,10 @@ package 1Tb{
                         theParent = theParent.parent;
                         indstr = ((theParent) ? ("@" + theParent.getChildIndex(pr)) : "");
                         props.push((((("<b>" + pr.name) + "</b>") + indstr) + this.0AO(pr)));
-                    };
+                    }
                     report((("<p10>Parents:</p10> " + props.join("<p-1> -> </p-1>")) + "<br/>"), 1, true, ch);
-                };
-            };
+                }
+            }
             if ((obj is DisplayObjectContainer))
             {
                 props = [];
@@ -536,22 +536,22 @@ package 1Tb{
                     child = cont.getChildAt(ci);
                     props.push((((("<b>" + child.name) + "</b>@") + ci) + this.0AO(child)));
                     ci = (ci + 1);
-                };
+                }
                 if (clen)
                 {
                     report((("<p10>Children:</p10> " + props.join("<p-1>; </p-1>")) + "<br/>"), 1, true, ch);
-                };
-            };
+                }
+            }
             props = [];
             nodes = clsV..constant;
             for each (constantX in nodes)
             {
                 report(((((((" const <p3>" + constantX.@name) + "</p3>:") + constantX.@type) + " = ") + this.0AO(cls, constantX.@name.toString())) + "</p0>"), 1, true, ch);
-            };
+            }
             if (nodes.length())
             {
                 report("", 1, true, ch);
-            };
+            }
             var inherit:uint;
             props = [];
             nodes = clsV..method;
@@ -567,21 +567,21 @@ package 1Tb{
                     for each (paraX in mparamsList)
                     {
                         params.push((((paraX.@optional == "true")) ? (("<i>" + paraX.@type) + "</i>") : paraX.@type));
-                    };
+                    }
                     if (((refIndex) && (((isstatic) || (!(isClass))))))
                     {
                         str = (str + (((((("<a href='event:cl_" + refIndex) + "_1yq") + methodX.@name) + "()'><p3>") + methodX.@name) + "</p3></a>"));
                     } else
                     {
                         str = (str + (("<p3>" + methodX.@name) + "</p3>"));
-                    };
+                    }
                     str = (str + ((("(" + params.join(", ")) + "):") + methodX.@returnType));
                     report(str, 1, true, ch);
                 } else
                 {
                     inherit = (inherit + 1);
-                };
-            };
+                }
+            }
             if (inherit)
             {
                 report(((("   \t + " + inherit) + " inherited methods.") + showInherit), 1, true, ch);
@@ -590,8 +590,8 @@ package 1Tb{
                 if (hasstuff)
                 {
                     report("", 1, true, ch);
-                };
-            };
+                }
+            }
             hasstuff = false;
             inherit = 0;
             props = [];
@@ -606,7 +606,7 @@ package 1Tb{
                     if (isstatic)
                     {
                         str = (str + "static ");
-                    };
+                    }
                     access = accessorX.@access;
                     if (access == "readonly")
                     {
@@ -619,25 +619,25 @@ package 1Tb{
                         } else
                         {
                             str = (str + "assign");
-                        };
-                    };
+                        }
+                    }
                     if (((refIndex) && (((isstatic) || (!(isClass))))))
                     {
                         str = (str + (((((((" <a href='event:cl_" + refIndex) + "_1yq") + accessorX.@name) + "'><p3>") + accessorX.@name) + "</p3></a>:") + accessorX.@type));
                     } else
                     {
                         str = (str + (((" <p3>" + accessorX.@name) + "</p3>:") + accessorX.@type));
-                    };
+                    }
                     if (((!((access == "writeonly"))) && (((isstatic) || (!(isClass))))))
                     {
                         str = (str + (" = " + this.0AO(((isstatic) ? cls : obj), accessorX.@name.toString())));
-                    };
+                    }
                     report(str, 1, true, ch);
                 } else
                 {
                     inherit = (inherit + 1);
-                };
-            };
+                }
+            }
             if (inherit)
             {
                 report(((("   \t + " + inherit) + " inherited accessors.") + showInherit), 1, true, ch);
@@ -646,8 +646,8 @@ package 1Tb{
                 if (hasstuff)
                 {
                     report("", 1, true, ch);
-                };
-            };
+                }
+            }
             nodes = clsV..variable;
             for each (variableX in nodes)
             {
@@ -659,10 +659,10 @@ package 1Tb{
                 } else
                 {
                     str = (str + (" var <p3>" + variableX.@name));
-                };
+                }
                 str = (str + ((("</p3>:" + variableX.@type) + " = ") + this.0AO(((isstatic) ? cls : obj), variableX.@name.toString())));
                 report(str, 1, true, ch);
-            };
+            }
             try
             {
                 props = [];
@@ -676,17 +676,17 @@ package 1Tb{
                         } else
                         {
                             str = X;
-                        };
+                        }
                         report((((" dynamic var <p3>" + str) + "</p3> = ") + this.0AO(obj, X)), 1, true, ch);
                     } else
                     {
                         report((((" dictionary <p3>" + this.0AO(X)) + "</p3> = ") + this.0AO(obj, X)), 1, true, ch);
-                    };
-                };
+                    }
+                }
             } catch(e:Error)
             {
                 report(("Could not get dynamic values. " + e.message), 9, false, ch);
-            };
+            }
             if ((obj is String))
             {
                 report("", 1, true, ch);
@@ -699,13 +699,13 @@ package 1Tb{
                     report("", 1, true, ch);
                     report("XMLString", 10, true, ch);
                     report(wA(obj.toXMLString()), 1, true, ch);
-                };
-            };
+                }
+            }
             if (menuStr)
             {
                 report("", 1, true, ch);
                 report(menuStr, -1, true, ch);
-            };
+            }
         }
 
         public function getPossibleCalls(_arg1):Array{
@@ -725,19 +725,19 @@ package 1Tb{
                 for each (_local10 in _local9)
                 {
                     _local8.push((((_local10.@optional == "true")) ? (("<i>" + _local10.@type) + "</i>") : _local10.@type));
-                };
+                }
                 _local2.push([(_local5.@name + "("), ((_local8.join(", ") + " ):") + _local5.@returnType)]);
-            };
+            }
             _local4 = _local3.accessor;
             for each (_local6 in _local4)
             {
                 _local2.push([String(_local6.@name), String(_local6.@type)]);
-            };
+            }
             _local4 = _local3.variable;
             for each (_local7 in _local4)
             {
                 _local2.push([String(_local7.@name), String(_local7.@type)]);
-            };
+            }
             return (_local2);
         }
 

@@ -29,7 +29,7 @@ package 0qj{
         public function 13P(){
             var _local1:GeneralProjectileComparison = new GeneralProjectileComparison();
             var _local2:ts = new ts();
-            this.hash = {};
+            this.hash = {}
             this.hash[0J9.0Us] = _local1;
             this.hash[0J9.yn] = _local1;
             this.hash[0J9.1yX] = _local1;
@@ -64,7 +64,7 @@ package 0qj{
                 _local4.0Ys(_arg1, _arg2);
                 _local5.zM = _local4.1Tf;
                 _local5.ZX = _local4.ZX;
-            };
+            }
             return (_local5);
         }
 

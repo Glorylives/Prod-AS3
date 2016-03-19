@@ -49,7 +49,7 @@ package M0{
             } else
             {
                 _local1 = OF;
-            };
+            }
             if ((((this.06g == 0)) || (((this.06g + _local1) < (getTimer() / 1000)))))
             {
                 this.06g = (getTimer() / 1000);
@@ -63,7 +63,7 @@ package M0{
             {
                 1d5(true);
                 reset();
-            };
+            }
         }
 
         public function 1Ot():void{
@@ -79,7 +79,7 @@ package M0{
             {
                 this.u3.0K("GetPackageTask.onComplete: Request failed.");
                 1d5(false);
-            };
+            }
         }
 
         private function 0dg(_arg1):void{
@@ -90,7 +90,7 @@ package M0{
                 if (this.WV.171())
                 {
                     return;
-                };
+                }
                 this.WV.1Mp(false);
             } else
             {
@@ -101,8 +101,8 @@ package M0{
                 if (_local3.length() > 0)
                 {
                     this.1Pl(_local3);
-                };
-            };
+                }
+            }
             1d5(true);
         }
 
@@ -150,7 +150,7 @@ package M0{
                     _local5.rn = _local4.Sale.attribute("price").toString();
                     _local5.4O = _local4.Sale.attribute("currency").toString();
                     _local5.1SO = 1ze.25u(_local4.Sale.End.toString());
-                };
+                }
                 _local5.20l = _local4.Icon.toString();
                 _local5.z- = _local4.Image.toString();
                 _local5.startTime = 1ze.25u(_local4.StartTime.toString());
@@ -158,9 +158,9 @@ package M0{
                 if (((!(_local3)) && (((_local5.isNew()) || (_local5.1p1())))))
                 {
                     _local3 = true;
-                };
+                }
                 _local2.push(_local5);
-            };
+            }
             this.WV.WS(_local2);
             this.WV.isNew = _local3;
         }

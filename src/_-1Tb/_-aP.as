@@ -24,7 +24,7 @@ package 1Tb{
         public function aP(_arg1:Console){
             var m:Console = _arg1;
             this.Kg = [];
-            this.WT = {};
+            this.WT = {}
             super(m);
             remoter.registerCallback("fps", function (_arg1:ByteArray):void{
                 fpsMonitor = _arg1.readBoolean();
@@ -52,13 +52,13 @@ package 1Tb{
             {
                 report((((("ERROR: Graph [" + n) + "] received a null object to graph property [") + prop) + "]."), 10);
                 return;
-            };
+            }
             var group:1oT = this.WT[n];
             if (!group)
             {
                 newGroup = true;
                 group = new 1oT(n);
-            };
+            }
             var interests:Array = group.interests;
             if (((isNaN(col)) || ((col < 0))))
             {
@@ -68,28 +68,28 @@ package 1Tb{
                 } else
                 {
                     col = (Math.random() * 0xFFFFFF);
-                };
-            };
+                }
+            }
             if (key == null)
             {
                 key = prop;
-            };
+            }
             for each (i in interests)
             {
                 if (i.key == key)
                 {
                     report((((("Graph _with key [" + key) + "] already exists in [") + n) + "]"), 10);
                     return;
-                };
-            };
+                }
+            }
             if (rect)
             {
                 group.rect = rect;
-            };
+            }
             if (inverse)
             {
                 group.1JS = inverse;
-            };
+            }
             var interest:0Nm = new 0Nm(key, col);
             var v:Number = NaN;
             try
@@ -99,7 +99,7 @@ package 1Tb{
             {
                 report(((((("Error _with graph value for [" + key) + "] in [") + n) + "]. ") + e), 10);
                 return;
-            };
+            }
             if (isNaN(v))
             {
                 report((((("Graph value for key [" + key) + "] in [") + n) + "] is not a number (NaN)."), 10);
@@ -110,8 +110,8 @@ package 1Tb{
                 {
                     this.WT[n] = group;
                     this.Kg.push(group);
-                };
-            };
+                }
+            }
         }
 
         public function 1Jz(_arg1:String, _arg2:Number=NaN, _arg3:Number=NaN):void{
@@ -119,7 +119,7 @@ package 1Tb{
             if (!_local4)
             {
                 return;
-            };
+            }
             _local4.low = _arg2;
             _local4.7p = _arg3;
             _local4.fixed = !(((isNaN(_arg2)) || (isNaN(_arg3))));
@@ -144,15 +144,15 @@ package 1Tb{
                         if ((((((_arg2 == null)) || ((_local6.obj == _arg2)))) && ((((_arg3 == null)) || ((_local6.prop == _arg3))))))
                         {
                             _local4.splice(_local5, 1);
-                        };
+                        }
                         _local5--;
-                    };
+                    }
                     if (_local4.length == 0)
                     {
                         this.removeGroup(_arg1);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function removeGroup(_arg1:String):void{
@@ -171,16 +171,16 @@ package 1Tb{
                 if (_local4 >= 0)
                 {
                     this.Kg.splice(_local4, 1);
-                };
+                }
                 delete this.WT[_arg1];
-            };
+            }
         }
 
         public function get fpsMonitor():Boolean{
             if (remoter.remoting == xi.1pv)
             {
                 return (console.panels.fpsMonitor);
-            };
+            }
             return (!((this.0Z3 == null)));
         }
 
@@ -209,19 +209,19 @@ package 1Tb{
                         if (_local3 >= 0)
                         {
                             this.Kg.splice(_local3, 1);
-                        };
+                        }
                         this.0Z3 = null;
-                    };
+                    }
                     console.panels.mainPanel.updateMenu();
-                };
-            };
+                }
+            }
         }
 
         public function get memoryMonitor():Boolean{
             if (remoter.remoting == xi.1pv)
             {
                 return (console.panels.memoryMonitor);
-            };
+            }
             return (!((this.E5 == null)));
         }
 
@@ -247,12 +247,12 @@ package 1Tb{
                         if (_local3 >= 0)
                         {
                             this.Kg.splice(_local3, 1);
-                        };
+                        }
                         this.E5 = null;
-                    };
+                    }
                     console.panels.mainPanel.updateMenu();
-                };
-            };
+                }
+            }
         }
 
         private function 0c3(_arg1:int):1oT{
@@ -266,7 +266,7 @@ package 1Tb{
             } else
             {
                 _local3.col = 5267711;
-            };
+            }
             _local2.interests.push(_local3);
             return (_local2);
         }
@@ -296,8 +296,8 @@ package 1Tb{
                     } else
                     {
                         _local4.1VY = 0;
-                    };
-                };
+                    }
+                }
                 if (_local5)
                 {
                     _local6 = _local4.type;
@@ -313,7 +313,7 @@ package 1Tb{
                             _local10 = (_local9 - this.1z);
                             _local3 = (1000 / _local10);
                             _local2.setValue(_local3, _local7);
-                        };
+                        }
                         this.1z = _local9;
                     } else
                     {
@@ -326,10 +326,10 @@ package 1Tb{
                         } else
                         {
                             this.1zc(_local4);
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             if (((remoter.canSend) && (((this.0TW) || (this.Kg.length)))))
             {
                 _local11 = this.Kg.length;
@@ -339,10 +339,10 @@ package 1Tb{
                 {
                     1oT(this.Kg[_local13]).0ZY(_local12);
                     _local13++;
-                };
+                }
                 remoter.send("graph", _local12);
                 this.0TW = (this.Kg.length > 0);
-            };
+            }
             return (this.Kg);
         }
 
@@ -360,9 +360,9 @@ package 1Tb{
                 {
                     report(((((("Error _with graph value for key [" + i.key) + "] in [") + group.name) + "]. ") + e), 10);
                     remove(group.name, i.obj, i.prop);
-                };
+                }
                 group.0BX(v);
-            };
+            }
         }
 
         private function 25G(_arg1:ByteArray=null):void{
@@ -374,12 +374,12 @@ package 1Tb{
                 while (_arg1.bytesAvailable)
                 {
                     _local2.push(1oT.jk(_arg1));
-                };
+                }
                 console.panels.updateGraphs(_local2);
             } else
             {
                 console.panels.updateGraphs(new Array());
-            };
+            }
         }
 
 

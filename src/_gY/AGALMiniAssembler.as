@@ -116,7 +116,7 @@ package _gY{
             if (!initialized)
             {
                 init();
-            };
+            }
         }
 
         private static function init():void{
@@ -253,8 +253,8 @@ package _gY{
                 if (_arg1 != VERTEX)
                 {
                     this._0fE = (((((('ERROR: mode needs to be "' + FRAGMENT) + '" or "') + VERTEX) + '" but is "') + _arg1) + '".');
-                };
-            };
+                }
+            }
             this.kr.endian = Endian.LITTLE_ENDIAN;
             this.kr.writeByte(160);
             this.kr.writeUnsignedInt(1);
@@ -272,25 +272,25 @@ package _gY{
                 if (_local12 != -1)
                 {
                     _local11 = _local11.slice(0, _local12);
-                };
+                }
                 _local13 = _local11.search(/<.*>/g);
                 if (_local13 != -1)
                 {
                     _local14 = _local11.slice(_local13).match(/([\w\.\-\+]+)/gi);
                     _local11 = _local11.slice(0, _local13);
-                };
+                }
                 _local15 = _local11.match(/^\w{3}/ig);
                 _local16 = _17o[_local15[0]];
                 if (this._0Op)
                 {
                     trace(_local16);
-                };
+                }
                 if (_local16 == null)
                 {
                     if (_local11.length >= 3)
                     {
                         trace(((("warning: bad line " + _local9) + ": ") + _local6[_local9]));
-                    };
+                    }
                 } else
                 {
                     _local11 = _local11.slice((_local11.search(_local16.name) + _local16.name.length));
@@ -301,8 +301,8 @@ package _gY{
                         {
                             this._0fE = "error: conditional closes without open.";
                             break;
-                        };
-                    };
+                        }
+                    }
                     if ((_local16.flags & _1YM))
                     {
                         _local7++;
@@ -310,30 +310,30 @@ package _gY{
                         {
                             this._0fE = (("error: nesting to deep, maximum allowed is " + _1n0) + ".");
                             break;
-                        };
-                    };
+                        }
+                    }
                     if ((((_local16.flags & _1sC)) && (!(_local5))))
                     {
                         this._0fE = "error: opcode is only allowed in fragment programs.";
                         break;
-                    };
+                    }
                     if (_arg3)
                     {
                         trace(("emit opcode=" + _local16));
-                    };
+                    }
                     this.kr.writeUnsignedInt(_local16.emitCode);
                     _local8++;
                     if (_local8 > Ce)
                     {
                         this._0fE = (("error: too many opcodes. maximum is " + Ce) + ".");
                         break;
-                    };
+                    }
                     _local17 = _local11.match(/vc\[([vof][actps]?)(\d*)?(\.[xyzw](\+\d{1,3})?)?\](\.[xyzw]{1,4})?|([vof][actps]?)(\d*)?(\.[xyzw]{1,4})?/gi);
                     if (_local17.length != _local16.numRegister)
                     {
                         this._0fE = (((("error: wrong number _of operands. found " + _local17.length) + " but expected ") + _local16.numRegister) + ".");
                         break;
-                    };
+                    }
                     _local18 = false;
                     _local19 = ((64 + 64) + 32);
                     _local20 = _local17.length;
@@ -348,21 +348,21 @@ package _gY{
                             if (_arg3)
                             {
                                 trace("IS REL");
-                            };
+                            }
                             _local22 = true;
-                        };
+                        }
                         _local24 = _local17[_local21].match(/^\b[A-Za-z]{1,2}/ig);
                         _local25 = h5[_local24[0]];
                         if (this._0Op)
                         {
                             trace(_local25);
-                        };
+                        }
                         if (_local25 == null)
                         {
                             this._0fE = (((("error: could not parse operand " + _local21) + " (") + _local17[_local21]) + ").");
                             _local18 = true;
                             break;
-                        };
+                        }
                         if (_local5)
                         {
                             if (!(_local25.flags & Ri))
@@ -370,13 +370,13 @@ package _gY{
                                 this._0fE = (((("error: register operand " + _local21) + " (") + _local17[_local21]) + ") only allowed in vertex programs.");
                                 _local18 = true;
                                 break;
-                            };
+                            }
                             if (_local22)
                             {
                                 this._0fE = (((("error: register operand " + _local21) + " (") + _local17[_local21]) + ") relative adressing not allowed in fragment programs.");
                                 _local18 = true;
                                 break;
-                            };
+                            }
                         } else
                         {
                             if (!(_local25.flags & _0oG))
@@ -384,21 +384,21 @@ package _gY{
                                 this._0fE = (((("error: register operand " + _local21) + " (") + _local17[_local21]) + ") only allowed in fragment programs.");
                                 _local18 = true;
                                 break;
-                            };
-                        };
+                            }
+                        }
                         _local17[_local21] = _local17[_local21].slice((_local17[_local21].search(_local25.name) + _local25.name.length));
                         _local26 = ((_local22) ? _local23[0].match(/\d+/) : _local17[_local21].match(/\d+/));
                         _local27 = 0;
                         if (_local26)
                         {
                             _local27 = uint(_local26[0]);
-                        };
+                        }
                         if (_local25.range < _local27)
                         {
                             this._0fE = (((((("error: register operand " + _local21) + " (") + _local17[_local21]) + ") index exceeds limit _of ") + (_local25.range + 1)) + ".");
                             _local18 = true;
                             break;
-                        };
+                        }
                         _local28 = 0;
                         _local29 = _local17[_local21].match(/(\.[xyzw]{1,4})/);
                         _local30 = (((_local21 == 0)) && (!((_local16.flags & _U))));
@@ -411,7 +411,7 @@ package _gY{
                             this._0fE = "error: relative can not be destination";
                             _local18 = true;
                             break;
-                        };
+                        }
                         if (_local29)
                         {
                             _local28 = 0;
@@ -423,28 +423,28 @@ package _gY{
                                 if (_local35 > 2)
                                 {
                                     _local35 = 3;
-                                };
+                                }
                                 if (_local30)
                                 {
                                     _local28 = (_local28 | (1 << _local35));
                                 } else
                                 {
                                     _local28 = (_local28 | (_local35 << ((_local37 - 1) << 1)));
-                                };
+                                }
                                 _local37++;
-                            };
+                            }
                             if (!_local30)
                             {
                                 while (_local37 <= 4)
                                 {
                                     _local28 = (_local28 | (_local35 << ((_local37 - 1) << 1)));
                                     _local37++;
-                                };
-                            };
+                                }
+                            }
                         } else
                         {
                             _local28 = ((_local30) ? 15 : 228);
-                        };
+                        }
                         if (_local22)
                         {
                             _local38 = _local23[0].match(/[A-Za-z]{1,2}/ig);
@@ -454,7 +454,7 @@ package _gY{
                                 this._0fE = "error: bad index register";
                                 _local18 = true;
                                 break;
-                            };
+                            }
                             _local32 = _local39.emitCode;
                             _local40 = _local23[0].match(/(\.[xyzw]{1,1})/);
                             if (_local40.length == 0)
@@ -462,32 +462,32 @@ package _gY{
                                 this._0fE = "error: bad index register select";
                                 _local18 = true;
                                 break;
-                            };
+                            }
                             _local33 = (_local40[0].charCodeAt(1) - "x".charCodeAt(0));
                             if (_local33 > 2)
                             {
                                 _local33 = 3;
-                            };
+                            }
                             _local41 = _local23[0].match(/\+\d{1,3}/ig);
                             if (_local41.length > 0)
                             {
                                 _local34 = _local41[0];
-                            };
+                            }
                             if ((((_local34 < 0)) || ((_local34 > 0xFF))))
                             {
                                 this._0fE = (("error: index offset " + _local34) + " out _of bounds. [_0..255]");
                                 _local18 = true;
                                 break;
-                            };
+                            }
                             if (_arg3)
                             {
                                 trace(((((((((((("RELATIVE: type=" + _local32) + "==") + _local38[0]) + " sel=") + _local33) + "==") + _local40[0]) + " idx=") + _local27) + " offset=") + _local34));
-                            };
-                        };
+                            }
+                        }
                         if (_arg3)
                         {
                             trace((((((("  emit argcode=" + _local25) + "[") + _local27) + "][") + _local28) + "]"));
-                        };
+                        }
                         if (_local30)
                         {
                             this.kr.writeShort(_local27);
@@ -501,7 +501,7 @@ package _gY{
                                 if (_arg3)
                                 {
                                     trace("  emit sampler");
-                                };
+                                }
                                 _local42 = 5;
                                 _local43 = _local14.length;
                                 _local44 = 0;
@@ -511,7 +511,7 @@ package _gY{
                                     if (_arg3)
                                     {
                                         trace(("    opt: " + _local14[_local37]));
-                                    };
+                                    }
                                     _local45 = _22r[_local14[_local37]];
                                     if (_local45 == null)
                                     {
@@ -519,17 +519,17 @@ package _gY{
                                         if (_arg3)
                                         {
                                             trace(("    bias: " + _local44));
-                                        };
+                                        }
                                     } else
                                     {
                                         if (_local45.flag != 079)
                                         {
                                             _local42 = (_local42 & ~((15 << _local45.flag)));
-                                        };
+                                        }
                                         _local42 = (_local42 | (uint(_local45.mask) << uint(_local45.flag)));
-                                    };
+                                    }
                                     _local37++;
-                                };
+                                }
                                 this.kr.writeShort(_local27);
                                 this.kr.writeByte(int((_local44 * 8)));
                                 this.kr.writeByte(0);
@@ -537,7 +537,7 @@ package _gY{
                                 if (_arg3)
                                 {
                                     trace(("    bits: " + (_local42 - 5)));
-                                };
+                                }
                                 _local19 = (_local19 - 64);
                             } else
                             {
@@ -545,7 +545,7 @@ package _gY{
                                 {
                                     this.kr.writeUnsignedInt(0);
                                     _local19 = (_local19 - 32);
-                                };
+                                }
                                 this.kr.writeShort(_local27);
                                 this.kr.writeByte(_local34);
                                 this.kr.writeByte(_local28);
@@ -553,26 +553,26 @@ package _gY{
                                 this.kr.writeByte(_local32);
                                 this.kr.writeShort(((_local22) ? (_local33 | (1 << 15)) : 0));
                                 _local19 = (_local19 - 64);
-                            };
-                        };
+                            }
+                        }
                         _local21++;
-                    };
+                    }
                     _local21 = 0;
                     while (_local21 < _local19)
                     {
                         this.kr.writeByte(0);
                         _local21 = (_local21 + 8);
-                    };
+                    }
                     if (_local18) break;
-                };
+                }
                 _local9++;
-            };
+            }
             if (this._0fE != "")
             {
                 this._0fE = (this._0fE + ((("\n  at line " + _local9) + " ") + _local6[_local9]));
                 this.kr.length = 0;
                 trace(this._0fE);
-            };
+            }
             if (this._0Op)
             {
                 _local46 = "generated bytecode:";
@@ -583,25 +583,25 @@ package _gY{
                     if (!(_local48 % 16))
                     {
                         _local46 = (_local46 + "\n");
-                    };
+                    }
                     if (!(_local48 % 4))
                     {
                         _local46 = (_local46 + " ");
-                    };
+                    }
                     _local49 = this.kr[_local48].toString(16);
                     if (_local49.length < 2)
                     {
                         _local49 = ("0" + _local49);
-                    };
+                    }
                     _local46 = (_local46 + _local49);
                     _local48++;
-                };
+                }
                 trace(_local46);
-            };
+            }
             if (_arg3)
             {
                 trace((("AGALMiniAssembler.assemble time: " + ((getTimer() - _local4) / 1000)) + "s"));
-            };
+            }
             return (this.kr);
         }
 

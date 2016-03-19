@@ -16,7 +16,7 @@ package OZ{
             if (_arg1 == null)
             {
                 return (null);
-            };
+            }
             var _local2:Sprite = new Sprite();
             var _local3:int = 8;
             _arg1.width = (291 - _local3);

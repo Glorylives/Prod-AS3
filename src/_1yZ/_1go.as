@@ -33,7 +33,7 @@ package _1yZ{
             if (((_arg4) && (_0bK(_arg1, _local5))))
             {
                 return (_0l2[_arg1][_local5]);
-            };
+            }
             var _local6:BitmapData = _arg1.clone();
             tempMatrix_.identity();
             tempMatrix_.scale((_arg1.width / 0x0100), (_arg1.height / 0x0100));
@@ -55,12 +55,12 @@ package _1yZ{
                 {
                     GLOW_FILTER.color = _arg2;
                     _local6.applyFilter(_local6, _local6.rect, PointUtil._1EH, GLOW_FILTER);
-                };
-            };
+                }
+            }
             if (_arg4)
             {
                 _0Yu(_arg1, _arg2, _arg3, _local6);
-            };
+            }
             return (_local6);
         }
 
@@ -72,10 +72,10 @@ package _1yZ{
                 _0l2[_arg1][_local5] = _arg4;
             } else
             {
-                _local6 = {};
+                _local6 = {}
                 _local6[_local5] = _arg4;
                 _0l2[_arg1] = _local6;
-            };
+            }
         }
 
         private static function _0bK(_arg1:BitmapData, _arg2:String):Boolean{
@@ -86,8 +86,8 @@ package _1yZ{
                 if ((_arg2 in _local3))
                 {
                     return (true);
-                };
-            };
+                }
+            }
             return (false);
         }
 

@@ -16,11 +16,11 @@ package com.google.analytics.debug{
             if (_arg4 == 0)
             {
                 _arg4 = Style.alertColor;
-            };
+            }
             if (_arg5 == null)
             {
                 _arg5 = Align.center;
-            };
+            }
             super(_arg1, _arg3, _arg4, _arg5, _arg6);
             this.selectable = true;
             super.mouseChildren = true;
@@ -35,7 +35,7 @@ package com.google.analytics.debug{
                 _arg2[_local8].container = this;
                 _actions.push(_arg2[_local8]);
                 _local8++;
-            };
+            }
         }
 
         private function _defineActions():void{
@@ -47,7 +47,7 @@ package com.google.analytics.debug{
             } else
             {
                 _local1 = (_local1 + " |");
-            };
+            }
             _local1 = (_local1 + " ");
             var _local2:Array = [];
             var _local4:int;
@@ -56,7 +56,7 @@ package com.google.analytics.debug{
                 _local3 = _actions[_local4];
                 _local2.push((((('<a href="event:' + _local3.activator) + '">') + _local3.name) + "</a>"));
                 _local4++;
-            };
+            }
             _local1 = (_local1 + _local2.join(" | "));
             appendText(_local1, "uiAlertAction");
         }
@@ -68,9 +68,9 @@ package com.google.analytics.debug{
                 if (_arg1 == _actions[_local2].activator)
                 {
                     return (true);
-                };
+                }
                 _local2++;
-            };
+            }
             return (false);
         }
 
@@ -86,9 +86,9 @@ package com.google.analytics.debug{
                 if (_arg1 == _actions[_local2].activator)
                 {
                     return (_actions[_local2]);
-                };
+                }
                 _local2++;
-            };
+            }
             return (null);
         }
 
@@ -100,7 +100,7 @@ package com.google.analytics.debug{
             {
                 _local2 = (_local2 + _local3);
                 _local4++;
-            };
+            }
             return (_local2);
         }
 
@@ -112,19 +112,19 @@ package com.google.analytics.debug{
                 if (_local2)
                 {
                     _local2.execute();
-                };
-            };
+                }
+            }
             if (autoClose)
             {
                 close();
-            };
+            }
         }
 
         public function close():void{
             if (parent != null)
             {
                 parent.removeChild(this);
-            };
+            }
         }
 
 

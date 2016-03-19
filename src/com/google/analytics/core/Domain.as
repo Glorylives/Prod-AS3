@@ -18,7 +18,7 @@ package com.google.analytics.core{
             if (_arg1 == null)
             {
                 _arg1 = DomainNameMode.auto;
-            };
+            }
             _mode = _arg1;
             if (_arg1 == DomainNameMode.custom)
             {
@@ -26,7 +26,7 @@ package com.google.analytics.core{
             } else
             {
                 _name = _arg2;
-            };
+            }
         }
 
         public function get mode():DomainNameMode{
@@ -38,7 +38,7 @@ package com.google.analytics.core{
             if (_mode == DomainNameMode.none)
             {
                 _name = "";
-            };
+            }
         }
 
         public function get name():String{
@@ -49,7 +49,7 @@ package com.google.analytics.core{
             if (((!((_arg1.charAt(0) == "."))) && (_debug)))
             {
                 _debug.warning(('missing leading period ".", cookie will only be accessible on ' + _arg1), VisualDebugMode.geek);
-            };
+            }
             _name = _arg1;
         }
 

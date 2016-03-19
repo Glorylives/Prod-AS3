@@ -29,7 +29,7 @@ package _1Np{
                 _local4 = new LevelUpParticle(_arg2, 100);
                 this.parts2_.push(_local4);
                 _local5++;
-            };
+            }
         }
 
         override public function update(_arg1:int, _arg2:int):Boolean{
@@ -37,19 +37,19 @@ package _1Np{
             {
                 this._1Jv();
                 return (false);
-            };
+            }
             x_ = this.go_.x_;
             y_ = this.go_.y_;
             if (this.startTime_ < 0)
             {
                 this.startTime_ = _arg1;
-            };
+            }
             var _local3:Number = ((_arg1 - this.startTime_) / _0p8);
             if (_local3 >= 1)
             {
                 this._1Jv();
                 return (false);
-            };
+            }
             this.cG(this.parts1_, 1, 0, _local3);
             this.cG(this.parts2_, 1, Math.PI, _local3);
             return (true);
@@ -60,11 +60,11 @@ package _1Np{
             for each (_local1 in this.parts1_)
             {
                 _local1.alive_ = false;
-            };
+            }
             for each (_local1 in this.parts2_)
             {
                 _local1.alive_ = false;
-            };
+            }
         }
 
         public function cG(_arg1:Vector.<LevelUpParticle>, _arg2:Number, _arg3:Number, _arg4:Number):void{
@@ -96,11 +96,11 @@ package _1Np{
                         } else
                         {
                             _local6.moveTo(_local8, _local9);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 _local5++;
-            };
+            }
         }
 
 

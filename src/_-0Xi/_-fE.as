@@ -19,19 +19,19 @@ package 0Xi{
             if (_arg1 !== this.17a)
             {
                 this.17a = _arg1;
-            };
+            }
         }
 
         public function get 0wv():1Mq{
             if (!this.17a)
             {
                 return (null);
-            };
+            }
             var _local1:1Mq = this.17a;
             while (_local1.next)
             {
                 _local1 = _local1.next;
-            };
+            }
             return (_local1);
         }
 
@@ -40,15 +40,15 @@ package 0Xi{
             if (_local2 == _arg1)
             {
                 this.17a = _arg1.next;
-            };
+            }
             while (_local2)
             {
                 if (_local2.next == _arg1)
                 {
                     _local2.next = _arg1.next;
-                };
+                }
                 _local2 = _local2.next;
-            };
+            }
         }
 
 

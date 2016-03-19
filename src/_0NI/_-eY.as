@@ -35,11 +35,11 @@ package 0NI{
                 if (this.pe[_local2])
                 {
                     return;
-                };
+                }
                 this.1Za.debug("Installing extension {0}", [_arg1]);
                 this.pe[_local2] = true;
                 _arg1.extend(this.1Hl);
-            };
+            }
         }
 
         public function toString():String{

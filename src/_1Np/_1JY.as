@@ -48,12 +48,12 @@ import com.company.assembleegameclient.objects.GameObject;
             if (this._0gJ <= 0)
             {
                 return (false);
-            };
+            }
             this._0l0++;
             if ((this._0l0 % 2))
             {
                 this._1SP++;
-            };
+            }
             _0Pk = this._8y[(this._1SP % this._24)];
             this._0jN = (this._0jN + this.dx_);
             this.Sa = (this.Sa + this.dy_);
@@ -61,7 +61,7 @@ import com.company.assembleegameclient.objects.GameObject;
             {
                 this.cameraAngle = Parameters.data_.cameraAngle;
                 _0r = (-(this._04s) - this.cameraAngle);
-            };
+            }
             moveTo(((this.go.x_ + this._1Cz) + this._0jN), ((this.go.y_ + this._16K) + this.Sa));
             return (true);
         }

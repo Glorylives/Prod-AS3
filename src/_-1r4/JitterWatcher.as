@@ -42,7 +42,7 @@ package 1r4{
             {
                 this.4c = _local1;
                 return;
-            };
+            }
             var _local2:int = (_local1 - this.4c);
             this.5e.push(_local2);
             this.15U = (this.15U + _local2);
@@ -50,7 +50,7 @@ package 1r4{
             {
                 _local3 = this.5e.shift();
                 this.15U = (this.15U - _local3);
-            };
+            }
             this.4c = _local1;
         }
 
@@ -72,13 +72,13 @@ package 1r4{
             if (_local1 == 0)
             {
                 return (0);
-            };
+            }
             var _local2:Number = (this.15U / _local1);
             var _local3:Number = 0;
             for each (_local4 in this.5e)
             {
                 _local3 = (_local3 + ((_local4 - _local2) * (_local4 - _local2)));
-            };
+            }
             return (Math.sqrt((_local3 / _local1)));
         }
 

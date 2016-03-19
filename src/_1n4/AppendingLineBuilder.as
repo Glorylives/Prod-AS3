@@ -37,7 +37,7 @@ public class AppendingLineBuilder implements _1Jo {
             for each (_local2 in this.data)
             {
                 _local1.push(_local2.getString(this.provider));
-            };
+            }
             return (_local1.join(this._3G));
         }
 
@@ -95,7 +95,7 @@ class LineData {
         if (_local3 == null)
         {
             _local3 = this.key;
-        };
+        }
         _local2 = _local2.concat(_local3);
         for (_local4 in this.tokens)
         {
@@ -110,10 +110,10 @@ class LineData {
                 if ((((((_local6.length > 0)) && ((_local6.charAt(0) == "{")))) && ((_local6.charAt((_local6.length - 1)) == "}"))))
                 {
                     _local6 = _arg1.getValue(_local6.substr(1, (_local6.length - 2)));
-                };
+                }
                 _local2 = _local2.replace((("{" + _local4) + "}"), _local6);
-            };
-        };
+            }
+        }
         _local2 = _local2.replace(/\\n/g, "\n");
         _local2 = _local2.concat(this.closingHTMLTags);
         return (_local2);

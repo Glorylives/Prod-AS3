@@ -32,7 +32,7 @@ package 1E8{
             if (!this.c7)
             {
                 return (null);
-            };
+            }
             this.handler = this.kf.getInstance(this.c7);
             return (this.handler.execute);
         }

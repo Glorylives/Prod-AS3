@@ -35,7 +35,7 @@ package 1xS{
                 this.labelText_.re();
                 addChild(this.labelText_);
                 this.1mN = (this.labelText_.width + 5);
-            };
+            }
             this.1sE(0);
         }
 
@@ -51,9 +51,9 @@ package 1xS{
                 {
                     this.1sE(_local2);
                     return;
-                };
+                }
                 _local2++;
-            };
+            }
         }
 
         public function 1sE(_arg1:int):void{
@@ -67,9 +67,9 @@ package 1xS{
                 if (this.selected_.getValue() == this.uz[_local1])
                 {
                     return (_local1);
-                };
+                }
                 _local1++;
-            };
+            }
             return (-1);
         }
 
@@ -84,7 +84,7 @@ package 1xS{
             if (_arg1 != _local2)
             {
                 dispatchEvent(new Event(Event.CHANGE));
-            };
+            }
         }
 
         private function 0eJ(_arg1:MouseEvent):void{
@@ -93,7 +93,7 @@ package 1xS{
             if (contains(this.selected_))
             {
                 removeChild(this.selected_);
-            };
+            }
             this.19N();
         }
 
@@ -115,7 +115,7 @@ package 1xS{
                 this.1IE.addChild(_local4);
                 _local1 = (_local1 + _local4.h_);
                 _local3++;
-            };
+            }
             this.1IE.addEventListener(MouseEvent.ROLL_OUT, this.mf);
             stage.addChild(this.1IE);
         }

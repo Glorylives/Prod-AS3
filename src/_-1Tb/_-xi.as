@@ -77,19 +77,19 @@ package 1Tb{
                             _local4 = new ByteArray();
                             this.0Z6.readBytes(_local4);
                             this.0Z6 = _local4;
-                        };
+                        }
                         _local3 = (config.remotingConnectionName + (((this.remoting == xi.1pv)) ? 2-q : 1pv));
                         this.0m8.send(_local3, "synchronize", this.PQ, _local2);
                     } else
                     {
                         this.0Z6 = new ByteArray();
-                    };
-                };
-            };
+                    }
+                }
+            }
             for (_local1 in this.1oX)
             {
                 this.6S(_local1);
-            };
+            }
         }
 
         private function 6S(_arg1:String):void{
@@ -106,9 +106,9 @@ package 1Tb{
                 if (this.Ny)
                 {
                     report((("Remote switched to new sender [" + id) + "] as primary."), -2);
-                };
+                }
                 this.Ny = id;
-            };
+            }
             var buffer:ByteArray = this.1oX[id];
             try
             {
@@ -120,7 +120,7 @@ package 1Tb{
                     if (buffer.bytesAvailable == 0)
                     {
                         break;
-                    };
+                    }
                     if (buffer.readBoolean())
                     {
                         if (buffer.bytesAvailable == 0) break;
@@ -128,7 +128,7 @@ package 1Tb{
                         if (buffer.bytesAvailable < blen) break;
                         arg = new ByteArray();
                         buffer.readBytes(arg, 0, blen);
-                    };
+                    }
                     callbackData = this._callbacks[cmd];
                     if (((!(callbackData.latest)) || ((id == this.Ny))))
                     {
@@ -138,10 +138,10 @@ package 1Tb{
                         } else
                         {
                             callbackData.fun();
-                        };
-                    };
+                        }
+                    }
                     pointer = buffer.position;
-                };
+                }
                 if (pointer < buffer.length)
                 {
                     recbuffer = new ByteArray();
@@ -152,11 +152,11 @@ package 1Tb{
                 } else
                 {
                     delete this.1oX[id];
-                };
+                }
             } catch(err:Error)
             {
                 report(("Remoting sync error: " + err), 9);
-            };
+            }
         }
 
         private function synchronize(_arg1:String, _arg2:Object):void{
@@ -164,7 +164,7 @@ package 1Tb{
             {
                 report(("Remoting sync error. Recieved non-ByteArray:" + _arg2), 9);
                 return;
-            };
+            }
             var _local3:ByteArray = (_arg2 as ByteArray);
             var _local4:ByteArray = this.1oX[_arg1];
             if (_local4)
@@ -174,14 +174,14 @@ package 1Tb{
             } else
             {
                 this.1oX[_arg1] = _local3;
-            };
+            }
         }
 
         public function send(_arg1:String, _arg2:ByteArray=null):Boolean{
             if (this._mode == NONE)
             {
                 return (false);
-            };
+            }
             this.0Z6.position = this.0Z6.length;
             this.0Z6.writeUTF(_arg1);
             if (_arg2)
@@ -192,7 +192,7 @@ package 1Tb{
             } else
             {
                 this.0Z6.writeBoolean(false);
-            };
+            }
             return (true);
         }
 
@@ -209,14 +209,14 @@ package 1Tb{
             if (_arg1 == this._mode)
             {
                 return;
-            };
+            }
             this.PQ = this.1xs();
             if (_arg1 == 2-q)
             {
                 if (!this.1e2(2-q))
                 {
                     report("Could not create remoting client service. You will not be able to control this console _with remote.", 10);
-                };
+                }
                 this.0Z6 = new ByteArray();
                 this.0m8.addEventListener(StatusEvent.STATUS, this.14g, false, 0, true);
                 report(("<b>Remoting started.</b> " + this.1eS()), -1);
@@ -227,7 +227,7 @@ package 1Tb{
                 } else
                 {
                     this.send("requestLogin");
-                };
+                }
             } else
             {
                 if (_arg1 == 1pv)
@@ -243,17 +243,17 @@ package 1Tb{
                         {
                             report("Untrusted local sandbox. You may not be able to listen for logs properly.", 10);
                             this.q-();
-                        };
+                        }
                         this.login(this.24G);
                     } else
                     {
                         report("Could not create remote service. You might have a console remote already running.", 10);
-                    };
+                    }
                 } else
                 {
                     this.close();
-                };
-            };
+                }
+            }
             console.panels.updateMenu();
         }
 
@@ -262,7 +262,7 @@ package 1Tb{
             {
                 this.16M.close();
                 this.16M = null;
-            };
+            }
             if (((_arg1) && (_arg2)))
             {
                 this.remoting = 2-q;
@@ -274,14 +274,14 @@ package 1Tb{
                 this.16M.addEventListener(SecurityErrorEvent.SE_CURITY_ERROR, this.0AR);
                 this.16M.addEventListener(ProgressEvent.SOCKET_DATA, this.03H);
                 this.16M.connect(_arg1, _arg2);
-            };
+            }
         }
 
         private function zt(_arg1:Event):void{
             if (_arg1.currentTarget == this.16M)
             {
                 this.16M = null;
-            };
+            }
         }
 
         private function RZ(_arg1:Event):void{
@@ -293,7 +293,7 @@ package 1Tb{
             } else
             {
                 this.send("requestLogin");
-            };
+            }
         }
 
         private function QW(_arg1:Event):void{
@@ -315,7 +315,7 @@ package 1Tb{
             {
                 this.0xP[_arg1] = this.1xs();
                 this.16M = _arg1;
-            };
+            }
             var _local2:ByteArray = new ByteArray();
             _arg1.readBytes(_local2);
             this.synchronize(this.0xP[_arg1], _local2);
@@ -325,14 +325,14 @@ package 1Tb{
             if ((((_arg1.level == "error")) && (!(((this.16M) && (this.16M.connected))))))
             {
                 this.0cL = false;
-            };
+            }
         }
 
         private function 1e1(_arg1:StatusEvent):void{
             if ((((this.remoting == xi.1pv)) && ((_arg1.level == "error"))))
             {
                 report("Problem communicating to client.", 10);
-            };
+            }
         }
 
         private function 0MG(_arg1:SecurityErrorEvent):void{
@@ -363,12 +363,12 @@ package 1Tb{
             this.close();
             this._mode = targetmode;
             this.0m8 = new LocalConnection();
-            this.0m8.client = {synchronize:this.synchronize};
+            this.0m8.client = {synchronize:this.synchronize}
             if (config.allowedRemoteDomain)
             {
                 this.0m8.allowDomain(config.allowedRemoteDomain);
                 this.0m8.allowInsecureDomain(config.allowedRemoteDomain);
-            };
+            }
             this.0m8.addEventListener(SecurityErrorEvent.SE_CURITY_ERROR, this.0MG, false, 0, true);
             try
             {
@@ -376,7 +376,7 @@ package 1Tb{
             } catch(err:Error)
             {
                 return (false);
-            };
+            }
             return (true);
         }
 
@@ -384,14 +384,14 @@ package 1Tb{
             this._callbacks[_arg1] = {
                 fun:_arg2,
                 latest:_arg3
-            };
+            }
         }
 
         private function loginFail():void{
             if (this.remoting != xi.1pv)
             {
                 return;
-            };
+            }
             report("Login Failed", 10);
             console.panels.mainPanel.requestLogin();
         }
@@ -411,7 +411,7 @@ package 1Tb{
             if (this.remoting != xi.1pv)
             {
                 return;
-            };
+            }
             this.0Z6 = new ByteArray();
             if (this.24G)
             {
@@ -419,7 +419,7 @@ package 1Tb{
             } else
             {
                 console.panels.mainPanel.requestLogin();
-            };
+            }
         }
 
         public function login(_arg1:String=""):void{
@@ -439,8 +439,8 @@ package 1Tb{
                 } else
                 {
                     this.send("loginFail");
-                };
-            };
+                }
+            }
         }
 
         private function 0vn(_arg1:String):Boolean{
@@ -456,8 +456,8 @@ package 1Tb{
                 } catch(error:Error)
                 {
                     report(("Remote.close: " + error), 10);
-                };
-            };
+                }
+            }
             this._mode = NONE;
             this.0Z6 = new ByteArray();
             this.0m8 = null;

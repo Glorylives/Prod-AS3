@@ -19,14 +19,14 @@ import flash.display.IGraphicsData;
             if (_1aM._0ui)
             {
                 super.draw(_arg1, _arg2, _arg3);
-            };
+            }
         }
 
         override public function drawShadow(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             if (_1aM._0ui)
             {
                 super.drawShadow(_arg1, _arg2, _arg3);
-            };
+            }
         }
 
 

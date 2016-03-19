@@ -36,7 +36,7 @@ package 0QW{
             if (this.0PM.s.text() == "")
             {
                 return (null);
-            };
+            }
             return (this.0PM.s.text());
         }
 

@@ -45,12 +45,12 @@ package 2--{
             for each (_local2 in _arg1)
             {
                 this.addItem(_local2);
-            };
+            }
             this.list.setItems(this.0l6);
             if (!_arg1.length)
             {
                 return;
-            };
+            }
             var _local3:DisplayObject = _arg1[0];
             this.1yx = (this.08() / _local3.width);
         }
@@ -90,7 +90,7 @@ package 2--{
             } else
             {
                 this.1mU(_arg1);
-            };
+            }
             this.0TY = (_arg1.x + _arg1.width);
             this.0TY = (this.0TY + this.padding);
         }
@@ -117,7 +117,7 @@ package 2--{
             if (this.1YB.length)
             {
                 return (this.1YB[0]);
-            };
+            }
             return (null);
         }
 
@@ -127,7 +127,7 @@ package 2--{
             {
                 _local1 = this.24d[0];
                 return (_local1[(this.1yx - 1)]);
-            };
+            }
             return (null);
         }
 
@@ -137,7 +137,7 @@ package 2--{
             {
                 _local1 = this.24d[(this.24d.length - 1)];
                 return (_local1[0]);
-            };
+            }
             return (null);
         }
 
@@ -147,7 +147,7 @@ package 2--{
             {
                 _local1 = this.24d[(this.24d.length - 1)];
                 return (_local1[(this.1yx - 1)]);
-            };
+            }
             return (null);
         }
 

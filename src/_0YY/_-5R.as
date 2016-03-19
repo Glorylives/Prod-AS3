@@ -40,12 +40,12 @@ package 0YY{
                 if (!this.account.0D3())
                 {
                     this.S8(0XW);
-                };
+                }
                 _local1 = (this.27M.lh(1T2.sn) as 1kP);
                 _local1.25d = 1;
                 _local1.objectId = 1jA(this.vo).3y;
                 _local1.0m1 = 1jA(this.vo).0m1;
-            };
+            }
             if ((this.vo is 1TV))
             {
                 _local1 = (this.27M.lh(1T2.sn) as 1kP);
@@ -53,7 +53,7 @@ package 0YY{
                 _local1.0Hb = 1TV(this.vo).petInstanceId;
                 _local1.0qR = 1TV(this.vo).0qR;
                 _local1.0m1 = 1TV(this.vo).0m1;
-            };
+            }
             if ((this.vo is 0Lz))
             {
                 _local1 = (this.27M.lh(1T2.sn) as 1kP);
@@ -61,11 +61,11 @@ package 0YY{
                 _local1.0Hb = 0Lz(this.vo).FS;
                 _local1.f = 0Lz(this.vo).0C-;
                 _local1.0m1 = 0Lz(this.vo).0m1;
-            };
+            }
             if (_local1)
             {
                 this.server.sendMessage(_local1);
-            };
+            }
         }
 
         private function S8(_arg1:String):void{

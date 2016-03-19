@@ -65,7 +65,7 @@ use namespace SsInternal;
             } catch(e:Error)
             {
                 _1eF = new SF();
-            };
+            }
             this._1cb = new _dj(this._1eF, Hy);
             this._0zl = ApplicationDomain.currentDomain;
         }
@@ -86,11 +86,11 @@ use namespace SsInternal;
             if (((_local4) && (_local4._1vh)))
             {
                 throw (new _03A("Can't unmap a sealed mapping"));
-            };
+            }
             if (!_local4)
             {
                 throw (new _03A((("Error while removing an injector mapping: " + "No mapping defined for dependency ") + _local3)));
-            };
+            }
             _local4.Mu().destroy();
             delete this.Xn[_local3];
             delete this.EH[_local3];
@@ -111,7 +111,7 @@ use namespace SsInternal;
             if (!_local4)
             {
                 throw (new _d5((("Error while retrieving an injector mapping: " + "No mapping defined for dependency ") + _local3)));
-            };
+            }
             return (_local4);
         }
 
@@ -129,11 +129,11 @@ use namespace SsInternal;
             {
                 _local6 = this._1cb._W(_arg1).ctor;
                 return (_local5.apply(_arg3, this, ((_local6) ? _local6.injectParameters : null)));
-            };
+            }
             if (_arg2)
             {
                 throw (new _d5((("No mapping found for request " + _local4) + ". getInstance only creates an unmapped instance if no name is given.")));
-            };
+            }
             return (this._18Y(_arg1));
         }
 
@@ -142,7 +142,7 @@ use namespace SsInternal;
             if (!_arg1)
             {
                 return;
-            };
+            }
             _local2 = this._1eF._09Y(_arg1);
             var _local3:_3A = this._2I(_local2);
             var _local4:_1W = _local3._1iP;
@@ -150,7 +150,7 @@ use namespace SsInternal;
             {
                 _local4.applyInjection(_arg1, _local2, this);
                 _local4 = _1W(_local4.next);
-            };
+            }
         }
         public function _1Cd():void{
             var _local1:_1s4;
@@ -158,11 +158,11 @@ use namespace SsInternal;
             for each (_local1 in this.Xn)
             {
                 _local1.Mu().destroy();
-            };
+            }
             for each (_local2 in this._116)
             {
                 this.Na(_local2);
-            };
+            }
             this.Xn = new Dictionary();
             this._F = new Dictionary();
             this._xC = new Dictionary();
@@ -205,7 +205,7 @@ use namespace SsInternal;
             if (!_local2.ctor)
             {
                 throw (new _18J(("Can't instantiate interface " + getQualifiedClassName(_arg1))));
-            };
+            }
             var _local3:* = _local2.ctor.createInstance(_arg1, this);
             ((hasEventListener(_1rr._060)) && (dispatchEvent(new _1rr(_1rr._060, _local3, _arg1))));
             this.C3(_local3, _arg1, _local2);
@@ -226,20 +226,20 @@ use namespace SsInternal;
                         _local3 = _local5;
                         _local4 = _local4._1Li;
                         continue;
-                    };
+                    }
                     if ((((_local5 is _88)) && (!((_local4 === this)))))
                     {
                         _local4 = _local4._1Li;
                         continue;
-                    };
+                    }
                     return (_local5);
-                };
+                }
                 _local4 = _local4._1Li;
-            };
+            }
             if (_local3)
             {
                 return (_local3);
-            };
+            }
             return (((_arg2) ? this._2C(_arg1) : null));
         }
 
@@ -250,13 +250,13 @@ use namespace SsInternal;
             if (mappingId === "String|")
             {
                 return (null);
-            };
+            }
             parts = mappingId.split("|");
             var name:String = parts.pop();
             if (name.length !== 0)
             {
                 return (null);
-            };
+            }
             var typeName:String = parts.pop();
             try
             {
@@ -264,17 +264,17 @@ use namespace SsInternal;
             } catch(e:Error)
             {
                 return (null);
-            };
+            }
             if (((!(definition)) || (!((definition is Class)))))
             {
                 return (null);
-            };
+            }
             var type:Class = Class(definition);
             var description:_3A = this._1cb._W(type);
             if (!description.ctor)
             {
                 return (null);
-            };
+            }
             return ((this._xC[type] = ((this._xC[type]) || (new _0aP(type)))));
         }
 
@@ -283,7 +283,7 @@ use namespace SsInternal;
             if (this._F[_arg3])
             {
                 throw (new _03A("Can't change a mapping from inside a listener to it's creation event"));
-            };
+            }
             this._F[_arg3] = true;
             ((hasEventListener(_1oR.xR)) && (dispatchEvent(new _1oR(_1oR.xR, _arg1, _arg2, null))));
             _local4 = new _1s4(this, _arg1, _arg2, _arg3);
@@ -302,11 +302,11 @@ use namespace SsInternal;
             {
                 _local4.applyInjection(_arg1, _arg2, this);
                 _local4 = _local4.next;
-            };
+            }
             if (_arg3._1iP)
             {
                 this._116[_arg1] = _arg1;
-            };
+            }
             ((hasEventListener(_1rr._0rL)) && (dispatchEvent(new _1rr(_1rr._0rL, _arg1, _arg2))));
         }
 

@@ -20,7 +20,7 @@ package _5z{
             Aquatic:"Pets.aquatic",
             Spooky:"Pets.spooky",
             Automaton:"Pets.automaton"
-        };
+        }
 
 
         public static function _1So(_arg1:String):String{

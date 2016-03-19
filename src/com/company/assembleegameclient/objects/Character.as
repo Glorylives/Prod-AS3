@@ -30,8 +30,8 @@ package com.company.assembleegameclient.objects{
                 if (((_arg5) || ((_arg2 > 0))))
                 {
                     0ZC.play(this.0Sr);
-                };
-            };
+                }
+            }
         }
 
 

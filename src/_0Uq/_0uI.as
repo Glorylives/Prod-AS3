@@ -36,7 +36,7 @@ public class _0uI {
             {
                 _local2.push(this._1FS(_local4, _local3));
                 _local3++;
-            };
+            }
             _local2 = this._1YV(_local2);
             _local2 = this._2O(_local2);
             return (_local2);
@@ -58,23 +58,23 @@ public class _0uI {
                         this._15a._1Ui.rank = _local5.rank;
                         _local2.push(this._15a._1Ui);
                         _local3 = true;
-                    };
+                    }
                     if (_local5._1L3)
                     {
                         _local4 = true;
-                    };
+                    }
                     if (_local3)
                     {
                         _local5.rank++;
-                    };
+                    }
                     _local2.push(_local5);
-                };
+                }
                 if ((((((_local2.length < 20)) && (!(_local3)))) && (!(_local4))))
                 {
                     this._15a._1Ui.rank = (_local2.length + 1);
                     _local2.push(this._15a._1Ui);
-                };
-            };
+                }
+            }
             return ((((_local2.length > 0)) ? _local2 : _arg1));
         }
 
@@ -98,14 +98,14 @@ public class _0uI {
                         if (_local3)
                         {
                             _local5.rank--;
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             if (_local2 != -1)
             {
                 _arg1.splice(_local2, 1);
-            };
+            }
             return (_arg1);
         }
 
@@ -135,7 +135,7 @@ public class _0uI {
                 _local11 = new XML(_arg1.PlayData.Pet);
                 _local10.apply(_local11);
                 _local3.pet = _local10;
-            };
+            }
             return (_local3);
         }
 

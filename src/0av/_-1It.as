@@ -52,7 +52,7 @@ package 0av{
             } else
             {
                 this.extends();
-            };
+            }
         }
 
         private function extends():void{

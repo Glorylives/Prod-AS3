@@ -75,8 +75,8 @@ import flash.geom.Vector3D;
                 } else
                 {
                     _local3 = _1xK;
-                };
-            };
+                }
+            }
             var _local4:Number = Parameters.data_.cameraAngle;
             this.configure(_arg1.x_, _arg1.y_, 12, _local4, _local3);
             this._1kT = _arg2;
@@ -94,8 +94,8 @@ import flash.geom.Vector3D;
                 if (this._0rV > this._3Y)
                 {
                     this._0rV = this._3Y;
-                };
-            };
+                }
+            }
         }
 
         public function configure(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:Rectangle):void{
@@ -103,7 +103,7 @@ import flash.geom.Vector3D;
             {
                 _arg1 = (_arg1 + _0Na._1Me(this._0rV));
                 _arg2 = (_arg2 + _0Na._1Me(this._0rV));
-            };
+            }
             this.x_ = _arg1;
             this.y_ = _arg2;
             this.z_ = _arg3;

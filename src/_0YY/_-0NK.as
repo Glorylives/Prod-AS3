@@ -27,7 +27,7 @@ package 0YY{
             } else
             {
                 this.1G5.0mj(this.1G5.0It(this.08K));
-            };
+            }
             this.1UK.06h = (((this.08K < 0)) ? null : this.1UK.06h = this.1G5.0It(this.08K));
         }
 

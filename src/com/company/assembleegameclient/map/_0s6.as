@@ -30,7 +30,7 @@ package com.company.assembleegameclient.map{
                 GD[_local3] = _local2;
                 hE[_local3] = new _1J1(_local2);
                 get[String(_local2.@id)] = _local3;
-            };
+            }
             _8v = _0Ri[0xFF];
         }
 
@@ -39,7 +39,7 @@ package com.company.assembleegameclient.map{
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             return (_local2.id_);
         }
 
@@ -62,9 +62,9 @@ package com.company.assembleegameclient.map{
                 {
                     _local4 = getBitmapData(_arg1);
                     _local3 = BitmapUtil._1WN(_local4);
-                };
+                }
                 LS[_arg1] = _local3;
-            };
+            }
             return (LS[_arg1]);
         }
 

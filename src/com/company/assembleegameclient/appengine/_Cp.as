@@ -62,7 +62,7 @@ public class _Cp extends Event {
         var _local4:*;
         var _local5:Account;
         this.savedChars_ = new Vector.<SavedCharacter>();
-        this.charStats_ = {};
+        this.charStats_ = {}
         this._1xy = new Vector.<_1AQ>();
         super(SAVED_CHARS_LIST);
         this.td = _arg1;
@@ -86,12 +86,12 @@ public class _Cp extends Event {
             _local5._1oM("BestFame", this.z8());
             _local5._1oM("NumStars", this.numStars_);
             _local5.verify(_local2.hasOwnProperty("VerifiedEmail"));
-        };
+        }
         this._0So = new Object();
         for each (_local4 in this._27A.ClassAvailabilityList.ClassAvailability)
         {
             this._0So[_local4.@id.toString()] = _local4.toString();
-        };
+        }
     }
 
     public function _0mo(_arg1:int):SavedCharacter{
@@ -101,8 +101,8 @@ public class _Cp extends Event {
             if (_local2.charId() == _arg1)
             {
                 return (_local2);
-            };
-        };
+            }
+        }
         return (null);
     }
 
@@ -130,7 +130,7 @@ public class _Cp extends Event {
             _local2 = _arg1.BeginnerPackageTimeLeft;
             _local3 = this.qf();
             _local3._1Xs(_local2);
-        };
+        }
     }
 
     private function qf():_l{
@@ -146,7 +146,7 @@ public class _Cp extends Event {
             _local2 = XML(_arg1.Guild);
             this.guildName_ = _local2.Name;
             this.guildRank_ = int(_local2.Rank);
-        };
+        }
     }
 
     private function _0Jz():void{
@@ -157,7 +157,7 @@ public class _Cp extends Event {
         {
             this.savedChars_.push(new SavedCharacter(_local1, this.name_));
             this.numChars_++;
-        };
+        }
         this.savedChars_.sort(SavedCharacter._0Ys);
     }
 
@@ -172,7 +172,7 @@ public class _Cp extends Event {
             _local4 = new _1WG(_local2);
             this.numStars_ = (this.numStars_ + _local4.numStars());
             this.charStats_[_local3] = _local4;
-        };
+        }
     }
 
     private function qp():void{
@@ -181,7 +181,7 @@ public class _Cp extends Event {
         for each (_local2 in _local1.Item)
         {
             this._1xy.push(new _1AQ(_local2.Icon, _local2.Title, _local2.TagLine, _local2.Link, int(_local2.Date)));
-        };
+        }
     }
 
     private function Z4():void{
@@ -191,21 +191,21 @@ public class _Cp extends Event {
         } else
         {
             this._0C = p5;
-        };
+        }
     }
 
     private function _0ch():void{
         if (((this._27A.hasOwnProperty("SalesForce")) && (this._27A.hasOwnProperty("SalesForce"))))
         {
             this.HU = String(this._27A.SalesForce);
-        };
+        }
     }
 
     private function nP():void{
         if (this._27A.hasOwnProperty("TOSPopup"))
         {
             _1JZ._0JF().getInstance(_0io).dispatch(new TOSPopup());
-        };
+        }
     }
 
     public function bestLevel(_arg1:int):int{
@@ -221,8 +221,8 @@ public class _Cp extends Event {
             if (_local2.bestLevel() > _local1)
             {
                 _local1 = _local2.bestLevel();
-            };
-        };
+            }
+        }
         return (_local1);
     }
 
@@ -239,8 +239,8 @@ public class _Cp extends Event {
             if (_local2.ho() > _local1)
             {
                 _local1 = _local2.ho();
-            };
-        };
+            }
+        }
         return (_local1);
     }
 
@@ -254,8 +254,8 @@ public class _Cp extends Event {
             if (this.bestLevel(_local4) < int(_local3.@level))
             {
                 return (false);
-            };
-        };
+            }
+        }
         return (true);
     }
 
@@ -299,17 +299,17 @@ public class _Cp extends Event {
                         {
                             _local7 = false;
                             break;
-                        };
+                        }
                         _local8 = true;
-                    };
-                };
+                    }
+                }
                 if (((_local7) && (_local8)))
                 {
                     _local3.push(_local6);
-                };
-            };
+                }
+            }
             _local4++;
-        };
+        }
         return (_local3);
     }
 
@@ -327,7 +327,7 @@ public class _Cp extends Event {
         {
             this.account = _local1.getInstance(Account);
             ((this.account) && (this._03l()));
-        };
+        }
     }
 
     private function _03l():void{
@@ -343,9 +343,9 @@ public class _Cp extends Event {
             {
                 this.account._1oM((_local3.@id + "Unlocked"), 1);
                 _local1++;
-            };
+            }
             _local2++;
-        };
+        }
         this.account._1oM("ClassesUnlocked", _local1);
     }
 

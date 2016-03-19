@@ -47,11 +47,11 @@ package com.company.util{
             if ((((((((((((_arg7 > _arg1)) && ((_arg7 > _arg3)))) && ((_arg7 > _arg5)))) || ((((((_arg9 < _arg1)) && ((_arg9 < _arg3)))) && ((_arg9 < _arg5)))))) || ((((((_arg8 > _arg2)) && ((_arg8 > _arg4)))) && ((_arg8 > _arg6)))))) || ((((((_arg10 < _arg2)) && ((_arg10 < _arg4)))) && ((_arg10 < _arg6))))))
             {
                 return (false);
-            };
+            }
             if ((((((((((((_arg7 < _arg1)) && ((_arg1 < _arg9)))) && ((_arg8 < _arg2)))) && ((_arg2 < _arg10)))) || ((((((((_arg7 < _arg3)) && ((_arg3 < _arg9)))) && ((_arg8 < _arg4)))) && ((_arg4 < _arg10)))))) || ((((((((_arg7 < _arg5)) && ((_arg5 < _arg9)))) && ((_arg8 < _arg6)))) && ((_arg6 < _arg10))))))
             {
                 return (true);
-            };
+            }
             return (((((Ol(_arg1, _arg2, _arg3, _arg4, _arg7, _arg8, _arg9, _arg10)) || (Ol(_arg3, _arg4, _arg5, _arg6, _arg7, _arg8, _arg9, _arg10)))) || (Ol(_arg5, _arg6, _arg1, _arg2, _arg7, _arg8, _arg9, _arg10))));
         }
 
@@ -70,7 +70,7 @@ package com.company.util{
             {
                 _local11 = ((_local9 * _arg7) + _local10);
                 _local12 = ((_local9 * _arg5) + _local10);
-            };
+            }
             if (_arg2 < _arg4)
             {
                 _local13 = _arg2;
@@ -79,7 +79,7 @@ package com.company.util{
             {
                 _local13 = _arg4;
                 _local14 = _arg2;
-            };
+            }
             var _local15:Number = (((_local11 > _local13)) ? _local11 : _local13);
             var _local16:Number = (((_local12 < _local14)) ? _local12 : _local14);
             return ((((_local15 < _local16)) && (!((((_local16 < _arg6)) || ((_local15 > _arg8)))))));
@@ -116,7 +116,7 @@ package com.company.util{
             if (this.contains(_arg1, _arg2))
             {
                 return (0);
-            };
+            }
             return (Math.min(_V2._0eG(_arg1, _arg2, this.x0_, this.y0_, this.x1_, this.y1_), _V2._0eG(_arg1, _arg2, this.x1_, this.y1_, this.x2_, this.y2_), _V2._0eG(_arg1, _arg2, this.x0_, this.y0_, this.x2_, this.y2_)));
         }
 

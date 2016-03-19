@@ -25,14 +25,14 @@ package com.google.analytics.utils{
                         if (_local1[1] == "co")
                         {
                             return (hostName);
-                        };
+                        }
                         _local1.shift();
                         return (_local1.join("."));
                     case 4:
                         _local1.shift();
                         return (_local1.join("."));
-                };
-            };
+                }
+            }
             return ("");
         }
 
@@ -41,19 +41,19 @@ package com.google.analytics.utils{
             if (_local1.indexOf("://") > -1)
             {
                 _local1 = _local1.split("://")[1];
-            };
+            }
             if (_local1.indexOf(hostName) == 0)
             {
                 _local1 = _local1.substr(hostName.length);
-            };
+            }
             if (_local1.indexOf("?") > -1)
             {
                 _local1 = _local1.split("?")[0];
-            };
+            }
             if (_local1.charAt(0) != "/")
             {
                 _local1 = ("/" + _local1);
-            };
+            }
             return (_local1);
         }
 
@@ -69,7 +69,7 @@ package com.google.analytics.utils{
                     return (Protocols.HTTPS);
                 default:
                     return (Protocols.none);
-            };
+            }
         }
 
         public function get hostName():String{
@@ -77,19 +77,19 @@ package com.google.analytics.utils{
             if (_local1.indexOf("://") > -1)
             {
                 _local1 = _local1.split("://")[1];
-            };
+            }
             if (_local1.indexOf("/") > -1)
             {
                 _local1 = _local1.split("/")[0];
-            };
+            }
             if (_local1.indexOf("?") > -1)
             {
                 _local1 = _local1.split("?")[0];
-            };
+            }
             if ((((protocol == Protocols.file)) || ((protocol == Protocols.none))))
             {
                 return ("");
-            };
+            }
             return (_local1);
         }
 
@@ -97,7 +97,7 @@ package com.google.analytics.utils{
             if (((!((domain == ""))) && (!((domain == hostName)))))
             {
                 return (hostName.split(("." + domain)).join(""));
-            };
+            }
             return ("");
         }
 
@@ -106,18 +106,18 @@ package com.google.analytics.utils{
             if (_local1.indexOf("://") > -1)
             {
                 _local1 = _local1.split("://")[1];
-            };
+            }
             if (_local1.indexOf(hostName) == 0)
             {
                 _local1 = _local1.substr(hostName.length);
-            };
+            }
             if (_local1.indexOf("?") > -1)
             {
                 _local1 = _local1.split("?")[1];
             } else
             {
                 _local1 = "";
-            };
+            }
             return (_local1);
         }
 

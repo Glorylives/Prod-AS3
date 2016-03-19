@@ -42,7 +42,7 @@ package gh{
             {
                 _local2.interests.push(0Nm.jk(_arg1));
                 _local3--;
-            };
+            }
             return (_local2);
         }
 
@@ -54,16 +54,16 @@ package gh{
                 {
                     this.low = _arg1;
                     this.7p = _arg1;
-                };
+                }
                 if (_arg1 > this.7p)
                 {
                     this.7p = _arg1;
-                };
+                }
                 if (_arg1 < this.low)
                 {
                     this.low = _arg1;
-                };
-            };
+                }
+            }
         }
 
         public function 0ZY(_arg1:ByteArray):void{
@@ -78,7 +78,7 @@ package gh{
             for each (_local2 in this.interests)
             {
                 _local2.0ZY(_arg1);
-            };
+            }
         }
 
 

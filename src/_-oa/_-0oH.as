@@ -38,7 +38,7 @@ package oa{
             if (this.17X == 0)
             {
                 return (this.Cj);
-            };
+            }
             if (_arg1 < 0)
             {
                 _arg1 = 0;
@@ -47,8 +47,8 @@ package oa{
                 if (_arg1 >= (this.17X - 1))
                 {
                     _arg1 = (this.17X - 1);
-                };
-            };
+                }
+            }
             this.Cj = _arg1;
             this.1E9();
             return (this.Cj);
@@ -59,7 +59,7 @@ package oa{
             if (this.Cj >= this.17X)
             {
                 this.Cj = (this.17X - 1);
-            };
+            }
             this.1E9();
             return (this.17X);
         }
@@ -98,7 +98,7 @@ package oa{
             {
                 this.0jT.dispatch(--this.Cj);
                 this.zoomOut.transform.colorTransform = ((this.1Ro()) ? this.143 : this.11h);
-            };
+            }
         }
 
         private function 1Ro():Boolean{
@@ -111,7 +111,7 @@ package oa{
             {
                 this.0jT.dispatch(++this.Cj);
                 this.zoomIn.transform.colorTransform = ((this.XE()) ? this.143 : this.11h);
-            };
+            }
         }
 
         private function XE():Boolean{

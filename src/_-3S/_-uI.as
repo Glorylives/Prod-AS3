@@ -47,7 +47,7 @@ package 3S{
             if (((this.1cF) && (this.1cF.parent)))
             {
                 this.container.removeChild(this.1cF);
-            };
+            }
             var _local1:Player = this.gs_.map.player_;
             this.1cF = new GuildPlayerList(50, 0, (((_local1 == null)) ? "" : _local1.name_), _local1.guildRank_);
             this.1cF.addEventListener(01E.SET_RANK, this.0vc);
@@ -76,7 +76,7 @@ package 3S{
             } else
             {
                 this.1hh();
-            };
+            }
         }
 
         private function Cw(_arg1:01E):void{
@@ -93,7 +93,7 @@ package 3S{
             } else
             {
                 this.1hh();
-            };
+            }
         }
 
         private function 6y(_arg1:String):void{

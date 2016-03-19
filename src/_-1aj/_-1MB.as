@@ -36,20 +36,20 @@ package 1aj{
             if ((((_arg1 == 0)) && (!(this.11U))))
             {
                 return;
-            };
+            }
             this.11U = true;
             var _local4:String = _arg1.toString();
             if (_arg3 == -1)
             {
                 _arg3 = _local4.length;
-            };
+            }
             var _local5 = "";
             var _local6:int = _local4.length;
             while (_local6 < _arg3)
             {
                 _local5 = (_local5 + "0");
                 _local6++;
-            };
+            }
             _local4 = ((_local5 + _local4) + _arg2);
             this.K7.push(_local4);
         }

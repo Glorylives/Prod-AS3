@@ -16,7 +16,7 @@ import _0OG._22M;
             if (!_1JZ.kf)
             {
                 _1JZ.kf = this.kf;
-            };
+            }
         }
 
         public static function _0JF():_22M{

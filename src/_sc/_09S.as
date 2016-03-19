@@ -39,7 +39,7 @@ public class _09S extends _0je {
             if (_local4.length >= this._0BD)
             {
                 (_arg1[this._0EY] as Function).apply(_arg1, _local4);
-            };
+            }
             _local4.length = 0;
         }
 
@@ -59,12 +59,12 @@ public class _09S extends _0je {
                     if ((((_local6 >= this._0BD)) || (this._p)))
                     {
                         break;
-                    };
+                    }
                     throw (new d5(((((((((('Injector is missing a mapping to handle injection into target "' + _arg1) + '" _of type "') + getQualifiedClassName(_arg2)) + '". \t\t\t\t\t\tTarget dependency: ') + _local7) + ", method: ") + this._0EY) + ", parameter: ") + (_local6 + 1))));
-                };
+                }
                 _local5[_local6] = _local8.apply(_arg2, _arg3, injectParameters);
                 _local6++;
-            };
+            }
             return (_local5);
         }
 

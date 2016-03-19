@@ -29,7 +29,7 @@ package AB{
                 1Tf.pushParams(du.1Rm, {stasis:new 1cA().setParams(du.1oV, {duration:_local5}).setPrefix(TR.1pw(_local7)).setPostfix(TR.17H())});
                 ZX[_local3.toXMLString()] = true;
                 this.05j(_arg1);
-            };
+            }
         }
 
         private function v8(_arg1:XML):XML{
@@ -61,7 +61,7 @@ package AB{
                 }, TR.1pw(2-W), TR.17H());
                 ZX[speedy.toXMLString()] = true;
                 ZX[damaging.toXMLString()] = true;
-            };
+            }
         }
 
 

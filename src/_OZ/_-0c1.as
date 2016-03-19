@@ -89,7 +89,7 @@ package OZ{
             {
                 this.text.text = _arg1;
                 this.vi();
-            };
+            }
             this.PT = _arg4;
         }
 
@@ -100,7 +100,7 @@ package OZ{
                 this.currency = _arg2;
                 this.text.text = (this.24n + _arg1.toString());
                 this.vi();
-            };
+            }
         }
 
         public function 1V1():int{
@@ -118,7 +118,7 @@ package OZ{
                 mouseEnabled = _arg1;
                 filters = ((_arg1) ? [] : [1c9]);
                 this.draw();
-            };
+            }
         }
 
         override public function setWidth(_arg1:int):void{
@@ -155,7 +155,7 @@ package OZ{
                     break;
                 default:
                     this.icon.bitmapData = null;
-            };
+            }
             this.24E();
         }
 
@@ -193,7 +193,7 @@ package OZ{
             if (this.PT)
             {
                 this.ih(graphics);
-            };
+            }
         }
 
         private function Pj():int{

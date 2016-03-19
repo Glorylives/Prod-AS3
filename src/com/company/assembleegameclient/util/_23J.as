@@ -27,7 +27,7 @@ package com.company.assembleegameclient.util{
             if (context3D == null)
             {
                 context3D = new _0so(this.stage3D.context3D);
-            };
+            }
             return (context3D);
         }
 

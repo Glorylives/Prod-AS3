@@ -42,7 +42,7 @@ package 0sC{
             } else
             {
                 this.0n2.dispatch(new WebLoginDialog());
-            };
+            }
         }
 
         private function zI():void{

@@ -44,7 +44,7 @@ import flash.display.Sprite;
             for each (_local3 in _local1)
             {
                 _local2.push(_local3.textChanged);
-            };
+            }
             _local2.complete.addOnce(this._2W);
         }
 

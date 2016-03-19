@@ -82,7 +82,7 @@ package Wc{
                 this.VQ.1OQ(400, this.0i7.height);
                 this.VQ.addEventListener(Event.CHANGE, this.ef);
                 addChild(this.VQ);
-            };
+            }
             this.w_ = (r- + ((_local6) ? 26 : 0));
             this.21s = new 1nN(14, du.24J, 120);
             this.21s.x = 4;

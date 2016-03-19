@@ -58,7 +58,7 @@ import flash.display.Sprite;
                 this.Kq.addEventListener(MouseEvent.CLICK, this.yp);
                 this.Kq.x = ((this.rect_.width - this.Kq.width) - 20);
                 this.Kq.y = ((this.rect_.height - this.Kq.height) - 10);
-            };
+            }
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
@@ -71,9 +71,9 @@ import flash.display.Sprite;
                 if (this.Kq != null)
                 {
                     addChild(this.Kq);
-                };
+                }
                 removeEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
             var _local2:Rectangle = this.rect_.clone();
             _local2.inflate(((-((1 - _local1)) * this.rect_.width) / 2), ((-((1 - _local1)) * this.rect_.height) / 2));
             _tu.ln(this.path_);

@@ -56,7 +56,7 @@ package 3S{
             var _local6:Object = {
                 num:_arg1,
                 offset:_arg2
-            };
+            }
             1X3.1J7(_local6, _local5.1Y());
             this.0LR = _1JZ.0JF().getInstance(Fu);
             this.0LR.1Je(2);
@@ -71,7 +71,7 @@ package 3S{
             } else
             {
                 this.1Nc(_arg2);
-            };
+            }
         }
 
         private function RB(_arg1:String):void{
@@ -137,7 +137,7 @@ package 3S{
                 _local9.y = (_local4 * Te.HEIGHT);
                 this.0Hn.addChild(_local9);
                 _local4++;
-            };
+            }
             _local6 = (GuildUtil.0jA - (this.0aO + _local4));
             this.0dk = new _13j().setSize(22).setColor(0xB3B3B3);
             this.0dk.setStringBuilder(new 1cA().setParams(du.01w, {openSlots:_local6}));
@@ -155,7 +155,7 @@ package 3S{
                 this.VQ.1OQ(400, this.0Hn.height);
                 this.VQ.addEventListener(Event.CHANGE, this.ef);
                 addChild(this.VQ);
-            };
+            }
         }
 
         private function ef(_arg1:Event):void{

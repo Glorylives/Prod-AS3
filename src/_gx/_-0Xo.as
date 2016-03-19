@@ -14,19 +14,19 @@ package gx{
             if (_arg1 == null)
             {
                 return (true);
-            };
+            }
             if ((((((((_arg1 == Parameters.si)) || ((_arg1 == Parameters.Iu)))) || ((_arg1 == Parameters.1Wj)))) || ((_arg1 == Parameters.uL))))
             {
                 _local2 = true;
-            };
+            }
             if (_arg1.charAt(0) == "#")
             {
                 _local2 = true;
-            };
+            }
             if (_arg1.charAt(0) == "@")
             {
                 _local2 = true;
-            };
+            }
             return (_local2);
         }
 

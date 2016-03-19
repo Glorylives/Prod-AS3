@@ -31,7 +31,7 @@ package 0Fa{
             } else
             {
                 this.bh();
-            };
+            }
         }
 
         private function 17p():void{
@@ -49,11 +49,11 @@ package 0Fa{
             if (((!((this.ag == null))) && (contains(this.ag))))
             {
                 removeChild(this.ag);
-            };
+            }
             if ((((this.input == null)) || (!(contains(this.input)))))
             {
                 this.17p();
-            };
+            }
         }
 
 

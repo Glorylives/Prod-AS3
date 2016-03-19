@@ -35,7 +35,7 @@ package com.google.analytics.external{
             if (!isAvailable())
             {
                 return;
-            };
+            }
             _verify();
             setProperty("gaGlobal.vid", _arg1);
         }
@@ -44,7 +44,7 @@ package com.google.analytics.external{
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _verify();
             return (getProperty("gaGlobal.hid"));
         }
@@ -53,7 +53,7 @@ package com.google.analytics.external{
             if (!isAvailable())
             {
                 return;
-            };
+            }
             _verify();
             setProperty("gaGlobal.hid", _arg1);
         }
@@ -62,7 +62,7 @@ package com.google.analytics.external{
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _verify();
             return (getProperty("gaGlobal.dh"));
         }
@@ -71,7 +71,7 @@ package com.google.analytics.external{
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _verify();
             return (getProperty("gaGlobal.sid"));
         }
@@ -80,7 +80,7 @@ package com.google.analytics.external{
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _verify();
             return (getProperty("gaGlobal.vid"));
         }
@@ -90,14 +90,14 @@ package com.google.analytics.external{
             {
                 executeBlock(gaGlobal_js);
                 _gaGlobalVerified = true;
-            };
+            }
         }
 
         public function set sid(_arg1:String):void{
             if (!isAvailable())
             {
                 return;
-            };
+            }
             _verify();
             setProperty("gaGlobal.sid", _arg1);
         }
@@ -106,7 +106,7 @@ package com.google.analytics.external{
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _verify();
             return (getProperty("gaGlobal"));
         }

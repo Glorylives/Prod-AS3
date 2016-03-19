@@ -81,7 +81,7 @@ package 1kr{
             for (_local2 in this.params)
             {
                 _local1[_local2] = this.params[_local2];
-            };
+            }
             return (_local1);
         }
 
@@ -100,7 +100,7 @@ package 1kr{
             if (_local2.length == 0)
             {
                 _local2 = "Unable to contact server";
-            };
+            }
             this.1P0(_local2);
         }
 
@@ -116,7 +116,7 @@ package 1kr{
             } else
             {
                 this.0YJ(false, _arg1);
-            };
+            }
         }
 
         private function onComplete(_arg1:Event):void{
@@ -127,7 +127,7 @@ package 1kr{
             } else
             {
                 this.0YJ(true, ByteArray(this.Le.data));
-            };
+            }
         }
 
         private function 1ek(_arg1:String):void{
@@ -142,15 +142,15 @@ package 1kr{
                 } else
                 {
                     this.0YJ(true, _arg1);
-                };
-            };
+                }
+            }
         }
 
         private function 0YJ(_arg1:Boolean, _arg2):void{
             if (((!(_arg1)) && ((_arg2 is String))))
             {
                 _arg2 = this.1tW(_arg2);
-            };
+            }
             this.1pl();
             this.0vw.dispatch(_arg1, _arg2);
         }
@@ -168,7 +168,7 @@ package 1kr{
                 this.Le.removeEventListener(Event.COMPLETE, this.onComplete);
                 this.ID();
                 this.Le = null;
-            };
+            }
         }
 
         private function ID():void{
@@ -177,7 +177,7 @@ package 1kr{
                 this.Le.close();
             } catch(e:Error)
             {
-            };
+            }
         }
 
 

@@ -43,11 +43,11 @@ package com.hurlant.math{
             if ((((_arg1.s < 0)) || ((_arg1.t > (2 * this.m.t)))))
             {
                 return (_arg1.MR(this.m));
-            };
+            }
             if (_arg1.0-6(this.m) < 0)
             {
                 return (_arg1);
-            };
+            }
             _local2 = new 1OU();
             _arg1.copyTo(_local2);
             this.0KC(_local2);
@@ -61,18 +61,18 @@ package com.hurlant.math{
             {
                 _local2.t = (this.m.t + 1);
                 _local2.clamp();
-            };
+            }
             this.0d1.03h(this.0SC, (this.m.t + 1), this.sa);
             this.m.1-R(this.sa, (this.m.t + 1), this.0SC);
             while (_local2.0-6(this.0SC) < 0)
             {
                 _local2.1PC(1, (this.m.t + 1));
-            };
+            }
             _local2.GV(this.0SC, _local2);
             while (_local2.0-6(this.m) >= 0)
             {
                 _local2.GV(this.m, _local2);
-            };
+            }
         }
 
 

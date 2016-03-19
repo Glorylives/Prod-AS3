@@ -25,7 +25,7 @@ package 1qQ{
                 this.7O = SharedObject.getLocal("RotMG", "/");
             } catch(error:Error)
             {
-            };
+            }
         }
 
         public function 1Jp():String{
@@ -44,7 +44,7 @@ package 1qQ{
                 this.7O.flush();
             } catch(error:Error)
             {
-            };
+            }
         }
 
         public function 1GK():String{
@@ -57,7 +57,7 @@ package 1qQ{
             for (_local2 in this.0XO)
             {
                 _local1.push(_local2);
-            };
+            }
             return (_local1);
         }
 
@@ -73,8 +73,8 @@ package 1qQ{
                 if (this.0XO[_local3] == _arg1)
                 {
                     _local2 = _local3;
-                };
-            };
+                }
+            }
             return (_local2);
         }
 

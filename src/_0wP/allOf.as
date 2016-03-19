@@ -11,7 +11,7 @@ package 0wp{
         if ((((_args.length == 1)) && ((_args[0] is Array))))
         {
             _local2 = _args[0];
-        };
+        }
         return (new 0Zw(_local2));
     }
 

@@ -75,7 +75,7 @@ package 1UB{
             {
                 _local1.selected.remove(this.14J);
                 _local1.destroy();
-            };
+            }
         }
 
         public function 7g():void{
@@ -97,7 +97,7 @@ package 1UB{
             } else
             {
                 this.0vk.dispatch(_arg1.5u());
-            };
+            }
         }
 
         public function 1_ZS(_arg1:Vector.<0EB>):void{
@@ -117,7 +117,7 @@ package 1UB{
                 _local2.push(_local4);
                 _local1.push(_local4.b2);
                 addChild(_local4);
-            };
+            }
             _local1.complete.addOnce(this.1d1);
             return (_local2);
         }
@@ -127,7 +127,7 @@ package 1UB{
             if (_arg1)
             {
                 _local2 = BitmapUtil.mirror(_local2);
-            };
+            }
             return (new Bitmap(_local2));
         }
 
@@ -176,7 +176,7 @@ package 1UB{
             {
                 _local2.x = _local1;
                 _local1 = (_local1 + (_local2.width + 20));
-            };
+            }
         }
 
         private function Vq():rf{

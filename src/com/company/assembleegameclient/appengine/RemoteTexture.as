@@ -36,7 +36,7 @@ package com.company.assembleegameclient.appengine{
         public function run():void{
             var _local1:String = (((this.0yv)=="testing") ? "rotmgtesting.appspot.com" : "realmofthemadgod.appspot.com");
             var _local2:String = 211.replace("{DOMAIN}", _local1);
-            var _local3:Object = {};
+            var _local3:Object = {}
             _local3.id = this.id_;
             _local3.time = 07h;
             var _local4:lG = new 0-x();
@@ -52,7 +52,7 @@ package com.company.assembleegameclient.appengine{
             } else
             {
                 this.reportError(_arg2);
-            };
+            }
         }
 
         public function 1-w(_arg1:ByteArray):void{

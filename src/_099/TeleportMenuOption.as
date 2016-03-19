@@ -63,7 +63,7 @@ import flash.geom.ColorTransform;
                     addChild(this._1kp);
                     addChild(this._50);
                     this._1kp.mask = this._50;
-                };
+                }
                 _local3 = (this._while * (1 - (_local2 / Player.b9)));
                 this._50.width = _local3;
                 _0bB(_0mV);
@@ -72,15 +72,15 @@ import flash.geom.ColorTransform;
                 if (contains(this._1kp))
                 {
                     removeChild(this._1kp);
-                };
+                }
                 if (this._01)
                 {
                     _0bB(_0Zb);
                 } else
                 {
                     _0bB(null);
-                };
-            };
+                }
+            }
         }
 
         override protected function onMouseOver(_arg1:MouseEvent):void{

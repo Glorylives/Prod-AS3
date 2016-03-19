@@ -30,7 +30,7 @@ package 2D{
                 this.1zL = ExternalInterface.call("rotmg.UrlLib.getParam", "entrypt");
             } catch(error:Error)
             {
-            };
+            }
         }
 
         public function j2():String{
@@ -68,13 +68,13 @@ package 2D{
                 _local3.flush();
             } catch(error:Error)
             {
-            };
+            }
         }
 
         public function clear():void{
             this.19R(GUID.create(), null);
             Parameters.1cS = true;
-            Parameters.data_.charIdUseMap = {};
+            Parameters.data_.charIdUseMap = {}
             Parameters.save();
         }
 

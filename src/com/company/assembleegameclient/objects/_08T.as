@@ -37,14 +37,14 @@ import com.company.assembleegameclient.map.Map;
             if (_arg1 < (this.lastUpdate_ + 500))
             {
                 return;
-            };
+            }
             this.lastUpdate_ = _arg1;
             this.Mf.length = 0;
             var _local3:Player = this.map_.player_;
             if (_local3 == null)
             {
                 return;
-            };
+            }
             for each (_local4 in this.map_.goDict_)
             {
                 _local5 = (_local4 as Player);
@@ -60,14 +60,14 @@ import com.company.assembleegameclient.map.Map;
                     } else
                     {
                         this.Mf.push(_local5);
-                    };
-                };
-            };
+                    }
+                }
+            }
             this.Mf.sortOn(_1KB, C5);
             if (this.Mf.length > _0W)
             {
                 this.Mf.length = _0W;
-            };
+            }
         }
 
         public function _005(_arg1:Player):void{
@@ -92,7 +92,7 @@ import com.company.assembleegameclient.map.Map;
                 this.starred_[_local3] = 1;
                 this.lastUpdate_ = int.MIN_VALUE;
                 _local2++;
-            };
+            }
         }
 
         public function removeStars(_arg1:_bU):void{
@@ -104,7 +104,7 @@ import com.company.assembleegameclient.map.Map;
                 delete this.starred_[_local3];
                 this.lastUpdate_ = int.MIN_VALUE;
                 _local2++;
-            };
+            }
         }
 
         public function _5i(_arg1:Player):void{
@@ -130,7 +130,7 @@ import com.company.assembleegameclient.map.Map;
                 this._0xp[_local3] = 1;
                 this.lastUpdate_ = int.MIN_VALUE;
                 _local2++;
-            };
+            }
         }
 
 

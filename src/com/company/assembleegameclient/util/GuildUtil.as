@@ -31,7 +31,7 @@ package com.company.assembleegameclient.util{
                     return (1b(du.20n));
                 case 0AG:
                     return (1b(du.2R));
-            };
+            }
             return (1b(du.0T-));
         }
 
@@ -58,7 +58,7 @@ package com.company.assembleegameclient.util{
                 case 0AG:
                     _local3 = AssetLibrary.1JR("lofiInterfaceBig", 16);
                     break;
-            };
+            }
             return (TextureRedrawer.redraw(_local3, _arg2, true, 0, true));
         }
 
@@ -71,19 +71,19 @@ package com.company.assembleegameclient.util{
             if (_arg2 == _arg3)
             {
                 return (false);
-            };
+            }
             if ((((((_arg1 == 0AG)) && ((_arg2 < 0AG)))) && ((_arg3 < 0AG))))
             {
                 return (true);
-            };
+            }
             if ((((((_arg1 == Tx)) && ((_arg2 < Tx)))) && ((_arg3 <= Tx))))
             {
                 return (true);
-            };
+            }
             if ((((((_arg1 == d8)) && ((_arg2 < d8)))) && ((_arg3 < d8))))
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -96,7 +96,7 @@ package com.company.assembleegameclient.util{
                     return (d8);
                 case d8:
                     return (Tx);
-            };
+            }
             return (0AG);
         }
 
@@ -114,7 +114,7 @@ package com.company.assembleegameclient.util{
                     return (d8);
                 case 0AG:
                     return (Tx);
-            };
+            }
             return (Cn);
         }
 

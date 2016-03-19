@@ -56,8 +56,8 @@ package com.google.analytics.debug{
                     case "basic":
                     default:
                         _arg1 = VisualDebugMode.basic;
-                };
-            };
+                }
+            }
             _mode = _arg1;
         }
 
@@ -65,11 +65,11 @@ package com.google.analytics.debug{
             if (layout)
             {
                 layout.createSuccessAlert(_arg1);
-            };
+            }
             if (traceOutput)
             {
                 trace((("[+] " + _arg1) + " !!"));
-            };
+            }
         }
 
         public function get active():Boolean{
@@ -81,29 +81,29 @@ package com.google.analytics.debug{
             {
                 layout.init();
                 _visualInitialized = true;
-            };
+            }
         }
 
         private function _destroyVisual():void{
             if (((layout) && (_visualInitialized)))
             {
                 layout.destroy();
-            };
+            }
         }
 
         public function warning(_arg1:String, _arg2:VisualDebugMode=null):void{
             if (_filter(_arg2))
             {
                 return;
-            };
+            }
             if (((layout) && (showWarnings)))
             {
                 layout.createWarning(_arg1);
-            };
+            }
             if (traceOutput)
             {
                 trace((("## " + _arg1) + " ##"));
-            };
+            }
         }
 
         private function _filter(_arg1:VisualDebugMode=null):Boolean{
@@ -114,11 +114,11 @@ package com.google.analytics.debug{
             if (layout)
             {
                 layout.createFailureAlert(_arg1);
-            };
+            }
             if (traceOutput)
             {
                 trace((("[-] " + _arg1) + " !!"));
-            };
+            }
         }
 
         public function get mode(){
@@ -133,7 +133,7 @@ package com.google.analytics.debug{
             } else
             {
                 _destroyVisual();
-            };
+            }
         }
 
         protected function trace(_arg1:String):void{
@@ -146,7 +146,7 @@ package com.google.analytics.debug{
             {
                 _local3 = (getTimer() + " - ");
                 _local4 = (new Array(_local3.length).join(" ") + " ");
-            };
+            }
             if (_arg1.indexOf("\n") > -1)
             {
                 _local7 = _arg1.split("\n");
@@ -161,58 +161,58 @@ package com.google.analytics.debug{
                         } else
                         {
                             _local2.push((_local4 + _local7[_local8]));
-                        };
-                    };
+                        }
+                    }
                     _local8++;
-                };
+                }
             } else
             {
                 _local2.push((_local3 + _arg1));
-            };
+            }
             var _local5:int = _local2.length;
             var _local6:int;
             while (_local6 < _local5)
             {
                 trace(_local2[_local6]);
                 _local6++;
-            };
+            }
         }
 
         public function alert(_arg1:String):void{
             if (layout)
             {
                 layout.createAlert(_arg1);
-            };
+            }
             if (traceOutput)
             {
                 trace((("!! " + _arg1) + " !!"));
-            };
+            }
         }
 
         public function info(_arg1:String, _arg2:VisualDebugMode=null):void{
             if (_filter(_arg2))
             {
                 return;
-            };
+            }
             if (((layout) && (showInfos)))
             {
                 layout.createInfo(_arg1);
-            };
+            }
             if (traceOutput)
             {
                 trace(_arg1);
-            };
+            }
         }
 
         public function alertGifRequest(_arg1:String, _arg2:URLRequest, _arg3:GIFRequest):void{
             if (layout)
             {
                 layout.createGIFRequestAlert(_arg1, _arg2, _arg3);
-            };
+            }
             if (traceOutput)
             {
                 trace(((">> " + _arg1) + " <<"));
-            };
+            }
         }
 
 

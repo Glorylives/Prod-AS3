@@ -49,7 +49,7 @@ package 0av{
             } else
             {
                 this.0yw(_arg2);
-            };
+            }
         }
 
         private function 1gu():void{
@@ -75,7 +75,7 @@ package 0av{
             } else
             {
                 this.1e7(_arg2);
-            };
+            }
         }
 
         private function 0GC():void{

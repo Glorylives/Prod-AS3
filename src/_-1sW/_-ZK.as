@@ -55,7 +55,7 @@ package 1sW{
             } else
             {
                 this.Cf();
-            };
+            }
         }
 
         private function Cf():void{
@@ -67,8 +67,8 @@ package 1sW{
                 if (!this.account.0D3())
                 {
                     this.1qM.dispatch(new ErrorDialog(this.1M8));
-                };
-            };
+                }
+            }
         }
 
         private function 1hB():void{
@@ -78,7 +78,7 @@ package 1sW{
             } catch(e:Error)
             {
                 t();
-            };
+            }
         }
 
         private function t():void{
@@ -93,7 +93,7 @@ package 1sW{
             } else
             {
                 _local2.createdat = 0;
-            };
+            }
             _local3.url = (_local1 + "/credits/kabamadd");
             _local3.method = URLRequestMethod.POST;
             _local3.data = _local2;
@@ -117,10 +117,10 @@ package 1sW{
                 } else
                 {
                     _local1 = 0;
-                };
+                }
                 ExternalInterface.call(this.1Zc.2-7(), this.account.Df(), this.account.lf(), _local1);
                 this.0dY.171 = true;
-            };
+            }
         }
 
         private function 14m():Boolean{

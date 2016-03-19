@@ -38,7 +38,7 @@ package 0uE{
             {
                 _local2.push(this.0bv(_arg1[_local3]));
                 _local3++;
-            };
+            }
             return (_local2);
         }
 

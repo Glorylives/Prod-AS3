@@ -60,8 +60,8 @@ package 1C9{
                 } else
                 {
                     this.1Fg();
-                };
-            };
+                }
+            }
         }
 
         private function S8():void{

@@ -63,11 +63,11 @@ import flash.display.Sprite;
             if (_arg1 == this._0ep.itemId)
             {
                 return (false);
-            };
+            }
             if (this.blockingItemUpdates)
             {
                 return (true);
-            };
+            }
             this._0ep.setType(_arg1);
             this._0bZ(this._0ZD.curPlayer);
             return (true);
@@ -87,7 +87,7 @@ import flash.display.Sprite;
             } else
             {
                 this._7W.visible = false;
-            };
+            }
         }
 
         public function canHoldItem(_arg1:int):Boolean{

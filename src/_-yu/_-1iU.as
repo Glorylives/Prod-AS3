@@ -38,7 +38,7 @@ package yu{
             {
                 _local1 = this.dM.getInstance(Dc);
                 1VQ = new 1jr(_local1);
-            };
+            }
         }
 
         private function 0f3():void{
@@ -47,7 +47,7 @@ package yu{
             {
                 1VQ.destroy();
                 1VQ = null;
-            };
+            }
         }
 
 

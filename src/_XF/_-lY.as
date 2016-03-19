@@ -38,8 +38,8 @@ package XF{
                 if (!(0Sq[_local2] is Class))
                 {
                     throw (new ArgumentError((((((("Invalid valueClasses argument: " + "item at index ") + _local2) + " should be a Class but was:<") + 0Sq[_local2]) + ">.") + getQualifiedClassName(0Sq[_local2]))));
-                };
-            };
+                }
+            }
         }
 
         public function 0jh(... _args):lY{
@@ -50,13 +50,13 @@ package XF{
                 if (this.7J.length > 1)
                 {
                     throw (new ArgumentError((("Mapping function has " + this.7J.length) + " arguments but it needs zero or one _of type Event")));
-                };
+                }
             } else
             {
                 this.7J = function ():Object{
                     return (objectListOrFunction);
-                };
-            };
+                }
+            }
             return (this);
         }
 
@@ -66,13 +66,13 @@ package XF{
                 if (this.0uG.length == 1)
                 {
                     return (this.0uG(_arg1));
-                };
+                }
                 return (this.0uG());
-            };
+            }
             if (valueClasses.length == 0)
             {
                 return ([]);
-            };
+            }
             throw (new ArgumentError((("There are valueClasses set to be dispatched <" + valueClasses) + "> but mappingFunction is null.")));
         }
 
@@ -96,20 +96,20 @@ package XF{
                     } else
                     {
                         throw (new ArgumentError((((("Value object <" + _local5) + "> is not an instance _of <") + _local6) + ">.")));
-                    };
+                    }
                     _local7++;
-                };
+                }
             } else
             {
                 if (_local3 > 1)
                 {
                     throw (new ArgumentError("Expected more than one value."));
-                };
+                }
                 if (!(_local2 is valueClasses[0]))
                 {
                     throw (new ArgumentError((((("Mapping returned " + getQualifiedClassName(_local2)) + ", expected ") + valueClasses[0]) + ".")));
-                };
-            };
+                }
+            }
             return (super.dispatchEvent(_arg1));
         }
 
@@ -125,7 +125,7 @@ package XF{
                     {
                         _local3.0kc.execute1(_local2);
                         _local3 = _local3.0wv;
-                    };
+                    }
                 } else
                 {
                     _local4 = (_local2 as Array);
@@ -133,16 +133,16 @@ package XF{
                     {
                         _local3.0kc.execute(_local4);
                         _local3 = _local3.0wv;
-                    };
-                };
+                    }
+                }
             } else
             {
                 while (_local3.nonEmpty)
                 {
                     _local3.0kc.execute1(_local2);
                     _local3 = _local3.0wv;
-                };
-            };
+                }
+            }
         }
 
 

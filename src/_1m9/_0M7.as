@@ -63,7 +63,7 @@ import com.company.assembleegameclient.util._23J;
             if (_local2._1tB().driverInfo.toLowerCase().indexOf("software") != -1)
             {
                 Parameters.kT();
-            };
+            }
             _local2.configureBackBuffer(WIDTH, HEIGHT, 2, true);
             _local2.setBlendFactors(Context3DBlendFactor.SOURCE_ALPHA, Context3DBlendFactor.ONE_MINUS_SOURCE_ALPHA);
             _local2.setDepthTest(false, Context3DCompareMode.LESS_EQUAL);

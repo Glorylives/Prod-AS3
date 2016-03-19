@@ -18,8 +18,8 @@ package _051{
                 {
                     _arg1 = _arg1.split((("{" + _local4) + "}")).join(_arg2[_local4]);
                     _local4++;
-                };
-            };
+                }
+            }
             return (_arg1);
         }
 

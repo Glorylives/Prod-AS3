@@ -16,7 +16,7 @@ package com.google.analytics.debug{
                 _local4 = Align.center;
                 _local5 = false;
                 _local6 = true;
-            };
+            }
             super(_arg2, _arg3, "uiSuccess", Style.successColor, _local4, _local5, _local6);
         }
 

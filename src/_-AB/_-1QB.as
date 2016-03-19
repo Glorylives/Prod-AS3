@@ -19,7 +19,7 @@ package AB{
             if (matches.length() >= 1)
             {
                 return (matches[0]);
-            };
+            }
             return (null);
         }
 
@@ -75,8 +75,8 @@ package AB{
                         duration:trap.@condDuration
                     }, TR.1pw(textColor), TR.17H());
                     ZX[trap.toXMLString()] = true;
-                };
-            };
+                }
+            }
         }
 
 

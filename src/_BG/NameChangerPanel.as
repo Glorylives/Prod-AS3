@@ -52,9 +52,9 @@ package BG{
                     } else
                     {
                         this.05Y();
-                    };
-                };
-            };
+                    }
+                }
+            }
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
         }
 
@@ -62,7 +62,7 @@ package BG{
             if (this.o3)
             {
                 stage.addEventListener(KeyboardEvent.KEY_DOWN, this.1lw);
-            };
+            }
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
 
@@ -147,7 +147,7 @@ package BG{
             if ((((_arg1.keyCode == Parameters.data_.interact)) && ((stage.focus == null))))
             {
                 this.1UL();
-            };
+            }
         }
 
         private function onButtonClick(_arg1:MouseEvent):void{

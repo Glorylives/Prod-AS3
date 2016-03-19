@@ -35,7 +35,7 @@ package TN{
             {
                 this.view.visible = false;
                 this.24c.start();
-            };
+            }
         }
 
         override public function destroy():void{
@@ -45,7 +45,7 @@ package TN{
                 this.ww.ey.remove(this.6K);
                 this.ww.05X.remove(this.23g);
                 this.ww.0vG.remove(this.DP);
-            };
+            }
         }
 
         private function 23g(_arg1:int):void{
@@ -59,7 +59,7 @@ package TN{
             } else
             {
                 this.view.03o(_arg1);
-            };
+            }
         }
 
         private function DP():void{

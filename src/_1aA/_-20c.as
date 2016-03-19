@@ -30,7 +30,7 @@ package _1aA{
         private var 171:Boolean = false;
 
         public function 20c(){
-            this.CC = {};
+            this.CC = {}
             super();
             this.tooltip = new _1HZ(Sprite);
             this.selected = new _1HZ(int);
@@ -51,7 +51,7 @@ package _1aA{
             if (this.171)
             {
                 return;
-            };
+            }
             this.171 = true;
             this.1w8 = new Lz(1sM.BACK, 36, false);
             this.1w8.addEventListener(MouseEvent.CLICK, this.1XA);
@@ -82,11 +82,11 @@ package _1aA{
                     if ((((_local4 == 784)) && (!(_local7.0ma))))
                     {
                         _local7.KV(75);
-                    };
+                    }
                     addChild(_local7);
-                };
+                }
                 _local2++;
-            };
+            }
             this.1w8.x = ((stage.stageWidth / 2) - (this.1w8.width / 2));
             this.1w8.y = 550;
             this.0qv.x = stage.stageWidth;
@@ -116,7 +116,7 @@ package _1aA{
             if (!_local2.0ma)
             {
                 return;
-            };
+            }
             var _local3:int = _local2.objectType();
             var _local4:String = ObjectLibrary.118[_local3];
             GA.global().trackEvent("character", "create", _local4);
@@ -151,11 +151,11 @@ package _1aA{
                         if (((_local6) || (_arg1.1if(_local4))))
                         {
                             _local7.unlock();
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 _local2++;
-            };
+            }
         }
 
         private function 1DM(_arg1:MouseEvent):void{
@@ -166,7 +166,7 @@ package _1aA{
                 _local3 = int(_local2.playerXML_.@type);
                 _local2.0ok(false);
                 this.buy.dispatch(_local3);
-            };
+            }
         }
 
 

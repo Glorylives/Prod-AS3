@@ -42,7 +42,7 @@ package 0NI{
             {
                 this.0zE[_arg1] = true;
                 this.XS.17M(_arg1);
-            };
+            }
         }
 
         public function 1MC(_arg1:1o, _arg2:Function):void{
@@ -58,7 +58,7 @@ package 0NI{
             {
                 this.zW = true;
                 this.1Yu();
-            };
+            }
         }
 
         private function E3(_arg1:Class):void{
@@ -70,7 +70,7 @@ package 0NI{
             {
                 this.1Za.debug("Not yet initialized. Queuing config class {0}", [_arg1]);
                 this.1pn.push(_arg1);
-            };
+            }
         }
 
         private function 0kD(_arg1:Object):void{
@@ -82,7 +82,7 @@ package 0NI{
             {
                 this.1Za.debug("Not yet initialized. Queuing config object {0}", [_arg1]);
                 this.1pn.push(_arg1);
-            };
+            }
         }
 
         private function 1Yu():void{
@@ -97,8 +97,8 @@ package 0NI{
                 {
                     this.1Za.debug("Now initializing. Injecting into config object {0}", [_local1]);
                     this.17M(_local1);
-                };
-            };
+                }
+            }
             this.1pn.length = 0;
         }
 

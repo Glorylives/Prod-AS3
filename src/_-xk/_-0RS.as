@@ -35,7 +35,7 @@ package xk{
             } else
             {
                 this.0Um();
-            };
+            }
         }
 
         private function 0Uv():Boolean{
@@ -59,8 +59,8 @@ package xk{
                 } else
                 {
                     this.normal.dispatch(this.death);
-                };
-            };
+                }
+            }
         }
 
 

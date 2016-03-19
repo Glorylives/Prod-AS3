@@ -53,18 +53,18 @@ package com.google.analytics.debug{
             if (_arg7 == null)
             {
                 _arg7 = Align.none;
-            };
+            }
             this.alignement = _arg7;
             this.stickToEdge = _arg8;
             if (_arg4 == 0)
             {
                 _arg4 = Style.backgroundColor;
-            };
+            }
             _backgroundColor = _arg4;
             if (_arg5 == 0)
             {
                 _arg5 = Style.borderColor;
-            };
+            }
             _borderColor = _arg5;
         }
 
@@ -79,7 +79,7 @@ package com.google.analytics.debug{
             } else
             {
                 _data.visible = false;
-            };
+            }
             _colapsed = !(_colapsed);
             _update();
             resize();
@@ -102,7 +102,7 @@ package com.google.analytics.debug{
             {
                 forcedWidth = _savedW;
                 forcedHeight = _savedH;
-            };
+            }
             if (!_colapsed)
             {
                 _local1 = forcedWidth;
@@ -115,7 +115,7 @@ package com.google.analytics.debug{
                 _savedH = forcedHeight;
                 forcedWidth = _local1;
                 forcedHeight = _local2;
-            };
+            }
             var _local3:Graphics = _background.graphics;
             _local3.clear();
             _local3.beginFill(_backgroundColor);
@@ -148,7 +148,7 @@ package com.google.analytics.debug{
             {
                 _background.alpha = baseAlpha;
                 _border.alpha = baseAlpha;
-            };
+            }
         }
 
         public function addData(_arg1:DisplayObject):void{
@@ -174,7 +174,7 @@ package com.google.analytics.debug{
             if (parent != null)
             {
                 parent.removeChild(this);
-            };
+            }
         }
 
 

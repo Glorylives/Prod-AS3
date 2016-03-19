@@ -138,7 +138,7 @@ package 0NI{
             if (this._state == _arg1)
             {
                 return;
-            };
+            }
             this._state = _arg1;
         }
 
@@ -147,7 +147,7 @@ package 0NI{
             for each (_local2 in _args)
             {
                 this.Th[_local2] = true;
-            };
+            }
         }
 
         private function 1Wn():void{
@@ -167,14 +167,14 @@ package 0NI{
             if (handler.length > 1)
             {
                 throw (new Error("When and After handlers must accept 0-1 arguments"));
-            };
+            }
             if (handler.length == 1)
             {
                 return (function (_arg1:0qM):void{
                     ((once) && (IEventDispatcher(_arg1.target).removeEventListener(_arg1.type, arguments.callee)));
                     handler(_arg1.type);
                 });
-            };
+            }
             return (function (_arg1:0qM):void{
                 ((once) && (IEventDispatcher(_arg1.target).removeEventListener(_arg1.type, arguments.callee)));
                 handler();

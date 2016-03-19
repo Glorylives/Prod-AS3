@@ -97,7 +97,7 @@ package RV{
             while (_local1--)
             {
                 this.container.removeChild(this.list[_local1]);
-            };
+            }
             this.list.length = 0;
         }
 
@@ -106,7 +106,7 @@ package RV{
             for each (_local2 in _arg1)
             {
                 this.1M9(_local2);
-            };
+            }
         }
 
         private function 1M9(_arg1:DisplayObject):void{

@@ -77,7 +77,7 @@ package oa{
             if (!0Ws.hasOwnProperty(_local2))
             {
                 0Ws[_local2] = _arg1.getColor();
-            };
+            }
             return (0Ws[_local2]);
         }
 
@@ -101,7 +101,7 @@ package oa{
             {
                 this.17X.push(_local2);
                 _local2 = (_local2 / 2);
-            };
+            }
             this.17X.push(_local1);
             ((this.0-P) && (this.0-P.1ZR(this.17X.length)));
         }
@@ -167,7 +167,7 @@ package oa{
             if ((((((((this.tooltip == null)) || ((this.tooltip.parent == null)))) || ((this.tooltip.1K == null)))) || ((this.tooltip.1K.length == 0))))
             {
                 return;
-            };
+            }
             this.K2();
             this.4y();
             this.1Di();
@@ -201,9 +201,9 @@ package oa{
                 if (this.tooltip.parent != null)
                 {
                     this.tooltip.parent.removeChild(this.tooltip);
-                };
+                }
                 this.tooltip = null;
-            };
+            }
         }
 
         private function K2():void{
@@ -212,9 +212,9 @@ package oa{
                 if (this.menu.parent != null)
                 {
                     this.menu.parent.removeChild(this.menu);
-                };
+                }
                 this.menu = null;
-            };
+            }
         }
 
         override public function draw():void{
@@ -233,11 +233,11 @@ package oa{
             if (!this.focus)
             {
                 return;
-            };
+            }
             if (!this.active)
             {
                 return;
-            };
+            }
             var _local1:Number = this.17X[this.0od];
             this.012.identity();
             this.012.translate(-(this.focus.x_), -(this.focus.y_));
@@ -253,8 +253,8 @@ package oa{
                 if (_local3.x < this.1nJ.right)
                 {
                     _local4 = (this.1nJ.right - _local3.x);
-                };
-            };
+                }
+            }
             var _local5:Number = 0;
             if (_local2.y > this.1nJ.top)
             {
@@ -264,14 +264,14 @@ package oa{
                 if (_local3.y < this.1nJ.bottom)
                 {
                     _local5 = (this.1nJ.bottom - _local3.y);
-                };
-            };
+                }
+            }
             this.012.translate(_local4, _local5);
             _local2 = this.012.transformPoint(PointUtil.1EH);
             if ((((_local1 >= 1)) && (this.1gR)))
             {
                 this.012.rotate(-(Parameters.data_.cameraAngle));
-            };
+            }
             var _local6:Rectangle = new Rectangle();
             _local6.x = Math.max(this.1nJ.x, _local2.x);
             _local6.y = Math.max(this.1nJ.y, _local2.y);
@@ -303,8 +303,8 @@ package oa{
                             } else
                             {
                                 _local15 = 0xFFFF00;
-                            };
-                        };
+                            }
+                        }
                     } else
                     {
                         if ((_local10 is Character))
@@ -315,7 +315,7 @@ package oa{
                             } else
                             {
                                 _local15 = 1aR(_local10);
-                            };
+                            }
                         } else
                         {
                             if ((((_local10 is Portal)) || ((_local10 is GuildHallPortal))))
@@ -324,9 +324,9 @@ package oa{
                             } else
                             {
                                 continue;
-                            };
-                        };
-                    };
+                            }
+                        }
+                    }
                     _local17 = (((this.012.a * _local10.x_) + (this.012.c * _local10.y_)) + this.012.tx);
                     _local18 = (((this.012.b * _local10.x_) + (this.012.d * _local10.y_)) + this.012.ty);
                     if ((((((((_local17 <= (-(this.k4) / 2))) || ((_local17 >= (this.k4 / 2))))) || ((_local18 <= (-(this._height) / 2))))) || ((_local18 >= (this._height / 2)))))
@@ -334,7 +334,7 @@ package oa{
                         Ck.1c(this.1nJ, 0, 0, _local17, _local18, this.1rV);
                         _local17 = this.1rV.x;
                         _local18 = this.1rV.y;
-                    };
+                    }
                     if (((((!((_local16 == null))) && (this.h4))) && ((((this.menu == null)) || ((this.menu.parent == null))))))
                     {
                         _local19 = (_local8 - _local17);
@@ -343,13 +343,13 @@ package oa{
                         if (_local21 < final)
                         {
                             this.1K.push(_local16);
-                        };
-                    };
+                        }
+                    }
                     _local7.beginFill(_local15);
                     _local7.drawRect((_local17 - 2), (_local18 - 2), 4, 4);
                     _local7.endFill();
-                };
-            };
+                }
+            }
             if (this.1K.length != 0)
             {
                 if (this.tooltip == null)
@@ -361,8 +361,8 @@ package oa{
                     if (!this.1gG(this.tooltip.1K, this.1K))
                     {
                         this.tooltip.1jb(this.1K);
-                    };
-                };
+                    }
+                }
             } else
             {
                 if (this.tooltip != null)
@@ -370,10 +370,10 @@ package oa{
                     if (this.tooltip.parent != null)
                     {
                         this.tooltip.parent.removeChild(this.tooltip);
-                    };
+                    }
                     this.tooltip = null;
-                };
-            };
+                }
+            }
             var _local11:Number = this.focus.x_;
             var _local12:Number = this.focus.y_;
             var _local13:Number = (((this.012.a * _local11) + (this.012.c * _local12)) + this.012.tx);
@@ -384,7 +384,7 @@ package oa{
             if (!(((_local1 >= 1)) && (this.1gR)))
             {
                 this.26O.rotate(Parameters.data_.cameraAngle);
-            };
+            }
             this.26O.translate(_local13, _local14);
             _local7.beginBitmapFill(this.0rr, this.26O, false);
             _local7.drawRect((_local13 - 16), (_local14 - 16), 32, 32);
@@ -396,16 +396,16 @@ package oa{
             if (_local3 != _arg2.length)
             {
                 return (false);
-            };
+            }
             var _local4:int;
             while (_local4 < _local3)
             {
                 if (_arg1[_local4] != _arg2[_local4])
                 {
                     return (false);
-                };
+                }
                 _local4++;
-            };
+            }
             return (true);
         }
 

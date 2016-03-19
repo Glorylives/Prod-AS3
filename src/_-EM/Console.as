@@ -63,18 +63,18 @@ package EM{
         public function Console(_arg1:String="", _arg2:12N=null){
             var password:String = _arg1;
             var config = _arg2;
-            this.0Kd = {};
+            this.0Kd = {}
             super();
             name = "Console";
             if (config == null)
             {
                 config = new 12N();
-            };
+            }
             this._config = config;
             if (password)
             {
                 this._config.keystrokePassword = password;
-            };
+            }
             this.1fH = new xi(this);
             this.07S = new 0Ih(this);
             this.lX = new 1-T(this);
@@ -95,14 +95,14 @@ package EM{
                     this.0Kd = this.jY.data;
                 } catch(e:Error)
                 {
-                };
-            };
+                }
+            }
             this._config.style.updateStyleSheet();
             this.wE = new p7(this);
             if (password)
             {
                 this.visible = false;
-            };
+            }
             this.report(((((((((("<b>Console v" + VERSION) + 1R2) + "</b> build ") + 1HJ) + ". ") + Capabilities.playerType) + " ") + Capabilities.version) + "."), -2);
             addEventListener(Event.ENTER_FRAME, this.JA);
             addEventListener(Event.ADDED_TO_STAGE, this.0im);
@@ -112,11 +112,11 @@ package EM{
             if ((_arg1 is String))
             {
                 return ((_arg1 as String));
-            };
+            }
             if (_arg1)
             {
                 return (1-T.0Ds(_arg1));
-            };
+            }
             return (ss);
         }
 
@@ -125,11 +125,11 @@ package EM{
             if (this.DE.base == null)
             {
                 this.DE.base = parent;
-            };
+            }
             if (loaderInfo)
             {
                 this.0Af(loaderInfo);
-            };
+            }
             removeEventListener(Event.ADDED_TO_STAGE, this.0im);
             addEventListener(Event.REMOVED_FROM_STAGE, this.yw);
             stage.addEventListener(Event.MOUSE_LEAVE, this.h6, false, 0, true);
@@ -158,10 +158,10 @@ package EM{
                 if (_local2)
                 {
                     _local2.addEventListener("uncaughtError", this.0Jm, false, 0, true);
-                };
+                }
             } catch(err:Error)
             {
-            };
+            }
         }
 
         private function 0Jm(_arg1:Event):void{
@@ -175,12 +175,12 @@ package EM{
                 if ((_local2 is ErrorEvent))
                 {
                     _local3 = ErrorEvent(_local2).text;
-                };
-            };
+                }
+            }
             if (!_local3)
             {
                 _local3 = String(_local2);
-            };
+            }
             this.report(_local3, FATAL, false);
         }
 
@@ -200,7 +200,7 @@ package EM{
             if (_arg1)
             {
                 this.0jR.0cJ(_arg1, _arg2, _arg3);
-            };
+            }
         }
 
         public function 4y(_arg1:String, _arg2:Function, _arg3:Array=null, _arg4:String=null):void{
@@ -220,12 +220,12 @@ package EM{
             {
                 this.0cJ(this.20p, null);
                 this.20p = null;
-            };
+            }
             if (((_arg1) && ((_arg1.length == 1))))
             {
                 this.20p = new 1L8(_arg1, _arg2, _arg3, _arg4);
                 this.0cJ(this.20p, this.1pJ);
-            };
+            }
         }
 
         public function get rollerCaptureKey():1L8{
@@ -236,7 +236,7 @@ package EM{
             if (this.displayRoller)
             {
                 this.report(("Display Roller Capture:<br/>" + 0kO(this.wE.getPanel(0kO.NAME)).1Dm(true)), -1);
-            };
+            }
         }
 
         public function get fpsMonitor():Boolean{
@@ -303,14 +303,14 @@ package EM{
             if (this.0dF == _arg1)
             {
                 return;
-            };
+            }
             if (_arg1)
             {
                 this.report("Paused", 10);
             } else
             {
                 this.report("Resumed", -1);
-            };
+            }
             this.0dF = _arg1;
             this.wE.mainPanel.mI(_arg1);
         }
@@ -352,7 +352,7 @@ package EM{
             if (_arg1)
             {
                 this.wE.mainPanel.visible = true;
-            };
+            }
         }
 
         private function JA(_arg1:Event):void{
@@ -364,7 +364,7 @@ package EM{
             if (this.remoter.remoting != xi.1pv)
             {
                 _local4 = this.10T.update(((stage) ? stage.frameRate : 0));
-            };
+            }
             this.1fH.update();
             if (((visible) && (parent)))
             {
@@ -373,13 +373,13 @@ package EM{
                     this.E0--;
                     parent.addChild(this);
                     this.report((("Moved console on top (alwaysOnTop enabled), " + this.E0) + " attempts left."), -1);
-                };
+                }
                 this.wE.update(this.0dF, _local3);
                 if (_local4)
                 {
                     this.wE.updateGraphs(_local4);
-                };
-            };
+                }
+            }
         }
 
         public function get remoting():Boolean{
@@ -410,7 +410,7 @@ package EM{
             if (!_arg4)
             {
                 _arg4 = this.wE.mainPanel.reportChannel;
-            };
+            }
             this.1ZF([_arg1], _arg2, _arg4, false, _arg3, 0);
         }
 
@@ -422,15 +422,15 @@ package EM{
             {
                 _local7 = (_local7 + (((_local9) ? " " : "") + this.lX.makeString(_arg1[_local9], null, _arg5)));
                 _local9++;
-            };
+            }
             if ((((_arg2 >= this._config.04h)) && ((_arg6 < 0))))
             {
                 _arg6 = this._config.0i5;
-            };
+            }
             if (((!(_arg5)) && ((_arg6 > 0))))
             {
                 _local7 = (_local7 + this.26t.0d9(_arg6, _arg2));
-            };
+            }
             this.07S.add(new Dq(_local7, 0-U(_arg3), _arg2, _arg4, _arg5));
         }
 
@@ -530,7 +530,7 @@ package EM{
             } catch(err:Error)
             {
                 return (false);
-            };
+            }
             return (true);
         }
 
@@ -539,7 +539,7 @@ package EM{
             if (!this.0dF)
             {
                 this.wE.mainPanel.FV();
-            };
+            }
             this.wE.updateMenu();
         }
 
@@ -592,8 +592,8 @@ package EM{
                 } else
                 {
                     this.jY.clear();
-                };
-            };
+                }
+            }
         }
 
 

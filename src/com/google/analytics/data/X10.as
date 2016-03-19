@@ -22,8 +22,8 @@ package com.google.analytics.data{
         public function X10(){
             _set = [_key, _value];
             super();
-            _projectData = {};
-            _escapeCharMap = {};
+            _projectData = {}
+            _escapeCharMap = {}
             _escapeCharMap[_escapeChar] = "'0";
             _escapeCharMap[_delimEnd] = "'1";
             _escapeCharMap[_delimSet] = "'2";
@@ -34,12 +34,12 @@ package com.google.analytics.data{
         private function _setInternal(_arg1:Number, _arg2:String, _arg3:Number, _arg4:String):void{
             if (!hasProject(_arg1))
             {
-                _projectData[_arg1] = {};
-            };
+                _projectData[_arg1] = {}
+            }
             if (_projectData[_arg1][_arg2] == undefined)
             {
                 _projectData[_arg1][_arg2] = [];
-            };
+            }
             _projectData[_arg1][_arg2][_arg3] = _arg4;
             _hasData = (_hasData + 1);
         }
@@ -59,15 +59,15 @@ package com.google.analytics.data{
                     if (_local3)
                     {
                         _local2 = (_local2 + _set[_local4]);
-                    };
+                    }
                     _local2 = (_local2 + _renderDataType(_local5));
                     _local3 = false;
                 } else
                 {
                     _local3 = true;
-                };
+                }
                 _local4++;
-            };
+            }
             return (_local2);
         }
 
@@ -93,12 +93,12 @@ package com.google.analytics.data{
                     {
                         _local3 = (_local3 + _local4.toString());
                         _local3 = (_local3 + _delimNumValue);
-                    };
+                    }
                     _local3 = (_local3 + _escapeExtensibleValue(_arg1[_local4]));
                     _local2.push(_local3);
-                };
+                }
                 _local4++;
-            };
+            }
             return (((_delimBegin + _local2.join(_delimSet)) + _delimEnd));
         }
 
@@ -115,15 +115,15 @@ package com.google.analytics.data{
             if (!_arg1)
             {
                 return (renderUrlString());
-            };
+            }
             var _local2:Array = [_arg1.renderUrlString()];
             for (_local3 in _projectData)
             {
                 if (((hasProject(Number(_local3))) && (!(_arg1.hasProject(Number(_local3))))))
                 {
                     _local2.push((_local3 + _renderProject(_projectData[_local3])));
-                };
-            };
+                }
+            }
             return (_local2.join(""));
         }
 
@@ -131,7 +131,7 @@ package com.google.analytics.data{
             if (((((!((Math.round(_arg3) == _arg3))) || (isNaN(_arg3)))) || ((_arg3 == Infinity))))
             {
                 return (false);
-            };
+            }
             _setInternal(_arg1, _value, _arg2, _arg3.toString());
             return (true);
         }
@@ -144,8 +144,8 @@ package com.google.analytics.data{
                 if (hasProject(Number(_local2)))
                 {
                     _local1.push((_local2 + _renderProject(_projectData[_local2])));
-                };
-            };
+                }
+            }
             return (_local1.join(""));
         }
 
@@ -153,7 +153,7 @@ package com.google.analytics.data{
             if (((hasProject(_arg1)) && (!((_projectData[_arg1][_arg2] == undefined)))))
             {
                 return (_projectData[_arg1][_arg2][_arg3]);
-            };
+            }
             return (undefined);
         }
 
@@ -182,15 +182,15 @@ package com.google.analytics.data{
                     {
                         _local3 = false;
                         break;
-                    };
+                    }
                     _local4++;
-                };
+                }
                 if (_local3)
                 {
                     _projectData[_arg1] = undefined;
                     _hasData = (_hasData - 1);
-                };
-            };
+                }
+            }
         }
 
         public function getValue(_arg1:Number, _arg2:Number){
@@ -198,7 +198,7 @@ package com.google.analytics.data{
             if (_local3 == null)
             {
                 return (null);
-            };
+            }
             return (Number(_local3));
         }
 
@@ -218,9 +218,9 @@ package com.google.analytics.data{
                 } else
                 {
                     _local2 = (_local2 + _local4);
-                };
+                }
                 _local3++;
-            };
+            }
             return (_local2);
         }
 

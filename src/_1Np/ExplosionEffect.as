@@ -29,9 +29,9 @@ package _1Np{
                     } else
                     {
                         this._0hC = _arg3;
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         override public function runNormalRendering(_arg1:int, _arg2:int):Boolean{
@@ -40,11 +40,11 @@ package _1Np{
             if (this.xq.length == 0)
             {
                 return (false);
-            };
+            }
             if (ExplosionParticle.total_ > 400)
             {
                 return (false);
-            };
+            }
             var _local3:int;
             while (_local3 < this._0hC)
             {
@@ -52,7 +52,7 @@ package _1Np{
                 _local5 = new ExplosionParticle(_local4, 0.5, size_, (200 + (Math.random() * 100)), (Math.random() - 0.5), (Math.random() - 0.5), 0);
                 map_.addObj(_local5, x_, y_);
                 _local3++;
-            };
+            }
             return (false);
         }
 
@@ -62,11 +62,11 @@ package _1Np{
             if (this.xq.length == 0)
             {
                 return (false);
-            };
+            }
             if (ExplosionParticle.total_ > 400)
             {
                 return (false);
-            };
+            }
             this._0hC = 2;
             var _local3:int;
             while (_local3 < this._0hC)
@@ -75,7 +75,7 @@ package _1Np{
                 _local5 = new ExplosionParticle(_local4, 0.5, size_, (50 + (Math.random() * 100)), (Math.random() - 0.5), (Math.random() - 0.5), 0);
                 map_.addObj(_local5, x_, y_);
                 _local3++;
-            };
+            }
             return (false);
         }
 
@@ -114,9 +114,9 @@ class ExplosionParticle extends Particle {
             {
                 total_--;
                 this.deleted = true;
-            };
+            }
             return (false);
-        };
+        }
         x_ = (x_ + ((this.moveVec_.x * _arg2) * 0.008));
         y_ = (y_ + ((this.moveVec_.y * _arg2) * 0.008));
         z_ = (z_ + ((this.moveVec_.z * _arg2) * 0.008));

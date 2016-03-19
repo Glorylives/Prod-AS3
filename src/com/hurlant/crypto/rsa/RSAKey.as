@@ -44,7 +44,7 @@ package com.hurlant.crypto.rsa{
             if (_arg4 == null)
             {
                 return (new RSAKey(new 1OU(_arg1, 16, true), parseInt(_arg2, 16), new 1OU(_arg3, 16, true)));
-            };
+            }
             return (new RSAKey(new 1OU(_arg1, 16, true), parseInt(_arg2, 16), new 1OU(_arg3, 16, true), new 1OU(_arg4, 16, true), new 1OU(_arg5, 16, true), new 1OU(_arg6, 16, true), new 1OU(_arg7, 16, true), new 1OU(_arg8, 16, true)));
         }
 
@@ -64,18 +64,18 @@ package com.hurlant.crypto.rsa{
                 {
                     _local5.p = bigRandom((_arg1 - _local4), _local3);
                     if ((((_local5.p.P0(1OU.1nf).1PJ(_local6).0-6(1OU.1nf) == 0)) && (_local5.p.1Wq(10)))) break;
-                };
+                }
                 while (true)
                 {
                     _local5.q = bigRandom(_local4, _local3);
                     if ((((_local5.q.P0(1OU.1nf).1PJ(_local6).0-6(1OU.1nf) == 0)) && (_local5.q.1Wq(10)))) break;
-                };
+                }
                 if (_local5.p.0-6(_local5.q) <= 0)
                 {
                     _local10 = _local5.p;
                     _local5.p = _local5.q;
                     _local5.q = _local10;
-                };
+                }
                 _local7 = _local5.p.P0(1OU.1nf);
                 _local8 = _local5.q.P0(1OU.1nf);
                 _local9 = _local7.0QQ(_local8);
@@ -87,8 +87,8 @@ package com.hurlant.crypto.rsa{
                     _local5.dmq1 = _local5.d.MR(_local8);
                     _local5.coeff = _local5.q.1fN(_local5.p);
                     break;
-                };
-            };
+                }
+            }
             return (_local5);
         }
 
@@ -96,7 +96,7 @@ package com.hurlant.crypto.rsa{
             if (_arg1 < 2)
             {
                 return (1OU.d4(1));
-            };
+            }
             var _local3:ByteArray = new ByteArray();
             _arg2.nextBytes(_local3, (_arg1 >> 3));
             _local3.position = 0;
@@ -139,11 +139,11 @@ package com.hurlant.crypto.rsa{
             if (_arg5 == null)
             {
                 _arg5 = this.pkcs1pad;
-            };
+            }
             if (_arg2.position >= _arg2.length)
             {
                 _arg2.position = 0;
-            };
+            }
             var _local7:uint = this.getBlockSize();
             var _local8:int = (_arg2.position + _arg4);
             while (_arg2.position < _local8)
@@ -151,7 +151,7 @@ package com.hurlant.crypto.rsa{
                 _local9 = new 1OU(_arg5(_arg2, _local8, _local7, _arg6), _local7, true);
                 _local10 = _arg1(_local9);
                 _local10.toArray(_arg3);
-            };
+            }
         }
 
         private function _decrypt(_arg1:Function, _arg2:ByteArray, _arg3:ByteArray, _arg4:uint, _arg5:Function, _arg6:int):void{
@@ -161,11 +161,11 @@ package com.hurlant.crypto.rsa{
             if (_arg5 == null)
             {
                 _arg5 = this.pkcs1unpad;
-            };
+            }
             if (_arg2.position >= _arg2.length)
             {
                 _arg2.position = 0;
-            };
+            }
             var _local7:uint = this.getBlockSize();
             var _local8:int = (_arg2.position + _arg4);
             while (_arg2.position < _local8)
@@ -176,9 +176,9 @@ package com.hurlant.crypto.rsa{
                 if (_local11 == null)
                 {
                     throw (new TLSError("Decrypt error - padding function returned null!", TLSError.decode_error));
-                };
+                }
                 _arg3.writeBytes(_local11);
-            };
+            }
         }
 
         private function pkcs1pad(_arg1:ByteArray, _arg2:int, _arg3:uint, _arg4:uint=2):ByteArray{
@@ -193,7 +193,7 @@ package com.hurlant.crypto.rsa{
             {
                 var _local10 = --_arg3;
                 _local5[_local10] = _arg1[_local7--];
-            };
+            }
             _local10 = --_arg3;
             _local5[_local10] = 0;
             if (_arg4 == 2)
@@ -208,15 +208,15 @@ package com.hurlant.crypto.rsa{
                     } while (_local9 == 0);
                     var _local11 = --_arg3;
                     _local5[_local11] = _local9;
-                };
+                }
             } else
             {
                 while (_arg3 > 2)
                 {
                     _local11 = --_arg3;
                     _local5[_local11] = 0xFF;
-                };
-            };
+                }
+            }
             _local11 = --_arg3;
             _local5[_local11] = _arg4;
             var _local12 = --_arg3;
@@ -232,12 +232,12 @@ package com.hurlant.crypto.rsa{
             while ((((_local6 < _local4.length)) && ((_local4[_local6] == 0))))
             {
                 _local6++;
-            };
+            }
             if (((!(((_local4.length - _local6) == (_arg2 - 1)))) || (!((_local4[_local6] == _arg3)))))
             {
                 trace(((((("PKCS#1 unpad: i=" + _local6) + ", expected b[i]==") + _arg3) + ", got b[i]=") + _local4[_local6].toString(16)));
                 return (null);
-            };
+            }
             _local6++;
             while (_local4[_local6] != 0)
             {
@@ -246,12 +246,12 @@ package com.hurlant.crypto.rsa{
                 {
                     trace((((("PKCS#1 unpad: i=" + _local6) + ", b[i-1]!=0 (=") + _local4[(_local6 - 1)].toString(16)) + ")"));
                     return (null);
-                };
-            };
+                }
+            }
             while (++_local6 < _local4.length)
             {
                 _local5.writeByte(_local4[_local6]);
-            };
+            }
             _local5.position = 0;
             return (_local5);
         }
@@ -280,8 +280,8 @@ package com.hurlant.crypto.rsa{
                     _local1 = (_local1 + (("DMP1=" + this.dmp1.toString(16)) + "\n"));
                     _local1 = (_local1 + (("DMQ1=" + this.dmq1.toString(16)) + "\n"));
                     _local1 = (_local1 + (("IQMP=" + this.coeff.toString(16)) + "\n"));
-                };
-            };
+                }
+            }
             return (_local1);
         }
 
@@ -293,13 +293,13 @@ package com.hurlant.crypto.rsa{
             if ((((this.p == null)) && ((this.q == null))))
             {
                 return (_arg1.XC(this.d, this.n));
-            };
+            }
             var _local2:1OU = _arg1.MR(this.p).XC(this.dmp1, this.p);
             var _local3:1OU = _arg1.MR(this.q).XC(this.dmq1, this.q);
             while (_local2.0-6(_local3) < 0)
             {
                 _local2 = _local2.add(this.p);
-            };
+            }
             var _local4:1OU = _local2.P0(_local3).0QQ(this.coeff).MR(this.p).0QQ(this.q).add(_local3);
             return (_local4);
         }
@@ -308,13 +308,13 @@ package com.hurlant.crypto.rsa{
             if ((((this.p == null)) || ((this.q == null))))
             {
                 return (_arg1.XC(this.d, this.n));
-            };
+            }
             var _local2:1OU = _arg1.MR(this.p).XC(this.dmp1, this.p);
             var _local3:1OU = _arg1.MR(this.q).XC(this.dmq1, this.q);
             while (_local2.0-6(_local3) < 0)
             {
                 _local2 = _local2.add(this.p);
-            };
+            }
             return (_local2.P0(_local3).0QQ(this.coeff).MR(this.p).0QQ(this.q).add(_local3));
         }
 

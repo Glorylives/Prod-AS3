@@ -84,14 +84,14 @@ package 0Fa{
             {
                 this.0qt();
                 this.stage.focus = null;
-            };
+            }
         }
 
         private function 0VB(_arg1:1T5):void{
             if (_arg1.error == null)
             {
                 this.view.0IP();
-            };
+            }
         }
 
         override public function destroy():void{
@@ -108,7 +108,7 @@ package 0Fa{
                 this.stage.addEventListener(KeyboardEvent.KEY_DOWN, this.1lw);
                 this.stage.addEventListener(KeyboardEvent.KEY_UP, this.0M9);
                 this.WF = true;
-            };
+            }
         }
 
         private function IZ():void{
@@ -118,7 +118,7 @@ package 0Fa{
                 this.stage.removeEventListener(KeyboardEvent.KEY_UP, this.0M9);
                 this.stage.removeEventListener(Event.ENTER_FRAME, this.3C);
                 this.WF = false;
-            };
+            }
         }
 
         private function 1lw(_arg1:KeyboardEvent):void{
@@ -130,8 +130,8 @@ package 0Fa{
                 if (_arg1.keyCode == this.15l.1b4())
                 {
                     this.0eM(1);
-                };
-            };
+                }
+            }
         }
 
         private function 0eM(_arg1:int):void{
@@ -145,18 +145,18 @@ package 0Fa{
             if (this.1iu++ >= 1oi)
             {
                 this.1Tu.dispatch(this.0ZU);
-            };
+            }
         }
 
         private function 0M9(_arg1:KeyboardEvent):void{
             if (this.WF)
             {
                 this.0v5(_arg1.keyCode);
-            };
+            }
             if ((((_arg1.keyCode == this.15l.0KS())) || ((_arg1.keyCode == this.15l.1b4()))))
             {
                 this.view.removeEventListener(Event.ENTER_FRAME, this.3C);
-            };
+            }
         }
 
         private function 0v5(_arg1:uint):void{
@@ -180,11 +180,11 @@ package 0Fa{
                             if (_arg1 == this.15l._ZS())
                             {
                                 this.1qc((("/tell " + this.0KU.18g()) + " "));
-                            };
-                        };
-                    };
-                };
-            };
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private function 1qc(_arg1:String):void{
@@ -196,8 +196,8 @@ package 0Fa{
                 if (((!((this.11u.ja == null))) && (this.11u.ja.evalIsNotInCombatMapArea())))
                 {
                     this.0n2.dispatch(new 0KD(du.1H6));
-                };
-            };
+                }
+            }
         }
 
 

@@ -181,21 +181,21 @@ import flash.display3D.Program3D;
             if (((!((((WebMain._0Kr.stageWidth * 3) / 4) == this.stageWidth))) || (!((WebMain._0Kr.stageHeight == this.stageHeight)))))
             {
                 this._8W();
-            };
+            }
             if (_0lt._0uZ == true)
             {
                 this.Ui();
             } else
             {
                 this._0Zg();
-            };
+            }
             if (_arg6 > 0)
             {
                 this._04q(_arg1, _arg2, _arg3, _arg4, _arg5, _arg6);
             } else
             {
                 this.G7(_arg1, _arg2, _arg3, _arg4, _arg5);
-            };
+            }
             this.context3D.present();
             WebMain._0Kr.scaleMode = StageScaleMode.EXACT_FIT;
         }
@@ -204,7 +204,7 @@ import flash.display3D.Program3D;
             if ((((((WebMain._0Kr.stageWidth * 3) / 4) < 1)) || ((WebMain._0Kr.stageHeight < 1))))
             {
                 return;
-            };
+            }
             var _local1:Stage3D = WebMain._0Kr.stage3Ds[0];
             _local1.context3D.configureBackBuffer(((WebMain._0Kr.stageWidth * 3) / 4), WebMain._0Kr.stageHeight, 2, false);
             this.stageWidth = ((WebMain._0Kr.stageWidth * 3) / 4);
@@ -232,7 +232,7 @@ import flash.display3D.Program3D;
                     this.context3D._1tB().setVertexBufferAt(0, this.eT, 0, Context3DVertexBufferFormat.FLOAT_2);
                     this.context3D._1tB().setVertexBufferAt(1, this.eT, 2, Context3DVertexBufferFormat.FLOAT_2);
                     break;
-            };
+            }
             this.context3D._1tB().setVertexBufferAt(2, null);
             switch (_arg6)
             {
@@ -248,12 +248,12 @@ import flash.display3D.Program3D;
                     if ((((this._0xu[3] <= 0.2)) || ((this._0xu[3] >= 1.8))))
                     {
                         this._0xC = (this._0xC * -1);
-                    };
+                    }
                     this._0xu[3] = (this._0xu[3] + this._0xC);
                     this.context3D.setProgramConstantsFromMatrix(Context3DProgramType.VERTEX, 0, new Matrix3D());
                     this.context3D.setProgramConstantsFromVector(Context3DProgramType.FRAGMENT, 0, this._0xu, (this._0xu.length / 4));
                     break;
-            };
+            }
             this.context3D._1tB().clear(0, 0, 0, 1);
             this.context3D._1tB().drawTriangles(this._48);
         }
@@ -283,7 +283,7 @@ import flash.display3D.Program3D;
                     } catch(e:Error)
                     {
                         continue;
-                    };
+                    }
                     this._1sl._1zT(GraphicsBitmapFill(graphicsData), this.context3D);
                     finalTransform.identity();
                     finalTransform.append(this._1sl._1OH());
@@ -291,7 +291,7 @@ import flash.display3D.Program3D;
                     finalTransform.appendTranslation((this._0mA / _0M7.WIDTH), (this.pm / _0M7.HEIGHT), 0);
                     this.context3D.setProgramConstantsFromMatrix(Context3DProgramType.VERTEX, 0, finalTransform, true);
                     this._1sl._0zU(this.context3D);
-                };
+                }
                 if ((graphicsData is GraphicsGradientFill))
                 {
                     this.context3D._1tB().setProgram(this._0fi);
@@ -302,7 +302,7 @@ import flash.display3D.Program3D;
                     this.context3D.setProgramConstantsFromMatrix(Context3DProgramType.VERTEX, 0, finalTransform, true);
                     this.context3D.setProgramConstantsFromVector(Context3DProgramType.FRAGMENT, 4, Vector.<Number>([0.5, 0.25, 0, 0]));
                     this._1sl.dH(this.context3D);
-                };
+                }
                 if ((((graphicsData == null)) && (!((grahpicsData3d.length == 0)))))
                 {
                     try
@@ -321,9 +321,9 @@ import flash.display3D.Program3D;
                         index3d = (index3d + 1);
                     } catch(e:Error)
                     {
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function Ui():void{

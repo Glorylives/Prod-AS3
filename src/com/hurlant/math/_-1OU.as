@@ -37,16 +37,16 @@ package com.hurlant.math{
                 if (((_arg2) && (!((_arg2 == 16)))))
                 {
                     throw (new Error("BigInteger construction _with radix!=16 is not supported."));
-                };
+                }
                 _arg1 = Hex.toArray(_arg1);
                 _arg2 = 0;
-            };
+            }
             if ((_arg1 is ByteArray))
             {
                 _local4 = (_arg1 as ByteArray);
                 _local5 = ((_arg2) || ((_local4.length - _local4.position)));
                 this.fromArray(_local4, _local5, _arg3);
-            };
+            }
         }
 
         public static function d4(_arg1:int):1OU{
@@ -64,7 +64,7 @@ package com.hurlant.math{
                 this.a[_local2] = _local1.nextByte();
                 delete this.a[_local2];
                 _local2++;
-            };
+            }
             this.a = null;
             this.t = 0;
             this.s = 0;
@@ -76,7 +76,7 @@ package com.hurlant.math{
             if (this.s < 0)
             {
                 return (("-" + this.Cl().toString(_arg1)));
-            };
+            }
             switch (_arg1)
             {
                 case 2:
@@ -94,7 +94,7 @@ package com.hurlant.math{
                 case 32:
                     _local2 = 5;
                     break;
-            };
+            }
             var _local3:int = ((1 << _local2) - 1);
             var _local4:int;
             var _local5:Boolean;
@@ -109,7 +109,7 @@ package com.hurlant.math{
                 {
                     _local5 = true;
                     _local6 = _local4.toString(36);
-                };
+                }
                 while (_local7 >= 0)
                 {
                     if (_local8 < _local2)
@@ -126,18 +126,18 @@ package com.hurlant.math{
                         {
                             _local8 = (_local8 + 1Ic);
                             _local7--;
-                        };
-                    };
+                        }
+                    }
                     if (_local4 > 0)
                     {
                         _local5 = true;
-                    };
+                    }
                     if (_local5)
                     {
                         _local6 = (_local6 + _local4.toString(36));
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (((_local5) ? _local6 : "0"));
         }
 
@@ -158,7 +158,7 @@ package com.hurlant.math{
                     _local7 = true;
                     _arg1.writeByte(_local4);
                     _local8++;
-                };
+                }
                 while (_local5 >= 0)
                 {
                     if (_local6 < _local2)
@@ -175,19 +175,19 @@ package com.hurlant.math{
                         {
                             _local6 = (_local6 + 1Ic);
                             _local5--;
-                        };
-                    };
+                        }
+                    }
                     if (_local4 > 0)
                     {
                         _local7 = true;
-                    };
+                    }
                     if (_local7)
                     {
                         _arg1.writeByte(_local4);
                         _local8++;
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (_local8);
         }
 
@@ -195,7 +195,7 @@ package com.hurlant.math{
             if (this.s == -1)
             {
                 return (-(this.Cl().valueOf()));
-            };
+            }
             var _local1:Number = 1;
             var _local2:Number = 0;
             var _local3:uint;
@@ -204,7 +204,7 @@ package com.hurlant.math{
                 _local2 = (_local2 + (this.a[_local3] * _local1));
                 _local1 = (_local1 * U0);
                 _local3++;
-            };
+            }
             return (_local2);
         }
 
@@ -223,21 +223,21 @@ package com.hurlant.math{
             if (_local2 != 0)
             {
                 return (_local2);
-            };
+            }
             var _local3:int = this.t;
             _local2 = (_local3 - _arg1.t);
             if (_local2 != 0)
             {
                 return (_local2);
-            };
+            }
             while (--_local3 >= 0)
             {
                 _local2 = (this.a[_local3] - _arg1.a[_local3]);
                 if (_local2 != 0)
                 {
                     return (_local2);
-                };
-            };
+                }
+            }
             return (0);
         }
 
@@ -249,31 +249,31 @@ package com.hurlant.math{
             {
                 _arg1 = _local3;
                 _local2 = (_local2 + 16);
-            };
+            }
             _local3 = (_arg1 >> 8);
             if (_local3 != 0)
             {
                 _arg1 = _local3;
                 _local2 = (_local2 + 8);
-            };
+            }
             _local3 = (_arg1 >> 4);
             if (_local3 != 0)
             {
                 _arg1 = _local3;
                 _local2 = (_local2 + 4);
-            };
+            }
             _local3 = (_arg1 >> 2);
             if (_local3 != 0)
             {
                 _arg1 = _local3;
                 _local2 = (_local2 + 2);
-            };
+            }
             _local3 = (_arg1 >> 1);
             if (_local3 != 0)
             {
                 _arg1 = _local3;
                 _local2 = (_local2 + 1);
-            };
+            }
             return (_local2);
         }
 
@@ -281,7 +281,7 @@ package com.hurlant.math{
             if (this.t <= 0)
             {
                 return (0);
-            };
+            }
             return (((1Ic * (this.t - 1)) + this.091((this.a[(this.t - 1)] ^ (this.s & 1DT)))));
         }
 
@@ -291,7 +291,7 @@ package com.hurlant.math{
             if ((((this.s < 0)) && ((_local2.0-6(is) > 0))))
             {
                 _arg1.GV(_local2, _local2);
-            };
+            }
             return (_local2);
         }
 
@@ -303,7 +303,7 @@ package com.hurlant.math{
             } else
             {
                 _local3 = new EB(_arg2);
-            };
+            }
             return (this.exp(_arg1, _local3));
         }
 
@@ -313,7 +313,7 @@ package com.hurlant.math{
             {
                 _arg1.a[_local2] = this.a[_local2];
                 _local2--;
-            };
+            }
             _arg1.t = this.t;
             _arg1.s = this.s;
         }
@@ -332,8 +332,8 @@ package com.hurlant.math{
                 } else
                 {
                     this.t = 0;
-                };
-            };
+                }
+            }
         }
 
         bi_internal function fromArray(_arg1:ByteArray, _arg2:int, _arg3:Boolean=false):void{
@@ -361,22 +361,22 @@ package com.hurlant.math{
                     } else
                     {
                         this.a[(this.t - 1)] = (this.a[(this.t - 1)] | (_local8 << _local6));
-                    };
-                };
+                    }
+                }
                 _local6 = (_local6 + _local7);
                 if (_local6 >= 1Ic)
                 {
                     _local6 = (_local6 - 1Ic);
-                };
-            };
+                }
+            }
             if (((!(_arg3)) && (((_arg1[0] & 128) == 128))))
             {
                 this.s = -1;
                 if (_local6 > 0)
                 {
                     this.a[(this.t - 1)] = (this.a[(this.t - 1)] | (((1 << (1Ic - _local6)) - 1) << _local6));
-                };
-            };
+                }
+            }
             this.clamp();
             _arg1.position = Math.min((_local4 + _arg2), _arg1.length);
         }
@@ -386,7 +386,7 @@ package com.hurlant.math{
             while ((((this.t > 0)) && ((this.a[(this.t - 1)] == _local1))))
             {
                 this.t--;
-            };
+            }
         }
 
         bi_internal function 2-G(_arg1:int, _arg2:1OU):void{
@@ -396,13 +396,13 @@ package com.hurlant.math{
             {
                 _arg2.a[(_local3 + _arg1)] = this.a[_local3];
                 _local3--;
-            };
+            }
             _local3 = (_arg1 - 1);
             while (_local3 >= 0)
             {
                 _arg2.a[_local3] = 0;
                 _local3--;
-            };
+            }
             _arg2.t = (this.t + _arg1);
             _arg2.s = this.s;
         }
@@ -414,7 +414,7 @@ package com.hurlant.math{
             {
                 _arg2.a[(_local3 - _arg1)] = this.a[_local3];
                 _local3++;
-            };
+            }
             _arg2.t = Math.max((this.t - _arg1), 0);
             _arg2.s = this.s;
         }
@@ -432,13 +432,13 @@ package com.hurlant.math{
                 _arg2.a[((_local8 + _local6) + 1)] = ((this.a[_local8] >> _local4) | _local7);
                 _local7 = ((this.a[_local8] & _local5) << _local3);
                 _local8--;
-            };
+            }
             _local8 = (_local6 - 1);
             while (_local8 >= 0)
             {
                 _arg2.a[_local8] = 0;
                 _local8--;
-            };
+            }
             _arg2.a[_local6] = _local7;
             _arg2.t = ((this.t + _local6) + 1);
             _arg2.s = this.s;
@@ -453,7 +453,7 @@ package com.hurlant.math{
             {
                 _arg2.t = 0;
                 return;
-            };
+            }
             var _local4:int = (_arg1 % 1Ic);
             var _local5:int = (1Ic - _local4);
             var _local6:int = ((1 << _local4) - 1);
@@ -464,11 +464,11 @@ package com.hurlant.math{
                 _arg2.a[((_local7 - _local3) - 1)] = (_arg2.a[((_local7 - _local3) - 1)] | ((this.a[_local7] & _local6) << _local5));
                 _arg2.a[(_local7 - _local3)] = (this.a[_local7] >> _local4);
                 _local7++;
-            };
+            }
             if (_local4 > 0)
             {
                 _arg2.a[((this.t - _local3) - 1)] = (_arg2.a[((this.t - _local3) - 1)] | ((this.s & _local6) << _local5));
-            };
+            }
             _arg2.t = (this.t - _local3);
             _arg2.clamp();
         }
@@ -483,7 +483,7 @@ package com.hurlant.math{
                 var _local6 = _local3++;
                 _arg2.a[_local6] = (_local4 & 1DT);
                 _local4 = (_local4 >> 1Ic);
-            };
+            }
             if (_arg1.t < this.t)
             {
                 _local4 = (_local4 - _arg1.s);
@@ -493,7 +493,7 @@ package com.hurlant.math{
                     _local6 = _local3++;
                     _arg2.a[_local6] = (_local4 & 1DT);
                     _local4 = (_local4 >> 1Ic);
-                };
+                }
                 _local4 = (_local4 + this.s);
             } else
             {
@@ -504,9 +504,9 @@ package com.hurlant.math{
                     _local6 = _local3++;
                     _arg2.a[_local6] = (_local4 & 1DT);
                     _local4 = (_local4 >> 1Ic);
-                };
+                }
                 _local4 = (_local4 - _arg1.s);
-            };
+            }
             _arg2.s = (((_local4)<0) ? -1 : 0);
             if (_local4 < -1)
             {
@@ -518,8 +518,8 @@ package com.hurlant.math{
                 {
                     _local6 = _local3++;
                     _arg2.a[_local6] = _local4;
-                };
-            };
+                }
+            }
             _arg2.t = _local3;
             _arg2.clamp();
         }
@@ -539,7 +539,7 @@ package com.hurlant.math{
                 _arg5 = ((((_local9 >>> 30) + (_local11 >>> 15)) + (_local8 * _local10)) + (_arg5 >>> 30));
                 var _local12 = _arg4++;
                 _arg3.a[_local12] = (_local9 & 1073741823);
-            };
+            }
             return (_arg5);
         }
 
@@ -551,19 +551,19 @@ package com.hurlant.math{
             while (--_local5 >= 0)
             {
                 _arg2.a[_local5] = 0;
-            };
+            }
             _local5 = 0;
             while (_local5 < _local4.t)
             {
                 _arg2.a[(_local5 + _local3.t)] = _local3.am(0, _local4.a[_local5], _arg2, _local5, 0, _local3.t);
                 _local5++;
-            };
+            }
             _arg2.s = 0;
             _arg2.clamp();
             if (this.s != _arg1.s)
             {
                 is.GV(_arg2, _arg2);
-            };
+            }
         }
 
         bi_internal function 1dy(_arg1:1OU):void{
@@ -573,7 +573,7 @@ package com.hurlant.math{
             while (--_local3 >= 0)
             {
                 _arg1.a[_local3] = 0;
-            };
+            }
             _local3 = 0;
             while (_local3 < (_local2.t - 1))
             {
@@ -582,13 +582,13 @@ package com.hurlant.math{
                 {
                     _arg1.a[(_local3 + _local2.t)] = (_arg1.a[(_local3 + _local2.t)] - U0);
                     _arg1.a[((_local3 + _local2.t) + 1)] = 1;
-                };
+                }
                 _local3++;
-            };
+            }
             if (_arg1.t > 0)
             {
                 _arg1.a[(_arg1.t - 1)] = (_arg1.a[(_arg1.t - 1)] + _local2.am(_local3, _local2.a[_local3], _arg1, (2 * _local3), 0, 1));
-            };
+            }
             _arg1.s = 0;
             _arg1.clamp();
         }
@@ -602,24 +602,24 @@ package com.hurlant.math{
             if (pm.t <= 0)
             {
                 return;
-            };
+            }
             var pt:1OU = this.abs();
             if (pt.t < pm.t)
             {
                 if (q != null)
                 {
                     q.0BZ(0);
-                };
+                }
                 if (r != null)
                 {
                     this.copyTo(r);
-                };
+                }
                 return;
-            };
+            }
             if (r == null)
             {
                 r = this.fm();
-            };
+            }
             var y:1OU = this.fm();
             var ts:int = this.s;
             var ms:int = m.s;
@@ -632,13 +632,13 @@ package com.hurlant.math{
             {
                 pm.copyTo(y);
                 pt.copyTo(r);
-            };
+            }
             var ys:int = y.t;
             var y0:int = y.a[(ys - 1)];
             if (y0 == 0)
             {
                 return;
-            };
+            }
             var yt:Number = ((y0 * (1 << F1)) + (((ys)>1) ? (y.a[(ys - 2)] >> F2) : 0));
             var d1:Number = (he / yt);
             var d2:Number = ((1 << F1) / yt);
@@ -652,13 +652,13 @@ package com.hurlant.math{
                 var _local5 = r.t++;
                 r.a[_local5] = 1;
                 r.GV(t, r);
-            };
+            }
             1nf.2-G(ys, t);
             t.GV(y, y);
             while (y.t < ys)
             {
                 y.(y.t++); //not popped
-            };
+            }
             while ((j = (j - 1)), j >= 0)
             {
                 qd = (((r.a[--i])==y0) ? 1DT : ((Number(r.a[i]) * d1) + ((Number(r.a[(i - 1)]) + e) * d2)));
@@ -669,39 +669,39 @@ package com.hurlant.math{
                     while ((qd = (qd - 1)), r.a[i] < qd)
                     {
                         r.GV(t, r);
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (q != null)
             {
                 r.0nR(ys, q);
                 if (ts != ms)
                 {
                     is.GV(q, q);
-                };
-            };
+                }
+            }
             r.t = ys;
             r.clamp();
             if (nsh > 0)
             {
                 r.Y7(nsh, r);
-            };
+            }
             if (ts < 0)
             {
                 is.GV(r, r);
-            };
+            }
         }
 
         bi_internal function 0Rt():int{
             if (this.t < 1)
             {
                 return (0);
-            };
+            }
             var _local1:int = this.a[0];
             if ((_local1 & 1) == 0)
             {
                 return (0);
-            };
+            }
             var _local2 = (_local1 & 3);
             _local2 = ((_local2 * (2 - ((_local1 & 15) * _local2))) & 15);
             _local2 = ((_local2 * (2 - ((_local1 & 0xFF) * _local2))) & 0xFF);
@@ -719,7 +719,7 @@ package com.hurlant.math{
             if ((((_arg1 > 0xFFFFFFFF)) || ((_arg1 < 1))))
             {
                 return (1nf);
-            };
+            }
             var _local3:1OU = this.fm();
             var _local4:1OU = this.fm();
             var _local5:1OU = _arg2.1Z2(this);
@@ -736,8 +736,8 @@ package com.hurlant.math{
                     _local7 = _local3;
                     _local3 = _local4;
                     _local4 = _local7;
-                };
-            };
+                }
+            }
             return (_arg2.1cz(_local3));
         }
 
@@ -761,22 +761,22 @@ package com.hurlant.math{
                 if (this.t == 1)
                 {
                     return ((this.a[0] - U0));
-                };
+                }
                 if (this.t == 0)
                 {
                     return (-1);
-                };
+                }
             } else
             {
                 if (this.t == 1)
                 {
                     return (this.a[0]);
-                };
+                }
                 if (this.t == 0)
                 {
                     return (0);
-                };
-            };
+                }
+            }
             return ((((this.a[1] & ((1 << (32 - 1Ic)) - 1)) << 1Ic) | this.a[0]));
         }
 
@@ -796,11 +796,11 @@ package com.hurlant.math{
             if (this.s < 0)
             {
                 return (-1);
-            };
+            }
             if ((((this.t <= 0)) || ((((this.t == 1)) && ((this.a[0] <= 0))))))
             {
                 return (0);
-            };
+            }
             return (1);
         }
 
@@ -808,7 +808,7 @@ package com.hurlant.math{
             if ((((((this.aa() == 0)) || ((_arg1 < 2)))) || ((_arg1 > 32))))
             {
                 return ("0");
-            };
+            }
             var _local2:int = this.m8(_arg1);
             var _local3:Number = Math.pow(_arg1, _local2);
             var _local4:1OU = d4(_local3);
@@ -820,7 +820,7 @@ package com.hurlant.math{
             {
                 _local7 = ((_local3 + _local6.0SA()).toString(_arg1).substr(1) + _local7);
                 _local5.cZ(_local4, _local5, _local6);
-            };
+            }
             return ((_local6.0SA().toString(_arg1) + _local7));
         }
 
@@ -841,7 +841,7 @@ package com.hurlant.math{
                     if ((((_arg1.charAt(_local8) == "-")) && ((this.aa() == 0))))
                     {
                         _local5 = true;
-                    };
+                    }
                 } else
                 {
                     _local7 = ((_arg2 * _local7) + _local9);
@@ -852,19 +852,19 @@ package com.hurlant.math{
                         this.1PC(_local7, 0);
                         _local6 = 0;
                         _local7 = 0;
-                    };
-                };
+                    }
+                }
                 _local8++;
-            };
+            }
             if (_local6 > 0)
             {
                 this.01x(Math.pow(_arg2, _local6));
                 this.1PC(_local7, 0);
-            };
+            }
             if (_local5)
             {
                 1OU.is.GV(this, this);
-            };
+            }
         }
 
         public function us():ByteArray{
@@ -882,7 +882,7 @@ package com.hurlant.math{
                 {
                     var _local6 = _local5++;
                     _local2[_local6] = (_local4 | (this.s << (1Ic - _local3)));
-                };
+                }
                 while (_local1 >= 0)
                 {
                     if (_local3 < 8)
@@ -899,23 +899,23 @@ package com.hurlant.math{
                         {
                             _local3 = (_local3 + 1Ic);
                             _local1--;
-                        };
-                    };
+                        }
+                    }
                     if ((_local4 & 128) != 0)
                     {
                         _local4 = (_local4 | -256);
-                    };
+                    }
                     if ((((_local5 == 0)) && (!(((this.s & 128) == (_local4 & 128))))))
                     {
                         _local5++;
-                    };
+                    }
                     if ((((_local5 > 0)) || (!((_local4 == this.s)))))
                     {
                         _local6 = _local5++;
                         _local2[_local6] = _local4;
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (_local2);
         }
 
@@ -940,7 +940,7 @@ package com.hurlant.math{
             {
                 _arg3.a[_local4] = _arg2(this.a[_local4], _arg1.a[_local4]);
                 _local4++;
-            };
+            }
             if (_arg1.t < this.t)
             {
                 _local5 = (_arg1.s & 1DT);
@@ -949,7 +949,7 @@ package com.hurlant.math{
                 {
                     _arg3.a[_local4] = _arg2(this.a[_local4], _local5);
                     _local4++;
-                };
+                }
                 _arg3.t = this.t;
             } else
             {
@@ -959,9 +959,9 @@ package com.hurlant.math{
                 {
                     _arg3.a[_local4] = _arg2(_local5, _arg1.a[_local4]);
                     _local4++;
-                };
+                }
                 _arg3.t = _arg1.t;
-            };
+            }
             _arg3.s = _arg2(this.s, _arg1.s);
             _arg3.clamp();
         }
@@ -1013,7 +1013,7 @@ package com.hurlant.math{
             {
                 _local1[_local2] = (1DT & ~(this.a[_local2]));
                 _local2++;
-            };
+            }
             _local1.t = this.t;
             _local1.s = ~(this.s);
             return (_local1);
@@ -1027,7 +1027,7 @@ package com.hurlant.math{
             } else
             {
                 this.1gK(_arg1, _local2);
-            };
+            }
             return (_local2);
         }
 
@@ -1039,7 +1039,7 @@ package com.hurlant.math{
             } else
             {
                 this.Y7(_arg1, _local2);
-            };
+            }
             return (_local2);
         }
 
@@ -1047,32 +1047,32 @@ package com.hurlant.math{
             if (_arg1 == 0)
             {
                 return (-1);
-            };
+            }
             var _local2:int;
             if ((_arg1 & 0xFFFF) == 0)
             {
                 _arg1 = (_arg1 >> 16);
                 _local2 = (_local2 + 16);
-            };
+            }
             if ((_arg1 & 0xFF) == 0)
             {
                 _arg1 = (_arg1 >> 8);
                 _local2 = (_local2 + 8);
-            };
+            }
             if ((_arg1 & 15) == 0)
             {
                 _arg1 = (_arg1 >> 4);
                 _local2 = (_local2 + 4);
-            };
+            }
             if ((_arg1 & 3) == 0)
             {
                 _arg1 = (_arg1 >> 2);
                 _local2 = (_local2 + 2);
-            };
+            }
             if ((_arg1 & 1) == 0)
             {
                 _local2++;
-            };
+            }
             return (_local2);
         }
 
@@ -1083,13 +1083,13 @@ package com.hurlant.math{
                 if (this.a[_local1] != 0)
                 {
                     return (((_local1 * 1Ic) + this.fI(this.a[_local1])));
-                };
+                }
                 _local1++;
-            };
+            }
             if (this.s < 0)
             {
                 return ((this.t * 1Ic));
-            };
+            }
             return (-1);
         }
 
@@ -1099,7 +1099,7 @@ package com.hurlant.math{
             {
                 _arg1 = (_arg1 & (_arg1 - 1));
                 _local2++;
-            };
+            }
             return (_local2);
         }
 
@@ -1111,7 +1111,7 @@ package com.hurlant.math{
             {
                 _local1 = (_local1 + this.1-h((this.a[_local3] ^ _local2)));
                 _local3++;
-            };
+            }
             return (_local1);
         }
 
@@ -1120,7 +1120,7 @@ package com.hurlant.math{
             if (_local2 >= this.t)
             {
                 return (!((this.s == 0)));
-            };
+            }
             return (!(((this.a[_local2] & (1 << (_arg1 % 1Ic))) == 0)));
         }
 
@@ -1152,7 +1152,7 @@ package com.hurlant.math{
                 var _local6 = _local3++;
                 _arg2.a[_local6] = (_local4 & 1DT);
                 _local4 = (_local4 >> 1Ic);
-            };
+            }
             if (_arg1.t < this.t)
             {
                 _local4 = (_local4 + _arg1.s);
@@ -1162,7 +1162,7 @@ package com.hurlant.math{
                     _local6 = _local3++;
                     _arg2.a[_local6] = (_local4 & 1DT);
                     _local4 = (_local4 >> 1Ic);
-                };
+                }
                 _local4 = (_local4 + this.s);
             } else
             {
@@ -1173,9 +1173,9 @@ package com.hurlant.math{
                     _local6 = _local3++;
                     _arg2.a[_local6] = (_local4 & 1DT);
                     _local4 = (_local4 >> 1Ic);
-                };
+                }
                 _local4 = (_local4 + _arg1.s);
-            };
+            }
             _arg2.s = (((_local4)<0) ? -1 : 0);
             if (_local4 > 0)
             {
@@ -1187,8 +1187,8 @@ package com.hurlant.math{
                 {
                     _local6 = _local3++;
                     _arg2.a[_local6] = (U0 + _local4);
-                };
-            };
+                }
+            }
             _arg2.t = _local3;
             _arg2.clamp();
         }
@@ -1241,7 +1241,7 @@ package com.hurlant.math{
             {
                 var _local3 = this.t++;
                 this.a[_local3] = 0;
-            };
+            }
             this.a[_arg2] = (this.a[_arg2] + _arg1);
             while (this.a[_arg2] >= U0)
             {
@@ -1251,12 +1251,12 @@ package com.hurlant.math{
                 {
                     _local3 = this.t++;
                     this.a[_local3] = 0;
-                };
+                }
                 _local3 = this.a;
                 var _local4 = _arg2;
                 var _local5 = (_local3[_local4] + 1);
                 _local3[_local4] = _local5;
-            };
+            }
         }
 
         public function pow(_arg1:int):1OU{
@@ -1272,19 +1272,19 @@ package com.hurlant.math{
             {
                 var _local6 = --_local4;
                 _arg3.a[_local6] = 0;
-            };
+            }
             _local5 = (_arg3.t - this.t);
             while (_local4 < _local5)
             {
                 _arg3.a[(_local4 + this.t)] = this.am(0, _arg1.a[_local4], _arg3, _local4, 0, this.t);
                 _local4++;
-            };
+            }
             _local5 = Math.min(_arg1.t, _arg2);
             while (_local4 < _local5)
             {
                 this.am(0, _arg1.a[_local4], _arg3, _local4, 0, (_arg2 - _local4));
                 _local4++;
-            };
+            }
             _arg3.clamp();
         }
 
@@ -1295,13 +1295,13 @@ package com.hurlant.math{
             while (--_local4 >= 0)
             {
                 _arg3.a[_local4] = 0;
-            };
+            }
             _local4 = Math.max((_arg2 - this.t), 0);
             while (_local4 < _arg1.t)
             {
                 _arg3.a[((this.t + _local4) - _arg2)] = this.am((_arg2 - _local4), _arg1.a[_local4], _arg3, 0, 0, ((this.t + _local4) - _arg2));
                 _local4++;
-            };
+            }
             _arg3.clamp();
             _arg3.0nR(1, _arg3);
         }
@@ -1317,7 +1317,7 @@ package com.hurlant.math{
             if (_local3 <= 0)
             {
                 return (_local5);
-            };
+            }
             if (_local3 < 18)
             {
                 _local4 = 1;
@@ -1339,10 +1339,10 @@ package com.hurlant.math{
                         } else
                         {
                             _local4 = 6;
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             if (_local3 < 8)
             {
                 _local6 = new Nm(_arg2);
@@ -1354,8 +1354,8 @@ package com.hurlant.math{
                 } else
                 {
                     _local6 = new EB(_arg2);
-                };
-            };
+                }
+            }
             var _local7:Array = [];
             var _local8:int = 3;
             var _local9:int = (_local4 - 1);
@@ -1370,8 +1370,8 @@ package com.hurlant.math{
                     _local7[_local8] = new 1OU();
                     _local6.Ex(_local16, _local7[(_local8 - 2)], _local7[_local8]);
                     _local8 = (_local8 + 2);
-                };
-            };
+                }
+            }
             var _local11:int = (_arg1.t - 1);
             var _local13:Boolean = true;
             var _local14:1OU = new 1OU();
@@ -1387,20 +1387,20 @@ package com.hurlant.math{
                     if (_local11 > 0)
                     {
                         _local12 = (_local12 | (_arg1.a[(_local11 - 1)] >> ((1Ic + _local3) - _local9)));
-                    };
-                };
+                    }
+                }
                 _local8 = _local4;
                 while ((_local12 & 1) == 0)
                 {
                     _local12 = (_local12 >> 1);
                     _local8--;
-                };
+                }
                 _local3 = (_local3 - _local8);
                 if (_local3 < 0)
                 {
                     _local3 = (_local3 + 1Ic);
                     _local11--;
-                };
+                }
                 if (_local13)
                 {
                     _local7[_local12].copyTo(_local5);
@@ -1412,7 +1412,7 @@ package com.hurlant.math{
                         _local6.1yM(_local5, _local14);
                         _local6.1yM(_local14, _local5);
                         _local8 = (_local8 - 2);
-                    };
+                    }
                     if (_local8 > 0)
                     {
                         _local6.1yM(_local5, _local14);
@@ -1421,9 +1421,9 @@ package com.hurlant.math{
                         _local15 = _local5;
                         _local5 = _local14;
                         _local14 = _local15;
-                    };
+                    }
                     _local6.Ex(_local14, _local7[_local12], _local5);
-                };
+                }
                 while ((((_local11 >= 0)) && (((_arg1.a[_local11] & (1 << _local3)) == 0))))
                 {
                     _local6.1yM(_local5, _local14);
@@ -1435,9 +1435,9 @@ package com.hurlant.math{
                     {
                         _local3 = (1Ic - 1);
                         _local11--;
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (_local6.1cz(_local5));
         }
 
@@ -1450,34 +1450,34 @@ package com.hurlant.math{
                 _local6 = _local2;
                 _local2 = _local3;
                 _local3 = _local6;
-            };
+            }
             var _local4:int = _local2.1OV();
             var _local5:int = _local3.1OV();
             if (_local5 < 0)
             {
                 return (_local2);
-            };
+            }
             if (_local4 < _local5)
             {
                 _local5 = _local4;
-            };
+            }
             if (_local5 > 0)
             {
                 _local2.Y7(_local5, _local2);
                 _local3.Y7(_local5, _local3);
-            };
+            }
             while (_local2.aa() > 0)
             {
                 _local4 = _local2.1OV();
                 if (_local4 > 0)
                 {
                     _local2.Y7(_local4, _local2);
-                };
+                }
                 _local4 = _local3.1OV();
                 if (_local4 > 0)
                 {
                     _local3.Y7(_local4, _local3);
-                };
+                }
                 if (_local2.0-6(_local3) >= 0)
                 {
                     _local2.GV(_local3, _local2);
@@ -1486,12 +1486,12 @@ package com.hurlant.math{
                 {
                     _local3.GV(_local2, _local3);
                     _local3.Y7(1, _local3);
-                };
-            };
+                }
+            }
             if (_local5 > 0)
             {
                 _local3.1gK(_local5, _local3);
-            };
+            }
             return (_local3);
         }
 
@@ -1500,7 +1500,7 @@ package com.hurlant.math{
             if (_arg1 <= 0)
             {
                 return (0);
-            };
+            }
             var _local2:int = (U0 % _arg1);
             var _local3:int = (((this.s)<0) ? (_arg1 - 1) : 0);
             if (this.t > 0)
@@ -1515,9 +1515,9 @@ package com.hurlant.math{
                     {
                         _local3 = (((_local2 * _local3) + this.a[_local4]) % _arg1);
                         _local4--;
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (_local3);
         }
 
@@ -1526,7 +1526,7 @@ package com.hurlant.math{
             if (((((this.0Se()) && (_local2))) || ((_arg1.aa() == 0))))
             {
                 return (1OU.is);
-            };
+            }
             var _local3:1OU = _arg1.clone();
             var _local4:1OU = this.clone();
             var _local5:1OU = d4(1);
@@ -1544,17 +1544,17 @@ package com.hurlant.math{
                         {
                             _local5.addTo(this, _local5);
                             _local6.GV(_arg1, _local6);
-                        };
+                        }
                         _local5.Y7(1, _local5);
                     } else
                     {
                         if (!_local6.0Se())
                         {
                             _local6.GV(_arg1, _local6);
-                        };
-                    };
+                        }
+                    }
                     _local6.Y7(1, _local6);
-                };
+                }
                 while (_local4.0Se())
                 {
                     _local4.Y7(1, _local4);
@@ -1564,24 +1564,24 @@ package com.hurlant.math{
                         {
                             _local7.addTo(this, _local7);
                             _local8.GV(_arg1, _local8);
-                        };
+                        }
                         _local7.Y7(1, _local7);
                     } else
                     {
                         if (!_local8.0Se())
                         {
                             _local8.GV(_arg1, _local8);
-                        };
-                    };
+                        }
+                    }
                     _local8.Y7(1, _local8);
-                };
+                }
                 if (_local3.0-6(_local4) >= 0)
                 {
                     _local3.GV(_local4, _local3);
                     if (_local2)
                     {
                         _local5.GV(_local7, _local5);
-                    };
+                    }
                     _local6.GV(_local8, _local6);
                 } else
                 {
@@ -1589,29 +1589,29 @@ package com.hurlant.math{
                     if (_local2)
                     {
                         _local7.GV(_local5, _local7);
-                    };
+                    }
                     _local8.GV(_local6, _local8);
-                };
-            };
+                }
+            }
             if (_local4.0-6(1OU.1nf) != 0)
             {
                 return (1OU.is);
-            };
+            }
             if (_local8.0-6(_arg1) >= 0)
             {
                 return (_local8.P0(_arg1));
-            };
+            }
             if (_local8.aa() < 0)
             {
                 _local8.addTo(_arg1, _local8);
             } else
             {
                 return (_local8);
-            };
+            }
             if (_local8.aa() < 0)
             {
                 return (_local8.add(_arg1));
-            };
+            }
             return (_local8);
         }
 
@@ -1628,15 +1628,15 @@ package com.hurlant.math{
                     if (_local3[0] == 1bG[_local2])
                     {
                         return (true);
-                    };
+                    }
                     _local2++;
-                };
+                }
                 return (false);
-            };
+            }
             if (_local3.0Se())
             {
                 return (false);
-            };
+            }
             _local2 = 1;
             while (_local2 < 1bG.length)
             {
@@ -1645,16 +1645,16 @@ package com.hurlant.math{
                 while ((((_local5 < 1bG.length)) && ((_local4 < 1no))))
                 {
                     _local4 = (_local4 * 1bG[_local5++]);
-                };
+                }
                 _local4 = _local3.Ub(_local4);
                 while (_local2 < _local5)
                 {
                     if ((_local4 % 1bG[_local2++]) == 0)
                     {
                         return (false);
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (_local3.0op(_arg1));
         }
 
@@ -1666,13 +1666,13 @@ package com.hurlant.math{
             if (_local3 <= 0)
             {
                 return (false);
-            };
+            }
             var _local4:1OU = _local2.275(_local3);
             _arg1 = ((_arg1 + 1) >> 1);
             if (_arg1 > 1bG.length)
             {
                 _arg1 = 1bG.length;
-            };
+            }
             var _local5:1OU = new 1OU();
             var _local6:int;
             while (_local6 < _arg1)
@@ -1688,15 +1688,15 @@ package com.hurlant.math{
                         if (_local7.0-6(1OU.1nf) == 0)
                         {
                             return (false);
-                        };
-                    };
+                        }
+                    }
                     if (_local7.0-6(_local2) != 0)
                     {
                         return (false);
-                    };
-                };
+                    }
+                }
                 _local6++;
-            };
+            }
             return (true);
         }
 
@@ -1704,19 +1704,19 @@ package com.hurlant.math{
             if (!this.Gl((_arg1 - 1)))
             {
                 this.097(1OU.1nf.ah((_arg1 - 1)), this.13p, this);
-            };
+            }
             if (this.0Se())
             {
                 this.1PC(1, 0);
-            };
+            }
             while (!(this.1Wq(_arg2)))
             {
                 this.1PC(2, 0);
                 while (this.Rj() > _arg1)
                 {
                     this.GV(1OU.1nf.ah((_arg1 - 1)), this);
-                };
-            };
+                }
+            }
         }
 
 

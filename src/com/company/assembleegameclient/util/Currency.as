@@ -24,7 +24,7 @@ package com.company.assembleegameclient.util{
                     return ("Guild Fame");
                 case Ls:
                     return ("Fortune Token");
-            };
+            }
             return ("");
         }
 

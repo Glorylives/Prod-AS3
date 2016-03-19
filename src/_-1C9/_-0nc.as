@@ -19,7 +19,7 @@ package 1C9{
             if (this.client.yb())
             {
                 this.06J.26v();
-            };
+            }
         }
 
 

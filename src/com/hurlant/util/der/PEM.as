@@ -24,13 +24,13 @@ package com.hurlant.util.der{
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             var _local3:* = DER.parse(_local2);
             if ((_local3 is Array))
             {
                 _local4 = (_local3 as Array);
                 return (new RSAKey(_local4[1], _local4[2].valueOf(), _local4[3], _local4[4], _local4[5], _local4[6], _local4[7], _local4[8]));
-            };
+            }
             return (null);
         }
 
@@ -40,7 +40,7 @@ package com.hurlant.util.der{
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             var _local3:* = DER.parse(_local2);
             if ((_local3 is Array))
             {
@@ -48,19 +48,19 @@ package com.hurlant.util.der{
                 if (_local4[0][0].toString() != OID.RSA_ENCRYPTION)
                 {
                     return (null);
-                };
+                }
                 if (_local4[1][_local4[1].position] == 0)
                 {
                     _local4[1].position++;
-                };
+                }
                 _local3 = DER.parse(_local4[1]);
                 if ((_local3 is Array))
                 {
                     _local4 = (_local3 as Array);
                     return (new RSAKey(_local4[0], _local4[1]));
-                };
+                }
                 return (null);
-            };
+            }
             return (null);
         }
 
@@ -74,13 +74,13 @@ package com.hurlant.util.der{
             if (_local4 == -1)
             {
                 return (null);
-            };
+            }
             _local4 = (_local4 + _arg1.length);
             var _local5:int = _arg3.indexOf(_arg2);
             if (_local5 == -1)
             {
                 return (null);
-            };
+            }
             var _local6:String = _arg3.substring(_local4, _local5);
             _local6 = _local6.replace(/\s/mg, "");
             return (Base64.decodeToByteArray(_local6));

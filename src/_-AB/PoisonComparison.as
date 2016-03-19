@@ -46,7 +46,7 @@ package AB{
                 }).setPrefix(TR.1pw(1kE((avg - otherAvg)))).setPostfix(TR.17H());
                 1Tf.pushParams(du.22a, {data:dataLineBuilder});
                 ZX[activate[0].toXMLString()] = true;
-            };
+            }
         }
 
 

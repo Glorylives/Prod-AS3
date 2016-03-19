@@ -151,7 +151,7 @@ public class _kM {
             if (this.max == _1W5)
             {
                 return (true);
-            };
+            }
             return ((this._00F < this.JN));
         }
 

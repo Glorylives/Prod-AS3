@@ -53,7 +53,7 @@ package Ct{
             {
                 this.Si.0RN(1co.0ws(1dH.0Yx(_arg1.06h.1qz())));
                 this.Si.1vA(1co.24K(1dH.0Yx(_arg1.06h.1qz())));
-            };
+            }
             this.1tf.clicked.add(this.D2);
             this.04K();
             this.Fl();

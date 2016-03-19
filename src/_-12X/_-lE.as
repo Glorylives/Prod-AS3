@@ -54,7 +54,7 @@ package 12X{
             {
                 this.0G1.inputText_.1wG("");
                 this.22L = true;
-            };
+            }
             I2(this.0G1);
             this.1tf = new KC();
             this.1tf.y = -2;
@@ -77,7 +77,7 @@ package 12X{
             if (((parent) && (parent.contains(this))))
             {
                 parent.removeChild(this);
-            };
+            }
         }
 
         private function 03a(_arg1:MouseEvent):void{
@@ -87,11 +87,11 @@ package 12X{
             {
                 _local2 = _1JZ.0JF().getInstance(Fu);
                 _local2.complete.addOnce(this.onComplete);
-                _local3 = {newGuid:this.0G1.text()};
+                _local3 = {newGuid:this.0G1.text()}
                 1X3.1J7(_local3, this.account.1Y());
                 _local2.sendRequest("account/changeEmail", _local3);
                 9u.removeEventListener(MouseEvent.CLICK, this.03a);
-            };
+            }
         }
 
         private function onComplete(_arg1:Boolean, _arg2):void{
@@ -101,7 +101,7 @@ package 12X{
             } else
             {
                 this.0ys(_arg2);
-            };
+            }
             9u.addEventListener(MouseEvent.CLICK, this.03a);
         }
 
@@ -110,7 +110,7 @@ package 12X{
             if (!this.22L)
             {
                 _local1.19R(this.0G1.text(), _local1.DX());
-            };
+            }
             removeChild(064);
             064 = new _13j().setSize(12).setColor(0xB3B3B3);
             064.setStringBuilder(new 1cA().setParams("WebAccountDetailDialog.sent"));
@@ -137,7 +137,7 @@ package 12X{
             if (!_local1)
             {
                 this.0G1.07n(du.PU);
-            };
+            }
             return (_local1);
         }
 

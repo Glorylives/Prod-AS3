@@ -29,7 +29,7 @@ import flash.events.MouseEvent;
             if (_arg1 == mouseEnabled)
             {
                 return;
-            };
+            }
             mouseEnabled = _arg1;
             graphicsData_[0] = ((_arg1) ? _0dT : _1pM);
             this.draw();

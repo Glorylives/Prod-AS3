@@ -32,18 +32,18 @@ package 1zG{
             {
                 0Ep.23n(this.tiles_[_local2]);
                 _local2++;
-            };
+            }
             this.tiles_.length = Math.min(_local3, this.tiles_.length);
             while (this.tiles_.length < _local3)
             {
                 this.tiles_.push((0Ep.sH(0Uf) as 0Uf));
-            };
+            }
             _local2 = 0;
             while (_local2 < _local3)
             {
                 this.tiles_[_local2].parseFromInput(_arg1);
                 _local2++;
-            };
+            }
             this.newObjs_.length = 0;
             _local3 = _arg1.readShort();
             _local2 = _local3;
@@ -51,18 +51,18 @@ package 1zG{
             {
                 0Ep.23n(this.newObjs_[_local2]);
                 _local2++;
-            };
+            }
             this.newObjs_.length = Math.min(_local3, this.newObjs_.length);
             while (this.newObjs_.length < _local3)
             {
                 this.newObjs_.push((0Ep.sH(0kZ) as 0kZ));
-            };
+            }
             _local2 = 0;
             while (_local2 < _local3)
             {
                 this.newObjs_[_local2].parseFromInput(_arg1);
                 _local2++;
-            };
+            }
             this.drops_.length = 0;
             var _local4:int = _arg1.readShort();
             _local2 = 0;
@@ -70,7 +70,7 @@ package 1zG{
             {
                 this.drops_.push(_arg1.readInt());
                 _local2++;
-            };
+            }
         }
 
         override public function toString():String{

@@ -26,7 +26,7 @@ package com.google.analytics.utils{
                 _arg2 = _local5.minor;
                 _arg3 = _local5.build;
                 _arg4 = _local5.revision;
-            };
+            }
             this.major = _arg1;
             this.minor = _arg2;
             this.build = _arg3;
@@ -39,7 +39,7 @@ package com.google.analytics.utils{
             if ((((_arg1 == "")) || ((_arg1 == null))))
             {
                 return (_local3);
-            };
+            }
             if (_arg1.indexOf(_arg2) > -1)
             {
                 _local4 = _arg1.split(_arg2);
@@ -50,7 +50,7 @@ package com.google.analytics.utils{
             } else
             {
                 _local3.major = parseInt(_arg1);
-            };
+            }
             return (_local3);
         }
 
@@ -59,7 +59,7 @@ package com.google.analytics.utils{
             if (((((((((((isNaN(_arg1)) || ((_arg1 == 0)))) || ((_arg1 < 0)))) || ((_arg1 == Number.MAX_VALUE)))) || ((_arg1 == Number.POSITIVE_INFINITY)))) || ((_arg1 == Number.NEGATIVE_INFINITY))))
             {
                 return (_local2);
-            };
+            }
             _local2.major = (_arg1 >>> 28);
             _local2.minor = ((_arg1 & 251658240) >>> 24);
             _local2.build = ((_arg1 & 0xFF0000) >>> 16);
@@ -73,7 +73,7 @@ package com.google.analytics.utils{
             if ((((_arg1 <= 0)) || ((_arg1 > 4))))
             {
                 _arg1 = getFields();
-            };
+            }
             switch (_arg1)
             {
                 case 1:
@@ -88,7 +88,7 @@ package com.google.analytics.utils{
                 case 4:
                 default:
                     _local2 = [major, minor, build, revision];
-            };
+            }
             return (_local2.join(_separator));
         }
 
@@ -125,15 +125,15 @@ package com.google.analytics.utils{
             if (revision == 0)
             {
                 _local1--;
-            };
+            }
             if ((((_local1 == 3)) && ((build == 0))))
             {
                 _local1--;
-            };
+            }
             if ((((_local1 == 2)) && ((minor == 0))))
             {
                 _local1--;
-            };
+            }
             return (_local1);
         }
 
@@ -149,11 +149,11 @@ package com.google.analytics.utils{
             if (!(_arg1 is Version))
             {
                 return (false);
-            };
+            }
             if ((((((((_arg1.major == major)) && ((_arg1.minor == minor)))) && ((_arg1.build == build)))) && ((_arg1.revision == revision))))
             {
                 return (true);
-            };
+            }
             return (false);
         }
 

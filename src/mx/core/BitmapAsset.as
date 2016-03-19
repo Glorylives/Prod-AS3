@@ -31,12 +31,12 @@ package mx.core{
                 if (_local4.hasDefinition("mx.core::FlexVersion"))
                 {
                     FlexVersionClass = Class(_local4.getDefinition("mx.core::FlexVersion"));
-                };
-            };
+                }
+            }
             if (((FlexVersionClass) && ((FlexVersionClass["compatibilityVersion"] >= FlexVersionClass["VERSION_4_0"]))))
             {
                 this.addEventListener(Event.ADDED, this.addedHandler);
-            };
+            }
         }
 
         override public function get x():Number{
@@ -47,7 +47,7 @@ package mx.core{
             if (this.x == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.x = _arg1;
@@ -55,7 +55,7 @@ package mx.core{
             {
                 this.layoutFeatures.layoutX = _arg1;
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get y():Number{
@@ -66,7 +66,7 @@ package mx.core{
             if (this.y == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.y = _arg1;
@@ -74,7 +74,7 @@ package mx.core{
             {
                 this.layoutFeatures.layoutY = _arg1;
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get z():Number{
@@ -85,7 +85,7 @@ package mx.core{
             if (this.z == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.z = _arg1;
@@ -93,7 +93,7 @@ package mx.core{
             {
                 this.layoutFeatures.layoutZ = _arg1;
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get width():Number{
@@ -101,11 +101,11 @@ package mx.core{
             if (this.layoutFeatures == null)
             {
                 return (super.width);
-            };
+            }
             if (MatrixUtilClass != null)
             {
                 _local1 = MatrixUtilClass["transformSize"](this.layoutFeatures.layoutWidth, this._height, transform.matrix);
-            };
+            }
             return (((_local1) ? _local1.x : super.width));
         }
 
@@ -113,7 +113,7 @@ package mx.core{
             if (this.width == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.width = _arg1;
@@ -122,7 +122,7 @@ package mx.core{
                 this.layoutFeatures.layoutWidth = _arg1;
                 this.layoutFeatures.layoutScaleX = (((this.measuredWidth)!=0) ? (_arg1 / this.measuredWidth) : 0);
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get height():Number{
@@ -130,11 +130,11 @@ package mx.core{
             if (this.layoutFeatures == null)
             {
                 return (super.height);
-            };
+            }
             if (MatrixUtilClass != null)
             {
                 _local1 = MatrixUtilClass["transformSize"](this.layoutFeatures.layoutWidth, this._height, transform.matrix);
-            };
+            }
             return (((_local1) ? _local1.y : super.height));
         }
 
@@ -142,7 +142,7 @@ package mx.core{
             if (this.height == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.height = _arg1;
@@ -151,7 +151,7 @@ package mx.core{
                 this._height = _arg1;
                 this.layoutFeatures.layoutScaleY = (((this.measuredHeight)!=0) ? (_arg1 / this.measuredHeight) : 0);
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get rotationX():Number{
@@ -162,7 +162,7 @@ package mx.core{
             if (this.rotationX == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.rotationX = _arg1;
@@ -170,7 +170,7 @@ package mx.core{
             {
                 this.layoutFeatures.layoutRotationX = _arg1;
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get rotationY():Number{
@@ -181,7 +181,7 @@ package mx.core{
             if (this.rotationY == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.rotationY = _arg1;
@@ -189,7 +189,7 @@ package mx.core{
             {
                 this.layoutFeatures.layoutRotationY = _arg1;
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get rotationZ():Number{
@@ -200,7 +200,7 @@ package mx.core{
             if (this.rotationZ == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.rotationZ = _arg1;
@@ -208,7 +208,7 @@ package mx.core{
             {
                 this.layoutFeatures.layoutRotationZ = _arg1;
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get rotation():Number{
@@ -219,7 +219,7 @@ package mx.core{
             if (this.rotation == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.rotation = _arg1;
@@ -227,7 +227,7 @@ package mx.core{
             {
                 this.layoutFeatures.layoutRotationZ = _arg1;
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get scaleX():Number{
@@ -238,7 +238,7 @@ package mx.core{
             if (this.scaleX == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.scaleX = _arg1;
@@ -247,7 +247,7 @@ package mx.core{
                 this.layoutFeatures.layoutScaleX = _arg1;
                 this.layoutFeatures.layoutWidth = (Math.abs(_arg1) * this.measuredWidth);
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get scaleY():Number{
@@ -258,7 +258,7 @@ package mx.core{
             if (this.scaleY == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.scaleY = _arg1;
@@ -267,7 +267,7 @@ package mx.core{
                 this.layoutFeatures.layoutScaleY = _arg1;
                 this._height = (Math.abs(_arg1) * this.measuredHeight);
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         override public function get scaleZ():Number{
@@ -278,7 +278,7 @@ package mx.core{
             if (this.scaleZ == _arg1)
             {
                 return;
-            };
+            }
             if (this.layoutFeatures == null)
             {
                 super.scaleZ = _arg1;
@@ -286,7 +286,7 @@ package mx.core{
             {
                 this.layoutFeatures.layoutScaleZ = _arg1;
                 this.validateTransformMatrix();
-            };
+            }
         }
 
         public function get layoutDirection():String{
@@ -297,7 +297,7 @@ package mx.core{
             if (_arg1 == this._layoutDirection)
             {
                 return;
-            };
+            }
             this._layoutDirection = _arg1;
             this.invalidateLayoutDirection();
         }
@@ -306,7 +306,7 @@ package mx.core{
             if (bitmapData)
             {
                 return (bitmapData.height);
-            };
+            }
             return (0);
         }
 
@@ -314,7 +314,7 @@ package mx.core{
             if (bitmapData)
             {
                 return (bitmapData.width);
-            };
+            }
             return (0);
         }
 
@@ -333,7 +333,7 @@ package mx.core{
                         {
                             this.layoutFeatures.mirror = _local2;
                             this.validateTransformMatrix();
-                        };
+                        }
                     } else
                     {
                         if (((!(_local2)) && (this.layoutFeatures)))
@@ -341,12 +341,12 @@ package mx.core{
                             this.layoutFeatures.mirror = _local2;
                             this.validateTransformMatrix();
                             this.layoutFeatures = null;
-                        };
-                    };
+                        }
+                    }
                     return;
-                };
+                }
                 _local1 = _local1.parent;
-            };
+            }
         }
 
         public function move(_arg1:Number, _arg2:Number):void{
@@ -372,15 +372,15 @@ package mx.core{
                 if (_local1.hasDefinition("mx.core::AdvancedLayoutFeatures"))
                 {
                     this.layoutFeaturesClass = Class(_local1.getDefinition("mx.core::AdvancedLayoutFeatures"));
-                };
+                }
                 if (MatrixUtilClass == null)
                 {
                     if (_local1.hasDefinition("mx.utils::MatrixUtil"))
                     {
                         MatrixUtilClass = Class(_local1.getDefinition("mx.utils::MatrixUtil"));
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (this.layoutFeaturesClass != null)
             {
                 _local2 = new this.layoutFeaturesClass();
@@ -396,7 +396,7 @@ package mx.core{
                 _local2.layoutWidth = this.width;
                 this._height = this.height;
                 this.layoutFeatures = _local2;
-            };
+            }
         }
 
         private function validateTransformMatrix():void{
@@ -408,8 +408,8 @@ package mx.core{
                 } else
                 {
                     super.transform.matrix = this.layoutFeatures.computedMatrix;
-                };
-            };
+                }
+            }
         }
 
 

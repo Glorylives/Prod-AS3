@@ -48,7 +48,7 @@ import flash.display.BitmapData;
             {
                 this.texture_.dispose();
                 this.texture_ = null;
-            };
+            }
             this.bitmapData = null;
             this._0XA = null;
             this.dr = null;
@@ -84,16 +84,16 @@ import flash.display.BitmapData;
                     this.bitmapData = _062;
                     this.texture_ = _arg1.createTexture(this.bitmapData.width, this.bitmapData.height, Context3DTextureFormat.BGRA, false);
                     this.texture_.uploadFromBitmapData(this.bitmapData);
-                };
-            };
+                }
+            }
             _arg1.setTextureAt(0, this.texture_);
             for each (_local2 in this.bk._27N)
             {
                 if (_local2._1ck != null)
                 {
                     _arg1.drawTriangles(_local2._1ck);
-                };
-            };
+                }
+            }
         }
 
 

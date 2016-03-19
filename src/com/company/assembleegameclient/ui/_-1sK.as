@@ -37,7 +37,7 @@ package com.company.assembleegameclient.ui{
             if ((((this.name_ == _arg1)) && ((_arg2 == _arg2))))
             {
                 return;
-            };
+            }
             this.name_ = _arg1;
             this.qw = _arg2;
             if ((((this.name_ == null)) || ((this.name_ == ""))))
@@ -50,7 +50,7 @@ package com.company.assembleegameclient.ui{
                 0IB.0pa(this, this.e4);
                 this.guildName_.setStringBuilder(new 1WS(this.name_));
                 0IB.0pa(this, this.guildName_);
-            };
+            }
         }
 
 

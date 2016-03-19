@@ -56,7 +56,7 @@ import flash.display.Sprite;
                 this.disabled = _arg1;
                 this._0Hi.setEnabled(!(this.disabled));
                 this.bx.setEnabled(!(this.disabled));
-            };
+            }
         }
 
         public function _0Rh():Boolean{
@@ -87,7 +87,7 @@ import flash.display.Sprite;
             if (contains(this._0Hi))
             {
                 this._0Hi.x = (this._24n.width + this._1nH);
-            };
+            }
             if (contains(this.bx))
             {
                 if (contains(this._0Hi))
@@ -99,8 +99,8 @@ import flash.display.Sprite;
                 } else
                 {
                     this.bx.x = (this._24n.width + this._1nH);
-                };
-            };
+                }
+            }
             this._1yi.dispatch();
         }
 
@@ -127,7 +127,7 @@ import flash.display.Sprite;
             {
                 this.q1.dispatch(this.bx.price);
                 this.clicked.dispatch();
-            };
+            }
             this.r3(true);
         }
 
@@ -136,7 +136,7 @@ import flash.display.Sprite;
             {
                 this._0su.dispatch(this._0Hi.price);
                 this.clicked.dispatch();
-            };
+            }
             this.r3(true);
         }
 

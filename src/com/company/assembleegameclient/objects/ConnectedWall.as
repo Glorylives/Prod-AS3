@@ -27,15 +27,15 @@ import flash.geom.Vector3D;
             if (_arg1.hasOwnProperty("BaseIndent"))
             {
                 this._1nz = (0.5 - Number(_arg1.BaseIndent));
-            };
+            }
             if (_arg1.hasOwnProperty("TopIndent"))
             {
                 this._1cY = (0.5 - Number(_arg1.TopIndent));
-            };
+            }
             if (_arg1.hasOwnProperty("Height"))
             {
                 this.h_ = Number(_arg1.Height);
-            };
+            }
             this.yd = !(_arg1.hasOwnProperty("NoWallTextureRepeat"));
             this._0PV = !(_arg1.hasOwnProperty("NoTopTextureRepeat"));
         }
@@ -57,7 +57,7 @@ import flash.geom.Vector3D;
             if (this._0ir.hasOwnProperty("DotTexture"))
             {
                 _local9 = AssetLibrary._1JR(String(this._0ir.DotTexture.File), int(this._0ir.DotTexture.Index));
-            };
+            }
             this._0gD([_local5, _local6, _local7, _local8], new <Number>[0.25, 0.25, 0.75, 0.25, 0.25, 0.75], _local9);
         }
 
@@ -77,7 +77,7 @@ import flash.geom.Vector3D;
             if (this._0ir.hasOwnProperty("ShortLineTexture"))
             {
                 _local9 = AssetLibrary._1JR(String(this._0ir.ShortLineTexture.File), int(this._0ir.ShortLineTexture.Index));
-            };
+            }
             this._0gD([_local5, _local6, _local7, _local8], new <Number>[0.25, 0, 0.75, 0, 0.25, 0.75], _local9);
         }
 
@@ -102,7 +102,7 @@ import flash.geom.Vector3D;
             if (this._0ir.hasOwnProperty("LTexture"))
             {
                 _local13 = AssetLibrary._1JR(String(this._0ir.LTexture.File), int(this._0ir.LTexture.Index));
-            };
+            }
             this._0gD([_local7, _local8, _local9, _local10, _local11, _local12], new <Number>[0.25, 0, 0.75, 0, 0.25, 0.75], _local13);
         }
 
@@ -121,7 +121,7 @@ import flash.geom.Vector3D;
             if (this._0ir.hasOwnProperty("LineTexture"))
             {
                 _local9 = AssetLibrary._1JR(String(this._0ir.LineTexture.File), int(this._0ir.LineTexture.Index));
-            };
+            }
             this._0gD([_local5, _local6, _local7, _local8], new <Number>[0.25, 0, 0.75, 0, 0.25, 1], _local9);
         }
 
@@ -151,7 +151,7 @@ import flash.geom.Vector3D;
             if (this._0ir.hasOwnProperty("TTexture"))
             {
                 _local17 = AssetLibrary._1JR(String(this._0ir.TTexture.File), int(this._0ir.TTexture.Index));
-            };
+            }
             this._0gD([_local9, _local10, _local11, _local12, _local13, _local14, _local15, _local16], new <Number>[0.25, 0, 0.75, 0, 0.25, 0.25], _local17);
         }
 
@@ -192,7 +192,7 @@ import flash.geom.Vector3D;
             if (this._0ir.hasOwnProperty("CrossTexture"))
             {
                 _local25 = AssetLibrary._1JR(String(this._0ir.CrossTexture.File), int(this._0ir.CrossTexture.Index));
-            };
+            }
             this._0gD([_local13, _local14, _local15, _local16, _local17, _local18, _local19, _local20, _local21, _local22, _local23, _local24], new <Number>[0.25, 0, 0.75, 0, 0.25, 0.25], _local25);
         }
 
@@ -215,18 +215,18 @@ import flash.geom.Vector3D;
                 if (_arg6)
                 {
                     _local11 = _local9;
-                };
+                }
                 if (_arg7)
                 {
                     _local12 = -(_local9);
-                };
+                }
                 if ((((((((_local12 == 0)) && ((_local11 == 0)))) && (_arg7))) && ((_arg4.x == -0.5))))
                 {
                     _local12 = 0.34;
-                };
+                }
                 _local13 = Vector.<Number>([-0.5, 0.5, 0, 0, 0, 0.5, 0.5, 0, 1, 0, (-0.5 + _local11), -0.5, 0, 0, 1, (0.5 + _local12), -0.5, 0, 1, 1]);
                 _14d.j9(_local10.bitmapFill_, _local13);
-            };
+            }
         }
 
         protected function _1XQ(_arg1:Vector3D, _arg2:Vector3D, _arg3:Vector3D, _arg4:Vector3D, _arg5:BitmapData, _arg6:Vector3D, _arg7:Boolean, _arg8:Boolean=false, _arg9:Boolean=false):void{
@@ -239,7 +239,7 @@ import flash.geom.Vector3D;
             } else
             {
                 _0rb.uvts_.push(1, 0, 0, (1.5 - this._1cY), 0, 0, 0, 0, 0, 1, 1, 0);
-            };
+            }
             var _local11:ObjectFace3D = new ObjectFace3D(_0rb, new <int>[_local10, (_local10 + 1), (_local10 + 2), (_local10 + 3)]);
             _local11.texture_ = _arg5;
             _local11.bitmapFill_.repeat = this.yd;
@@ -257,11 +257,11 @@ import flash.geom.Vector3D;
                     } else
                     {
                         _local12 = Vector.<Number>([0.5, 0.5, 0, 0, 0, 0.75, 0.5, 0, 1, 0, 0.5, -0.5, 0, 0, 1, 0.75, -0.5, 0, 1, 1]);
-                    };
+                    }
                     _14d.j9(_local11.bitmapFill_, _local12);
                     _0rb.faces_.push(_local11);
-                };
-            };
+                }
+            }
         }
 
         protected function _0gD(_arg1:Array, _arg2:Vector.<Number>, _arg3:BitmapData):void{
@@ -297,11 +297,11 @@ import flash.geom.Vector3D;
                         } else
                         {
                             _0rb.uvts_.push(0, 0, 0);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 _local6++;
-            };
+            }
             var _local7:ObjectFace3D = new ObjectFace3D(_0rb, _local5);
             _local7.texture_ = _arg3;
             _local7.bitmapFill_.repeat = this._0PV;
@@ -312,7 +312,7 @@ import flash.geom.Vector3D;
                 _local8.texture_ = _arg3;
                 _local8.bitmapFill_.repeat = this._0PV;
                 _0rb.faces_.push(_local8);
-            };
+            }
             var _local9:int;
             if ((((((_local5.length == 4)) && ((_14d.af(_local7.bitmapFill_) == null)))) && (Parameters.TP())))
             {
@@ -331,11 +331,11 @@ import flash.geom.Vector3D;
                         } else
                         {
                             _local11 = _local9;
-                        };
-                    };
+                        }
+                    }
                     _local10.push(_0rb.vL_[(_local5[_local11] * 3)], (_0rb.vL_[((_local5[_local11] * 3) + 1)] * -1), _0rb.vL_[((_local5[_local11] * 3) + 2)], _0rb.uvts_[(_local5[(((_local11)!=2) ? _local11 : (_local11 - 1))] * 3)], _0rb.uvts_[((_local5[(((_local11)!=2) ? _local11 : (_local11 + 1))] * 3) + 1)]);
                     _local9++;
-                };
+                }
                 _14d.j9(_local7.bitmapFill_, _local10);
             } else
             {
@@ -350,7 +350,7 @@ import flash.geom.Vector3D;
                         if (_local15 == 1)
                         {
                             _local12 = _local13;
-                        };
+                        }
                         _local10 = new Vector.<Number>();
                         _local16 = 0;
                         _local17 = 0;
@@ -362,21 +362,21 @@ import flash.geom.Vector3D;
                             } else
                             {
                                 _local17 = _local9;
-                            };
+                            }
                             _local10.push(_0rb.vL_[(_local5[_local9] * 3)], (_0rb.vL_[((_local5[_local9] * 3) + 1)] * -1), _0rb.vL_[((_local5[_local9] * 3) + 2)], _0rb.uvts_[(_local5[(((_local17)!=2) ? _local17 : (_local17 - 1))] * 3)], _0rb.uvts_[((_local5[(((_local17)!=2) ? _local17 : (_local17 + 1))] * 3) + 1)]);
                             _local16++;
-                        };
+                        }
                         if (_local15 == 1)
                         {
                             _14d.j9(_local8.bitmapFill_, _local10);
                         } else
                         {
                             _14d.j9(_local7.bitmapFill_, _local10);
-                        };
+                        }
                         _local15++;
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
 

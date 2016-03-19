@@ -20,7 +20,7 @@ package 0Qa{
             if (((this.event["error"]) && ((this.event["error"] is Error))))
             {
                 this.1wu(this.event["error"]);
-            };
+            }
         }
 
         private function 1wu(_arg1:Error):void{

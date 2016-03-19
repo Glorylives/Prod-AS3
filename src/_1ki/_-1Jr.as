@@ -54,7 +54,7 @@ package 1ki{
             {
                 this.u3.info("kongregate guest detected - listening for external login");
                 this. each.services.addEventListener("login", this.0MU);
-            };
+            }
         }
 
         private function 0MU(_arg1:Event):void{
@@ -76,7 +76,7 @@ package 1ki{
         }
 
         public function 0To():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             _local1.userId = this. each.services.getUserId();
             _local1.username = this. each.services.getUsername();
             _local1.gameAuthToken = this. each.services.getGameAuthToken();

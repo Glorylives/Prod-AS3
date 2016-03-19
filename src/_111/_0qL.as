@@ -72,7 +72,7 @@ package _111{
             {
                 this.background.visible = false;
                 this._0Av = null;
-            };
+            }
         }
 
         private function _0fv():void{
@@ -81,7 +81,7 @@ package _111{
                 this._0Av.removeEventListener(Event.REMOVED, this._1io);
                 this.container.removeChild(this._0Av);
                 this.background.visible = false;
-            };
+            }
         }
 
 

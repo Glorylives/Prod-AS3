@@ -31,8 +31,8 @@ package _Jy{
                 if (!(this._0Sq[_local2] is Class))
                 {
                     throw (new ArgumentError((((((("Invalid valueClasses argument: " + "item at index ") + _local2) + " should be a Class but was:<") + this._0Sq[_local2]) + ">.") + getQualifiedClassName(this._0Sq[_local2]))));
-                };
-            };
+                }
+            }
         }
 
         public function get _03f():uint{
@@ -48,7 +48,7 @@ package _Jy{
             if (!_local2)
             {
                 return (null);
-            };
+            }
             this._0LG = this._0LG._1aC(_arg1);
             return (_local2);
         }
@@ -63,7 +63,7 @@ package _Jy{
             if (_local3 < _local2)
             {
                 throw (new ArgumentError(((((("Incorrect number _of arguments. " + "Expected at least ") + _local2) + " but received ") + _local3) + ".")));
-            };
+            }
             var _local4:int;
             while (_local4 < _local2)
             {
@@ -72,9 +72,9 @@ package _Jy{
                 } else
                 {
                     throw (new ArgumentError((((("Value object <" + _args[_local4]) + "> is not an instance _of <") + this._0Sq[_local4]) + ">.")));
-                };
+                }
                 _local4++;
-            };
+            }
             var _local5:_0Y4 = this._0LG;
             if (_local5.nonEmpty)
             {
@@ -82,8 +82,8 @@ package _Jy{
                 {
                     _local5._0kc.execute(_args);
                     _local5 = _local5._0wv;
-                };
-            };
+                }
+            }
         }
 
         protected function _0z2(_arg1:Function, _arg2:Boolean=false):_201{
@@ -93,7 +93,7 @@ package _Jy{
                 _local3 = new Slot(_arg1, this, _arg2);
                 this._0LG = this._0LG.prepend(_local3);
                 return (_local3);
-            };
+            }
             return (this._0LG.find(_arg1));
         }
 
@@ -101,16 +101,16 @@ package _Jy{
             if (!this._0LG.nonEmpty)
             {
                 return (true);
-            };
+            }
             var _local3:_201 = this._0LG.find(_arg1);
             if (!_local3)
             {
                 return (true);
-            };
+            }
             if (_local3.once != _arg2)
             {
                 throw (new IllegalOperationError("You cannot addOnce() then add() the same listener without removing the relationship first."));
-            };
+            }
             return (false);
         }
 

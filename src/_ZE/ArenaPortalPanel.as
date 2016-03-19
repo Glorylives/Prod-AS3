@@ -42,7 +42,7 @@ package _ZE{
             if ((((gs_.map == null)) || ((gs_.map.player_ == null))))
             {
                 return;
-            };
+            }
             var _local3:Player = gs_.map.player_;
             this.nameText_ = this.Kr();
             this.NT.addChild(this.nameText_);
@@ -56,7 +56,7 @@ package _ZE{
             } else
             {
                 this.bx.addEventListener(MouseEvent.CLICK, this.1XX);
-            };
+            }
             this.NT.addChild(this.bx);
             this.bx.fh.addOnce(this.alignUI);
             this.0i8 = new sb();

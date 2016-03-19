@@ -19,7 +19,7 @@ package 0QW{
             if (_arg1 != null)
             {
                 this.s.inputText_.text = _arg1;
-            };
+            }
             I2(this.s);
             0er.addEventListener(MouseEvent.CLICK, this.onCancel);
             9u.addEventListener(MouseEvent.CLICK, this.0-p);

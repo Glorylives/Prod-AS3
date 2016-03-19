@@ -37,7 +37,7 @@ package 1Np{
             if (!_local8)
             {
                 _local8 = new 1jH(_arg2, _arg3, _arg4, _arg5, _arg6, _arg7);
-            };
+            }
             return (_local8);
         }
 
@@ -50,7 +50,7 @@ package 1Np{
             {
                 this.1HB = ((Math.random() * this.spread) - 0.1);
                 this.UX = ((Math.random() * this.spread) - 0.1);
-            };
+            }
             var _local4:Number = ((_arg2 - _arg1) / 1000);
             this.ru = (this.life - (this.life * (_local3 * (1 - this.lifeVariance))));
             z_ = (this.speed * _local4);
@@ -66,12 +66,12 @@ package 1Np{
             if (this.ru <= 0)
             {
                 return (false);
-            };
+            }
             z_ = (this.speed * _local3);
             if (this.spread > 0)
             {
                 moveTo((x_ + ((this.1HB * _arg2) * this.05B)), (y_ + ((this.UX * _arg2) * this.05B)));
-            };
+            }
             return (true);
         }
 

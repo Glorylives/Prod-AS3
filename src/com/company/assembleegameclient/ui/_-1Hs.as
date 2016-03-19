@@ -63,7 +63,7 @@ package com.company.assembleegameclient.ui{
             if (((this.AK.16Z(_arg1)) && (this.uf.16Z(_arg2))))
             {
                 this.uf.0fg(TradeInventory.0GA);
-            };
+            }
         }
 
         private function onAddedToStage(_arg1:Event):void{
@@ -106,7 +106,7 @@ package com.company.assembleegameclient.ui{
             } else
             {
                 this.AK.0fg(TradeInventory.pL);
-            };
+            }
             if (((_local1 - _local3) - _local4) > 0)
             {
                 this.uf.0fg(TradeInventory.vb);
@@ -114,14 +114,14 @@ package com.company.assembleegameclient.ui{
             } else
             {
                 this.uf.0fg(TradeInventory.8L);
-            };
+            }
             if (_local5)
             {
                 this.1Le.reset();
             } else
             {
                 this.1Le.disable();
-            };
+            }
         }
 
 

@@ -39,7 +39,7 @@ package 17t{
                         _local6 = _arg1.getPixel(_local7, _local5);
                         _local4.writeUnsignedInt(uint((((_local6 & 0xFFFFFF) << 8) | 0xFF)));
                         _local7++;
-                    };
+                    }
                 } else
                 {
                     _local7 = 0;
@@ -48,10 +48,10 @@ package 17t{
                         _local6 = _arg1.getPixel32(_local7, _local5);
                         _local4.writeUnsignedInt(uint((((_local6 & 0xFFFFFF) << 8) | (_local6 >>> 24))));
                         _local7++;
-                    };
-                };
+                    }
+                }
                 _local5++;
-            };
+            }
             _local4.compress();
             0Nv(_local2, 1229209940, _local4);
             0Nv(_local2, 1229278788, null);
@@ -79,25 +79,25 @@ package 17t{
                         } else
                         {
                             _local8 = uint((_local8 >>> 1));
-                        };
+                        }
                         _local10++;
-                    };
+                    }
                     E-[_local9] = _local8;
                     _local9++;
-                };
-            };
+                }
+            }
             var _local4:uint;
             if (_arg3 != null)
             {
                 _local4 = _arg3.length;
-            };
+            }
             _arg1.writeUnsignedInt(_local4);
             var _local5:uint = _arg1.position;
             _arg1.writeUnsignedInt(_arg2);
             if (_arg3 != null)
             {
                 _arg1.writeBytes(_arg3);
-            };
+            }
             var _local6:uint = _arg1.position;
             _arg1.position = _local5;
             _local8 = 0xFFFFFFFF;
@@ -106,7 +106,7 @@ package 17t{
             {
                 _local8 = uint((E-[((_local8 ^ _arg1.readUnsignedByte()) & uint(0xFF))] ^ uint((_local8 >>> 8))));
                 _local7++;
-            };
+            }
             _local8 = uint((_local8 ^ uint(0xFFFFFFFF)));
             _arg1.position = _local6;
             _arg1.writeUnsignedInt(_local8);

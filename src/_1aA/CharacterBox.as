@@ -70,7 +70,7 @@ package _1aA{
             } else
             {
                 this.0pB = new FullCharBoxGraphic();
-            };
+            }
             this.1GF = new Sprite();
             addChild(this.1GF);
             this.1GF.addChild(this.0pB);
@@ -103,7 +103,7 @@ package _1aA{
                 addChild(this.1o1);
                 addChild(this.0-i);
                 this.classNameText_.y = 78;
-            };
+            }
         }
 
         public function objectType():int{
@@ -125,23 +125,23 @@ package _1aA{
                 if (contains(this.0-i))
                 {
                     removeChild(this.0-i);
-                };
+                }
                 if (contains(this.0JA))
                 {
                     removeChild(this.0JA);
-                };
+                }
                 if (((this.1o1) && (contains(this.1o1))))
                 {
                     removeChild(this.1o1);
-                };
+                }
                 if (((this.12e) && (contains(this.12e))))
                 {
                     removeChild(this.12e);
-                };
+                }
                 if (((this.0B1) && (contains(this.0B1))))
                 {
                     removeChild(this.0B1);
-                };
+                }
                 _local1 = this.19u(09g.numStars(this.model.0E-(this.objectType())), 09g.1wz.length);
                 _local1.y = 60;
                 _local1.x = ((this.0pB.width / 2) - (_local1.width / 2));
@@ -151,14 +151,14 @@ package _1aA{
                 if (!this.0Zy)
                 {
                     this.1I6();
-                };
+                }
                 addChild(this.0Zy);
                 _local2 = new GTween(this.0Zy, 2.5, {
                     alpha:0,
                     y:-30
                 });
                 _local2.onComplete = this.O-;
-            };
+            }
         }
 
         private function O-(_arg1:GTween):void{
@@ -173,14 +173,14 @@ package _1aA{
             if (!this.0ma)
             {
                 return;
-            };
+            }
             if (_arg1)
             {
                 transform.colorTransform = new ColorTransform(1.2, 1.2, 1.2);
             } else
             {
                 transform.colorTransform = new ColorTransform(1, 1, 1);
-            };
+            }
         }
 
         private function setImage(_arg1:int, _arg2:int, _arg3:Number):void{
@@ -201,7 +201,7 @@ package _1aA{
                 _local3.addChild(_local5);
                 _local6 = (_local6 + _local5.width);
                 _local4++;
-            };
+            }
             while (_local4 < _arg2)
             {
                 _local5 = new StarGraphic();
@@ -210,7 +210,7 @@ package _1aA{
                 _local3.addChild(_local5);
                 _local6 = (_local6 + _local5.width);
                 _local4++;
-            };
+            }
             return (_local3);
         }
 
@@ -221,12 +221,12 @@ package _1aA{
                 this.12e.x = 38;
                 this.12e.y = 8;
                 addChild(this.12e);
-            };
+            }
             if (!this.0B1)
             {
                 this.dn();
                 addChild(this.0B1);
-            };
+            }
             this.0B1.setStringBuilder(new 1cA().setParams(du.sD, {percent:String(_arg1)}));
         }
 

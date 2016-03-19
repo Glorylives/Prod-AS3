@@ -16,7 +16,7 @@ package 0sC{
             if ((((_local2.month > _local3.month)) || ((((_local2.month == _local3.month)) && ((_local2.date > _local3.date))))))
             {
                 _local4--;
-            };
+            }
             return (_local4);
         }
 

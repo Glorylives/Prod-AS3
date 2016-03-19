@@ -64,18 +64,18 @@ package com.google.analytics{
             if (!_arg6)
             {
                 this.debug = new DebugConfiguration();
-            };
+            }
             if (!_arg5)
             {
                 this.config = new Configuration(_arg6);
             } else
             {
                 this.config = _arg5;
-            };
+            }
             if (autobuild)
             {
                 _factory();
-            };
+            }
         }
 
         public function link(_arg1:String, _arg2:Boolean=false):void{
@@ -187,7 +187,7 @@ package com.google.analytics{
             if (!isReady())
             {
                 _factory();
-            };
+            }
         }
 
         public function addEventListener(_arg1:String, _arg2:Function, _arg3:Boolean=false, _arg4:int=0, _arg5:Boolean=false):void{
@@ -289,7 +289,7 @@ package com.google.analytics{
             {
                 debug.layout = new Layout(debug, _display);
                 debug.active = visualDebug;
-            };
+            }
             var _local2:TrackerCache = (_tracker as TrackerCache);
             switch (mode)
             {
@@ -299,12 +299,12 @@ package com.google.analytics{
                 case TrackerMode.AS3:
                 default:
                     _local1 = _trackerFactory();
-            };
+            }
             if (!_local2.isEmpty())
             {
                 _local2.tracker = _local1;
                 _local2.flush();
-            };
+            }
             _tracker = _local1;
             _ready = true;
             dispatchEvent(new AnalyticsEvent(AnalyticsEvent.READY, this));

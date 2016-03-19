@@ -120,11 +120,11 @@ package 1PB{
             if (this.22g)
             {
                 this.22g.draw();
-            };
+            }
             if (this.interactPanel)
             {
                 this.interactPanel.draw();
-            };
+            }
         }
 
         public function startTrade(_arg1:nx, _arg2:ff):void{
@@ -135,7 +135,7 @@ package 1PB{
                 this.0c7.addEventListener(Event.CANCEL, this.0Cm);
                 addChild(this.0c7);
                 this.0Qn(false);
-            };
+            }
         }
 
         private function 0Qn(_arg1:Boolean):void{
@@ -155,14 +155,14 @@ package 1PB{
             if (this.0c7)
             {
                 this.0c7.QC(_arg1.offer_);
-            };
+            }
         }
 
         public function tradeAccepted(_arg1:0dB):void{
             if (this.0c7)
             {
                 this.0c7.1X1(_arg1.myOffer_, _arg1.yourOffer_);
-            };
+            }
         }
 
         private function 0Cm(_arg1:Event):void{
@@ -176,7 +176,7 @@ package 1PB{
                 this.0c7.removeEventListener(Event.CANCEL, this.0Cm);
                 this.0c7 = null;
                 this.0Qn(true);
-            };
+            }
         }
 
 

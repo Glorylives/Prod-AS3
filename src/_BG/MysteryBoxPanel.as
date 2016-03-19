@@ -77,7 +77,7 @@ package BG{
             {
                 this.0Ei = new 1nN(16, _local6);
                 addChild(this.0Ei);
-            };
+            }
             this.nameText_.setStringBuilder(new 1cA().setParams(_local7));
             this.bitmap_.bitmapData = 26q.1F5(_arg2).bitmapData;
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
@@ -88,7 +88,7 @@ package BG{
             if (_arg1 == this.0b2)
             {
                 return;
-            };
+            }
             this.0b2 = _arg1;
             this.0JA.setPrice(this.0b2.price_, this.0b2.currency_);
             var _local2:String = this.0b2.soldObjectName();
@@ -125,15 +125,15 @@ package BG{
                 if (!_local3.0D3())
                 {
                     _local4.dispatch(new 0KD("SellableObjectPanelMediator.text", {type:Currency.19M(Currency.1Jg)}));
-                };
-            };
+                }
+            }
         }
 
         private function 1lw(_arg1:KeyboardEvent):void{
             if ((((_arg1.keyCode == Parameters.data_.interact)) && ((stage.focus == null))))
             {
                 this.Kp();
-            };
+            }
         }
 
         override public function draw():void{
@@ -143,7 +143,7 @@ package BG{
             if (!contains(this.0Ei))
             {
                 addChild(this.0Ei);
-            };
+            }
         }
 
 

@@ -48,7 +48,7 @@ package _sc{
                 case 10:
                     _local4 = new _arg1(_local3[0], _local3[1], _local3[2], _local3[3], _local3[4], _local3[5], _local3[6], _local3[7], _local3[8], _local3[9]);
                     break;
-            };
+            }
             _local3.length = 0;
             return (_local4);
         }

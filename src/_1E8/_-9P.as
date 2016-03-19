@@ -28,7 +28,7 @@ package 1E8{
                 ((this.0wv) && ((this.0wv.next = _local2)));
                 _local2.gR = this.0wv;
                 this.0wv = _local2;
-            };
+            }
             return (this);
         }
 
@@ -44,7 +44,7 @@ package 1E8{
                 _local1 = new this.type(this.id, this.callback);
                 _local1.pool = this;
                 this.count++;
-            };
+            }
             return (_local1);
         }
 

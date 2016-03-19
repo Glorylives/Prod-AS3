@@ -33,7 +33,7 @@ package com.company.assembleegameclient.ui{
                 this.1jx.filters = [new DropShadowFilter(0, 0, 0)];
                 this.1jx.textChanged.addOnce(this.position);
                 addChild(this.1jx);
-            };
+            }
             mouseEnabled = false;
             mouseChildren = false;
             this.draw(_arg1);
@@ -62,20 +62,20 @@ package com.company.assembleegameclient.ui{
                 background.graphics.drawRoundRect(-2, (icon.y - 3), (_local1 + 6), _local2, 12, 12);
                 background.graphics.endFill();
                 position();
-            };
+            }
             if (numStars == this.numStars_)
             {
                 return;
-            };
+            }
             this.numStars_ = numStars;
             if (((!((this.background == null))) && (contains(this.background))))
             {
                 removeChild(this.background);
-            };
+            }
             if (this.numStars_ < 0)
             {
                 return;
-            };
+            }
             this.background = new Sprite();
             text = this.makeText();
             text.setVerticalAlign(_13j.BOTTOM);
@@ -89,7 +89,7 @@ package com.company.assembleegameclient.ui{
             if (this.1jx != null)
             {
                 this.1rR();
-            };
+            }
         }
 
         private function 1rR():void{
@@ -99,7 +99,7 @@ package com.company.assembleegameclient.ui{
             } else
             {
                 this.1he.complete.addOnce(this.position);
-            };
+            }
         }
 
         private function position():void{
@@ -107,7 +107,7 @@ package com.company.assembleegameclient.ui{
             {
                 this.background.x = this.1jx.width;
                 this.1jx.y = (this.icon.y - 3);
-            };
+            }
         }
 
 

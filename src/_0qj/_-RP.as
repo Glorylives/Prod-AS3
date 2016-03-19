@@ -56,7 +56,7 @@ package 0qj{
             if (this.0CS)
             {
                 _local7 = _hd.07J(_local7, new ColorTransform(0, 0, 0, 0.5, 0, 0, 0, 0));
-            };
+            }
             this.0Sz = new Bitmap();
             this.0Sz.bitmapData = _local7;
             this.0Sz.x = -4;
@@ -94,8 +94,8 @@ package 0qj{
                             unlockLevel:_local12,
                             typeToDisplay:ObjectLibrary.118[_local11]
                         });
-                    };
-                };
+                    }
+                }
                 this.unlockText_.setStringBuilder(_local8);
                 this.unlockText_.filters = [new DropShadowFilter(0, 0, 0)];
                 1he.push(this.unlockText_.textChanged);
@@ -131,8 +131,8 @@ package 0qj{
                     this.nextClassQuest_.filters = [new DropShadowFilter(0, 0, 0)];
                     1he.push(this.nextClassQuest_.textChanged);
                     addChild(this.nextClassQuest_);
-                };
-            };
+                }
+            }
         }
 
         override protected function alignUI():void{
@@ -160,8 +160,8 @@ package 0qj{
                 {
                     this.nextClassQuest_.x = 8;
                     this.nextClassQuest_.y = (height - 2);
-                };
-            };
+                }
+            }
             this.draw();
             position();
         }

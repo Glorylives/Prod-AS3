@@ -33,7 +33,7 @@ import flash.text.TextField;
             if (texture_ != null)
             {
                 return (texture_);
-            };
+            }
             var _local3:TextField = new TextField();
             _local3.multiline = true;
             _local3.wordWrap = false;

@@ -13,7 +13,7 @@ public class _1aE implements _1IC {
         private var aM:Object;
 
         public function _1aE(){
-            this.aM = {};
+            this.aM = {}
         }
 
         public function _0I(_arg1:String, _arg2:int):void{

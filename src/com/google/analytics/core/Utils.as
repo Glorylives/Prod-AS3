@@ -14,7 +14,7 @@ package com.google.analytics.core{
             if (_arg1 == "")
             {
                 return ("");
-            };
+            }
             var _local3:Array = [" ", "\n", "\r", "\t"];
             var _local4:String = _arg1;
             if (_arg2)
@@ -24,22 +24,22 @@ package com.google.analytics.core{
                 {
                     _local4 = _local4.split(_local3[_local5]).join("");
                     _local5++;
-                };
+                }
             } else
             {
                 _local6 = 0;
                 while ((((_local6 < _local4.length)) && ((_local3.indexOf(_local4.charAt(_local6)) > -1))))
                 {
                     _local6++;
-                };
+                }
                 _local4 = _local4.substr(_local6);
                 _local7 = (_local4.length - 1);
                 while ((((_local7 >= 0)) && ((_local3.indexOf(_local4.charAt(_local7)) > -1))))
                 {
                     _local7--;
-                };
+                }
                 _local4 = _local4.substring(0, (_local7 + 1));
-            };
+            }
             return (_local4);
         }
 
@@ -60,10 +60,10 @@ package com.google.analytics.core{
                     if (_local3 != 0)
                     {
                         _local2 = (_local2 ^ (_local3 >> 21));
-                    };
+                    }
                     _local4--;
-                };
-            };
+                }
+            }
             return (_local2);
         }
 

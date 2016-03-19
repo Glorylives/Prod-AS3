@@ -55,7 +55,7 @@ package com.company.assembleegameclient.objects{
             if (oY == null)
             {
                 init();
-            };
+            }
             var _local2 = (_arg1 & 252645135);
             return (oY[_local2]);
         }
@@ -72,9 +72,9 @@ package com.company.assembleegameclient.objects{
                     oY[_arg1] = new ConnectedResults(_arg2, _local3);
                     _local4 = (_arg1 & 0xFF);
                     _arg1 = ((_arg1 >> 8) | (_local4 << 24));
-                };
+                }
                 _local3++;
-            };
+            }
         }
 
 
@@ -87,7 +87,7 @@ package com.company.assembleegameclient.objects{
             if (_0rb == null)
             {
                 this.Me();
-            };
+            }
             Utils3D.projectVectors(_arg2.wToS_, _0rb.vW_, _0rb.vS_, _0rb.uvts_);
             for each (_local4 in _0rb.faces_)
             {
@@ -100,10 +100,10 @@ package com.company.assembleegameclient.objects{
                     if ((((_local8 == null)) || ((_local8.texture_ == null))))
                     {
                         _local7 = null;
-                    };
-                };
+                    }
+                }
                 _local4.draw(_arg1, 0, _local7);
-            };
+            }
         }
 
         public function Me():void{
@@ -113,7 +113,7 @@ package com.company.assembleegameclient.objects{
             {
                 _0rb = null;
                 return;
-            };
+            }
             this.rotation_ = _local1.rotation_;
             switch (_local1.type_)
             {
@@ -138,7 +138,7 @@ package com.company.assembleegameclient.objects{
                 default:
                     _0rb = null;
                     return;
-            };
+            }
             _0rb.setPosition(x_, y_, 0, (this.rotation_ * 90));
         }
 

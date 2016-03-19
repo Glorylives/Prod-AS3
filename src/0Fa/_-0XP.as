@@ -38,7 +38,7 @@ package 0Fa{
             {
                 this.view.mouseEnabled = false;
                 this.view.mouseChildren = false;
-            };
+            }
         }
 
         override public function destroy():void{

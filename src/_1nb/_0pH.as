@@ -21,7 +21,7 @@ package _1nb{
             if (this.log)
             {
                 this.data.push(_args);
-            };
+            }
             super.dispatch.apply(this, _args);
         }
 
@@ -30,7 +30,7 @@ package _1nb{
             while (this.data.length > 0)
             {
                 _arg1.apply(this, this.data.shift());
-            };
+            }
             this.log = false;
             return (_local2);
         }
@@ -44,11 +44,11 @@ package _1nb{
             {
                 _local2 = super.addOnce(_arg1);
                 this.log = false;
-            };
+            }
             while (this.data.length > 0)
             {
                 this.data.shift();
-            };
+            }
             return (_local2);
         }
 

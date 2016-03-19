@@ -87,13 +87,13 @@ package 0Fa{
                     if (_arg1.text.charAt(_local8) == '"')
                     {
                         break;
-                    };
+                    }
                     _local7 = (_local7 + _arg1.text.charAt(_local8));
                     _local8++;
-                };
+                }
                 _local6 = _local7;
                 _local4 = true;
-            };
+            }
             return (new 1si(this.buffer, this.model.1Xo.width, this.model.1jC, _arg2, _arg1.objectId, _local6, (_arg1.20u == kj), _local4));
         }
 
@@ -102,7 +102,7 @@ package 0Fa{
             if (_local1 >= 0)
             {
                 this.buffer.push(09g.0YP(_local1));
-            };
+            }
         }
 
         private function 0Wj():void{
@@ -113,14 +113,14 @@ package 0Fa{
                 _local1 = new 1WS("To: ");
                 _local2 = this.getBitmapData(_local1, 61695);
                 this.buffer.push(new Bitmap(_local2));
-            };
+            }
         }
 
         private function l3():void{
             if (!this.0e2())
             {
                 this.0Gp();
-            };
+            }
         }
 
         private function 0e2():Boolean{
@@ -139,7 +139,7 @@ package 0Fa{
             if ((((_local1.charAt(0) == "#")) || ((_local1.charAt(0) == "@"))))
             {
                 _local1 = _local1.substr(1);
-            };
+            }
             return ((("<" + _local1) + ">"));
         }
 
@@ -154,8 +154,8 @@ package 0Fa{
                 {
                     this.1Z3(_local1[_local2], false);
                     _local2++;
-                };
-            };
+                }
+            }
         }
 
         private function 1Z3(_arg1:String, _arg2:Boolean):void{
@@ -173,21 +173,21 @@ package 0Fa{
                 for each (_local8 in this.buffer)
                 {
                     _local4 = (_local4 + _local8.width);
-                };
+                }
                 _local6 = _local3.length;
                 g3.text = _local3;
                 while (g3.textWidth >= (this.model.1Xo.width - _local4))
                 {
                     _local6 = (_local6 - 10);
                     g3.text = _local3.substr(0, _local6);
-                };
+                }
                 if (_local6 < _local3.length)
                 {
                     _local9 = _local3.substr(0, _local6).lastIndexOf(" ");
                     _local6 = (((((_local9 == 0)) || ((_local9 == -1)))) ? _local6 : _local9);
-                };
+                }
                 this.0HM(_local3.substr(0, _local6));
-            };
+            }
             var _local7:int = _local3.length;
             if (_local7 > _local6)
             {
@@ -200,17 +200,17 @@ package 0Fa{
                     {
                         _local10 = (_local10 - 5);
                         g3.text = _local3.substr(_local11, _local10);
-                    };
+                    }
                     _local12 = _local10;
                     if (_local3.length > (_local11 + _local10))
                     {
                         _local12 = _local3.substr(_local11, _local10).lastIndexOf(" ");
                         _local12 = (((((_local12 == 0)) || ((_local12 == -1)))) ? _local10 : _local12);
-                    };
+                    }
                     this.0HM(_local3.substr(_local11, _local12));
                     _local11 = (_local11 + _local12);
-                };
-            };
+                }
+            }
         }
 
         private function 0HM(_arg1:String):void{
@@ -223,19 +223,19 @@ package 0Fa{
             if (this.message.name.charAt(0) == "#")
             {
                 return (0xFFA800);
-            };
+            }
             if (this.message.name.charAt(0) == "@")
             {
                 return (0xFFFF00);
-            };
+            }
             if (this.message.20u == kj)
             {
                 return (10944349);
-            };
+            }
             if (this.message.20u != "")
             {
                 return (61695);
-            };
+            }
             return (0xFF00);
         }
 
@@ -244,31 +244,31 @@ package 0Fa{
             if (_local1 == uU)
             {
                 return (0xFFFF00);
-            };
+            }
             if (_local1 == 0ZN)
             {
                 return (0xFF);
-            };
+            }
             if (_local1 == 0yL)
             {
                 return (16734981);
-            };
+            }
             if (_local1 == ERROR)
             {
                 return (0xFF0000);
-            };
+            }
             if (_local1.charAt(0) == "@")
             {
                 return (0xFFFF00);
-            };
+            }
             if (this.message.20u == kj)
             {
                 return (10944349);
-            };
+            }
             if (this.message.20u != "")
             {
                 return (61695);
-            };
+            }
             return (0xFFFFFF);
         }
 

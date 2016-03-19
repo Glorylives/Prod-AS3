@@ -61,7 +61,7 @@ package 1Np{
             if (this.01y)
             {
                 return (false);
-            };
+            }
             var _local4:uint = this.0sR.length;
             _local3 = 0;
             while (_local3 < _local4)
@@ -69,9 +69,9 @@ package 1Np{
                 if (this.0sR[_local3])
                 {
                     this.0sR[_local3].move();
-                };
+                }
                 _local3++;
-            };
+            }
             0Pk = new BitmapData(this.width, this.height, true, 0);
             0Pk.draw(this.9I);
             return (true);
@@ -116,7 +116,7 @@ package 1Np{
                 this.timer.removeEventListener(TimerEvent.TIMER, this.13c);
                 this.timer.stop();
                 this.timer = null;
-            };
+            }
             this.9I = null;
             this.0sR = [];
             this.01y = true;
@@ -165,7 +165,7 @@ class Square extends Shape {
         if (!this.lifespan)
         {
             this.complete.dispatch(this);
-        };
+        }
     }
 
 

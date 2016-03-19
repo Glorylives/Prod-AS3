@@ -30,7 +30,7 @@ package 0uE{
                 addChild(new 0j6());
                 scaleX = (scaleX * _arg1);
                 scaleY = (scaleY * _arg1);
-            };
+            }
             buttonMode = true;
             addEventListener(MouseEvent.CLICK, this.0hN);
         }
@@ -43,7 +43,7 @@ package 0uE{
             } else
             {
                 addEventListener(MouseEvent.CLICK, this.0hN);
-            };
+            }
         }
 
         public function 1BU():void{
@@ -56,7 +56,7 @@ package 0uE{
             {
                 this.clicked.dispatch();
                 removeEventListener(MouseEvent.CLICK, this.0hN);
-            };
+            }
         }
 
 

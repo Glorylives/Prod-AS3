@@ -34,7 +34,7 @@ package IN{
             {
                 _local3 = this.model.7k(_local2.@classType);
                 _local3.0nw(_local2.@maxLevel);
-            };
+            }
         }
 
         private function KD():void{
@@ -51,12 +51,12 @@ package IN{
                     if (!Boolean(int(_local2.@purchasable)))
                     {
                         _local3.setState(Lm.UNLISTED);
-                    };
+                    }
                 } else
                 {
                     this.u3.0K("Cannot set Character Skin cost: type {0} not found", [_local2.@type]);
-                };
-            };
+                }
+            }
         }
 
         private function Rp():void{
@@ -72,8 +72,8 @@ package IN{
                 } else
                 {
                     this.u3.0K("Cannot set Character Skin ownership: type {0} not found", [_local2]);
-                };
-            };
+                }
+            }
         }
 
 

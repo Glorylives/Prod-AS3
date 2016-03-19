@@ -123,7 +123,7 @@ import flash.display.Sprite;
             if (this.VQ == null)
             {
                 return;
-            };
+            }
             this.VQ._1OQ(_12i, this._0i7.textHeight, false);
             if (this._0i7.maxScrollV == 1)
             {
@@ -131,7 +131,7 @@ import flash.display.Sprite;
             } else
             {
                 this.VQ.Gx(((this._0i7.scrollV - 1) / (this._0i7.maxScrollV - 1)));
-            };
+            }
         }
 
 

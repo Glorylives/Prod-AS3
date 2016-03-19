@@ -80,7 +80,7 @@ package 0Xi{
             } else
             {
                 this.14U();
-            };
+            }
             this.0q7 = [];
             this.BD = [];
         }
@@ -94,8 +94,8 @@ package 0Xi{
                 if (!this.0aX.c3)
                 {
                     this.0aX.1K9(this.0q7, this.BD);
-                };
-            };
+                }
+            }
         }
 
         private function 14U():void{

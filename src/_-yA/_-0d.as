@@ -52,7 +52,7 @@ package yA{
             if (this.container.parent == null)
             {
                 return;
-            };
+            }
             var _local1:Number = 0.2;
             if (((!((this.view == null))) && (!((this.view.parent == null)))))
             {
@@ -62,7 +62,7 @@ package yA{
                 new GTween(this.iH, 0.4, {alpha:0});
                 new 1qk(0.4, this.SC);
                 _local1 = 0.4;
-            };
+            }
             this.view = new Ch();
             this.container.addChild(this.view);
             this.view.alpha = 0;
@@ -76,7 +76,7 @@ package yA{
             {
                 this.D2();
                 return;
-            };
+            }
             this.Fn.add(this.1xm);
             this.1HQ.add(this.CP);
             Ch.closed.add(this.D2);
@@ -91,7 +91,7 @@ package yA{
             if (((!((this.iH == null))) && (!((this.iH.parent == null)))))
             {
                 this.container.removeChild(this.iH);
-            };
+            }
         }
 
         private function D2():void{
@@ -107,7 +107,7 @@ package yA{
             } else
             {
                 this.view.init(1, 1793, "WOAAH we are in need _of this {goal} now. Help help.", "https://www.google.com/images/srpr/logo11w.png");
-            };
+            }
         }
 
         private function 1xm(_arg1:1lm):void{
@@ -128,12 +128,12 @@ package yA{
                     } else
                     {
                         this.D2();
-                    };
+                    }
                 } else
                 {
                     this.view.0xR(_arg1.description);
-                };
-            };
+                }
+            }
         }
 
         private function CP(_arg1:1fI):void{
@@ -149,7 +149,7 @@ package yA{
                 this.WB.draw();
                 this.1w5.11I();
                 this.view.Sb();
-            };
+            }
         }
 
         private function 1Ag():void{
@@ -170,12 +170,12 @@ package yA{
             {
                 this.1w5.Ma.remove(this.0yV);
                 this.1w5.1F3.remove(this.TZ);
-            };
+            }
             if (this.WB != null)
             {
                 this.WB.removeEventListener(MouseEvent.CLICK, this.ok);
                 this.WB.removeEventListener(MouseEvent.CLICK, this.2-5);
-            };
+            }
         }
 
         private function resetVars():void{
@@ -206,8 +206,8 @@ package yA{
                     this.1w5.0Ve();
                     this.1w5.1T0();
                     this.1w5.0LZ(true);
-                };
-            };
+                }
+            }
         }
 
         private function TZ():void{
@@ -223,7 +223,7 @@ package yA{
                 this.1qG = true;
                 this.0iP.questRedeem(this.1w5.objectId, this.1w5.w, this.1w5.itemId);
                 this.view.ok();
-            };
+            }
         }
 
         private function 2-5(_arg1:MouseEvent):void{

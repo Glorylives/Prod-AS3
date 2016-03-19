@@ -25,13 +25,13 @@ package com.company.util{
             {
                 _local4 = new Object();
                 Qj[_arg1] = _local4;
-            };
+            }
             if (_local3 == null)
             {
                 _local3 = _arg1.clone();
                 _local3.colorTransform(_local3.rect, _arg2);
                 _local4[_arg2] = _local3;
-            };
+            }
             return (_local3);
         }
 
@@ -45,13 +45,13 @@ package com.company.util{
             {
                 _local4 = new Object();
                 Qj[_arg1] = _local4;
-            };
+            }
             if (_local3 == null)
             {
                 _local3 = _arg1.clone();
                 _local3.applyFilter(_local3, _local3.rect, new Point(), _arg2);
                 _local4[_arg2] = _local3;
-            };
+            }
             return (_local3);
         }
 
@@ -69,8 +69,8 @@ package com.company.util{
                 for each (_local2 in _local1)
                 {
                     _local2.dispose();
-                };
-            };
+                }
+            }
             Qj = new Dictionary();
         }
 

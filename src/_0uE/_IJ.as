@@ -62,10 +62,10 @@ import flash.display.Sprite;
                             graphics.beginFill(0);
                             _local5._0Zx(0, 0, _local4, graphics);
                             graphics.endFill();
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
         }
 
         public function UK(_arg1:String, _arg2:int):void{
@@ -77,8 +77,8 @@ import flash.display.Sprite;
                 if (_arg1 == VERTICAL_DIVISION)
                 {
                     this._1Sf(_arg2);
-                };
-            };
+                }
+            }
         }
 
         private function _0g(_arg1:int):void{

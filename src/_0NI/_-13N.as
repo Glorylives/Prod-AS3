@@ -33,7 +33,7 @@ package 0NI{
             for each (_local2 in _args)
             {
                 this.B4.push(_local2);
-            };
+            }
             return (this);
         }
 
@@ -69,17 +69,17 @@ package 0NI{
             {
                 ((callback) && (safelyCallBack(callback, null, this._name)));
                 return;
-            };
+            }
             if (this.1eO.state == this.mB)
             {
                 ((callback) && (this._callbacks.push(callback)));
                 return;
-            };
+            }
             if (this.0z5())
             {
                 this.reportError("Invalid transition", [callback]);
                 return;
-            };
+            }
             initialState = this.1eO.state;
             ((callback) && (this._callbacks.push(callback)));
             this.setState(this.mB);
@@ -90,7 +90,7 @@ package 0NI{
                     setState(initialState);
                     reportError(_arg1, _callbacks);
                     return;
-                };
+                }
                 dispatch(_preTransitionEvent);
                 dispatch(_transitionEvent);
                 setState(_finalState);
@@ -99,7 +99,7 @@ package 0NI{
                 for each (_local3 in _local2)
                 {
                     safelyCallBack(_local3, null, _name);
-                };
+                }
                 dispatch(_postTransitionEvent);
             }, this.0Am);
         }
@@ -116,7 +116,7 @@ package 0NI{
             if (((_arg1) && (this.1eO.hasEventListener(_arg1))))
             {
                 this.1eO.dispatchEvent(new 0qM(_arg1));
-            };
+            }
         }
 
         private function reportError(_arg1:Object, _arg2:Array=null):void{
@@ -133,13 +133,13 @@ package 0NI{
                     for each (_local5 in _arg2)
                     {
                         ((_local5) && (safelyCallBack(_local5, _local3, this._name)));
-                    };
+                    }
                     _arg2.length = 0;
-                };
+                }
             } else
             {
                 throw (_local3);
-            };
+            }
         }
 
 

@@ -56,7 +56,7 @@ package 1oP{
             if (_local2 != null)
             {
                 _local1.draw(_local2.0ce(), _local2.15g(), _local2.N4());
-            };
+            }
             _local1.x = 800;
             _local1.y = 20;
             addChild(_local1);
@@ -124,7 +124,7 @@ package 1oP{
             if (!_arg1)
             {
                 this.0Vg.deactivate();
-            };
+            }
         }
 
         private function 2g():cO{

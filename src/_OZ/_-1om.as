@@ -39,7 +39,7 @@ package OZ{
             if (((!((this.text == null))) && (!((this.text.parent == null)))))
             {
                 removeChild(this.text);
-            };
+            }
             this.text.setStringBuilder(new 1WS(("" + _arg1)));
             this.text.alpha = 0.5;
             this.text.scaleX = 1;
@@ -61,29 +61,29 @@ package OZ{
             if (((!((this.background == null))) && (!((this.background.parent == null)))))
             {
                 removeChild(this.background);
-            };
+            }
             if (((!((this.text == null))) && (!((this.text.parent == null)))))
             {
                 removeChild(this.text);
-            };
+            }
             this.0Bu = 0;
             this.zi.dispatch();
             if (this.26k != null)
             {
                 this.26k.removeEventListener(TimerEvent.TIMER, this.0Iv);
                 this.26k.reset();
-            };
+            }
         }
 
         public function remove():void{
             if (((!((this.background == null))) && (!((this.background.parent == null)))))
             {
                 removeChild(this.background);
-            };
+            }
             if (((!((this.text == null))) && (!((this.text.parent == null)))))
             {
                 removeChild(this.text);
-            };
+            }
             this.0Bu = 0;
             this.26k.removeEventListener(TimerEvent.TIMER, this.0Iv);
             this.26k.reset();
@@ -107,13 +107,13 @@ package OZ{
                 if ((((this.0Bu == 9)) || ((this.0Bu == 99))))
                 {
                     this.0Ff();
-                };
+                }
                 new GTween(this.text, 0.25, {
                     scaleX:1.25,
                     scaleY:1.25,
                     alpha:1
                 });
-            };
+            }
         }
 
         public function setXPos(_arg1:Number):void{

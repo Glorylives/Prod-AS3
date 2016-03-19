@@ -24,7 +24,7 @@ package yo{
             {
                 _arg1.writeBoolean(this.offer_[_local2]);
                 _local2++;
-            };
+            }
         }
 
         override public function toString():String{

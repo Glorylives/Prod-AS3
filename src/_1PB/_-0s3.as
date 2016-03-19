@@ -33,7 +33,7 @@ package 1PB{
             } else
             {
                 this.iu();
-            };
+            }
         }
 
         private function 1Pt():void{

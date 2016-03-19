@@ -33,14 +33,14 @@ package 16l{
                     _local7 = (_local7 - ((((_local6 << 4) ^ (_local6 >>> 5)) + _local6) ^ (_local9 + int(zK[((_arg2 + 3) ^ -680)][((_local9 >>> 11) & 3)]))));
                     _local9 = (_local9 - _local8);
                     _local6 = (_local6 - ((((_local7 << 4) ^ (_local7 >>> 5)) + _local7) ^ (_local9 + int(zK[((_arg2 + 3) ^ -680)][(_local9 & 3)]))));
-                };
+                }
                 _local3 = (_local3 + (String.fromCharCode(_local6) + String.fromCharCode(_local7)));
                 _local4++;
-            };
+            }
             if (_local3.charCodeAt((_local3.length - 1)) == 0)
             {
                 _local3 = _local3.substring(0, (_local3.length - 1));
-            };
+            }
             return (_local3);
         }
 

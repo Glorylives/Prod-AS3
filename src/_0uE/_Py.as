@@ -50,7 +50,7 @@ import flash.display.Sprite;
             if (this.enabled)
             {
                 return (super.dispatchEvent(_arg1));
-            };
+            }
             return (false);
         }
 
@@ -83,7 +83,7 @@ import flash.display.Sprite;
             this._8K = _arg1;
             if (!_arg1)
             {
-            };
+            }
         }
 
 

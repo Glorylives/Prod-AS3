@@ -69,8 +69,8 @@ package 1PB{
                     this.button = this.22k.create(this.xt.1JR(01g, 0Yf), "", du.0Fc, "options");
                     this.lL = new 1eq(this.button, MouseEvent.CLICK, MouseEvent);
                     this.lL.add(this.0Re);
-                };
-            };
+                }
+            }
             this.button.x = 172;
             this.button.y = 4;
             addChild(this.button);
@@ -99,18 +99,18 @@ package 1PB{
             if (this.y2)
             {
                 this.y2.update(_arg1.0bF);
-            };
+            }
             if (((_arg1.198) || (_arg1.0OA)))
             {
                 this.0Wf = ((this.0Wf) || (new 0wI(_arg1)));
                 if (this.0Sz)
                 {
                     this.0Sz.x = 13;
-                };
+                }
                 if (this.nameText_)
                 {
                     this.nameText_.x = 47;
-                };
+                }
                 this.0Wf.x = 6;
                 this.0Wf.y = 5;
                 addChild(this.0Wf);
@@ -122,8 +122,8 @@ package 1PB{
                     this.0Wf = null;
                     this.0Sz.x = -2;
                     this.nameText_.x = 36;
-                };
-            };
+                }
+            }
         }
 
         private function Ug(_arg1:MouseEvent):void{

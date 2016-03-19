@@ -8,7 +8,7 @@ package 1kr{
 
     public class AppEngineRequestStats {
 
-        private const 15Q:Object = {};
+        private const 15Q:Object = {}
 
         [Inject]
         public var 1XE:0By;

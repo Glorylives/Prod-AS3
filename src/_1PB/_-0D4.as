@@ -82,7 +82,7 @@ package 1PB{
             } else
             {
                 this.up.dispatch();
-            };
+            }
         }
 
         private function Q1():void{

@@ -64,7 +64,7 @@ package 1m5{
             if (((this.death) && (this.death.background)))
             {
                 this.view.0mR(this.death.background);
-            };
+            }
         }
 
         private function 0mK():void{
@@ -86,7 +86,7 @@ package 1m5{
             if (((this.kB) && (this.death.1LW)))
             {
                 return (this.0uq());
-            };
+            }
             return (this.Ev());
         }
 
@@ -108,7 +108,7 @@ package 1m5{
             } else
             {
                 this.1Lo.dispatch();
-            };
+            }
         }
 
 

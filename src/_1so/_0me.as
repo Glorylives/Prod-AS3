@@ -39,15 +39,15 @@ import flash.utils.getTimer;
             if ((((_arg1 == null)) || ((_arg1.texture_ == null))))
             {
                 return (null);
-            };
+            }
             if (this.Bx(_arg2))
             {
                 return (new QuestToolTip(go_));
-            };
+            }
             if (Parameters.data_.showQuestPortraits)
             {
                 return (new _0xW(_arg1));
-            };
+            }
             return (null);
         }
 
@@ -73,9 +73,9 @@ import flash.utils.getTimer;
                     if (_local4 != _local5)
                     {
                         hZ(this.getToolTip(_local3, _arg1));
-                    };
-                };
-            };
+                    }
+                }
+            }
             super.draw(_arg1, _arg2);
         }
 

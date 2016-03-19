@@ -36,7 +36,7 @@ package 1cI{
             } else
             {
                 this.1Wo(this.failure);
-            };
+            }
         }
 
         private function 1Wo(_arg1:9f):void{
@@ -47,7 +47,7 @@ package 1cI{
             } else
             {
                 1d5(true);
-            };
+            }
         }
 
         private function 0zP(_arg1:9f, _arg2:Boolean, _arg3:String=""):void{

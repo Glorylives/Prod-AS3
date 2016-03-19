@@ -32,7 +32,7 @@ package 1Np{
             if (this.go_.map_ == null)
             {
                 return (false);
-            };
+            }
             x_ = this.go_.x_;
             y_ = this.go_.y_;
             var _local3:int = 20;
@@ -47,7 +47,7 @@ package 1Np{
                 _local10 = new 0yW(_local5, this.color_, _local9, this.props.spread, 0.75, _local7, _local8);
                 map_.addObj(_local10, x_, y_);
                 _local4++;
-            };
+            }
             return (true);
         }
 

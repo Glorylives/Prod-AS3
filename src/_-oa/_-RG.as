@@ -75,15 +75,15 @@ package oa{
             if (_arg1 == "")
             {
                 return (this.view.map.player_);
-            };
+            }
             var _local2:Dictionary = this.view.map.goDict_;
             for each (_local3 in _local2)
             {
                 if (_local3.name_ == _arg1)
                 {
                     return (_local3);
-                };
-            };
+                }
+            }
             return (this.view.map.player_);
         }
 
@@ -104,8 +104,8 @@ package oa{
                 if (_arg1 == xS.OUT)
                 {
                     this.view.zoomOut();
-                };
-            };
+                }
+            }
         }
 
         private function 0G0(_arg1:Player):void{

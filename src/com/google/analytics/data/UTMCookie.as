@@ -38,14 +38,14 @@ package com.google.analytics.data{
                     if ((((this[_local2] is String)) && ((this[_local2] == ""))))
                     {
                         _local1++;
-                    };
-                };
+                    }
+                }
                 _local3++;
-            };
+            }
             if (_local1 == fields.length)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -53,7 +53,7 @@ package com.google.analytics.data{
             if (!isNaN(_arg1))
             {
                 _timespan = _arg1;
-            };
+            }
             _creation = null;
             _expiration = null;
             _timestamp(_timespan);
@@ -64,7 +64,7 @@ package com.google.analytics.data{
             if (proxy)
             {
                 proxy.update(name, toSharedObject());
-            };
+            }
         }
 
         public function reset():void{
@@ -81,10 +81,10 @@ package com.google.analytics.data{
                     if ((this[_local1] is String))
                     {
                         this[_local1] = "";
-                    };
-                };
+                    }
+                }
                 _local2++;
-            };
+            }
             resetTimestamp();
             update();
         }
@@ -99,17 +99,17 @@ package com.google.analytics.data{
                 if (_arg1[_local2])
                 {
                     this[_local2] = _arg1[_local2];
-                };
+                }
                 _local4++;
-            };
+            }
             if (_arg1.creation)
             {
                 this.creation = _arg1.creation;
-            };
+            }
             if (_arg1.expiration)
             {
                 this.expiration = _arg1.expiration;
-            };
+            }
         }
 
         private function _timestamp(_arg1:Number):void{
@@ -118,7 +118,7 @@ package com.google.analytics.data{
             if (_arg1 > 0)
             {
                 expiration = new Date((creation.valueOf() + _arg1));
-            };
+            }
         }
 
         public function isExpired():Boolean{
@@ -127,7 +127,7 @@ package com.google.analytics.data{
             if (_local2 <= 0)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -159,7 +159,7 @@ package com.google.analytics.data{
                     } else
                     {
                         _local1.push(_local3);
-                    };
+                    }
                 } else
                 {
                     if ((_local3 is Number))
@@ -176,16 +176,16 @@ package com.google.analytics.data{
                             } else
                             {
                                 _local1.push(_local3);
-                            };
-                        };
-                    };
-                };
+                            }
+                        }
+                    }
+                }
                 _local6++;
-            };
+            }
             if (isEmpty())
             {
                 return ("-");
-            };
+            }
             return (("" + _local1.join(".")));
         }
 
@@ -197,14 +197,14 @@ package com.google.analytics.data{
             if (_expiration)
             {
                 return (_expiration);
-            };
+            }
             return (new Date((new Date().valueOf() + 1000)));
         }
 
         public function toSharedObject():Object{
             var _local2:String;
             var _local3:*;
-            var _local1:Object = {};
+            var _local1:Object = {}
             var _local4:int;
             while (_local4 < fields.length)
             {
@@ -223,11 +223,11 @@ package com.google.analytics.data{
                         if (!isNaN(_local3))
                         {
                             _local1[_local2] = _local3;
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 _local4++;
-            };
+            }
             _local1.creation = creation;
             _local1.expiration = expiration;
             return (_local1);
@@ -256,16 +256,16 @@ package com.google.analytics.data{
                         if (!isNaN(_local4))
                         {
                             _local2.push(((_local3 + ": ") + _local4));
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 _local6++;
-            };
+            }
             var _local7 = (((name.toUpperCase() + " {") + _local2.join(", ")) + "}");
             if (_arg1)
             {
                 _local7 = (_local7 + (((" creation:" + creation) + ", expiration:") + expiration));
-            };
+            }
             return (_local7);
         }
 

@@ -97,7 +97,7 @@ package BG{
             while (true)
             {
                 if ((getTimer() - _local2) >= _arg1) break;
-            };
+            }
         }
 
 
@@ -126,7 +126,7 @@ package BG{
             if (_local1)
             {
                 this.pI.dispatch(_local1.packageID);
-            };
+            }
         }
 
         override public function destroy():void{
@@ -172,7 +172,7 @@ package BG{
             if (this.view.isEditor)
             {
                 return;
-            };
+            }
             var _local2:1KE = new 1KE();
             _local2.server = _arg1.server_;
             _local2.gameId = _arg1.gameId_;

@@ -26,7 +26,7 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
 
 
         public function _zL(){
-            this.hash = {};
+            this.hash = {}
             this.pets = new Vector.<_0tK>();
             super();
         }
@@ -36,7 +36,7 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
             if (this.hash[_arg1] != null)
             {
                 return (this.hash[_arg1]);
-            };
+            }
             _local2 = new _0tK(_arg1);
             this.pets.push(_local2);
             this.hash[_arg1] = _local2;
@@ -61,7 +61,7 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
             if (_local2)
             {
                 _local2.BP(this._1Yk);
-            };
+            }
             this._0Bk.dispatch();
         }
 
@@ -74,7 +74,7 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
             if (_local1)
             {
                 _local1.BP(null);
-            };
+            }
             this._1Yk = null;
             this._0Bk.dispatch();
         }
@@ -84,7 +84,7 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
             if (_local2 == -1)
             {
                 return (null);
-            };
+            }
             return (this.pets[_local2]);
         }
 
@@ -97,9 +97,9 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
                 if (_local2._try () == _arg1)
                 {
                     return (_local3);
-                };
+                }
                 _local3++;
-            };
+            }
             return (-1);
         }
 
@@ -137,7 +137,7 @@ import com.company.assembleegameclient.objects.ObjectLibrary;
         }
 
         public function FZ():void{
-            this.hash = {};
+            this.hash = {}
             this.pets = new Vector.<_0tK>();
             this._2F();
         }

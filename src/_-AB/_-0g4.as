@@ -42,7 +42,7 @@ package AB{
                 }).setPrefix(TR.1pw(1kE((wavg - otherWavg)))).setPostfix(TR.17H());
                 1Tf.pushParams(du.0HX, {effect:innerStringBuilder});
                 ZX[nova.toXMLString()] = true;
-            };
+            }
             if (itemXML.@id == "Tome _of Purification")
             {
                 tag = itemXML.Activate.(text() == "RemoveNegativeConditions")[0];
@@ -59,8 +59,8 @@ package AB{
                         duration:tag.@duration
                     }, TR.1pw(2-W), TR.17H());
                     ZX[tag.toXMLString()] = true;
-                };
-            };
+                }
+            }
         }
 
 

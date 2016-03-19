@@ -25,16 +25,16 @@ package _Jy{
             if (!this._1lo)
             {
                 return;
-            };
+            }
             if (this._once)
             {
                 this.remove();
-            };
+            }
             if (((this._1RX) && (this._1RX.length)))
             {
                 this._1Kb.apply(null, this._1RX);
                 return;
-            };
+            }
             this._1Kb();
         }
 
@@ -42,16 +42,16 @@ package _Jy{
             if (!this._1lo)
             {
                 return;
-            };
+            }
             if (this._once)
             {
                 this.remove();
-            };
+            }
             if (((this._1RX) && (this._1RX.length)))
             {
                 this._1Kb.apply(null, [_arg1].concat(this._1RX));
                 return;
-            };
+            }
             this._1Kb(_arg1);
         }
 
@@ -59,15 +59,15 @@ package _Jy{
             if (!this._1lo)
             {
                 return;
-            };
+            }
             if (this._once)
             {
                 this.remove();
-            };
+            }
             if (((this._1RX) && (this._1RX.length)))
             {
                 _arg1 = _arg1.concat(this._1RX);
-            };
+            }
             var _local2:int = _arg1.length;
             if (_local2 == 0)
             {
@@ -90,10 +90,10 @@ package _Jy{
                         } else
                         {
                             this._1Kb.apply(null, _arg1);
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
         }
 
         public function get listener():Function{
@@ -104,7 +104,7 @@ package _Jy{
             if (null == _arg1)
             {
                 throw (new ArgumentError("Given listener is null.\nDid you want to set enabled to false instead?"));
-            };
+            }
             this._1g(_arg1);
             this._1Kb = _arg1;
         }
@@ -145,11 +145,11 @@ package _Jy{
             if (null == _arg1)
             {
                 throw (new ArgumentError("Given listener is null."));
-            };
+            }
             if (null == this._signal)
             {
                 throw (new Error("Internal signal reference has not been set yet."));
-            };
+            }
         }
 
 

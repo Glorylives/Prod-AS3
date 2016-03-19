@@ -68,7 +68,7 @@ package 2-g{
             } else
             {
                 index = field.getCharIndexAtPoint(field.mouseX, field.mouseY);
-            };
+            }
             var url:String;
             if (index > 0)
             {
@@ -81,13 +81,13 @@ package 2-g{
                         if (txtformat)
                         {
                             url = txtformat.@url;
-                        };
-                    };
+                        }
+                    }
                 } catch(err:Error)
                 {
                     url = null;
-                };
-            };
+                }
+            }
             field.dispatchEvent(new TextEvent(TEXT_ROLL, false, false, url));
         }
 
@@ -106,7 +106,7 @@ package 2-g{
             if (_arg6 < 0)
             {
                 _arg6 = this.style.m3;
-            };
+            }
             if (_arg6 <= 0)
             {
                 this.bg.graphics.drawRect(0, 0, 100, 100);
@@ -114,7 +114,7 @@ package 2-g{
             {
                 this.bg.graphics.drawRoundRect(0, 0, (_arg6 + 10), (_arg6 + 10), _arg6, _arg6);
                 this.bg.scale9Grid = new Rectangle((_arg6 * 0.5), (_arg6 * 0.5), 10, 10);
-            };
+            }
             this.24u = _arg3;
             this.width = _arg1;
             this.height = _arg2;
@@ -126,7 +126,7 @@ package 2-g{
             if (parent)
             {
                 parent.removeChild(this);
-            };
+            }
             dispatchEvent(new Event(Event.CLOSE));
         }
 
@@ -139,11 +139,11 @@ package 2-g{
             if (_arg1 < this.1St)
             {
                 _arg1 = this.1St;
-            };
+            }
             if (this.scaler)
             {
                 this.scaler.x = _arg1;
-            };
+            }
             this.bg.width = _arg1;
         }
 
@@ -151,11 +151,11 @@ package 2-g{
             if (_arg1 < this.1Iq)
             {
                 _arg1 = this.1Iq;
-            };
+            }
             if (this.scaler)
             {
                 this.scaler.y = _arg1;
-            };
+            }
             this.bg.height = _arg1;
         }
 
@@ -178,14 +178,14 @@ package 2-g{
             } else
             {
                 _arg1.addEventListener(MouseEvent.MOUSE_DOWN, this.5r, false, 0, true);
-            };
+            }
         }
 
         private function 5r(_arg1:MouseEvent):void{
             if (((!(stage)) || (!(this.29))))
             {
                 return;
-            };
+            }
             this.0go = this.0AQ("positioningField", true);
             this.0go.mouseEnabled = false;
             this.0go.autoSize = TextFieldAutoSize.LEFT;
@@ -203,7 +203,7 @@ package 2-g{
             if (this.style.1gn == 0)
             {
                 return;
-            };
+            }
             var _local2:Point = this.12A((parent.mouseX - this.0If.x), (parent.mouseY - this.0If.y));
             x = _local2.x;
             y = _local2.y;
@@ -224,11 +224,11 @@ package 2-g{
             {
                 stage.removeEventListener(MouseEvent.MOUSE_UP, this.Oz);
                 stage.removeEventListener(MouseEvent.MOUSE_MOVE, this.hP);
-            };
+            }
             if (((this.0go) && (this.0go.parent)))
             {
                 this.0go.parent.removeChild(this.0go);
-            };
+            }
             this.0go = null;
             dispatchEvent(new Event(Xb));
         }
@@ -240,9 +240,9 @@ package 2-g{
                 {
                     x = this.0k1.x;
                     y = this.0k1.y;
-                };
+                }
                 this.0k1 = null;
-            };
+            }
         }
 
         public function get 24u():Boolean{
@@ -275,10 +275,10 @@ package 2-g{
                     if (contains(this.scaler))
                     {
                         removeChild(this.scaler);
-                    };
+                    }
                     this.scaler = null;
-                };
-            };
+                }
+            }
         }
 
         private function 1hf(_arg1:Event):void{
@@ -321,7 +321,7 @@ package 2-g{
             if (((this.0go) && (this.0go.parent)))
             {
                 this.0go.parent.removeChild(this.0go);
-            };
+            }
             this.0go = null;
             dispatchEvent(new Event(1r));
         }
@@ -334,7 +334,7 @@ package 2-g{
             {
                 _local3.background = true;
                 _local3.backgroundColor = this.style.backgroundColor;
-            };
+            }
             return (_local3);
         }
 
@@ -352,12 +352,12 @@ package 2-g{
                 if (Math.abs((_local6 - _arg1)) < _local5)
                 {
                     return (_local6);
-                };
+                }
                 if (Math.abs((_local6 - _local3)) < _local5)
                 {
                     return ((_local6 - this.width));
-                };
-            };
+                }
+            }
             return (_arg1);
         }
 
@@ -368,7 +368,7 @@ package 2-g{
             if (_arg3 != null)
             {
                 _arg1.addEventListener(TextEvent.LINK, _arg3, false, 0, true);
-            };
+            }
         }
 
 

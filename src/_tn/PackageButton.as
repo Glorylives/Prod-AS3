@@ -58,7 +58,7 @@ package TN{
             if (this._state == _arg1)
             {
                 return;
-            };
+            }
             if (_arg1 == this.2E)
             {
                 removeChild(this.75);
@@ -72,8 +72,8 @@ package TN{
                 } else
                 {
                     throw (new Error(("PackageButton.setState: Unexpected state " + _arg1)));
-                };
-            };
+                }
+            }
             this._state = _arg1;
         }
 
@@ -84,7 +84,7 @@ package TN{
             } else
             {
                 this.setState(this.do);
-            };
+            }
             this.75.textChanged.addOnce(this.layout);
             this.0Kq.setString(_arg1.toString());
             this.75.setStringBuilder(this.0Kq);
@@ -99,7 +99,7 @@ package TN{
             } else
             {
                 _local3 = du.fW;
-            };
+            }
             this.26W.textChanged.addOnce(this.layout);
             this.0WX.setParams(_local3, {number:_local2});
             this.26W.setStringBuilder(this.0WX);

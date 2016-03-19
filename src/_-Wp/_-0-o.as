@@ -86,9 +86,9 @@ package Wp{
                     } else
                     {
                         this.context.configure(0r3);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function 05x():Boolean{

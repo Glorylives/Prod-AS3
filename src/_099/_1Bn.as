@@ -45,7 +45,7 @@ public class _1Bn extends Menu {
                 addChild(_local2);
                 this.wd.push(_local2);
                 this._03I = (this._03I + 32);
-            };
+            }
         }
 
         private function _1AW():void{
@@ -61,7 +61,7 @@ public class _1Bn extends Menu {
                 this.185.y = 40;
                 addChild(this.185);
                 this.03I = 52;
-            };
+            }
         }
 
         private function 1nt(_arg1:Event):void{
@@ -74,15 +74,15 @@ public class _1Bn extends Menu {
                 {
                     _local3 = _local4;
                     if (_local4.0kh) break;
-                };
-            };
+                }
+            }
             if (_local3 != null)
             {
                 _local2.1oB(_local3);
             } else
             {
                 this.0-l.dispatch();
-            };
+            }
             remove();
         }
 

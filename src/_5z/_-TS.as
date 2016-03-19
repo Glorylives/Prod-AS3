@@ -10,7 +10,7 @@ package 5z{
 
 
         private static function Fe():Object{
-            0vP = {};
+            0vP = {}
             0vP[1dH.aB.value] = 30;
             0vP[1dH.gt.value] = 20;
             0vP[1dH.0UN.value] = 20;

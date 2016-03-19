@@ -57,12 +57,12 @@ package 0T7{
                     if (_local3.domain == ROTMG_TESTING2)
                     {
                         this.0Jw = 0XK.TESTING2;
-                    };
-                };
+                    }
+                }
             } else
             {
                 this.0Jw = this.Hu.yC(_arg1);
-            };
+            }
         }
 
         private function 1TA(_arg1:String):Boolean{

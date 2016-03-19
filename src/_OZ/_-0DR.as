@@ -72,7 +72,7 @@ package OZ{
                 mouseEnabled = _arg1;
                 filters = ((_arg1) ? [] : [1c9]);
                 this.draw();
-            };
+            }
         }
 
         private function vi():void{

@@ -18,7 +18,7 @@ package Wn{
             for each (_local1 in 0bi)
             {
                 _local1.0FS();
-            };
+            }
         }
 
 

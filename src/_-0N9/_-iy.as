@@ -39,14 +39,14 @@ package 0N9{
                 _local1.1jM(this.i-.0BA());
                 _local2 = _local1.getString();
                 this.0py.name = ((_local2) ? ("#" + _local2) : this.0py.name);
-            };
+            }
         }
 
         private function qh():void{
             if ((((((((((this.0py.name == Parameters.uL)) || ((this.0py.name == Parameters.si)))) || ((this.0py.name == Parameters.1Wj)))) || ((this.0py.name == Parameters.Iu)))) || ((this.0py.name.charAt(0) == "#"))))
             {
                 this.0P7();
-            };
+            }
         }
 
         public function 0P7():void{

@@ -23,7 +23,7 @@ package 0mE{
                 _local2 = XML(this.08M.KabamPaymentInfo);
                 _local1.signedRequest = _local2.signedRequest;
                 _local1.09w = _local2.naid;
-            };
+            }
         }
 
 

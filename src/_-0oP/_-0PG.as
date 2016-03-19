@@ -22,23 +22,23 @@ package 0oP{
             if ((_arg1 is String))
             {
                 return (this.gB((_arg1 as String)));
-            };
+            }
             if ((_arg1 is Number))
             {
                 return (((isFinite((_arg1 as Number))) ? _arg1.toString() : "null"));
-            };
+            }
             if ((_arg1 is Boolean))
             {
                 return (((_arg1) ? "true" : "false"));
-            };
+            }
             if ((_arg1 is Array))
             {
                 return (this.25J((_arg1 as Array)));
-            };
+            }
             if ((((_arg1 is Object)) && (!((_arg1 == null)))))
             {
                 return (this.io(_arg1));
-            };
+            }
             return ("null");
         }
 
@@ -83,10 +83,10 @@ package 0oP{
                         } else
                         {
                             _local2 = (_local2 + _local3);
-                        };
-                };
+                        }
+                }
                 _local5++;
-            };
+            }
             return ((('"' + _local2) + '"'));
         }
 
@@ -98,10 +98,10 @@ package 0oP{
                 if (_local2.length > 0)
                 {
                     _local2 = (_local2 + ",");
-                };
+                }
                 _local2 = (_local2 + this.1uV(_arg1[_local3]));
                 _local3++;
-            };
+            }
             return ((("[" + _local2) + "]"));
         }
 
@@ -124,10 +124,10 @@ package 0oP{
                         if (s.length > 0)
                         {
                             s = (s + ",");
-                        };
+                        }
                         s = (s + ((this.gB(key) + ":") + this.1uV(value)));
-                    };
-                };
+                    }
+                }
             } else
             {
                 for each (v in classInfo..*.(((name() == "variable")) || ((name() == "accessor"))))
@@ -135,10 +135,10 @@ package 0oP{
                     if (s.length > 0)
                     {
                         s = (s + ",");
-                    };
+                    }
                     s = (s + ((this.gB(v.@name.toString()) + ":") + this.1uV(o[v.@name])));
-                };
-            };
+                }
+            }
             return ((("{" + s) + "}"));
         }
 

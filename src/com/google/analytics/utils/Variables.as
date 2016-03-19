@@ -20,15 +20,15 @@ package com.google.analytics.utils{
             if (_arg1)
             {
                 decode(_arg1);
-            };
+            }
             if (_arg2)
             {
                 this.pre = _arg2;
-            };
+            }
             if (_arg3)
             {
                 this.post = _arg3;
-            };
+            }
         }
 
         private function _join(_arg1:Variables):void{
@@ -36,11 +36,11 @@ package com.google.analytics.utils{
             if (!_arg1)
             {
                 return;
-            };
+            }
             for (_local2 in _arg1)
             {
                 this[_local2] = _arg1[_local2];
-            };
+            }
         }
 
         public function join(... _args):void{
@@ -51,9 +51,9 @@ package com.google.analytics.utils{
                 if ((_args[_local3] is Variables))
                 {
                     _join(_args[_local3]);
-                };
+                }
                 _local3++;
-            };
+            }
         }
 
         public function toString():String{
@@ -71,13 +71,13 @@ package com.google.analytics.utils{
                 if (URIencode)
                 {
                     _local2 = encodeURI(_local2);
-                };
+                }
                 _local1.push(((_local3 + "=") + _local2));
-            };
+            }
             if (sort)
             {
                 _local1.sort();
-            };
+            }
             if (pre.length > 0)
             {
                 pre.reverse();
@@ -92,13 +92,13 @@ package com.google.analytics.utils{
                         if (_local4.indexOf(_local7) == 0)
                         {
                             _local1.unshift(_local1.splice(_local6, 1)[0]);
-                        };
+                        }
                         _local6++;
-                    };
+                    }
                     _local5++;
-                };
+                }
                 pre.reverse();
-            };
+            }
             if (post.length > 0)
             {
                 _local5 = 0;
@@ -112,12 +112,12 @@ package com.google.analytics.utils{
                         if (_local4.indexOf(_local8) == 0)
                         {
                             _local1.push(_local1.splice(_local6, 1)[0]);
-                        };
+                        }
                         _local6++;
-                    };
+                    }
                     _local5++;
-                };
-            };
+                }
+            }
             return (_local1.join("&"));
         }
 
@@ -130,18 +130,18 @@ package com.google.analytics.utils{
             if (_arg1 == "")
             {
                 return;
-            };
+            }
             if (_arg1.charAt(0) == "?")
             {
                 _arg1 = _arg1.substr(1, _arg1.length);
-            };
+            }
             if (_arg1.indexOf("&") > -1)
             {
                 _local2 = _arg1.split("&");
             } else
             {
                 _local2 = [_arg1];
-            };
+            }
             var _local7:int;
             while (_local7 < _local2.length)
             {
@@ -152,9 +152,9 @@ package com.google.analytics.utils{
                     _local4 = _local6[0];
                     _local5 = decodeURI(_local6[1]);
                     this[_local4] = _local5;
-                };
+                }
                 _local7++;
-            };
+            }
         }
 
         public function toURLVariables():URLVariables{
@@ -163,7 +163,7 @@ package com.google.analytics.utils{
             for (_local2 in this)
             {
                 _local1[_local2] = this[_local2];
-            };
+            }
             return (_local1);
         }
 

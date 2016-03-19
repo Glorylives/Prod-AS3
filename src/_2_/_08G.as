@@ -50,7 +50,7 @@ package _2_{
             if (this._0g9)
             {
                 removeChild(this._0g9);
-            };
+            }
             this._0g9 = _7B(this._1Xj.create(this.size, this.X0()));
             addChildAt(this._0g9, 0);
         }
@@ -60,7 +60,7 @@ package _2_{
             if (this.background != HJ)
             {
                 _local1[_23z.indexOf(this.background)] = 1;
-            };
+            }
             return (_local1);
         }
 

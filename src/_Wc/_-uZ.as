@@ -53,7 +53,7 @@ package Wc{
             } else
             {
                 this.reportError(_arg2);
-            };
+            }
         }
 
         private function 1iX(_arg1:String):void{
@@ -95,7 +95,7 @@ package Wc{
 
         private function 1cq(_arg1:Event):void{
             var _local2:Account = _1JZ.0JF().getInstance(Account);
-            var _local3:Object = {board:this.2-L.1UU()};
+            var _local3:Object = {board:this.2-L.1UU()}
             1X3.1J7(_local3, _local2.1Y());
             this.client = _1JZ.0JF().getInstance(Fu);
             this.client.complete.addOnce(this.0zM);
@@ -114,7 +114,7 @@ package Wc{
             } else
             {
                 this.0jf(_arg2);
-            };
+            }
         }
 
         private function 0Sx(_arg1:String):void{

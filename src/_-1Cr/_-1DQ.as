@@ -82,12 +82,12 @@ package 1Cr{
                 this.1qs.x = (this.1hL.width + 8);
                 this.1qs.setStringBuilder(new 1WS(this.267));
                 this.1RU.y = (this.1qs.y + 16);
-            };
+            }
             if (_arg1.0qb() != this.0CV)
             {
                 this.0CV = _arg1.0qb();
                 this.1RU.setStringBuilder(new 1WS(this.0CV));
-            };
+            }
             this.1xj = _arg1.y0;
             this.1qs.setColor(((this.1xj) ? this.10X : this.187));
             this.bP.visible = this.1xj;
@@ -100,7 +100,7 @@ package 1Cr{
             while (numChildren > 0)
             {
                 this.removeChildAt((numChildren - 1));
-            };
+            }
             this.1hL = null;
             this.1qs = null;
             this.1RU = null;

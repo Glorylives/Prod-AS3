@@ -76,7 +76,7 @@ package 1mO{
             {
                 _local1.ja.1w();
                 return;
-            };
+            }
         }
 
         public static function zh():Boolean{
@@ -86,9 +86,9 @@ package 1mO{
                 if (((!((Parameters.data_[("hasNewsUpdate" + _local1)] == null))) && ((Parameters.data_[("hasNewsUpdate" + _local1)] == true))))
                 {
                     return (true);
-                };
+                }
                 _local1++;
-            };
+            }
             return (false);
         }
 
@@ -102,7 +102,7 @@ package 1mO{
             } else
             {
                 _local5.setStringBuilder(new 1cA().setParams(_arg1));
-            };
+            }
             _local5.setWordWrap(true);
             _local5.setMultiLine(true);
             _local5.setAutoSize(TextFieldAutoSize.CENTER);
@@ -139,14 +139,14 @@ package 1mO{
                     _local4.x = (((0l4 * (_local3 + 3)) / 11) - (_local4.textWidth / 2));
                     _local4.addEventListener(MouseEvent.ROLL_OVER, this.8l);
                     _local4.addEventListener(MouseEvent.ROLL_OUT, this.21A);
-                };
+                }
                 _local4.height = _local4.textHeight;
                 _local4.y = (0oc - 33);
                 _local4.selectable = false;
                 _local4.addEventListener(MouseEvent.CLICK, this.0eJ);
                 addChild(_local4);
                 _local3++;
-            };
+            }
             this.1ex = this.0fU();
             this.qY = this.0og();
             this.1ex.x = (((0l4 * 3) / 11) - (this.qY.width / 2));
@@ -174,13 +174,13 @@ package 1mO{
                     if ((this.cl + 1) <= 26Z.1Zd)
                     {
                         this.27J((this.cl + 1));
-                    };
+                    }
                     return;
                 case this.1ex:
                     if ((this.cl - 1) >= 1)
                     {
                         this.27J((this.cl - 1));
-                    };
+                    }
                     return;
                 case this.1jU:
                     this.27J(1);
@@ -194,14 +194,14 @@ package 1mO{
                 case this.wH:
                     this.27J(4);
                     return;
-            };
+            }
         }
 
         private function nQ(_arg1:int):TextField{
             if ((_arg1 >= 0) < 26Z.1Zd)
             {
                 return (this.wz[(_arg1 - 1)]);
-            };
+            }
             return (null);
         }
 
@@ -216,8 +216,8 @@ package 1mO{
                     _local2.removeEventListener(MouseEvent.CLICK, this.0eJ);
                     _local2.removeEventListener(MouseEvent.ROLL_OVER, this.8l);
                     _local2.removeEventListener(MouseEvent.ROLL_OUT, this.21A);
-                };
-            };
+                }
+            }
             this.1ex.removeEventListener(MouseEvent.CLICK, this.0eJ);
             this.1ex.removeEventListener(MouseEvent.MOUSE_OVER, this.25A);
             this.1ex.removeEventListener(MouseEvent.MOUSE_OUT, this.0-3);
@@ -232,7 +232,7 @@ package 1mO{
             if ((((_arg1 < 1)) || ((_arg1 > 26Z.1Zd))))
             {
                 return;
-            };
+            }
             if (this.cl != -1)
             {
                 removeChild(this.C0);
@@ -240,9 +240,9 @@ package 1mO{
                 if (_local3 != null)
                 {
                     _local3.filters = 0PY;
-                };
+                }
                 0ZC.play("button_click");
-            };
+            }
             this.cl = _arg1;
             var _local4:26Z = _1JZ.0JF().getInstance(26Z);
             this.C0 = _local4.rh(_arg1);
@@ -251,13 +251,13 @@ package 1mO{
             if (_local3 != null)
             {
                 _local3.filters = HG;
-            };
+            }
             Parameters.data_[("hasNewsUpdate" + _arg1)] = false;
             var _local5:Boolean = zh();
             if (_local2 != _local5)
             {
                 0GG();
-            };
+            }
         }
 
         override protected function makeModalBackground():Sprite{
@@ -287,7 +287,7 @@ package 1mO{
                 if ((this.cl + 1) <= 26Z.1Zd)
                 {
                     this.27J((this.cl + 1));
-                };
+                }
             } else
             {
                 if (_arg1.keyCode == 02E.LEFT)
@@ -295,9 +295,9 @@ package 1mO{
                     if ((this.cl - 1) >= 1)
                     {
                         this.27J((this.cl - 1));
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function 0fU():Sprite{

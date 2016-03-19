@@ -78,8 +78,8 @@ package eC{
                     _arg1.setSelected(true);
                     this.19Q(_arg1.index);
                     this.0IV.dispatch(this.Gy[_arg1.index].name);
-                };
-            };
+                }
+            }
         }
 
         public function 0aJ():void{
@@ -102,7 +102,7 @@ package eC{
                 this.f7.removeChild(this.ug[_local1]);
                 this.Un.removeChild(this.Gy[_local1]);
                 _local1++;
-            };
+            }
             this.ug = new Vector.<1u2>();
             this.Gy = new Vector.<Sprite>();
         }
@@ -118,8 +118,8 @@ package eC{
                 if ((_arg1 is eG))
                 {
                     _local4 = this.1DC(_local3, (_arg1 as eG));
-                };
-            };
+                }
+            }
             this.ug.push(_local4);
             this.f7.addChild(_local4);
             this.Gy.push(_arg2);
@@ -132,7 +132,7 @@ package eC{
                 _local4.setSelected(true);
                 this.19Q(0);
                 this.0IV.dispatch(_arg2.name);
-            };
+            }
         }
 
         public function iz():void{
@@ -165,7 +165,7 @@ package eC{
                 _local2.visible = false;
                 _local3.visible = true;
                 this.ce = _arg1;
-            };
+            }
         }
 
 

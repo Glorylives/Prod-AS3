@@ -23,7 +23,7 @@ package com.company.assembleegameclient.map{
             {
                 this.2-9 = (getTimer() + 4000);
                 this.1AN = (this.2-9 + 2000);
-            };
+            }
             this.objectId_ = _arg1;
         }
 
@@ -36,7 +36,7 @@ package com.company.assembleegameclient.map{
             if (_arg1 < this.2-9)
             {
                 return (null);
-            };
+            }
             return (this.map_.goDict_[this.objectId_]);
         }
 

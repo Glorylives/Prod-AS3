@@ -27,12 +27,12 @@ import com.company.assembleegameclient.engine3d.Face3D;
             if (((!((this._1mN == 0))) || (!((this._1FK == 0)))))
             {
                 this.face_.bitmapFill_.repeat = true;
-            };
+            }
             this.animate_ = _arg5;
             if (this.animate_ != _1Ad._15O)
             {
                 this.face_.bitmapFill_.repeat = true;
-            };
+            }
             this.animateDx_ = _arg6;
             this.animateDy_ = _arg7;
         }
@@ -57,18 +57,18 @@ import com.company.assembleegameclient.engine3d.Face3D;
                         _local4 = (this._1mN + ((this.animateDx_ * _arg3) / 1000));
                         _local5 = (this._1FK + ((this.animateDy_ * _arg3) / 1000));
                         break;
-                };
+                }
             } else
             {
                 _local4 = this._1mN;
                 _local5 = this._1FK;
-            };
+            }
             if (Parameters.TP())
             {
                 _14d._1xq(this.face_.bitmapFill_, _local4, _local5);
                 _local5 = 0;
                 _local4 = _local5;
-            };
+            }
             this.face_.yL.length = 0;
             this.face_.yL.push((0 + _local4), (0 + _local5), 0, (1 + _local4), (0 + _local5), 0, (1 + _local4), (1 + _local5), 0, (0 + _local4), (1 + _local5), 0);
             this.face_._0tI(this.face_.yL);

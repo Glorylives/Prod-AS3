@@ -19,11 +19,11 @@ package 1Np{
             if (timeLeft_ <= 0)
             {
                 return (false);
-            };
+            }
             if (((xy.obj_) && (xy.obj_.props_.static_)))
             {
                 return (false);
-            };
+            }
             var _local3:Number = (Math.random() * this.02d);
             _local4 = (Math.random() * this.02d);
             x_ = (x_ + (((dx_ * _local3) * _arg2) / 1000));

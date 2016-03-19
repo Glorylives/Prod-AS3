@@ -42,7 +42,7 @@ package eC{
             {
                 this.view.nY();
                 this.uk.dispatch(this.view);
-            };
+            }
         }
 
         private function 1VP():void{

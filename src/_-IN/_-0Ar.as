@@ -32,10 +32,10 @@ package IN{
                     if (_local3.attribute("color").length() != 0)
                     {
                         _local5 = int(_local3.@color);
-                    };
+                    }
                     ObjectLibrary.RY[_local4] = _local3;
-                };
-            };
+                }
+            }
         }
 
 
@@ -48,13 +48,13 @@ package IN{
             for each (_local3 in _local2)
             {
                 this.0P8(_local3);
-            };
+            }
             _local1 = 24A.1Tr;
             _local2 = _local1.children();
             for each (_local3 in _local2)
             {
                 1g1(_local3);
-            };
+            }
         }
 
         private function 0P8(_arg1:XML):void{
@@ -67,11 +67,11 @@ package IN{
             if (_arg1.hasOwnProperty("NoSkinSelect"))
             {
                 _local4.1S1 = false;
-            };
+            }
             if (_arg1.hasOwnProperty("UnlockSpecial"))
             {
                 _local4.CM = _arg1.UnlockSpecial;
-            };
+            }
             _local4.26- = new 0Ug(_local2, _local3);
             var _local5:0dE = this.model.7k(_arg1.PlayerClassType);
             _local5.0sP.1UF(_local4);

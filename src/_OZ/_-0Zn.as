@@ -23,7 +23,7 @@ package OZ{
             } else
             {
                 _local4 = AssetLibrary.1JR("lofiInterface", 54);
-            };
+            }
             var _local5:Bitmap = new Bitmap(_local4);
             _local5.scaleX = _arg2;
             _local5.scaleY = _arg2;

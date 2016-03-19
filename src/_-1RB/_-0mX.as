@@ -68,8 +68,8 @@ package 1RB{
                 } else
                 {
                     this.label.setColor(1eR);
-                };
-            };
+                }
+            }
         }
 
         public function eR(_arg1:Boolean):void{

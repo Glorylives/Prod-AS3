@@ -127,7 +127,7 @@ package com.company.assembleegameclient.game{
             if (this.0ZL != null)
             {
                 this.1tj();
-            };
+            }
             mui_.onMouseDown(_arg1);
         }
 
@@ -156,10 +156,10 @@ package com.company.assembleegameclient.game{
                     if ((((_arg4.length > 0)) && ((((((_arg4.charAt(0) == "#")) || ((_arg4.charAt(0) == "*")))) || ((_arg4.charAt(0) == "@"))))))
                     {
                         return;
-                    };
+                    }
                     this.0ZL.Us(this, _arg4, _arg5);
-                };
-            };
+                }
+            }
             addChild(this.0ZL);
             this.0ZL.x = _arg2;
             this.0ZL.y = (_arg3 - this.0ZL.height);
@@ -170,7 +170,7 @@ package com.company.assembleegameclient.game{
             {
                 removeChild(this.0ZL);
                 this.0ZL = null;
-            };
+            }
         }
 
         override public function applyMapInfo(_arg1:0BS):void{
@@ -192,12 +192,12 @@ package com.company.assembleegameclient.game{
             if (this.evalIsNotInCombatMapArea())
             {
                 this.0EF();
-            };
+            }
             if (map.name_ == "Arena")
             {
                 this.0mn();
                 this.0va();
-            };
+            }
             _local1 = _1JZ.0JF().getInstance(Account);
             if (((this.2M.0wW()) && ((map.name_ == Map.1U3))))
             {
@@ -207,9 +207,9 @@ package com.company.assembleegameclient.game{
                 } else
                 {
                     this.1IO.dispatch();
-                };
+                }
                 this.2M.BC++;
-            };
+            }
             this.isNexus_ = (map.name_ == Map.1U3);
             if (((this.isNexus_) || ((map.name_ == Map.1aw))))
             {
@@ -217,7 +217,7 @@ package com.company.assembleegameclient.game{
             } else
             {
                 this.0qv = new 02I(this);
-            };
+            }
             this.0qv.x = 594;
             this.0qv.y = 0;
             addChild(this.0qv);
@@ -226,7 +226,7 @@ package com.company.assembleegameclient.game{
                 game_net_user_id:_local1.0yO(),
                 game_net:_local1.Gc(),
                 play_platform:_local1.229()
-            };
+            }
             1X3.1J7(_local3, _local1.1Y());
             if (((((((!((map.name_ == "Kitchen"))) && (!((map.name_ == "Tutorial"))))) && (!((map.name_ == "Nexus Explanation"))))) && ((Parameters.data_.watchForTutorialExit == true))))
             {
@@ -234,12 +234,12 @@ package com.company.assembleegameclient.game{
                 this.18E('rotmg.Marketing.track("tutorialComplete")');
                 _local3["fteStepCompleted"] = 9900;
                 _local2.sendRequest("/log/logFteStep", _local3);
-            };
+            }
             if (map.name_ == "Kitchen")
             {
                 _local3["fteStepCompleted"] = 200;
                 _local2.sendRequest("/log/logFteStep", _local3);
-            };
+            }
             if (map.name_ == "Tutorial")
             {
                 if (Parameters.data_.needsTutorial == true)
@@ -248,7 +248,7 @@ package com.company.assembleegameclient.game{
                     this.18E('rotmg.Marketing.track("install")');
                     _local3["fteStepCompleted"] = 100;
                     _local2.sendRequest("/log/logFteStep", _local3);
-                };
+                }
                 this.1qo();
             } else
             {
@@ -256,12 +256,12 @@ package com.company.assembleegameclient.game{
                 {
                     _local4 = _1JZ.0JF().getInstance(1zI);
                     ((_local4) && (_local4.dispatch()));
-                };
-            };
+                }
+            }
             if (map.name_ == "Daily Quest Room")
             {
                 oF.Ft();
-            };
+            }
             Parameters.save();
             1H3();
         }
@@ -274,7 +274,7 @@ package com.company.assembleegameclient.game{
             if (((((("production".toLowerCase() == "dev")) || (Player.QH))) || (("production".toLowerCase() == "localhost"))))
             {
                 this.Y4();
-            };
+            }
             this.1Ze();
         }
 
@@ -317,14 +317,14 @@ package com.company.assembleegameclient.game{
                 if (_arg1)
                 {
                     this.sE = (this.sE + 0A-.0Fi);
-                };
+                }
                 if (this.f4 != null)
                 {
                     removeChild(this.f4);
-                };
+                }
                 this.f4 = _local3;
                 addChild(this.f4);
-            };
+            }
         }
 
         public function 1w():void{
@@ -346,14 +346,14 @@ package com.company.assembleegameclient.game{
             if (this.evalIsNotInCombatMapArea())
             {
                 this.19K(new 0tu());
-            };
+            }
         }
 
         public function 1IH():void{
             if (this.evalIsNotInCombatMapArea())
             {
                 this.19K(new PackageButton());
-            };
+            }
         }
 
         private function 19K(_arg1:DisplayObject):void{
@@ -381,13 +381,13 @@ package com.company.assembleegameclient.game{
             if (ExternalInterface.available == false)
             {
                 return;
-            };
+            }
             try
             {
                 ExternalInterface.call(_arg1);
             } catch(err:Error)
             {
-            };
+            }
         }
 
         private function 1qo():void{
@@ -402,7 +402,7 @@ package com.company.assembleegameclient.game{
             if (((!(map)) || (!(map.player_))))
             {
                 return;
-            };
+            }
             var _local1:Player = map.player_;
             var _local2:Number = 1zw.1rb;
             var _local3:18p;
@@ -420,10 +420,10 @@ package com.company.assembleegameclient.game{
                         {
                             _local2 = _local4;
                             _local3 = _local8;
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             this.8e.25S = _local3;
         }
 
@@ -442,7 +442,7 @@ package com.company.assembleegameclient.game{
                 stage.addEventListener(Ig.MONEY_CHANGED, this.1LV);
                 stage.addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
                 0h3.024(new 0-7(100, this.Po));
-            };
+            }
         }
 
         public function disconnect():void{
@@ -460,7 +460,7 @@ package com.company.assembleegameclient.game{
                 TextureRedrawer.clearCache();
                 Projectile.dispose();
                 gsc_.disconnect();
-            };
+            }
         }
 
         private function 1LV(_arg1:Event):void{
@@ -479,7 +479,7 @@ package com.company.assembleegameclient.game{
             {
                 closed.dispatch();
                 return;
-            };
+            }
             0h3.1-2(_local2);
             this.1D0 = (this.1D0 + _local3);
             this.UQ = (this.UQ + 1);
@@ -489,7 +489,7 @@ package com.company.assembleegameclient.game{
                 GA.global().trackEvent("performance", "frameRate", map.name_, _local7);
                 this.UQ = 0;
                 this.1D0 = 0;
-            };
+            }
             var _local4:int = getTimer();
             map.update(_local2, _local3);
             this.ES.dispatch("Map.update", (getTimer() - _local4));
@@ -499,7 +499,7 @@ package com.company.assembleegameclient.game{
             {
                 camera_.configureCamera(this.focus, ((_local5) ? _local5.1VL() : false));
                 map.draw(camera_, _local2);
-            };
+            }
             if (_local5 != null)
             {
                 this.0qv.draw(_local5.credits_, _local5.1iQ, _local5.0NG);
@@ -508,7 +508,7 @@ package com.company.assembleegameclient.game{
                 {
                     this.gZ.draw(_local5.numStars_);
                     this.J9.draw(_local5.guildName_, _local5.guildRank_);
-                };
+                }
                 if (_local5.isPaused())
                 {
                     map.filters = [1hD];
@@ -527,10 +527,10 @@ package com.company.assembleegameclient.game{
                         map.mouseChildren = true;
                         hudView.mouseEnabled = true;
                         hudView.mouseChildren = true;
-                    };
-                };
+                    }
+                }
                 moveRecords_.addRecord(_local2, _local5.x_, _local5.y_);
-            };
+            }
             lastUpdate_ = _local2;
             var _local6:int = (getTimer() - _local2);
             this.ES.dispatch("GameSprite.loop", _local6);

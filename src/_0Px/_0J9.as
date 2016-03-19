@@ -93,7 +93,7 @@ package _0Px{
                     return ("EquipmentType.Shuriken");
                 case _0ne:
                     return ("EquipmentType.Any");
-            };
+            }
             return ("EquipmentType.InvalidType");
         }
 

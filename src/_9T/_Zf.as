@@ -12,8 +12,8 @@ import flash.display.Sprite;
 
     public class _Zf extends Sprite {
 
-        private const _0st:Object = {};
-        private const _0Ne:Object = {};
+        private const _0st:Object = {}
+        private const _0Ne:Object = {}
 
         public function _Zf(){
             mouseEnabled = true;
@@ -26,7 +26,7 @@ import flash.display.Sprite;
             if (((_local3) && (contains(_local3))))
             {
                 removeChild(_local3);
-            };
+            }
             this._0st[_local2] = _arg1;
             addChild(_arg1);
         }
@@ -59,8 +59,8 @@ import flash.display.Sprite;
                 } else
                 {
                     _local4.dispose();
-                };
-            };
+                }
+            }
         }
 
 

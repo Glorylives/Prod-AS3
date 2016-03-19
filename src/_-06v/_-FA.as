@@ -36,15 +36,15 @@ package 06v{
             if (this.05x(_local1))
             {
                 return (1ja.22x);
-            };
+            }
             if (this.e-(_local1))
             {
                 return (1ja.0Nn);
-            };
+            }
             if (this.22L(_local1))
             {
                 return (1ja.BQ);
-            };
+            }
             return (1ja.0jY);
         }
 

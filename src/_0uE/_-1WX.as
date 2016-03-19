@@ -23,14 +23,14 @@ package 0uE{
             if (!this.1UK.06h)
             {
                 this.1UK.06h = this.1G5.1tI();
-            };
+            }
             if (this.1UK.0fw())
             {
                 this.view.1dO(TS.1uP(this.1UK.06h, this.1UK.1lT));
             } else
             {
                 this.view.reset();
-            };
+            }
         }
 
 

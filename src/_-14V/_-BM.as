@@ -69,11 +69,11 @@ package 14V{
             } else
             {
                 this.1Nc(_arg2);
-            };
+            }
         }
 
         public function 0j9():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             _local1.game_net_user_id = this.account.0yO();
             _local1.game_net = this.account.Gc();
             _local1.play_platform = this.account.229();
@@ -92,7 +92,7 @@ package 14V{
                 if (_local3 == 5)
                 {
                     this.sendRequest();
-                };
+                }
                 _local4 = new 09U(this.account, _local3);
                 this.1bn = true;
                 _local4.eO.addOnce(this.sendRequest);
@@ -102,11 +102,11 @@ package 14V{
             {
                 this.0UA.dispatch(XML(_arg1));
                 1d5(true);
-            };
+            }
             if (this.1b0 != null)
             {
                 this.0jg();
-            };
+            }
         }
 
         private function 1Nc(_arg1:String):void{
@@ -120,7 +120,7 @@ package 14V{
                     _local2.07n(du.159);
                     _local2.h1(this.account.getUserId());
                     _1JZ.0JF().getInstance(0io).dispatch(_local2);
-                };
+                }
                 this.1W6();
             } else
             {
@@ -131,8 +131,8 @@ package 14V{
                 } else
                 {
                     this.fL();
-                };
-            };
+                }
+            }
         }
 
         private function 1W6():void{
@@ -166,7 +166,7 @@ package 14V{
             {
                 this.1W6();
                 this.0TF.dispatch("LoginError.tooManyFails");
-            };
+            }
         }
 
 

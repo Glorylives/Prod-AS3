@@ -58,7 +58,7 @@ package com.company.assembleegameclient.screens.charrects{
             if (_local1 != 0)
             {
                 makeTaglineText(new 1cA().setParams(du.0eS, {percentage:_local2}));
-            };
+            }
         }
 
         private function makeIcon():void{

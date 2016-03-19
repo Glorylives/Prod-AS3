@@ -65,7 +65,7 @@ package 1h1{
                         {
                             _local11 = 0s6.get[_local9["ground"]];
                             _arg2.setGroundTile(_local8, _local7, _local11);
-                        };
+                        }
                         _local10 = _local9["objs"];
                         if (_local10 != null)
                         {
@@ -74,13 +74,13 @@ package 1h1{
                                 _local13 = 1db(_local12);
                                 _local13.objectId_ = BasicObject.0Zh();
                                 _arg2.addObj(_local13, (_local8 + 0.5), (_local7 + 0.5));
-                            };
-                        };
-                    };
+                            }
+                        }
+                    }
                     _local8++;
-                };
+                }
                 _local7++;
-            };
+            }
         }
 
         public static function 1db(_arg1:Object):GameObject{

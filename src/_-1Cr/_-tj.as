@@ -75,14 +75,14 @@ package 1Cr{
                 this.1hL.bitmapData = _arg1.getPortrait();
                 this.1qs.setStringBuilder(new 1WS(this.267));
                 this.1qs.x = (this.1hL.width + 12);
-            };
+            }
         }
 
         override public function destroy():void{
             while (numChildren > 0)
             {
                 this.removeChildAt((numChildren - 1));
-            };
+            }
             this.1hL = null;
             this.1qs = null;
             this.1Hq.removeEventListener(MouseEvent.CLICK, this.0hY);

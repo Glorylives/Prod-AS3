@@ -28,7 +28,7 @@ package 5I{
             if (this.1LY == 0)
             {
                 return;
-            };
+            }
             this.YS[--this.1LY].unexecute();
         }
 
@@ -36,7 +36,7 @@ package 5I{
             if (this.1LY == this.YS.length)
             {
                 return;
-            };
+            }
             this.YS[this.1LY++].execute();
         }
 

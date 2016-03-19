@@ -28,7 +28,7 @@ import flash.utils.getQualifiedClassName;
             if (_arg1 == _arg2)
             {
                 return (true);
-            };
+            }
             var _local3:String = getQualifiedClassName(_arg2);
             var _local4:Object = this._0A5.getInstanceDescription(_arg1).traits;
             return (((((_local4.bases as Array).indexOf(_local3) > -1)) || (((_local4.interfaces as Array).indexOf(_local3) > -1))));
@@ -59,7 +59,7 @@ import flash.utils.getQualifiedClassName;
             {
                 _arg1.ctor = (((_arg2.bases.length > 0)) ? new _15R() : null);
                 return;
-            };
+            }
             _local5 = this.Aw("Inject", _arg2.metadata);
             _local6 = ((((_local5) && (_local5.name))) || ("")).split(",");
             var _local7:int = this._1IB(_local4, _local6, _arg3);
@@ -77,7 +77,7 @@ import flash.utils.getQualifiedClassName;
             if (!_arg2)
             {
                 return;
-            };
+            }
             var _local4:uint = _arg2.length;
             var _local5:int;
             while (_local5 < _local4)
@@ -94,9 +94,9 @@ import flash.utils.getQualifiedClassName;
                     _local11 = this._1IB(_local10, _local9, _arg3);
                     _local12 = new _09S(_local6.name, _local10, _local11, _local8, _local7);
                     _arg1.gj(_local12);
-                };
+                }
                 _local5++;
-            };
+            }
         }
 
         private function _9z(_arg1:_3A, _arg2:Array, _arg3:String):void{
@@ -107,7 +107,7 @@ import flash.utils.getQualifiedClassName;
             {
                 _arg1.gj(_local4[_local5]);
                 _local5++;
-            };
+            }
         }
 
         private function _0sq(_arg1:_3A, _arg2:Array, _arg3:String):void{
@@ -115,7 +115,7 @@ import flash.utils.getQualifiedClassName;
             if (!_local4.length)
             {
                 return;
-            };
+            }
             _arg1._1iP = _local4[0];
             _arg1._1iP.last = _local4[0];
             var _local5:int = 1;
@@ -125,7 +125,7 @@ import flash.utils.getQualifiedClassName;
                 _arg1._1iP.last.next = _local4[_local5];
                 _arg1._1iP.last = _local4[_local5];
                 _local5++;
-            };
+            }
         }
 
         private function xB(_arg1:_3A, _arg2:Array):void{
@@ -137,7 +137,7 @@ import flash.utils.getQualifiedClassName;
             if (!_arg2)
             {
                 return;
-            };
+            }
             var _local3:uint = _arg2.length;
             var _local4:int;
             while (_local4 < _local3)
@@ -152,9 +152,9 @@ import flash.utils.getQualifiedClassName;
                     _local8 = (_local6.optional == "true");
                     _local9 = new _UV(((_local5.type + "|") + _local7), _local5.name, _local8, _local6);
                     _arg1.gj(_local9);
-                };
+                }
                 _local4++;
-            };
+            }
         }
 
         private function _1IB(_arg1:Array, _arg2:Array, _arg3:String):uint{
@@ -174,16 +174,16 @@ import flash.utils.getQualifiedClassName;
                     if (!_local7.optional)
                     {
                         throw (new _03A((('Error in method definition _of injectee "' + _arg3) + ". Required parameters can't have type \"*\".")));
-                    };
+                    }
                     _local9 = null;
-                };
+                }
                 if (!_local7.optional)
                 {
                     _local4++;
-                };
+                }
                 _arg1[_local6] = ((_local9 + "|") + _local8);
                 _local6++;
-            };
+            }
             return (_local4);
         }
 
@@ -198,7 +198,7 @@ import flash.utils.getQualifiedClassName;
             if (!_arg3)
             {
                 return (_local5);
-            };
+            }
             var _local6:uint = _arg3.length;
             var _local7:int;
             while (_local7 < _local6)
@@ -218,20 +218,20 @@ import flash.utils.getQualifiedClassName;
                     {
                         _local11 = [];
                         _local12 = 0;
-                    };
+                    }
                     _local13 = parseInt(_local9.order, 10);
                     if (_local13.toString(10) != _local9.order)
                     {
                         _local13 = int.MAX_VALUE;
-                    };
+                    }
                     _local5.push(new _arg1(_local8.name, _local11, _local12, _local13));
-                };
+                }
                 _local7++;
-            };
+            }
             if (_local5.length > 0)
             {
                 _local5.sortOn("order", Array.NUMERIC);
-            };
+            }
             return (_local5);
         }
 
@@ -258,11 +258,11 @@ import flash.utils.getQualifiedClassName;
                         _local10 = _local6[_local9];
                         _local7[_local10.key] = ((_local7[_local10.key]) ? ((_local7[_local10.key] + ",") + _local10.value) : _local10.value);
                         _local9++;
-                    };
+                    }
                     return (_local7);
-                };
+                }
                 _local4++;
-            };
+            }
             return (null);
         }
 

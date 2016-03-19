@@ -21,7 +21,7 @@ package _1u{
             if (_local2 != -1)
             {
                 this._1rX.splice(_local2, 1);
-            };
+            }
             this._1rX.unshift(_arg1);
         }
 
@@ -30,7 +30,7 @@ package _1u{
             {
                 this.index = ((this.index + 1) % this._1rX.length);
                 return (this._1rX[this.index]);
-            };
+            }
             return ("");
         }
 

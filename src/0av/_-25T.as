@@ -59,7 +59,7 @@ package 0av{
             } else
             {
                 this.reportError(_arg2);
-            };
+            }
         }
 
         private function 1gu():void{
@@ -90,7 +90,7 @@ package 0av{
                     orderid:_arg2,
                     authorized:((_arg3) ? 1 : 0)
                 });
-            };
+            }
         }
 
         private function 0HT(_arg1:Boolean, _arg2):void{
@@ -100,7 +100,7 @@ package 0av{
             } else
             {
                 this.reportError(_arg2);
-            };
+            }
         }
 
         private function 0GC():void{

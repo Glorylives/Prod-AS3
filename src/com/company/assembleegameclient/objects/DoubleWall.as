@@ -47,11 +47,11 @@ package com.company.assembleegameclient.objects{
             if (texture_ == null)
             {
                 return;
-            };
+            }
             if (this.faces_.length == 0)
             {
                 this.Me();
-            };
+            }
             var _local4:BitmapData = texture_;
             if (_0dP != null)
             {
@@ -59,8 +59,8 @@ package com.company.assembleegameclient.objects{
                 if (_local6 != null)
                 {
                     _local4 = _local6;
-                };
-            };
+                }
+            }
             var _local5:int;
             while (_local5 < this.faces_.length)
             {
@@ -75,11 +75,11 @@ package com.company.assembleegameclient.objects{
                     if (_0dP != null)
                     {
                         _local7._2H(_local4);
-                    };
-                };
+                    }
+                }
                 _local7.draw(_arg1, _arg2);
                 _local5++;
-            };
+            }
             this.i6.draw(_arg1, _arg2);
         }
 

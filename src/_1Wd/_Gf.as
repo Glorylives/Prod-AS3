@@ -23,7 +23,7 @@ import _0OG._22M;
             {
                 this._1ck = _arg1.createIndexBuffer(_1fv);
                 this._1ck.uploadFromVector(_local2, 0, _1fv);
-            };
+            }
         }
 
         public function apply(_arg1:Class, _arg2:_22M, _arg3:Dictionary):Object{

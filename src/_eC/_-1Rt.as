@@ -99,23 +99,23 @@ package eC{
             if (!_arg1)
             {
                 return;
-            };
+            }
             this.view.Mg(this.Pp.cR(16w.0Jx), new 1xA(_arg1));
             if (this.Cr)
             {
                 this.view.Mg(this.Pp.cR(16w.1Ju), new 1e8(this.view.HEIGHT));
-            };
+            }
             if (_arg1.0Th)
             {
                 this.view.Mg(this.Pp.cR(16w.ch), new GF(_arg1));
             } else
             {
                 this.13E.add(this.bS);
-            };
+            }
             if (this.vM.1tI())
             {
                 this.view.Mg(this.Pp.cR(16w.0aN), new 12q());
-            };
+            }
         }
 
         private function df():void{
@@ -133,7 +133,7 @@ package eC{
                 _local2 = this.11u.ja.map.player_;
                 this.view.Mg(this.Pp.cR(16w.ch), new GF(_local2));
                 this.13E.remove(this.bS);
-            };
+            }
         }
 
         private function 1z5():void{

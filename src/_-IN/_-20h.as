@@ -30,7 +30,7 @@ package IN{
             if (this.3L())
             {
                 this.19y();
-            };
+            }
         }
 
         private function 19y():void{
@@ -40,7 +40,7 @@ package IN{
             } else
             {
                 this.258();
-            };
+            }
         }
 
         private function 3L():Boolean{

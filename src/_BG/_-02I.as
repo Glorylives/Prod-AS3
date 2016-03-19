@@ -69,7 +69,7 @@ package BG{
                 addChild(this.6u);
                 this.1Bc = new Bitmap(09g.0jZ());
                 addChild(this.1Bc);
-            };
+            }
             if (((this.162) && (1aM.0ui)))
             {
                 _local6 = _1JZ.0JF().getInstance(1aM).getFortune();
@@ -81,7 +81,7 @@ package BG{
                     this.LJ.setStringBuilder(new 1WS(this.20a()));
                     addChild(this.LJ);
                     this.LJ.visible = false;
-                };
+                }
                 this.Nj = this.1zR(0xFFFFFF);
                 1he.push(this.Nj.textChanged);
                 addChild(this.Nj);
@@ -90,7 +90,7 @@ package BG{
             } else
             {
                 this.162 = false;
-            };
+            }
             this.draw(0, 0, 0);
             mouseEnabled = true;
             doubleClickEnabled = true;
@@ -116,20 +116,20 @@ package BG{
                 this.Qz.x = -(this.Qz.width);
                 this.di.x = ((this.Qz.x - this.di.width) + 8);
                 this.di.y = ((this.Qz.y + (this.Qz.height / 2)) - (this.di.height / 2));
-            };
+            }
             if (this.0Ty)
             {
                 this.1Bc.x = (this.di.x - this.1Bc.width);
                 this.6u.x = ((this.1Bc.x - this.6u.width) + 8);
                 this.6u.y = ((this.1Bc.y + (this.1Bc.height / 2)) - (this.6u.height / 2));
-            };
+            }
         }
 
         private function Go(_arg1:MouseEvent):void{
             if (((((!(this.0Eg)) || (this.0Eg.evalIsNotInCombatMapArea()))) || ((Parameters.data_.clickForGold == true))))
             {
                 this.kn.dispatch();
-            };
+            }
         }
 
         public function 1zR(_arg1:uint=0xFFFFFF):_13j{
@@ -153,36 +153,36 @@ package BG{
                 {
                     this.LJ.setStringBuilder(new 1WS(_local1));
                     this.0bu = _local1;
-                };
+                }
                 this.S5();
-            };
+            }
         }
 
         public function draw(_arg1:int, _arg2:int, _arg3:int=0):void{
             if (this.162)
             {
                 this.21R();
-            };
+            }
             if ((((((_arg1 == this.credits_)) && (((this.0Ty) && ((_arg2 == this.1iQ)))))) && (((this.162) && ((_arg3 == this.4s))))))
             {
                 return;
-            };
+            }
             this.credits_ = _arg1;
             this.di.setStringBuilder(new 1WS(this.credits_.toString()));
             if (this.0Ty)
             {
                 this.1iQ = _arg2;
                 this.6u.setStringBuilder(new 1WS(this.1iQ.toString()));
-            };
+            }
             if (this.162)
             {
                 this.4s = _arg3;
                 this.Nj.setStringBuilder(new 1WS(this.4s.toString()));
-            };
+            }
             if (1he.isEmpty())
             {
                 this.S5();
-            };
+            }
         }
 
         public function 20a():String{
@@ -215,11 +215,11 @@ package BG{
                             } else
                             {
                                 _local1 = "Ended";
-                            };
-                        };
-                    };
-                };
-            };
+                            }
+                        }
+                    }
+                }
+            }
             return (_local1);
         }
 

@@ -181,7 +181,7 @@ package kabam.rotmg.assets{
             "Large Monument 3":new largeMonument3Embed_(),
             "Jacko":new _188(),
             "Pet Upgrader Obj":new _1SG()
-        };
+        }
 
 
     }

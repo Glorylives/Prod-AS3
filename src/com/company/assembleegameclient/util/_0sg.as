@@ -28,7 +28,7 @@ package com.company.assembleegameclient.util{
             if (this._0yJ.stage != null)
             {
                 return (this._0yJ.stage.stageWidth);
-            };
+            }
             return (800);
         }
 
@@ -36,7 +36,7 @@ package com.company.assembleegameclient.util{
             if (this._0yJ.stage != null)
             {
                 return (this._0yJ.stage.stageHeight);
-            };
+            }
             return (600);
         }
 
@@ -80,7 +80,7 @@ package com.company.assembleegameclient.util{
             if (stage3D == null)
             {
                 stage3D = new _23J(this._0yJ.stage.stage3Ds[_arg1]);
-            };
+            }
             return (stage3D);
         }
 

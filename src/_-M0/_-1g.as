@@ -19,11 +19,11 @@ package M0{
 
         public function WS(_arg1:Array):void{
             var _local2:MysteryBoxInfo;
-            this.0OY = {};
+            this.0OY = {}
             for each (_local2 in _arg1)
             {
                 this.0OY[_local2.id] = _local2;
-            };
+            }
             this.initialized = true;
         }
 

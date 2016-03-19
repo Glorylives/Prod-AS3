@@ -46,7 +46,7 @@ import flash.utils.Dictionary;
             } catch(error:Error)
             {
                 base = "localhost";
-            };
+            }
             return (base);
         }
 
@@ -74,7 +74,7 @@ import flash.utils.Dictionary;
                 R6[channel] = volume;
             } catch(error:Error)
             {
-            };
+            }
         }
 
         private static function _1xx(_arg1:Event):void{
@@ -91,7 +91,7 @@ import flash.utils.Dictionary;
                 _local3 = _local2.soundTransform;
                 _local3.volume = ((Parameters.data_.playSFX) ? R6[_local2] : 0);
                 _local2.soundTransform = _local3;
-            };
+            }
         }
 
         public static function _1NS():void{
@@ -102,7 +102,7 @@ import flash.utils.Dictionary;
                 _local2 = _local1.soundTransform;
                 _local2.volume = ((Parameters.data_.playSFX) ? R6[_local1] : 0);
                 _local1.soundTransform = _local2;
-            };
+            }
         }
 
         public static function onIOError(_arg1:IOErrorEvent):void{

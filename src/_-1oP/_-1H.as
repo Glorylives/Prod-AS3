@@ -33,7 +33,7 @@ package 1oP{
             {
                 _local4[_local5] = this.1h0(_local2[_local5]);
                 _local5++;
-            };
+            }
             return (_local4);
         }
 

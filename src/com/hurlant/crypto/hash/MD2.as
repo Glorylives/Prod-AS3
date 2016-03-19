@@ -47,9 +47,9 @@ package com.hurlant.crypto.hash{
                 {
                     _local6 = (_local5[_local8] = (_local5[_local8] ^ S[(_arg1[(_local3 + _local8)] ^ _local6)]));
                     _local8++;
-                };
+                }
                 _local3 = (_local3 + 16);
-            };
+            }
             _arg1.position = _arg1.length;
             _arg1.writeBytes(_local5);
             _local4 = (_local4 + 16);
@@ -62,7 +62,7 @@ package com.hurlant.crypto.hash{
                 {
                     _local7[(32 + _local8)] = ((_local7[(16 + _local8)] = _arg1[(_local3 + _local8)]) ^ _local7[_local8]);
                     _local8++;
-                };
+                }
                 _local9 = 0;
                 _local8 = 0;
                 while (_local8 < 18)
@@ -73,12 +73,12 @@ package com.hurlant.crypto.hash{
                         _local9 = (_local7[_local10] ^ S[_local9]);
                         _local7[_local10] = _local9;
                         _local10++;
-                    };
+                    }
                     _local9 = ((_local9 + _local8) & 0xFF);
                     _local8++;
-                };
+                }
                 _local3 = (_local3 + 16);
-            };
+            }
             _local7.length = 16;
             _arg1.length = _local2;
             return (_local7);

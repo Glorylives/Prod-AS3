@@ -62,13 +62,13 @@ import flash.geom.Vector3D;
             for each (_local1 in this.faces_)
             {
                 _local1.dispose();
-            };
+            }
             this.faces_.length = 0;
             if (this.i6 != null)
             {
                 this.i6.dispose();
                 this.i6 = null;
-            };
+            }
             this.faces_ = null;
             this.baseTexMatrix_ = null;
         }
@@ -90,11 +90,11 @@ import flash.geom.Vector3D;
             if (this.texture_ == null)
             {
                 return;
-            };
+            }
             if (this.faces_.length == 0)
             {
                 this._Me();
-            };
+            }
             for each (_local4 in this.faces_)
             {
                 if (!_local4.draw(_arg1, _arg2, _arg3))
@@ -102,10 +102,10 @@ import flash.geom.Vector3D;
                     if (_local4.face_.vout_[1] < _arg2._0KH.bottom)
                     {
                         this._05K = 0;
-                    };
+                    }
                     return;
-                };
-            };
+                }
+            }
         }
 
         public function _1tC(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
@@ -128,7 +128,7 @@ import flash.geom.Vector3D;
                 if (_local1 != null)
                 {
                     this.faces_.push(new _1Nw(_local1, this._0y2, 0, 0, _1Ad._15O, 0, 0));
-                };
+                }
             } else
             {
                 _local1 = _0Sw.redraw(this, true);
@@ -144,17 +144,17 @@ import flash.geom.Vector3D;
                     {
                         _local2 = this.props_._1mN;
                         _local3 = this.props_._1FK;
-                    };
-                };
+                    }
+                }
                 this.faces_.push(new _1Nw((((_local1)!=null) ? _local1 : this.texture_), this._0y2, _local2, _local3, _1Ad._15O, 0, 0));
-            };
+            }
             if (this.props_.sink_)
             {
                 this.sink_ = (((_local1)==null) ? 12 : 6);
             } else
             {
                 this.sink_ = 0;
-            };
+            }
             if (this.props_._0zb)
             {
                 _local4 = this.props_._0zb.getTexture();
@@ -164,9 +164,9 @@ import flash.geom.Vector3D;
                 {
                     _local5[_local6] = 1;
                     _local6 = (_local6 + 3);
-                };
+                }
                 this.i6 = new _1Nw(_local4, _local5, 0, 0, this.props_._1yw.type_, this.props_._1yw.dx_, this.props_._1yw.dy_);
-            };
+            }
         }
 
 

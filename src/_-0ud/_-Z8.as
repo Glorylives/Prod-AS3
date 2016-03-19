@@ -25,10 +25,10 @@ package 0ud{
                 if (_local2.data.hasOwnProperty("GuestGUID"))
                 {
                     _local1 = _local2.data["GuestGUID"];
-                };
+                }
             } catch(error:Error)
             {
-            };
+            }
             if (_local1 == null)
             {
                 _local1 = GUID.create();
@@ -39,8 +39,8 @@ package 0ud{
                     _local2.flush();
                 } catch(error:Error)
                 {
-                };
-            };
+                }
+            }
             return (_local1);
         }
 

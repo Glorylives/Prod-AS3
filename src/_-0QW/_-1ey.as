@@ -23,7 +23,7 @@ package 0QW{
             for (_local1 in ObjectLibrary.get)
             {
                 _local2.push(_local1);
-            };
+            }
             _local2.sort(1N9.0V3);
             for each (_local1 in _local2)
             {
@@ -33,8 +33,8 @@ package 0QW{
                 {
                     _local5 = new 0qE(_local4);
                     1An(_local5);
-                };
-            };
+                }
+            }
         }
 
     }

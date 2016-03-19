@@ -19,11 +19,11 @@ package 0NI{
                 if (_local3.indexOf(_arg2) == -1)
                 {
                     _local3.push(_arg2);
-                };
+                }
             } else
             {
                 this._handlers[_arg1] = [_arg2];
-            };
+            }
         }
 
         public function qT(_arg1:Object):Boolean{
@@ -40,8 +40,8 @@ package 0NI{
                 if (_local3.length == 0)
                 {
                     delete this._handlers[_arg1];
-                };
-            };
+                }
+            }
         }
 
         public function J5(_arg1:Object, _arg2:Function=null, _arg3:Boolean=false):void{
@@ -54,7 +54,7 @@ package 0NI{
             } else
             {
                 ((_arg2) && (safelyCallBack(_arg2)));
-            };
+            }
         }
 
 
@@ -100,7 +100,7 @@ class MessageRunner {
                             if (handled)
                             {
                                 return;
-                            };
+                            }
                             handled = true;
                             if (((_arg1) || ((_handlers.length == 0))))
                             {
@@ -108,14 +108,14 @@ class MessageRunner {
                             } else
                             {
                                 next();
-                            };
+                            }
                         }));
                         return;
-                    };
+                    }
                     throw (new Error("Bad handler signature"));
-                };
-            };
-        };
+                }
+            }
+        }
         ((this._callback) && (safelyCallBack(this._callback, null, this._message)));
     }
 

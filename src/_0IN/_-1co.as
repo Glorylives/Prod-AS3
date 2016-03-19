@@ -18,19 +18,19 @@ package 0IN{
             _local1[1dH.aB] = {
                 gold:100,
                 fame:300
-            };
+            }
             _local1[1dH.gt] = {
                 gold:240,
                 fame:1000
-            };
+            }
             _local1[1dH.0UN] = {
                 gold:600,
                 fame:4000
-            };
+            }
             _local1[1dH.z] = {
                 gold:1800,
                 fame:15000
-            };
+            }
             return (_local1);
         }
 
@@ -39,23 +39,23 @@ package 0IN{
             _local1[1dH.aB] = {
                 gold:5,
                 fame:10
-            };
+            }
             _local1[1dH.gt] = {
                 gold:12,
                 fame:30
-            };
+            }
             _local1[1dH.0UN] = {
                 gold:30,
                 fame:100
-            };
+            }
             _local1[1dH.z] = {
                 gold:60,
                 fame:350
-            };
+            }
             _local1[1dH.cn] = {
                 gold:150,
                 fame:1000
-            };
+            }
             return (_local1);
         }
 

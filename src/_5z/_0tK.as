@@ -57,7 +57,7 @@ import com.company.assembleegameclient.util._BJ;
             for each (_local1 in this._0S1)
             {
                 _local1._1iq.add(this._0ZX);
-            };
+            }
         }
 
         public function _21t():Boolean{
@@ -68,8 +68,8 @@ import com.company.assembleegameclient.util._BJ;
                 if (_local2.level == 100)
                 {
                     _local1++;
-                };
-            };
+                }
+            }
             return ((_local1 == this._0S1.length));
         }
 
@@ -105,7 +105,7 @@ import com.company.assembleegameclient.util._BJ;
                 _local4.level = _arg1.Abilities.Ability[_local2].@power;
                 _local4.points = _arg1.Abilities.Ability[_local2].@points;
                 _local2++;
-            };
+            }
         }
 
         public function _1m7():String{

@@ -45,9 +45,9 @@ package 06I{
                 if (_local3)
                 {
                     return (_local3);
-                };
+                }
                 _local2 = _local2.parent;
-            };
+            }
             return (null);
         }
 
@@ -64,7 +64,7 @@ package 06I{
             if (_local2.parent == null)
             {
                 this.0KR(_local2);
-            };
+            }
             for each (_local3 in this._bindingByContainer)
             {
                 if (_arg1.contains(_local3.container))
@@ -78,10 +78,10 @@ package 06I{
                         if (!_arg1.contains(_local3.parent.container))
                         {
                             _local3.parent = _local2;
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             dispatchEvent(new Cv(Cv.1fg, _local2.container));
             return (_local2);
         }
@@ -95,7 +95,7 @@ package 06I{
             if (!_arg1.parent)
             {
                 this.0AF(_arg1);
-            };
+            }
             for each (_local3 in this._bindingByContainer)
             {
                 if (_local3.parent == _arg1)
@@ -104,9 +104,9 @@ package 06I{
                     if (!_local3.parent)
                     {
                         this.0KR(_local3);
-                    };
-                };
-            };
+                    }
+                }
+            }
             dispatchEvent(new Cv(Cv.0PQ, _arg1.container));
         }
 

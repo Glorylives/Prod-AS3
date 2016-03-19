@@ -33,11 +33,11 @@ package _0qj{
             if (_arg1 < 0)
             {
                 return (_1Bj);
-            };
+            }
             if (_arg1 > 0)
             {
                 return (_1HG);
-            };
+            }
             return (_1U4);
         }
 

@@ -26,11 +26,11 @@ package com.google.analytics.utils{
             if (UserAgent.minimal)
             {
                 return ("");
-            };
+            }
             if (System.vmVersion)
             {
                 return (("Tamarin/" + Utils.trim(System.vmVersion, true)));
-            };
+            }
             return ("");
         }
 
@@ -46,7 +46,7 @@ package com.google.analytics.utils{
             } else
             {
                 _local1 = (_local1 + "FlashPlayer");
-            };
+            }
             _local1 = (_local1 + "/");
             _local1 = (_local1 + _version.toString(3));
             return (_local1);
@@ -58,15 +58,15 @@ package com.google.analytics.utils{
             if (applicationComment != "")
             {
                 _local1 = (_local1 + (" " + applicationComment));
-            };
+            }
             if (tamarinProductToken != "")
             {
                 _local1 = (_local1 + (" " + tamarinProductToken));
-            };
+            }
             if (vendorProductToken != "")
             {
                 _local1 = (_local1 + (" " + vendorProductToken));
-            };
+            }
             return (_local1);
         }
 
@@ -78,15 +78,15 @@ package com.google.analytics.utils{
             {
                 _local1.push(_localInfo.operatingSystem);
                 _local1.push(_localInfo.language);
-            };
+            }
             if (Capabilities.isDebugger)
             {
                 _local1.push("DEBUG");
-            };
+            }
             if (_local1.length > 0)
             {
                 return ((("(" + _local1.join("; ")) + ")"));
-            };
+            }
             return ("");
         }
 
@@ -99,7 +99,7 @@ package com.google.analytics.utils{
             if (applicationVersion != "")
             {
                 _local1 = (_local1 + ("/" + applicationVersion));
-            };
+            }
             return (_local1);
         }
 

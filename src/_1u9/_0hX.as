@@ -15,7 +15,7 @@ package _1u9{
             if ((((((((_arg1 is Proxy)) || ((_arg1 is Number)))) || ((_arg1 is XML)))) || ((_arg1 is XMLList))))
             {
                 return (Class(getDefinitionByName(getQualifiedClassName(_arg1))));
-            };
+            }
             return (_arg1.constructor);
         }
 
@@ -31,13 +31,13 @@ package _1u9{
                     if (_local4 == -1)
                     {
                         return (_local3);
-                    };
+                    }
                     return (((_local3.substring(0, _local4) + "::") + _local3.substring((_local4 + 1))));
-                };
+                }
             } else
             {
                 _local3 = getQualifiedClassName(_arg1);
-            };
+            }
             return (((_arg2) ? _local3.replace("::", ".") : _local3));
         }
 

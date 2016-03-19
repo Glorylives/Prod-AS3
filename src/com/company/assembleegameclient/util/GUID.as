@@ -60,7 +60,7 @@ package com.company.assembleegameclient.util{
                     } else
                     {
                         _local3[_local15] = rol((((_local3[(_local15 - 3)] ^ _local3[(_local15 - 8)]) ^ _local3[(_local15 - 14)]) ^ _local3[(_local15 - 16)]), 1);
-                    };
+                    }
                     _local16 = 0Xg(0Xg(rol(_local4, 5), sha1_ft(_local15, _local5, _local6, _local7)), 0Xg(0Xg(_local8, _local3[_local15]), sha1_kt(_local15)));
                     _local8 = _local7;
                     _local7 = _local6;
@@ -68,14 +68,14 @@ package com.company.assembleegameclient.util{
                     _local5 = _local4;
                     _local4 = _local16;
                     _local15++;
-                };
+                }
                 _local4 = 0Xg(_local4, _local10);
                 _local5 = 0Xg(_local5, _local11);
                 _local6 = 0Xg(_local6, _local12);
                 _local7 = 0Xg(_local7, _local13);
                 _local8 = 0Xg(_local8, _local14);
                 _local9 = (_local9 + 16);
-            };
+            }
             return (new Array(_local4, _local5, _local6, _local7, _local8));
         }
 
@@ -83,15 +83,15 @@ package com.company.assembleegameclient.util{
             if (_arg1 < 20)
             {
                 return (((_arg2 & _arg3) | (~(_arg2) & _arg4)));
-            };
+            }
             if (_arg1 < 40)
             {
                 return (((_arg2 ^ _arg3) ^ _arg4));
-            };
+            }
             if (_arg1 < 60)
             {
                 return ((((_arg2 & _arg3) | (_arg2 & _arg4)) | (_arg3 & _arg4)));
-            };
+            }
             return (((_arg2 ^ _arg3) ^ _arg4));
         }
 
@@ -117,7 +117,7 @@ package com.company.assembleegameclient.util{
             {
                 _local2[(_local4 >> 5)] = (_local2[(_local4 >> 5)] | ((_arg1.charCodeAt((_local4 / 8)) & _local3) << (24 - (_local4 % 32))));
                 _local4 = (_local4 + 8);
-            };
+            }
             return (_local2);
         }
 
@@ -129,7 +129,7 @@ package com.company.assembleegameclient.util{
             {
                 _local2 = (_local2 + (_local3.charAt(((_arg1[(_local4 >> 2)] >> (((3 - (_local4 % 4)) * 8) + 4)) & 15)) + _local3.charAt(((_arg1[(_local4 >> 2)] >> ((3 - (_local4 % 4)) * 8)) & 15))));
                 _local4++;
-            };
+            }
             return (_local2);
         }
 

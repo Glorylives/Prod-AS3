@@ -41,7 +41,7 @@ package 1Np{
                 _local8 = Math.min(_local5, (_local4 - _local5));
                 map_.addObj(_local7, (_local6.x + 0Na.1Me(((_local3 / 200) * _local8))), (_local6.y + 0Na.1Me(((_local3 / 200) * _local8))));
                 _local5++;
-            };
+            }
             return (false);
         }
 
@@ -62,7 +62,7 @@ package 1Np{
                 _local8 = Math.min(_local5, (_local4 - _local5));
                 map_.addObj(_local7, (_local6.x + 0Na.1Me(((_local3 / 200) * _local8))), (_local6.y + 0Na.1Me(((_local3 / 200) * _local8))));
                 _local5++;
-            };
+            }
             return (false);
         }
 

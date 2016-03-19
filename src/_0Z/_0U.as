@@ -39,14 +39,14 @@ import _Jy._1HZ;
             if (((!(icon)) || (contains(icon))))
             {
                 setTitle(_du._1Qu, {});
-            };
+            }
         }
 
         private function _21K(_arg1:MouseEvent):void{
             if (!this._25g)
             {
                 this._1oD.dispatch();
-            };
+            }
         }
 
         public function mL(_arg1:_0tK):void{
@@ -64,7 +64,7 @@ import _Jy._1HZ;
                 _local2.pushParams(_arg1._1qz());
                 ((this._1U7) && (_local2.pushParams(_0NW._1So(_arg1._1m7()))));
                 iY(_du._1h6, {data:_local2});
-            };
+            }
         }
 
         public function dm(_arg1:Boolean):void{
@@ -75,7 +75,7 @@ import _Jy._1HZ;
                 icon.filters = ((_arg1) ? [this._1q] : []);
                 _local2 = ((_arg1) ? MoreColorUtil._1lu : new ColorTransform());
                 icon.transform.colorTransform = _local2;
-            };
+            }
         }
 
 

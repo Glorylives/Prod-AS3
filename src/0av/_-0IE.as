@@ -40,7 +40,7 @@ package 0av{
             } else
             {
                 this.0VM(_arg2);
-            };
+            }
         }
 
         private function rM():Object{

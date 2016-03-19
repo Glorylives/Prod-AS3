@@ -51,7 +51,7 @@ package 1dX{
             if (this.1P7)
             {
                 this.1rU = (this.1rU + (_local1 - this.1P7));
-            };
+            }
             this.1P7 = _local1;
         }
 

@@ -38,7 +38,7 @@ package OZ{
                 _local1[_local2] = new StarGraphic();
                 addChild(_local1[_local2]);
                 _local2++;
-            };
+            }
             return (_local1);
         }
 
@@ -49,7 +49,7 @@ package OZ{
                 _arg1[_local2].x = (0qr + (_arg1[0].width * _local2));
                 _arg1[_local2].y = 0qr;
                 _local2++;
-            };
+            }
         }
 
         private function lg():Sprite{
@@ -75,7 +75,7 @@ package OZ{
             {
                 this.04X(_local2, _arg1);
                 _local2++;
-            };
+            }
         }
 
         private function 04X(_arg1:int, _arg2:int):void{

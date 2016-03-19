@@ -38,7 +38,7 @@ package BG{
             } else
             {
                 this.0n2.dispatch(new 0KD(du.1GP));
-            };
+            }
         }
 
 

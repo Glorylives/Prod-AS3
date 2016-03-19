@@ -36,7 +36,7 @@ public class _1iY {
             {
                 this.jf = _arg1;
                 this.n4.dispatch(this);
-            };
+            }
         }
 
         public function _0QA():_Lm{
@@ -48,7 +48,7 @@ public class _1iY {
             {
                 this.state = _arg1;
                 this.n4.dispatch(this);
-            };
+            }
         }
 
 

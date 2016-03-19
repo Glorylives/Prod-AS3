@@ -39,7 +39,7 @@ package a2{
                     return;
                 default:
                     this.1ik();
-            };
+            }
         }
 
         private function VD():void{

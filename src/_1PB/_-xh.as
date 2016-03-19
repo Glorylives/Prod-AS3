@@ -35,7 +35,7 @@ package 1PB{
                 this.zK[_local1].x = (12 + (40 * _local1));
                 this.zK[_local1].y = 12;
                 _local1++;
-            };
+            }
         }
 
         public function Iv(_arg1:1hX):void{
@@ -43,7 +43,7 @@ package 1PB{
             if (!contains(_local2))
             {
                 addChild(_local2);
-            };
+            }
         }
 
         public function Aa(_arg1:1hX):void{
@@ -51,7 +51,7 @@ package 1PB{
             if (contains(_local2))
             {
                 removeChild(_local2);
-            };
+            }
         }
 
 

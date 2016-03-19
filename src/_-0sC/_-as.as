@@ -99,14 +99,14 @@ package 0sC{
             } else
             {
                 this.1gP();
-            };
+            }
         }
 
         private function 1F8():void{
             while (numChildren)
             {
                 removeChildAt(0);
-            };
+            }
         }
 
         private function 1kX():void{
@@ -129,7 +129,7 @@ package 0sC{
             for each (_local2 in _args)
             {
                 addChild(_local2);
-            };
+            }
             _local3 = 0;
             _local4 = _args.length;
             while (_local4--)
@@ -137,7 +137,7 @@ package 0sC{
                 _local5 = _args[_local4];
                 _local5.x = _local3;
                 _local3 = (_local3 - _local5.width);
-            };
+            }
         }
 
 

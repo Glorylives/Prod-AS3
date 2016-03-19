@@ -136,8 +136,8 @@ package com.google.analytics.v4{
                 if (((_debug) && (_debug.active)))
                 {
                     _debug.warning(e.message);
-                };
-            };
+                }
+            }
         }
 
         public function get domain():Domain{
@@ -148,11 +148,11 @@ package com.google.analytics.v4{
             if (_arg1 <= 0)
             {
                 _arg1 = 0.1;
-            };
+            }
             if (_arg1 > 1)
             {
                 _arg1 = 1;
-            };
+            }
             _arg1 = Number(_arg1.toFixed(2));
             _sampleRate = _arg1;
         }

@@ -21,21 +21,21 @@ package _0W4{
             if (("@prob" in _arg1))
             {
                 this._0NH = Number(_arg1.@prob);
-            };
+            }
             this.period_ = int((Number(_arg1.@period) * 1000));
             this._0jx = int((Number(_arg1.@periodJitter) * 1000));
             this.th = (String(_arg1.@sync) == "true");
             for each (_local2 in _arg1.Frame)
             {
                 this.Bk.push(new _0QV(_local2));
-            };
+            }
         }
 
         private function _1G1():int{
             if (this._0jx == 0)
             {
                 return (this.period_);
-            };
+            }
             return (((this.period_ - this._0jx) + ((2 * Math.random()) * this._0jx)));
         }
 
@@ -43,7 +43,7 @@ package _0W4{
             if (this.th)
             {
                 return ((int((_arg1 / this.period_)) * this.period_));
-            };
+            }
             return (((_arg1 + this._1G1()) + (200 * Math.random())));
         }
 
@@ -51,7 +51,7 @@ package _0W4{
             if (this.th)
             {
                 return (((int((_arg1 / this.period_)) * this.period_) + this.period_));
-            };
+            }
             return ((_arg1 + this._1G1()));
         }
 

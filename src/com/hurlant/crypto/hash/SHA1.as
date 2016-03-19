@@ -46,7 +46,7 @@ package com.hurlant.crypto.hash{
                     } else
                     {
                         _local3[_local15] = this.rol((((_local3[(_local15 - 3)] ^ _local3[(_local15 - 8)]) ^ _local3[(_local15 - 14)]) ^ _local3[(_local15 - 16)]), 1);
-                    };
+                    }
                     _local16 = ((((this.rol(_local4, 5) + this.ft(_local15, _local5, _local6, _local7)) + _local8) + _local3[_local15]) + this.kt(_local15));
                     _local8 = _local7;
                     _local7 = _local6;
@@ -54,14 +54,14 @@ package com.hurlant.crypto.hash{
                     _local5 = _local4;
                     _local4 = _local16;
                     _local15++;
-                };
+                }
                 _local4 = (_local4 + _local10);
                 _local5 = (_local5 + _local11);
                 _local6 = (_local6 + _local12);
                 _local7 = (_local7 + _local13);
                 _local8 = (_local8 + _local14);
                 _local9 = (_local9 + 16);
-            };
+            }
             return ([_local4, _local5, _local6, _local7, _local8]);
         }
 
@@ -73,15 +73,15 @@ package com.hurlant.crypto.hash{
             if (_arg1 < 20)
             {
                 return (((_arg2 & _arg3) | (~(_arg2) & _arg4)));
-            };
+            }
             if (_arg1 < 40)
             {
                 return (((_arg2 ^ _arg3) ^ _arg4));
-            };
+            }
             if (_arg1 < 60)
             {
                 return ((((_arg2 & _arg3) | (_arg2 & _arg4)) | (_arg3 & _arg4)));
-            };
+            }
             return (((_arg2 ^ _arg3) ^ _arg4));
         }
 

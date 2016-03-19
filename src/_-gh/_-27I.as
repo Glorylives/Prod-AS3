@@ -21,11 +21,11 @@ package gh{
             if (this.0Zr)
             {
                 return (this.1ZV);
-            };
+            }
             for (_local1 in this.1ZV)
             {
                 return (_local1);
-            };
+            }
             return (null);
         }
 
@@ -37,7 +37,7 @@ package gh{
             {
                 this.1ZV = new Dictionary(true);
                 this.1ZV[_arg1] = null;
-            };
+            }
         }
 
         public function get strong():Boolean{

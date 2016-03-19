@@ -190,7 +190,7 @@ public function ri(_arg1:TextField):void{
             if (this.textField)
             {
                 this.iT();
-            };
+            }
         }
 
         private function iT():void{
@@ -202,11 +202,11 @@ public function ri(_arg1:TextField):void{
             if (this.textWidth != 0)
             {
                 this.textField.width = this.textWidth;
-            };
+            }
             if (this.textHeight != 0)
             {
                 this.textField.height = this.textHeight;
-            };
+            }
             this.textField.selectable = false;
             this.textField.textColor = this.color;
             this.textField.autoSize = this.autoSize;
@@ -233,7 +233,7 @@ public function ri(_arg1:TextField):void{
             {
                 _arg1.text = this.textField.text;
                 removeChild(this.textField);
-            };
+            }
         }
 
         private function _1pF():void{
@@ -246,7 +246,7 @@ public function ri(_arg1:TextField):void{
                 this.fU();
                 this.Ic();
                 this.textChanged.dispatch();
-            };
+            }
         }
 
         private function Ic():void{
@@ -260,7 +260,7 @@ public function ri(_arg1:TextField):void{
             } else
             {
                 this.textField.text = _arg1;
-            };
+            }
         }
 
         private function fU():void{
@@ -274,8 +274,8 @@ public function ri(_arg1:TextField):void{
                 {
                     _local1 = this.textField.getLineMetrics(0);
                     this.textField.y = -(_1rd(_local1));
-                };
-            };
+                }
+            }
         }
 
         private function _1p4():void{

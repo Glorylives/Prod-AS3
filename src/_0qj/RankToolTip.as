@@ -69,7 +69,7 @@ package 0qj{
                 addChild(_local2);
                 _local3 = (_local3 + _local2.height);
                 _local4++;
-            };
+            }
             _local2 = new LegendLine(09g.1yg(), 09g.1yg(), new ColorTransform());
             _local2.x = 1FL;
             _local2.y = _local3;

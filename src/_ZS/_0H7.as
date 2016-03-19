@@ -45,14 +45,14 @@ package _ZS{
             if (!Parameters.data_.playMusic)
             {
                 return;
-            };
+            }
             if (Mr != null)
             {
                 Mr.volume = _arg1;
             } else
             {
                 Mr = new SoundTransform(_arg1);
-            };
+            }
             _1DP.soundTransform = Mr;
         }
 

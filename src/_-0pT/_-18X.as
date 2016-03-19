@@ -78,7 +78,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 0xFFFFFF, true);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 3)
             {
@@ -86,7 +86,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 0xFFFFFF, true);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 7)
             {
@@ -94,7 +94,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 0xFFFFFF, true);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 7)
             {
@@ -102,7 +102,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 0xFFFFFF, true);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 5)
             {
@@ -110,7 +110,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 0xFFFFFF, true);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 8)
             {
@@ -118,7 +118,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 0xFFFFFF, true);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local1 = AssetLibrary.1JR("lofiCharBig", 0x0100);
             _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 0, true);
             this.04c = new Bitmap(_local1);
@@ -182,14 +182,14 @@ package 0pT{
             if (this.24j == 0Be)
             {
                 this.0Sv.alpha = 1;
-            };
+            }
         }
 
         public function 0K4(_arg1:int):void{
             if ((((this.parent == null)) || ((this.parent.parent == null))))
             {
                 return;
-            };
+            }
             this.removeItemReveal();
             this.item = new g-(_arg1);
             this.item.mQ.alpha = 1;
@@ -210,18 +210,18 @@ package 0pT{
             if (((!((this.item == null))) && (this.item.parent)))
             {
                 parent.removeChild(this.item);
-            };
+            }
             if (((!((this.1S0 == null))) && (this.1S0.parent)))
             {
                 parent.removeChild(this.1S0);
-            };
+            }
         }
 
         public function doItemShow(_arg1:int):void{
             if ((((this.parent == null)) || ((this.parent.parent == null))))
             {
                 return;
-            };
+            }
             this.removeItemReveal();
             var _local2:TextFormat = new TextFormat();
             _local2.size = 18;
@@ -291,7 +291,7 @@ package 0pT{
                 this.19A.alpha = 1;
                 this.setAnimation(0, 3);
                 this.setAnimationDuration(100);
-            };
+            }
             this.active = true;
         }
 
@@ -304,12 +304,12 @@ package 0pT{
                 if (this.04c != null)
                 {
                     this.04c.alpha = 1;
-                };
+                }
                 if (this.19A != null)
                 {
                     this.19A.alpha = 0;
-                };
-            };
+                }
+            }
             this.active = false;
         }
 
@@ -326,7 +326,7 @@ package 0pT{
                 {
                     this.19A.alpha = 0;
                     this.04c.alpha = 1;
-                };
+                }
             } else
             {
                 if ((((this.04c.alpha > 0)) && ((this.19A.alpha < 1))))
@@ -337,8 +337,8 @@ package 0pT{
                 {
                     this.19A.alpha = 1;
                     this.04c.alpha = 0;
-                };
-            };
+                }
+            }
             if (this.24j == 1Lm)
             {
                 this.0Sv.alpha = (this.0Sv.alpha - 0.07);
@@ -346,7 +346,7 @@ package 0pT{
                 if (this.0Sv.alpha <= 0.03)
                 {
                     this.filters = [];
-                };
+                }
             } else
             {
                 if (this.24j == 0Be)
@@ -359,13 +359,13 @@ package 0pT{
                         if ((((this.0Sv.alpha <= 0.5)) && (!(this.1fA))))
                         {
                             this.1fA = true;
-                        };
-                    };
+                        }
+                    }
                     _local3 = ((this.1fA) ? 1 : -1);
                     this.0Sv.alpha = (this.0Sv.alpha + (0.01 * _local3));
                     this.filters = [this.0Sv];
-                };
-            };
+                }
+            }
             if (this.It)
             {
                 _local4 = this.uy(1IT.07Z, 1IT.1fj);
@@ -374,7 +374,7 @@ package 0pT{
                     if (this.0vv != 0jy)
                     {
                         this.1La();
-                    };
+                    }
                     this.d2 = Math.max((_local4 / 8), 70);
                     this.d2 = Math.min(this.d2, 170);
                 } else
@@ -382,9 +382,9 @@ package 0pT{
                     if (this.0vv !=  if)
                     {
                         this.setAnimationPulse();
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (this.273)
             {
                 this.setXPos((this.1Cz + ((Math.random() * 6) - 3)));
@@ -394,8 +394,8 @@ package 0pT{
                 {
                     this.273 = false;
                     this.1iG = 0;
-                };
-            };
+                }
+            }
             this.Ql(_arg1, _arg2);
         }
 
@@ -417,8 +417,8 @@ package 0pT{
                     if (this.09x > this.0KG)
                     {
                         this.09x = 0;
-                    };
-                };
+                    }
+                }
                 this.04c = this.08H[(this.16W + this.09x)];
                 if (this.0vv == 1-z)
                 {
@@ -432,10 +432,10 @@ package 0pT{
                     {
                         this.scaleX = 0.01;
                         this.scaleY = 0.01;
-                    };
-                };
+                    }
+                }
                 addChild(this.04c);
-            };
+            }
         }
 
         public function setAnimationDuration(_arg1:Number):void{

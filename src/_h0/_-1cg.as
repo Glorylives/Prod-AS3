@@ -30,7 +30,7 @@ package h0{
                 1b7(_local6, 2, _local5);
                 this.0Hv[_local5] = _local6;
                 _local5++;
-            };
+            }
         }
 
         override public function setItems(_arg1:Vector.<int>, _arg2:int=0):void{
@@ -49,21 +49,21 @@ package h0{
                         if (this.0Hv[_local5].setItem(_arg1[(_local5 + 1st)]))
                         {
                             _local3 = true;
-                        };
+                        }
                     } else
                     {
                         if (this.0Hv[_local5].setItem(-1))
                         {
                             _local3 = true;
-                        };
-                    };
+                        }
+                    }
                     _local5++;
-                };
+                }
                 if (_local3)
                 {
                     20x();
-                };
-            };
+                }
+            }
         }
 
 

@@ -28,14 +28,14 @@ package 1Tb{
             if (!_arg2)
             {
                 _arg2 = ((_local3 + "@") + getTimer());
-            };
+            }
             if (this.T6[_arg1])
             {
                 if (this.each[this.T6[_arg1]])
                 {
                     this.0EI(this.T6[_arg1]);
-                };
-            };
+                }
+            }
             if (this.each[_arg2])
             {
                 if (this.T6[_arg1] == _arg2)
@@ -44,8 +44,8 @@ package 1Tb{
                 } else
                 {
                     _arg2 = ((((_arg2 + "@") + getTimer()) + "_1yq") + Math.floor((Math.random() * 100)));
-                };
-            };
+                }
+            }
             this.each[_arg2] = true;
             this._count++;
             this.T6[_arg1] = _arg2;
@@ -59,13 +59,13 @@ package 1Tb{
                 if (this.T6[_local2] == _arg1)
                 {
                     delete this.T6[_local2];
-                };
-            };
+                }
+            }
             if (this.each[_arg1])
             {
                 delete this.each[_arg1];
                 this._count--;
-            };
+            }
         }
 
         public function update():void{
@@ -74,13 +74,13 @@ package 1Tb{
             if (this._count == 0)
             {
                 return;
-            };
+            }
             var _local1:Array = new Array();
             var _local2:Object = new Object();
             for (_local3 in this.T6)
             {
                 _local2[this.T6[_local3]] = true;
-            };
+            }
             for (_local4 in this.each)
             {
                 if (!_local2[_local4])
@@ -88,12 +88,12 @@ package 1Tb{
                     _local1.push(_local4);
                     delete this.each[_local4];
                     this._count--;
-                };
-            };
+                }
+            }
             if (_local1.length)
             {
                 report(((("<b>GARBAGE COLLECTED " + _local1.length) + " item(s): </b>") + _local1.join(", ")), -2);
-            };
+            }
         }
 
         public function get count():uint{
@@ -111,7 +111,7 @@ package 1Tb{
                 } catch(e:Error)
                 {
                     report(e, 10);
-                };
+                }
             } else
             {
                 try
@@ -121,13 +121,13 @@ package 1Tb{
                         var _local2 = System;
                         (_local2["gc"]());
                         ok = true;
-                    };
+                    }
                 } catch(e:Error)
                 {
-                };
+                }
                 str = ("Manual garbage collection " + ((ok) ? "successful." : "FAILED. You need debugger version _of flash player."));
                 report(str, ((ok) ? -1 : 10));
-            };
+            }
         }
 
 

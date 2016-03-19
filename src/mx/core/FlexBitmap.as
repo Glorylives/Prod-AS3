@@ -19,7 +19,7 @@ package mx.core{
                 name = NameUtil.createUniqueName(this);
             } catch(e:Error)
             {
-            };
+            }
         }
 
         override public function toString():String{

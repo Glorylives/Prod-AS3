@@ -65,7 +65,7 @@ package 0uE{
                 _local3.y = (72 + (17 * _local1));
                 this.catch.addChild(_local3);
                 _local1++;
-            };
+            }
         }
 
         private function 16p():uint{
@@ -73,7 +73,7 @@ package 0uE{
             if (_local1)
             {
                 return (2);
-            };
+            }
             return (3);
         }
 

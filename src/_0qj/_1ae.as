@@ -73,7 +73,7 @@ import flash.display.Sprite;
             {
                 this._0hW = _arg1;
                 this._0hW.addEventListener(MouseEvent.ROLL_OUT, this._1ie);
-            };
+            }
         }
 
         public function _1QR():void{
@@ -83,9 +83,9 @@ import flash.display.Sprite;
                 if (parent)
                 {
                     parent.removeChild(this);
-                };
+                }
                 this._0hW = null;
-            };
+            }
         }
 
         public function _1xG():void{
@@ -106,19 +106,19 @@ import flash.display.Sprite;
             if (this._1he.isEmpty())
             {
                 this.draw();
-            };
+            }
             if (this._1on)
             {
                 this.position();
                 addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
         private function onRemovedFromStage(_arg1:Event):void{
             if (this._1on)
             {
                 removeEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
         private function onEnterFrame(_arg1:Event):void{
@@ -129,29 +129,29 @@ import flash.display.Sprite;
             if (stage == null)
             {
                 return;
-            };
+            }
             if (((((!(this.xT)) && ((stage.mouseX < (stage.stageWidth / 2))))) || (this.Yb)))
             {
                 x = (stage.mouseX + 12);
             } else
             {
                 x = ((stage.mouseX - width) - 1);
-            };
+            }
             if (x < 12)
             {
                 x = 12;
-            };
+            }
             if (((((!(this.xT)) && ((stage.mouseY < (stage.stageHeight / 3))))) || (this.Yb)))
             {
                 y = (stage.mouseY + 12);
             } else
             {
                 y = ((stage.mouseY - height) - 1);
-            };
+            }
             if (y < 12)
             {
                 y = 12;
-            };
+            }
         }
 
         public function draw():void{

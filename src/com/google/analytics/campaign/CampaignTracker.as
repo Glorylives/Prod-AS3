@@ -30,7 +30,7 @@ package com.google.analytics.campaign{
             if (((((!((id == ""))) || (!((source == ""))))) || (!((clickId == "")))))
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -52,7 +52,7 @@ package com.google.analytics.campaign{
                 _arg3 = _arg3.split("+").join("%20");
                 _arg3 = _arg3.split(" ").join("%20");
                 _arg1.push((_arg2 + _arg3));
-            };
+            }
         }
 
         public function fromTrackerString(_arg1:String):void{
@@ -61,31 +61,31 @@ package com.google.analytics.campaign{
             if (_local3.hasOwnProperty("utmcid"))
             {
                 this.id = _local3["utmcid"];
-            };
+            }
             if (_local3.hasOwnProperty("utmcsr"))
             {
                 this.source = _local3["utmcsr"];
-            };
+            }
             if (_local3.hasOwnProperty("utmccn"))
             {
                 this.name = _local3["utmccn"];
-            };
+            }
             if (_local3.hasOwnProperty("utmcmd"))
             {
                 this.medium = _local3["utmcmd"];
-            };
+            }
             if (_local3.hasOwnProperty("utmctr"))
             {
                 this.term = _local3["utmctr"];
-            };
+            }
             if (_local3.hasOwnProperty("utmcct"))
             {
                 this.content = _local3["utmcct"];
-            };
+            }
             if (_local3.hasOwnProperty("utmgclid"))
             {
                 this.clickId = _local3["utmgclid"];
-            };
+            }
         }
 
 

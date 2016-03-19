@@ -153,7 +153,7 @@ import flash.display.Sprite;
             if (this.box_.contains(this.rect_))
             {
                 this.box_.removeChild(this.rect_);
-            };
+            }
             this._08w();
             this._26X();
             this._0aJ();
@@ -189,7 +189,7 @@ import flash.display.Sprite;
             if (((this._02s) && (this.box_.contains(this._02s))))
             {
                 this.box_.removeChild(this._02s);
-            };
+            }
         }
 
         protected function _0Bt(_arg1:MouseEvent):void{

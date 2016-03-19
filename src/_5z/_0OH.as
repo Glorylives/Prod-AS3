@@ -48,9 +48,9 @@ import flash.utils.Dictionary;
                 if (this.Mq(_local3))
                 {
                     this._1Ig(_local3);
-                };
+                }
                 _local1++;
-            };
+            }
         }
 
         private function _1Ig(_arg1:XML):void{
@@ -62,7 +62,7 @@ import flash.utils.Dictionary;
             } else
             {
                 this.Ii[_local2] = [_local3];
-            };
+            }
         }
 
         public function Gj(_arg1:_0tK):void{
@@ -92,10 +92,10 @@ import flash.utils.Dictionary;
                     if (_local5 == _arg1)
                     {
                         return (int(_local4.@type));
-                    };
-                };
+                    }
+                }
                 _local2++;
-            };
+            }
             return (-1);
         }
 
@@ -143,9 +143,9 @@ import flash.utils.Dictionary;
                 if (_local5 == _arg1)
                 {
                     return (this.Sc(_local4.@id));
-                };
+                }
                 _local2++;
-            };
+            }
             return (-1);
         }
 
@@ -162,9 +162,9 @@ import flash.utils.Dictionary;
                 if (_local5 == _arg1)
                 {
                     return (_local4.@type);
-                };
+                }
                 _local2++;
-            };
+            }
             return (-1);
         }
 

@@ -99,16 +99,16 @@ public class _uX extends Sprite {
                 } else
                 {
                     this._1Al(_local5);
-                };
+                }
                 this._0LG.push(_local5);
                 if (this.disabled)
                 {
                     _local4.disable();
                     _local5.mouseChildren = false;
                     _local5.mouseEnabled = false;
-                };
+                }
                 _local1++;
-            };
+            }
         }
 
         private function _1D8(_arg1:_0tK, _arg2:int):_Py{
@@ -144,7 +144,7 @@ public class _uX extends Sprite {
                 _local3 = _08G(_local2.getIcon()).getPetVO().u5();
                 _local2._1ZU((_local3 == _arg1));
                 _local4++;
-            };
+            }
         }
 
 

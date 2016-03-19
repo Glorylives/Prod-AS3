@@ -36,7 +36,7 @@ package uT{
             {
                 this.1Za.0K("A contextView has already been set, ignoring {0}", [_arg1]);
                 return;
-            };
+            }
             this.8B = _arg1;
             if (this.8B.stage)
             {
@@ -45,7 +45,7 @@ package uT{
             {
                 this.1Za.debug("Context view is not yet on stage. Waiting...");
                 this.8B.addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
-            };
+            }
         }
 
         private function onAddedToStage(_arg1:Event):void{

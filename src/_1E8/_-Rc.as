@@ -68,7 +68,7 @@ package 1E8{
             } else
             {
                 this.1Gn.connect(_arg1, _arg2);
-            };
+            }
         }
 
         private function 0qt():void{
@@ -122,13 +122,13 @@ package 1E8{
                 {
                     this.0h6.encrypt(this.data);
                     this.data.position = 0;
-                };
+                }
                 this.1Gn.writeInt((this.data.bytesAvailable + 5));
                 this.1Gn.writeByte(_local2.id);
                 this.1Gn.writeBytes(this.data);
                 _local2.consume();
                 _local2 = _local2.next;
-            };
+            }
             this.1Gn.flush();
             this.Tr.next = null;
             this.Tr.gR = null;
@@ -167,13 +167,13 @@ package 1E8{
                 if ((((this.1Gn == null)) || (!(this.1Gn.connected))))
                 {
                     return;
-                };
+                }
                 if (this.0jL == -1)
                 {
                     if (this.1Gn.bytesAvailable < 4)
                     {
                         return;
-                    };
+                    }
                     try
                     {
                         this.0jL = this.1Gn.readInt();
@@ -183,8 +183,8 @@ package 1E8{
                         error.dispatch(errorMessage);
                         0jL = -1;
                         return;
-                    };
-                };
+                    }
+                }
                 if (this.1Gn.bytesAvailable < (this.0jL - 1os)) break;
                 messageId = this.1Gn.readUnsignedByte();
                 message = this.27M.lh(messageId);
@@ -192,19 +192,19 @@ package 1E8{
                 if ((this.0jL - 5) > 0)
                 {
                     this.1Gn.readBytes(data, 0, (this.0jL - 5));
-                };
+                }
                 data.position = 0;
                 if (this.1BZ != null)
                 {
                     this.1BZ.decrypt(data);
                     data.position = 0;
-                };
+                }
                 this.0jL = -1;
                 if (message == null)
                 {
                     this.0AS("Socket-Server Protocol Error: Unknown message");
                     return;
-                };
+                }
                 try
                 {
                     message.parseFromInput(data);
@@ -212,9 +212,9 @@ package 1E8{
                 {
                     0AS("Socket-Server Protocol Error: {0}", [error.toString()]);
                     return;
-                };
+                }
                 message.consume();
-            };
+            }
         }
 
         private function 0AS(_arg1:String, _arg2:Array=null):void{
@@ -229,7 +229,7 @@ package 1E8{
             {
                 _arg1 = _arg1.replace((("{" + _local4) + "}"), _arg2[_local4]);
                 _local4++;
-            };
+            }
             return (_arg1);
         }
 

@@ -19,7 +19,7 @@ package eC{
             if (_arg3)
             {
                 this.23h(_arg3);
-            };
+            }
         }
 
         private function Os(_arg1:Sprite):void{

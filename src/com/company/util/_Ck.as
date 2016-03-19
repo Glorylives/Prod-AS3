@@ -22,8 +22,8 @@ package com.company.util{
                 if (_local4 > _arg1.right)
                 {
                     _local4 = _arg1.right;
-                };
-            };
+                }
+            }
             if (_local5 < _arg1.y)
             {
                 _local5 = _arg1.y;
@@ -32,12 +32,12 @@ package com.company.util{
                 if (_local5 > _arg1.bottom)
                 {
                     _local5 = _arg1.bottom;
-                };
-            };
+                }
+            }
             if ((((_local4 == _arg2)) && ((_local5 == _arg3))))
             {
                 return (0);
-            };
+            }
             return (PointUtil.Fg(_local4, _local5, _arg2, _arg3));
         }
 
@@ -52,8 +52,8 @@ package com.company.util{
                 if (_local4 > _arg1.right)
                 {
                     _local4 = _arg1.right;
-                };
-            };
+                }
+            }
             if (_local5 < _arg1.y)
             {
                 _local5 = _arg1.y;
@@ -62,8 +62,8 @@ package com.company.util{
                 if (_local5 > _arg1.bottom)
                 {
                     _local5 = _arg1.bottom;
-                };
-            };
+                }
+            }
             return (new Point(_local4, _local5));
         }
 
@@ -75,11 +75,11 @@ package com.company.util{
             if ((((((((((_arg1.left > _arg2)) && ((_arg1.left > _arg4)))) || ((((_arg1.right < _arg2)) && ((_arg1.right < _arg4)))))) || ((((_arg1.top > _arg3)) && ((_arg1.top > _arg5)))))) || ((((_arg1.bottom < _arg3)) && ((_arg1.bottom < _arg5))))))
             {
                 return (false);
-            };
+            }
             if ((((((((((_arg1.left < _arg2)) && ((_arg2 < _arg1.right)))) && ((_arg1.top < _arg3)))) && ((_arg3 < _arg1.bottom)))) || ((((((((_arg1.left < _arg4)) && ((_arg4 < _arg1.right)))) && ((_arg1.top < _arg5)))) && ((_arg5 < _arg1.bottom))))))
             {
                 return (true);
-            };
+            }
             var _local6:Number = ((_arg5 - _arg3) / (_arg4 - _arg2));
             var _local7:Number = (_arg3 - (_local6 * _arg2));
             if (_local6 > 0)
@@ -90,7 +90,7 @@ package com.company.util{
             {
                 _local8 = ((_local6 * _arg1.right) + _local7);
                 _local9 = ((_local6 * _arg1.left) + _local7);
-            };
+            }
             if (_arg3 < _arg5)
             {
                 _local11 = _arg3;
@@ -99,7 +99,7 @@ package com.company.util{
             {
                 _local11 = _arg5;
                 _local10 = _arg3;
-            };
+            }
             var _local12:Number = (((_local8 > _local11)) ? _local8 : _local11);
             var _local13:Number = (((_local9 < _local10)) ? _local9 : _local10);
             return ((((_local12 < _local13)) && (!((((_local13 < _arg1.top)) || ((_local12 > _arg1.bottom)))))));
@@ -120,7 +120,7 @@ package com.company.util{
                     _arg6.x = _arg1.x;
                     _arg6.y = _local9;
                     return (true);
-                };
+                }
             } else
             {
                 if (_arg4 >= (_arg1.x + _arg1.width))
@@ -133,9 +133,9 @@ package com.company.util{
                         _arg6.x = (_arg1.x + _arg1.width);
                         _arg6.y = _local9;
                         return (true);
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (_arg5 <= _arg1.y)
             {
                 _local7 = ((_arg4 - _arg2) / (_arg5 - _arg3));
@@ -146,7 +146,7 @@ package com.company.util{
                     _arg6.x = _local10;
                     _arg6.y = _arg1.y;
                     return (true);
-                };
+                }
             } else
             {
                 if (_arg5 >= (_arg1.y + _arg1.height))
@@ -159,9 +159,9 @@ package com.company.util{
                         _arg6.x = _local10;
                         _arg6.y = (_arg1.y + _arg1.height);
                         return (true);
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (false);
         }
 
@@ -178,7 +178,7 @@ package com.company.util{
                 if ((((_local6 >= _arg1.y)) && ((_local6 <= (_arg1.y + _arg1.height)))))
                 {
                     return (new Point(_arg1.x, _local6));
-                };
+                }
             } else
             {
                 if (_arg3.x() >= (_arg1.x + _arg1.width))
@@ -189,9 +189,9 @@ package com.company.util{
                     if ((((_local6 >= _arg1.y)) && ((_local6 <= (_arg1.y + _arg1.height)))))
                     {
                         return (new Point((_arg1.x + _arg1.width), _local6));
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (_arg3.y() <= _arg1.y)
             {
                 _local4 = ((_arg3.x() - _arg2.x()) / (_arg3.y() - _arg2.y()));
@@ -200,7 +200,7 @@ package com.company.util{
                 if ((((_local7 >= _arg1.x)) && ((_local7 <= (_arg1.x + _arg1.width)))))
                 {
                     return (new Point(_local7, _arg1.y));
-                };
+                }
             } else
             {
                 if (_arg3.y() >= (_arg1.y + _arg1.height))
@@ -211,9 +211,9 @@ package com.company.util{
                     if ((((_local7 >= _arg1.x)) && ((_local7 <= (_arg1.x + _arg1.width)))))
                     {
                         return (new Point(_local7, (_arg1.y + _arg1.height)));
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (null);
         }
 
@@ -237,9 +237,9 @@ package com.company.util{
                     _local9 = _local6.transformPoint(_local8);
                     _local7.add(_local9.x, _local9.y);
                     _local11++;
-                };
+                }
                 _local10++;
-            };
+            }
             return (_local7);
         }
 

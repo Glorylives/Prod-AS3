@@ -24,7 +24,7 @@ public class _1nN extends _1BB {
             } else
             {
                 text_.setStringBuilder(new _1cA().setParams(_arg2));
-            };
+            }
             text_.textChanged.addOnce(this.onTextChanged);
         }
 

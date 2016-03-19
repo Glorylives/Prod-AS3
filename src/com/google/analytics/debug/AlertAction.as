@@ -29,9 +29,9 @@ package com.google.analytics.debug{
                     {
                         var _local1 = container;
                         (_local1[_callback]());
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
 

@@ -29,7 +29,7 @@ package 1oP{
             if (_local1)
             {
                 this.view.play.addOnce(this.0JL);
-            };
+            }
             this.view.back.addOnce(this.0K2);
         }
 

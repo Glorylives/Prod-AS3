@@ -148,15 +148,15 @@ package com.google.analytics.external{
                     if (_debug.javascript)
                     {
                         _debug.warning('ExternalInterface is not allowed.\nEnsure that allowScriptAccess is set to "always" in the Flash embed HTML.');
-                    };
+                    }
                 } catch(e:Error)
                 {
                     if (_debug.javascript)
                     {
                         _debug.warning(("ExternalInterface failed to make the call\nreason: " + e.message));
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function getPropertyString(_arg1:String):String{
@@ -183,10 +183,10 @@ package com.google.analytics.external{
                         if (args.length > 0)
                         {
                             output = (output + args.join(","));
-                        };
+                        }
                         output = (output + " )");
                         _debug.info(output);
-                    };
+                    }
                     args.unshift(functionName);
                     return (ExternalInterface.call.apply(ExternalInterface, args));
                 } catch(e:SecurityError)
@@ -194,15 +194,15 @@ package com.google.analytics.external{
                     if (_debug.javascript)
                     {
                         _debug.warning('ExternalInterface is not allowed.\nEnsure that allowScriptAccess is set to "always" in the Flash embed HTML.');
-                    };
+                    }
                 } catch(e:Error)
                 {
                     if (_debug.javascript)
                     {
                         _debug.warning(("ExternalInterface failed to make the call\nreason: " + e.message));
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (null);
         }
 
@@ -211,12 +211,12 @@ package com.google.analytics.external{
             if (((_local1) && ((Capabilities.playerType == "External"))))
             {
                 _local1 = false;
-            };
+            }
             if (((((!(_local1)) && (_debug.javascript))) && (_notAvailableWarning)))
             {
                 _debug.warning("ExternalInterface is not available.");
                 _notAvailableWarning = false;
-            };
+            }
             return (_local1);
         }
 

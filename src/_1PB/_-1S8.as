@@ -74,7 +74,7 @@ package 1PB{
             if (((OJ.mq("SalesforceMobile")) && ((OJ.06S("SalesforceMobile") == 1))))
             {
                 _local3 = true;
-            };
+            }
             var _local4:String = this.SP.Vr();
             if ((((_local4 == "unavailable")) || (!(_local3))))
             {
@@ -96,7 +96,7 @@ package 1PB{
                     } else
                     {
                         ExternalInterface.call("reopenSalesForce");
-                    };
+                    }
                 } else
                 {
                     _local1.data = _local4;
@@ -104,8 +104,8 @@ package 1PB{
                     _local2.method = URLRequestMethod.GET;
                     _local2.data = _local1;
                     navigateToURL(_local2, "_blank");
-                };
-            };
+                }
+            }
         }
 
         private function 0uu():void{

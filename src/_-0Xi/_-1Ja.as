@@ -36,7 +36,7 @@ package 0Xi{
             {
                 this.0BU.oE(_local1);
                 delete this.Xn[_local1.commandClass];
-            };
+            }
         }
 
         private function pN(_arg1:Class):mU{
@@ -50,7 +50,7 @@ package 0Xi{
             if (!_arg1)
             {
                 return (null);
-            };
+            }
             _arg1.0gc();
             return (_arg1);
         }

@@ -12,7 +12,7 @@ package com.company.util{
             for (_local3 in _arg2)
             {
                 _arg1[_local3] = _arg2[_local3];
-            };
+            }
         }
 
 

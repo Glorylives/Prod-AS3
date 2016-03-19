@@ -40,18 +40,18 @@ package 12X{
             if (_arg3 != "")
             {
                 this.setTitle(_arg3, true);
-            };
+            }
             if (this.background == null)
             {
                 this.1uc = new Sprite();
                 this.background = this.makeModalBackground();
                 this.1uc.addChild(this.background);
                 addChild(this.1uc);
-            };
+            }
             if (_arg3 != "")
             {
                 this.setTitle(_arg3, true);
-            };
+            }
         }
 
         private function onRemovedFromStage(_arg1:Event):void{
@@ -59,7 +59,7 @@ package 12X{
             if (this.1tf != null)
             {
                 this.1tf.removeEventListener(MouseEvent.CLICK, this.onCloseClick);
-            };
+            }
         }
 
         public function setWidth(_arg1:Number):void{
@@ -78,7 +78,7 @@ package 12X{
             if (((!((this.title == null))) && (!((this.title.parent == null)))))
             {
                 removeChild(this.title);
-            };
+            }
             if (_arg1 != null)
             {
                 this.title = this.1UU(_arg1, 1yz, 5, _arg2);
@@ -86,7 +86,7 @@ package 12X{
             } else
             {
                 this.title = null;
-            };
+            }
         }
 
         public function J-(_arg1:String, _arg2:Boolean):void{
@@ -95,10 +95,10 @@ package 12X{
                 if (((!((this.desc == null))) && (!((this.desc.parent == null)))))
                 {
                     removeChild(this.desc);
-                };
+                }
                 this.desc = this.1UU(_arg1, 1yz, 50, _arg2);
                 addChild(this.desc);
-            };
+            }
         }
 
         public function Jl(_arg1:Boolean):void{
@@ -114,8 +114,8 @@ package 12X{
                 {
                     removeChild(this.1tf);
                     this.1tf = null;
-                };
-            };
+                }
+            }
         }
 
         protected function 1UU(_arg1:String, _arg2:int, _arg3:int, _arg4:Boolean):_13j{
@@ -128,7 +128,7 @@ package 12X{
             } else
             {
                 _local5.setStringBuilder(new 1cA().setParams(_arg1));
-            };
+            }
             _local5.setWordWrap(true);
             _local5.setMultiLine(true);
             _local5.setAutoSize(TextFieldAutoSize.CENTER);
@@ -147,7 +147,7 @@ package 12X{
             if (this.title != null)
             {
                 _local1.UK(IJ.HORIZONTAL_DIVISION, 30);
-            };
+            }
             return (_local1);
         }
 

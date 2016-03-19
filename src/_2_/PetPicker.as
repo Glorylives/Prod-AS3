@@ -46,7 +46,7 @@ package 2--{
             for each (_local1 in this.1MO)
             {
                 this.1YB.push(_local1);
-            };
+            }
         }
 
         private function 0xI(_arg1:Vector.<0tK>):void{
@@ -55,7 +55,7 @@ package 2--{
             for each (_local2 in _arg1)
             {
                 this.24T(_local2);
-            };
+            }
             this.1MO.sort(0zp);
         }
 
@@ -70,7 +70,7 @@ package 2--{
             if (_arg1)
             {
                 08G(_arg1).0mR(_arg2);
-            };
+            }
         }
 
         public function eB(_arg1:int):void{
@@ -94,9 +94,9 @@ package 2--{
                 if (!this.1Su(_arg1, _local3))
                 {
                     this.1MO[_local2].disable();
-                };
+                }
                 _local2++;
-            };
+            }
         }
 
         public function rx(_arg1:0tK):void{
@@ -108,9 +108,9 @@ package 2--{
                 if (_local3.try () == _arg1.try ())
                 {
                     this.1MO[_local2].disable();
-                };
+                }
                 _local2++;
-            };
+            }
         }
 
         private function 1Su(_arg1:0tK, _arg2:0tK):Boolean{
@@ -125,8 +125,8 @@ package 2--{
                 if (pet.isEnabled())
                 {
                     0wT.dispatch(petVO);
-                };
-            };
+                }
+            }
             pet = this.sB.create(petVO, this.fv);
             this.1MO.push(pet);
             pet.addEventListener(MouseEvent.CLICK, pet_clickHandler);

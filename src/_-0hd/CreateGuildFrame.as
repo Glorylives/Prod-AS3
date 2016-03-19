@@ -55,13 +55,13 @@ package 0hd{
                 if (_local2 != null)
                 {
                     _local2.1iQ = (_local2.1iQ - Parameters.0QE);
-                };
+                }
                 this.close.dispatch();
             } else
             {
                 this.name_.07n(_arg1.1pm, _arg1.0kR);
                 0Eb();
-            };
+            }
         }
 
 

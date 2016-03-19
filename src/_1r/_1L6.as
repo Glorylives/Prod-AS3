@@ -34,7 +34,7 @@ import flash.display.Sprite;
                 this.displayObject.removeEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
                 this.displayObject.removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
                 this.displayObject = null;
-            };
+            }
         }
 
         public function _17L():DisplayObject{
@@ -61,7 +61,7 @@ import flash.display.Sprite;
             if (((!((this.tooltip == null))) && (!((this.tooltip.parent == null)))))
             {
                 this._0TV.dispatch();
-            };
+            }
             this.displayObject.removeEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
             this.displayObject.removeEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
             this.displayObject.removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);

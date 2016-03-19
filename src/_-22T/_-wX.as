@@ -44,7 +44,7 @@ package 22T{
             if (!this.data.0iT)
             {
                 this.1tP.11A = wX.7t;
-            };
+            }
             this.ar();
             this.Pc();
             this.Xz();
@@ -60,9 +60,9 @@ package 22T{
                 if (((((this.model.1IA) && (this.1G5.1tI()))) && (!(this.data.0iT))))
                 {
                     return;
-                };
+                }
                 this.1G5.0mj(null);
-            };
+            }
         }
 
         private function ar():void{
@@ -94,8 +94,8 @@ package 22T{
                 } else
                 {
                     _local1 = Parameters.1rc;
-                };
-            };
+                }
+            }
             return (_local1);
         }
 

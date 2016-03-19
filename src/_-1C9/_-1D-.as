@@ -34,7 +34,7 @@ package 1C9{
             } else
             {
                 this.21r.dispatch(this.view);
-            };
+            }
         }
 
         private function 0XF():void{

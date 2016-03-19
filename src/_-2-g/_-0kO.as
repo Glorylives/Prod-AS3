@@ -44,7 +44,7 @@ package 2-g{
             if (stage)
             {
                 stage.removeEventListener(KeyboardEvent.KEY_DOWN, this.1If);
-            };
+            }
         }
 
         private function 14q(_arg1:Event):void{
@@ -52,7 +52,7 @@ package 2-g{
             {
                 this.close();
                 return;
-            };
+            }
             if (this.01F)
             {
                 8h.htmlText = '<high><menu>Press a key to set [ <a href="event:cancel"><b>cancel</b></a> ]</menu></high>';
@@ -61,7 +61,7 @@ package 2-g{
                 8h.htmlText = (("<low>" + this.1Dm(false)) + "</low>");
                 8h.autoSize = TextFieldAutoSize.LEFT;
                 8h.setSelection(0, 0);
-            };
+            }
             width = (8h.width + 4);
             height = 8h.height;
         }
@@ -83,18 +83,18 @@ package 2-g{
             {
                 _local8 = ((console.rollerCaptureKey) ? console.rollerCaptureKey.key : "unassigned");
                 _local3 = (('<menu> <a href="event:close"><b>X</b></a></menu> Capture key: <menu><a href="event:capture">' + _local8) + "</a></menu><br/>");
-            };
+            }
             var _local4:Point = new Point(_local2.mouseX, _local2.mouseY);
             if (_local2.areInaccessibleObjectsUnderPoint(_local4))
             {
                 _local3 = (_local3 + "<p9>Inaccessible objects detected</p9><br/>");
-            };
+            }
             var _local5:Array = _local2.getObjectsUnderPoint(_local4);
             var _local6:Dictionary = new Dictionary(true);
             if (_local5.length == 0)
             {
                 _local5.push(_local2);
-            };
+            }
             for each (_local7 in _local5)
             {
                 _local9 = new Array(_local7);
@@ -103,7 +103,7 @@ package 2-g{
                 {
                     _local9.unshift(_local10);
                     _local10 = _local10.parent;
-                };
+                }
                 _local11 = _local9.length;
                 _local12 = 0;
                 while (_local12 < _local11)
@@ -117,7 +117,7 @@ package 2-g{
                         {
                             _local3 = (_local3 + (((_local14 == 1)) ? " ∟" : " -"));
                             _local14--;
-                        };
+                        }
                         _local15 = _local13.name;
                         if (((_arg1) && (console.config.useObjectLinking)))
                         {
@@ -126,7 +126,7 @@ package 2-g{
                         } else
                         {
                             _local15 = (((_local15 + " (") + 1-T.0Ds(_local13)) + ")");
-                        };
+                        }
                         if (_local13 == _local2)
                         {
                             _local16 = console.refs.setLogRef(_local2);
@@ -136,7 +136,7 @@ package 2-g{
                             } else
                             {
                                 _local3 = (_local3 + "<p3><i>Stage</i> ");
-                            };
+                            }
                             _local3 = (_local3 + (((("[" + _local2.mouseX) + ",") + _local2.mouseY) + "]</p3><br/>"));
                         } else
                         {
@@ -146,12 +146,12 @@ package 2-g{
                             } else
                             {
                                 _local3 = (_local3 + (("<p2><i>" + _local15) + "</i></p2><br/>"));
-                            };
-                        };
-                    };
+                            }
+                        }
+                    }
                     _local12++;
-                };
-            };
+                }
+            }
             return (_local3);
         }
 
@@ -179,7 +179,7 @@ package 2-g{
                     } else
                     {
                         _local2 = "Assign key";
-                    };
+                    }
                 } else
                 {
                     if (_local2 == "cancel")
@@ -188,9 +188,9 @@ package 2-g{
                     } else
                     {
                         _local2 = null;
-                    };
-                };
-            };
+                    }
+                }
+            }
             console.panels.tooltip(_local2, this);
         }
 
@@ -210,7 +210,7 @@ package 2-g{
                     {
                         this.01F = true;
                         stage.addEventListener(KeyboardEvent.KEY_DOWN, this.1If, false, 0, true);
-                    };
+                    }
                     console.panels.tooltip(null);
                 } else
                 {
@@ -218,9 +218,9 @@ package 2-g{
                     {
                         this.0LQ();
                         console.panels.tooltip(null);
-                    };
-                };
-            };
+                    }
+                }
+            }
             _arg1.stopPropagation();
         }
 
@@ -229,14 +229,14 @@ package 2-g{
             if (stage)
             {
                 stage.removeEventListener(KeyboardEvent.KEY_DOWN, this.1If);
-            };
+            }
         }
 
         private function 1If(_arg1:KeyboardEvent):void{
             if (!_arg1.charCode)
             {
                 return;
-            };
+            }
             var _local2:String = String.fromCharCode(_arg1.charCode);
             this.0LQ();
             console.setRollerCaptureKey(_local2, _arg1.shiftKey, _arg1.ctrlKey, _arg1.altKey);

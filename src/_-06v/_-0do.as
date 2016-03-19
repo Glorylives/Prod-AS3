@@ -27,7 +27,7 @@ package 06v{
             for each (_local1 in this.1I2)
             {
                 Security.allowDomain(_local1);
-            };
+            }
         }
 
         public function 03R():Boolean{
@@ -46,7 +46,7 @@ package 06v{
             for each (_local3 in this.1I2)
             {
                 _local2 = ((_local2) || ((_local1 == _local3)));
-            };
+            }
             return (_local2);
         }
 

@@ -31,7 +31,7 @@ package com.google.analytics.debug{
             if (_forcedHeight)
             {
                 return (_forcedHeight);
-            };
+            }
             return (height);
         }
 
@@ -49,9 +49,9 @@ package com.google.analytics.debug{
                 if (_local1)
                 {
                     removeChild(_local1);
-                };
+                }
                 _local2++;
-            };
+            }
         }
 
         public function set forcedHeight(_arg1:uint):void{
@@ -69,7 +69,7 @@ package com.google.analytics.debug{
             if (_forcedWidth)
             {
                 return (_forcedWidth);
-            };
+            }
             return (width);
         }
 
@@ -87,14 +87,14 @@ package com.google.analytics.debug{
                 } else
                 {
                     _arg2 = parent;
-                };
-            };
+                }
+            }
             if (_arg2 == this.stage)
             {
                 if (this.stage == null)
                 {
                     return;
-                };
+                }
                 _local3 = this.stage.stageHeight;
                 _local4 = this.stage.stageWidth;
                 _local5 = 0;
@@ -108,17 +108,17 @@ package com.google.analytics.debug{
                 } else
                 {
                     _local3 = _local7.height;
-                };
+                }
                 if (_local7.forcedWidth)
                 {
                     _local4 = _local7.forcedWidth;
                 } else
                 {
                     _local4 = _local7.width;
-                };
+                }
                 _local5 = 0;
                 _local6 = 0;
-            };
+            }
             switch (_arg1)
             {
                 case Align.top:
@@ -157,12 +157,12 @@ package com.google.analytics.debug{
                     x = (((_local5 + _local4) - forcedWidth) - margin.right);
                     y = (((_local6 + _local3) - forcedHeight) - margin.bottom);
                     break;
-            };
+            }
             if (((!(listenResize)) && (!((_arg1 == Align.none)))))
             {
                 _arg2.addEventListener(Event.RESIZE, onResize, false, 0, true);
                 listenResize = true;
-            };
+            }
             this.alignement = _arg1;
             this.alignTarget = _arg2;
         }
@@ -177,7 +177,7 @@ package com.google.analytics.debug{
             if (alignement != Align.none)
             {
                 alignTo(alignement, alignTarget);
-            };
+            }
         }
 
         protected function onResize(_arg1:Event):void{

@@ -68,7 +68,7 @@ package 1ki{
             {
                 this.1zj = new 1im(12, false, du.pp);
                 this.1zj.addEventListener(MouseEvent.CLICK, this.0VB);
-            };
+            }
             _local4.9u.addEventListener(MouseEvent.CLICK, this.tz);
         }
 

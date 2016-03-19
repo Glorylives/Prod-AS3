@@ -13,7 +13,7 @@ package 0sk{
             1:0oO,
             2:00i,
             3:0RX
-        };
+        }
 
         private var index:int;
 

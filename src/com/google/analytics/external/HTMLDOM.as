@@ -12,7 +12,7 @@ package com.google.analytics.external{
             <![CDATA[
                     function()
                     {
-                        var obj = {};
+                        var obj = {}
                             obj.host         = document.location.host;
                             obj.language     = navigator.language ? navigator.language : navigator.browserLanguage;
                             obj.characterSet = document.characterSet ? document.characterSet : document.charset;
@@ -49,11 +49,11 @@ package com.google.analytics.external{
             if (_search)
             {
                 return (_search);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _search = getProperty("document.location.search");
             return (_search);
         }
@@ -62,11 +62,11 @@ package com.google.analytics.external{
             if (_location)
             {
                 return (_location);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _location = getPropertyString("document.location");
             return (_location);
         }
@@ -75,11 +75,11 @@ package com.google.analytics.external{
             if (_pathname)
             {
                 return (_pathname);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _pathname = getProperty("document.location.pathname");
             return (_pathname);
         }
@@ -88,7 +88,7 @@ package com.google.analytics.external{
             if (!isAvailable())
             {
                 return;
-            };
+            }
             var _local1:Object = call(cache_properties_js);
             if (_local1)
             {
@@ -102,23 +102,23 @@ package com.google.analytics.external{
                 _search = _local1.search;
                 _referrer = _local1.referrer;
                 _title = _local1.title;
-            };
+            }
         }
 
         public function get language():String{
             if (_language)
             {
                 return (_language);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             var _local1:String = getProperty("navigator.language");
             if (_local1 == null)
             {
                 _local1 = getProperty("navigator.browserLanguage");
-            };
+            }
             _language = _local1;
             return (_language);
         }
@@ -127,11 +127,11 @@ package com.google.analytics.external{
             if (_colorDepth)
             {
                 return (_colorDepth);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _colorDepth = getProperty("window.screen.colorDepth");
             return (_colorDepth);
         }
@@ -140,11 +140,11 @@ package com.google.analytics.external{
             if (_referrer)
             {
                 return (_referrer);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _referrer = getProperty("document.referrer");
             return (_referrer);
         }
@@ -153,11 +153,11 @@ package com.google.analytics.external{
             if (_protocol)
             {
                 return (_protocol);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _protocol = getProperty("document.location.protocol");
             return (_protocol);
         }
@@ -166,11 +166,11 @@ package com.google.analytics.external{
             if (_host)
             {
                 return (_host);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _host = getProperty("document.location.host");
             return (_host);
         }
@@ -179,16 +179,16 @@ package com.google.analytics.external{
             if (_characterSet)
             {
                 return (_characterSet);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             var _local1:String = getProperty("document.characterSet");
             if (_local1 == null)
             {
                 _local1 = getProperty("document.charset");
-            };
+            }
             _characterSet = _local1;
             return (_characterSet);
         }
@@ -197,11 +197,11 @@ package com.google.analytics.external{
             if (_title)
             {
                 return (_title);
-            };
+            }
             if (!isAvailable())
             {
                 return (null);
-            };
+            }
             _title = getProperty("document.title");
             return (_title);
         }

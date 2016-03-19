@@ -34,7 +34,7 @@ package 1UB{
             } else
             {
                 this.view.1TD.addEventListener(MouseEvent.CLICK, this.dw);
-            };
+            }
         }
 
         override public function destroy():void{

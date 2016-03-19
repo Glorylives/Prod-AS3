@@ -49,8 +49,8 @@ package 0ud{
                 if (_arg2 == 16B)
                 {
                     this.0AJ.dispatch(this.data);
-                };
-            };
+                }
+            }
             1d5(_arg1, _arg2);
         }
 

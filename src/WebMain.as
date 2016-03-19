@@ -51,7 +51,7 @@ public class WebMain extends Sprite {
             } else
             {
                 addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
-            };
+            }
         }
 
         private function onAddedToStage(_arg1:Event):void{
@@ -90,7 +90,7 @@ private function VK():void{
             {
                 Parameters.data_.fullscreenMode = false;
                 Parameters.save();
-            };
+            }
         }
 
 

@@ -64,8 +64,8 @@ package 1mO{
                 if ((((_arg1 == 151)) && ((_arg2 == 189))))
                 {
                     this.size = SMALL;
-                };
-            };
+                }
+            }
         }
 
         public function init(_arg1:BZ):void{
@@ -117,7 +117,7 @@ package 1mO{
                 this.8D = (this.8D - 2);
                 this.textField.setSize(this.8D).setColor(0xFFFFFF);
                 this.0c5();
-            };
+            }
         }
 
         public function load():void{
@@ -140,7 +140,7 @@ package 1mO{
                 case SMALL:
                     this.1xb.addChild(new h-());
                     return;
-            };
+            }
         }
 
         private function onMouseDown(_arg1:MouseEvent):void{

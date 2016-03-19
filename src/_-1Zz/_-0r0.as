@@ -29,7 +29,7 @@ package 1Zz{
                 this.0X0.removeChild(view);
                 view = null;
                 show = true;
-            };
+            }
         }
 
 

@@ -38,7 +38,7 @@ package _ZE{
             if ((((gs_.map == null)) || ((gs_.map.player_ == null))))
             {
                 return;
-            };
+            }
             _local2 = gs_.map.player_;
             this.X = new _13j().setSize(18).setColor(0xFFFFFF).setTextWidth(WIDTH).setWordWrap(true).setMultiLine(true).setAutoSize(TextFieldAutoSize.CENTER).setHTML(true);
             this.X.filters = [new DropShadowFilter(0, 0, 0)];
@@ -65,7 +65,7 @@ package _ZE{
                 this.1he.push(_local4.fh);
                 addChild(_local4);
                 this.o3 = _local4;
-            };
+            }
             this.1he.complete.addOnce(this.alignUI);
         }
 

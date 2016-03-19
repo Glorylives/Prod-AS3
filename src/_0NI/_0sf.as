@@ -54,7 +54,7 @@ import _0OG._22M;
             for each (_local2 in _args)
             {
                 this._0WA.hf(_local2);
-            };
+            }
             return (this);
         }
 
@@ -63,7 +63,7 @@ import _0OG._22M;
             for each (_local2 in _args)
             {
                 this.jq.AX(_local2);
-            };
+            }
             return (this);
         }
 
@@ -86,7 +86,7 @@ import _0OG._22M;
             for each (_local2 in _args)
             {
                 this._1Rf._4F(_local2);
-            };
+            }
             return (this);
         }
 
@@ -95,7 +95,7 @@ import _0OG._22M;
             for each (_local2 in _args)
             {
                 this._1Rf.release(_local2);
-            };
+            }
             return (this);
         }
 

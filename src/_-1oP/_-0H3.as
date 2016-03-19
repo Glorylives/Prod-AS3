@@ -77,7 +77,7 @@ package 1oP{
                 _local2 = this.0sP[_local1];
                 _local2.dispose();
                 delete this.0sP[_local1];
-            };
+            }
         }
 
 

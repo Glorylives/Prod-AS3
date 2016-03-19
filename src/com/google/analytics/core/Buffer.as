@@ -49,9 +49,9 @@ package com.google.analytics.core{
                     for (_local5 in _data)
                     {
                         _OBJ[_local5] = _data[_local5];
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function save():void{
@@ -65,7 +65,7 @@ package com.google.analytics.core{
                 } catch(e:Error)
                 {
                     _debug.warning("Error...Could not write SharedObject to disk");
-                };
+                }
                 switch (flushStatus)
                 {
                     case SharedObjectFlushStatus.PENDING:
@@ -75,15 +75,15 @@ package com.google.analytics.core{
                     case SharedObjectFlushStatus.FLUSHED:
                         _debug.info("Value flushed to disk.");
                         return;
-                };
-            };
+                }
+            }
         }
 
         public function get utmv():UTMV{
             if (!hasUTMV())
             {
                 _createUMTV();
-            };
+            }
             return (_utmv);
         }
 
@@ -91,7 +91,7 @@ package com.google.analytics.core{
             if (!hasUTMX())
             {
                 _createUMTX();
-            };
+            }
             return (_utmx);
         }
 
@@ -99,7 +99,7 @@ package com.google.analytics.core{
             if (!hasUTMZ())
             {
                 _createUMTZ();
-            };
+            }
             return (_utmz);
         }
 
@@ -107,7 +107,7 @@ package com.google.analytics.core{
             if (_utma)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -115,7 +115,7 @@ package com.google.analytics.core{
             if (_utmb)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -123,7 +123,7 @@ package com.google.analytics.core{
             if (_utmc)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -146,7 +146,7 @@ package com.google.analytics.core{
             if (_utmk)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -164,7 +164,7 @@ package com.google.analytics.core{
                     } else
                     {
                         _local4 = (_local4 + ("&" + _local3));
-                    };
+                    }
                 } else
                 {
                     if (1 >= _local5.length)
@@ -175,7 +175,7 @@ package com.google.analytics.core{
                         } else
                         {
                             _local4 = (_local4 + "?");
-                        };
+                        }
                         _local4 = (_local4 + _local3);
                     } else
                     {
@@ -186,11 +186,11 @@ package com.google.analytics.core{
                         } else
                         {
                             _local4 = (_local4 + "?");
-                        };
+                        }
                         _local4 = (_local4 + ((_local3 + "#") + _local5[1]));
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (_local4);
         }
 
@@ -223,7 +223,7 @@ package com.google.analytics.core{
             if (_utmv)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -236,7 +236,7 @@ package com.google.analytics.core{
             if (_utmx)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -244,7 +244,7 @@ package com.google.analytics.core{
             if (_utmz)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -267,7 +267,7 @@ package com.google.analytics.core{
             if (_debug.verbose)
             {
                 _debug.info((("updateUTMA( " + _arg1) + " )"), VisualDebugMode.advanced);
-            };
+            }
             if (!utma.isEmpty())
             {
                 if (isNaN(utma.sessionCount))
@@ -276,17 +276,17 @@ package com.google.analytics.core{
                 } else
                 {
                     utma.sessionCount = (utma.sessionCount + 1);
-                };
+                }
                 utma.lastTime = utma.currentTime;
                 utma.currentTime = _arg1;
-            };
+            }
         }
 
         public function isGenuine():Boolean{
             if (!hasUTMK())
             {
                 return (true);
-            };
+            }
             return ((utmk.hash == generateCookiesHash()));
         }
 
@@ -300,7 +300,7 @@ package com.google.analytics.core{
                 case "SharedObject.Flush.Failed":
                     _debug.info("User denied permission -- value not saved.");
                     break;
-            };
+            }
             _SO.removeEventListener(NetStatusEvent.NET_STATUS, _onFlushStatus);
         }
 
@@ -322,7 +322,7 @@ package com.google.analytics.core{
             {
                 _SO.data.utma = null;
                 delete _SO.data.utma;
-            };
+            }
         }
 
         private function _clearUTMC():void{
@@ -335,7 +335,7 @@ package com.google.analytics.core{
             {
                 _SO.data.utmb = null;
                 delete _SO.data.utmb;
-            };
+            }
         }
 
         public function update(_arg1:String, _arg2):void{
@@ -345,7 +345,7 @@ package com.google.analytics.core{
             } else
             {
                 _SO.data[_arg1] = _arg2;
-            };
+            }
         }
 
         public function createSO():void{
@@ -362,119 +362,119 @@ package com.google.analytics.core{
                     if (_debug.active)
                     {
                         _debug.warning(((("Shared Object " + _config.cookieName) + " failed to be set\nreason: ") + e.message));
-                    };
-                };
+                    }
+                }
                 saveSO = false;
                 if (_SO.data.utma)
                 {
                     if (!hasUTMA())
                     {
                         _createUMTA();
-                    };
+                    }
                     _utma.fromSharedObject(_SO.data.utma);
                     if (_debug.verbose)
                     {
                         _debug.info(("found: " + _utma.toString(true)), VisualDebugMode.geek);
-                    };
+                    }
                     if (_utma.isExpired())
                     {
                         if (_debug.verbose)
                         {
                             _debug.warning("UTMA has expired", VisualDebugMode.advanced);
-                        };
+                        }
                         _clearUTMA();
                         saveSO = true;
-                    };
-                };
+                    }
+                }
                 if (_SO.data.utmb)
                 {
                     if (!hasUTMB())
                     {
                         _createUMTB();
-                    };
+                    }
                     _utmb.fromSharedObject(_SO.data.utmb);
                     if (_debug.verbose)
                     {
                         _debug.info(("found: " + _utmb.toString(true)), VisualDebugMode.geek);
-                    };
+                    }
                     if (_utmb.isExpired())
                     {
                         if (_debug.verbose)
                         {
                             _debug.warning("UTMB has expired", VisualDebugMode.advanced);
-                        };
+                        }
                         _clearUTMB();
                         saveSO = true;
-                    };
-                };
+                    }
+                }
                 if (_SO.data.utmc)
                 {
                     delete _SO.data.utmc;
                     saveSO = true;
-                };
+                }
                 if (_SO.data.utmk)
                 {
                     if (!hasUTMK())
                     {
                         _createUMTK();
-                    };
+                    }
                     _utmk.fromSharedObject(_SO.data.utmk);
                     if (_debug.verbose)
                     {
                         _debug.info(("found: " + _utmk.toString()), VisualDebugMode.geek);
-                    };
-                };
+                    }
+                }
                 if (!hasUTMX())
                 {
                     _createUMTX();
-                };
+                }
                 if (_SO.data.utmv)
                 {
                     if (!hasUTMV())
                     {
                         _createUMTV();
-                    };
+                    }
                     _utmv.fromSharedObject(_SO.data.utmv);
                     if (_debug.verbose)
                     {
                         _debug.info(("found: " + _utmv.toString(true)), VisualDebugMode.geek);
-                    };
+                    }
                     if (_utmv.isExpired())
                     {
                         if (_debug.verbose)
                         {
                             _debug.warning("UTMV has expired", VisualDebugMode.advanced);
-                        };
+                        }
                         _clearUTMV();
                         saveSO = true;
-                    };
-                };
+                    }
+                }
                 if (_SO.data.utmz)
                 {
                     if (!hasUTMZ())
                     {
                         _createUMTZ();
-                    };
+                    }
                     _utmz.fromSharedObject(_SO.data.utmz);
                     if (_debug.verbose)
                     {
                         _debug.info(("found: " + _utmz.toString(true)), VisualDebugMode.geek);
-                    };
+                    }
                     if (_utmz.isExpired())
                     {
                         if (_debug.verbose)
                         {
                             _debug.warning("UTMZ has expired", VisualDebugMode.advanced);
-                        };
+                        }
                         _clearUTMZ();
                         saveSO = true;
-                    };
-                };
+                    }
+                }
                 if (saveSO)
                 {
                     save();
-                };
-            };
+                }
+            }
         }
 
         private function _clearUTMZ():void{
@@ -483,7 +483,7 @@ package com.google.analytics.core{
             {
                 _SO.data.utmz = null;
                 delete _SO.data.utmz;
-            };
+            }
         }
 
         private function _clearUTMV():void{
@@ -492,7 +492,7 @@ package com.google.analytics.core{
             {
                 _SO.data.utmv = null;
                 delete _SO.data.utmv;
-            };
+            }
         }
 
         public function isVolatile():Boolean{
@@ -503,7 +503,7 @@ package com.google.analytics.core{
             if (!hasUTMA())
             {
                 _createUMTA();
-            };
+            }
             return (_utma);
         }
 
@@ -511,7 +511,7 @@ package com.google.analytics.core{
             if (!hasUTMB())
             {
                 _createUMTB();
-            };
+            }
             return (_utmb);
         }
 
@@ -519,7 +519,7 @@ package com.google.analytics.core{
             if (!hasUTMC())
             {
                 _createUMTC();
-            };
+            }
             return (_utmc);
         }
 
@@ -527,7 +527,7 @@ package com.google.analytics.core{
             if (!hasUTMK())
             {
                 _createUMTK();
-            };
+            }
             return (_utmk);
         }
 

@@ -25,7 +25,7 @@ package 2-g{
         private var 5g:Boolean;
 
         public function p7(_arg1:Console){
-            this.jS = {};
+            this.jS = {}
             super();
             this.console = _arg1;
             this._mainPanel = new 1hl(this.console);
@@ -43,7 +43,7 @@ package 2-g{
             } else
             {
                 this.console.addChild(_arg1);
-            };
+            }
             _arg1.addEventListener(1ZC.1NP, this.1Va, false, 0, true);
             _arg1.addEventListener(1ZC.Yt, this.1Va, false, 0, true);
         }
@@ -53,7 +53,7 @@ package 2-g{
             if (_local2)
             {
                 _local2.close();
-            };
+            }
         }
 
         public function getPanel(_arg1:String):1ZC{
@@ -77,12 +77,12 @@ package 2-g{
                 if (_arg2.width)
                 {
                     _local3.width = _arg2.width;
-                };
+                }
                 if (_arg2.height)
                 {
                     _local3.height = _arg2.height;
-                };
-            };
+                }
+            }
         }
 
         public function updateMenu():void{
@@ -91,7 +91,7 @@ package 2-g{
             if (_local1)
             {
                 _local1.update();
-            };
+            }
         }
 
         public function update(_arg1:Boolean, _arg2:Boolean):void{
@@ -102,8 +102,8 @@ package 2-g{
                 if (((_arg2) && (!((this.1Rz == null)))))
                 {
                     this.1Rz.update();
-                };
-            };
+                }
+            }
         }
 
         public function updateGraphs(_arg1:Array):void{
@@ -140,57 +140,57 @@ package 2-g{
                             if (_local9 == null)
                             {
                                 _local9 = new Rectangle(NaN, NaN, 0, 0);
-                            };
+                            }
                             _local10 = 100;
                             if (((isNaN(_local9.x)) || (isNaN(_local9.y))))
                             {
                                 if (this._mainPanel.width < 150)
                                 {
                                     _local10 = 50;
-                                };
+                                }
                                 _local11 = (Math.floor((this._mainPanel.width / _local10)) - 1);
                                 if (_local11 <= 1)
                                 {
                                     _local11 = 2;
-                                };
+                                }
                                 _local12 = (this.1L4 % _local11);
                                 _local13 = Math.floor((this.1L4 / _local11));
                                 _local9.x = ((this._mainPanel.x + _local10) + (_local12 * _local10));
                                 _local9.y = ((this._mainPanel.y + (_local10 * 0.6)) + (_local13 * _local10));
                                 this.1L4++;
-                            };
+                            }
                             if ((((_local9.width <= 0)) || (isNaN(_local9.width))))
                             {
                                 _local9.width = _local10;
-                            };
+                            }
                             if ((((_local9.height <= 0)) || (isNaN(_local9.height))))
                             {
                                 _local9.height = _local10;
-                            };
+                            }
                             _local8 = new 0OT(this.console, _local9.width, _local9.height);
                             _local8.x = _local9.x;
                             _local8.y = _local9.y;
                             _local8.name = ("graph_" + _local7);
                             this.jS[_local7] = _local8;
                             this.18c(_local8);
-                        };
+                        }
                         if (_local2 == null)
                         {
-                            _local2 = {};
-                        };
+                            _local2 = {}
+                        }
                         _local2[_local7] = true;
                         _local8.update(_local5, this.5g);
-                    };
-                };
-            };
+                    }
+                }
+            }
             for (_local6 in this.jS)
             {
                 if ((((_local2 == null)) || (!(_local2[_local6]))))
                 {
                     this.jS[_local6].close();
                     delete this.jS[_local6];
-                };
-            };
+                }
+            }
             if (_local3 != null)
             {
                 if (this.0yK == null)
@@ -201,7 +201,7 @@ package 2-g{
                     this.0yK.y = (this._mainPanel.y + 15);
                     this.18c(this.0yK);
                     this._mainPanel.updateMenu();
-                };
+                }
                 this.0yK.update(_local3, this.5g);
             } else
             {
@@ -209,8 +209,8 @@ package 2-g{
                 {
                     this.0YC(0OT.13x);
                     this.0yK = null;
-                };
-            };
+                }
+            }
             if (_local4 != null)
             {
                 if (this.0dK == null)
@@ -221,7 +221,7 @@ package 2-g{
                     this.0dK.y = (this._mainPanel.y + 15);
                     this.18c(this.0dK);
                     this._mainPanel.updateMenu();
-                };
+                }
                 this.0dK.update(_local4, this.5g);
             } else
             {
@@ -229,8 +229,8 @@ package 2-g{
                 {
                     this.0YC(0OT.1md);
                     this.0dK = null;
-                };
-            };
+                }
+            }
             this.5g = false;
         }
 
@@ -253,9 +253,9 @@ package 2-g{
                     {
                         _local2.close();
                         delete this.jS[_arg1.name];
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function get displayRoller():Boolean{
@@ -277,13 +277,13 @@ package 2-g{
                     } else
                     {
                         this.console.report("Display roller is disabled in config.", 9);
-                    };
+                    }
                 } else
                 {
                     this.0YC(0kO.NAME);
-                };
+                }
                 this._mainPanel.updateMenu();
-            };
+            }
         }
 
         public function get channelsPanel():Boolean{
@@ -306,9 +306,9 @@ package 2-g{
                 {
                     this.0YC(0vy.NAME);
                     this.1Rz = null;
-                };
+                }
                 this.updateMenu();
-            };
+            }
         }
 
         public function get memoryMonitor():Boolean{
@@ -333,7 +333,7 @@ package 2-g{
                 if (_local3.length > 1)
                 {
                     _arg1 = (_arg1 + (("<br/><low>" + _local3[1]) + "</low>"));
-                };
+                }
                 this.console.addChild(this.Cg);
                 this.Cg.wordWrap = false;
                 this.Cg.htmlText = (("<tt>" + _arg1) + "</tt>");
@@ -341,7 +341,7 @@ package 2-g{
                 {
                     this.Cg.width = 120;
                     this.Cg.wordWrap = true;
-                };
+                }
                 this.Cg.x = (this.console.mouseX - (this.Cg.width / 2));
                 this.Cg.y = (this.console.mouseY + 20);
                 if (_arg2)
@@ -359,9 +359,9 @@ package 2-g{
                             if ((((_local5.y < (this.console.mouseY - 24))) && ((_local4.y > _local5.bottom))))
                             {
                                 this.Cg.y = ((this.console.mouseY - this.Cg.height) - 15);
-                            };
-                        };
-                    };
+                            }
+                        }
+                    }
                     _local7 = (_local4.left - _local5.left);
                     _local8 = (_local4.right - _local5.right);
                     if (_local7 < 0)
@@ -372,23 +372,23 @@ package 2-g{
                         if (_local8 > 0)
                         {
                             this.Cg.x = (this.Cg.x - _local8);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
             } else
             {
                 if (this.console.contains(this.Cg))
                 {
                     this.console.removeChild(this.Cg);
-                };
-            };
+                }
+            }
         }
 
         public function startRuler():void{
             if (this.rulerActive)
             {
                 return;
-            };
+            }
             this.0fY = new 0yS(this.console);
             this.0fY.addEventListener(Event.COMPLETE, this.f2, false, 0, true);
             this.console.addChild(this.0fY);
@@ -403,7 +403,7 @@ package 2-g{
             if (((this.0fY) && (this.console.contains(this.0fY))))
             {
                 this.console.removeChild(this.0fY);
-            };
+            }
             this.0fY = null;
             this._mainPanel.updateMenu();
         }
@@ -423,7 +423,7 @@ package 2-g{
                 {
                     _local3.push(this.console.stage.stageWidth);
                     _local4.push(this.console.stage.stageHeight);
-                };
+                }
                 _local5 = this.console.numChildren;
                 _local6 = 0;
                 while (_local6 < _local5)
@@ -433,11 +433,11 @@ package 2-g{
                     {
                         _local3.push(_local7.x, (_local7.x + _local7.width));
                         _local4.push(_local7.y, (_local7.y + _local7.height));
-                    };
+                    }
                     _local6++;
-                };
+                }
                 _local2.0tN(_local3, _local4);
-            };
+            }
         }
 
 

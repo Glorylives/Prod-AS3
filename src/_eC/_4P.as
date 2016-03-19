@@ -22,7 +22,7 @@ package _eC{
             } else
             {
                 this._0wv = null;
-            };
+            }
         }
 
         public function append(_arg1:_0A3):void{
@@ -35,7 +35,7 @@ package _eC{
             {
                 this._0kc = (this._0wv = _arg1);
                 this.target.addChild(_arg1);
-            };
+            }
         }
 
 

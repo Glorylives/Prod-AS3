@@ -23,7 +23,7 @@ package eC{
             if (_arg3)
             {
                 this.1Gi(_arg3);
-            };
+            }
         }
 
         public function OS(_arg1:int):void{
@@ -41,7 +41,7 @@ package eC{
                 this.0ie.y = 3;
                 this.0ie.scaleX = (this.0ie.scaleY = 2);
                 addChild(this.0ie);
-            };
+            }
             this.Fi.visible = (this.0ie.visible = (_arg1 > 0));
         }
 

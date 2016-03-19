@@ -53,7 +53,7 @@ package com.company.assembleegameclient.engine3d{
             {
                 this._1Xl = null;
                 return;
-            };
+            }
             var _local2:int = (_arg1.length - 3);
             var _local3:Number = (_arg1[0] * this.texture_.width);
             var _local4:Number = (_arg1[1] * this.texture_.height);

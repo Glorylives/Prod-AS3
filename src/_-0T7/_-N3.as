@@ -43,7 +43,7 @@ package 0T7{
                     return (0XK.1up);
                 case gb:
                     return (0XK.gb);
-            };
+            }
             return (null);
         }
 

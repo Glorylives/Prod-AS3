@@ -32,7 +32,7 @@ package com.hurlant.crypto.hash{
             while ((_arg1.length % 4) != 0)
             {
                 _arg1[_arg1.length] = 0;
-            };
+            }
             _arg1.position = 0;
             var _local4:Array = [];
             _arg1.endian = Endian.LITTLE_ENDIAN;
@@ -41,7 +41,7 @@ package com.hurlant.crypto.hash{
             {
                 _local4.push(_arg1.readUnsignedInt());
                 _local5 = (_local5 + 4);
-            };
+            }
             var _local6:Array = this.core_md5(_local4, _local2);
             var _local7:ByteArray = new ByteArray();
             _local7.endian = Endian.LITTLE_ENDIAN;
@@ -50,7 +50,7 @@ package com.hurlant.crypto.hash{
             {
                 _local7.writeUnsignedInt(_local6[_local5]);
                 _local5++;
-            };
+            }
             _arg1.length = (_local2 / 8);
             _arg1.endian = _local3;
             return (_local7);
@@ -159,7 +159,7 @@ package com.hurlant.crypto.hash{
                 _local5 = (_local5 + _local10);
                 _local6 = (_local6 + _local11);
                 _local7 = (_local7 + 16);
-            };
+            }
             return ([_local3, _local4, _local5, _local6]);
         }
 

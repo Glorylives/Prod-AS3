@@ -21,7 +21,7 @@ package 1Np{
             if (this.go_.map_ == null)
             {
                 return (false);
-            };
+            }
             x_ = this.go_.x_;
             y_ = this.go_.y_;
             var _local3:int = 10;
@@ -30,7 +30,7 @@ package 1Np{
             {
                 map_.addObj(new El(100, this.color_, 400, 0.75, 0Na.1Me(4), 0Na.1Me(4)), x_, y_);
                 _local4++;
-            };
+            }
             return (false);
         }
 

@@ -53,7 +53,7 @@ import flash.display.BitmapData;
             {
                 _local4.push((((_local5 == 0)) ? GraphicsPathCommand.MOVE_TO : GraphicsPathCommand.LINE_TO));
                 _local5++;
-            };
+            }
             var _local6:Vector.<Number> = new Vector.<Number>();
             _local6.length = (this.sS.length * 2);
             this.path_ = new GraphicsPath(_local4, _local6);
@@ -73,7 +73,7 @@ import flash.display.BitmapData;
             if (this.normalL_ != null)
             {
                 this._1OL = this.obj_.jJ.deltaTransformVector(this.normalL_);
-            };
+            }
         }
 
         public function draw(_arg1:Vector.<IGraphicsData>, _arg2:uint, _arg3:BitmapData):void{
@@ -89,7 +89,7 @@ import flash.display.BitmapData;
             if (((_local8 * _local11) - (_local9 * _local10)) < 0)
             {
                 return;
-            };
+            }
             if (((!(Parameters.data_.GPURender)) && (((!(this._18b)) || ((_arg3 == null))))))
             {
                 this._18a.color = MoreColorUtil._09(new ColorTransform(this.Bq, this.Bq, this.Bq), _arg2);
@@ -102,11 +102,11 @@ import flash.display.BitmapData;
                 } else
                 {
                     _arg3 = TextureRedrawer.WQ(_arg3, this.Bq);
-                };
+                }
                 this.bitmapFill_.bitmapData = _arg3;
                 this.bitmapFill_.matrix = this._0CE(_arg3);
                 _arg1.push(this.bitmapFill_);
-            };
+            }
             var _local12:int;
             while (_local12 < this.sS.length)
             {
@@ -114,13 +114,13 @@ import flash.display.BitmapData;
                 this.path_.data[(_local12 * 2)] = _local7[(_local13 * 2)];
                 this.path_.data[((_local12 * 2) + 1)] = _local7[((_local13 * 2) + 1)];
                 _local12++;
-            };
+            }
             _arg1.push(this.path_);
             _arg1.push(_tu.END_FILL);
             if (((((this._1W4) && (Parameters.TP()))) && (!((this.bitmapFill_ == null)))))
             {
                 _14d._0Sd(this.bitmapFill_, true);
-            };
+            }
         }
 
         private function _0CE(_arg1:BitmapData):Matrix{

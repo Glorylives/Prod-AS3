@@ -95,7 +95,7 @@ package com.company.assembleegameclient.ui{
             if (_arg1 == mouseEnabled)
             {
                 return;
-            };
+            }
             mouseEnabled = _arg1;
             mouseChildren = _arg1;
             graphicsData_[0] = ((_arg1) ? 0dT : 1pM);
@@ -167,8 +167,8 @@ package com.company.assembleegameclient.ui{
                 {
                     this.0z4 = 0i3;
                     this.setEnabled(true);
-                };
-            };
+                }
+            }
             switch (this.0z4)
             {
                 case 0yd:
@@ -181,7 +181,7 @@ package com.company.assembleegameclient.ui{
                 case 04J:
                     this.0y-.visible = false;
                     break;
-            };
+            }
             graphics.clear();
             graphics.drawGraphicsData(graphicsData_);
         }

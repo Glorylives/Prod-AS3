@@ -20,14 +20,14 @@ package com.google.analytics.debug{
                 _timer = new Timer(_arg2, 1);
                 _timer.start();
                 _timer.addEventListener(TimerEvent.TIMER_COMPLETE, onComplete, false, 0, true);
-            };
+            }
         }
 
         public function close():void{
             if (parent != null)
             {
                 parent.removeChild(this);
-            };
+            }
         }
 
         override public function onLink(_arg1:TextEvent):void{
@@ -36,7 +36,7 @@ package com.google.analytics.debug{
                 case "hide":
                     close();
                     return;
-            };
+            }
         }
 
         public function onComplete(_arg1:TimerEvent):void{

@@ -38,7 +38,7 @@ package 0Ux{
             {
                 this.7U = _arg1;
                 this.0Dd();
-            };
+            }
         }
 
         public function destroy():void{

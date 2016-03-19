@@ -51,9 +51,9 @@ package com.google.analytics.ecommerce{
                 if (_items[_local2].sku == _arg1)
                 {
                     return (_items[_local2]);
-                };
+                }
                 _local2++;
-            };
+            }
             return (null);
         }
 
@@ -74,7 +74,7 @@ package com.google.analytics.ecommerce{
                 _local6.category = _arg3;
                 _local6.price = _arg4;
                 _local6.quantity = _arg5;
-            };
+            }
         }
 
         public function set shipping(_arg1:String):void{

@@ -11,7 +11,7 @@ package _tn{
         public static const _0R9:int = 782;
 
         public const selected:_1HZ = new _1HZ(_0dE);
-        private const map:Object = {};
+        private const map:Object = {}
         private const classes:Vector.<_0dE> = new <_0dE>[];
 
         private var count:uint = 0;
@@ -43,7 +43,7 @@ package _tn{
                 ((this._0b1) && (this._0b1.eR(false)));
                 this._0b1 = _arg1;
                 this.selected.dispatch(_arg1);
-            };
+            }
         }
 
         public function _0NO():_0dE{
@@ -57,7 +57,7 @@ package _tn{
             {
                 _local2 = _local3._0sP._15c(_arg1);
                 if (_local2 != _local3._0sP._0i1()) break;
-            };
+            }
             return (_local2);
         }
 

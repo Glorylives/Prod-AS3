@@ -37,7 +37,7 @@ package com.company.assembleegameclient.tutorial{
             {
                 _local4 = (this.rect_.x + (_arg1 / 2));
                 _local5 = (this.rect_.y + (_arg1 / 2));
-            };
+            }
             _arg2.lineStyle(_arg1, this.color_);
             _arg2.drawRect(_local4, _local5, _local6, _local7);
         }

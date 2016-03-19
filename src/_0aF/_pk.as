@@ -43,7 +43,7 @@ package _0aF{
             {
                 this._1Za.debug("Unlinking parent injector for child context {0}", [this._0Tc]);
                 this._0Tc.kf._1Li = null;
-            };
+            }
         }
 
         private function _0cd(_arg1:ModularContextEvent):void{

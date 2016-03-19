@@ -16,7 +16,7 @@ package 0QW{
             {
                 _local2 = new C6(_local1);
                 1An(_local2);
-            };
+            }
         }
 
     }

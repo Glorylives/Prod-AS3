@@ -21,11 +21,11 @@ package 0QW{
             if (_arg4 != null)
             {
                 this.1fG = _arg4.clone();
-            };
+            }
             if (_arg5 != null)
             {
                 this.Sf = _arg5.clone();
-            };
+            }
         }
 
         override public function execute():void{
@@ -35,7 +35,7 @@ package 0QW{
             } else
             {
                 this.map_.0r7(this.x_, this.y_, this.Sf);
-            };
+            }
         }
 
         override public function unexecute():void{
@@ -45,7 +45,7 @@ package 0QW{
             } else
             {
                 this.map_.0r7(this.x_, this.y_, this.1fG);
-            };
+            }
         }
 
 

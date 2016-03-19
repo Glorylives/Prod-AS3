@@ -46,7 +46,7 @@ package OZ{
             if (this.0xf())
             {
                 _arg1 = new Size((_arg1.width - 1KI), _arg1.height);
-            };
+            }
             this.list.setSize(_arg1);
             this.15T();
         }

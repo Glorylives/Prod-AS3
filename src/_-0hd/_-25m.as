@@ -50,11 +50,11 @@ package 0hd{
             } else
             {
                 this.1J3();
-            };
+            }
         }
 
         private function 1J3():void{
-            var _local1:Object = {name:this.name};
+            var _local1:Object = {name:this.name}
             1X3.1J7(_local1, this.account.1Y());
             this.client.complete.addOnce(this.onComplete);
             this.client.sendRequest("/account/setName", _local1);
@@ -68,14 +68,14 @@ package 0hd{
             } else
             {
                 this.1ep(_arg2);
-            };
+            }
         }
 
         private function pj():void{
             if (this.SP != null)
             {
                 this.SP.setName(this.name);
-            };
+            }
             this.057.dispatch(this.name);
             this.closeDialogs.dispatch();
         }

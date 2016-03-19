@@ -30,7 +30,7 @@ package _gx{
                     return (_1OY);
                 case Ww:
                     return (uH);
-            };
+            }
             return (-1);
         }
 
@@ -45,7 +45,7 @@ package _gx{
             for each (_local6 in _arg1.PotionPurchaseCosts.cost)
             {
                 _local5.push(_local6);
-            };
+            }
             _local7 = new _25Q();
             _local7.lF = _local2;
             _local7.xK = _local3;
@@ -73,8 +73,8 @@ package _gx{
                 if (this._1rW[_local2].objectId == _arg1)
                 {
                     return (this._1rW[_local2]);
-                };
-            };
+                }
+            }
             return (null);
         }
 

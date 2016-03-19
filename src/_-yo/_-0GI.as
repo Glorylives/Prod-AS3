@@ -33,7 +33,7 @@ package yo{
             {
                 this.records_[_local2].writeToOutput(_arg1);
                 _local2++;
-            };
+            }
         }
 
         override public function toString():String{

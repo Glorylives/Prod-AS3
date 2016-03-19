@@ -35,7 +35,7 @@ package _ZE{
             if ((((_arg1.keyCode == Parameters.data_.interact)) && ((stage.focus == null))))
             {
                 gs_.closed.dispatch();
-            };
+            }
         }
 
 

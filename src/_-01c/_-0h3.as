@@ -25,7 +25,7 @@ package 01c{
             if (1vM[_arg1.id] == _arg1)
             {
                 return (_arg1.id);
-            };
+            }
             var _local2 = ++0W0;
             1vM[_local2] = _arg1;
             _arg1.I9 = getTimer();
@@ -44,9 +44,9 @@ package 01c{
                     {
                         _local2.I9 = _arg1;
                         _local2.run();
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public static function VW(_arg1:0h3):void{
@@ -59,7 +59,7 @@ package 01c{
             for each (_local1 in 1vM)
             {
                 _local1.destroy();
-            };
+            }
             1vM = new Dictionary();
         }
 

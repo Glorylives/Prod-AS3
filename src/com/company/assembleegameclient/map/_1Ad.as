@@ -24,7 +24,7 @@ package com.company.assembleegameclient.map{
                 case "Flow":
                     this.type_ = sT;
                     break;
-            };
+            }
             this.dx_ = _arg1.@dx;
             this.dy_ = _arg1.@dy;
         }

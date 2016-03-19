@@ -44,7 +44,7 @@ package 0hd{
             {
                 this.1hJ[_local2] = this.1C5(this.Qo.offerList[_local2]);
                 _local2++;
-            };
+            }
         }
 
         private function 1C5(_arg1:Offer):T4{
@@ -74,7 +74,7 @@ package 0hd{
             {
                 _local2[_local3] = this.1hJ[_local3];
                 _local3++;
-            };
+            }
             return (_local2);
         }
 
@@ -92,7 +92,7 @@ package 0hd{
             {
                 _local2[_local3] = this.1hJ[_local3];
                 _local3++;
-            };
+            }
             return (_local2);
         }
 
@@ -101,7 +101,7 @@ package 0hd{
             while (_local2--)
             {
                 this.1hJ[_local2].showBonus(_arg1);
-            };
+            }
         }
 
 

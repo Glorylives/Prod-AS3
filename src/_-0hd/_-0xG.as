@@ -95,14 +95,14 @@ package 0hd{
                 _local1.lineTo((1r7 - 2), 2);
                 _local1.lineStyle();
                 this.Qp = false;
-            };
+            }
             if (this.Qp)
             {
                 _local2 = 16549442;
             } else
             {
                 _local2 = 0x454545;
-            };
+            }
             _local1.lineStyle(2, _local2, 1, false, LineScaleMode.NORMAL, CapsStyle.ROUND, JointStyle.ROUND);
             _local1.drawRect(0, 0, 1r7, 1r7);
             _local1.lineStyle();

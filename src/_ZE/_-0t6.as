@@ -37,7 +37,7 @@ package _ZE{
             if (this.0E4 != null)
             {
                 this.0E4.removeEventListener(Event.COMPLETE, this.onComplete);
-            };
+            }
             this.0E4 = _arg1;
             this.0E4.addEventListener(Event.COMPLETE, this.onComplete);
         }
@@ -54,7 +54,7 @@ package _ZE{
                 this.0OM(this.0E4);
                 this.0Om.draw();
                 return;
-            };
+            }
             _local1 = this.0RY();
             if ((((this.0Om == null)) || (!((_local1 == this.1Qw)))))
             {
@@ -66,13 +66,13 @@ package _ZE{
                 } else
                 {
                     _local2 = this.1AK;
-                };
+                }
                 this.0OM(_local2);
-            };
+            }
             if (this.0Om)
             {
                 this.0Om.draw();
-            };
+            }
         }
 
         private function onComplete(_arg1:Event):void{
@@ -80,7 +80,7 @@ package _ZE{
             {
                 this.0E4.removeEventListener(Event.COMPLETE, this.onComplete);
                 this.0E4 = null;
-            };
+            }
             this.0OM(null);
             this.draw();
         }
@@ -91,7 +91,7 @@ package _ZE{
                 ((this.0Om) && (removeChild(this.0Om)));
                 this.0Om = _arg1;
                 ((this.0Om) && (this.0qS()));
-            };
+            }
         }
 
         private function 0qS():void{
@@ -103,7 +103,7 @@ package _ZE{
             {
                 this.0Om.x = 6;
                 this.0Om.y = 8;
-            };
+            }
             addChild(this.0Om);
         }
 

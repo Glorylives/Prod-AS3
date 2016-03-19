@@ -65,7 +65,7 @@ package 1Tb{
                 this.ur.0yJ = this.xI;
                 this.xI = _arg1;
                 this.05m = 1-T.0Ds(_arg1, false);
-            };
+            }
             this.0au.set("base", _arg1);
         }
 
@@ -94,8 +94,8 @@ package 1Tb{
                 } else
                 {
                     console.report("Reference no longer exist.", -2);
-                };
-            };
+                }
+            }
         }
 
         public function 0HC(_arg1:String, _arg2:Object, _arg3:Boolean=false):void{
@@ -103,17 +103,17 @@ package 1Tb{
             {
                 report("ERROR: Give a name to save.", 10);
                 return;
-            };
+            }
             if ((_arg2 is Function))
             {
                 _arg3 = true;
-            };
+            }
             _arg1 = _arg1.replace(/[^\w]*/g, "");
             if (wC.indexOf(_arg1) >= 0)
             {
                 report((("ERROR: The name [" + _arg1) + "] is reserved"), 10);
                 return;
-            };
+            }
             this.0au.set(_arg1, _arg2, _arg3);
         }
 
@@ -131,20 +131,20 @@ package 1Tb{
                 if (((config.commandLineAllowed) || (cmd.allow)))
                 {
                     all.push([(("/" + X) + " "), ((cmd.d) ? cmd.d : null)]);
-                };
-            };
+                }
+            }
             if (config.commandLineAllowed)
             {
                 for (Y in this.0au)
                 {
                     all.push([("$" + Y), 1-T.0Ds(this.0au.get(Y))]);
-                };
+                }
                 if (this.xI)
                 {
                     all.push(["this", 1-T.0Ds(this.xI)]);
                     all = all.concat(console.refs.getPossibleCalls(this.xI));
-                };
-            };
+                }
+            }
             str = str.toLowerCase();
             var hints:Array = new Array();
             for each (canadate in all)
@@ -152,24 +152,24 @@ package 1Tb{
                 if (canadate[0].toLowerCase().indexOf(str) == 0)
                 {
                     hints.push(canadate);
-                };
-            };
+                }
+            }
             hints = hints.sort(function (_arg1:Array, _arg2:Array):int{
                 if (_arg1[0].length < _arg2[0].length)
                 {
                     return (-1);
-                };
+                }
                 if (_arg1[0].length > _arg2[0].length)
                 {
                     return (1);
-                };
+                }
                 return (0);
             });
             if ((((max > 0)) && ((hints.length > max))))
             {
                 hints.splice(max);
                 hints.push(["..."]);
-            };
+            }
             return (hints);
         }
 
@@ -187,9 +187,9 @@ package 1Tb{
                 if (_local7 > 0)
                 {
                     this.FG.setPropertyIsEnumerable(_arg1, false);
-                };
+                }
                 _local7++;
-            };
+            }
         }
 
         public function 1Az(_arg1:String, _arg2:Function, _arg3:String="", _arg4:Boolean=true, _arg5:String=";"):void{
@@ -201,15 +201,15 @@ package 1Tb{
                 if (!_local6.user)
                 {
                     throw (new Error((("Can not alter build-in slash command [" + _arg1) + "]")));
-                };
-            };
+                }
+            }
             if (_arg2 == null)
             {
                 delete this.FG[_arg1];
             } else
             {
                 this.FG[_arg1] = new SlashCommand(_arg1, _arg2, 1-T.wA(_arg3), true, _arg4, _arg5);
-            };
+            }
         }
 
         public function run(_arg1:String, _arg2:Object=null){
@@ -221,7 +221,7 @@ package 1Tb{
             if (!str)
             {
                 return;
-            };
+            }
             str = str.replace(/\s*/, "");
             if (remoter.remoting == xi.1pv)
             {
@@ -238,11 +238,11 @@ package 1Tb{
                         if (!console.remoter.send("cmd", bytes))
                         {
                             report("Command could not be sent to client.", 10);
-                        };
+                        }
                         return (null);
-                    };
-                };
-            };
+                    }
+                }
+            }
             report(("&gt; " + str), 4, false);
             var v:* = null;
             try
@@ -256,7 +256,7 @@ package 1Tb{
                     {
                         report(4i, 9);
                         return (null);
-                    };
+                    }
                     exe = new Executer();
                     exe.addEventListener(Event.COMPLETE, this.19-, false, 0, true);
                     if (saves)
@@ -266,21 +266,21 @@ package 1Tb{
                             if (!saves[X])
                             {
                                 saves[X] = this.0au[X];
-                            };
-                        };
+                            }
+                        }
                     } else
                     {
                         saves = this.0au;
-                    };
+                    }
                     exe.yg(saves);
                     exe.ta(wC);
                     exe.1A4 = config.commandLineAutoScope;
                     v = exe.exec(this.xI, str);
-                };
+                }
             } catch(e:Error)
             {
                 reportError(e);
-            };
+            }
             return (v);
         }
 
@@ -298,8 +298,8 @@ package 1Tb{
                 {
                     this.setReturned(_local2.returned);
                     this.setReturned(_local2.scope, true);
-                };
-            };
+                }
+            }
         }
 
         private function 1gA(_arg1:String):void{
@@ -313,7 +313,7 @@ package 1Tb{
             {
                 this.setReturned(this.0au.get(Executer.0PZ), true);
                 return;
-            };
+            }
             var param:String = (((brk > 0)) ? str.substring((brk + 1)) : "");
             if (this.FG[cmd] != null)
             {
@@ -324,7 +324,7 @@ package 1Tb{
                     {
                         report(4i, 9);
                         return;
-                    };
+                    }
                     if (slashcmd.endMarker)
                     {
                         endInd = param.indexOf(slashcmd.endMarker);
@@ -332,27 +332,27 @@ package 1Tb{
                         {
                             restStr = param.substring((endInd + slashcmd.endMarker.length));
                             param = param.substring(0, endInd);
-                        };
-                    };
+                        }
+                    }
                     if (param.length == 0)
                     {
                         slashcmd.f();
                     } else
                     {
                         slashcmd.f(param);
-                    };
+                    }
                     if (restStr)
                     {
                         this.run(restStr);
-                    };
+                    }
                 } catch(err:Error)
                 {
                     reportError(err);
-                };
+                }
             } else
             {
                 report("Undefined command <b>/commands</b> for list _of all commands.", 10);
-            };
+            }
         }
 
         public function setReturned(_arg1, _arg2:Boolean=false, _arg3:Boolean=true):void{
@@ -360,7 +360,7 @@ package 1Tb{
             {
                 report(4i, 9);
                 return;
-            };
+            }
             if (_arg1 !== undefined)
             {
                 this.0au.set(Executer.0PZ, _arg1, true);
@@ -372,22 +372,22 @@ package 1Tb{
                     {
                         this.05m = 1-T.0Ds(this.xI, false);
                         this.Bc();
-                    };
+                    }
                     report(("Changed to " + console.refs.makeRefTyped(_arg1)), -1);
                 } else
                 {
                     if (_arg3)
                     {
                         report(("Returned " + console.refs.makeString(_arg1)), -1);
-                    };
-                };
+                    }
+                }
             } else
             {
                 if (_arg3)
                 {
                     report("Exec successful, undefined return.", -1);
-                };
-            };
+                }
+            }
         }
 
         public function Bc(_arg1:Event=null):void{
@@ -413,14 +413,14 @@ package 1Tb{
                 {
                     if ((((_local5 > 0)) && ((_local9 > 0)))) break;
                     _local5++;
-                };
+                }
                 _local7.push((((((("<p" + _local4) + "> ") + _local10) + "</p") + _local4) + ">"));
                 if (_local4 > 6)
                 {
                     _local4--;
-                };
+                }
                 _local9++;
-            };
+            }
             report(_local7.join("\n"), 9);
         }
 
@@ -445,9 +445,9 @@ package 1Tb{
                 if (_local5.0yJ == null)
                 {
                     _local3++;
-                };
+                }
                 report(((((((_local5.strong) ? "strong" : "weak") + " <b>$") + _local4) + "</b> = ") + console.refs.makeString(_local5.0yJ)), -2);
-            };
+            }
             report((((("Found " + _local2) + " item(s), ") + _local3) + " empty."), -1);
         }
 
@@ -470,15 +470,15 @@ package 1Tb{
                     } else
                     {
                         _local2.push(_local4);
-                    };
-                };
-            };
+                    }
+                }
+            }
             _local2 = _local2.sortOn("n");
             report(("Built-in commands:" + ((config.commandLineAllowed) ? "" : " (limited permission)")), 4);
             for each (_local4 in _local2)
             {
                 report((((("<b>/" + _local4.n) + "</b> <p-1>") + _local4.d) + "</p-1>"), -2);
-            };
+            }
             if (_local3.length)
             {
                 _local3 = _local3.sortOn("n");
@@ -486,8 +486,8 @@ package 1Tb{
                 for each (_local4 in _local3)
                 {
                     report((((("<b>/" + _local4.n) + "</b> <p-1>") + _local4.d) + "</p-1>"), -2);
-                };
-            };
+                }
+            }
         }
 
         private function 0px(... _args):void{

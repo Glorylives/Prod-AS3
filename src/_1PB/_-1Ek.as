@@ -53,7 +53,7 @@ package 1PB{
             if (_local2.hitTestObject(this.view.1Ke))
             {
                 this.02P(_local2);
-            };
+            }
         }
 
         private function 02P(_arg1:Sprite):void{
@@ -82,7 +82,7 @@ package 1PB{
             if (((this.stats) && (this.stats.hasEventListener(MouseEvent.MOUSE_DOWN))))
             {
                 this.stats.removeEventListener(MouseEvent.MOUSE_DOWN, this.0cb);
-            };
+            }
         }
 
         private function 0G0(_arg1:Player):void{

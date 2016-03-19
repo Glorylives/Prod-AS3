@@ -53,7 +53,7 @@ protected function _22b(_arg1:String, _arg2:Function, _arg3:Class=null):void{
             if (this._0af.hasEventListener(_arg1.type))
             {
                 this._0af.dispatchEvent(_arg1);
-            };
+            }
         }
 
 

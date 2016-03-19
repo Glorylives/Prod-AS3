@@ -119,7 +119,7 @@ public class Options extends Sprite {
                 this.b.push(_local5);
                 _local3 = (_local3 + 108);
                 _local4++;
-            };
+            }
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
@@ -168,7 +168,7 @@ public class Options extends Sprite {
                 _local1.data = _local2;
                 Mouse.registerCursor(Parameters.data_.cursorSelect, _local1);
                 _4E.push(Parameters.data_.cursorSelect);
-            };
+            }
             Mouse.cursor = Parameters.data_.cursorSelect;
         }
 
@@ -197,9 +197,9 @@ public class Options extends Sprite {
                 } else
                 {
                     delete Parameters.data_[_local3._1aN];
-                };
+                }
                 _local2++;
-            };
+            }
             Parameters._0S2();
             Parameters.save();
             this.refresh();
@@ -219,11 +219,11 @@ public class Options extends Sprite {
             if (_arg1 == this.selected_)
             {
                 return;
-            };
+            }
             if (this.selected_ != null)
             {
                 this.selected_.setSelected(false);
-            };
+            }
             this.selected_ = _arg1;
             this.selected_.setSelected(true);
             this._0Gg();
@@ -250,7 +250,7 @@ public class Options extends Sprite {
                 case _du._1V7:
                     this.ma();
                     return;
-            };
+            }
         }
 
         private function onAddedToStage(_arg1:Event):void{
@@ -264,7 +264,7 @@ public class Options extends Sprite {
             {
                 Parameters.data_.fullscreenMode = (stage.displayState == "fullScreenInter_active");
                 Parameters.save();
-            };
+            }
             this.setSelected(this.b[0]);
             stage.addEventListener(KeyboardEvent.KEY_DOWN, this._1lw, false, 1);
             stage.addEventListener(KeyboardEvent.KEY_UP, this._0M9, false, 1);
@@ -281,11 +281,11 @@ public class Options extends Sprite {
                 Parameters.data_.fullscreenMode = false;
                 Parameters.save();
                 this.refresh();
-            };
+            }
             if (_arg1.keyCode == Parameters.data_.options)
             {
                 this.close();
-            };
+            }
             _arg1.stopImmediatePropagation();
         }
 
@@ -303,7 +303,7 @@ public class Options extends Sprite {
             for each (_local1 in this._0N2)
             {
                 removeChild(_local1);
-            };
+            }
             this._0N2.length = 0;
         }
 
@@ -348,10 +348,10 @@ public class Options extends Sprite {
                     if ((((_local2._1aN == "rotateLeft")) || ((_local2._1aN == "rotateRight"))))
                     {
                         _local2.r3(!(Parameters.data_.allowRotation));
-                    };
-                };
+                    }
+                }
                 _local1++;
-            };
+            }
         }
 
         private function _1Gv():void{
@@ -368,7 +368,7 @@ public class Options extends Sprite {
             if (this._07T())
             {
                 this._10y(new _B7("toggleFullscreen", _du._WN, _du._19z));
-            };
+            }
         }
 
         public function _07T():Boolean{
@@ -392,7 +392,7 @@ public class Options extends Sprite {
                 _local2._0Wk(new _1cA().setParams(_du._0nl, {n:_local1}));
                 this._10y(_local2);
                 _local1++;
-            };
+            }
         }
 
         private function _1o():void{
@@ -428,10 +428,10 @@ public class Options extends Sprite {
                         case "chatAll":
                             _local2._1JE();
                             break;
-                    };
-                };
+                    }
+                }
                 _local1++;
-            };
+            }
         }
 
         private function _26J():void{
@@ -456,10 +456,10 @@ public class Options extends Sprite {
                         case "chatFriend":
                             _local2._1JE();
                             break;
-                    };
-                };
+                    }
+                }
                 _local1++;
-            };
+            }
         }
 
         private function _0dz():void{
@@ -482,12 +482,12 @@ public class Options extends Sprite {
             {
                 _local1 = _du._06i;
                 _local2 = 16724787;
-            };
+            }
             this._10y(new _0kr("GPURender", _1TT(), [true, false], _du._0fV, _local1, null, _local2));
             if (Capabilities.playerType == "Desktop")
             {
                 this._10y(new _0kr("fullscreenMode", _1TT(), [true, false], _du._Jh, _du._Lk, this._1YI));
-            };
+            }
             this._10y(new _0kr("toggleBarText", _1TT(), [true, false], _du._12M, _du._1d4, _7I));
             this._10y(new _0kr("particleEffect", _1AO(), [true, false], _du._1nl, _du._H2, null));
             this._10y(new _0kr("HPBar", _1TT(), [true, false], _du._aO, _du._04o, null));
@@ -497,7 +497,7 @@ public class Options extends Sprite {
             if (((((((!((this.gs_ == null))) && (!((this.gs_.map == null))))) && (!((this.gs_.map.partyOverlay_ == null))))) && (!((this.gs_.map.partyOverlay_.questArrow_ == null)))))
             {
                 this.gs_.map.partyOverlay_.questArrow_.refreshToolTip();
-            };
+            }
         }
 
         private function _1YI():void{
@@ -534,7 +534,7 @@ public class Options extends Sprite {
             } else
             {
                 _0H7._5W(0);
-            };
+            }
             this.refresh();
         }
 
@@ -546,7 +546,7 @@ public class Options extends Sprite {
             } else
             {
                 _VA._00G(0);
-            };
+            }
             this.refresh();
         }
 
@@ -580,7 +580,7 @@ public class Options extends Sprite {
             positionOption = function ():void{
                 option.x = (((((_0N2.length % 2) == 0)) ? 20 : 415) + offsetX);
                 option.y = (((int((_0N2.length / 2)) * 44) + 122) + offsetY);
-            };
+            }
             option.textChanged.addOnce(positionOption);
             this._6h(option);
         }
@@ -606,9 +606,9 @@ public class Options extends Sprite {
                 } else
                 {
                     _local2.refresh();
-                };
+                }
                 _local1++;
-            };
+            }
         }
 
 

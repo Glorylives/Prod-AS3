@@ -48,7 +48,7 @@ package 0pT{
                 _local3.filters = [new ColorMatrixFilter(MoreColorUtil.1Z6)];
                 this.08H.push(_local3);
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 3)
             {
@@ -56,7 +56,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 1aJ, false);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 7)
             {
@@ -64,7 +64,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 1aJ, false);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 7)
             {
@@ -72,7 +72,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 1aJ, false);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 5)
             {
@@ -80,7 +80,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 1aJ, false);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             _local2 = 0;
             while (_local2 < 8)
             {
@@ -88,7 +88,7 @@ package 0pT{
                 _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 1aJ, false);
                 this.08H.push(new Bitmap(_local1));
                 _local2++;
-            };
+            }
             this.reset();
             _local1 = AssetLibrary.1JR("lofiCharBig", 32);
             _local1 = TextureRedrawer.redraw(_local1, this.size_, true, 1aJ, false);
@@ -157,7 +157,7 @@ package 0pT{
                     return;
                 default:
                     this.setAnimation(13, 7);
-            };
+            }
         }
 
         private function onRemovedFromStage(_arg1:Event):void{

@@ -37,7 +37,7 @@ package 0Fa{
             for each (_local1 in this.model.2-N)
             {
                 this.view.1_CU(this.0iz.make(_local1, true));
-            };
+            }
             this.view.1kg();
             this.1w-.add(this.0Pb);
             this.1Tu.add(this.1-b);
@@ -64,8 +64,8 @@ package 0Fa{
                 if (_arg1 < 0)
                 {
                     this.view.0ve();
-                };
-            };
+                }
+            }
         }
 
         private function 0f7(_arg1:1Ys):void{

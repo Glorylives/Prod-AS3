@@ -16,7 +16,7 @@ package Yz{
             while (_local4--)
             {
                 _arg1 = (_arg1 + "=");
-            };
+            }
             _arg1 = _arg1.replace(_local2, "+").replace(_local3, "/");
             return (Base64.decode(_arg1));
         }

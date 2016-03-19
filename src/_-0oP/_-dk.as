@@ -65,7 +65,7 @@ package 0oP{
                     } else
                     {
                         this.1xT(("Expecting 'true' but found " + _local2));
-                    };
+                    }
                     break;
                 case "f":
                     _local3 = (((("f" + this.1s7()) + this.1s7()) + this.1s7()) + this.1s7());
@@ -77,7 +77,7 @@ package 0oP{
                     } else
                     {
                         this.1xT(("Expecting 'false' but found " + _local3));
-                    };
+                    }
                     break;
                 case "n":
                     _local4 = ((("n" + this.1s7()) + this.1s7()) + this.1s7());
@@ -89,7 +89,7 @@ package 0oP{
                     } else
                     {
                         this.1xT(("Expecting 'null' but found " + _local4));
-                    };
+                    }
                     break;
                 case '"':
                     _local1 = this.zX();
@@ -103,10 +103,10 @@ package 0oP{
                         if (this.ch == "")
                         {
                             return (null);
-                        };
+                        }
                         this.1xT((("Unexpected " + this.ch) + " encountered"));
-                    };
-            };
+                    }
+            }
             return (_local1);
         }
 
@@ -156,25 +156,25 @@ package 0oP{
                                 if (!this.0W8(this.1s7()))
                                 {
                                     this.1xT((" Excepted a hex digit, but found: " + this.ch));
-                                };
+                                }
                                 _local3 = (_local3 + this.ch);
                                 _local4++;
-                            };
+                            }
                             _local2 = (_local2 + String.fromCharCode(parseInt(_local3, 16)));
                             break;
                         default:
                             _local2 = (_local2 + ("\\" + this.ch));
-                    };
+                    }
                 } else
                 {
                     _local2 = (_local2 + this.ch);
-                };
+                }
                 this.1s7();
-            };
+            }
             if (this.ch == "")
             {
                 this.1xT("Unterminated string literal");
-            };
+            }
             this.1s7();
             _local1.value = _local2;
             return (_local1);
@@ -188,11 +188,11 @@ package 0oP{
             {
                 _local2 = (_local2 + "-");
                 this.1s7();
-            };
+            }
             if (!this.0n9(this.ch))
             {
                 this.1xT("Expecting a digit");
-            };
+            }
             if (this.ch == "0")
             {
                 _local2 = (_local2 + this.ch);
@@ -200,15 +200,15 @@ package 0oP{
                 if (this.0n9(this.ch))
                 {
                     this.1xT("A digit cannot immediately follow 0");
-                };
+                }
             } else
             {
                 while (this.0n9(this.ch))
                 {
                     _local2 = (_local2 + this.ch);
                     this.1s7();
-                };
-            };
+                }
+            }
             if (this.ch == ".")
             {
                 _local2 = (_local2 + ".");
@@ -216,13 +216,13 @@ package 0oP{
                 if (!this.0n9(this.ch))
                 {
                     this.1xT("Expecting a digit");
-                };
+                }
                 while (this.0n9(this.ch))
                 {
                     _local2 = (_local2 + this.ch);
                     this.1s7();
-                };
-            };
+                }
+            }
             if ((((this.ch == "e")) || ((this.ch == "E"))))
             {
                 _local2 = (_local2 + "e");
@@ -231,23 +231,23 @@ package 0oP{
                 {
                     _local2 = (_local2 + this.ch);
                     this.1s7();
-                };
+                }
                 if (!this.0n9(this.ch))
                 {
                     this.1xT("Scientific notation number needs exponent value");
-                };
+                }
                 while (this.0n9(this.ch))
                 {
                     _local2 = (_local2 + this.ch);
                     this.1s7();
-                };
-            };
+                }
+            }
             var _local3:Number = Number(_local2);
             if (((isFinite(_local3)) && (!(isNaN(_local3)))))
             {
                 _local1.value = _local3;
                 return (_local1);
-            };
+            }
             this.1xT((("Number " + _local3) + " is not valid!"));
             return (null);
         }
@@ -290,28 +290,28 @@ package 0oP{
                                 {
                                     this.1s7();
                                     break;
-                                };
+                                }
                             } else
                             {
                                 this.1s7();
-                            };
+                            }
                             if (this.ch == "")
                             {
                                 this.1xT("Multi-line comment not closed");
-                            };
-                        };
+                            }
+                        }
                         return;
                     default:
                         this.1xT((("Unexpected " + this.ch) + " encountered (expecting '/' or '*' )"));
-                };
-            };
+                }
+            }
         }
 
         private function 0Ot():void{
             while (this.1hK(this.ch))
             {
                 this.1s7();
-            };
+            }
         }
 
         private function 1hK(_arg1:String):Boolean{

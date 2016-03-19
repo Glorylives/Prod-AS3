@@ -74,7 +74,7 @@ package 1m5{
             if (this.1gz)
             {
                 this.5U();
-            };
+            }
         }
 
         public function 0xb(_arg1:String, _arg2:int, _arg3:int):void{
@@ -106,7 +106,7 @@ package 1m5{
             } else
             {
                 _local3.setParams(du.1Ww, {date:this.date});
-            };
+            }
             this.date.setStringBuilder(_local3);
             this.date.x = (stage.stageWidth / 2);
             this.date.y = 272;
@@ -145,7 +145,7 @@ package 1m5{
             if (((!(this.0qT)) || (this.1kY)))
             {
                 this.5U();
-            };
+            }
         }
 
         private function 5U():void{
@@ -159,7 +159,7 @@ package 1m5{
             } else
             {
                 this.1Tx.08r();
-            };
+            }
         }
 
 

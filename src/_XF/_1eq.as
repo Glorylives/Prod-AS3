@@ -65,11 +65,11 @@ import flash.events.IEventDispatcher;
             if (_arg1 == this._1kW)
             {
                 return;
-            };
+            }
             if (this._1kW)
             {
                 this.removeAll();
-            };
+            }
             this._1kW = _arg1;
         }
 
@@ -94,7 +94,7 @@ import flash.events.IEventDispatcher;
             if (!_local2)
             {
                 return (null);
-            };
+            }
             this._1kW.removeEventListener(this._1t9, _local2.execute1);
             this._0LG = this._0LG._1aC(_arg1);
             return (_local2);
@@ -106,7 +106,7 @@ import flash.events.IEventDispatcher;
             {
                 this.target.removeEventListener(this._1t9, _local1._0kc.execute1);
                 _local1 = _local1._0wv;
-            };
+            }
             this._0LG = _0Y4.NIL;
         }
 
@@ -114,11 +114,11 @@ import flash.events.IEventDispatcher;
             if (null == _args)
             {
                 throw (new ArgumentError("Event object expected."));
-            };
+            }
             if (_args.length != 1)
             {
                 throw (new ArgumentError("No more than one Event object expected."));
-            };
+            }
             this.dispatchEvent((_args[0] as Event));
         }
 
@@ -126,19 +126,19 @@ import flash.events.IEventDispatcher;
             if (!this.target)
             {
                 throw (new ArgumentError("Target object cannot be null."));
-            };
+            }
             if (!_arg1)
             {
                 throw (new ArgumentError("Event object cannot be null."));
-            };
+            }
             if (!(_arg1 is this.eventClass))
             {
                 throw (new ArgumentError((((("Event object " + _arg1) + " is not an instance _of ") + this.eventClass) + ".")));
-            };
+            }
             if (_arg1.type != this._0g6)
             {
                 throw (new ArgumentError((((("Event object has incorrect type. Expected <" + this._0g6) + "> but was <") + _arg1.type) + ">.")));
-            };
+            }
             return (this.target.dispatchEvent(_arg1));
         }
 
@@ -147,14 +147,14 @@ import flash.events.IEventDispatcher;
             if (!this.target)
             {
                 throw (new ArgumentError("Target object cannot be null."));
-            };
+            }
             if (this._0rK(_arg1, _arg2))
             {
                 _local4 = new Slot(_arg1, this, _arg2, _arg3);
                 this._0LG = this._0LG.prepend(_local4);
                 this._1kW.addEventListener(this._1t9, _local4.execute1, false, _arg3);
                 return (_local4);
-            };
+            }
             return (this._0LG.find(_arg1));
         }
 
@@ -162,16 +162,16 @@ import flash.events.IEventDispatcher;
             if (!this._0LG.nonEmpty)
             {
                 return (true);
-            };
+            }
             var _local3:_201 = this._0LG.find(_arg1);
             if (_local3)
             {
                 if (_local3.once != _arg2)
                 {
                     throw (new IllegalOperationError("You cannot addOnce() then add() the same listener without removing the relationship first."));
-                };
+                }
                 return (false);
-            };
+            }
             return (true);
         }
 

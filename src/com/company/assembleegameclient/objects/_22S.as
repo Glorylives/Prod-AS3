@@ -48,23 +48,23 @@ package com.company.assembleegameclient.objects{
             {
                 this.minDamage_ = int(_arg1.MinDamage);
                 this.maxDamage_ = int(_arg1.MaxDamage);
-            };
+            }
             for each (_local2 in _arg1.ConditionEffect)
             {
                 if (this.effects_ == null)
                 {
                     this.effects_ = new Vector.<uint>();
-                };
+                }
                 this.effects_.push(ConditionEffect._1WI(String(_local2)));
                 if (_local2.attribute("target") == "1")
                 {
                     if (this._0b6 == null)
                     {
                         this._0b6 = new Dictionary();
-                    };
+                    }
                     this._0b6[ConditionEffect._1WI(String(_local2))] = true;
-                };
-            };
+                }
+            }
             this._1y4 = _arg1.hasOwnProperty("MultiHit");
             this._1CA = _arg1.hasOwnProperty("PassesCover");
             this._0f = _arg1.hasOwnProperty("ArmorPiercing");
@@ -72,16 +72,16 @@ package com.company.assembleegameclient.objects{
             if (_arg1.ParticleTrail.hasOwnProperty("@intensity"))
             {
                 this._1uD = (Number(_arg1.ParticleTrail.@intensity) * 100);
-            };
+            }
             if (_arg1.ParticleTrail.hasOwnProperty("@lifetimeMS"))
             {
                 this.gm = Number(_arg1.ParticleTrail.@lifetimeMS);
-            };
+            }
             this._0y7 = ((this.Nh) ? Number(_arg1.ParticleTrail) : Number(0xFF00FF));
             if (this._0y7 == 0)
             {
                 this._0y7 = 0xFF00FF;
-            };
+            }
             this._1NQ = _arg1.hasOwnProperty("Wavy");
             this._12m = _arg1.hasOwnProperty("Parametric");
             this._1vX = _arg1.hasOwnProperty("Boomerang");

@@ -66,7 +66,7 @@ package zD{
                 _local2 = this.12J.08L(this.view.objectType);
                 _local3 = _arg1.getPotionCount(_local2.objectId);
                 this.view.Va(_local3, _local2.18j(_local3), _local2.available);
-            };
+            }
         }
 
         private function 1e5(_arg1:DisplayObject):void{
@@ -84,9 +84,9 @@ package zD{
                     if ((((_local4.mh() == 0J9.1Qx)) && (!((_local4.0ZD.owner == _local2)))))
                     {
                         1T2.1hP.invSwapPotion(_local2, _local2, 1z1.gp(this.view.objectType), this.view.objectType, _local4.0ZD.owner, _local4.1eu, 0J9.1Qx);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function 1fU():void{
@@ -96,7 +96,7 @@ package zD{
             {
                 _local2 = new 8Q(_local1.objectId, 8Q.L0);
                 this.Zc.dispatch(_local2);
-            };
+            }
         }
 
 

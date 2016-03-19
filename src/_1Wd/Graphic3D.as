@@ -61,7 +61,7 @@ import flash.geom.Matrix3D;
             if (this._0w8 != 0)
             {
                 this._0Pc = Vector.<Number>([0, -(this._0w8), 0, 0]);
-            };
+            }
             this.transform();
             var _local3:ColorTransform = _14d._1lX(this.bitmapData);
             _arg2._1tB().setProgramConstantsFromVector(Context3DProgramType.FRAGMENT, 2, Vector.<Number>([_local3.redMultiplier, _local3.greenMultiplier, _local3.blueMultiplier, _local3.alphaMultiplier]));
@@ -76,7 +76,7 @@ import flash.geom.Matrix3D;
                 this.In.uploadFromVector(_1Lk, 0, 4);
                 this._0Cu = _arg2._1tB().createIndexBuffer(6);
                 this._0Cu.uploadFromVector(Ea, 0, 6);
-            };
+            }
             this._0Xx(_arg3, _arg4);
         }
 
@@ -124,7 +124,7 @@ import flash.geom.Matrix3D;
                 _arg1._1tB().setProgramConstantsFromVector(Context3DProgramType.VERTEX, 4, this._0Pc);
                 _arg1._1tB().setVertexBufferAt(2, null, 6, Context3DVertexBufferFormat.FLOAT_2);
                 _arg1.drawTriangles(this._1ck);
-            };
+            }
         }
 
         public function dH(_arg1:_0so):void{

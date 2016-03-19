@@ -238,11 +238,11 @@ package vF{
                     {
                         _local2[int(_local6)] = true;
                         this.0Cg.push(int(_local6));
-                    };
+                    }
                     _local4.push(int(_local6));
-                };
+                }
                 this.ft.push(_local4);
-            };
+            }
         }
 
         public function isNew():Boolean{
@@ -256,7 +256,7 @@ package vF{
             {
                 _local1 = new Date();
                 return ((_local1.time < this.1Sc.time));
-            };
+            }
             return (false);
         }
 
@@ -276,8 +276,8 @@ package vF{
                 } else
                 {
                     _local4.setParams("MysteryBoxInfo.saleEndStringMinutes", {amount:String(Math.ceil(1ze.7b(_local3)))});
-                };
-            };
+                }
+            }
             return (_local4);
         }
 

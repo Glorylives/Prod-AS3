@@ -24,13 +24,13 @@ package 1Np{
             if (this.go_.map_ == null)
             {
                 return (false);
-            };
+            }
             var _local3:Number = (_arg2 / 1000);
             this.178 = (this.178 - _local3);
             if (this.178 >= 0)
             {
                 return (true);
-            };
+            }
             this.178 = this.23p;
             map_.addObj(new yB(this.1JI), this.go_.x_, this.go_.y_);
             return (true);

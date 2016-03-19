@@ -222,7 +222,7 @@ package 1oP{
             } else
             {
                 this.gl();
-            };
+            }
         }
 
         private function 1zM():void{
@@ -255,7 +255,7 @@ package 1oP{
             {
                 this.VN.setStringBuilder((((this.state)==Lm.PURCHASING) ? new 1cA().setParams(du.T) : this.switch()));
                 this.VN.y = (HEIGHT / 2);
-            };
+            }
             this.VN.x = ((WIDTH - this.VN.width) - 15);
             this.06z.x = ((this.VN.x - this.06z.width) - 5);
         }
@@ -300,11 +300,11 @@ package 1oP{
             if (this.state.0Rh())
             {
                 return (Kk);
-            };
+            }
             if (((this.jf) || (this.0Ga)))
             {
                 return (0XH);
-            };
+            }
             return (0hM);
         }
 

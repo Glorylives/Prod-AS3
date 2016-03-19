@@ -77,7 +77,7 @@ import flash.display.Sprite;
                 _local3 = _0Mf._008(_arg1.level);
                 _local2 = (((_arg1.level >= this.max)) ? _local3 : _local2);
                 this._0u6(_local2, _local3);
-            };
+            }
             _arg1._1iq.add(this._0v1);
         }
 
@@ -98,8 +98,8 @@ import flash.display.Sprite;
                 } else
                 {
                     this._0u6(this._0aG, _local2);
-                };
-            };
+                }
+            }
         }
 
         private function _0Q():void{
@@ -126,9 +126,9 @@ import flash.display.Sprite;
                     {
                         this._08D.reset();
                         this._0u6(this._0aG, _local2);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function _1Nv(_arg1:String):void{
@@ -158,7 +158,7 @@ import flash.display.Sprite;
                 this._0Yw.setColor(_local2);
                 this._0Yw.filters = _local3;
                 this.lc.visible = _arg1;
-            };
+            }
         }
 
         private function Fl():void{
@@ -190,7 +190,7 @@ import flash.display.Sprite;
             if (((!(_arg1)) && ((this._0JX >= 100))))
             {
                 this._08D._02J(_h.YP);
-            };
+            }
             this._0O.dispatch(this, _arg1);
         }
 

@@ -29,14 +29,14 @@ package 1r4{
             if (_local3 == null)
             {
                 return;
-            };
+            }
             for each (_local4 in _arg2)
             {
                 _local6 = _local4.1gE;
                 if (_local4.0tC == StatData.NU)
                 {
                     _local3.1es(_local6);
-                };
+                }
                 switch (_local4.0tC)
                 {
                     case StatData.0Eu:
@@ -92,12 +92,12 @@ package 1r4{
                         _local5 = _local3.0S1[2];
                         _local5.type = _local6;
                         break;
-                };
+                }
                 if (_local5)
                 {
                     _local5.1iq.dispatch(_local5);
-                };
-            };
+                }
+            }
         }
 
         private function 0kA(_arg1:Pet, _arg2:Vector.<StatData>):0tK{
@@ -110,8 +110,8 @@ package 1r4{
                     _local4 = this.1G5.0Gr(_local3.1gE);
                     _arg1.vo = ((_local4) ? _local4 : ((this.ja.map.isPetYard) ? this.1G5.getPetVO(_local3.1gE) : new 0tK(_local3.1gE)));
                     return (_arg1.vo);
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -124,16 +124,16 @@ package 1r4{
                 if (_local3.0tC == StatData.NU)
                 {
                     _arg1.1es(_local4);
-                };
+                }
                 if (_local3.0tC == StatData.set )
                 {
                     _arg1.size_ = _local4;
-                };
+                }
                 if (_local3.0tC == StatData.O1)
                 {
                     _arg1.condition_[ConditionEffect.26x] = _local4;
-                };
-            };
+                }
+            }
         }
 
 

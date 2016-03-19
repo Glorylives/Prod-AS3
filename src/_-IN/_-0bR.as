@@ -29,7 +29,7 @@ package IN{
             for each (_local2 in _local1)
             {
                 this.5Y(_local2);
-            };
+            }
         }
 
         private function 5Y(_arg1:XML):void{
@@ -60,7 +60,7 @@ package IN{
             for each (_local3 in _arg2.UnlockLevel)
             {
                 _arg1.No.push(this.1bt(_local3));
-            };
+            }
             _arg1.0sP.1UF(this.dy(_arg2), true);
         }
 
@@ -93,8 +93,8 @@ package IN{
                 if (_local5.text() == _arg2)
                 {
                     _local4 = _local5;
-                };
-            };
+                }
+            }
             _local6 = new 1Ta();
             _local6.0VD = int(_local3.toString());
             _local6.max = _local3.@max;
@@ -112,7 +112,7 @@ package IN{
             {
                 _local4[_local5] = int(_local2[_local5]);
                 _local5++;
-            };
+            }
             return (_local4);
         }
 

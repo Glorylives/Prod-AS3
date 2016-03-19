@@ -53,7 +53,7 @@ package 3S{
             if (_arg5)
             {
                 _local7 = 16564761;
-            };
+            }
             this.1Ba = new _13j().setSize(22).setColor(_local7);
             this.1Ba.setStringBuilder(new 1WS((_arg1.toString() + ".")));
             this.1Ba.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
@@ -96,7 +96,7 @@ package 3S{
                 this.1EN.x = (670 + 6);
                 this.1EN.y = (HEIGHT / 2);
                 addChild(this.1EN);
-            };
+            }
             if (GuildUtil.1sY(_arg6, _arg3))
             {
                 this.1Wh = this.n(false);
@@ -105,7 +105,7 @@ package 3S{
                 this.1Wh.x = (700 + 6);
                 this.1Wh.y = (HEIGHT / 2);
                 addChild(this.1Wh);
-            };
+            }
             if (GuildUtil.0DD(_arg6, _arg3))
             {
                 this.1Ng = new DeleteXGraphic();
@@ -114,7 +114,7 @@ package 3S{
                 this.1Ng.x = 730;
                 this.1Ng.y = ((HEIGHT / 2) - (this.1Ng.height / 2));
                 addChild(this.1Ng);
-            };
+            }
         }
 
         private function n(_arg1:Boolean):Sprite{
@@ -128,7 +128,7 @@ package 3S{
             if (_arg1)
             {
                 _local2.rotation = 180;
-            };
+            }
             return (_local2);
         }
 

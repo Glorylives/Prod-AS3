@@ -103,14 +103,14 @@ package _1aA{
             if (this._0h2)
             {
                 addEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
         private function onRemovedFromStage(_arg1:Event):void{
             if (this._0h2)
             {
                 removeEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
         private function onEnterFrame(_arg1:Event):void{
@@ -123,7 +123,7 @@ package _1aA{
             if (_arg1 == this.colorTransform)
             {
                 return;
-            };
+            }
             this.colorTransform = _arg1;
             if (this.colorTransform == null)
             {
@@ -131,7 +131,7 @@ package _1aA{
             } else
             {
                 this.textField.transform.colorTransform = this.colorTransform;
-            };
+            }
         }
 
         protected function onMouseOver(_arg1:MouseEvent):void{
@@ -145,7 +145,7 @@ package _1aA{
             } else
             {
                 this._0bB(null);
-            };
+            }
         }
 
         protected function _05M(_arg1:MouseEvent):void{

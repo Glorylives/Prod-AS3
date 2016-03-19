@@ -16,7 +16,7 @@ package JV{
             if (this.0Av == _arg1)
             {
                 return;
-            };
+            }
             this.XY();
             this.0Av = _arg1;
             addChild(_arg1);
@@ -27,7 +27,7 @@ package JV{
             {
                 this.1ob = this.0Av;
                 removeChild(this.0Av);
-            };
+            }
         }
 
         public function 11b():Sprite{

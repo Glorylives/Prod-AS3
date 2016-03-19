@@ -48,7 +48,7 @@ package com.google.analytics.core{
             {
                 _debug.info("session timer reset", VisualDebugMode.geek);
                 _session.reset();
-            };
+            }
         }
 
         public function endSession(_arg1:TimerEvent):void{
@@ -69,8 +69,8 @@ package com.google.analytics.core{
                 {
                     _debug.info("session timer start", VisualDebugMode.geek);
                     _session.start();
-                };
-            };
+                }
+            }
         }
 
 

@@ -33,7 +33,7 @@ package 1r4{
                 case Currency.py:
                     GA.global().trackEvent("credits", "buyGuildFame", this.id_, this.price_);
                     return;
-            };
+            }
         }
 
 

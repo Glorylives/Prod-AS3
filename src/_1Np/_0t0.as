@@ -24,7 +24,7 @@ package _1Np{
             if (this.go_.map_ == null)
             {
                 return (false);
-            };
+            }
             x_ = this.go_.x_;
             y_ = this.go_.y_;
             var _local3:int = (_arg1 - this._1aQ);
@@ -36,7 +36,7 @@ package _1Np{
                 _local7 = new _072(0xFFFFFF, (Math.random() * 0.3), _local5, 1000, (0.1 + (Math.random() * 0.1)), this.go_, _local4, _local6);
                 map_.addObj(_local7, (x_ + (_local6 * Math.cos(_local4))), (y_ + (_local6 * Math.sin(_local4))));
                 this._1aQ = _arg1;
-            };
+            }
             return (true);
         }
 

@@ -54,14 +54,14 @@ package 0hd{
             } else
             {
                 this.1OI(_arg1.1wA.errorText_);
-            };
+            }
         }
 
         private function xg():void{
             if (this.view.0wm)
             {
                 this.fG();
-            };
+            }
             this.ja.model.setName(this.name);
             this.ja.map.player_.name_ = this.name;
             this.closeDialogs.dispatch();

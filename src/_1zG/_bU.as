@@ -27,7 +27,7 @@ package _1zG{
             {
                 this.accountIds_.push(_arg1.readUTF());
                 _local2++;
-            };
+            }
             this.lockAction_ = _arg1.readInt();
         }
 

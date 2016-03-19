@@ -146,7 +146,7 @@ public class Map extends _1qi {
             if (background_ != null)
             {
                 addChild(background_);
-            };
+            }
             addChild(map_);
             addChild(_0Jb);
             addChild(_0I4);
@@ -169,7 +169,7 @@ public class Map extends _1qi {
             for each (_local1 in 64)
             {
                 _local1.dispose();
-            };
+            }
             _64.length = 0;
             _64 = null;
             squares_.length = 0;
@@ -177,12 +177,12 @@ public class Map extends _1qi {
             for each (_local2 in goDict_)
             {
                 _local2.dispose();
-            };
+            }
             goDict_ = null;
             for each (_local3 in _1n5)
             {
                 _local3.dispose();
-            };
+            }
             _1n5 = null;
             merchLookup_ = null;
             player_ = null;
@@ -204,25 +204,25 @@ public class Map extends _1qi {
                 if (!_local3.update(_arg1, _arg2))
                 {
                     this.Wm.push(_local3.objectId_);
-                };
-            };
+                }
+            }
             for each (_local3 in _1n5)
             {
                 if (!_local3.update(_arg1, _arg2))
                 {
                     this.Wm.push(_local3.objectId_);
-                };
-            };
+                }
+            }
             this._0yp = false;
             for each (_local3 in this._22N)
             {
                 this.internalAddObj(_local3);
-            };
+            }
             this._22N.length = 0;
             for each (_local4 in this.Wm)
             {
                 this.internalRemoveObj(_local4);
-            };
+            }
             this.Wm.length = 0;
             party_.update(_arg1, _arg2);
         }
@@ -234,8 +234,8 @@ public class Map extends _1qi {
                 if (((!((_local3.faces_.length == 0))) && (_local3.faces_[0].face_.contains(_arg1, _arg2))))
                 {
                     return (new Point(_local3.center_.x, _local3.center_.y));
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -258,11 +258,11 @@ public class Map extends _1qi {
                     if (((!((_local10 == null))) && (((_local10.props_._0Ly) || (!((_local10.tileType_ == _arg3)))))))
                     {
                         _local10.faces_.length = 0;
-                    };
+                    }
                     _local8++;
-                };
+                }
                 _local7++;
-            };
+            }
         }
 
         override public function addObj(_arg1:BasicObject, _arg2:Number, _arg3:Number):void{
@@ -271,29 +271,29 @@ public class Map extends _1qi {
             if ((_arg1 is _0F))
             {
                 (_arg1 as _0F)._1Jm = !(Parameters.data_.particleEffect);
-            };
+            }
             if (this._0yp)
             {
                 this._22N.push(_arg1);
             } else
             {
                 this.internalAddObj(_arg1);
-            };
+            }
         }
 
         public function internalAddObj(_arg1:BasicObject):void{
             if (!_arg1.addTo(this, _arg1.x_, _arg1.y_))
             {
                 return;
-            };
+            }
             var _local2:Dictionary = (((_arg1 is GameObject)) ? goDict_ : _1n5);
             if (_local2[_arg1.objectId_] != null)
             {
                 if (!isPetYard)
                 {
                     return;
-                };
-            };
+                }
+            }
             _local2[_arg1.objectId_] = _arg1;
         }
 
@@ -304,7 +304,7 @@ public class Map extends _1qi {
             } else
             {
                 this.internalRemoveObj(_arg1);
-            };
+            }
         }
 
         public function internalRemoveObj(_arg1:int):void{
@@ -317,8 +317,8 @@ public class Map extends _1qi {
                 if (_local3 == null)
                 {
                     return;
-                };
-            };
+                }
+            }
             _local3.removeFromMap();
             delete _local2[_arg1];
         }
@@ -327,7 +327,7 @@ public class Map extends _1qi {
             if ((((((((_arg1 < 0)) || ((_arg1 >= width_)))) || ((_arg2 < 0)))) || ((_arg2 >= height_))))
             {
                 return (null);
-            };
+            }
             var _local3:int = (int(_arg1) + (int(_arg2) * width_));
             var _local4:Square = squares_[_local3];
             if (_local4 == null)
@@ -335,7 +335,7 @@ public class Map extends _1qi {
                 _local4 = new Square(this, int(_arg1), int(_arg2));
                 squares_[_local3] = _local4;
                 _64.push(_local4);
-            };
+            }
             return (_local4);
         }
 
@@ -343,7 +343,7 @@ public class Map extends _1qi {
             if ((((((((_arg1 < 0)) || ((_arg1 >= width_)))) || ((_arg2 < 0)))) || ((_arg2 >= height_))))
             {
                 return (null);
-            };
+            }
             return (squares_[(_arg1 + (_arg2 * width_))]);
         }
 
@@ -371,10 +371,10 @@ public class Map extends _1qi {
                 } else
                 {
                     map_.graphics.clear();
-                };
+                }
                 signalRenderSwitch.dispatch(_0O4);
                 _0O4 = Parameters.TP();
-            };
+            }
             var _local3:Rectangle = _arg1._0KH;
             x = -(_local3.x);
             y = -(_local3.y);
@@ -383,7 +383,7 @@ public class Map extends _1qi {
             if (background_ != null)
             {
                 background_.draw(_arg1, _arg2);
-            };
+            }
             this._1rK.length = 0;
             this.po.length = 0;
             this._1Nz.length = 0;
@@ -418,13 +418,13 @@ public class Map extends _1qi {
                             if (_local6.i6 != null)
                             {
                                 this._1IV.push(_local6);
-                            };
-                        };
-                    };
+                            }
+                        }
+                    }
                     _local15++;
-                };
+                }
                 _local12++;
-            };
+            }
             for each (_local13 in goDict_)
             {
                 _local13._1th = false;
@@ -443,14 +443,14 @@ public class Map extends _1qi {
                             } else
                             {
                                 this.po.push(_local13);
-                            };
+                            }
                         } else
                         {
                             this._1rK.push(_local13);
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             for each (_local14 in _1n5)
             {
                 _local14._1th = false;
@@ -462,16 +462,16 @@ public class Map extends _1qi {
                     _local14._1th = true;
                     _local14._14(_arg1);
                     this._1rK.push(_local14);
-                };
-            };
+                }
+            }
             if (this.po.length > 0)
             {
                 this.po.sortOn(_1uA, _113);
                 for each (_local14 in this.po)
                 {
                     _local14.draw(this.graphicsData_, _arg1, _arg2);
-                };
-            };
+                }
+            }
             this._1rK.sortOn(_1uA, 113);
             if (Parameters.data_.drawShadows)
             {
@@ -482,24 +482,24 @@ public class Map extends _1qi {
                     } else
                     {
                         _local14.drawShadow(this.graphicsData_, _arg1, _arg2);
-                    };
-                };
-            };
+                    }
+                }
+            }
             for each (_local14 in this._1rK)
             {
                 _local14.draw(this.graphicsData_, _arg1, _arg2);
                 if (Parameters.TP())
                 {
                     _local14.draw3d(this._0yx);
-                };
-            };
+                }
+            }
             if (this._1IV.length > 0)
             {
                 for each (_local6 in this._1IV)
                 {
                     _local6._1tC(this.graphicsData_, _arg1, _arg2);
-                };
-            };
+                }
+            }
             if (((((!((player_ == null))) && ((player_.breath_ >= 0)))) && ((player_.breath_ < Parameters.kk))))
             {
                 _local19 = ((Parameters.kk - player_.breath_) / Parameters.kk);
@@ -512,7 +512,7 @@ public class Map extends _1qi {
             } else
             {
                 _0Jb.visible = false;
-            };
+            }
             if (((!((player_ == null))) && (!(Parameters._1Wc))))
             {
                 _0I4.visible = true;
@@ -521,7 +521,7 @@ public class Map extends _1qi {
             } else
             {
                 _0I4.visible = false;
-            };
+            }
             if (((Parameters.TP()) && (_0lt._0uZ)))
             {
                 _local21 = this._0ye();
@@ -543,10 +543,10 @@ public class Map extends _1qi {
                             this._0wL.push(this.graphicsData_[_local23]);
                             this._0wL.push(this.graphicsData_[(_local23 + 1)]);
                             this._0wL.push(this.graphicsData_[(_local23 + 2)]);
-                        };
-                    };
+                        }
+                    }
                     _local23++;
-                };
+                }
                 if (this._0wL.length > 0)
                 {
                     map_.graphics.clear();
@@ -554,24 +554,24 @@ public class Map extends _1qi {
                     if (this._14h)
                     {
                         this._14h = false;
-                    };
+                    }
                 } else
                 {
                     if (!this._14h)
                     {
                         map_.graphics.clear();
                         this._14h = true;
-                    };
-                };
+                    }
+                }
                 if ((_arg2 % 149) == 0)
                 {
                     _14d._1GN();
-                };
+                }
             } else
             {
                 map_.graphics.clear();
                 map_.graphics.drawGraphicsData(this.graphicsData_);
-            };
+            }
             map_.filters.length = 0;
             if (((!((player_ == null))) && (!(((player_.condition_[ConditionEffect._26x] & ConditionEffect._1De) == 0)))))
             {
@@ -580,19 +580,19 @@ public class Map extends _1qi {
                 {
                     _local25 = (20 + (10 * Math.sin((_arg2 / 1000))));
                     _local24.push(new BlurFilter(_local25, _local25));
-                };
+                }
                 if (player_.isBlind())
                 {
                     _local24.push(_1LB);
-                };
+                }
                 map_.filters = _local24;
             } else
             {
                 if (map_.filters.length > 0)
                 {
                     map_.filters = [];
-                };
-            };
+                }
+            }
             mapOverlay_.draw(_arg1, _arg2);
             partyOverlay_.draw(_arg1, _arg2);
             if (((player_) && (player_.isDarkness())))
@@ -606,8 +606,8 @@ public class Map extends _1qi {
                 if (contains(this._0Yo))
                 {
                     removeChild(this._0Yo);
-                };
-            };
+                }
+            }
         }
 
         private function _0ye():uint{
@@ -627,10 +627,10 @@ public class Map extends _1qi {
                         if (player_.isDrunk())
                         {
                             _local1 = _0lt.STAGE3D_FILTER_DRUNK;
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             return (_local1);
         }
 

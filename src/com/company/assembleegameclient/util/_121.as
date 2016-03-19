@@ -18,7 +18,7 @@ package com.company.assembleegameclient.util{
             if (_local5 != null)
             {
                 return (_local5);
-            };
+            }
             _local5 = new Vector.<uint>();
             var _local6:Vector.<uint> = GK(_arg2);
             var _local7:int;
@@ -30,9 +30,9 @@ package com.company.assembleegameclient.util{
                 } else
                 {
                     _local5.push(_local6[int((_local6.length * Math.random()))]);
-                };
+                }
                 _local7++;
-            };
+            }
             return (_local5);
         }
 
@@ -42,7 +42,7 @@ package com.company.assembleegameclient.util{
             {
                 _local2 = _1PQ(_arg1);
                 _1At[_arg1] = _local2;
-            };
+            }
             return (_local2);
         }
 
@@ -62,11 +62,11 @@ package com.company.assembleegameclient.util{
                     } else
                     {
                         _local2.push(_local5);
-                    };
+                    }
                     _local4++;
-                };
+                }
                 _local3++;
-            };
+            }
             return (_local2);
         }
 

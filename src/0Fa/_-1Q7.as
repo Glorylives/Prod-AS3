@@ -48,8 +48,8 @@ package 0Fa{
                 } else
                 {
                     break;
-                };
-            };
+                }
+            }
             while (this.06E.length > 0)
             {
                 this.AI(this.06E.pop());
@@ -61,9 +61,9 @@ package 0Fa{
                         this.tw(_local3);
                         this.1fZ = (this.index == this.MH.length);
                         this.gG();
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function setup(_arg1:tM):void{
@@ -80,13 +80,13 @@ package 0Fa{
                 if (((!(this.1fZ)) && ((this.index < this.1Se))))
                 {
                     this.1qN();
-                };
-            };
+                }
+            }
             this.MH.push(_arg1);
             if (this.1fZ)
             {
                 this.HI(_arg1);
-            };
+            }
         }
 
         private function AI(_arg1:1si):void{
@@ -96,7 +96,7 @@ package 0Fa{
                 removeChild(_arg1);
                 this.1x9.splice(_local2, 1);
                 this.1fZ = (this.index == this.MH.length);
-            };
+            }
         }
 
         private function HI(_arg1:1si):void{
@@ -113,7 +113,7 @@ package 0Fa{
             } else
             {
                 this.21U();
-            };
+            }
             this.Gm = true;
         }
 
@@ -128,9 +128,9 @@ package 0Fa{
                 if (this.1x9.indexOf(_local4) == -1)
                 {
                     this.1hm(_local4);
-                };
+                }
                 _local3--;
-            };
+            }
             this.gG();
         }
 
@@ -140,7 +140,7 @@ package 0Fa{
                 this.Gm = false;
                 this.1kg();
                 this.0xr(null);
-            };
+            }
             if (!this.1fZ)
             {
                 this.1-3();
@@ -149,15 +149,15 @@ package 0Fa{
                 if (this.Gm)
                 {
                     this.Gm = false;
-                };
-            };
+                }
+            }
         }
 
         public function 1kg():void{
             while (!(this.1fZ))
             {
                 this.1-3();
-            };
+            }
         }
 
         public function 0ve():void{
@@ -177,10 +177,10 @@ package 0Fa{
                     } else
                     {
                         return;
-                    };
+                    }
                     _local1++;
-                };
-            };
+                }
+            }
         }
 
         public function 1qN():void{
@@ -194,9 +194,9 @@ package 0Fa{
                 {
                     this.Gm = false;
                     return;
-                };
+                }
                 _local1++;
-            };
+            }
         }
 
         private function tw(_arg1:1si):void{
@@ -208,7 +208,7 @@ package 0Fa{
             if (this.1x9.length > this.1Se)
             {
                 removeChild(this.1x9.shift());
-            };
+            }
         }
 
         private function 1JP():Boolean{
@@ -227,7 +227,7 @@ package 0Fa{
             if (this.index < 0)
             {
                 this.index = 0;
-            };
+            }
             var _local1:1si = this.MH[this.index];
             this.index++;
             this.tw(_local1);
@@ -245,7 +245,7 @@ package 0Fa{
             if (this.1x9.length > this.1Se)
             {
                 removeChild(this.1x9.pop());
-            };
+            }
         }
 
         private function gG():void{
@@ -257,7 +257,7 @@ package 0Fa{
                 _local3 = this.1x9[_local2];
                 _local3.y = _local1;
                 _local1 = (_local1 - _local3.height);
-            };
+            }
         }
 
 

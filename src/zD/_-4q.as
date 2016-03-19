@@ -53,7 +53,7 @@ package zD{
             if (0BN > (1l5.x_ + BORDER))
             {
                 0BN = (0BN - 1l5.x_);
-            };
+            }
             camera.configure(0BN, 1px, 12, 0VL, 1na);
             1xC.draw(camera, this.time);
             this.Tn = this.time;

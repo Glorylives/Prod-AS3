@@ -28,7 +28,7 @@ package _1u{
             if (this._2N.length > this.Kv)
             {
                 this._2N.shift();
-            };
+            }
         }
 
 

@@ -23,7 +23,7 @@ package 1js{
                     return;
                 default:
                     throw (new IllegalOperationError("Currently unable to layout more than 2 buttons"));
-            };
+            }
         }
 
         private function 1hU(_arg1:int, _arg2:DisplayObject):void{

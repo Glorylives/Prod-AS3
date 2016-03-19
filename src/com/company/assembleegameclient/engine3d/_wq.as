@@ -47,7 +47,7 @@ package com.company.assembleegameclient.engine3d{
             if (this._4M.w < 0)
             {
                 return;
-            };
+            }
             var _local8:Number = (this._4M.w * Math.sin(((_arg5._1ic.fieldOfView / 2) * Trig.kP)));
             var _local9:Number = (this.size_ / _local8);
             this.data_.length = 0;
@@ -59,7 +59,7 @@ package com.company.assembleegameclient.engine3d{
                 _local10 = Math.cos(_arg3);
                 _local11 = Math.sin(_arg3);
                 this.data_.push((this._4M.x + ((_local10 * -(_local9)) + (_local11 * -(_local9)))), (this._4M.y + ((_local11 * -(_local9)) - (_local10 * -(_local9)))), (this._4M.x + ((_local10 * _local9) + (_local11 * -(_local9)))), (this._4M.y + ((_local11 * _local9) - (_local10 * -(_local9)))), (this._4M.x + ((_local10 * _local9) + (_local11 * _local9))), (this._4M.y + ((_local11 * _local9) - (_local10 * _local9))), (this._4M.x + ((_local10 * -(_local9)) + (_local11 * _local9))), (this._4M.y + ((_local11 * -(_local9)) - (_local10 * _local9))));
-            };
+            }
             if (_arg6 != null)
             {
                 this.bitmapFill_.bitmapData = _arg6;
@@ -74,7 +74,7 @@ package com.company.assembleegameclient.engine3d{
             {
                 this._18a.color = _arg7;
                 _arg1.push(this._18a);
-            };
+            }
             _arg1.push(this.path_);
             _arg1.push(END_FILL);
         }

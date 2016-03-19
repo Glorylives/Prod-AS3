@@ -44,11 +44,11 @@ package 1UP{
             {
                 1d5(true);
                 reset();
-            };
+            }
             if (((((!(("production".toLowerCase() == "dev"))) && (!((this.1zm == 0))))) && ((this.0Bg >= 2))))
             {
                 this.1zm = 0;
-            };
+            }
         }
 
         private function onComplete(_arg1:Boolean, _arg2):void{
@@ -58,7 +58,7 @@ package 1UP{
             } else
             {
                 this.fb(_arg2);
-            };
+            }
             1d5(_arg1, _arg2);
             reset();
         }
@@ -70,7 +70,7 @@ package 1UP{
             for each (_local4 in _local3)
             {
                 _local2.push(this.4I(_local4));
-            };
+            }
             this.model.0cO(_local2);
         }
 

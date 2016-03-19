@@ -17,7 +17,7 @@ package 1Tb{
         private var cT:uint;
 
         public function 9a(_arg1:Console){
-            this.yr = {};
+            this.yr = {}
             super(_arg1);
             _arg1.cl.addCLCmd("keybinds", this.0qJ, "List all keybinds used");
         }
@@ -27,14 +27,14 @@ package 1Tb{
             {
                 report((("Error: KeyBind [" + _arg1.key) + "] is conflicting _with Console password."), 9);
                 return;
-            };
+            }
             if (_arg2 == null)
             {
                 delete this.yr[_arg1.key];
             } else
             {
                 this.yr[_arg1.key] = [_arg2, _arg3];
-            };
+            }
         }
 
         public function 1If(_arg1:KeyboardEvent):void{
@@ -62,35 +62,35 @@ package 1Tb{
                         } else
                         {
                             console.visible = !(console.visible);
-                        };
+                        }
                         if (((console.visible) && (console.panels.mainPanel.visible)))
                         {
                             console.panels.mainPanel.visible = true;
                             console.panels.mainPanel.moveBackSafePosition();
-                        };
+                        }
                     } else
                     {
                         if (this.cT < 3)
                         {
                             this.cT++;
                             report("Password did not trigger because you have focus on an input TextField.", 8);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
             } else
             {
                 if (_arg2)
                 {
                     this.ly = 0;
-                };
+                }
                 _local4 = new 1L8(_arg1.keyCode, _arg1.shiftKey, _arg1.ctrlKey, _arg1.altKey, _arg2);
                 this.04P(_local4.key);
                 if (_local3)
                 {
                     _local4 = new 1L8(_local3, _arg1.shiftKey, _arg1.ctrlKey, _arg1.altKey, _arg2);
                     this.04P(_local4.key);
-                };
-            };
+                }
+            }
         }
 
         private function 0qJ(... _args):void{
@@ -101,7 +101,7 @@ package 1Tb{
             {
                 _local2++;
                 report(_local3, -2);
-            };
+            }
             report(("--- Found " + _local2), -2);
         }
 
@@ -118,9 +118,9 @@ package 1Tb{
                     {
                         this.cT++;
                         report((("Key bind [" + _arg1) + "] did not trigger because you have focus on an input TextField."), 8);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function gv():Boolean{
@@ -133,11 +133,11 @@ package 1Tb{
                     if (_local1.type == TextFieldType.INPUT)
                     {
                         return (false);
-                    };
-                };
+                    }
+                }
             } catch(err:Error)
             {
-            };
+            }
             return (true);
         }
 

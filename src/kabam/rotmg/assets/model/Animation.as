@@ -50,14 +50,14 @@ package kabam.rotmg.assets.model{
             for each (_local2 in _args)
             {
                 this.count = this.Bk.push(_local2);
-            };
+            }
             if (this._0i0)
             {
                 this.start();
             } else
             {
                 this._3C();
-            };
+            }
         }
 
         public function _0ff(_arg1:BitmapData):void{
@@ -70,7 +70,7 @@ package kabam.rotmg.assets.model{
             {
                 this.timer.start();
                 this._3C();
-            };
+            }
             this._0i0 = true;
         }
 
@@ -94,7 +94,7 @@ package kabam.rotmg.assets.model{
             for each (_local1 in this.Bk)
             {
                 _local1.dispose();
-            };
+            }
         }
 
         public function gS():Boolean{

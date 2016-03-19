@@ -44,13 +44,13 @@ import mx.controls.Menu;
                 _local5 = new _1Nr(AssetLibrary._1JR("lofiInterfaceBig", 21), 0xFFFFFF, _du._VS);
                 _local5.addEventListener(MouseEvent.CLICK, this.mg);
                 _6h(_local5);
-            };
+            }
             if (_arg4)
             {
                 _local5 = new _1Nr(AssetLibrary._1JR("lofiInterfaceBig", 7), 0xFFFFFF, _du._1wU);
                 _local5.addEventListener(MouseEvent.CLICK, this._04A);
                 _6h(_local5);
-            };
+            }
         }
 
         public function init(_arg1:nx, _arg2:Player):void{
@@ -72,19 +72,19 @@ import mx.controls.Menu;
                 _local3 = new _1Nr(AssetLibrary._1JR("lofiInterfaceBig", 3), 0xFFFFFF, _du._0V1);
                 _local3.addEventListener(MouseEvent.CLICK, this._09I);
                 _6h(_local3);
-            };
+            }
             if (((this.gs_.map._20B()) && (this.player_._0dw(this.player_))))
             {
                 _local3 = new TeleportMenuOption(this.gs_.map.player_);
                 _local3.addEventListener(MouseEvent.CLICK, this._1nt);
                 _6h(_local3);
-            };
+            }
             if ((((this.gs_.map.player_.guildRank_ >= GuildUtil.d8)) && ((((_arg2.guildName_ == null)) || ((_arg2.guildName_.length == 0))))))
             {
                 _local3 = new _1Nr(AssetLibrary._1JR("lofiInterfaceBig", 10), 0xFFFFFF, _du._05c);
                 _local3.addEventListener(MouseEvent.CLICK, this.xl);
                 _6h(_local3);
-            };
+            }
             if (!this.player_.starred_)
             {
                 _local3 = new _1Nr(AssetLibrary._1JR("lofiInterface2", 5), 0xFFFFFF, _du.bN);
@@ -95,7 +95,7 @@ import mx.controls.Menu;
                 _local3 = new _1Nr(AssetLibrary._1JR("lofiInterface2", 6), 0xFFFFFF, _du.0z9);
                 _local3.addEventListener(MouseEvent.CLICK, this.gQ);
                 6h(_local3);
-            };
+            }
             _local3 = new 1Nr(AssetLibrary.1JR("lofiInterfaceBig", 7), 0xFFFFFF, _du.1wU);
             _local3.addEventListener(MouseEvent.CLICK, this.07m);
             _6h(_local3);
@@ -107,7 +107,7 @@ import mx.controls.Menu;
                 _local3 = new 1Nr(AssetLibrary.1JR("lofiInterfaceBig", 21), 0xFFFFFF, _du.VS);
                 _local3.addEventListener(MouseEvent.CLICK, this.mg);
                 6h(_local3);
-            };
+            }
             if (!this.player_.0xp)
             {
                 _local3 = new 1Nr(AssetLibrary.1JR("lofiInterfaceBig", 8), 0xFFFFFF, du.1oU);
@@ -118,7 +118,7 @@ import mx.controls.Menu;
                 _local3 = new 1Nr(AssetLibrary.1JR("lofiInterfaceBig", 9), 0xFFFFFF, du.U7);
                 _local3.addEventListener(MouseEvent.CLICK, this.1LK);
                 6h(_local3);
-            };
+            }
             _local3 = new 1Nr(AssetLibrary.1JR("lofiInterfaceBig", 18), 0xFFFFFF, "Add as Friend");
             _local3.addEventListener(MouseEvent.CLICK, this.12l);
             6h(_local3);

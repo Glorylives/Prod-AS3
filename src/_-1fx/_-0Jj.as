@@ -23,7 +23,7 @@ package 1fx{
             } else
             {
                 this.0n2.dispatch(new ErrorDialog(this.23t.error));
-            };
+            }
         }
 
 

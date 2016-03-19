@@ -42,7 +42,7 @@ package _tn{
             {
                 this.jf = _arg1;
                 ((this.jf) && (this.selected.dispatch(this)));
-            };
+            }
         }
 
         public function _0qk():int{

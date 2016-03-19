@@ -38,7 +38,7 @@ package 0uE{
             } else
             {
                 this.view.1TD.addEventListener(MouseEvent.CLICK, this.dw);
-            };
+            }
         }
 
         private function oW():Boolean{
@@ -46,7 +46,7 @@ package 0uE{
             if (!this.account.0D3())
             {
                 return (false);
-            };
+            }
             _local1 = this.vM.1zi();
             return ((_local1 < 0Nx.1JA));
         }

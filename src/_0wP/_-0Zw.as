@@ -24,8 +24,8 @@ package 0wp{
                 {
                     _arg2.1n8(_local3).appendText(" ").1dS(_local3, _arg1);
                     return (false);
-                };
-            };
+                }
+            }
             return (true);
         }
 

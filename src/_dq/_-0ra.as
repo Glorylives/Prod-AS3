@@ -24,7 +24,7 @@ package dq{
             if (!_local1)
             {
                 this.1yT.dispatch();
-            };
+            }
             return (_local1);
         }
 

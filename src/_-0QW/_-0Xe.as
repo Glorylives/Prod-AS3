@@ -22,14 +22,14 @@ package 0QW{
             for (_local1 in 0s6.get)
             {
                 _local2.push(_local1);
-            };
+            }
             _local2.sort(1N9.0V3);
             for each (_local1 in _local2)
             {
                 _local3 = 0s6.get[_local1];
                 _local4 = new 0Fp(0s6.GD[_local3]);
                 1An(_local4);
-            };
+            }
         }
 
     }

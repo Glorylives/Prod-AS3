@@ -34,7 +34,7 @@ package _1aA{
             } else
             {
                 this.nameText_.setStringBuilder(new 1WS(_arg1.name));
-            };
+            }
             this.nameText_.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8)];
             this.nameText_.x = 18;
             this.nameText_.setVerticalAlign(_13j.MIDDLE);
@@ -53,7 +53,7 @@ package _1aA{
             var server:Server = _arg1;
             onTextChanged = function ():void{
                 makeStatusText(color, text);
-            };
+            }
             if (server != null)
             {
                 color = 0xFF00;
@@ -68,10 +68,10 @@ package _1aA{
                     {
                         color = 16549442;
                         text = "ServerBox.crowded";
-                    };
-                };
+                    }
+                }
                 this.nameText_.textChanged.addOnce(onTextChanged);
-            };
+            }
         }
 
         private function makeStatusText(_arg1:uint, _arg2:String):void{
@@ -103,13 +103,13 @@ package _1aA{
             if (this.selected_)
             {
                 graphics.lineStyle(2, 16777103);
-            };
+            }
             graphics.beginFill(((this.over_) ? 0x6B6B6B : 0x5C5C5C), 1);
             graphics.drawRect(0, 0, WIDTH, HEIGHT);
             if (this.selected_)
             {
                 graphics.lineStyle();
-            };
+            }
         }
 
 

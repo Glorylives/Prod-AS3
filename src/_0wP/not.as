@@ -11,7 +11,7 @@ package 0wp{
         if ((_arg1 is 1o))
         {
             return (new lj((_arg1 as 1o)));
-        };
+        }
         return (not(equalTo(_arg1)));
     }
 

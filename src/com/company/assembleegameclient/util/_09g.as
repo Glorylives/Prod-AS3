@@ -32,7 +32,7 @@ package com.company.assembleegameclient.util{
             while ((((_local2 < _1wz.length)) && ((_arg1 >= _1wz[_local2]))))
             {
                 _local2++;
-            };
+            }
             return (_local2);
         }
 
@@ -44,9 +44,9 @@ package com.company.assembleegameclient.util{
                 if (_1wz[_local4] > _local3)
                 {
                     return (_1wz[_local4]);
-                };
+                }
                 _local4++;
-            };
+            }
             return (-1);
         }
 
@@ -62,8 +62,8 @@ package com.company.assembleegameclient.util{
                 } else
                 {
                     _local4 = (_local4 + _09g.numStars(_local6.BestFame));
-                };
-            };
+                }
+            }
             _local4 = (_local4 + _09g.numStars(Math.max(_local5, _arg2)));
             return (_local4);
         }
@@ -101,11 +101,11 @@ package com.company.assembleegameclient.util{
                             if (_arg1 < (ObjectLibrary._1wa.length * 5))
                             {
                                 _local2.transform.colorTransform = _10z;
-                            };
-                        };
-                    };
-                };
-            };
+                            }
+                        }
+                    }
+                }
+            }
             return (_local2);
         }
 

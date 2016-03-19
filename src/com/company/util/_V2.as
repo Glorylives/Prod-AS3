@@ -14,13 +14,13 @@ package com.company.util{
             if (_local9 == 0)
             {
                 return (null);
-            };
+            }
             var _local10:Number = ((((_arg7 - _arg5) * (_arg2 - _arg6)) - ((_arg8 - _arg6) * (_arg1 - _arg5))) / _local9);
             var _local11:Number = ((((_arg3 - _arg1) * (_arg2 - _arg6)) - ((_arg4 - _arg2) * (_arg1 - _arg5))) / _local9);
             if ((((((((_local10 > 1)) || ((_local10 < 0)))) || ((_local11 > 1)))) || ((_local11 < 0))))
             {
                 return (null);
-            };
+            }
             var _local12:Point = new Point((_arg1 + (_local10 * (_arg3 - _arg1))), (_arg2 + (_local10 * (_arg4 - _arg2))));
             return (_local12);
         }
@@ -53,9 +53,9 @@ package com.company.util{
                     {
                         _local10 = (_arg3 + (_local12 * _local7));
                         _local11 = (_arg4 + (_local12 * _local8));
-                    };
-                };
-            };
+                    }
+                }
+            }
             _local7 = (_arg1 - _local10);
             _local8 = (_arg2 - _local11);
             return (Math.sqrt(((_local7 * _local7) + (_local8 * _local8))));

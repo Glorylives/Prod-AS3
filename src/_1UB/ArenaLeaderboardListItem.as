@@ -99,7 +99,7 @@ package 1UB{
             if (this.1fD)
             {
                 this.X4.dispatch(this.1fD);
-            };
+            }
         }
 
         private function 0Rf(_arg1:MouseEvent):void{
@@ -110,21 +110,21 @@ package 1UB{
             if (this.1fD)
             {
                 this.X4.dispatch(this.jg);
-            };
+            }
         }
 
         private function onMouseOut(_arg1:MouseEvent):void{
             if (this.1cX)
             {
                 this.background.alpha = 0;
-            };
+            }
         }
 
         private function onMouseOver(_arg1:MouseEvent):void{
             if (this.1cX)
             {
                 this.background.alpha = 1;
-            };
+            }
         }
 
         public function apply(_arg1:0EB, _arg2:Boolean):void{
@@ -140,22 +140,22 @@ package 1UB{
                 } else
                 {
                     this.tE.visible = false;
-                };
+                }
                 if (this.1tY)
                 {
                     this.1k2();
-                };
+                }
                 if (_arg1.pet)
                 {
                     this.23S(_arg1);
-                };
+                }
                 this.rank = _arg1.rank;
                 this.1L3 = _arg1.1L3;
                 this.setColor();
             } else
             {
                 this.clear();
-            };
+            }
             this.align();
         }
 
@@ -198,8 +198,8 @@ package 1UB{
                 if (this.rank == 1)
                 {
                     _local1 = 16777103;
-                };
-            };
+                }
+            }
             this.playerName.setColor(_local1);
             this.waveNumber.setColor(_local1);
             this.O4.setColor(_local1);
@@ -215,7 +215,7 @@ package 1UB{
             if (this.1tY)
             {
                 this.1k2();
-            };
+            }
             this.1tY = null;
             this.T0.visible = false;
             this.rank = 0;
@@ -266,7 +266,7 @@ package 1UB{
                 this.1tY.y = ((HEIGHT / 2) - (this.1tY.height / 2));
                 this.T0.x = 175;
                 this.T0.y = ((HEIGHT / 2) - (this.T0.height / 2));
-            };
+            }
             this.playerName.x = 230;
             this.playerName.y = ((HEIGHT / 2) - (this.playerName.height / 2));
             this.waveNumber.x = 485;

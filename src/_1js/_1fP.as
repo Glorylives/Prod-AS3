@@ -20,7 +20,7 @@ package _1js{
             } else
             {
                 _arg4.moveTo(_arg1, _arg2);
-            };
+            }
             if (_arg3._07l)
             {
                 _arg4.lineTo((_local5 - _local7), _arg2);
@@ -28,7 +28,7 @@ package _1js{
             } else
             {
                 _arg4.lineTo(_local5, _arg2);
-            };
+            }
             if (_arg3.Cm)
             {
                 _arg4.lineTo(_local5, (_local6 - _local7));
@@ -36,7 +36,7 @@ package _1js{
             } else
             {
                 _arg4.lineTo(_local5, _local6);
-            };
+            }
             if (_arg3._26P)
             {
                 _arg4.lineTo((_arg1 + _local7), _local6);
@@ -44,7 +44,7 @@ package _1js{
             } else
             {
                 _arg4.lineTo(_arg1, _local6);
-            };
+            }
         }
 
 

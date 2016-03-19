@@ -22,18 +22,18 @@ package mx.utils{
             if (!_arg1)
             {
                 return (null);
-            };
+            }
             var _local2:String = getQualifiedClassName(_arg1);
             var _local3:int = _local2.indexOf("::");
             if (_local3 != -1)
             {
                 _local2 = _local2.substr((_local3 + 2));
-            };
+            }
             var _local4:int = _local2.charCodeAt((_local2.length - 1));
             if ((((_local4 >= 48)) && ((_local4 <= 57))))
             {
                 _local2 = (_local2 + "_1yq");
-            };
+            }
             return ((_local2 + counter++));
         }
 
@@ -55,14 +55,14 @@ package mx.utils{
                         if (_local5)
                         {
                             _local4 = (_local4 + (("[" + _local5.join("][")) + "]"));
-                        };
-                    };
+                        }
+                    }
                     _local2 = (((_local2 == null)) ? _local4 : ((_local4 + ".") + _local2));
                     _local3 = _local3.parent;
-                };
+                }
             } catch(e:SecurityError)
             {
-            };
+            }
             return (_local2);
         }
 
@@ -74,12 +74,12 @@ package mx.utils{
             } else
             {
                 _local2 = getQualifiedClassName(_arg1);
-            };
+            }
             var _local3:int = _local2.indexOf("::");
             if (_local3 != -1)
             {
                 _local2 = _local2.substr((_local3 + 2));
-            };
+            }
             return (_local2);
         }
 

@@ -39,11 +39,11 @@ package com.google.analytics.campaign{
             if (((!(isEmpty())) && (isNew())))
             {
                 _local1.utmcn = utmcn;
-            };
+            }
             if (((!(isEmpty())) && (!(isNew()))))
             {
                 _local1.utmcr = utmcr;
-            };
+            }
             return (_local1);
         }
 

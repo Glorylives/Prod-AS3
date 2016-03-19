@@ -20,7 +20,7 @@ package 0NI{
             for each (_local2 in this._handlers)
             {
                 _local2.handle(_arg1);
-            };
+            }
         }
 
 

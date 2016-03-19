@@ -44,7 +44,7 @@ package 1mO{
                 case 1Of.0RX:
                     this.1ON.dispatch(_arg1.linkDetail);
                     return;
-            };
+            }
         }
 
 

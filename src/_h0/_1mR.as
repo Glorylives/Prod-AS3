@@ -36,7 +36,7 @@ public class _1mR extends Panel {
             1:[[1, 0, 0, 1], _1BE, _1BE, [0, 1, 1, 0]],
             2:[[1, 0, 0, 0], _1BE, _1BE, [0, 1, 0, 0], [0, 0, 0, 1], _1BE, _1BE, [0, 0, 1, 0]],
             3:[[1, 0, 0, 1], _1BE, _1BE, [0, 1, 1, 0], [1, 0, 0, 0], _1BE, _1BE, [0, 1, 0, 0], [0, 0, 0, 1], _1BE, _1BE, [0, 0, 1, 0]]
-        };
+        }
 
         private const padding:uint = 4;
         private const _0eQ:uint = 4;
@@ -58,7 +58,7 @@ public class _1mR extends Panel {
             if ((((_arg1 == _arg2)) || (_local4)))
             {
                 this._16t = true;
-            };
+            }
         }
 
         public function hideTooltip():void{
@@ -67,27 +67,27 @@ public class _1mR extends Panel {
                 this.tooltip._1QR();
                 this.tooltip = null;
                 this._1y8 = null;
-            };
+            }
         }
 
         public function _20x():void{
             if (((((!(stage)) || (!(this.tooltip)))) || (!(this.tooltip.stage))))
             {
                 return;
-            };
+            }
             if (this._1y8)
             {
                 this.tooltip._1QR();
                 this.tooltip = null;
                 this.Sw(this._1y8);
-            };
+            }
         }
 
         private function _0ow(_arg1:MouseEvent):void{
             if (!stage)
             {
                 return;
-            };
+            }
             var _local2:_k = (_arg1.currentTarget as _k);
             this.Sw(_local2);
             this._1y8 = _local2;
@@ -106,9 +106,9 @@ public class _1mR extends Panel {
                 } else
                 {
                     _local2 = _du._Mj;
-                };
+                }
                 this.tooltip = new _6P(0x363636, 0x9B9B9B, null, _du._Ci, 200, {itemType:_du._0y4(_local2)});
-            };
+            }
             this.tooltip._0tW(_arg1);
             this._1z6.dispatch(this.tooltip);
         }
@@ -117,11 +117,11 @@ public class _1mR extends Panel {
             if (this.owner == this.curPlayer)
             {
                 return (_1Ha._CURRENT_PLAYER);
-            };
+            }
             if ((this.owner is Player))
             {
                 return (_1Ha.OTHER_PLAYER);
-            };
+            }
             return (_1Ha.NPC);
         }
 

@@ -35,12 +35,12 @@ package _1so{
             if ((((_local1 == null)) || ((_local1.map_ == null))))
             {
                 return (null);
-            };
+            }
             var _local2:Player = _local1.map_.player_;
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             return (new _1Bn(_local1.map_, this._1Cf()));
         }
 
@@ -50,7 +50,7 @@ package _1so{
             for each (_local2 in _0Tt)
             {
                 _local1.push((_local2 as Player));
-            };
+            }
             return (_local1);
         }
 

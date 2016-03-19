@@ -88,7 +88,7 @@ package 0qj{
             if (_local5 > 0)
             {
                 this.1WW(_local5, _local2);
-            };
+            }
         }
 
         public function 1WW(_arg1:int, _arg2:XML):void{
@@ -122,7 +122,7 @@ package 0qj{
             {
                 this.nextClassQuest_.x = 8;
                 this.nextClassQuest_.y = (this.bestLevel_.getBounds(this).bottom - 2);
-            };
+            }
         }
 
         override public function draw():void{

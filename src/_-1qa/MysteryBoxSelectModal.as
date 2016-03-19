@@ -89,7 +89,7 @@ package 1qa{
             for each (_local1 in this.1Q-)
             {
                 0oc = (0oc + 0Gv);
-            };
+            }
             _local2 = new ga();
             _local2.width = (0l4 + 1);
             _local2.height = (0oc - 25);
@@ -112,7 +112,7 @@ package 1qa{
                 _local4 = (_local4 + 0Gv);
                 this.box_.addChild(_local6);
                 _local5++;
-            };
+            }
         }
 
         private function onRemovedFromStage(_arg1:Event):void{

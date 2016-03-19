@@ -40,7 +40,7 @@ package 1fx{
             if (_arg1 != null)
             {
                 OJ.xml = _arg1;
-            };
+            }
         }
 
 

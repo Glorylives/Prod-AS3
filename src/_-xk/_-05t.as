@@ -64,7 +64,7 @@ package xk{
             } else
             {
                 this.En.dispatch(this.1rQ);
-            };
+            }
         }
 
         private function 1Px():void{

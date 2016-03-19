@@ -31,7 +31,7 @@ package 1YL{
             if (_arg1.keyCode == this.0CJ)
             {
                 this.0rS.dispatch();
-            };
+            }
         }
 
 

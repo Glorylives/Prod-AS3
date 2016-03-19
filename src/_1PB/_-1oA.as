@@ -104,7 +104,7 @@ package 1PB{
                 this.Ud.dispatch(_local2);
                 Parameters.data_.lastDailyAnalytics = _local1;
                 Parameters.save();
-            };
+            }
         }
 
         private function k0():void{

@@ -22,7 +22,7 @@ package com.company.util{
                 } else
                 {
                     _local4 = ((_arg1 * (1 - _arg3)) + (_arg2 * _arg3));
-                };
+                }
             } else
             {
                 if ((_arg2 - _arg1) > Math.PI)
@@ -31,12 +31,12 @@ package com.company.util{
                 } else
                 {
                     _local4 = ((_arg1 * (1 - _arg3)) + (_arg2 * _arg3));
-                };
-            };
+                }
+            }
             if ((((_local4 < -(Math.PI))) || ((_local4 > Math.PI))))
             {
                 _local4 = _1VN(_local4);
-            };
+            }
             return (_local4);
         }
 
@@ -46,13 +46,13 @@ package com.company.util{
                 if ((_arg1 - _arg2) > Math.PI)
                 {
                     return (((_arg2 + (2 * Math.PI)) - _arg1));
-                };
+                }
                 return ((_arg1 - _arg2));
-            };
+            }
             if ((_arg2 - _arg1) > Math.PI)
             {
                 return (((_arg1 + (2 * Math.PI)) - _arg2));
-            };
+            }
             return ((_arg2 - _arg1));
         }
 
@@ -61,7 +61,7 @@ package com.company.util{
             if ((((_arg1 < -(Math.PI))) || ((_arg1 > Math.PI))))
             {
                 _arg1 = _1VN(_arg1);
-            };
+            }
             if (_arg1 < 0)
             {
                 _local2 = ((1.27323954 * _arg1) + ((0.405284735 * _arg1) * _arg1));
@@ -71,7 +71,7 @@ package com.company.util{
                 } else
                 {
                     _local2 = ((0.225 * ((_local2 * _local2) - _local2)) + _local2);
-                };
+                }
             } else
             {
                 _local2 = ((1.27323954 * _arg1) - ((0.405284735 * _arg1) * _arg1));
@@ -81,8 +81,8 @@ package com.company.util{
                 } else
                 {
                     _local2 = ((0.225 * ((_local2 * _local2) - _local2)) + _local2);
-                };
-            };
+                }
+            }
             return (_local2);
         }
 
@@ -97,32 +97,32 @@ package com.company.util{
                 if (_arg1 < 0)
                 {
                     return ((-(Math.PI) / 2));
-                };
+                }
                 if (_arg1 > 0)
                 {
                     return ((Math.PI / 2));
-                };
+                }
                 return (undefined);
-            };
+            }
             if (_arg1 == 0)
             {
                 if (_arg2 < 0)
                 {
                     return (Math.PI);
-                };
+                }
                 return (0);
-            };
+            }
             if ((((_arg2 > 0)) ? _arg2 : -(_arg2)) > (((_arg1 > 0)) ? _arg1 : -(_arg1)))
             {
                 _local3 = ((((_arg2 < 0)) ? -(Math.PI) : 0) + atan2Helper(_arg1, _arg2));
             } else
             {
                 _local3 = ((((_arg1 > 0)) ? (Math.PI / 2) : (-(Math.PI) / 2)) - atan2Helper(_arg2, _arg1));
-            };
+            }
             if ((((_local3 < -(Math.PI))) || ((_local3 > Math.PI))))
             {
                 _local3 = _1VN(_local3);
-            };
+            }
             return (_local3);
         }
 
@@ -154,8 +154,8 @@ package com.company.util{
                 {
                     _local2 = ((int((_arg1 / Math.PI)) + 1) / 2);
                     _arg1 = (_arg1 - ((_local2 * 2) * Math.PI));
-                };
-            };
+                }
+            }
             return (_arg1);
         }
 
@@ -171,8 +171,8 @@ package com.company.util{
                 {
                     _local2 = ((int((_arg1 / 180)) + 1) / 2);
                     _arg1 = (_arg1 - (_local2 * 360));
-                };
-            };
+                }
+            }
             return (_arg1);
         }
 
@@ -182,7 +182,7 @@ package com.company.util{
             if (!_local1)
             {
                 trace("Trig Unit Test FAILED!");
-            };
+            }
             trace("FINISHED UNITTEST: Trig");
             return (_local1);
         }
@@ -199,9 +199,9 @@ package com.company.util{
                 if (_local6 > 0.1)
                 {
                     return (false);
-                };
+                }
                 _local4++;
-            };
+            }
             return (true);
         }
 
@@ -219,9 +219,9 @@ package com.company.util{
                 if (_local7 > 0.1)
                 {
                     return (false);
-                };
+                }
                 _local4++;
-            };
+            }
             return (true);
         }
 

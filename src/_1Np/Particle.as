@@ -42,7 +42,7 @@ package _1Np{
             if (_local3 == null)
             {
                 return (false);
-            };
+            }
             x_ = _arg1;
             y_ = _arg2;
             xy = _local3;

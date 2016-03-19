@@ -50,7 +50,7 @@ package 1kr{
             if (_arg1.charAt(0) != "/")
             {
                 _arg1 = ("/" + _arg1);
-            };
+            }
             return ((this.setup.1HF() + _arg1));
         }
 

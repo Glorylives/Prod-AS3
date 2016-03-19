@@ -32,7 +32,7 @@ package 0GQ{
             if (_arg1)
             {
                 this.19R(_arg2);
-            };
+            }
             1d5(_arg1, _arg2);
         }
 

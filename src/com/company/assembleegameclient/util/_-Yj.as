@@ -13,7 +13,7 @@ package com.company.assembleegameclient.util{
             while (((_arg1) && (!((_arg1 is _arg2)))))
             {
                 _arg1 = _arg1.parent;
-            };
+            }
             return (_arg1);
         }
 
@@ -26,10 +26,10 @@ package com.company.assembleegameclient.util{
                     if ((_arg1 is _local3))
                     {
                         return (_arg1);
-                    };
-                };
+                    }
+                }
                 _arg1 = _arg1.parent;
-            };
+            }
             return (_arg1);
         }
 

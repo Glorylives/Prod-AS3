@@ -46,7 +46,7 @@ package 0qj{
                 this.J9.y = (_local2 - 2);
                 addChild(this.J9);
                 _local2 = (_local2 + 30);
-            };
+            }
             this.0Mt = new StatusBar(176, 16, 14693428, 0x545454, du.10h);
             this.0Mt.x = 6;
             this.0Mt.y = _local2;

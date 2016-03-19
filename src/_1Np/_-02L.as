@@ -34,7 +34,7 @@ package 1Np{
             } else
             {
                 this.bitmapData = TextureRedrawer.redrawSolidSquare(this.1k7.color, this.1k7.size);
-            };
+            }
         }
 
         public static function 1WJ(_arg1:lW, _arg2:GameObject):02L{
@@ -51,7 +51,7 @@ package 1Np{
             if (this.7x.map_ == null)
             {
                 return (false);
-            };
+            }
             x_ = this.7x.x_;
             y_ = this.7x.y_;
             z_ = (this.7x.z_ + this.1k7.zOffset);
@@ -67,12 +67,12 @@ package 1Np{
                 } else
                 {
                     _local9 = new 1uO(this.bitmapData);
-                };
+                }
                 _local9.initialize((this.1k7.life + (this.1k7.lifeVariance * ((2 * Math.random()) - 1))), (this.1k7.speed + (this.1k7.speedVariance * ((2 * Math.random()) - 1))), (this.1k7.speed + (this.1k7.speedVariance * ((2 * Math.random()) - 1))), (this.1k7.rise + (this.1k7.riseVariance * ((2 * Math.random()) - 1))), z_);
                 map_.addObj(_local9, (x_ + (this.1k7.rangeX * ((2 * Math.random()) - 1))), (y_ + (this.1k7.rangeY * ((2 * Math.random()) - 1))));
                 this.0zk.push(_local9);
                 _local7++;
-            };
+            }
             this.PV = (this.PV + _local6);
             var _local8:int;
             while (_local8 < this.0zk.length)
@@ -91,9 +91,9 @@ package 1Np{
                     _local10.x_ = (_local10.x_ + (_local10.0Ti * _local4));
                     _local10.y_ = (_local10.y_ + (_local10.22y * _local4));
                     _local10.z_ = (_local10.z_ + (_local10.1gp * _local4));
-                };
+                }
                 _local8++;
-            };
+            }
             return (true);
         }
 
@@ -102,7 +102,7 @@ package 1Np{
             for each (_local1 in this.0zk)
             {
                 map_.removeObj(_local1.objectId_);
-            };
+            }
             this.0zk = null;
             this.eS = null;
             super.removeFromMap();

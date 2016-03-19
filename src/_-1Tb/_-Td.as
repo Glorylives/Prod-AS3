@@ -32,7 +32,7 @@ package 1Tb{
             {
                 report("Not a DisplayObjectContainer.", 10, true, _arg3);
                 return;
-            };
+            }
             var _local4:int;
             var _local6:int;
             var _local7:DisplayObject;
@@ -52,8 +52,8 @@ package 1Tb{
                         _local14 = _local11.getChildAt(_local13);
                         _local8.splice((_local6 + _local13), 0, _local14);
                         _local13++;
-                    };
-                };
+                    }
+                }
                 if (_local7)
                 {
                     if ((((_local7 is DisplayObjectContainer)) && ((_local7 as DisplayObjectContainer).contains(_local9))))
@@ -69,23 +69,23 @@ package 1Tb{
                                 if (_local4 > 0)
                                 {
                                     _local4--;
-                                };
+                                }
                                 if ((_local7 as DisplayObjectContainer).contains(_local9))
                                 {
                                     _local4++;
                                     break;
-                                };
-                            };
-                        };
-                    };
-                };
+                                }
+                            }
+                        }
+                    }
+                }
                 _local10 = "";
                 _local13 = 0;
                 while (_local13 < _local4)
                 {
                     _local10 = (_local10 + (((_local13)==(_local4 - 1)) ? " ∟ " : " - "));
                     _local13++;
-                };
+                }
                 if ((((_arg2 <= 0)) || ((_local4 <= _arg2))))
                 {
                     _local5 = false;
@@ -94,14 +94,14 @@ package 1Tb{
                     if (_local15)
                     {
                         _local16 = (((("<a href='event:cl_" + _local15) + "'>") + _local16) + "</a>");
-                    };
+                    }
                     if ((_local9 is DisplayObjectContainer))
                     {
                         _local16 = (("<b>" + _local16) + "</b>");
                     } else
                     {
                         _local16 = (("<i>" + _local16) + "</i>");
-                    };
+                    }
                     _local10 = (_local10 + ((_local16 + " ") + console.refs.makeRefTyped(_local9)));
                     report(_local10, (((_local9 is DisplayObjectContainer)) ? 5 : 2), true, _arg3);
                 } else
@@ -110,15 +110,15 @@ package 1Tb{
                     {
                         _local5 = true;
                         report((_local10 + "..."), 5, true, _arg3);
-                    };
-                };
+                    }
+                }
                 _local7 = _local9;
-            };
+            }
             report((((((_arg1.name + ":") + console.refs.makeRefTyped(_arg1)) + " has ") + (_local8.length - 1)) + " children/sub-children."), 9, true, _arg3);
             if (config.commandLineAllowed)
             {
                 report("Click on the child display's name to set scope.", -2, true, _arg3);
-            };
+            }
         }
 
         public function explode(_arg1:Object, _arg2:int=3, _arg3:int=9):String{
@@ -131,19 +131,19 @@ package 1Tb{
             if (_arg1 == null)
             {
                 return ((("<p-2>" + _arg1) + "</p-2>"));
-            };
+            }
             if ((_arg1 is String))
             {
                 return ((('"' + 1-T.wA((_arg1 as String))) + '"'));
-            };
+            }
             if (((((!((_local4 == "object"))) || ((_arg2 == 0)))) || ((_arg1 is ByteArray))))
             {
                 return (console.refs.makeString(_arg1));
-            };
+            }
             if (_arg3 < 0)
             {
                 _arg3 = 0;
-            };
+            }
             var _local5:XML = describeType(_arg1);
             var _local8:Array = [];
             _local6 = _local5["accessor"];
@@ -157,27 +157,27 @@ package 1Tb{
                         _local8.push(this.0cG(_arg1, _local7, _arg2, _arg3));
                     } catch(e:Error)
                     {
-                    };
+                    }
                 } else
                 {
                     _local8.push(_local7);
-                };
-            };
+                }
+            }
             _local6 = _local5["variable"];
             for each (_local10 in _local6)
             {
                 _local7 = _local10.@name;
                 _local8.push(this.0cG(_arg1, _local7, _arg2, _arg3));
-            };
+            }
             try
             {
                 for (_local11 in _arg1)
                 {
                     _local8.push(this.0cG(_arg1, _local11, _arg2, _arg3));
-                };
+                }
             } catch(e:Error)
             {
-            };
+            }
             return ((((((((((((("<p" + _arg3) + ">{") + 1-T.0Ds(_arg1)) + "</p") + _arg3) + "> ") + _local8.join(", ")) + "<p") + _arg3) + ">}</p") + _arg3) + ">"));
         }
 
@@ -191,7 +191,7 @@ package 1Tb{
             if (!_local4)
             {
                 return ("");
-            };
+            }
             var _local5 = "";
             var _local6:Array = _local4.split(/\n\sat\s/);
             var _local7:int = _local6.length;
@@ -203,19 +203,19 @@ package 1Tb{
                 if (((!(_local9)) && (!((_local6[_local10].search(_local8) == 0)))))
                 {
                     _local9 = true;
-                };
+                }
                 if (_local9)
                 {
                     _local5 = (_local5 + (((((("\n<p" + _arg2) + "> @ ") + _local6[_local10]) + "</p") + _arg2) + ">"));
                     if (_arg2 > 0)
                     {
                         _arg2--;
-                    };
+                    }
                     _arg1--;
                     if (_arg1 <= 0) break;
-                };
+                }
                 _local10++;
-            };
+            }
             return (_local5);
         }
 

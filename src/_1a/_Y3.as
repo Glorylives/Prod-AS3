@@ -43,7 +43,7 @@ package _1a{
             if (!_local3)
             {
                 return (false);
-            };
+            }
             x_ = _arg1;
             y_ = _arg2;
             xy = _local3;
@@ -72,7 +72,7 @@ package _1a{
                 if (((!(w)) || (!(h))))
                 {
                     return;
-                };
+                }
                 this.vS_.length = 0;
                 this.vS_.push((_4M[3] - (w / 2)), (_4M[4] - (h / 2)), (_4M[3] + (w / 2)), (_4M[4] - (h / 2)), (_4M[3] + (w / 2)), (_4M[4] + (h / 2)), (_4M[3] - (w / 2)), (_4M[4] + (h / 2)));
                 this.path_.data = this.vS_;
@@ -83,11 +83,11 @@ package _1a{
                     if (this._1Z8)
                     {
                         this._0r = (this._0r + this._1Z8);
-                    };
+                    }
                     this._1rx.translate((-(w) / 2), (-(h) / 2));
                     this._1rx.rotate(this._0r);
                     this._1rx.translate((w / 2), (h / 2));
-                };
+                }
                 this._1rx.translate(this.vS_[0], this.vS_[1]);
                 this.bitmapFill_.matrix = this._1rx;
                 graphicsData.push(this.bitmapFill_);
@@ -97,7 +97,7 @@ package _1a{
             } catch(error:Error)
             {
                 return;
-            };
+            }
         }
 
 

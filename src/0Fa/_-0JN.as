@@ -70,11 +70,11 @@ package 0Fa{
             } else
             {
                 this.view.deactivate();
-            };
+            }
             if (!_arg1)
             {
                 this.0KU.1Wf();
-            };
+            }
         }
 
         private function 22():TextField{
@@ -87,7 +87,7 @@ package 0Fa{
             if (((this.view.visible) && ((((_arg1.keyCode == this.1XC._ZS())) || ((((this.stage.focus == null)) || (this.if())))))))
             {
                 this.0CD(_arg1);
-            };
+            }
         }
 
         private function if():Boolean{
@@ -115,17 +115,17 @@ package 0Fa{
                         if (_local2 == this.1XC._ZS())
                         {
                             this.0jD();
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
         }
 
         private function 0jD():void{
             if (!this.view.0_ZS())
             {
                 this.view.activate((("/tell " + this.0KU.18g()) + " "), true);
-            };
+            }
         }
 
 

@@ -27,7 +27,7 @@ package Jc{
             for each (_local2 in _arg1)
             {
                 this.servers.push(_local2);
-            };
+            }
             this.ZH = false;
             this.servers.sort(this.15M);
         }
@@ -52,7 +52,7 @@ package Jc{
                     if (_local6.name == Parameters.data_.preferredServer)
                     {
                         return (_local6);
-                    };
+                    }
                     _local7 = _local6.priority();
                     _local8 = 1O7.distance(_local2, _local6.0z);
                     if ((((_local7 < _local5)) || ((((_local7 == _local5)) && ((_local8 < _local4))))))
@@ -60,9 +60,9 @@ package Jc{
                         _local3 = _local6;
                         _local4 = _local8;
                         _local5 = _local7;
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (_local3);
         }
 
@@ -73,8 +73,8 @@ package Jc{
                 if (_local2.address == _arg1)
                 {
                     return (_local2.name);
-                };
-            };
+                }
+            }
             return ("");
         }
 
@@ -86,11 +86,11 @@ package Jc{
             if (_arg1.name < _arg2.name)
             {
                 return (((this.ZH) ? -1 : 1));
-            };
+            }
             if (_arg1.name > _arg2.name)
             {
                 return (((this.ZH) ? 1 : -1));
-            };
+            }
             return (0);
         }
 

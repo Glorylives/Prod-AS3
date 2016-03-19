@@ -67,12 +67,12 @@ package 0Fa{
                         if (((((((this.17n) && (!((this.playerName == null))))) && (!((this.playerName == ""))))) && (!((hmod.ja.map.player_.name_ == this.playerName)))))
                         {
                             hmod.ja.FP(null, e.stageX, e.stageY, this.playerName, false, true);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
             } catch(e:Error)
             {
-            };
+            }
         }
 
         public function ik():Boolean{
@@ -101,11 +101,11 @@ package 0Fa{
                     {
                         this.list[_local5].y = (this.list[_local5].y - this.1US);
                         _local5++;
-                    };
-                };
+                    }
+                }
                 _local1 = (_local1 + _local4.width);
                 _local2++;
-            };
+            }
         }
 
         private function Mb():void{
@@ -113,7 +113,7 @@ package 0Fa{
             for each (_local1 in this.list)
             {
                 addChild(_local1);
-            };
+            }
         }
 
 

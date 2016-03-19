@@ -39,7 +39,7 @@ package 0uE{
             if (this.state.1lT)
             {
                 this.Sz(this.state.1lT, 0TC.RIGHT);
-            };
+            }
             this.1Fl();
         }
 
@@ -49,7 +49,7 @@ package 0uE{
             {
                 _local3 = (((_arg2 == 0TC.LEFT)) ? this.1LD : this.nL);
                 _local3.Sz(_arg1);
-            };
+            }
         }
 
         private function Ni():void{
@@ -71,7 +71,7 @@ package 0uE{
                 this.nL.1ZU((this.state.1lT == null));
                 this.1LD.1ZU((this.state.06h == null));
                 this.Ba.1ZU(false);
-            };
+            }
         }
 
 

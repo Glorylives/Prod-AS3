@@ -59,7 +59,7 @@ package 0sC{
             if (_arg1.keyCode == 02E.ENTER)
             {
                 this.1Oe();
-            };
+            }
         }
 
         private function onCancel(_arg1:MouseEvent):void{
@@ -78,7 +78,7 @@ package 0sC{
                 _local1.username = this.email.text();
                 _local1.password = this.password.text();
                 this.signIn.dispatch(_local1);
-            };
+            }
         }
 
         private function PH():Boolean{
@@ -86,7 +86,7 @@ package 0sC{
             if (!_local1)
             {
                 this.password.07n(du.1Dy);
-            };
+            }
             return (_local1);
         }
 
@@ -95,7 +95,7 @@ package 0sC{
             if (!_local1)
             {
                 this.email.07n(du.l2);
-            };
+            }
             return (_local1);
         }
 

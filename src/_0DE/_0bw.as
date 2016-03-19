@@ -58,7 +58,7 @@ import flash.display.Sprite;
                     _local1 = _local1.clone();
                     _local3 = this.nE.make(new _1WS(String(_local2.Doses)), 12, 0xFFFFFF, false, _1Ab, false);
                     _local1.draw(_local3, _0sv);
-                };
+                }
                 this.mQ.bitmapData = _local1;
                 this.mQ.x = (-(_local1.width) / 2);
                 this.mQ.y = (-(_local1.height) / 2);
@@ -66,7 +66,7 @@ import flash.display.Sprite;
             } else
             {
                 visible = false;
-            };
+            }
         }
 
         public function Hk(_arg1:_1CD):void{

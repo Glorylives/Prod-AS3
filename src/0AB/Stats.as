@@ -83,7 +83,7 @@ package 0AB{
             while (numChildren > 0)
             {
                 removeChildAt(0);
-            };
+            }
             this.graph.dispose();
             removeEventListener(MouseEvent.CLICK, this.0eJ);
             removeEventListener(Event.ENTER_FRAME, this.update);
@@ -109,7 +109,7 @@ package 0AB{
                 this.xml.mem = ("MEM: " + this.mem);
                 this.xml.memMax = ("MAX: " + this.10f);
                 this.fps = 0;
-            };
+            }
             this.fps++;
             this.xml.ms = ("MS: " + (this.timer - this.ms));
             this.ms = this.timer;
@@ -123,7 +123,7 @@ package 0AB{
             } else
             {
                 stage.frameRate++;
-            };
+            }
             this.xml.fps = ((("FPS: " + this.fps) + " / ") + stage.frameRate);
             this.text.htmlText = this.xml;
         }

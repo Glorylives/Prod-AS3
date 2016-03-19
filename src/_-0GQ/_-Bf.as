@@ -29,7 +29,7 @@ package 0GQ{
             } else
             {
                 this.0V6();
-            };
+            }
         }
 
         private function 1jh():void{
@@ -44,7 +44,7 @@ package 0GQ{
             {
                 data.username = null;
                 data.password = null;
-            };
+            }
         }
 
         private function LP():void{

@@ -78,9 +78,9 @@ import flash.display.Bitmap;
                     if (this.player._1Wz[_local5] != -1)
                     {
                         this.curItemXML = ObjectLibrary.GD[this.player._1Wz[_local5]];
-                    };
-                };
-            };
+                    }
+                }
+            }
             this._0IT();
             this._0sK();
             this._0t1();
@@ -112,7 +112,7 @@ import flash.display.Bitmap;
                 this._0yi.filters = [new DropShadowFilter(0, 0, 0, 0.5, 12, 12)];
                 _1he.push(this._0yi.textChanged);
                 addChild(this._0yi);
-            };
+            }
         }
 
         private function _15n():void{
@@ -134,15 +134,15 @@ import flash.display.Bitmap;
                     if (_local3)
                     {
                         _local6.pushParams(_local3);
-                    };
+                    }
                     if (_local4)
                     {
                         _local6.pushParams(_local4, {}, TR._1pw(16777103), TR._17H());
-                    };
+                    }
                     _local6.setDelimiter(_local5);
                     this._1gU.push(new Effect(_du._1h6, {data:_local6}));
-                };
-            };
+                }
+            }
         }
 
         private function Hx():Boolean{
@@ -155,11 +155,11 @@ import flash.display.Bitmap;
             if ((((this.objectType == 4874)) || ((this.objectType == 4618))))
             {
                 _local2 = 8;
-            };
+            }
             if (_local1.hasOwnProperty("ScaleValue"))
             {
                 _local2 = _local1.ScaleValue;
-            };
+            }
             var _local3:BitmapData = ObjectLibrary.getRedrawnTextureFromType(this.objectType, 60, true, true, _local2);
             _local3 = BitmapUtil._0Bs(_local3, 4, 4, (_local3.width - 8), (_local3.height - 8));
             this.icon = new Bitmap(_local3);
@@ -189,10 +189,10 @@ private function _0t1():void{
                     {
                         this._0ym.setColor(9055202);
                         this._0ym.setStringBuilder(new _1cA().setParams(_du._eg));
-                    };
-                };
+                    }
+                }
                 addChild(this._0ym);
-            };
+            }
         }
 
         private function tI():Boolean{
@@ -221,8 +221,8 @@ private function _0t1():void{
                 for each (_local3 in _local1)
                 {
                     _local2.push(new Effect(_local3.attribute("name"), _local3.attribute("description")));
-                };
-            };
+                }
+            }
             return ("");
         }
 
@@ -239,8 +239,8 @@ private function _0t1():void{
                 {
                     addChild(this.line1);
                     addChild(this._0Ya);
-                };
-            };
+                }
+            }
         }
 
         private function _04p():AppendingLineBuilder{
@@ -249,7 +249,7 @@ private function _0t1():void{
             if (this._07x.zM._0My())
             {
                 _local1.pushParams(_du._1h6, {data:this._07x.zM});
-            };
+            }
             this._do(this._1EF, _local1);
             return (_local1);
         }
@@ -266,16 +266,16 @@ private function _0t1():void{
                 {
                     _local4 = (('<font color="#' + _local3.color_.toString(16)) + '">');
                     _local5 = "</font>";
-                };
+                }
                 _arg2.pushParams(_local3.name_, _local3.getValueReplacementsWithColor(), _local4, _local5);
-            };
+            }
         }
 
         private function _0YX():void{
             if (((this._0o4.hasOwnProperty("NumProjectiles")) && (!((this._07x.ZX.hasOwnProperty(this._0o4.NumProjectiles.toXMLString()) == true)))))
             {
                 this._1EF.push(new Effect(_du._01s, {numShots:this._0o4.NumProjectiles}));
-            };
+            }
         }
 
         private function X2():void{
@@ -290,9 +290,9 @@ private function _0t1():void{
                 {
                     _local3 = int(this.curItemXML.FameBonus.text());
                     _local2 = TR.1kE((_local1 - _local3));
-                };
+                }
                 this._1EF.push(new Effect(_du.243, {percent:(this._0o4.FameBonus + "%")}).setReplacementsColor(_local2));
-            };
+            }
         }
 
         private function _1bq():void{
@@ -301,7 +301,7 @@ private function _0t1():void{
                 if (!this._07x.ZX[this._0o4.MpEndCost[0].toXMLString()])
                 {
                     this._1EF.push(new Effect(_du._09M, {cost:this._0o4.MpEndCost}));
-                };
+                }
             } else
             {
                 if (((this._0o4.hasOwnProperty("MpCost")) && (!(this._07x.ZX[this._0o4.MpCost[0].toXMLString()]))))
@@ -309,16 +309,16 @@ private function _0t1():void{
                     if (!this._07x.ZX[this._0o4.MpCost[0].toXMLString()])
                     {
                         this._1EF.push(new Effect(_du._09M, {cost:this._0o4.MpCost}));
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function _0L9():void{
             if (this._0o4.hasOwnProperty("Doses"))
             {
                 this._1EF.push(new Effect(_du.xf, {dose:this._0o4.Doses}));
-            };
+            }
         }
 
         private function ht():void{
@@ -338,15 +338,15 @@ private function _0t1():void{
                 if (this._0o4.Projectile.hasOwnProperty("MultiHit"))
                 {
                     this._1EF.push(new Effect(_du._0YQ, {}).setColor(TR.1U4));
-                };
+                }
                 if (this._0o4.Projectile.hasOwnProperty("PassesCover"))
                 {
                     this._1EF.push(new Effect(_du._12u, {}).setColor(TR.1U4));
-                };
+                }
                 if (this._0o4.Projectile.hasOwnProperty("ArmorPiercing"))
                 {
                     this._1EF.push(new Effect(_du.if , {}).setColor(TR.1U4));
-                };
+                }
                 for each (_local5 in _local1.ConditionEffect)
                 {
                     if (this._07x.ZX[_local5.toXMLString()] != null)
@@ -358,9 +358,9 @@ private function _0t1():void{
                             effect:this._0o4.Projectile.ConditionEffect,
                             duration:this._0o4.Projectile.ConditionEffect.@duration
                         }).setColor(TR.1U4));
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function _0sX():void{
@@ -506,15 +506,15 @@ private function _0t1():void{
                                         if (_local23 < 0)
                                         {
                                             _local9 = 0xFF0000;
-                                        };
-                                    };
-                                };
-                            };
+                                        }
+                                    }
+                                }
+                            }
                             _local11 = {
                                 range:_local1.@range,
                                 effect:_local1.@effect,
                                 duration:_local1.@duration
-                            };
+                            }
                             _local12 = "Within {range} sqrs {effect} for {duration} seconds";
                             if (_local1.@target != "enemy")
                             {
@@ -522,7 +522,7 @@ private function _0t1():void{
                             } else
                             {
                                 this._1EF.push(new Effect(_du.pd, {effect:1cA.1b2(_local12, _local11)}).setReplacementsColor(_local9));
-                            };
+                            }
                             break;
                         case 0MX.Zr:
                             _local13 = 16777103;
@@ -546,10 +546,10 @@ private function _0t1():void{
                                         if (_local30 < 0)
                                         {
                                             _local13 = 0xFF0000;
-                                        };
-                                    };
-                                };
-                            };
+                                        }
+                                    }
+                                }
+                            }
                             _local3 = int(_local1.@stat);
                             _local15 = 1cA.DO(StatData.1Ky(_local3));
                             _local16 = {
@@ -557,21 +557,21 @@ private function _0t1():void{
                                 stat:_local15,
                                 amount:_local1.@amount,
                                 duration:_local1.@duration
-                            };
+                            }
                             _local17 = "Within {range} sqrs increase {stat} by {amount} for {duration} seconds";
                             this._1EF.push(new Effect(_du.Nk, {effect:1cA.1b2(_local17, _local16)}).setReplacementsColor(_local13));
                             break;
                         case 0MX.Wj:
                             _local3 = int(_local1.@stat);
                             _local4 = int(_local1.@amount);
-                            _local18 = {};
+                            _local18 = {}
                             if (((!((_local3 == StatData.14a))) && (!((_local3 == StatData.0X7)))))
                             {
                                 _local2 = _du.H-;
                                 _local18["statName"] = new 1cA().setParams(StatData.1Ky(_local3));
                                 this._1EF.push(new Effect(_local2, _local18).setColor(16777103));
                                 break;
-                            };
+                            }
                             _local2 = _du.1h6;
                             _local31 = new AppendingLineBuilder().setDelimiter(" ");
                             _local31.pushParams(_du._1h6, {data:new 1WS(("+" + _local4))});
@@ -579,9 +579,9 @@ private function _0t1():void{
                             _local18["data"] = _local31;
                             this._1EF.push(new Effect(_local2, _local18));
                             break;
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function rE(_arg1:XML, _arg2:String):XML{
@@ -595,8 +595,8 @@ private function _0t1():void{
                 if (tag.@effect == effectValue)
                 {
                     return (tag);
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -611,8 +611,8 @@ private function _0t1():void{
                 if (tag.@stat == statValue)
                 {
                     return (tag);
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -625,12 +625,12 @@ private function _0t1():void{
                 {
                     this._1EF.push(new Effect(_du._0bj, ""));
                     _local2 = false;
-                };
+                }
                 if (_local1.toString() == "IncrementStat")
                 {
                     this._1EF.push(new Effect(_du.Wj, this._1FR(_local1)).setReplacementsColor(this._0-y(_local1)));
-                };
-            };
+                }
+            }
         }
 
         private function 1FR(_arg1:XML):Object{
@@ -654,17 +654,17 @@ private function _0t1():void{
             if (this.curItemXML != null)
             {
                 otherMatches = this.curItemXML.ActivateOnEquip.(@stat == stat);
-            };
+            }
             if (((!((otherMatches == null))) && ((otherMatches.length() == 1))))
             {
                 match = XML(otherMatches[0]);
                 otherAmount = int(match.@amount);
                 textColor = TR.1kE((amount - otherAmount));
-            };
+            }
             if (amount < 0)
             {
                 textColor = 0xFF0000;
-            };
+            }
             return (textColor);
         }
 
@@ -678,8 +678,8 @@ private function _0t1():void{
                 } else
                 {
                     this._1Qz.push(new Restriction(_du._1Io, 0xB3B3B3, false));
-                };
-            };
+                }
+            }
         }
 
         private function 15e():void{
@@ -694,7 +694,7 @@ private function _0t1():void{
             } else
             {
                 this._1Qz.push(new Restriction(_du.KU, 0xFFFFFF, false));
-            };
+            }
         }
 
         private function RD():void{
@@ -711,15 +711,15 @@ private function _0t1():void{
             if (((((this._0o4.hasOwnProperty("VaultItem")) && (!((this._0Rs == -1))))) && (!((this._0Rs == ObjectLibrary.get["Vault Chest"])))))
             {
                 this._1Qz.push(new Restriction(_du._0Ak, 16549442, true));
-            };
+            }
             if (this._0o4.hasOwnProperty("Soulbound"))
             {
                 this._1Qz.push(new Restriction(_du._0E7, 0xB3B3B3, false));
-            };
+            }
             if (this._0o4.hasOwnProperty("@setType"))
             {
                 this._1Qz.push(new Restriction(("This item is a part _of " + this._0o4.attribute("setName")), 0xFF9900, false));
-            };
+            }
             if (this._0Bw)
             {
                 if (this._0o4.hasOwnProperty("Usable"))
@@ -739,21 +739,21 @@ private function _0t1():void{
                         } else
                         {
                             this._0QT();
-                        };
-                    };
-                };
+                        }
+                    }
+                }
             } else
             {
                 if (this.player != null)
                 {
                     this._1Qz.push(new Restriction(_du._0jn, 16549442, true));
-                };
-            };
+                }
+            }
             var _local1:Vector.<String> = ObjectLibrary.usableBy(this.objectType);
             if (_local1 != null)
             {
                 this._1Qz.push(new Restriction(_du._11O, 0xB3B3B3, false));
-            };
+            }
             for each (_local2 in this._0o4.EquipRequirement)
             {
                 _local3 = ObjectLibrary.1Up(_local2, this.player);
@@ -762,8 +762,8 @@ private function _0t1():void{
                     _local4 = int(_local2.@stat);
                     _local5 = int(_local2.@value);
                     this._1Qz.push(new Restriction(((("Requires " + StatData.1Ky(_local4)) + " _of ") + _local5), ((_local3) ? 0xB3B3B3 : 16549442), ((_local3) ? false : true)));
-                };
-            };
+                }
+            }
         }
 
         private function 21p():void{
@@ -779,7 +779,7 @@ private function _0t1():void{
                 this.Gn.filters = [new DropShadowFilter(0, 0, 0, 0.5, 12, 12)];
                 1he.push(this.Gn.textChanged);
                 addChild(this.Gn);
-            };
+            }
         }
 
         private function od():1Jo{
@@ -800,7 +800,7 @@ private function _0t1():void{
                     usableClasses:this._1jK(),
                     keyCode:02E.24x[Parameters.data_.useSpecial]
                 }, _local3, _local4);
-            };
+            }
             return (_local1);
         }
 
@@ -812,7 +812,7 @@ private function _0t1():void{
             for each (_local3 in _local1)
             {
                 _local2.pushParams(_local3);
-            };
+            }
             return (_local2);
         }
 
@@ -831,7 +831,7 @@ private function _0t1():void{
             {
                 this._0ym.y = ((this.icon.height / 2) - (this._0ym.height / 2));
                 this._0ym.x = (1bH - 30);
-            };
+            }
             this.SG.x = 4;
             this.SG.y = (this.icon.height + 2);
             if (contains(this.line1))
@@ -844,7 +844,7 @@ private function _0t1():void{
             {
                 this.line1.y = (this.SG.y + this.SG.height);
                 this._0Ya.y = this.line1.y;
-            };
+            }
             this.line2.x = 8;
             this.line2.y = ((this._0Ya.y + this._0Ya.height) + 8);
             var _local1:uint = (this.line2.y + 8);
@@ -853,15 +853,15 @@ private function _0t1():void{
                 this.Gn.x = 4;
                 this.Gn.y = _local1;
                 _local1 = (_local1 + this.Gn.height);
-            };
+            }
             if (this._0yi)
             {
                 if (contains(this._0yi))
                 {
                     this._0yi.x = 4;
                     this._0yi.y = _local1;
-                };
-            };
+                }
+            }
         }
 
         private function yh():void{
@@ -871,7 +871,7 @@ private function _0t1():void{
             } else
             {
                 this._07x = new 02M();
-            };
+            }
         }
 
         private function gA():void{
@@ -882,23 +882,23 @@ private function _0t1():void{
             if (this.player == null)
             {
                 return;
-            };
+            }
             var _local1:Number = (this.player.00N + this.player.1zn);
             if (_local1 < 30)
             {
                 return;
-            };
+            }
             var _local2:Vector.<XML> = new Vector.<XML>();
             if (this.curItemXML != null)
             {
                 this.curItemXML = this.curItemXML.copy();
                 _local2.push(this.curItemXML);
-            };
+            }
             if (this._0o4 != null)
             {
                 this._0o4 = this._0o4.copy();
                 _local2.push(this._0o4);
-            };
+            }
             for each (_local4 in _local2)
             {
                 for each (_local3 in _local4.Activate)
@@ -931,11 +931,11 @@ private function _0t1():void{
                                     _local3.@duration = this.tF(_local3.@duration);
                                     _local3.@range = this.tF(_local3.@range);
                                     break;
-                            };
-                        };
-                    };
-                };
-            };
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         private function tF(_arg1:String, _arg2:Number=1):String{
@@ -959,8 +959,8 @@ private function _0t1():void{
                 } else
                 {
                     _local3 = _local7.toFixed(0);
-                };
-            };
+                }
+            }
             return (_local3);
         }
 
@@ -996,14 +996,14 @@ class Effect {
     public function getValueReplacementsWithColor():Object{
         var _local4:String;
         var _local5:1cA;
-        var _local1:Object = {};
+        var _local1:Object = {}
         var _local2 = "";
         var _local3 = "";
         if (this.replacementColor_)
         {
             _local2 = (('</font><font color="#' + this.replacementColor_.toString(16)) + '">');
             _local3 = (('</font><font color="#' + this.color_.toString(16)) + '">');
-        };
+        }
         for (_local4 in this.valueReplacements_)
         {
             if ((this.valueReplacements_[_local4] is AppendingLineBuilder))
@@ -1019,9 +1019,9 @@ class Effect {
                 } else
                 {
                     _local1[_local4] = ((_local2 + this.valueReplacements_[_local4]) + _local3);
-                };
-            };
-        };
+                }
+            }
+        }
         return (_local1);
     }
 

@@ -63,14 +63,14 @@ import com.company.assembleegameclient.util.offer.Offer;
             if (!this.model.Qo)
             {
                 return (null);
-            };
+            }
             for each (_local1 in this.model.Qo.offerList)
             {
                 if (_local1.realmGold_ == _1eC)
                 {
                     return (_local1);
-                };
-            };
+                }
+            }
             return (null);
         }
 

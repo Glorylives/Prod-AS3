@@ -37,7 +37,7 @@ package _1zp{
             if (this._1F0 != null)
             {
                 this._1F0(this._2x._1nh);
-            };
+            }
             Parameters.save();
         }
 

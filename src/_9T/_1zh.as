@@ -45,22 +45,22 @@ import flash.display.Sprite;
             if (this.startTime_ == 0)
             {
                 this.startTime_ = (_arg2 + this.pb);
-            };
+            }
             if (_arg2 < this.startTime_)
             {
                 visible = false;
                 return (true);
-            };
+            }
             var _local3:int = (_arg2 - this.startTime_);
             if ((((_local3 > this.lifetime_)) || (((!((this.go_ == null))) && ((this.go_.map_ == null))))))
             {
                 return (false);
-            };
+            }
             if ((((this.go_ == null)) || (!(this.go_._1th))))
             {
                 visible = false;
                 return (true);
-            };
+            }
             visible = true;
             x = ((((this.go_)!=null) ? this.go_._1zh[0] : 0) + (((this._0aO)!=null) ? this._0aO.x : 0));
             var _local4:Number = ((_local3 / this.lifetime_) * this._1wl);

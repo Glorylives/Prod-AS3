@@ -15,7 +15,7 @@ package _0W4{
             for each (_local2 in _arg1.Animation)
             {
                 this._1fL.push(new _C(_local2));
-            };
+            }
         }
 
     }

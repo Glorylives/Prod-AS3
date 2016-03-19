@@ -89,7 +89,7 @@ package _1aA{
                 case "https":
                 default:
                     navigateToURL(new URLRequest(this.link), "_blank");
-            };
+            }
         }
 
         private function ad(_arg1:int):String{
@@ -98,19 +98,19 @@ package _1aA{
             if (_local3 <= 0)
             {
                 return ("now");
-            };
+            }
             if (_local3 < 60)
             {
                 return ((_local3 + " secs"));
-            };
+            }
             if (_local3 < (60 * 60))
             {
                 return ((int((_local3 / 60)) + " mins"));
-            };
+            }
             if (_local3 < ((60 * 60) * 24))
             {
                 return ((int((_local3 / (60 * 60))) + " hours"));
-            };
+            }
             return ((int((_local3 / ((60 * 60) * 24))) + " days"));
         }
 

@@ -28,7 +28,7 @@ package 1UB{
             {
                 this.0Up[_local1] = new ArenaLeaderboardListItem();
                 _local1++;
-            };
+            }
             this.1Tu.setSize(new Size(786, 400));
             addChild(this.1Tu);
         }
@@ -43,7 +43,7 @@ package 1UB{
                 _local5 = (this.0Up[_local3] as ArenaLeaderboardListItem);
                 _local5.apply(_local4, _arg2);
                 _local3++;
-            };
+            }
             this.1Tu.setItems(this.0Up);
         }
 

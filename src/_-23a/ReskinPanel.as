@@ -61,7 +61,7 @@ package 23a{
             if ((((_arg1.keyCode == Parameters.data_.interact)) && ((stage.focus == null))))
             {
                 this.reskin.dispatch();
-            };
+            }
         }
 
 

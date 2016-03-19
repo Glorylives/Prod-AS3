@@ -30,7 +30,7 @@ package 0qj{
             if (!_arg2)
             {
                 filters = [];
-            };
+            }
             1he.push(this.1MV.textChanged);
         }
 
@@ -42,7 +42,7 @@ package 0qj{
             if ((((this.1K == null)) || ((this.1K.length == 0))))
             {
                 return;
-            };
+            }
             var _local2:int;
             for each (_local3 in _arg1)
             {
@@ -52,7 +52,7 @@ package 0qj{
                 addChild(_local4);
                 this.wd.push(_local4);
                 _local2 = (_local2 + 32);
-            };
+            }
             this.1MV.x = ((width / 2) - (this.1MV.width / 2));
             this.1MV.y = _local2;
             draw();
@@ -64,7 +64,7 @@ package 0qj{
             for each (_local1 in this.wd)
             {
                 removeChild(_local1);
-            };
+            }
             this.wd.length = 0;
         }
 

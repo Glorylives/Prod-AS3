@@ -59,7 +59,7 @@ package 0QW{
             if (toolTip_ != null)
             {
                 stage.addChild(toolTip_);
-            };
+            }
         }
 
         protected function 1Di():void{
@@ -68,9 +68,9 @@ package 0QW{
                 if (toolTip_.parent != null)
                 {
                     toolTip_.parent.removeChild(toolTip_);
-                };
+                }
                 toolTip_ = null;
-            };
+            }
         }
 
         protected function getToolTip():1ae{
@@ -84,13 +84,13 @@ package 0QW{
             {
                 graphics.lineStyle(1, 0xFFFFFF);
                 _local1 = 0x7F7F7F;
-            };
+            }
             graphics.beginFill(((this.01-) ? 0x565656 : 0x363636), 1);
             graphics.drawRect(2, 2, (WIDTH - 4), (HEIGHT - 4));
             if (this.selected_)
             {
                 graphics.lineStyle();
-            };
+            }
             graphics.endFill();
         }
 

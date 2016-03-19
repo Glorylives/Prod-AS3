@@ -95,14 +95,14 @@ package sC{
             {
                 this.1lW(_arg1);
                 return;
-            };
+            }
             if ((_local3 is 14l))
             {
                 _local4 = (_local3 as 14l);
                 if (this.16Q(_local2, _local4))
                 {
                     this.ui(_local2, _local4);
-                };
+                }
             } else
             {
                 if ((_local3 is WK))
@@ -114,7 +114,7 @@ package sC{
                         1T2.1hP.invSwap(this.view.curPlayer, _local2.0ZD.owner, _local2.1eu, _local2.0ep.itemId, this.view.curPlayer, _local6, 0J9.1Qx);
                         _local2.setItem(0J9.1Qx);
                         _local2.0bZ(this.view.curPlayer);
-                    };
+                    }
                 } else
                 {
                     if ((_local3 is 0YK))
@@ -130,16 +130,16 @@ package sC{
                             _local2.blockingItemUpdates = true;
                             _local2.0bZ(this.view.curPlayer);
                             _local7.15s(_local8);
-                        };
+                        }
                     } else
                     {
                         if ((((_local3 is Map)) || ((this.11u.ja.map.mouseX < 300))))
                         {
                             this.d1(_local2);
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             _local2.u0();
         }
 
@@ -161,8 +161,8 @@ package sC{
                 if ((((_local3 is Map)) || ((this.11u.ja.map.mouseX < 300))))
                 {
                     this.d1(_local2);
-                };
-            };
+                }
+            }
             _local2.u0();
         }
 
@@ -170,7 +170,7 @@ package sC{
             if (((((((!(1T2.1hP)) || (!(this.view.16t)))) || (!(_arg1)))) || ((this.12J.08L(_arg1.mh()).0kC <= this.11u.ja.map.player_.getPotionCount(_arg1.mh())))))
             {
                 return;
-            };
+            }
             1T2.1hP.invSwapPotion(this.view.curPlayer, this.view.owner, _arg1.1eu, _arg1.0ep.itemId, this.view.curPlayer, 1z1.gp(_arg1.mh()), 0J9.1Qx);
             _arg1.setItem(0J9.1Qx);
             _arg1.0bZ(this.view.curPlayer);
@@ -180,19 +180,19 @@ package sC{
             if (!_arg1.canHoldItem(_arg2.mh()))
             {
                 return (false);
-            };
+            }
             if (!_arg2.canHoldItem(_arg1.mh()))
             {
                 return (false);
-            };
+            }
             if ((1mR(_arg2.parent).owner is OneWayContainer))
             {
                 return (false);
-            };
+            }
             if (((_arg1.blockingItemUpdates) || (_arg2.blockingItemUpdates)))
             {
                 return (false);
-            };
+            }
             return (true);
         }
 
@@ -216,21 +216,21 @@ package sC{
                         if (_local5[_local7] < 0)
                         {
                             break;
-                        };
+                        }
                         _local7++;
-                    };
+                    }
                     if (_local7 < _local6)
                     {
                         this.015(_arg1, _local4, _local7);
                     } else
                     {
                         1T2.1hP.invDrop(this.view.owner, _arg1.1eu, _arg1.mh());
-                    };
+                    }
                 } else
                 {
                     1T2.1hP.invDrop(this.view.owner, _arg1.1eu, _arg1.mh());
-                };
-            };
+                }
+            }
             _arg1.setItem(-1);
         }
 
@@ -238,7 +238,7 @@ package sC{
             if (((((((!(1T2.1hP)) || (!(this.view.16t)))) || (!(_arg1)))) || (!(_arg2))))
             {
                 return (false);
-            };
+            }
             1T2.1hP.invSwap(this.view.curPlayer, this.view.owner, _arg1.1eu, _arg1.0ep.itemId, _arg2.0ZD.owner, _arg2.1eu, _arg2.0ep.itemId);
             var _local3:int = _arg1.mh();
             _arg1.setItem(_arg2.mh());
@@ -252,7 +252,7 @@ package sC{
             if (((((((!(1T2.1hP)) || (!(this.view.16t)))) || (!(_arg1)))) || (!(_arg2))))
             {
                 return;
-            };
+            }
             1T2.1hP.invSwap(this.view.curPlayer, this.view.owner, _arg1.1eu, _arg1.0ep.itemId, _arg2, _arg3, -1);
             _arg1.setItem(0J9.1Qx);
         }
@@ -262,7 +262,7 @@ package sC{
             if ((((_local2.0ZD is 1cg)) || ((_local2.0ZD is 0t7))))
             {
                 1T2.1hP.useItem_new(_local2.0ZD.owner, _local2.1eu);
-            };
+            }
         }
 
         private function 0UQ(_arg1:WE):void{
@@ -279,9 +279,9 @@ package sC{
                         1T2.1hP.invSwap(this.view.curPlayer, _local2.0ZD.owner, _local2.1eu, _local2.0ep.itemId, this.view.curPlayer, _local3, 0J9.1Qx);
                         _local2.setItem(0J9.1Qx);
                         _local2.0bZ(this.view.curPlayer);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function Go(_arg1:WE):void{
@@ -302,9 +302,9 @@ package sC{
                     } else
                     {
                         this.1G4(_local2);
-                    };
-                };
-            };
+                    }
+                }
+            }
             this.view.20x();
         }
 
@@ -321,8 +321,8 @@ package sC{
                 } else
                 {
                     this.12K.dispatch(1Ys.make(Parameters.1Wj, "server.use_in_petyard"));
-                };
-            };
+                }
+            }
         }
 
         private function tA(_arg1:14l):Boolean{
@@ -338,7 +338,7 @@ package sC{
             if (_local2 != -1)
             {
                 1T2.1hP.invSwap(this.view.curPlayer, this.view.owner, _arg1.1eu, _arg1.0ep.itemId, this.view.curPlayer, _local2, 0J9.1Qx);
-            };
+            }
         }
 
         private function 068(_arg1:14l):void{
@@ -351,7 +351,7 @@ package sC{
             } else
             {
                 1T2.1hP.useItem_new(_local2, _arg1.1eu);
-            };
+            }
         }
 
         private function 1G4(_arg1:14l):void{
@@ -364,7 +364,7 @@ package sC{
             } else
             {
                 1T2.1hP.useItem_new(_local2, _arg1.1eu);
-            };
+            }
         }
 
 

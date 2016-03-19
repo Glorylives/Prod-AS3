@@ -49,14 +49,14 @@ package 0sC{
                 this.view.0qp();
                 this.view.disable();
                 _local1 = _1JZ.0JF().getInstance(Fu);
-                _local2 = {};
+                _local2 = {}
                 _local2.password = this.view.password_.text();
                 this.newPassword = this.view.rr.text();
                 _local2.newPassword = this.view.rr.text();
                 _local2.guid = this.account.getUserId();
                 _local1.sendRequest("/account/changePassword", _local2);
                 _local1.complete.addOnce(this.onComplete);
-            };
+            }
         }
 
         private function 0Ec():Boolean{
@@ -64,7 +64,7 @@ package 0sC{
             if (!_local1)
             {
                 this.view.password_.07n(du.18m);
-            };
+            }
             return (_local1);
         }
 
@@ -73,7 +73,7 @@ package 0sC{
             if (!_local1)
             {
                 this.view.rr.07n(du.4r);
-            };
+            }
             return (_local1);
         }
 
@@ -82,7 +82,7 @@ package 0sC{
             if (!_local1)
             {
                 this.view.96.07n(du.jw);
-            };
+            }
             return (_local1);
         }
 
@@ -94,7 +94,7 @@ package 0sC{
             {
                 this.account.19R(this.account.getUserId(), this.newPassword);
                 this.closeDialogs.dispatch();
-            };
+            }
         }
 
         private function 0ys(_arg1:String):void{

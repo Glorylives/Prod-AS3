@@ -38,7 +38,7 @@ package com.company.assembleegameclient.appengine{
                 _local5 = _1JZ._0JF().getInstance(_zL).getPetVO(_local4);
                 _local5.apply(_local3);
                 this.BP(_local5);
-            };
+            }
         }
 
         public static function getImage(_arg1:SavedCharacter, _arg2:XML, _arg3:int, _arg4:int, _arg5:Number, _arg6:Boolean, _arg7:Boolean):BitmapData{
@@ -56,8 +56,8 @@ package com.company.assembleegameclient.appengine{
                 if (!_arg7)
                 {
                     _local12 = _hd._07J(_local12, new ColorTransform(0.75, 0.75, 0.75, 1, 0, 0, 0, 0));
-                };
-            };
+                }
+            }
             return (_local12);
         }
 
@@ -67,7 +67,7 @@ package com.company.assembleegameclient.appengine{
             if (_local3 != _local4)
             {
                 return ((_local4 - _local3));
-            };
+            }
             return ((_arg2.Io() - _arg1.Io()));
         }
 

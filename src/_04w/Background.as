@@ -28,7 +28,7 @@ import flash.display.Sprite;
                     return (new StarBackground());
                 case _1MD:
                     return (new NexusBackground());
-            };
+            }
             return (null);
         }
 

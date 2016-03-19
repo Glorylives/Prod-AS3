@@ -20,7 +20,7 @@ import flash.utils.getQualifiedClassName;
             if (_arg1)
             {
                 this.ctor = new _15R();
-            };
+            }
         }
 
         public function _1uE(_arg1:Array, _arg2:Array=null, _arg3:uint=2147483647, _arg4:Dictionary=null):_3A{
@@ -32,7 +32,7 @@ import flash.utils.getQualifiedClassName;
             if (this.KG)
             {
                 throw (new _03A("Can't add injection point after post construct method"));
-            };
+            }
             this.gj(new _UV(((getQualifiedClassName(_arg2) + "|") + _arg3), _arg1, _arg4, _arg5));
             return (this);
         }
@@ -41,7 +41,7 @@ import flash.utils.getQualifiedClassName;
             if (this.KG)
             {
                 throw (new 03A("Can't add injection point after post construct method"));
-            };
+            }
             this.gj(new 09S(_arg1, this.0mb(_arg2, ((_arg3) || ([]))), Math.min(_arg4, _arg2.length), _arg5, _arg6));
             return (this);
         }
@@ -62,7 +62,7 @@ import flash.utils.getQualifiedClassName;
             {
                 this.1iP = _local5;
                 this.1iP.last = _local5;
-            };
+            }
             return (this);
         }
 
@@ -75,7 +75,7 @@ import flash.utils.getQualifiedClassName;
             {
                 this.injectionPoints = _arg1;
                 this.injectionPoints.last = _arg1;
-            };
+            }
         }
 
         private function 0mb(_arg1:Array, _arg2:Array):Array{
@@ -84,7 +84,7 @@ import flash.utils.getQualifiedClassName;
             while (_local4--)
             {
                 _local3[_local4] = ((getQualifiedClassName(_arg1[_local4]) + "|") + ((_arg2[_local4]) || ("")));
-            };
+            }
             return (_local3);
         }
 

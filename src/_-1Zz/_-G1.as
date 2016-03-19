@@ -26,7 +26,7 @@ package 1Zz{
             } else
             {
                 _local1 = new ChooseNameRegisterDialog();
-            };
+            }
             this.0n2.dispatch(_local1);
         }
 

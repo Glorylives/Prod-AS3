@@ -71,7 +71,7 @@ package 2-g{
             if (this.F1 == 1md)
             {
                 this.18u = (this.18u + ' <a href="event:gc">G</a> ');
-            };
+            }
             this.18u = (this.18u + '<a href="event:reset">R</a> <a href="event:close">X</a></menu></low></r>');
             init(_arg2, _arg3, true);
         }
@@ -80,7 +80,7 @@ package 2-g{
             if (this.0qK)
             {
                 console.graphing.remove(this.0qK.name);
-            };
+            }
         }
 
         public function get group():1oT{
@@ -88,13 +88,13 @@ package 2-g{
         }
 
         public function reset():void{
-            this.02w = {};
+            this.02w = {}
             this.graph.graphics.clear();
             if (!this.0qK.fixed)
             {
                 this.0qK.low = NaN;
                 this.0qK.7p = NaN;
-            };
+            }
         }
 
         override public function set height(_arg1:Number):void{
@@ -140,12 +140,12 @@ package 2-g{
                 if (!this.0r2)
                 {
                     return;
-                };
-            };
+                }
+            }
             if (this.0r2)
             {
                 _arg2 = true;
-            };
+            }
             this.0r2 = false;
             var _local4:Array = _arg1.interests;
             var _local5:int = (width - this.0J5);
@@ -159,7 +159,7 @@ package 2-g{
                 TextField(((_arg1.1JS) ? this.Q2 : this.ox)).text = String(_arg1.low);
                 TextField(((_arg1.1JS) ? this.ox : this.Q2)).text = String(_arg1.7p);
                 this.graph.graphics.clear();
-            };
+            }
             for each (_local11 in _local4)
             {
                 this.8d = _local11;
@@ -170,7 +170,7 @@ package 2-g{
                     _local10 = true;
                     _local14 = new Array(this.8d.col.toString(16), new Array());
                     this.02w[_local13] = _local14;
-                };
+                }
                 _local15 = _local14[1];
                 if (_local3 == 1)
                 {
@@ -180,22 +180,22 @@ package 2-g{
                         if (_local17 > 30)
                         {
                             _local17 = 30;
-                        };
+                        }
                         while (_local17 > 0)
                         {
                             _local15.push(this.8d.v);
                             _local17--;
-                        };
+                        }
                     } else
                     {
                         _local15.push(this.8d.v);
-                    };
-                };
+                    }
+                }
                 _local16 = (Math.floor(_local5) + 10);
                 while (_local15.length > _local16)
                 {
                     _local15.shift();
-                };
+                }
                 if (_arg2)
                 {
                     _local18 = _local15.length;
@@ -208,43 +208,43 @@ package 2-g{
                         if (!_arg1.1JS)
                         {
                             _local21 = (_local6 - _local21);
-                        };
+                        }
                         if (_local21 < 0)
                         {
                             _local21 = 0;
-                        };
+                        }
                         if (_local21 > _local6)
                         {
                             _local21 = _local6;
-                        };
+                        }
                         if (_local20 == 1)
                         {
                             this.graph.graphics.moveTo(width, _local21);
-                        };
+                        }
                         this.graph.graphics.lineTo((_local5 - _local20), _local21);
                         _local20++;
-                    };
+                    }
                     if (((isNaN(this.8d.avg)) && (_local9)))
                     {
                         _local21 = (((this.8d.avg - _local7) / _local9) * _local6);
                         if (!_arg1.1JS)
                         {
                             _local21 = (_local6 - _local21);
-                        };
+                        }
                         if (_local21 < 0)
                         {
                             _local21 = 0;
-                        };
+                        }
                         if (_local21 > _local6)
                         {
                             _local21 = _local6;
-                        };
+                        }
                         this.graph.graphics.lineStyle(1, this.8d.col, 0.3);
                         this.graph.graphics.moveTo(0, _local21);
                         this.graph.graphics.lineTo(_local5, _local21);
-                    };
-                };
-            };
+                    }
+                }
+            }
             for (_local12 in this.02w)
             {
                 for each (_local11 in _local4)
@@ -252,18 +252,18 @@ package 2-g{
                     if (_local11.key == _local12)
                     {
                         _local22 = true;
-                    };
-                };
+                    }
+                }
                 if (!_local22)
                 {
                     _local10 = true;
                     delete this.02w[_local12];
-                };
-            };
+                }
+            }
             if (((_arg2) && (((_local10) || (this.F1)))))
             {
                 this.0Ew();
-            };
+            }
         }
 
         public function 0Ew():void{
@@ -282,16 +282,16 @@ package 2-g{
                     } else
                     {
                         _local1 = (_local1 + (this.8d.v + "mb"));
-                    };
-                };
+                    }
+                }
             } else
             {
                 for (_local2 in this.02w)
                 {
                     _local1 = (_local1 + ((((" <font color='#" + this.02w[_local2][0]) + "'>") + _local2) + "</font>"));
-                };
+                }
                 _local1 = (_local1 + " |");
-            };
+            }
             8h.htmlText = (_local1 + this.18u);
             8h.scrollH = 8h.maxScrollH;
         }
@@ -316,17 +316,17 @@ package 2-g{
                         } else
                         {
                             this.stop();
-                        };
-                    };
+                        }
+                    }
                     console.panels.removeGraph(this.0qK);
                 } else
                 {
                     if (_arg1.text == "gc")
                     {
                         console.gc();
-                    };
-                };
-            };
+                    }
+                }
+            }
             _arg1.stopPropagation();
         }
 
@@ -335,7 +335,7 @@ package 2-g{
             if (_local2 == "gc")
             {
                 _local2 = "Garbage collect::Requires debugger version _of flash player";
-            };
+            }
             console.panels.tooltip(_local2, this);
         }
 

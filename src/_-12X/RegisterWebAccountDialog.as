@@ -82,7 +82,7 @@ package 12X{
                 _local2.username = this.0G1.text();
                 _local2.password = this.1Ih.text();
                 this.register.dispatch(_local2);
-            };
+            }
         }
 
         private function 05D():Boolean{
@@ -90,7 +90,7 @@ package 12X{
             if (!_local1)
             {
                 this.checkbox.07n(du.1bc);
-            };
+            }
             return (_local1);
         }
 
@@ -99,7 +99,7 @@ package 12X{
             if (!_local1)
             {
                 this.0G1.07n(du.PU);
-            };
+            }
             return (_local1);
         }
 
@@ -108,7 +108,7 @@ package 12X{
             if (!_local1)
             {
                 this.1Ih.07n(du.4r);
-            };
+            }
             return (_local1);
         }
 
@@ -117,7 +117,7 @@ package 12X{
             if (!_local1)
             {
                 this.1RR.07n(du.jw);
-            };
+            }
             return (_local1);
         }
 

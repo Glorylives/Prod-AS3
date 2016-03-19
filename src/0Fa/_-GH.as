@@ -39,7 +39,7 @@ package 0Fa{
             if (_arg1 != null)
             {
                 this.input.text = _arg1;
-            };
+            }
             var _local3:int = ((_arg1) ? _arg1.length : 0);
             this.input.setSelection(_local3, _local3);
             if (_arg2)
@@ -48,7 +48,7 @@ package 0Fa{
             } else
             {
                 this.0Pd();
-            };
+            }
             visible = true;
         }
 
@@ -100,9 +100,9 @@ package 0Fa{
                 } else
                 {
                     this.close.dispatch();
-                };
+                }
                 _arg1.stopImmediatePropagation();
-            };
+            }
         }
 
 

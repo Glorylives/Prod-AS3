@@ -23,8 +23,8 @@ package 0lB{
                 {
                     this.0sA(_local2);
                     return;
-                };
-            };
+                }
+            }
         }
 
         public function 0NO():156{
@@ -35,7 +35,7 @@ package 0lB{
             if (this.selected != null)
             {
                 this.selected.setSelected(false);
-            };
+            }
             this.selected = _arg1;
             this.selected.setSelected(true);
         }

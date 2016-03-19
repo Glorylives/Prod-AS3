@@ -43,7 +43,7 @@ import _0OG._22M;
             {
                 this._1Za.debug("Adding context existence event listener to container {0}", [_local1]);
                 _local1.addEventListener(ModularContextEvent.ZC, this._0cd);
-            };
+            }
             this.kw.addEventListener(_1Be._1fg, this._1h3);
             this.kw.addEventListener(_1Be._0PQ, this._0yl);
         }
@@ -54,14 +54,14 @@ import _0OG._22M;
             {
                 this._1Za.debug("Removing context existence event listener from container {0}", [_local1]);
                 _local1.removeEventListener(ModularContextEvent.ZC, this._0cd);
-            };
+            }
             this.kw.removeEventListener(_1Be._1fg, this._1h3);
             this.kw.removeEventListener(_1Be._0PQ, this._0yl);
             if (this._0Tc)
             {
                 this._1Za.debug("Unlinking parent injector for child context {0}", [this._0Tc]);
                 this._0Tc.kf._1Li = null;
-            };
+            }
         }
 
         private function _1h3(_arg1:_1Be):void{

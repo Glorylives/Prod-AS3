@@ -33,7 +33,7 @@ package com.company.assembleegameclient.screens.charrects{
                 super.makeTaglineIcon();
                 super.makeTaglineText(new 1cA().setParams(du.wP, {remainingStars:_local2}));
                 taglineText.x = (taglineText.x + taglineIcon.width);
-            };
+            }
         }
 
         public function makeBitmap():void{

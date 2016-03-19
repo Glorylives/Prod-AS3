@@ -64,7 +64,7 @@ package com.company.assembleegameclient.ui{
             if (!_arg2)
             {
                 transform.colorTransform = MoreColorUtil.0gn;
-            };
+            }
             this.S = this.0iA();
             addChild(this.S);
             this.setIncluded(_arg3);
@@ -82,7 +82,7 @@ package com.company.assembleegameclient.ui{
             if (!this.isEmpty())
             {
                 this.1vN();
-            };
+            }
         }
 
         private function 1vN():void{
@@ -97,7 +97,7 @@ package com.company.assembleegameclient.ui{
                 _local1 = _local1.clone();
                 _local5 = this.nE.make(new 1WS(String(_local2.Doses)), 12, 0xFFFFFF, false, 1Ab, false);
                 _local1.draw(_local5, 0sv);
-            };
+            }
             _local3 = 09l(this.item_, type_, false);
             _local4 = new Bitmap(_local1);
             _local4.x = (((WIDTH / 2) - (_local4.width / 2)) + _local3.x);
@@ -114,7 +114,7 @@ package com.company.assembleegameclient.ui{
             } else
             {
                 1Au.color = 0x545454;
-            };
+            }
             0aJ();
         }
 
@@ -151,7 +151,7 @@ package com.company.assembleegameclient.ui{
             if (!this.isEmpty())
             {
                 this.1-P.tooltip = this.0a2.make(this.item_, _arg1, -1, 1Ha.OTHER_PLAYER, this.id);
-            };
+            }
         }
 
         public function isEmpty():Boolean{

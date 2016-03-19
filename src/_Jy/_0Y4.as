@@ -18,36 +18,36 @@ package _Jy{
                 if (NIL)
                 {
                     throw (new ArgumentError("Parameters head and tail are null. Use the NIL element instead."));
-                };
+                }
                 this.nonEmpty = false;
             } else
             {
                 if (!_arg1)
                 {
                     throw (new ArgumentError("Parameter head cannot be null."));
-                };
+                }
                 this._0kc = _arg1;
                 this._0wv = ((_arg2) || (NIL));
                 this.nonEmpty = true;
-            };
+            }
         }
 
         public function get length():uint{
             if (!this.nonEmpty)
             {
                 return (0);
-            };
+            }
             if (this._0wv == NIL)
             {
                 return (1);
-            };
+            }
             var _local1:uint;
             var _local2:_0Y4 = this;
             while (_local2.nonEmpty)
             {
                 _local1++;
                 _local2 = _local2._0wv;
-            };
+            }
             return (_local1);
         }
 
@@ -59,15 +59,15 @@ package _Jy{
             if (!_arg1)
             {
                 return (this);
-            };
+            }
             if (!this.nonEmpty)
             {
                 return (new _0Y4(_arg1));
-            };
+            }
             if (this._0wv == NIL)
             {
                 return (new _0Y4(_arg1).prepend(this._0kc));
-            };
+            }
             var _local2:_0Y4 = new _0Y4(this._0kc);
             var _local3:_0Y4 = _local2;
             var _local4:_0Y4 = this._0wv;
@@ -75,7 +75,7 @@ package _Jy{
             {
                 _local3 = (_local3._0wv = new _0Y4(_local4._0kc));
                 _local4 = _local4._0wv;
-            };
+            }
             _local3._0wv = new _0Y4(_arg1);
             return (_local2);
         }
@@ -84,12 +84,12 @@ package _Jy{
             if (!this.nonEmpty)
             {
                 return (new _0Y4(_arg1));
-            };
+            }
             var _local2:int = _arg1.priority;
             if (_local2 > this._0kc.priority)
             {
                 return (this.prepend(_arg1));
-            };
+            }
             var _local3:_0Y4 = new _0Y4(this._0kc);
             var _local4:_0Y4 = _local3;
             var _local5:_0Y4 = this._0wv;
@@ -99,10 +99,10 @@ package _Jy{
                 {
                     _local4._0wv = _local5.prepend(_arg1);
                     return (_local3);
-                };
+                }
                 _local4 = (_local4._0wv = new _0Y4(_local5._0kc));
                 _local5 = _local5._0wv;
-            };
+            }
             _local4._0wv = new _0Y4(_arg1);
             return (_local3);
         }
@@ -111,11 +111,11 @@ package _Jy{
             if (((!(this.nonEmpty)) || ((_arg1 == null))))
             {
                 return (this);
-            };
+            }
             if (_arg1 == this._0kc.listener)
             {
                 return (this._0wv);
-            };
+            }
             var _local2:_0Y4 = new _0Y4(this._0kc);
             var _local3:_0Y4 = _local2;
             var _local4:_0Y4 = this._0wv;
@@ -125,10 +125,10 @@ package _Jy{
                 {
                     _local3._0wv = _local4._0wv;
                     return (_local2);
-                };
+                }
                 _local3 = (_local3._0wv = new _0Y4(_local4._0kc));
                 _local4 = _local4._0wv;
-            };
+            }
             return (this);
         }
 
@@ -136,16 +136,16 @@ package _Jy{
             if (!this.nonEmpty)
             {
                 return (false);
-            };
+            }
             var _local2:_0Y4 = this;
             while (_local2.nonEmpty)
             {
                 if (_local2._0kc.listener == _arg1)
                 {
                     return (true);
-                };
+                }
                 _local2 = _local2._0wv;
-            };
+            }
             return (false);
         }
 
@@ -153,16 +153,16 @@ package _Jy{
             if (!this.nonEmpty)
             {
                 return (null);
-            };
+            }
             var _local2:_0Y4 = this;
             while (_local2.nonEmpty)
             {
                 if (_local2._0kc.listener == _arg1)
                 {
                     return (_local2._0kc);
-                };
+                }
                 _local2 = _local2._0wv;
-            };
+            }
             return (null);
         }
 
@@ -173,7 +173,7 @@ package _Jy{
             {
                 _local1 = (_local1 + (_local2._0kc + " -> "));
                 _local2 = _local2._0wv;
-            };
+            }
             _local1 = (_local1 + "NIL");
             return ((("[List " + _local1) + "]"));
         }

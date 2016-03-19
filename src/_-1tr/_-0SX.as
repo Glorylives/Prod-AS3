@@ -32,10 +32,10 @@ package 1tr{
                 if (_local1 != null)
                 {
                     this.1zL = _local1;
-                };
+                }
             } catch(error:Error)
             {
-            };
+            }
         }
 
         public function 19R(_arg1:String, _arg2:String):void{
@@ -63,7 +63,7 @@ package 1tr{
             if ((((this.userSession == null)) || ((this.userSession["kabam_naid"] == null))))
             {
                 return ("");
-            };
+            }
             return (this.userSession["kabam_naid"]);
         }
 
@@ -75,13 +75,13 @@ package 1tr{
             if ((((((this.userSession == null)) || ((this.userSession["user"] == null)))) || ((this.userSession["user"]["email"] == null))))
             {
                 return ("");
-            };
+            }
             var _local1:String = this.userSession["user"]["email"];
             var _local2:Array = _local1.split("@", 2);
             if (_local2.length != 2)
             {
                 return ("");
-            };
+            }
             return (_local2[0]);
         }
 

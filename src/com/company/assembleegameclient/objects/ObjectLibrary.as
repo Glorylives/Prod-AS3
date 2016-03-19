@@ -72,7 +72,7 @@ import g0.StatData;
             Pet:Pet,
             PetUpgrader:PetUpgrader,
             YardUpgrader:YardUpgrader
-        };
+        }
 
         public static var wh:_1jJ = new _1jJ();
         public static var _1wa:Vector.<XML> = new Vector.<XML>();
@@ -94,14 +94,14 @@ import g0.StatData;
                 if (_local2.hasOwnProperty("DisplayId"))
                 {
                     _local4 = _local2.DisplayId;
-                };
+                }
                 if (_local2.hasOwnProperty("Group"))
                 {
                     if (_local2.Group == "Hexable")
                     {
                         _0XI.push(_local2);
-                    };
-                };
+                    }
+                }
                 _local5 = int(_local2.@type);
                 if (((_local2.hasOwnProperty("PetBehavior")) || (_local2.hasOwnProperty("PetAbility"))))
                 {
@@ -123,25 +123,25 @@ import g0.StatData;
                             {
                                 _1wa[_local7] = _local2;
                                 _local6 = true;
-                            };
+                            }
                             _local7++;
-                        };
+                        }
                         if (!_local6)
                         {
                             _1wa.push(_local2);
-                        };
-                    };
+                        }
+                    }
                     hE[_local5] = wh.create(_local2);
                     if (_local2.hasOwnProperty("Top"))
                     {
                         _1Vi[_local5] = wh.create(XML(_local2.Top));
-                    };
+                    }
                     if (_local2.hasOwnProperty("Animation"))
                     {
                         Kx[_local5] = new _Zv(_local2);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public static function Uq(_arg1:int):String{
@@ -149,7 +149,7 @@ import g0.StatData;
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             return (String(_local2.@id));
         }
 
@@ -180,7 +180,7 @@ import g0.StatData;
             if (_local2 == null)
             {
                 return (null);
-            };
+            }
             return (_local2.getTexture());
         }
 
@@ -190,7 +190,7 @@ import g0.StatData;
             if (_local3)
             {
                 return (_local3);
-            };
+            }
             return (AssetLibrary._1JR(_01g, _1hq));
         }
 
@@ -201,7 +201,7 @@ import g0.StatData;
             if (_local8 == null)
             {
                 return (TextureRedrawer.redraw(_local6, _arg2, _arg3, 0, _arg4, _arg5));
-            };
+            }
             var _local9:XML = GD[_arg1];
             var _local10:int = ((_local9.hasOwnProperty("Tex1")) ? int(_local9.Tex1) : 0);
             var _local11:int = ((_local9.hasOwnProperty("Tex2")) ? int(_local9.Tex2) : 0);
@@ -215,7 +215,7 @@ import g0.StatData;
             if (!_local2.hasOwnProperty("Size"))
             {
                 return (100);
-            };
+            }
             return (int(_local2.Size));
         }
 
@@ -224,7 +224,7 @@ import g0.StatData;
             if (!_local2.hasOwnProperty("SlotType"))
             {
                 return (-1);
-            };
+            }
             return (int(_local2.SlotType));
         }
 
@@ -232,7 +232,7 @@ import g0.StatData;
             if (_arg1 == _0J9._1Qx)
             {
                 return (false);
-            };
+            }
             var _local3:XML = GD[_arg1];
             var _local4:int = int(_local3.SlotType.toString());
             var _local5:uint;
@@ -241,9 +241,9 @@ import g0.StatData;
                 if (_arg2.px[_local5] == _local4)
                 {
                     return (true);
-                };
+                }
                 _local5++;
-            };
+            }
             return (false);
         }
 
@@ -261,10 +261,10 @@ import g0.StatData;
                     if (_arg2.px[_local5] == _local4)
                     {
                         return (_local5);
-                    };
+                    }
                     _local5++;
-                };
-            };
+                }
+            }
             return (-1);
         }
 
@@ -272,26 +272,26 @@ import g0.StatData;
             if (_arg2 == null)
             {
                 return (true);
-            };
+            }
             var _local3:XML = GD[_arg1];
             if ((((_local3 == null)) || (!(_local3.hasOwnProperty("SlotType")))))
             {
                 return (false);
-            };
+            }
             var _local4:int = _local3.SlotType;
             if ((((_local4 == _0J9._1en)) || ((_local4 == _0J9._0ne))))
             {
                 return (true);
-            };
+            }
             var _local5:int;
             while (_local5 < _arg2.px.length)
             {
                 if (_arg2.px[_local5] == _local4)
                 {
                     return (true);
-                };
+                }
                 _local5++;
-            };
+            }
             return (false);
         }
 
@@ -308,12 +308,12 @@ import g0.StatData;
             if ((((_local2 == null)) || (!(_local2.hasOwnProperty("SlotType")))))
             {
                 return (null);
-            };
+            }
             var _local3:int = _local2.SlotType;
             if ((((((_local3 == _0J9._1en)) || ((_local3 == _0J9._1S5)))) || ((_local3 == _0J9._0ne))))
             {
                 return (null);
-            };
+            }
             var _local4:Vector.<String> = new Vector.<String>();
             for each (_local5 in _1wa)
             {
@@ -325,10 +325,10 @@ import g0.StatData;
                     {
                         _local4.push(118[int(_local5.@type)]);
                         break;
-                    };
+                    }
                     _local7++;
-                };
-            };
+                }
+            }
             return (_local4);
         }
 
@@ -337,15 +337,15 @@ import g0.StatData;
             if (_arg2 == null)
             {
                 return (true);
-            };
+            }
             var _local3:XML = GD[_arg1];
             for each (_local4 in _local3.EquipRequirement)
             {
                 if (!_1Up(_local4, _arg2))
                 {
                     return (false);
-                };
-            };
+                }
+            }
             return (true);
         }
 
@@ -374,8 +374,8 @@ import g0.StatData;
                         return ((_arg2._00N >= _local3));
                     case StatData._0tQ:
                         return ((_arg2._0B0 >= _local3));
-                };
-            };
+                }
+            }
             return (false);
         }
 

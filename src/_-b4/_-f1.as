@@ -209,11 +209,11 @@ package b4{
                     {
                         _local2[int(_local6)] = true;
                         this.0Cg.push(int(_local6));
-                    };
+                    }
                     _local4.push(int(_local6));
-                };
+                }
                 this.ft.push(_local4);
-            };
+            }
         }
 
         public function get 1c5():DisplayObject{

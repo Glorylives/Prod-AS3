@@ -65,7 +65,7 @@ package com.company.assembleegameclient.parameters{
             } catch(error:Error)
             {
                 data_ = new Object();
-            };
+            }
             _0S2();
             save();
         }
@@ -76,17 +76,17 @@ package com.company.assembleegameclient.parameters{
                 if (_0bh != null)
                 {
                     _0bh.flush();
-                };
+                }
             } catch(error:Error)
             {
-            };
+            }
         }
 
         private static function uB(_arg1:String, _arg2:uint):void{
             if (!data_.hasOwnProperty(_arg1))
             {
                 data_[_arg1] = _arg2;
-            };
+            }
             _0Fq[_arg1] = true;
         }
 
@@ -97,8 +97,8 @@ package com.company.assembleegameclient.parameters{
                 if (data_[_local3] == _arg2)
                 {
                     data_[_local3] = _02E._0Bo;
-                };
-            };
+                }
+            }
             data_[_arg1] = _arg2;
         }
 
@@ -106,7 +106,7 @@ package com.company.assembleegameclient.parameters{
             if (!data_.hasOwnProperty(_arg1))
             {
                 data_[_arg1] = _arg2;
-            };
+            }
         }
 
         public static function TP():Boolean{
@@ -204,7 +204,7 @@ package com.company.assembleegameclient.parameters{
             } else
             {
                 _0b3("GPURender", false);
-            };
+            }
             _0b3("forceChatQuality", false);
             _0b3("hidePlayerChat", false);
             _0b3("chatStarRequirement", 1);
@@ -220,14 +220,14 @@ package com.company.assembleegameclient.parameters{
             } else
             {
                 _0b3("musicVolume", 0);
-            };
+            }
             if (((data_.hasOwnProperty("playSFX")) && ((data_.playMusic == true))))
             {
                 _0b3("SFXVolume", 1);
             } else
             {
                 _0b3("SFXVolume", 0);
-            };
+            }
             _0b3("friendList", _02E._0Bo);
             _0b3("tradeWithFriends", false);
             _0b3("chatFriend", false);
@@ -263,8 +263,8 @@ package com.company.assembleegameclient.parameters{
                         data_.playTimeLeftTillSurvey = (2 * 60);
                         data_.surveyGroup = "2WeekRealtime";
                         return;
-                };
-            };
+                }
+            }
         }
 
 

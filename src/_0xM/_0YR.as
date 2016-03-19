@@ -18,14 +18,14 @@ package _0xM{
             if (_arg1)
             {
                 addChild(_arg1);
-            };
+            }
         }
 
         public function hide():void{
             if (((this.toolTip) && (this.toolTip.parent)))
             {
                 this.toolTip.parent.removeChild(this.toolTip);
-            };
+            }
             this.toolTip = null;
         }
 

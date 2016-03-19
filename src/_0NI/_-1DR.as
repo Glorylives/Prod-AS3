@@ -38,11 +38,11 @@ package 0NI{
             if (_arg2 > this.1B2)
             {
                 return;
-            };
+            }
             for each (_local6 in this.0lf)
             {
                 _local6.log(_arg1, _arg2, _arg3, _arg4, _arg5);
-            };
+            }
         }
 
 

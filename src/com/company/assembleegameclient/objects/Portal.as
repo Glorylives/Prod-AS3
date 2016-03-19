@@ -46,7 +46,7 @@ import flash.display.BitmapData;
             if (this._1OJ)
             {
                 GameObject._0lq(_arg1, _arg2);
-            };
+            }
         }
 
         public function getPanel(_arg1:GameSprite):Panel{

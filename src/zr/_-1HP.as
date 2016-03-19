@@ -32,7 +32,7 @@ package zr{
             if (this.1Rr)
             {
                 throw (new 03A(("Forbidden usage _of unmapped singleton provider for type " + getQualifiedClassName(this.00m))));
-            };
+            }
             return (_arg1.SsInternal::18Y(this.00m));
         }
 
@@ -41,14 +41,14 @@ package zr{
             if (!this.zv)
             {
                 return;
-            };
+            }
             var _local1:3A = this.1TN.2I(this.00m);
             var _local2:1-W = _local1.1iP;
             while (_local2)
             {
                 _local2.applyInjection(this.zv, this.00m, this.1TN);
                 _local2 = 1-W(_local2.next);
-            };
+            }
             this.zv = null;
         }
 

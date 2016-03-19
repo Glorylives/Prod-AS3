@@ -22,12 +22,12 @@ import _CU._13j;
             {
                 this._064 = new _13j().setSize(20).setColor(0xFFFFFF);
                 this._2L(this._064, _arg5, _arg3);
-            };
+            }
             if (_arg4 != null)
             {
                 this.tipText_ = new _13j().setSize(14).setColor(0xB3B3B3);
                 this._2L(this.tipText_, _arg5, _arg4, _arg6);
-            };
+            }
         }
 
         override protected function alignUI():void{

@@ -62,7 +62,7 @@ package 0-O{
             if (this.1GD)
             {
                 return;
-            };
+            }
             this.1GD = true;
             var _local1:_22M = _1JZ.0JF();
             this.1LU = _local1.getInstance(0GW);
@@ -79,7 +79,7 @@ package 0-O{
             if (_arg2)
             {
                 this.1ej(_arg1.xml);
-            };
+            }
             this.1bV = _arg2;
             this.MB = _arg3;
             _arg1.reset();
@@ -90,7 +90,7 @@ package 0-O{
             if (_arg2)
             {
                 this.PR(_arg1.xml);
-            };
+            }
             this.0ri = _arg2;
             this.MB = _arg3;
             _arg1.reset();
@@ -119,7 +119,7 @@ package 0-O{
                     this.02y[_local5.getName()] = {
                         vo:_local5,
                         list:this.0fb
-                    };
+                    }
                 } else
                 {
                     _local5.11z();
@@ -127,9 +127,9 @@ package 0-O{
                     this.02y[_local5.getName()] = {
                         vo:_local5,
                         list:this.HC
-                    };
-                };
-            };
+                    }
+                }
+            }
             this.0fb.sort(this.0Y0);
             this.HC.sort(this.0Y0);
             this.14r = (this.0fb.length + this.HC.length);
@@ -149,8 +149,8 @@ package 0-O{
                     _local4 = Player.1KR(_local2, _local3.Character[0]);
                     this.1bg[_local2] = new 181(_local4);
                     this.44++;
-                };
-            };
+                }
+            }
         }
 
         public function 19L(_arg1:String):Boolean{
@@ -165,7 +165,7 @@ package 0-O{
                 _local3 = this.02y[_arg1];
                 _local4 = (_local3.vo as 181);
                 _local4.0bG(_arg2);
-            };
+            }
         }
 
         public function UW(_arg1:String):Vector.<181>{
@@ -179,9 +179,9 @@ package 0-O{
                 if (_local3.getName().search(_local2) >= 0)
                 {
                     _local4.push(_local3);
-                };
+                }
                 _local5++;
-            };
+            }
             _local5 = 0;
             while (_local5 < this.HC.length)
             {
@@ -189,9 +189,9 @@ package 0-O{
                 if (_local3.getName().search(_local2) >= 0)
                 {
                     _local4.push(_local3);
-                };
+                }
                 _local5++;
-            };
+            }
             return (_local4);
         }
 
@@ -209,7 +209,7 @@ package 0-O{
             for each (_local2 in this.1bg)
             {
                 _local1.push(_local2);
-            };
+            }
             _local1.sort(this.0Y0);
             return (_local1);
         }
@@ -222,7 +222,7 @@ package 0-O{
                 this.02y[_arg1] = null;
                 delete this.02y[_arg1];
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -232,7 +232,7 @@ package 0-O{
                 this.1bg[_arg1] = null;
                 delete this.1bg[_arg1];
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -246,20 +246,20 @@ package 0-O{
                 {
                     _arg1.slice(_local4, 1);
                     return;
-                };
+                }
                 _local4++;
-            };
+            }
         }
 
         private function 0Y0(_arg1:181, _arg2:181):Number{
             if (_arg1.getName() < _arg2.getName())
             {
                 return (-1);
-            };
+            }
             if (_arg1.getName() > _arg2.getName())
             {
                 return (1);
-            };
+            }
             return (0);
         }
 
@@ -268,13 +268,13 @@ package 0-O{
             if (this.xr)
             {
                 return (this.xr);
-            };
+            }
             var _local1:Vector.<Server> = this.03t.1Gj();
             this.xr = new Dictionary(true);
             for each (_local2 in _local1)
             {
                 this.xr[_local2.address] = _local2.name;
-            };
+            }
             return (this.xr);
         }
 

@@ -52,7 +52,7 @@ package _1zp{
             if (this.selected_)
             {
                 return (0xFFC800);
-            };
+            }
             return (((_arg1) ? 0xFFFFFF : 0xB3B3B3));
         }
 

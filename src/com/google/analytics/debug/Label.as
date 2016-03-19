@@ -33,13 +33,13 @@ package com.google.analytics.debug{
             if (_arg4 == null)
             {
                 _arg4 = Align.none;
-            };
+            }
             this.alignement = _arg4;
             this.stickToEdge = _arg5;
             if (_arg3 == 0)
             {
                 _arg3 = Style.backgroundColor;
-            };
+            }
             _color = _arg3;
             _textField.addEventListener(TextEvent.LINK, onLink);
         }
@@ -57,7 +57,7 @@ package com.google.analytics.debug{
             if (forcedWidth > 0)
             {
                 _local2 = forcedWidth;
-            };
+            }
             Background.drawRounded(this, _local1, _local2, _local3);
             _local1.endFill();
         }
@@ -70,11 +70,11 @@ package com.google.analytics.debug{
             if (_arg1 == "")
             {
                 return;
-            };
+            }
             if (_arg2 == "")
             {
                 _arg2 = tag;
-            };
+            }
             _textField.htmlText = (_textField.htmlText + (((('<span class="' + _arg2) + '">') + _arg1) + "</span>"));
             _text = (_text + _arg1);
             _draw();
@@ -85,7 +85,7 @@ package com.google.analytics.debug{
             if (_arg1 == "")
             {
                 _arg1 = _text;
-            };
+            }
             _textField.htmlText = (((('<span class="' + tag) + '">') + _arg1) + "</span>");
             _text = _arg1;
             _draw();

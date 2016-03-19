@@ -30,7 +30,7 @@ package 1JQ{
                 0mG = (getDefinitionByName("mx.core::UIComponent") as Class);
             } catch(error:Error)
             {
-            };
+            }
             return (!((0mG == null)));
         }
 
@@ -45,7 +45,7 @@ package 1JQ{
             {
                 this.1bW(event.view, mediator);
                 return;
-            };
+            }
             displayObject.addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
             if (((((nm) && ((displayObject is 0mG)))) && (!(displayObject["initialized"]))))
             {
@@ -54,12 +54,12 @@ package 1JQ{
                     if (_factory.og(displayObject, event.mapping))
                     {
                         1bW(displayObject, mediator);
-                    };
+                    }
                 });
             } else
             {
                 this.1bW(displayObject, mediator);
-            };
+            }
         }
 
         private function 1iS(_arg1:0Hp):void{
@@ -67,11 +67,11 @@ package 1JQ{
             if (_local2)
             {
                 _local2.removeEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
-            };
+            }
             if (_arg1.mediator)
             {
                 this.LK(_arg1.mediator);
-            };
+            }
         }
 
         private function onRemovedFromStage(_arg1:Event):void{
@@ -82,18 +82,18 @@ package 1JQ{
             if (_arg2.hasOwnProperty("viewComponent"))
             {
                 _arg2.viewComponent = _arg1;
-            };
+            }
             if (_arg2.hasOwnProperty("initialize"))
             {
                 _arg2.initialize();
-            };
+            }
         }
 
         private function LK(_arg1:Object):void{
             if (_arg1.hasOwnProperty("destroy"))
             {
                 _arg1.destroy();
-            };
+            }
         }
 
 

@@ -40,7 +40,7 @@ package aS{
             if (this.Xn.length == 1)
             {
                 this.0Wi(_arg1.commandClass);
-            };
+            }
         }
 
         public function oE(_arg1:1Mq):void{
@@ -51,8 +51,8 @@ package aS{
                 if (this.Xn.length == 0)
                 {
                     this.e0(_arg1.commandClass);
-                };
-            };
+                }
+            }
         }
 
         protected function 1As(_arg1:1Mq):void{
@@ -60,11 +60,11 @@ package aS{
             if (this.Vf[mapping.commandClass])
             {
                 return;
-            };
+            }
             if (describeType(mapping.commandClass).factory.method.(@name == "execute").length() == 0)
             {
                 throw (new Error("Command Class must expose an execute method"));
-            };
+            }
             this.Vf[mapping.commandClass] = true;
         }
 
@@ -84,17 +84,17 @@ package aS{
                     _local8 = this.dM.getInstance(_local6.commandClass);
                     applyHooks(_local6.1kC, this.dM);
                     this.dM.sJ(_local6.commandClass);
-                };
+                }
                 this.0tE(_arg1.valueClasses, _arg2);
                 if (_local7)
                 {
                     _local8.execute();
-                };
-            };
+                }
+            }
             if (this._once)
             {
                 this.e0(_arg3);
-            };
+            }
         }
 
         protected function 1eL(_arg1:Array, _arg2:Array):void{
@@ -103,7 +103,7 @@ package aS{
             {
                 this.dM.map(_arg1[_local3]).1eo(_arg2[_local3]);
                 _local3++;
-            };
+            }
         }
 
         protected function 0tE(_arg1:Array, _arg2:Array):void{
@@ -112,7 +112,7 @@ package aS{
             {
                 this.dM.sJ(_arg1[_local3]);
                 _local3++;
-            };
+            }
         }
 
         protected function 1Gk(_arg1:23R, _arg2:Class):Boolean{
@@ -120,7 +120,7 @@ package aS{
             if (_local3 == null)
             {
                 return (false);
-            };
+            }
             var _local4:Function = _local3[_arg2];
             return (!((_local4 == null)));
         }
@@ -130,13 +130,13 @@ package aS{
             if (this.1Gk(this._signal, commandClass))
             {
                 return;
-            };
+            }
             this._signal = this.dM.getInstance(this.br);
             this.dM.map(this.br).1eo(this._signal);
             var signalCommandMap:Dictionary = (this.1PX[this._signal] = ((this.1PX[this._signal]) || (new Dictionary(false))));
             var callback:Function = function ():void{
                 cL(_signal, arguments, commandClass, _once);
-            };
+            }
             signalCommandMap[commandClass] = callback;
             this._signal.add(callback);
         }
@@ -146,12 +146,12 @@ package aS{
             if (_local2 == null)
             {
                 return;
-            };
+            }
             var _local3:Function = _local2[_arg1];
             if (_local3 == null)
             {
                 return;
-            };
+            }
             this._signal.remove(_local3);
             delete _local2[_arg1];
         }

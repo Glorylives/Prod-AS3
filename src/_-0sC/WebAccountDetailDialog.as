@@ -42,7 +42,7 @@ package 0sC{
             if (!_arg2)
             {
                 this.zN();
-            };
+            }
             this.0wZ();
             this.1Hh();
         }
@@ -51,7 +51,7 @@ package 0sC{
             if (this.tH != null)
             {
                 removeChild(this.tH);
-            };
+            }
             this.tH = new 1im(12, false, "WebAccountDetailDialog.verify");
             0-C(this.tH);
             this.tH.addEventListener(MouseEvent.CLICK, this.N2);
@@ -61,7 +61,7 @@ package 0sC{
             if (this.ix != null)
             {
                 removeChild(this.ix);
-            };
+            }
             this.ix = new 1im(12, false, "WebAccountDetailDialog.changePassword");
             this.ix.addEventListener(MouseEvent.CLICK, this.1c0);
             0-C(this.ix);
@@ -75,7 +75,7 @@ package 0sC{
             if (this.0ey != null)
             {
                 removeChild(this.0ey);
-            };
+            }
             this.0ey = new 1im(12, false, "WebAccountDetailDialog.logout");
             this.0ey.addEventListener(MouseEvent.CLICK, this.0SZ);
             0-C(this.0ey);

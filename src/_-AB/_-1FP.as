@@ -33,7 +33,7 @@ package AB{
                 1Tf.pushParams(du.18W, {data:new 1cA().setParams(du.1oV, {duration:duration.toString()}).setPrefix(TR.1pw(textColor)).setPostfix(TR.17H())});
                 test = this.decoy[0].toXMLString();
                 ZX[this.decoy[0].toXMLString()] = true;
-            };
+            }
         }
 
 

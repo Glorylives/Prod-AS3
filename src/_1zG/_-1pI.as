@@ -25,7 +25,7 @@ package 1zG{
             {
                 this.offer_.push(_arg1.readBoolean());
                 _local3++;
-            };
+            }
         }
 
         override public function toString():String{

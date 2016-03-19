@@ -15,7 +15,7 @@ package WZ{
             if (_arg1 != zm)
             {
                 this.0OZ = _arg1;
-            };
+            }
         }
 
         public function 1oO():Class{

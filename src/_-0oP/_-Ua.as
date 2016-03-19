@@ -30,7 +30,7 @@ package 0oP{
             if (this.token.type == gd.6d)
             {
                 return (_local1);
-            };
+            }
             while (true)
             {
                 _local1.push(this.un());
@@ -38,15 +38,15 @@ package 0oP{
                 if (this.token.type == gd.6d)
                 {
                     return (_local1);
-                };
+                }
                 if (this.token.type == gd.226)
                 {
                     this.0oC();
                 } else
                 {
                     this. true.1xT(("Expecting ] or , but found " + this.token.value));
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -57,7 +57,7 @@ package 0oP{
             if (this.token.type == gd.1aB)
             {
                 return (_local1);
-            };
+            }
             while (true)
             {
                 if (this.token.type == gd.0oZ)
@@ -72,23 +72,23 @@ package 0oP{
                         if (this.token.type == gd.1aB)
                         {
                             return (_local1);
-                        };
+                        }
                         if (this.token.type == gd.226)
                         {
                             this.0oC();
                         } else
                         {
                             this. true.1xT(("Expecting } or , but found " + this.token.value));
-                        };
+                        }
                     } else
                     {
                         this. true.1xT(("Expecting : but found " + this.token.value));
-                    };
+                    }
                 } else
                 {
                     this. true.1xT(("Expecting string but found " + this.token.value));
-                };
-            };
+                }
+            }
             return (null);
         }
 
@@ -96,7 +96,7 @@ package 0oP{
             if (this.token == null)
             {
                 this. true.1xT("Unexpected end _of input");
-            };
+            }
             switch (this.token.type)
             {
                 case gd.22c:
@@ -111,7 +111,7 @@ package 0oP{
                     return (this.token.value);
                 default:
                     this. true.1xT(("Unexpected " + this.token.value));
-            };
+            }
             return (null);
         }
 

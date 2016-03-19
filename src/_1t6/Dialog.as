@@ -123,7 +123,7 @@ package 1t6{
             if (this.1oW)
             {
                 _local2.setParams(_arg1, this.1oW);
-            };
+            }
             this.a.setStringBuilder(_local2);
             this.a.mouseEnabled = true;
             this.a.filters = [new DropShadowFilter(0, 0, 0, 1, 6, 6, 1)];
@@ -143,7 +143,7 @@ package 1t6{
                 this.064.filters = [new DropShadowFilter(0, 0, 0, 1, 8, 8, 1)];
                 this.064.setStringBuilder(new 1cA().setParams(_arg1));
                 this.0GR(this.064);
-            };
+            }
         }
 
         private function 0fe():void{
@@ -151,12 +151,12 @@ package 1t6{
             {
                 this.leftButton = new 1nN(16, this.1dt, 120);
                 this.leftButton.addEventListener(MouseEvent.CLICK, this.0Bt);
-            };
+            }
             if (this.1PP != null)
             {
                 this.rightButton = new 1nN(16, this.1PP, 120);
                 this.rightButton.addEventListener(MouseEvent.CLICK, this.hV);
-            };
+            }
         }
 
         private function onComplete():void{
@@ -170,7 +170,7 @@ package 1t6{
             if (this.ZM != null)
             {
                 this.t6();
-            };
+            }
         }
 
         private function t6():void{
@@ -179,7 +179,7 @@ package 1t6{
                 GA.global().trackPageview(this.ZM);
             } catch(error:Error)
             {
-            };
+            }
         }
 
         private function draw():void{
@@ -195,7 +195,7 @@ package 1t6{
             if (this.box_.contains(this.rect_))
             {
                 this.box_.removeChild(this.rect_);
-            };
+            }
             this.08w();
             this.26X();
             this.0aJ();
@@ -235,8 +235,8 @@ package 1t6{
                     this.box_.addChild(this.rightButton);
                     this.rightButton.x = (((3 * this.203) / 4) - (this.rightButton.width / 2));
                     this.rightButton.y = _local1;
-                };
-            };
+                }
+            }
         }
 
         private function 1mo():void{
@@ -248,18 +248,18 @@ package 1t6{
             } else
             {
                 this.a.y = 4;
-            };
+            }
         }
 
         private function 08w():void{
             if (((this.leftButton) && (this.box_.contains(this.leftButton))))
             {
                 this.box_.removeChild(this.leftButton);
-            };
+            }
             if (((this.rightButton) && (this.box_.contains(this.rightButton))))
             {
                 this.box_.removeChild(this.rightButton);
-            };
+            }
         }
 
         protected function 0Bt(_arg1:MouseEvent):void{

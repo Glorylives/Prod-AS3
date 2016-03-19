@@ -97,7 +97,7 @@ import flash.display.IGraphicsData;
             {
                 this.map_ = null;
                 return (false);
-            };
+            }
             this.x_ = _arg2;
             this.y_ = _arg3;
             return (true);

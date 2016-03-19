@@ -27,7 +27,7 @@ package 1Zz{
             } else
             {
                 this.s5();
-            };
+            }
         }
 
         private function fS():void{

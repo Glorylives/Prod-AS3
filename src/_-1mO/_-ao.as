@@ -30,7 +30,7 @@ package 1mO{
             {
                 0lN = false;
                 this.model.0Ej();
-            };
+            }
         }
 
         override public function destroy():void{

@@ -33,31 +33,31 @@ package 0QW{
             } else
             {
                 _local2 = (_local2 + "Speed: 1.00\n");
-            };
+            }
             if (_arg1.hasOwnProperty("NoWalk"))
             {
                 _local2 = (_local2 + "Unwalkable\n");
-            };
+            }
             if (_arg1.hasOwnProperty("Push"))
             {
                 _local2 = (_local2 + "Push\n");
-            };
+            }
             if (_arg1.hasOwnProperty("Sink"))
             {
                 _local2 = (_local2 + "Sink\n");
-            };
+            }
             if (_arg1.hasOwnProperty("Sinking"))
             {
                 _local2 = (_local2 + "Sinking\n");
-            };
+            }
             if (_arg1.hasOwnProperty("Animate"))
             {
                 _local2 = (_local2 + "Animated\n");
-            };
+            }
             if (_arg1.hasOwnProperty("RandomOffset"))
             {
                 _local2 = (_local2 + "Randomized\n");
-            };
+            }
             this.0ms = new _eG(14, 0xB3B3B3, false, 1bH, 0);
             this.0ms.wordWrap = true;
             this.0ms.text = String(_local2);

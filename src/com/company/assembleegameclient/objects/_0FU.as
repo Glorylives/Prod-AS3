@@ -17,7 +17,7 @@ public class _0FU {
             if (_local2 == null)
             {
                 return (this._095(_arg1));
-            };
+            }
             return (this._10G(_local2));
         }
 
@@ -25,7 +25,7 @@ public class _0FU {
             if ((((_arg1.charAt(0) == "{")) && ((_arg1.charAt((_arg1.length - 1)) == "}"))))
             {
                 return (_arg1);
-            };
+            }
             return ((("{" + _arg1) + "}"));
         }
 
@@ -34,7 +34,7 @@ public class _0FU {
             if (_arg1.length > 1)
             {
                 _local2 = (_local2 + ((" (" + _arg1[2]) + ")"));
-            };
+            }
             return (_local2);
         }
 

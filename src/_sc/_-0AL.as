@@ -63,7 +63,7 @@ package sC{
             } else
             {
                 this.0UH();
-            };
+            }
         }
 
         private function 0UH():void{
@@ -83,7 +83,7 @@ package sC{
                 this.1WQ = new Dialog(du.07o, du.23B, du.0ZF, null, null);
                 this.1WQ.addEventListener(Dialog.LEFT_BUTTON, this.0oR);
                 this.0n2.dispatch(this.1WQ);
-            };
+            }
         }
 
         private function 20k():void{
@@ -113,16 +113,16 @@ package sC{
                         _local2.currency = Currency.1Jg;
                         this.1GI.sendMessage(_local2);
                         this.1Wv.dispatch();
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function 0oR(_arg1:Event):void{
             if (((this.1WQ) && (this.1WQ.hasEventListener(Dialog.LEFT_BUTTON))))
             {
                 this.1WQ.removeEventListener(Dialog.LEFT_BUTTON, this.0oR);
-            };
+            }
             this.1WQ = null;
             this.KW.dispatch();
         }

@@ -30,7 +30,7 @@ package 19Z{
             {
                 this.0xH = new 1jf();
                 this.0xH.loaderInfo = this.loader.contentLoaderInfo;
-            };
+            }
             return (this.0xH);
         }
 

@@ -108,7 +108,7 @@ package BG{
             if (_arg1 == this.0b2)
             {
                 return;
-            };
+            }
             this.0b2 = _arg1;
             this.0JA.setPrice(this.0b2.price_, this.0b2.currency_);
             var _local2:String = this.0b2.soldObjectName();
@@ -132,21 +132,21 @@ package BG{
             if (((((!((parent == null))) && (!((this.MK == null))))) && (this.MK.open)))
             {
                 parent.removeChild(this.MK);
-            };
+            }
         }
 
         private function sv(_arg1:MouseEvent):void{
             if (ConfirmBuyModal.Ux)
             {
                 this.0UZ();
-            };
+            }
         }
 
         private function 1lw(_arg1:KeyboardEvent):void{
             if ((((((_arg1.keyCode == Parameters.data_.interact)) && ((stage.focus == null)))) && (ConfirmBuyModal.Ux)))
             {
                 this.0UZ();
-            };
+            }
         }
 
         private function 0UZ():void{
@@ -158,7 +158,7 @@ package BG{
             } else
             {
                 this.rQ.dispatch(this.0b2);
-            };
+            }
         }
 
         override public function draw():void{
@@ -170,14 +170,14 @@ package BG{
                 if (contains(this.0JA))
                 {
                     removeChild(this.0JA);
-                };
+                }
                 if ((((this.1Zi == null)) || (!(contains(this.1Zi)))))
                 {
                     this.1Zi = 1TL(_local2);
                     this.1Zi.x = ((WIDTH / 2) - (this.1Zi.width / 2));
                     this.1Zi.y = ((HEIGHT - (this.1Zi.height / 2)) - 20);
                     addChild(this.1Zi);
-                };
+                }
             } else
             {
                 if (_local1.guildRank_ < this.0b2.1fK)
@@ -185,14 +185,14 @@ package BG{
                     if (contains(this.0JA))
                     {
                         removeChild(this.0JA);
-                    };
+                    }
                     if ((((this.7P == null)) || (!(contains(this.7P)))))
                     {
                         this.7P = bH(this.0b2.1fK);
                         this.7P.x = ((WIDTH / 2) - (this.7P.width / 2));
                         this.7P.y = ((HEIGHT - (this.7P.height / 2)) - 20);
                         addChild(this.7P);
-                    };
+                    }
                 } else
                 {
                     this.0JA.setPrice(this.0b2.price_, this.0b2.currency_);
@@ -202,13 +202,13 @@ package BG{
                     if (!contains(this.0JA))
                     {
                         addChild(this.0JA);
-                    };
+                    }
                     if (((!((this.1Zi == null))) && (contains(this.1Zi))))
                     {
                         removeChild(this.1Zi);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function 4-(_arg1:1hy):void{

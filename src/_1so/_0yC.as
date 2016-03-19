@@ -59,9 +59,9 @@ package _1so{
                 if (_0NM.parent != null)
                 {
                     _0NM.parent.removeChild(_0NM);
-                };
+                }
                 _0NM = null;
-            };
+            }
         }
 
 
@@ -86,7 +86,7 @@ package _1so{
             {
                 addChild(this._0Xr);
                 this._00W(this._0Xr);
-            };
+            }
         }
 
         protected function _1Di():void{
@@ -95,9 +95,9 @@ package _1so{
                 if (this._0Xr.parent != null)
                 {
                     this._0Xr.parent.removeChild(this._0Xr);
-                };
+                }
                 this._0Xr = null;
-            };
+            }
         }
 
         protected function YK(_arg1:Menu):void{
@@ -110,12 +110,12 @@ package _1so{
             if (this.go_ != _arg1)
             {
                 this.go_ = _arg1;
-            };
+            }
             this._0Tt.length = 0;
             if (this.go_ == null)
             {
                 visible = false;
-            };
+            }
         }
 
         public function _1uN(_arg1:GameObject):void{
@@ -130,7 +130,7 @@ package _1so{
             {
                 visible = false;
                 return;
-            };
+            }
             this.go_._14(_arg2);
             _local3 = _arg2._0KH;
             _local4 = this.go_._4M[0];
@@ -140,7 +140,7 @@ package _1so{
                 this.go_ = null;
                 visible = false;
                 return;
-            };
+            }
             x = this._1rV.x;
             y = this._1rV.y;
             var _local6:Number = Trig.AR((270 - (Trig._1y * Math.atan2(_local4, _local5))));
@@ -149,11 +149,11 @@ package _1so{
                 if (_local6 > 45)
                 {
                     _local6 = 45;
-                };
+                }
                 if (_local6 < -45)
                 {
                     _local6 = -45;
-                };
+                }
             } else
             {
                 if (this._1rV.x > (_local3.right - 5))
@@ -163,26 +163,26 @@ package _1so{
                         if (_local6 < 135)
                         {
                             _local6 = 135;
-                        };
+                        }
                     } else
                     {
                         if (_local6 > -135)
                         {
                             _local6 = -135;
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             if (this._1rV.y < (_local3.top + 5))
             {
                 if (_local6 < 45)
                 {
                     _local6 = 45;
-                };
+                }
                 if (_local6 > 135)
                 {
                     _local6 = 135;
-                };
+                }
             } else
             {
                 if (this._1rV.y > (_local3.bottom - 5))
@@ -190,18 +190,18 @@ package _1so{
                     if (_local6 > -45)
                     {
                         _local6 = -45;
-                    };
+                    }
                     if (_local6 < -135)
                     {
                         _local6 = -135;
-                    };
-                };
-            };
+                    }
+                }
+            }
             this._1NH.rotation = _local6;
             if (this._0Xr != null)
             {
                 this._00W(this._0Xr);
-            };
+            }
             visible = true;
         }
 
@@ -239,9 +239,9 @@ package _1so{
                         _arg1.x = (_local4 - _local6);
                         _local9 = (_local5 - (_local7 * Math.tan((_local2 * Trig.kP))));
                         _arg1.y = (((_local5 + _local9) / 2) - (_local7 / 2));
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function _24v():void{

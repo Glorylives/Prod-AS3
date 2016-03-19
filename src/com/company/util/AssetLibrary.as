@@ -34,7 +34,7 @@ package com.company.util{
             {
                 _2a[_local5._7D[_local6]] = [_arg1, _local6];
                 _local6++;
-            };
+            }
         }
 
         public static function _01H(_arg1:String, _arg2:BitmapData):void{
@@ -43,7 +43,7 @@ package com.company.util{
             {
                 _local3 = new J2();
                 _13D[_arg1] = _local3;
-            };
+            }
             _local3.add(_arg2);
             var _local4:int = (_local3._7D.length - 1);
             _2a[_local3._7D[_local4]] = [_arg1, _local4];
@@ -54,7 +54,7 @@ package com.company.util{
             if (_local3 == null)
             {
                 _1MX[_arg1] = new Array();
-            };
+            }
             _1MX[_arg1].push(_arg2);
         }
 
@@ -89,7 +89,7 @@ package com.company.util{
             if (_arg2 != 1)
             {
                 _local6 = new SoundTransform(_arg2);
-            };
+            }
             _local5.play(0, 0, _local6);
         }
 

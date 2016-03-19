@@ -51,7 +51,7 @@ package 0D5{
                 this.1IQ();
                 this.2T++;
                 this.timer.stop();
-            };
+            }
         }
 
         private function 1IQ():void{
@@ -68,7 +68,7 @@ package 0D5{
                 if (((!((_local4 == ""))) && (!((_local4.search("Error") == -1)))))
                 {
                     this.1Ep(int(_local4));
-                };
+                }
             } else
             {
                 if (this.2T < this.10K.length)
@@ -76,8 +76,8 @@ package 0D5{
                     this.timer.addEventListener(TimerEvent.TIMER, this.21Y);
                     this.timer.start();
                     _local3 = true;
-                };
-            };
+                }
+            }
             ((!(_local3)) && (1d5(_arg1, _arg2)));
         }
 
@@ -92,13 +92,13 @@ package 0D5{
                     if (((!((this.SP == null))) && (!((this.SP.0ce() == _arg1)))))
                     {
                         this.SP.1Ep(_arg1);
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function 0J4():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             1X3.1J7(_local1, this.account.1Y());
             return (_local1);
         }

@@ -23,9 +23,9 @@ package com.google.analytics.core{
             _sourcesCache = [];
             _sourcesEngine = [];
             _ignoredReferrals = [];
-            _ignoredReferralsCache = {};
+            _ignoredReferralsCache = {}
             _ignoredKeywords = [];
-            _ignoredKeywordsCache = {};
+            _ignoredKeywordsCache = {}
         }
 
         public static function getKeywordValueFromPath(_arg1:String, _arg2:String):String{
@@ -36,11 +36,11 @@ package com.google.analytics.core{
                 if (_arg2.charAt(0) == "?")
                 {
                     _arg2 = _arg2.substr(1);
-                };
+                }
                 _arg2 = _arg2.split("+").join("%20");
                 _local4 = new Variables(_arg2);
                 _local3 = _local4[_arg1];
-            };
+            }
             return (_local3);
         }
 
@@ -49,7 +49,7 @@ package com.google.analytics.core{
             if (_ignoredKeywordsCache.hasOwnProperty(_arg1))
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -62,7 +62,7 @@ package com.google.analytics.core{
             if (_ignoredReferralsCache.hasOwnProperty(_arg1))
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -84,18 +84,18 @@ package com.google.analytics.core{
             if (_arg1 == "")
             {
                 return (false);
-            };
+            }
             _arg1 = _arg1.toLowerCase();
             if (_sourcesEngine[_arg1] != undefined)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
         public function clearIgnoredKeywords():void{
             _ignoredKeywords = [];
-            _ignoredKeywordsCache = {};
+            _ignoredKeywordsCache = {}
         }
 
         public function addSource(_arg1:String, _arg2:String):void{
@@ -110,14 +110,14 @@ package com.google.analytics.core{
                 } else
                 {
                     _sourcesEngine[_local3.engine].push((_sources.length - 1));
-                };
+                }
             } else
             {
                 if (throwErrors)
                 {
                     throw (new Error((_local3.toString() + " already exists, we don't add it.")));
-                };
-            };
+                }
+            }
         }
 
         public function clearEngines():void{
@@ -140,13 +140,13 @@ package com.google.analytics.core{
                 if (throwErrors)
                 {
                     throw (new Error((('"' + _arg1) + "\" already exists, we don't add it.")));
-                };
-            };
+                }
+            }
         }
 
         public function clearIgnoredReferrals():void{
             _ignoredReferrals = [];
-            _ignoredReferralsCache = {};
+            _ignoredReferralsCache = {}
         }
 
         public function getReferrerByName(_arg1:String):OrganicReferrer{
@@ -155,7 +155,7 @@ package com.google.analytics.core{
             {
                 _local2 = _sourcesEngine[_arg1][0];
                 return (_sources[_local2]);
-            };
+            }
             return (null);
         }
 
@@ -169,8 +169,8 @@ package com.google.analytics.core{
                 if (throwErrors)
                 {
                     throw (new Error((('"' + _arg1) + "\" already exists, we don't add it.")));
-                };
-            };
+                }
+            }
         }
 
         public function get sources():Array{

@@ -38,7 +38,7 @@ package com.google.analytics.core{
             if (_isEventHit)
             {
                 _local1.utmt = utmt;
-            };
+            }
             _local1.utme = utme;
             return (_local1);
         }

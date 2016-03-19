@@ -60,7 +60,7 @@ package 0sC{
                 _local1 = this.account.1Y();
                 this.client.complete.addOnce(this.CY);
                 this.client.sendRequest("/migrate/doMigration", _local1);
-            };
+            }
         }
 
         private function 0uN():void{
@@ -68,7 +68,7 @@ package 0sC{
             if (this.1j9 == null)
             {
                 this.1j9 = _1JZ.0JF().getInstance(UJ);
-            };
+            }
             this.13A.start();
             this.0--(0);
         }
@@ -95,7 +95,7 @@ package 0sC{
                 if (this.18T == true)
                 {
                     return;
-                };
+                }
                 _local3 = new XML(_arg2);
                 if (_local3.hasOwnProperty("Percent"))
                 {
@@ -108,14 +108,14 @@ package 0sC{
                             this.zE();
                             this.0--(_local5);
                             this.eO.dispatch();
-                        };
+                        }
                     } else
                     {
                         if (_local5 != this.0Yl)
                         {
                             this.0--(_local5);
-                        };
-                    };
+                        }
+                    }
                 } else
                 {
                     if (_local3.hasOwnProperty("MigrateStatus"))
@@ -125,10 +125,10 @@ package 0sC{
                         {
                             this.zE();
                             this.reset();
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
         }
 
         private function 0--(_arg1:Number):void{
@@ -143,7 +143,7 @@ package 0sC{
             if (this.18T)
             {
                 return;
-            };
+            }
             if (_arg1)
             {
                 _local3 = new XML(_arg2);
@@ -165,14 +165,14 @@ package 0sC{
                         {
                             this.zE();
                             this.reset();
-                        };
-                    };
-                };
+                        }
+                    }
+                }
             } else
             {
                 this.zE();
                 this.reset();
-            };
+            }
         }
 
         private function reset():void{
@@ -200,7 +200,7 @@ package 0sC{
             if (((!((this.078 == null))) && (!((this.078.parent == null)))))
             {
                 removeChild(this.078);
-            };
+            }
         }
 
         private function Yh():void{
@@ -221,7 +221,7 @@ package 0sC{
                 addChild(this.0er);
                 this.0er.x = (((0l4 / 2) - 100) - this.0er.width);
                 this.0er.y = (0oc - 50);
-            };
+            }
         }
 
         private function PF(_arg1:String):void{
@@ -234,7 +234,7 @@ package 0sC{
                 addChild(this.9u);
                 this.9u.x = ((0l4 / 2) + 100);
                 this.9u.y = (0oc - 50);
-            };
+            }
         }
 
 

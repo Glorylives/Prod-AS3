@@ -52,7 +52,7 @@ package _1zp{
             if (_arg1 == this._0Ch)
             {
                 return;
-            };
+            }
             this._0Ch = _arg1;
             this.F5();
             dispatchEvent(new Event(Event.CHANGE, true));
@@ -96,7 +96,7 @@ package _1zp{
             {
                 removeEventListener(KeyboardEvent.KEY_DOWN, this._1hQ);
                 stage.removeEventListener(MouseEvent.MOUSE_DOWN, this._06, true);
-            };
+            }
             this.F5();
             addEventListener(MouseEvent.CLICK, this._1bx);
         }
@@ -105,7 +105,7 @@ package _1zp{
             if (stage == null)
             {
                 return;
-            };
+            }
             stage.stageFocusRect = false;
             stage.focus = this;
             this._0kp = true;
@@ -128,7 +128,7 @@ package _1zp{
             } else
             {
                 this._1wG(new _1cA().setParams(_du._kW));
-            };
+            }
         }
 
         private function _1hQ(_arg1:KeyboardEvent):void{

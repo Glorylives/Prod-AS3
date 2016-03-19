@@ -38,7 +38,7 @@ package AB{
                         range:_local5
                     }).setPrefix(TR.1pw(1kE((_local9 - _local10)))).setPostfix(TR.17H())});
                 ZX[_local3.toXMLString()] = true;
-            };
+            }
         }
 
         private function 1EQ(_arg1:XML):XML{

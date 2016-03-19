@@ -42,7 +42,7 @@ package 06I{
             if (this._handlers.indexOf(_arg1) > -1)
             {
                 return;
-            };
+            }
             this._handlers.push(_arg1);
         }
 
@@ -54,8 +54,8 @@ package 06I{
                 if (this._handlers.length == 0)
                 {
                     dispatchEvent(new 9o(9o.22F));
-                };
-            };
+                }
+            }
         }
 
         public function 27D(_arg1:DisplayObject, _arg2:Class):void{
@@ -67,7 +67,7 @@ package 06I{
                 _local5 = (this._handlers[_local4] as LC);
                 _local5.27D(_arg1, _arg2);
                 _local4++;
-            };
+            }
         }
 
 

@@ -113,7 +113,7 @@ import flash.utils.Dictionary;
             } else
             {
                 _local11 = ObjectLibrary._1ya(this.containerType_);
-            };
+            }
             this._0OJ.setSize((8 * (_local11 / 100)));
             this.damage_ = 0;
         }
@@ -129,7 +129,7 @@ import flash.utils.Dictionary;
             if (!super.addTo(_arg1, _arg2, _arg3))
             {
                 return (false);
-            };
+            }
             if (((!(this._1gM.flying_)) && (xy.sink_)))
             {
                 z_ = 0.1;
@@ -139,8 +139,8 @@ import flash.utils.Dictionary;
                 if (((!((_local4 == null))) && ((_local4._0Km > 0))))
                 {
                     z_ = (0.5 - (0.4 * (_local4._0Km / Parameters._0vd)));
-                };
-            };
+                }
+            }
             return (true);
         }
 
@@ -149,7 +149,7 @@ import flash.utils.Dictionary;
             if (_local3 == null)
             {
                 return (false);
-            };
+            }
             x_ = _arg1;
             y_ = _arg2;
             xy = _local3;
@@ -204,8 +204,8 @@ import flash.utils.Dictionary;
                         if (_local3 > _local13)
                         {
                             _local3 = (_local13 - (_local3 - _local13));
-                        };
-                    };
+                        }
+                    }
                     _arg2.x = (_arg2.x + (_local3 * Math.cos(this.angle_)));
                     _arg2.y = (_arg2.y + (_local3 * Math.sin(this.angle_)));
                     if (this.gF.UH != 0)
@@ -213,9 +213,9 @@ import flash.utils.Dictionary;
                         _local14 = (this.gF.UH * Math.sin((_local4 + ((((_arg1 / this.gF.lifetime_) * this.gF._0RU) * 2) * Math.PI))));
                         _arg2.x = (_arg2.x + (_local14 * Math.cos((this.angle_ + (Math.PI / 2)))));
                         _arg2.y = (_arg2.y + (_local14 * Math.sin((this.angle_ + (Math.PI / 2)))));
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         override public function update(_arg1:int, _arg2:int):Boolean{
@@ -230,7 +230,7 @@ import flash.utils.Dictionary;
             if (_local3 > this.gF.lifetime_)
             {
                 return (false);
-            };
+            }
             var _local4:Point = this._1m1;
             this._0Vs(_local3, _local4);
             if (((!(this.moveTo(_local4.x, _local4.y))) || ((xy.tileType_ == 0xFFFF))))
@@ -244,10 +244,10 @@ import flash.utils.Dictionary;
                     {
                         _local5 = _121.GK(this.texture_);
                         map_.addObj(new HitEffect(_local5, 100, 3, this.angle_, this.gF.speed_), _local4.x, _local4.y);
-                    };
-                };
+                    }
+                }
                 return (false);
-            };
+            }
             if (((((!((xy.obj_ == null))) && (((!(xy.obj_.props_.isEnemy_)) || (!(this._in)))))) && (((xy.obj_.props_.enemyOccupySquare_) || (((!(this.gF._1CA)) && (xy.obj_.props_.occupySquare_)))))))
             {
                 if (this._0VO)
@@ -257,9 +257,9 @@ import flash.utils.Dictionary;
                 {
                     _local5 = _121.GK(this.texture_);
                     map_.addObj(new HitEffect(_local5, 100, 3, this.angle_, this.gF.speed_), _local4.x, _local4.y);
-                };
+                }
                 return (false);
-            };
+            }
             var _local6:GameObject = this._00A(_local4.x, _local4.y);
             if (_local6 != null)
             {
@@ -277,8 +277,8 @@ import flash.utils.Dictionary;
                         if (_local6.props_.isEnemy_)
                         {
                             doneAction(map_.gs_, Tutorial._1Fo);
-                        };
-                    };
+                        }
+                    }
                     if (_local6 == _local7)
                     {
                         map_.gs_.gsc_.playerHit(this.bulletId_, this.ownerId_);
@@ -294,18 +294,18 @@ import flash.utils.Dictionary;
                             if (!this.gF._1y4)
                             {
                                 map_.gs_.gsc_.otherHit(_arg1, this.bulletId_, this.ownerId_, _local6.objectId_);
-                            };
-                        };
-                    };
-                };
+                            }
+                        }
+                    }
+                }
                 if (this.gF._1y4)
                 {
                     this._1o6[_local6] = true;
                 } else
                 {
                     return (false);
-                };
-            };
+                }
+            }
             return (true);
         }
 
@@ -344,21 +344,21 @@ import flash.utils.Dictionary;
                                         if (_local5 == map_.player_)
                                         {
                                             return (_local5);
-                                        };
+                                        }
                                         _local8 = Math.sqrt(((_local6 * _local6) + (_local7 * _local7)));
                                         _local9 = ((_local6 * _local6) + (_local7 * _local7));
                                         if (_local9 < _local3)
                                         {
                                             _local3 = _local9;
                                             _local4 = _local5;
-                                        };
-                                    };
-                                };
-                            };
-                        };
-                    };
-                };
-            };
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
             return (_local4);
         }
 
@@ -370,7 +370,7 @@ import flash.utils.Dictionary;
             if (!Parameters._0pm)
             {
                 return;
-            };
+            }
             var _local4:BitmapData = this.texture_;
             if (Parameters._1KO != 0)
             {
@@ -400,9 +400,9 @@ import flash.utils.Dictionary;
                         _local6 = 0;
                         _local7 = 0;
                         break;
-                };
+                }
                 _local4 = TextureRedrawer.redraw(_local4, 120, true, _local7);
-            };
+            }
             var _local5:Number = (((this.props_.rotation_ == 0)) ? 0 : (_arg3 / this.props_.rotation_));
             this._011.x = x_;
             this._011.y = y_;
@@ -417,17 +417,17 @@ import flash.utils.Dictionary;
                     if (((!((map_ == null))) && (!((map_.player_.objectId_ == this.ownerId_)))))
                     {
                         if ((((this.gF._1uD == -1)) && (((Math.random() * 100) > this.gF._1uD)))) continue;
-                    };
+                    }
                     map_.addObj(new _El(100, this.gF._0y7, _local8, 0.5, _0Na._1Me(3), _0Na._1Me(3)), x_, y_);
-                };
-            };
+                }
+            }
         }
 
         override public function drawShadow(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             if (!Parameters._0pm)
             {
                 return;
-            };
+            }
             var _local4:Number = (this.props_._0Qf / 400);
             var _local5:Number = (30 * _local4);
             var _local6:Number = (15 * _local4);

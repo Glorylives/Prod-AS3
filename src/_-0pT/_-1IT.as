@@ -152,7 +152,7 @@ package 0pT{
             if (this.Wz == null)
             {
                 return;
-            };
+            }
             this.0uV.setXPos((0l4 / 2));
             this.0uV.setYPos(1h-);
             this.1U1();
@@ -171,12 +171,12 @@ package 0pT{
             if (_local3 != null)
             {
                 this.0qv.draw(_local3.credits_, 0, _local3.0NG);
-            };
+            }
             if (_arg1 != null)
             {
                 this.gs_ = _arg1;
                 this.gs_.0qv.visible = false;
-            };
+            }
             var _local4:BitmapData = AssetLibrary.1JR("lofiObj3", 1172);
             _local4 = TextureRedrawer.redraw(_local4, 75, true, 0);
             this.0uV.addEventListener(MouseEvent.ROLL_OVER, this.6J);
@@ -210,7 +210,7 @@ package 0pT{
             if (!(_arg1.relatedObject is g-))
             {
                 this.nJ.visible = false;
-            };
+            }
         }
 
         private function m5():void{
@@ -261,22 +261,22 @@ package 0pT{
                 _local4.filters = [new GlowFilter(0xFFFFFF, 1, 2, 2, 1.5, 1)];
                 0Ea.push(_local4);
                 _local3++;
-            };
+            }
         }
 
         private function setString(_arg1:int):void{
             if (this.parent == null)
             {
                 return;
-            };
+            }
             if ((((this.0KJ >= 0)) && (!((0Ea[this.0KJ].parent == null)))))
             {
                 removeChild(0Ea[this.0KJ]);
-            };
+            }
             if (_arg1 < 0)
             {
                 return;
-            };
+            }
             this.0KJ = _arg1;
             var _local2:TextField = 0Ea[this.0KJ];
             _local2.x = ((0l4 / 2) - (_local2.width / 2));
@@ -304,7 +304,7 @@ package 0pT{
             if (this.gs_ != null)
             {
                 this.gs_.0qv.visible = false;
-            };
+            }
         }
 
         private function 0Sy(_arg1:TimerEvent=null):void{
@@ -313,17 +313,17 @@ package 0pT{
             if (this.0Mv == null)
             {
                 this.0Mv = Vector.<g->([new g-(this.Wz.0Cg[this.vk], 0Bq), new g-(this.Wz.0Cg[(this.vk + 1)], 0Bq)]);
-            };
+            }
             if (this.vk >= this.Wz.0Cg.length)
             {
                 this.vk = 0;
-            };
+            }
             var _local2:int = (this.vk % 2);
             if (((!((this.0Mv[this.1wh] == null))) && (!((this.0Mv[this.1wh].parent == null)))))
             {
                 _local5 = this.0Mv[this.1wh];
                 this.16T(_local5, {alpha:0}, this.0Wh);
-            };
+            }
             var _local3:g- = new g-(this.Wz.0Cg[this.vk], 0Bq, true);
             _local3.onMouseOver.add(this.0e6);
             _local3.onMouseOut.add(this.0gK);
@@ -338,14 +338,14 @@ package 0pT{
             if (((!((this.0qv == null))) && (!((_local4 == null)))))
             {
                 this.0qv.draw(_local4.credits_, 0, _local4.0NG);
-            };
+            }
         }
 
         private function 0Wh(_arg1:GTween):void{
             if (_arg1.target.parent != null)
             {
                 _arg1.target.parent.removeChild(_arg1.target);
-            };
+            }
         }
 
         public function 0e6():void{
@@ -374,9 +374,9 @@ package 0pT{
                     this.0Mv[_local1].onMouseOut.removeAll();
                     this.0Mv[_local1].onMouseOver.removeAll();
                     this.0Mv[_local1].parent.removeChild(this.0Mv[_local1]);
-                };
+                }
                 _local1++;
-            };
+            }
             this.0e6();
         }
 
@@ -400,7 +400,7 @@ package 0pT{
                 if ((((this.state == STATE_ROUND_1)) || (!((this.Fp[_local2] == this.0pn)))))
                 {
                     _local1 = this.Fp[_local2];
-                };
+                }
             } while (_local1 == null);
             this.1_ZS(_local1);
         }
@@ -455,7 +455,7 @@ package 0pT{
             if (!this.1DS())
             {
                 this.02F();
-            };
+            }
             var _local2:Player = _1JZ.0JF().getInstance(1Nb).player;
             if (_local2 != null)
             {
@@ -464,18 +464,18 @@ package 0pT{
                     _local4 = _1JZ.0JF().getInstance(0io);
                     _local4.dispatch(new pu());
                     return;
-                };
+                }
                 if ((((_arg1 == Currency.1Jg)) && (((_local2.credits_ - this.10L) < 0))))
                 {
                     _local4 = _1JZ.0JF().getInstance(0io);
                     _local4.dispatch(new pu());
                     return;
-                };
+                }
                 if ((((_arg1 == Currency.Ls)) && (((_local2.0NG - this.1VR) < 0))))
                 {
                     return;
-                };
-            };
+                }
+            }
             this.jQ.delay = this.13K;
             this.0uV.0GT(0Jh.14E);
             var _local3:Object = this.NY();
@@ -490,13 +490,13 @@ package 0pT{
                 } else
                 {
                     return;
-                };
-            };
+                }
+            }
             if (this.state == STATE_ROUND_1)
             {
                 _local3.status = 0;
                 this.0uV.removeEventListener(MouseEvent.ROLL_OVER, this.6J);
-            };
+            }
             if ((((this.state == STATE_ROUND_1)) && (!(this.client.1r6()))))
             {
                 this.d-();
@@ -512,11 +512,11 @@ package 0pT{
                         if ((_local2.0NG - this.1VR) < 0)
                         {
                             return;
-                        };
+                        }
                         _local2.0NG = (_local2.0NG - this.1VR);
                         this.0qv.draw(_local2.credits_, 0, _local2.0NG);
-                    };
-                };
+                    }
+                }
                 this.client.sendRequest("/account/playFortuneGame", _local3);
                 this.setString((10 + int((Math.random() * 6))));
                 this.client.complete.addOnce(this.21y);
@@ -533,12 +533,12 @@ package 0pT{
                     {
                         _local2.credits_ = (_local2.credits_ - this.1uM);
                         this.0qv.draw(_local2.credits_, 0, _local2.0NG);
-                    };
+                    }
                     this.0sd.visible = false;
                     this.0jc.visible = false;
                     return;
-                };
-            };
+                }
+            }
         }
 
         private function 21y(_arg1:Boolean, _arg2):void{
@@ -574,9 +574,9 @@ package 0pT{
                         {
                             _local4.0NG = int(_local3.FortuneToken);
                             this.0qv.draw(_local4.credits_, 0, _local4.0NG);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 _local5 = Vector.<int>([0, 2, 1]);
                 _local6 = Math.floor((Math.random() * 3));
                 _local7 = (Math.random() > 0.5);
@@ -602,7 +602,7 @@ package 0pT{
                         _local11 = this.Fp[_local5[_local6]].getCenterY();
                         new 1qk(_local15, this.Xf, _local13, _local14, _local10, _local11);
                         new 1qk((_local15 + 0.1), this.Fp[_local5[_local6]].doItemShow, int(_local17));
-                    };
+                    }
                     _local13 = _local10;
                     _local14 = _local11;
                     _local15 = (_local15 + _local16);
@@ -614,20 +614,20 @@ package 0pT{
                     {
                         --_local6;
                         _local6 = (((_local6)<0) ? 2 : _local6);
-                    };
-                };
+                    }
+                }
                 new 1qk(this.0NF, this.i2);
             } else
             {
                 this.1OP();
-            };
+            }
         }
 
         private function i2():void{
             if ((((this.state == STATE_ROUND_2)) && (!((this.0pn == null)))))
             {
                 this.Jo();
-            };
+            }
             var _local1:int;
             while (_local1 < 3)
             {
@@ -636,7 +636,7 @@ package 0pT{
                 this.Fp[_local1].setAnimation(6, 7);
                 this.Fp[_local1].setAnimationDuration(50);
                 _local1++;
-            };
+            }
             this.0Ae(this.06O);
             this.0uV.0GT(0Jh.0Sf);
             new 1qk(this.108, this.1L1);
@@ -651,7 +651,7 @@ package 0pT{
             } else
             {
                 this.setString(4);
-            };
+            }
             this.1sa(this.0pn);
             this.0uV.0GT(0Jh.034);
             this.0uX(this.0uV.getCenterX(), this.0uV.getCenterY(), 10, 0xFFFF);
@@ -666,13 +666,13 @@ package 0pT{
                     this.Fp[_local1].doItemReturn();
                     new 1qk(this.Il, this.0uX, int(this.Fp[_local1].returnCenterX()), int(this.Fp[_local1].returnCenterY()), 5, 0xFFFF);
                     new 1qk(this.Il, this.Fp[_local1].setAnimationPulse);
-                };
+                }
                 _local1++;
-            };
+            }
             if (this.k2 == null)
             {
                 return;
-            };
+            }
             new 1qk(this.Il, this.0uV.0GT, 0Jh.07c);
             this.k2.start(this.A2);
             this.k2.setXPos(this.0uV.getCenterX());
@@ -685,7 +685,7 @@ package 0pT{
             if (((!((this.k2 == null))) && (this.k2.R5())))
             {
                 this.setString(9);
-            };
+            }
         }
 
         private function 1OP():void{
@@ -727,14 +727,14 @@ package 0pT{
                 {
                     this.yH(_local3, _local2);
                     this.Fp[_local3].setAnimationClicked();
-                };
+                }
                 if (this.Fp[_local3] != this.0pn)
                 {
                     _local2++;
-                };
+                }
                 this.Fp[_local3].setGlowState(18X.1Lm);
                 _local3++;
-            };
+            }
             this.1lH = false;
         }
 
@@ -750,7 +750,7 @@ package 0pT{
                 this.0pn = this.Fp[_arg1];
                 this.client.sendRequest("/account/playFortuneGame", _local3);
                 this.client.complete.addOnce(this.0QD);
-            };
+            }
         }
 
         private function 0QD(_arg1:Boolean, _arg2):void{
@@ -772,8 +772,8 @@ package 0pT{
                         new 1qk(this.DISPLAY_PRIZE_TIME_1, this.IB, _local3.Awards);
                         new 1qk(0.25, this.0uX, this.0pn.getCenterX(), this.0pn.getCenterY(), 6, 0xFFFF);
                         new 1qk(0.25, this.0pn.0K4, _local3.Awards);
-                    };
-                };
+                    }
+                }
                 new 1qk(0.5, this.setString, 5);
             } else
             {
@@ -785,8 +785,8 @@ package 0pT{
                 } else
                 {
                     _local4.dispatch(new tg("You have run out _of time to choose.", "Oh no!"));
-                };
-            };
+                }
+            }
         }
 
         private function IB(_arg1:int):void{
@@ -803,9 +803,9 @@ package 0pT{
                 if (int(this.1YB[_local2]) == _arg1)
                 {
                     this.1YB[_local2] = this.1YB[(this.1YB.length - 1)];
-                };
+                }
                 _local2++;
-            };
+            }
             this.1YB.pop();
             _local2 = 0;
             while (_local2 < this.Fp.length)
@@ -813,9 +813,9 @@ package 0pT{
                 if (this.Fp[_local2] != this.0pn)
                 {
                     this.Fp[_local2].doItemShow(int(this.1YB.pop()));
-                };
+                }
                 _local2++;
-            };
+            }
             this.setString(6);
         }
 
@@ -838,7 +838,7 @@ package 0pT{
             {
                 this.Fp[_local1].resetVars();
                 _local1++;
-            };
+            }
             this.1U1();
         }
 
@@ -858,7 +858,7 @@ package 0pT{
             if (this.state == STATE_ROUND_1)
             {
                 this.32.addEventListener(MouseEvent.CLICK, this.1N);
-            };
+            }
             this.0sd.addEventListener(MouseEvent.CLICK, this.qJ);
         }
 
@@ -868,7 +868,7 @@ package 0pT{
             {
                 this.Fp[_local1].removeEventListener(MouseEvent.CLICK, this.1y2);
                 _local1++;
-            };
+            }
         }
 
         private function 1sa(_arg1:18X=null):void{
@@ -882,9 +882,9 @@ package 0pT{
                 {
                     this.Fp[_local2].addEventListener(MouseEvent.CLICK, this.1y2);
                     this.Fp[_local2].setMouseTracking(true);
-                };
+                }
                 _local2++;
-            };
+            }
         }
 
         private function 1U1():void{
@@ -904,13 +904,13 @@ package 0pT{
                     if (this.Fp[_local2].visible == false)
                     {
                         this.Fp[_local2].visible = true;
-                    };
-                };
+                    }
+                }
                 this.Fp[_local2].removeItemReveal();
                 this.Fp[_local2].setInactive();
                 this.Fp[_local2].reset();
                 _local2++;
-            };
+            }
             this.0pn = null;
         }
 
@@ -922,7 +922,7 @@ package 0pT{
             {
                 this.0pn.visible = false;
                 this.0pn.setInactive();
-            };
+            }
             var _local3:int;
             while (_local3 < 3)
             {
@@ -932,9 +932,9 @@ package 0pT{
                     this.Fp[_local3].setXPos((this.0uV.getCenterX() + (_local2 * Math.sin(_local4))));
                     this.Fp[_local3].setYPos((this.0uV.getCenterY() + (_local2 * Math.cos(_local4))));
                     _local1++;
-                };
+                }
                 _local3++;
-            };
+            }
         }
 
         public function 0w1():void{
@@ -943,7 +943,7 @@ package 0pT{
             if (this.iD < this.oG)
             {
                 this.iD = (this.iD + 4);
-            };
+            }
             var _local2:int;
             while (_local2 < 3)
             {
@@ -951,11 +951,11 @@ package 0pT{
                 this.Fp[_local2].setXPos((this.0uV.getCenterX() + (this.radius * Math.sin(_local3))));
                 this.Fp[_local2].setYPos((this.0uV.getCenterY() + (this.radius * Math.cos(_local3))));
                 _local2++;
-            };
+            }
             if (this.radius == 14C)
             {
                 this.0o8 = (this.0o8 * -1);
-            };
+            }
             if (this.radius < 0)
             {
                 this.radius = 0;
@@ -964,8 +964,8 @@ package 0pT{
                 if (this.iD == this.oG)
                 {
                     this.radius = (this.radius - ((this.0o8 * 2.85) / this.108));
-                };
-            };
+                }
+            }
         }
 
         public function onEnterFrame(_arg1:Event):void{
@@ -978,13 +978,13 @@ package 0pT{
             {
                 this.0w1();
                 this.0uV.setAnimationDuration(((this.oG + 80) - this.iD));
-            };
+            }
             var _local4:int;
             while (_local4 < 3)
             {
                 this.Fp[_local4].update(_local2, _local3);
                 _local4++;
-            };
+            }
             this.240(this.14k, 0.1);
             this.240(this.0iM, -0.15);
             if (this.1lH)
@@ -993,8 +993,8 @@ package 0pT{
                 if (_local5 < 0.05)
                 {
                     this.Fp[int(((_local5 * 200) % 3))].setShake(true);
-                };
-            };
+                }
+            }
             this.draw(_local2, _local3);
         }
 
@@ -1006,7 +1006,7 @@ package 0pT{
             } else
             {
                 _arg1.rotation = ((_arg1.rotation + _arg2) % 360);
-            };
+            }
         }
 
         public function draw(_arg1:int, _arg2:int):void{
@@ -1026,14 +1026,14 @@ package 0pT{
                 _local5.y_ = Jw.0Gb(_arg2);
                 _local6 = new 1wN(_local5, _arg3, _arg4);
                 this.jF.addObj(_local6, _local5.x_, _local5.y_);
-            };
+            }
         }
 
         private function Xf(_arg1:Number, _arg2:Number, _arg3:Number, _arg4:Number, _arg5:int=200, _arg6:int=12447231):void{
             if (this.parent == null)
             {
                 return;
-            };
+            }
             var _local7:GameObject = new GameObject(null);
             _local7.x_ = Jw.0Gb(_arg1);
             _local7.y_ = Jw.0Gb(_arg2);

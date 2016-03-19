@@ -55,7 +55,7 @@ package 1RM{
             } else
             {
                 _local6 = (((((_local3 + " hours, ") + _local4) + " minutes, ") + _local5) + " seconds");
-            };
+            }
             return (_local6);
         }
 
@@ -71,7 +71,7 @@ package 1RM{
             {
                 _local1.setUTCHours((this.1Oa - _local1.hoursUTC));
                 return (_local1);
-            };
+            }
             _local1.setUTCHours(7);
             _local1.setUTCMinutes(0);
             _local1.setUTCSeconds(0);
@@ -80,7 +80,7 @@ package 1RM{
             while (_local1.dayUTC != this.20m)
             {
                 _local1.setUTCDate((_local1.dateUTC + 1));
-            };
+            }
             return (_local1);
         }
 

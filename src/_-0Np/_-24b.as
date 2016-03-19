@@ -112,7 +112,7 @@ package 0Np{
             if (((this.0AD) && (contains(this.0AD))))
             {
                 removeChild(this.0AD);
-            };
+            }
         }
 
 

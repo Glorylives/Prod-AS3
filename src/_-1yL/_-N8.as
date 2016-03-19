@@ -55,7 +55,7 @@ package 1YL{
                 case Keyboard.DOWN:
                     dispatchEvent(new ConsoleEvent(ConsoleEvent.GET_NEXT));
                     return;
-            };
+            }
         }
 
         public function resize(_arg1:Rectangle):void{
@@ -63,7 +63,7 @@ package 1YL{
             if (_local2 > HEIGHT)
             {
                 _local2 = HEIGHT;
-            };
+            }
             width = _arg1.width;
             height = _local2;
             x = _arg1.x;

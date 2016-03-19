@@ -49,7 +49,7 @@ package 1tt{
             {
                 this.u3.0K("GetPackageTask.onComplete: Request failed.");
                 1d5(false);
-            };
+            }
         }
 
         private function 0dg(_arg1):void{
@@ -64,7 +64,7 @@ package 1tt{
             {
                 _local2 = XML(_arg1);
                 this.parse(_local2);
-            };
+            }
             1d5(true);
         }
 
@@ -101,7 +101,7 @@ package 1tt{
                 _local13 = new kM();
                 _local13.Va(_local4, _local10, _local5, _local7, _local8, _local9, _local6, _local11, _local12);
                 _local2.push(_local13);
-            };
+            }
             this.2M.sZ(_local2);
         }
 
@@ -117,8 +117,8 @@ package 1tt{
                 if (packageHistory)
                 {
                     numPurchased = int(packageHistory.Count);
-                };
-            };
+                }
+            }
             return (numPurchased);
         }
 

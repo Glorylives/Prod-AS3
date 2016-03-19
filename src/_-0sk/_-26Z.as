@@ -35,7 +35,7 @@ package 0sk{
             {
                 this.news[_local1] = new 2-n(_local1);
                 _local1++;
-            };
+            }
         }
 
         public function 0cO(_arg1:Vector.<BZ>):void{
@@ -59,9 +59,9 @@ package 0sk{
                     {
                         Parameters.data_[("newsTimestamp" + _local5)] = _local3.1Om;
                         Parameters.data_[("hasNewsUpdate" + _local5)] = true;
-                    };
-                };
-            };
+                    }
+                }
+            }
             this.uQ(_local2);
             this.update.dispatch(this.news);
             this.it.dispatch();
@@ -78,9 +78,9 @@ package 0sk{
                 if (this.1Jk[_local1] == null)
                 {
                     return (false);
-                };
+                }
                 _local1++;
-            };
+            }
             return (true);
         }
 
@@ -91,8 +91,8 @@ package 0sk{
                 if (((this.17O(_local2)) && (this.15-(_local2))))
                 {
                     this.0Nd(_local2);
-                };
-            };
+                }
+            }
         }
 
         private function 0Nd(_arg1:BZ):void{
@@ -100,7 +100,7 @@ package 0sk{
             if (this.news[_local2])
             {
                 _arg1 = this.1QA(this.news[_local2], _arg1);
-            };
+            }
             this.news[_local2] = _arg1;
         }
 
@@ -117,21 +117,21 @@ package 0sk{
             if (!this.0FY())
             {
                 return;
-            };
+            }
             this.04e = new Vector.<x5>(1Zd, true);
             var _local1:int;
             while (_local1 < 1Zd)
             {
                 this.04e[_local1] = new x5((this.1Jk[_local1] as BZ).0iC, (this.1Jk[_local1] as BZ).linkDetail);
                 _local1++;
-            };
+            }
         }
 
         public function rh(_arg1:int):x5{
             if (((((((!((this.04e == null))) && ((_arg1 > 0)))) && ((_arg1 <= this.04e.length)))) && (!((this.04e[(_arg1 - 1)] == null)))))
             {
                 return (this.04e[(_arg1 - 1)]);
-            };
+            }
             return (new x5("No new information", "Please check back later."));
         }
 

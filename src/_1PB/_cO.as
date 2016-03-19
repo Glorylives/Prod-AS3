@@ -32,7 +32,7 @@ import flash.utils.Dictionary;
             for each (_local2 in _args)
             {
                 this.push(_local2);
-            };
+            }
             return (this);
         }
 
@@ -42,7 +42,7 @@ import flash.utils.Dictionary;
             onTextChanged = function ():void{
                 delete _1T4[value];
                 _0dt();
-            };
+            }
             value.addOnce(onTextChanged);
         }
 
@@ -50,7 +50,7 @@ import flash.utils.Dictionary;
             if (this.isEmpty())
             {
                 this.complete.dispatch();
-            };
+            }
         }
 
         public function isEmpty():Boolean{

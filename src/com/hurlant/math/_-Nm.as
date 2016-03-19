@@ -21,7 +21,7 @@ package com.hurlant.math{
             if ((((_arg1.s < 0)) || ((_arg1.0-6(this.m) >= 0))))
             {
                 return (_arg1.MR(this.m));
-            };
+            }
             return (_arg1);
         }
 

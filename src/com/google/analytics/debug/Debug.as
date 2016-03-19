@@ -20,7 +20,7 @@ package com.google.analytics.debug{
             if (_arg2 == null)
             {
                 _arg2 = Align.bottom;
-            };
+            }
             super("", "uiLabel", _arg1, _arg2, _arg3);
             this.name = ("Debug" + count++);
             _lines = [];
@@ -46,15 +46,15 @@ package com.google.analytics.debug{
                     if ((((_linediff > 0)) && ((_arg1 < 0))))
                     {
                         _linediff = (_linediff + _arg1);
-                    };
-                };
+                    }
+                }
                 _local3 = ((_lines.length - maxLines) + _linediff);
                 _local4 = (_local3 + maxLines);
                 _local2 = _lines.slice(_local3, _local4);
             } else
             {
                 _local2 = _lines;
-            };
+            }
             return (_local2);
         }
 
@@ -70,11 +70,11 @@ package com.google.analytics.debug{
                     break;
                 default:
                     _local2 = null;
-            };
+            }
             if (_local2 == null)
             {
                 return;
-            };
+            }
             text = _local2.join("\n");
         }
 
@@ -84,9 +84,9 @@ package com.google.analytics.debug{
                 if (UISprite(this.parent).forcedWidth > _preferredForcedWidth)
                 {
                     return (_preferredForcedWidth);
-                };
+                }
                 return (UISprite(this.parent).forcedWidth);
-            };
+            }
             return (super.forcedWidth);
         }
 
@@ -98,20 +98,20 @@ package com.google.analytics.debug{
             } else
             {
                 _local3 = [_arg1];
-            };
+            }
             var _local4 = "";
             var _local5 = "";
             if (_arg2)
             {
                 _local4 = "<b>";
                 _local5 = "</b>";
-            };
+            }
             var _local6:int;
             while (_local6 < _local3.length)
             {
                 _lines.push(((_local4 + _local3[_local6]) + _local5));
                 _local6++;
-            };
+            }
             var _local7:Array = _getLinesToDisplay();
             text = _local7.join("\n");
         }

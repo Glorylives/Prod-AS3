@@ -29,7 +29,7 @@ package 5I{
             for each (_local1 in this.YS)
             {
                 _local1.execute();
-            };
+            }
         }
 
         public function unexecute():void{
@@ -37,7 +37,7 @@ package 5I{
             for each (_local1 in this.YS)
             {
                 _local1.unexecute();
-            };
+            }
         }
 
 

@@ -29,7 +29,7 @@ package 0ud{
             } else
             {
                 this.10I();
-            };
+            }
         }
 
         private function 10I():void{

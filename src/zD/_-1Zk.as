@@ -120,7 +120,7 @@ package zD{
                 if (this.06b != null)
                 {
                     removeChild(this.06b);
-                };
+                }
                 _local7 = ObjectLibrary.getRedrawnTextureFromType(_arg4, 55, false);
                 this.06b = new Bitmap(_local7);
                 this.06b.y = -11;
@@ -130,7 +130,7 @@ package zD{
                 _local8.x = (_local8.x - 30);
                 _local8.y = (_local8.y - 30);
                 this.1t0.addChild(_local8);
-            };
+            }
             var _local5 = (_arg1 > 0);
             if (_local5)
             {
@@ -147,11 +147,11 @@ package zD{
                 this.bg.graphics.drawGraphicsData(this.0H1);
                 this.bg.graphics.drawGraphicsData(this.1vi);
                 this.text.x = ((this.K-.x - this.text.width) + 6);
-            };
+            }
             if (this.06b)
             {
                 this.06b.x = _local6;
-            };
+            }
             if (!_local5)
             {
                 if (Parameters.data_.contextualPotionBuy)
@@ -164,13 +164,13 @@ package zD{
                     this.text.setColor(0xAAAAAA);
                     this.K-.filters = [this.1q-];
                     this.K-.visible = true;
-                };
+                }
             } else
             {
                 this.text.setColor(0xFFFFFF);
                 this.K-.filters = [];
                 this.K-.visible = false;
-            };
+            }
         }
 
         public function 1-d(_arg1:String):void{
@@ -185,7 +185,7 @@ package zD{
             if (this.eZ)
             {
                 return;
-            };
+            }
             if (_arg1.shiftKey)
             {
                 this.oz(false);
@@ -199,15 +199,15 @@ package zD{
                 {
                     this.oz(false);
                     this.tx.dispatch();
-                };
-            };
+                }
+            }
         }
 
         private function onMouseDown(_arg1:MouseEvent):void{
             if (!this.K-.visible)
             {
                 this.1EC(_arg1);
-            };
+            }
         }
 
         private function oz(_arg1:Boolean):void{
@@ -219,7 +219,7 @@ package zD{
             } else
             {
                 this.1kH.stop();
-            };
+            }
         }
 
         private function 1EC(_arg1:MouseEvent):void{
@@ -244,7 +244,7 @@ package zD{
                 this.1pe(null);
                 this.oz(false);
                 this.gE();
-            };
+            }
         }
 
         private function OI(_arg1:TimerEvent):void{
@@ -274,7 +274,7 @@ package zD{
             if (this.eZ)
             {
                 this.1t0.stopDrag();
-            };
+            }
         }
 
 

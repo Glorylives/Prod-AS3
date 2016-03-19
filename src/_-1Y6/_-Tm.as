@@ -31,14 +31,14 @@ package 1Y6{
             if (this.158())
             {
                 this.1nM();
-            };
+            }
         }
 
         override public function destroy():void{
             if (this.158())
             {
                 this.dE();
-            };
+            }
         }
 
         private function 158():Boolean{

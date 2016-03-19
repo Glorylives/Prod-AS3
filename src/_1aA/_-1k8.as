@@ -50,7 +50,7 @@ package _1aA{
             if (int(_arg2.Shots) != 0)
             {
                 this.1ZF(du.Zi, null, 0, ((100 * Number(_arg2.ShotsThatDamage)) / Number(_arg2.Shots)), true, 5746018, "", "%");
-            };
+            }
             this.1ZF(du.19n, null, 0, _arg2.TilesUncovered, false, 5746018);
             this.1ZF(du.0XE, null, 0, _arg2.MonsterKills, false, 5746018);
             this.1ZF(du.Pw, null, 0, _arg2.GodKills, false, 5746018);
@@ -64,7 +64,7 @@ package _1aA{
             for each (_local4 in _arg2.Bonus)
             {
                 this.1ZF(_local4.@id, _local4.@desc, _local4.@level, int(_local4), true, 0xFFC800, "+", "", new Bitmap(_local3));
-            };
+            }
         }
 
         public function 08r():void{
@@ -74,7 +74,7 @@ package _1aA{
             for each (_local1 in this.0pc)
             {
                 _local1.049();
-            };
+            }
         }
 
         public function 2-D():void{
@@ -91,7 +91,7 @@ package _1aA{
             if ((((_arg4 == 0)) && (!(_arg5))))
             {
                 return;
-            };
+            }
             this.0pc.push(new 0Nh(20, 0xB3B3B3, _arg6, _arg1, _arg2, _arg3, _arg4, _arg7, _arg8, _arg9));
         }
 
@@ -108,14 +108,14 @@ package _1aA{
                 _local6.y = (28 * _local5);
                 this.1G2.addChild(_local6);
                 _local5++;
-            };
+            }
             this.1G2.y = ((this.rect_.height - this.1G2.height) - 10);
             if (_local3 > (_local2 + 1000))
             {
                 this.Yp();
                 dispatchEvent(new Event(Event.COMPLETE));
                 removeEventListener(Event.ENTER_FRAME, this.onEnterFrame);
-            };
+            }
         }
 
         private function Yp():void{

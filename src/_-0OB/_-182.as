@@ -27,7 +27,7 @@ package 0OB{
             if (this.selected.charId() == _arg1)
             {
                 this.selected = null;
-            };
+            }
         }
 
         public function select(_arg1:SavedCharacter):void{

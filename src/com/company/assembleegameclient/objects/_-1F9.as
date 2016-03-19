@@ -24,7 +24,7 @@ package com.company.assembleegameclient.objects{
                 _local4 = ((_arg2 - TextureRedrawer.1hO) / _local3.width);
                 _local5 = ObjectLibrary.getRedrawnTextureFromType(_arg1, 100, true, false, _local4);
                 return (_local5);
-            };
+            }
             return (new HL(_arg2, _arg2));
         }
 

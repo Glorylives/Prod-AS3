@@ -49,7 +49,7 @@ package rK{
             if ((((((this.7E.length == 0)) && ((this.1Rv.length == 0)))) && ((this.0Hl.length == 0))))
             {
                 throw (new 00u(00u.30));
-            };
+            }
             return (new 0OE(this.7E, this.1Rv, this.0Hl));
         }
 
@@ -69,14 +69,14 @@ package rK{
                 for each (_local3 in _arg1[0])
                 {
                     _arg2.push(_local3);
-                };
+                }
             } else
             {
                 for each (_local3 in _arg1)
                 {
                     _arg2.push(_local3);
-                };
-            };
+                }
+            }
         }
 
 

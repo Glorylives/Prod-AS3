@@ -34,11 +34,11 @@ package sC{
             if (!this.1Pk())
             {
                 return (this.8e.25S);
-            };
+            }
             if (this.0eY())
             {
                 this.1l- = this.8e.25S;
-            };
+            }
             return (this.1l-);
         }
 
@@ -50,11 +50,11 @@ package sC{
             if (((!(this.1l-)) && (this.1Pk())))
             {
                 return (true);
-            };
+            }
             if ((((((this.1l- is Pet)) && (this.1Pk()))) && (!((Pet(this.8e.25S).vo.try () == Pet(this.1l-).vo.try ())))))
             {
                 return (true);
-            };
+            }
             return (false);
         }
 

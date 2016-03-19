@@ -71,7 +71,7 @@ package 1qa{
             } else
             {
                 this.buyButton.setPrice(this.1Eg.0Br, this.1Eg.1hG);
-            };
+            }
             this.buyButton.x = (MysteryBoxSelectModal.0l4 - 120);
             this.buyButton.y = 16;
             this.buyButton.k4 = 70;
@@ -85,14 +85,14 @@ package 1qa{
             } else
             {
                 this.AH();
-            };
+            }
             if (this.1c5 == null)
             {
                 this.1Eg.mV.contentLoaderInfo.addEventListener(Event.COMPLETE, this.12z);
             } else
             {
                 this.jZ();
-            };
+            }
             this.1Eg.quantity = this.quantity_.toString();
             this.1ex = 0Zn.0QY(0Zn.1GG, 3);
             this.1ex.x = ((this.buyButton.x + this.buyButton.width) + 45);
@@ -131,8 +131,8 @@ package 1qa{
                         if (this.quantity_ < 10)
                         {
                             this.quantity_ = (this.quantity_ + 5);
-                        };
-                    };
+                        }
+                    }
                     break;
                 case this.1ex:
                     if (this.quantity_ == 10)
@@ -143,10 +143,10 @@ package 1qa{
                         if (this.quantity_ > 1)
                         {
                             this.quantity_ = (this.quantity_ - 4);
-                        };
-                    };
+                        }
+                    }
                     break;
-            };
+            }
             this.1Eg.quantity = this.quantity_.toString();
             if (this.1Eg.1p1())
             {
@@ -154,7 +154,7 @@ package 1qa{
             } else
             {
                 this.buyButton.setPrice((this.1Eg.0Br * this.quantity_), this.1Eg.1hG);
-            };
+            }
         }
 
         private function 0Fk():void{
@@ -162,7 +162,7 @@ package 1qa{
             {
                 this.1PE = this.1UU(this.newString, 74, 0).setColor(0xFFDE00);
                 addChild(this.1PE);
-            };
+            }
         }
 
         private function onEnterFrame(_arg1:Event):void{
@@ -171,12 +171,12 @@ package 1qa{
             {
                 this.1PE.scaleX = _local2;
                 this.1PE.scaleY = _local2;
-            };
+            }
             if (this.02x)
             {
                 this.02x.scaleX = _local2;
                 this.02x.scaleY = _local2;
-            };
+            }
         }
 
         private function Ml():void{
@@ -190,7 +190,7 @@ package 1qa{
                 _local2 = this.1UU("", (int(((250 * MysteryBoxSelectModal.0l4) / 415)) - 32), 46).setColor(0xFF0000);
                 _local2.setStringBuilder(_local1);
                 addChild(_local2);
-            };
+            }
         }
 
         private function 1To(_arg1:Event):void{
@@ -214,7 +214,7 @@ package 1qa{
             } else
             {
                 _local6.setStringBuilder(new 1cA().setParams(_arg1));
-            };
+            }
             _local6.setWordWrap(true);
             _local6.setMultiLine(true);
             _local6.setAutoSize(TextFieldAutoSize.LEFT);
@@ -229,7 +229,7 @@ package 1qa{
             if (this.rJ == null)
             {
                 return;
-            };
+            }
             this.rJ.width = 48;
             this.rJ.height = 48;
             this.rJ.x = 14;
@@ -243,7 +243,7 @@ package 1qa{
             if (this.1c5 == null)
             {
                 return;
-            };
+            }
             var _local1:int = 8;
             this.1c5.width = (291 - _local1);
             this.1c5.height = ((598 - (_local1 * 2)) - 2);
@@ -262,7 +262,7 @@ package 1qa{
                 _local3 = [3.0742, -1.8282, -0.246, 0, 50, -0.9258, 2.1718, -0.246, 0, 50, -0.9258, -1.8282, 3.754, 0, 50, 0, 0, 0, 1, 0];
                 _local4 = new ColorMatrixFilter(_local3);
                 this.Jx.filters = [_local4];
-            };
+            }
         }
 
         private function cE():void{
@@ -272,7 +272,7 @@ package 1qa{
                 removeChild(this.1c5);
                 this.1Vz = false;
                 this.Jx.filters = [];
-            };
+            }
         }
 
         private function 0Sn(_arg1:MouseEvent):void{
@@ -284,7 +284,7 @@ package 1qa{
                 _local2.ZJ = MysteryBoxSelectModal(parent.parent);
                 _local4 = _1JZ.0JF().getInstance(0io);
                 _local4.dispatch(_local2);
-            };
+            }
         }
 
 

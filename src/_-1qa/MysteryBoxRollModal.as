@@ -142,7 +142,7 @@ package 1qa{
             {
                 this.19x.push(0);
                 _local4++;
-            };
+            }
             this.1or();
             this.DR(_arg2);
             this.1j1();
@@ -183,7 +183,7 @@ package 1qa{
                     this.0bf = 1;
                     this.1LP.delay = 50;
                     this.11r.delay = 2000;
-            };
+            }
             if (this.1Eg.1p1())
             {
                 _local2 = (this.1Eg.rn * this.quantity_);
@@ -192,7 +192,7 @@ package 1qa{
             {
                 _local2 = (this.1Eg.0Br * this.quantity_);
                 _local3 = this.1Eg.1hG;
-            };
+            }
             if (this.quantity_ == 1)
             {
                 this.1Xy.setPrice(_local2, this.1Eg.1hG);
@@ -204,7 +204,7 @@ package 1qa{
                     cost:_local2.toString(),
                     repeat:this.quantity_.toString()
                 }));
-            };
+            }
         }
 
         public function 1UU(_arg1:String, _arg2:int, _arg3:int, _arg4:Boolean=false):_13j{
@@ -216,7 +216,7 @@ package 1qa{
             } else
             {
                 _local5.setStringBuilder(new 1cA().setParams(_arg1));
-            };
+            }
             _local5.setWordWrap(true);
             _local5.setMultiLine(true);
             _local5.setAutoSize(TextFieldAutoSize.CENTER);
@@ -261,7 +261,7 @@ package 1qa{
             if (!this.dz())
             {
                 return;
-            };
+            }
             this.state = this.S0;
             this.1tf.visible = false;
             var _local1:Object = this.account.1Y();
@@ -276,7 +276,7 @@ package 1qa{
                 _local1.quantity = this.1Eg._quantity;
                 _local1.price = this.1Eg.1e6;
                 _local1.currency = this.1Eg.eh;
-            };
+            }
             this.client.sendRequest("/account/purchaseMysteryBox", _local1);
             this.Yi = this.1UU(this.1Eg._title, 1yz, 6, true).setSize(18);
             this.Yi.setColor(0xFFDE00);
@@ -299,7 +299,7 @@ package 1qa{
                 _local2 = new Bitmap(ObjectLibrary.getRedrawnTextureFromType(this.1Eg.0Cg[this.19x[_local1]], this.1Ob, true));
                 this.ei.push(_local2);
                 _local1++;
-            };
+            }
             this.0Ml(this.ei);
             this.1LP.addEventListener(TimerEvent.TIMER, this.0pj);
             this.1LP.start();
@@ -311,7 +311,7 @@ package 1qa{
             if (this.N7)
             {
                 this.tm(this.0Zl);
-            };
+            }
             this.11r.removeEventListener(TimerEvent.TIMER, this.1dW);
         }
 
@@ -338,10 +338,10 @@ package 1qa{
                 } else
                 {
                     this.19x[_local2] = 0;
-                };
+                }
                 this.ei[_local2].bitmapData = new Bitmap(ObjectLibrary.getRedrawnTextureFromType(this.1Eg.0Cg[this.19x[_local2]], this.1Ob, true)).bitmapData;
                 _local2++;
-            };
+            }
             this.1LP.start();
         }
 
@@ -367,11 +367,11 @@ package 1qa{
                     _arg1[2].x = (_arg1[2].x + ((WIDTH / 2) + 60));
                     _arg1[2].y = (_arg1[2].y + (HEIGHT / 3));
                     break;
-            };
+            }
             for each (_local2 in _arg1)
             {
                 addChild(_local2);
-            };
+            }
         }
 
         private function onComplete(_arg1:Boolean, _arg2):void{
@@ -390,7 +390,7 @@ package 1qa{
                 if (this.zi)
                 {
                     this.tm(_local3.Awards);
-                };
+                }
                 _local4 = _1JZ.0JF().getInstance(1Nb).player;
                 if (_local4 != null)
                 {
@@ -402,8 +402,8 @@ package 1qa{
                         if (_local3.hasOwnProperty("Fame"))
                         {
                             _local4.1iQ = _local3.Fame;
-                        };
-                    };
+                        }
+                    }
                 } else
                 {
                     _local5 = _1JZ.0JF().getInstance(0Te);
@@ -417,10 +417,10 @@ package 1qa{
                             if (_local3.hasOwnProperty("Fame"))
                             {
                                 _local5.MF(int(_local3.Fame));
-                            };
-                        };
-                    };
-                };
+                            }
+                        }
+                    }
+                }
             } else
             {
                 _local6 = _1JZ.0JF().getInstance(0io);
@@ -432,7 +432,7 @@ package 1qa{
                 _local9.1Ot();
                 _local9.start();
                 this.close(true);
-            };
+            }
         }
 
         private function 1de(_arg1:Event):void{
@@ -454,7 +454,7 @@ package 1qa{
             {
                 _local1 = int(this.1Eg.1hG);
                 _local2 = (int(this.1Eg.0Br) * this.quantity_);
-            };
+            }
             var _local3:Boolean = true;
             var _local4:int;
             var _local5:int;
@@ -470,8 +470,8 @@ package 1qa{
                 {
                     _local5 = _local8.0ce();
                     _local4 = _local8.15g();
-                };
-            };
+                }
+            }
             if ((((_local1 == Currency.1Jg)) && ((_local5 < _local2))))
             {
                 _local7 = _1JZ.0JF().getInstance(0io);
@@ -484,8 +484,8 @@ package 1qa{
                     _local7 = _1JZ.0JF().getInstance(0io);
                     _local7.dispatch(new NotEnoughFameDialog());
                     _local3 = false;
-                };
-            };
+                }
+            }
             return (_local3);
         }
 
@@ -498,7 +498,7 @@ package 1qa{
             if (this.state == this.S0)
             {
                 return;
-            };
+            }
             if (!_arg1)
             {
                 _local2 = _1JZ.0JF().getInstance(0io);
@@ -508,8 +508,8 @@ package 1qa{
                 } else
                 {
                     _local2.dispatch(new MysteryBoxSelectModal());
-                };
-            };
+                }
+            }
             open = false;
         }
 
@@ -528,7 +528,7 @@ package 1qa{
             {
                 this.06T.addEventListener(TimerEvent.TIMER, this.1vp);
                 this.06T.start();
-            };
+            }
             this.1tf.visible = true;
             var _local2:Array = _arg1.split(",");
             removeChild(this.1pZ);
@@ -544,16 +544,16 @@ package 1qa{
                 addChild(_local6);
                 this.1j6.push(_local6);
                 _local3 = (_local3 + 25);
-            };
+            }
             _local5 = 0;
             while (_local5 < _local2.length)
             {
                 if (_local5 < this.ei.length)
                 {
                     this.ei[_local5].bitmapData = new Bitmap(ObjectLibrary.getRedrawnTextureFromType(int(_local2[_local5]), this.1Ob, true)).bitmapData;
-                };
+                }
                 _local5++;
-            };
+            }
             _local5 = 0;
             while (_local5 < this.ei.length)
             {
@@ -565,7 +565,7 @@ package 1qa{
                     scaleY:1
                 });
                 _local5++;
-            };
+            }
             this.1Xy.alpha = 0;
             addChild(this.1Xy);
             if (this.1ZI == this.0bf)
@@ -573,7 +573,7 @@ package 1qa{
                 this.16T(this.1Xy, {alpha:0}, {alpha:1});
                 this.16T(this.dd, {alpha:0}, {alpha:1});
                 this.16T(this.lI, {alpha:0}, {alpha:1});
-            };
+            }
             this.16T(this.2r, {alpha:0}, {alpha:1});
             this.4a = true;
         }
@@ -607,7 +607,7 @@ package 1qa{
                 this.22d.Xf(_local5, _local6, _local7, _local8, 115, 15787660, 0.2);
                 addChild(_local2);
                 this.Pb.push(_local2);
-            };
+            }
         }
 
         private function zg():void{
@@ -620,20 +620,20 @@ package 1qa{
             for each (_local1 in this.1j6)
             {
                 removeChild(_local1);
-            };
+            }
             while (this.1j6.length > 0)
             {
                 this.1j6.pop();
-            };
+            }
             removeChild(this.1Xy);
             for each (_local2 in this.ei)
             {
                 removeChild(_local2);
-            };
+            }
             while (this.ei.length > 0)
             {
                 this.ei.pop();
-            };
+            }
         }
 
         private function 1UO():void{
@@ -641,11 +641,11 @@ package 1qa{
             for each (_local1 in this.Pb)
             {
                 removeChild(_local1);
-            };
+            }
             while (this.Pb.length > 0)
             {
                 this.Pb.pop();
-            };
+            }
         }
 
         private function 1or():void{
@@ -664,7 +664,7 @@ package 1qa{
                     case 10:
                         this.DR(5);
                         break;
-                };
+                }
             } else
             {
                 if (_arg1.currentTarget == this.lI)
@@ -677,9 +677,9 @@ package 1qa{
                         case 5:
                             this.DR(10);
                             return;
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         private function 0cZ(_arg1:MouseEvent):void{

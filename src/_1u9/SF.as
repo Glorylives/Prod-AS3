@@ -24,7 +24,7 @@ import flash.utils.describeType;
             if (type == superType)
             {
                 return (true);
-            };
+            }
             var factoryDescription:XML = describeType(type).factory[0];
             return ((factoryDescription.children().(((name() == "implementsInterface")) || ((name() == "extendsClass"))).(attribute("type") == getQualifiedClassName(superType)).length() > 0));
         }
@@ -52,16 +52,16 @@ import flash.utils.describeType;
                 if ((((this._0XM.parent().@name == "Object")) || ((this._0XM.extendsClass.length() > 0))))
                 {
                     description.ctor = new _15R();
-                };
+                }
                 return;
-            };
+            }
             injectParameters = this._1MP(node.parent().metadata.arg);
             var parameterNames:Array = ((injectParameters.name) || ("")).split(",");
             var parameterNodes:XMLList = node.parameter;
             if (parameterNodes.(@type == "*").length() == parameterNodes.@type.length())
             {
                 this._2Q(node, type);
-            };
+            }
             parameters = this._1IB(parameterNodes, parameterNames);
             var requiredParameters:uint = parameters.required;
             delete parameters.required;
@@ -80,7 +80,7 @@ import flash.utils.describeType;
                 _local6 = _local5.@key;
                 _local2[_local6] = ((_local2[_local6]) ? ((_local2[_local6] + ",") + _local5.attribute("value")) : _local5.attribute("value"));
                 _local4++;
-            };
+            }
             return (_local2);
         }
 
@@ -98,7 +98,7 @@ import flash.utils.describeType;
                 injectParameters = this._1MP(node.arg);
                 injectionPoint = new _UV(mappingId, propertyName, (injectParameters.optional == "true"), injectParameters);
                 description.gj(injectionPoint);
-            };
+            }
         }
 
 import flash.utils.Dictionary;
@@ -120,7 +120,7 @@ private function _1re(_arg1:_3A):void{
                 delete parameters.required;
                 injectionPoint = new _09S(node.parent().@name, parameters, requiredParameters, (injectParameters.optional == "true"), injectParameters);
                 description.gj(injectionPoint);
-            };
+            }
         }
 
         private function _9z(_arg1:_3A):void{
@@ -131,7 +131,7 @@ private function _1re(_arg1:_3A):void{
             {
                 _arg1.gj(_local2[_local3]);
                 _local3++;
-            };
+            }
         }
 
         private function _0sq(_arg1:_3A):void{
@@ -139,7 +139,7 @@ private function _1re(_arg1:_3A):void{
             if (!_local2.length)
             {
                 return;
-            };
+            }
             _arg1._1iP = _local2[0];
             _arg1._1iP.last = _local2[0];
             var _local3:int = 1;
@@ -149,7 +149,7 @@ private function _1re(_arg1:_3A):void{
                 _arg1._1iP.last.next = _local2[_local3];
                 _arg1._1iP.last = _local2[_local3];
                 _local3++;
-            };
+            }
         }
 
         private function _1IB(_arg1:XMLList, _arg2:Array):Array{
@@ -173,16 +173,16 @@ private function _1re(_arg1:_3A):void{
                     if (!_local10)
                     {
                         throw (new _03A((('Error in method definition _of injectee "' + this._0XM.@type) + "Required parameters can't have type \"*\".")));
-                    };
+                    }
                     _local9 = null;
-                };
+                }
                 if (!_local10)
                 {
                     _local3++;
-                };
+                }
                 _local5[_local6] = ((_local9 + "|") + _local8);
                 _local6++;
-            };
+            }
             _local5.required = _local3;
             return (_local5);
         }
@@ -206,11 +206,11 @@ private function _1re(_arg1:_3A):void{
                 delete parameters.required;
                 order = parseInt(node.arg.(@key == "order").@value);
                 injectionPoints.push(new injectionPointType(node.parent().@name, parameters, requiredParameters, ((isNaN(order)) ? int.MAX_VALUE : order)));
-            };
+            }
             if (injectionPoints.length > 0)
             {
                 injectionPoints.sortOn("order", Array.NUMERIC);
-            };
+            }
             return (injectionPoints);
         }
 
@@ -254,11 +254,11 @@ private function _1re(_arg1:_3A):void{
                     case 10:
                         new clazz(null, null, null, null, null, null, null, null, null, null);
                         break;
-                };
+                }
             } catch(error:Error)
             {
                 trace(((((("Exception caught while trying to create dummy instance for constructor " + "injection. It's almost certainly ok to ignore this exception, but you ") + "might want to restructure your constructor to prevent errors from ") + "happening. See the Swiftsuspenders documentation for more details.\n") + "The caught exception was:\n") + error));
-            };
+            }
             constructorNode.setChildren(describeType(clazz).factory.constructor[0].children());
         }
 

@@ -17,7 +17,7 @@ package 0D5{
             if (ExternalInterface.available)
             {
                 ExternalInterface.addCallback("updatePlayerCredits", this.updatePlayerCredits);
-            };
+            }
         }
 
         private function updatePlayerCredits():void{

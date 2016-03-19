@@ -30,7 +30,7 @@ package 1RB{
         public const 1Bk:_1HZ = new _1HZ(1QY);
         public const close:_1HZ = new _1HZ();
         private const 1YB:Vector.<hz> = new <hz>[];
-        private const ug:Object = {};
+        private const ug:Object = {}
 
         private var title:_13j;
         private var 0d4:_13j;
@@ -138,7 +138,7 @@ package 1RB{
             {
                 this.0VN(_local1[_local3], _local3);
                 _local3++;
-            };
+            }
         }
 
         private function 0VN(_arg1:Timespan, _arg2:int):0mX{
@@ -155,7 +155,7 @@ package 1RB{
             if (this.lt != _arg1)
             {
                 this.0dx(_arg1);
-            };
+            }
         }
 
         private function 0dx(_arg1:0mX):void{
@@ -194,7 +194,7 @@ package 1RB{
             for each (_local1 in this.1YB)
             {
                 _local1.selected.remove(this.24X);
-            };
+            }
             this.1YB.length = 0;
             this.BB.removeChild(this.mw);
             this.mw = null;
@@ -219,7 +219,7 @@ package 1RB{
             {
                 this.1YB[_local1] = this.1b9(_local1);
                 _local1++;
-            };
+            }
         }
 
         private function 1b9(_arg1:int):hz{
@@ -243,7 +243,7 @@ package 1RB{
             {
                 this.1I-.removeEventListener(Event.CHANGE, this.ef);
                 this.1I-.visible = false;
-            };
+            }
         }
 
         private function gu():void{
@@ -255,7 +255,7 @@ package 1RB{
                 _local2 = this.legends.indexOf(_local1);
                 _local3 = ((_local2 + 0.5) * hz.HEIGHT);
                 this.1I-.Gx(((_local3 - 200) / (this.mw.height - 400)));
-            };
+            }
         }
 
         private function zc():1QY{
@@ -267,8 +267,8 @@ package 1RB{
                 {
                     _local1 = _local2;
                     break;
-                };
-            };
+                }
+            }
             return (_local1);
         }
 

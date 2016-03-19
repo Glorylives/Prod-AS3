@@ -26,7 +26,7 @@ package AB{
                 _local6 = Number(_local4.@duration);
                 this.HA(_local5, _local6);
                 ZX[_local3.toXMLString()] = true;
-            };
+            }
             this.05j(_arg1);
         }
 
@@ -38,7 +38,7 @@ package AB{
                 1Tf.pushParams(du.1l7, {}, TR.1pw(2-W), TR.17H());
                 teleportTag = XML(itemXML.Activate.(text() == 0MX.TELEPORT))[0];
                 ZX[teleportTag.toXMLString()] = true;
-            };
+            }
         }
 
         private function 0LI(_arg1:XML):XML{
@@ -51,8 +51,8 @@ package AB{
                 if (conditionTag.(@effect == "Invisible"))
                 {
                     return (conditionTag);
-                };
-            };
+                }
+            }
             return (null);
         }
 

@@ -30,7 +30,7 @@ import flash.display.Sprite;
                 this.Ph[_local2] = _local3;
                 addChild(_local3);
                 _local2++;
-            };
+            }
             this.questArrow_ = new _0me(this.map_);
             addChild(this.questArrow_);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
@@ -50,7 +50,7 @@ import flash.display.Sprite;
             if (this.map_.player_ == null)
             {
                 return;
-            };
+            }
             var _local3:_08T = this.map_.party_;
             var _local4:Player = this.map_.player_;
             var _local5:int;
@@ -84,22 +84,22 @@ import flash.display.Sprite;
                                     if (!_local9._01)
                                     {
                                         _local9._1uN(_local7);
-                                    };
+                                    }
                                     _local6._1Ix(null);
                                     break;
-                                };
+                                }
                                 _local8++;
-                            };
+                            }
                             _local6.draw(_arg2, _arg1);
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 _local5++;
-            };
+            }
             if (!this.questArrow_._01)
             {
                 this.questArrow_.draw(_arg2, _arg1);
-            };
+            }
         }
 
 

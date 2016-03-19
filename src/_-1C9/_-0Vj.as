@@ -22,11 +22,11 @@ package 1C9{
             if (this.data.Account.hasOwnProperty("PetYardType"))
             {
                 this.model.zU(this.1wk());
-            };
+            }
             if (this.data.hasOwnProperty("Pet"))
             {
                 this.model.0mj(this.0eC());
-            };
+            }
         }
 
         private function 1wk():int{

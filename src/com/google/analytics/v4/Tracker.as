@@ -72,18 +72,18 @@ package com.google.analytics.v4{
                 _local9 = (('Account "' + _arg1) + '" is not valid.');
                 _debug.warning(_local9);
                 throw (new Error(_local9));
-            };
+            }
         }
 
         private function _doTracking():Boolean{
             if (((((!((_info.protocol == Protocols.file))) && (!((_info.protocol == Protocols.none))))) && (_isNotGoogleSearch())))
             {
                 return (true);
-            };
+            }
             if (_config.allowLocalTracking)
             {
                 return (true);
-            };
+            }
             return (false);
         }
 
@@ -117,22 +117,22 @@ package com.google.analytics.v4{
                 {
                     _local5 = _eventTracker.setKey(EVENT_TRACKER_PROJECT_ID, EVENT_TRACKER_LABEL_KEY_NUM, _arg3);
                     _local6 = 3;
-                };
+                }
                 if (!isNaN(_arg4))
                 {
                     _local5 = _eventTracker.setValue(EVENT_TRACKER_PROJECT_ID, EVENT_TRACKER_VALUE_VALUE_NUM, _arg4);
                     _local6 = 4;
-                };
+                }
                 if (_local5)
                 {
                     _debug.info(((("valid event tracking call\ncategory: " + _arg1) + "\naction: ") + _arg2), VisualDebugMode.geek);
                     _sendXEvent(_eventTracker);
-                };
+                }
             } else
             {
                 _debug.warning(((("event tracking call is not valid, failed!\ncategory: " + _arg1) + "\naction: ") + _arg2), VisualDebugMode.geek);
                 _local5 = false;
-            };
+            }
             switch (_local6)
             {
                 case 4:
@@ -144,7 +144,7 @@ package com.google.analytics.v4{
                 case 2:
                 default:
                     _debug.info((("trackEvent( " + [_arg1, _arg2].join(", ")) + " )"));
-            };
+            }
             return (_local5);
         }
 
@@ -158,7 +158,7 @@ package com.google.analytics.v4{
             } else
             {
                 _debug.warning((("trackPageview( " + _arg1) + " ) failed"));
-            };
+            }
         }
 
         public function setCookieTimeout(_arg1:int):void{
@@ -184,16 +184,16 @@ package com.google.analytics.v4{
                     {
                         _local3.push(_local4.getItemFromArray(_local2).toGifParams());
                         _local2++;
-                    };
+                    }
                     _local1++;
-                };
+                }
                 _local1 = 0;
                 while (_local1 < _local3.length)
                 {
                     _gifRequest.send(_account, _local3[_local1]);
                     _local1++;
-                };
-            };
+                }
+            }
         }
 
         public function setClientInfo(_arg1:Boolean):void{
@@ -221,12 +221,12 @@ package com.google.analytics.v4{
                     _local1 = (_local1 + ("\ndomain hash: " + _domainHash));
                     _local1 = (_local1 + (((("\ntimestamp:   " + _timeStamp) + " (") + new Date((_timeStamp * 1000))) + ")"));
                     _debug.info(_local1, VisualDebugMode.geek);
-                };
-            };
+                }
+            }
             if (_doTracking())
             {
                 _handleCookie();
-            };
+            }
             if (!_hasInitData)
             {
                 if (_doTracking())
@@ -241,16 +241,16 @@ package com.google.analytics.v4{
                         _debug.info(("campaignInfo: " + _campaignInfo.toURLString()), VisualDebugMode.advanced);
                         _debug.info(("Search: " + _info.locationSearch));
                         _debug.info(("CampaignTrackig: " + _buffer.utmz.campaignTracking));
-                    };
-                };
+                    }
+                }
                 _x10Module = new X10();
                 _eventTracker = new X10();
                 _hasInitData = true;
-            };
+            }
             if (_config.hasSiteOverlay)
             {
                 _debug.warning("Site Overlay is not supported");
-            };
+            }
             if (_debug.verbose)
             {
                 _local2 = "";
@@ -262,7 +262,7 @@ package com.google.analytics.v4{
                 _local2 = (_local2 + ("\ndomain hash: " + _getDomainHash()));
                 _local2 = (_local2 + ("\nuser-agent: " + _info.userAgent));
                 _debug.info(_local2, VisualDebugMode.geek);
-            };
+            }
         }
 
         public function getDetectTitle():Boolean{
@@ -294,7 +294,7 @@ package com.google.analytics.v4{
                 _local5 = _renderMetricsSearchVariables();
                 _local2.join(_local4, _local5);
                 _gifRequest.send(_account, _local2, false, true);
-            };
+            }
         }
 
         public function setDetectFlash(_arg1:Boolean):void{
@@ -311,7 +311,7 @@ package com.google.analytics.v4{
             } else
             {
                 _debug.info(_local2);
-            };
+            }
         }
 
         private function _formatReferrer():String{
@@ -330,19 +330,19 @@ package com.google.analytics.v4{
                 if (_local3.hostName == _local2)
                 {
                     return ("-");
-                };
+                }
                 if (_local4.domain == _local3.domain)
                 {
                     if (_local4.subDomain != _local3.subDomain)
                     {
                         _local1 = "0";
-                    };
-                };
+                    }
+                }
                 if ((((_local1.charAt(0) == "[")) && (_local1.charAt((_local1.length - 1)))))
                 {
                     _local1 = "-";
-                };
-            };
+                }
+            }
             _debug.info(("formated referrer: " + _local1), VisualDebugMode.advanced);
             return (_local1);
         }
@@ -351,7 +351,7 @@ package com.google.analytics.v4{
             if (_debug.verbose)
             {
                 _debug.info(("visitCode: " + _buffer.utma.sessionId), VisualDebugMode.geek);
-            };
+            }
             return (_buffer.utma.sessionId);
         }
 
@@ -366,12 +366,12 @@ package com.google.analytics.v4{
             if (_local7 == null)
             {
                 _local7 = _ecom.addTransaction(_arg1, "", "", "", "", "", "", "");
-            };
+            }
             _local7.addItem(_arg2, _arg3, _arg4, _arg5.toString(), _arg6.toString());
             if (_debug.active)
             {
                 _debug.info((("addItem( " + [_arg1, _arg2, _arg3, _arg4, _arg5, _arg6].join(", ")) + " )"));
-            };
+            }
         }
 
         public function clearIgnoredOrganic():void{
@@ -389,18 +389,18 @@ package com.google.analytics.v4{
                 if (_debug.verbose)
                 {
                     _debug.info(_buffer.utmv.toString(), VisualDebugMode.geek);
-                };
+                }
                 _debug.info((("setVar( " + _arg1) + " )"));
                 if (_takeSample())
                 {
                     _local2 = new Variables();
                     _local2.utmt = "var";
                     _gifRequest.send(_account, _local2);
-                };
+                }
             } else
             {
                 _debug.warning((('setVar "' + _arg1) + '" is ignored'));
-            };
+            }
         }
 
         public function setDomainName(_arg1:String):void{
@@ -416,8 +416,8 @@ package com.google.analytics.v4{
                 {
                     _config.domain.mode = DomainNameMode.custom;
                     _config.domain.name = _arg1;
-                };
-            };
+                }
+            }
             _updateDomainName();
             _debug.info((("setDomainName( " + _config.domainName) + " )"));
         }
@@ -430,9 +430,9 @@ package com.google.analytics.v4{
                 if (_local1.substring(0, 4) == "www.")
                 {
                     _local1 = _local1.substring(4);
-                };
+                }
                 _config.domain.name = _local1;
-            };
+            }
             _config.domainName = _config.domain.name.toLowerCase();
             _debug.info(("domain name: " + _config.domainName), VisualDebugMode.advanced);
         }
@@ -442,7 +442,7 @@ package com.google.analytics.v4{
             if (_debug.active)
             {
                 _debug.info((("addTrans( " + [_arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg7, _arg8].join(", ")) + " );"));
-            };
+            }
         }
 
         private function _renderMetricsSearchVariables(_arg1:String=""):Variables{
@@ -454,7 +454,7 @@ package com.google.analytics.v4{
             if (_config.campaignTracking)
             {
                 _local4 = _campaignInfo.toVariables();
-            };
+            }
             var _local5:Variables = _browserInfo.toVariables();
             _local2.join(_local3.toVariables(), _local5, _local4);
             return (_local2);
@@ -469,7 +469,7 @@ package com.google.analytics.v4{
             } else
             {
                 _debug.info(_local2);
-            };
+            }
         }
 
         private function _handleCookie():void{
@@ -479,7 +479,7 @@ package com.google.analytics.v4{
             var _local4:String;
             if (_config.allowLinker)
             {
-            };
+            }
             _buffer.createSO();
             if (((_buffer.hasUTMA()) && (!(_buffer.utma.isEmpty()))))
             {
@@ -487,11 +487,11 @@ package com.google.analytics.v4{
                 {
                     _buffer.updateUTMA(_timeStamp);
                     _noSessionInformation = true;
-                };
+                }
                 if (_debug.verbose)
                 {
                     _debug.info(("from cookie " + _buffer.utma.toString()), VisualDebugMode.geek);
-                };
+                }
             } else
             {
                 _debug.info("create a new utma", VisualDebugMode.advanced);
@@ -504,10 +504,10 @@ package com.google.analytics.v4{
                 if (_debug.verbose)
                 {
                     _debug.info(_buffer.utma.toString(), VisualDebugMode.geek);
-                };
+                }
                 _noSessionInformation = true;
                 _isNewVisitor = true;
-            };
+            }
             if (((_adSense.gaGlobal) && ((_adSense.dh == String(_domainHash)))))
             {
                 if (_adSense.sid)
@@ -519,8 +519,8 @@ package com.google.analytics.v4{
                         _local1 = (_local1 + "AdSense sid found\n");
                         _local1 = (_local1 + (((("Override currentTime(" + _buffer.utma.currentTime) + ") from AdSense sid(") + Number(_adSense.sid)) + ")"));
                         _debug.info(_local1, VisualDebugMode.geek);
-                    };
-                };
+                    }
+                }
                 if (_isNewVisitor)
                 {
                     if (_adSense.sid)
@@ -532,8 +532,8 @@ package com.google.analytics.v4{
                             _local2 = (_local2 + "AdSense sid found (new visitor)\n");
                             _local2 = (_local2 + (((("Override lastTime(" + _buffer.utma.lastTime) + ") from AdSense sid(") + Number(_adSense.sid)) + ")"));
                             _debug.info(_local2, VisualDebugMode.geek);
-                        };
-                    };
+                        }
+                    }
                     if (_adSense.vid)
                     {
                         _local3 = _adSense.vid.split(".");
@@ -546,33 +546,33 @@ package com.google.analytics.v4{
                             _local4 = (_local4 + (((("Override sessionId(" + _buffer.utma.sessionId) + ") from AdSense vid(") + Number(_local3[0])) + ")\n"));
                             _local4 = (_local4 + (((("Override firstTime(" + _buffer.utma.firstTime) + ") from AdSense vid(") + Number(_local3[1])) + ")"));
                             _debug.info(_local4, VisualDebugMode.geek);
-                        };
-                    };
+                        }
+                    }
                     if (_debug.verbose)
                     {
                         _debug.info(("AdSense modified : " + _buffer.utma.toString()), VisualDebugMode.geek);
-                    };
-                };
-            };
+                    }
+                }
+            }
             _buffer.utmb.domainHash = _domainHash;
             if (isNaN(_buffer.utmb.trackCount))
             {
                 _buffer.utmb.trackCount = 0;
-            };
+            }
             if (isNaN(_buffer.utmb.token))
             {
                 _buffer.utmb.token = _config.tokenCliff;
-            };
+            }
             if (isNaN(_buffer.utmb.lastTime))
             {
                 _buffer.utmb.lastTime = _buffer.utma.currentTime;
-            };
+            }
             _buffer.utmc.domainHash = _domainHash;
             if (_debug.verbose)
             {
                 _debug.info(_buffer.utmb.toString(), VisualDebugMode.advanced);
                 _debug.info(_buffer.utmc.toString(), VisualDebugMode.advanced);
-            };
+            }
         }
 
         public function setLocalServerMode():void{
@@ -594,7 +594,7 @@ package com.google.analytics.v4{
             } else
             {
                 _debug.info(_local2);
-            };
+            }
         }
 
         public function getLocalGifPath():String{
@@ -633,7 +633,7 @@ package com.google.analytics.v4{
             } else
             {
                 _config.sampleRate = _arg1;
-            };
+            }
             _debug.info((("setSampleRate( " + _config.sampleRate) + " )"));
         }
 
@@ -641,7 +641,7 @@ package com.google.analytics.v4{
             if (_debug.verbose)
             {
                 _debug.info((((("takeSample: (" + (_visitCode() % 10000)) + ") < (") + (_config.sampleRate * 10000)) + ")"), VisualDebugMode.geek);
-            };
+            }
             return (((_visitCode() % 10000) < (_config.sampleRate * 10000)));
         }
 
@@ -676,7 +676,7 @@ package com.google.analytics.v4{
             } else
             {
                 _debug.info(_local2);
-            };
+            }
         }
 
         public function addIgnoredOrganic(_arg1:String):void{
@@ -707,7 +707,7 @@ package com.google.analytics.v4{
             } else
             {
                 _debug.info(_local2);
-            };
+            }
         }
 
         public function getServiceMode():ServerOperationMode{
@@ -728,11 +728,11 @@ package com.google.analytics.v4{
                 {
                     _local5 = new EventInfo(false, _x10Module);
                     _local3 = _local5.toVariables();
-                };
+                }
                 _local4 = _renderMetricsSearchVariables(_arg1);
                 _local2.join(_local3, _local4);
                 _gifRequest.send(_account, _local2);
-            };
+            }
         }
 
         public function setCampaignTrack(_arg1:Boolean):void{
@@ -764,7 +764,7 @@ package com.google.analytics.v4{
             } else
             {
                 _debug.info(_local2);
-            };
+            }
         }
 
         private function _getUniqueSessionId():Number{
@@ -778,12 +778,12 @@ package com.google.analytics.v4{
             {
                 _config.domainName = "";
                 return (1);
-            };
+            }
             _updateDomainName();
             if (_config.allowDomainHash)
             {
                 return (Utils.generateHash(_config.domainName));
-            };
+            }
             return (1);
         }
 
@@ -810,7 +810,7 @@ package com.google.analytics.v4{
             } catch(e:Error)
             {
                 _debug.warning(("An error occured in link() msg: " + e.message));
-            };
+            }
         }
 
         public function setRemoteServerMode():void{

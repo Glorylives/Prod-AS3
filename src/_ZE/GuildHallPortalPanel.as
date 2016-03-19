@@ -38,7 +38,7 @@ package _ZE{
             if ((((gs_.map == null)) || ((gs_.map.player_ == null))))
             {
                 return;
-            };
+            }
             _local3 = gs_.map.player_;
             this.nameText_ = new _13j().setSize(18).setColor(0xFFFFFF).setTextWidth(WIDTH).setWordWrap(true).setMultiLine(true).setAutoSize(TextFieldAutoSize.CENTER).setBold(true).setHTML(true);
             this.nameText_.setStringBuilder(new 1cA().setParams(du.8q).setPrefix('<p align="center">').setPostfix("</p>"));
@@ -59,7 +59,7 @@ package _ZE{
                 this.N-.filters = [new DropShadowFilter(0, 0, 0)];
                 this.1he.push(this.N-.textChanged);
                 addChild(this.N-);
-            };
+            }
             this.1he.complete.addOnce(this.alignUI);
         }
 
@@ -67,12 +67,12 @@ package _ZE{
             if (this.N-)
             {
                 this.N-.y = ((HEIGHT - this.N-.height) - 12);
-            };
+            }
             if (this.do)
             {
                 this.do.x = ((WIDTH / 2) - (this.do.width / 2));
                 this.do.y = ((HEIGHT - this.do.height) - 4);
-            };
+            }
         }
 
         private function zp(_arg1:Event):void{
@@ -92,7 +92,7 @@ package _ZE{
             if ((((_arg1.keyCode == Parameters.data_.interact)) && ((stage.focus == null))))
             {
                 this.enterPortal();
-            };
+            }
         }
 
         private function enterPortal():void{

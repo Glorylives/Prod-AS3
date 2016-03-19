@@ -83,7 +83,7 @@ package _1aA{
             if (this.171)
             {
                 return;
-            };
+            }
             this.171 = true;
             this.model = _arg1;
             this.UP(_arg1);
@@ -101,13 +101,13 @@ package _1aA{
             {
                 this.0e.setColor(0Ik);
                 this.02k();
-            };
+            }
             this.10v();
             this.XD();
             if (!_arg1.3n())
             {
                 this.SQ();
-            };
+            }
         }
 
         private function XD():void{
@@ -155,7 +155,7 @@ package _1aA{
             if (this.fM > this.js)
             {
                 this.Pt();
-            };
+            }
             addChild(this.mn);
         }
 
@@ -168,7 +168,7 @@ package _1aA{
             if (this.fM > this.js)
             {
                 this.Pt();
-            };
+            }
             addChild(this.mn);
         }
 
@@ -177,12 +177,12 @@ package _1aA{
             {
                 removeChild(this.mn);
                 this.mn = null;
-            };
+            }
             if (this.1I- != null)
             {
                 removeChild(this.1I-);
                 this.1I- = null;
-            };
+            }
         }
 
         private function x8():void{
@@ -203,7 +203,7 @@ package _1aA{
                 this.0e.setColor(0Ik);
                 this.1FC.setColor(0Tg);
                 this.10v();
-            };
+            }
         }
 
         private function 02k():void{
@@ -224,7 +224,7 @@ package _1aA{
                 this.0e.setColor(0Tg);
                 this.1FC.setColor(0Ik);
                 this.1UY();
-            };
+            }
         }
 
         private function XT():void{
@@ -259,7 +259,7 @@ package _1aA{
             if (stage)
             {
                 _local1 = new Rectangle(0, 0, stage.stageWidth, stage.stageHeight);
-            };
+            }
             return (_local1);
         }
 
@@ -283,7 +283,7 @@ package _1aA{
             if (this.mn != null)
             {
                 this.mn.Gx((-(this.1I-.0md()) * (this.fM - 400)));
-            };
+            }
         }
 
         public function FI():void{
@@ -307,7 +307,7 @@ package _1aA{
             if (((_arg1) && (contains(_arg1))))
             {
                 removeChild(_arg1);
-            };
+            }
         }
 
         private function Zd():void{
@@ -317,7 +317,7 @@ package _1aA{
             } else
             {
                 this.7V.dispatch();
-            };
+            }
         }
 
         public function setName(_arg1:String):void{
@@ -327,7 +327,7 @@ package _1aA{
             {
                 removeChild(this.0Tv);
                 this.0Tv = null;
-            };
+            }
         }
 
 

@@ -35,7 +35,7 @@ package 2-g{
             {
                 8h.wordWrap = true;
                 8h.width = 160;
-            };
+            }
             width = (8h.width + 4);
             height = 8h.height;
         }
@@ -54,8 +54,8 @@ package 2-g{
                 if (_arg1.text.substring(0, 8) == "channel_")
                 {
                     console.panels.mainPanel.onChannelPressed(_arg1.text.substring(8));
-                };
-            };
+                }
+            }
             8h.setSelection(0, 0);
             _arg1.stopPropagation();
         }

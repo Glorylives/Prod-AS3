@@ -28,10 +28,10 @@ package com.hurlant.crypto.symmetric{
                 {
                     _local2[_local5] = _local3[(_local5 + 1)];
                     _local5++;
-                };
+                }
                 _local2[(blockSize - 1)] = _arg1[_local4];
                 _local4++;
-            };
+            }
         }
 
         public function decrypt(_arg1:ByteArray):void{
@@ -52,10 +52,10 @@ package com.hurlant.crypto.symmetric{
                 {
                     _local2[_local6] = _local3[(_local6 + 1)];
                     _local6++;
-                };
+                }
                 _local2[(blockSize - 1)] = _local5;
                 _local4++;
-            };
+            }
         }
 
         public function toString():String{

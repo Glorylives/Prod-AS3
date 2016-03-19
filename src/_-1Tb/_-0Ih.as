@@ -38,7 +38,7 @@ package 1Tb{
             {
                 this.0ou(_local2);
                 _local2 = _local2.next;
-            };
+            }
         }
 
         private function 0ou(_arg1:Dq):void{
@@ -48,7 +48,7 @@ package 1Tb{
                 _local2 = new ByteArray();
                 _arg1.0ZY(_local2);
                 remoter.send("log", _local2);
-            };
+            }
         }
 
         public function update(_arg1:uint):Boolean{
@@ -56,17 +56,17 @@ package 1Tb{
             if (this.Y > 0)
             {
                 this.Y--;
-            };
+            }
             if (this.Ij)
             {
                 if (this.0r4)
                 {
                     this.remove(this.0r4);
-                };
+                }
                 this.0r4 = this.Ij;
                 this.Ij = null;
                 this.push(this.0r4);
-            };
+            }
             var _local2:Boolean = this.6e;
             this.6e = false;
             return (_local2);
@@ -93,19 +93,19 @@ package 1Tb{
                     _arg1.line = this.0r4.line;
                     this.Ij = _arg1;
                     return;
-                };
+                }
                 this.Y = config.maxRepeats;
                 this.0r4 = _arg1;
-            };
+            }
             this.push(_arg1);
             while ((((this.1v1 > config.maxLines)) && ((config.maxLines > 0))))
             {
                 this.remove(this.first);
-            };
+            }
             if (((config.tracing) && (!((config.traceCall == null)))))
             {
                 config.traceCall(_arg1.ch, _arg1.plainText(), _arg1.priority);
-            };
+            }
         }
 
         public function clear(_arg1:String=null):void{
@@ -118,9 +118,9 @@ package 1Tb{
                     if (_local2.ch == _arg1)
                     {
                         this.remove(_local2);
-                    };
+                    }
                     _local2 = _local2.next;
-                };
+                }
                 delete this.0ot[_arg1];
             } else
             {
@@ -128,7 +128,7 @@ package 1Tb{
                 this.last = null;
                 this.1v1 = 0;
                 this.0ot = new Object();
-            };
+            }
         }
 
         public function getLogsAsString(_arg1:String, _arg2:Boolean=true, _arg3:Function=null):String{
@@ -141,11 +141,11 @@ package 1Tb{
                     if (this.first != _local5)
                     {
                         _local4 = (_local4 + _arg1);
-                    };
+                    }
                     _local4 = (_local4 + ((_arg2) ? _local5.toString() : _local5.plainText()));
-                };
+                }
                 _local5 = _local5.next;
-            };
+            }
             return (_local4);
         }
 
@@ -162,8 +162,8 @@ package 1Tb{
                 if (_local1.indexOf(_local3) < 0)
                 {
                     _local2.push(_local3);
-                };
-            };
+                }
+            }
             return (_local1.concat(_local2.sort(Array.CASEINSENSITIVE)));
         }
 
@@ -171,7 +171,7 @@ package 1Tb{
             if (this.0ot.hasOwnProperty(_arg1))
             {
                 _arg2.push(_arg1);
-            };
+            }
         }
 
         public function X3():void{
@@ -181,7 +181,7 @@ package 1Tb{
             {
                 this.addChannel(_local1.ch);
                 _local1 = _local1.next;
-            };
+            }
         }
 
         public function addChannel(_arg1:String):void{
@@ -196,7 +196,7 @@ package 1Tb{
             {
                 this.last.next = _arg1;
                 _arg1.gR = this.last;
-            };
+            }
             this.last = _arg1;
             this.1v1++;
         }
@@ -205,27 +205,27 @@ package 1Tb{
             if (this.first == _arg1)
             {
                 this.first = _arg1.next;
-            };
+            }
             if (this.last == _arg1)
             {
                 this.last = _arg1.gR;
-            };
+            }
             if (_arg1 == this.0r4)
             {
                 this.0r4 = null;
-            };
+            }
             if (_arg1 == this.Ij)
             {
                 this.Ij = null;
-            };
+            }
             if (_arg1.next != null)
             {
                 _arg1.next.gR = _arg1.gR;
-            };
+            }
             if (_arg1.gR != null)
             {
                 _arg1.gR.next = _arg1.next;
-            };
+            }
             this.1v1--;
         }
 

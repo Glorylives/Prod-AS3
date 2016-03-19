@@ -54,7 +54,7 @@ package _ZE{
                 _local2.addEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
                 _local2.addEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
                 _local2.addEventListener(MouseEvent.MOUSE_DOWN, this.onMouseDown);
-            };
+            }
         }
 
         private function onRemovedFromStage(_arg1:Event):void{
@@ -65,20 +65,20 @@ package _ZE{
                 _local2.removeEventListener(MouseEvent.MOUSE_OVER, this.onMouseOver);
                 _local2.removeEventListener(MouseEvent.MOUSE_OUT, this.onMouseOut);
                 _local2.removeEventListener(MouseEvent.MOUSE_DOWN, this.onMouseDown);
-            };
+            }
         }
 
         private function onMouseOver(_arg1:MouseEvent):void{
             if (((!((this.menu == null))) && (!((this.menu.parent == null)))))
             {
                 return;
-            };
+            }
             var _local2:0DH = (_arg1.currentTarget as 0DH);
             var _local3:Player = (_local2.go as Player);
             if ((((_local3 == null)) || ((_local3.texture_ == null))))
             {
                 return;
-            };
+            }
             this.01- = true;
         }
 
@@ -105,8 +105,8 @@ package _ZE{
                 if (_local3)
                 {
                     _local3.setEnabled(true);
-                };
-            };
+                }
+            }
             _arg1.currentTarget.removeEventListener(Event.REMOVED_FROM_STAGE, this.1nG);
         }
 
@@ -115,7 +115,7 @@ package _ZE{
             {
                 this.menu.remove();
                 this.menu = null;
-            };
+            }
         }
 
         override public function draw():void{
@@ -130,9 +130,9 @@ package _ZE{
                 for each (_local4 in this.0Mi)
                 {
                     _local4.clear();
-                };
+                }
                 return;
-            };
+            }
             var _local2:int;
             var _local3:int;
             while (_local3 < 08T.0-W)
@@ -143,11 +143,11 @@ package _ZE{
                 } else
                 {
                     _local5 = _local1.Mf[_local3];
-                };
+                }
                 if (((!((_local5 == null))) && ((_local5.map_ == null))))
                 {
                     _local5 = null;
-                };
+                }
                 _local6 = null;
                 if (_local5 != null)
                 {
@@ -156,11 +156,11 @@ package _ZE{
                         if (_local2 == 0)
                         {
                             _local2 = getTimer();
-                        };
+                        }
                         _local7 = (int((Math.abs(Math.sin((_local2 / 200))) * 10)) / 10);
                         _local8 = 128;
                         _local6 = new ColorTransform(1, 1, 1, 1, (_local7 * _local8), (-(_local7) * _local8), (-(_local7) * _local8));
-                    };
+                    }
                     if (!_local5.starred_)
                     {
                         if (_local6 != null)
@@ -169,12 +169,12 @@ package _ZE{
                         } else
                         {
                             _local6 = MoreColorUtil.1lu;
-                        };
-                    };
-                };
+                        }
+                    }
+                }
                 this.0Mi[_local3].draw(_local5, _local6);
                 _local3++;
-            };
+            }
         }
 
 

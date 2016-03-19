@@ -59,7 +59,7 @@ import _ZE.Panel;
             if (_arg1)
             {
                 this._0GE();
-            };
+            }
         }
 
         private function DG():void{
@@ -79,7 +79,7 @@ import _ZE.Panel;
             {
                 this._1TD.x = ((WIDTH - this._1TD.width) / 2);
                 this._1TD.y = ((HEIGHT - this._1TD.height) - 4);
-            };
+            }
         }
 
 

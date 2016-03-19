@@ -44,7 +44,7 @@ package 1Np{
             {
                 this.timer.stop();
                 this.0kS.destroy();
-            };
+            }
         }
 
         private function 0cy(_arg1:TimerEvent):void{

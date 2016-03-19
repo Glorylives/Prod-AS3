@@ -79,7 +79,7 @@ public class Merchant extends SellableObject implements _18p {
         if (!super.addTo(_arg1, _arg2, _arg3))
         {
             return (false);
-        };
+        }
         _arg1.merchLookup_[new IntPoint(x_, y_)] = this;
         return (true);
     }
@@ -89,7 +89,7 @@ public class Merchant extends SellableObject implements _18p {
         if (map_.merchLookup_[_local1] == this)
         {
             map_.merchLookup_[_local1] = null;
-        };
+        }
         super.removeFromMap();
     }
 
@@ -118,8 +118,8 @@ public class Merchant extends SellableObject implements _18p {
                 } else
                 {
                     _local2 = new _1cA().setParams("Merchant.goingInNMinutes", {minutes:this._00c});
-                };
-            };
+                }
+            }
                 _local3 = 5973542;
                 _local4 = 16549442;
                 _local5 = 16549442;
@@ -137,7 +137,7 @@ public class Merchant extends SellableObject implements _18p {
                 _local5 = 16777103;
                 break;
                 return (null);
-        };
+        }
         _local2._1jM(this._0C0);
         return (new _Wl(this, _local2.getString(), "", false, false, _local3, 1, _local4, 1, _local5, 6, true, false));
     }
@@ -152,14 +152,14 @@ public class Merchant extends SellableObject implements _18p {
                 _local5 = new GTween(this, (0.5 * T), {size_:150}, {ease:_4t._0uh});
             _local5._0aM = new GTween(this, (0.5 * T), {size_:100}, {ease:_4t._0vp});
         _local5._0aM.paused = true;
-    };
+    }
     this._0yM = false;
-};
+}
 this._5x = (this._5x - _arg2);
 if (this._5x > 0)
 {
     return (true);
-};
+}
 this._5x = 5000;
 var _local3:Vector.<int> = new Vector.<int>();
 if (this._00c == 2147483647)
@@ -170,20 +170,20 @@ if (this._00c == 2147483647)
     if ((((this._00c >= 0)) && ((this._00c <= 5))))
     {
         _local3.push(_lx);
-    };
-};
+    }
+}
 if ((((this._wT >= 1)) && ((this._wT <= 2))))
 {
     _local3.push(_0Tw);
-};
+}
 if (this._yl > 0)
 {
     _local3.push(_1UR);
-};
+}
 if (_local3.length == 0)
 {
     return (true);
-};
+}
 this._TU = (++this._TU % _local3.length);
 var _local4:int = _local3[this._TU];
 this.addSpeechBalloon.dispatch(this._0VI(_local4));
@@ -219,7 +219,7 @@ override public function getIcon():BitmapData{
         _local3.text = String(_local2.Doses);
         _local3.re();
         _local1.draw(_local3, _0sv);
-    };
+    }
     return (_local1);
 }
 
@@ -228,11 +228,11 @@ public function getTex1Id(_arg1:int):int{
     if (_local2 == null)
     {
         return (_arg1);
-    };
+    }
     if ((((_local2.Activate == "Dye")) && (_local2.hasOwnProperty("Tex1"))))
     {
         return (int(_local2.Tex1));
-    };
+    }
     return (_arg1);
 }
 
@@ -241,11 +241,11 @@ public function getTex2Id(_arg1:int):int{
     if (_local2 == null)
     {
         return (_arg1);
-    };
+    }
     if ((((_local2.Activate == "Dye")) && (_local2.hasOwnProperty("Tex2"))))
     {
         return (int(_local2.Tex2));
-    };
+    }
     return (_arg1);
 }
 
@@ -253,13 +253,13 @@ public function getTex2Id(_arg1:int):int{
     if ((((this.alpha_ == 1)) && ((size_ == 100))))
     {
         return (this.merchandiseTexture_);
-    };
+    }
     var _local3:BitmapData = ObjectLibrary.getRedrawnTextureFromType(this._0Wm, size_, false, false);
     if (this.alpha_ != 1)
     {
         this._1Tp.alphaMultiplier = this.alpha_;
         _local3.colorTransform(_local3.rect, this._1Tp);
-    };
+    }
     return (_local3);
 }
 

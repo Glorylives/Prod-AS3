@@ -30,7 +30,7 @@ package _1Np{
             if (this.timeLeft_ <= 0)
             {
                 return (false);
-            };
+            }
             x_ = (this.go_.x_ + (this._1gt * Math.cos(this.angle_)));
             y_ = (this.go_.y_ + (this._1gt * Math.sin(this.angle_)));
             z_ = (z_ + ((this.moveVec_.z * _arg2) * 0.008));

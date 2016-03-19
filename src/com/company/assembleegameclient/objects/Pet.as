@@ -63,7 +63,7 @@ import com.company.assembleegameclient.util._BJ;
             } else
             {
                 this.skin = _V4._1Q2(_local3, _local4);
-            };
+            }
             this._13O = (this.skin == this.VI);
             _local5 = this.skin.imageFromAngle(0, _BJ._1OS, 0);
             _3q = this.skin;
@@ -77,7 +77,7 @@ import com.company.assembleegameclient.util._BJ;
             if (this.VI == null)
             {
                 return;
-            };
+            }
             _local1 = this.VI.imageFromAngle(0, _BJ._1OS, 0);
             this._13O = true;
             _3q = this.VI;

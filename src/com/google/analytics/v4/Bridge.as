@@ -59,7 +59,7 @@ package com.google.analytics.v4{
                     }
                     catch(e) 
                     {
-                        _GATracker = {};
+                        _GATracker = {}
                     }
                 }
             ]]>
@@ -117,7 +117,7 @@ package com.google.analytics.v4{
                 _local4 = (_local4 + "is included in the HTML.");
                 _debug.warning(_local4);
                 throw (new Error(_local4));
-            };
+            }
             if (!_hasGATracker)
             {
                 if (((_debug.javascript) && (_debug.verbose)))
@@ -126,9 +126,9 @@ package com.google.analytics.v4{
                     _local5 = (_local5 + "The Google Analytics tracking code was not found on the container page\n");
                     _local5 = (_local5 + "we create it");
                     _debug.info(_local5, VisualDebugMode.advanced);
-                };
+                }
                 _injectTrackingObject();
-            };
+            }
             if (Utils.validateAccount(_arg1))
             {
                 _createTrackingObject(_arg1);
@@ -144,8 +144,8 @@ package com.google.analytics.v4{
                     _local6 = (_local6 + "Bridge object not created.");
                     _debug.warning(_local6);
                     throw (new Error(_local6));
-                };
-            };
+                }
+            }
         }
 
         public function link(_arg1:String, _arg2:Boolean=false):void{
@@ -187,11 +187,11 @@ package com.google.analytics.v4{
             if (((_arg3) && (!((_arg3 == "")))))
             {
                 _local5 = 3;
-            };
+            }
             if ((((_local5 == 3)) && (!(isNaN(_arg4)))))
             {
                 _local5 = 4;
-            };
+            }
             switch (_local5)
             {
                 case 4:
@@ -204,7 +204,7 @@ package com.google.analytics.v4{
                 default:
                     _debug.info((("trackEvent( " + [_arg1, _arg2].join(", ")) + " )"));
                     return (_call("_trackEvent", _arg1, _arg2));
-            };
+            }
         }
 
         public function setCookieTimeout(_arg1:int):void{
@@ -297,7 +297,7 @@ package com.google.analytics.v4{
             if (Utils.validateAccount(_arg1))
             {
                 return (_checkValidTrackingObject(_arg1));
-            };
+            }
             return (_checkTrackingObject(_arg1));
         }
 

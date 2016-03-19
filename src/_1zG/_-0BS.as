@@ -57,7 +57,7 @@ package 1zG{
                 _local4 = _arg1.readInt();
                 this.clientXML_.push(_arg1.readUTFBytes(_local4));
                 _local3++;
-            };
+            }
             _local2 = _arg1.readShort();
             this.extraXML_.length = 0;
             _local3 = 0;
@@ -66,7 +66,7 @@ package 1zG{
                 _local4 = _arg1.readInt();
                 this.extraXML_.push(_arg1.readUTFBytes(_local4));
                 _local3++;
-            };
+            }
         }
 
         override public function toString():String{

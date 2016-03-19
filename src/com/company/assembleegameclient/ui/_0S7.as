@@ -42,7 +42,7 @@ package com.company.assembleegameclient.ui{
             if (!_arg2)
             {
                 this.text.setTextWidth(66).setTextHeight(20).setBold(true);
-            };
+            }
             this.text.x = 32;
             this.text.y = 6;
             this.text.filters = [new DropShadowFilter(0, 0, 0)];
@@ -60,7 +60,7 @@ package com.company.assembleegameclient.ui{
             {
                 this.redraw();
                 transform.colorTransform = ((_arg2) || (MoreColorUtil.identity));
-            };
+            }
         }
 
         public function clear():void{
@@ -104,14 +104,14 @@ package com.company.assembleegameclient.ui{
                 } else
                 {
                     this._0DC._0tP(ObjectLibrary.118[this.type]);
-                };
-            };
+                }
+            }
             return (this._0DC);
         }
 
         private function _20b():void{
             var _local1:String;
-            var _local2:Object = {};
+            var _local2:Object = {}
             if (this._0UU())
             {
                 if (this._2Z)
@@ -120,21 +120,21 @@ package com.company.assembleegameclient.ui{
                 } else
                 {
                     _local1 = "<b>{name}</b> ({type}{level})";
-                };
+                }
                 if ((((this.go.name_.length > 8)) && (!(this._2Z))))
                 {
                     _local2.name = (this.go.name_.slice(0, 6) + "...");
                 } else
                 {
                     _local2.name = this.go.name_;
-                };
+                }
                 _local2.type = ObjectLibrary._118[this.type];
                 _local2.level = (((this.level < 1)) ? "" : (" " + this.level));
             } else
             {
                 _local1 = "<b>{name}</b>";
                 _local2.name = ObjectLibrary._118[this.type];
-            };
+            }
             this._0DC._0tP(_local1, _local2);
         }
 
@@ -147,15 +147,15 @@ package com.company.assembleegameclient.ui{
             if (_local1 == null)
             {
                 return (this.color);
-            };
+            }
             if (_local1._0kh)
             {
                 return (Parameters._19c);
-            };
+            }
             if (_local1._1TS)
             {
                 return (Parameters._0zj);
-            };
+            }
             return (this.color);
         }
 

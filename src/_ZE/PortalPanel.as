@@ -83,7 +83,7 @@ package _ZE{
             if ((((_arg1.keyCode == Parameters.data_.interact)) && ((stage.focus == null))))
             {
                 this.enterPortal();
-            };
+            }
         }
 
         private function enterPortal():void{
@@ -94,7 +94,7 @@ package _ZE{
             } else
             {
                 GA.global().trackEvent("enterPortal", this.0b2.getName());
-            };
+            }
             doneAction(gs_, Tutorial.0-K);
             gs_.gsc_.usePortal(this.0b2.objectId_);
             this.0n.dispatch();
@@ -112,8 +112,8 @@ package _ZE{
                 {
                     removeChild(this.do);
                     addChild(this.1Kg);
-                };
-            };
+                }
+            }
         }
 
         private function 1cU():void{
@@ -129,7 +129,7 @@ package _ZE{
             if (((this.0b2.1QF) && ((_local1.indexOf(this.LOCKED) == 0))))
             {
                 return (_local1.substr(this.LOCKED.length));
-            };
+            }
             return (this.w4(_local1));
         }
 

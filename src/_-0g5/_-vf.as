@@ -28,7 +28,7 @@ package 0g5{
                 applyHooks(_arg1.1kC, this.dM);
                 this.dM.sJ(_local2);
                 return (_local3);
-            };
+            }
             return (null);
         }
 

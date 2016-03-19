@@ -15,8 +15,8 @@ package 1nd{
         private var hD:Object;
 
         public function 9O(){
-            this.1m6 = {};
-            this.hD = {};
+            this.1m6 = {}
+            this.hD = {}
         }
 
         public function register(_arg1:String, _arg2:String, _arg3:_1HZ):void{
@@ -30,7 +30,7 @@ package 1nd{
             for (_local2 in this.1m6)
             {
                 _local1.push(((_local2 + " - ") + this.hD[_local2]));
-            };
+            }
             return (_local1);
         }
 
@@ -39,20 +39,20 @@ package 1nd{
             if (_local2.length == 0)
             {
                 return;
-            };
+            }
             var _local3:String = _local2.shift();
             var _local4:_1HZ = this.1m6[_local3];
             if (!_local4)
             {
                 return;
-            };
+            }
             if (_local2.length > 0)
             {
                 _local4.dispatch.apply(this, _local2.join(" ").split(","));
             } else
             {
                 _local4.dispatch.apply(this);
-            };
+            }
         }
 
         public function 0Bx(_arg1:String):Boolean{

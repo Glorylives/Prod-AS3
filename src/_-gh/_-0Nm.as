@@ -61,8 +61,8 @@ package gh{
                 } else
                 {
                     this.avg = (this.avg + ((this.v - this.avg) / _arg2));
-                };
-            };
+                }
+            }
         }
 
         public function 0ZY(_arg1:ByteArray):void{

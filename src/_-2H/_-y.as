@@ -49,7 +49,7 @@ package 2H{
                 this.uz[0] = _arg1;
                 this.JB();
                 dispatchEvent(new Event(Event.CHANGE));
-            };
+            }
         }
 
         public function Bn():int{
@@ -65,7 +65,7 @@ package 2H{
                 this.selected_ = _local1;
                 this.selected_.addEventListener(MouseEvent.CLICK, this.0eJ);
                 addChild(this.selected_);
-            };
+            }
             var _local2:int = 1;
             while (_local2 < this.uz.length)
             {
@@ -75,7 +75,7 @@ package 2H{
                 this.1Do.push(_local1);
                 this.1IE.addChild(_local1);
                 _local2++;
-            };
+            }
         }
 
         private function Br(_arg1:String):1ar{
@@ -91,11 +91,11 @@ package 2H{
                 this.1Do[_local1].setValue(this.uz[_local1]);
                 this.1Do[_local1].setWidth(this.w_);
                 _local1++;
-            };
+            }
             if (this.1Do.length > 0)
             {
                 this.selected_ = this.1Do[0];
-            };
+            }
         }
 
         private function 19N():void{
@@ -114,7 +114,7 @@ package 2H{
             for each (_local2 in this.1Do)
             {
                 _local1 = Math.max(_local2.width, _local1);
-            };
+            }
             this.w_ = _local1;
             this.JB();
         }

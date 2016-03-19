@@ -40,7 +40,7 @@ public class _1F2 implements _0dM {
             {
                 this._1Za.debug("Mapping {0} as contextView", [_arg1]);
                 this.dM.map(DisplayObjectContainer)._1eo(_arg1);
-            };
+            }
         }
 
 

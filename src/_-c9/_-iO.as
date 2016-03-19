@@ -40,8 +40,8 @@ package c9{
                 if (!_arg1)
                 {
                     this.0n2.dispatch(new ErrorDialog(_arg2));
-                };
-            };
+                }
+            }
         }
 
 

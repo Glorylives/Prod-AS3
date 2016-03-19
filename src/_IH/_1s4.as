@@ -63,7 +63,7 @@ use namespace SsInternal;
             {
                 trace(((((("Warning: Injector already has a mapping for " + this._0Wl) + ".\n ") + "If you have overridden this mapping intentionally you can use ") + '"injector.unmap()" prior to your replacement mapping in order to ') + "avoid seeing this message."));
                 ((this._1TN.hasEventListener(_1oR._0zn)) && (this._1TN.dispatchEvent(new _1oR(_1oR._0zn, this.F1, this._name, this))));
-            };
+            }
             this._c1();
             this._0OO = false;
             this._0hc(_arg1);
@@ -81,7 +81,7 @@ use namespace SsInternal;
                 this._1hk = true;
                 this._0hc(_local1);
                 this.rg();
-            };
+            }
             return (this);
         }
 
@@ -90,7 +90,7 @@ use namespace SsInternal;
             if (this._0m8)
             {
                 return (this);
-            };
+            }
             var _local1:_1yq = this.Mu();
             this.c1();
             this._0m8 = true;
@@ -103,9 +103,9 @@ use namespace SsInternal;
             if (this.xb)
             {
                 throw (new _03A("Mapping is already sealed."));
-            };
+            }
             this.xb = true;
-            this.wN = {};
+            this.wN = {}
             return (this.wN);
         }
 
@@ -113,11 +113,11 @@ use namespace SsInternal;
             if (!this.xb)
             {
                 throw (new _03A("Can't unseal a non-sealed mapping."));
-            };
+            }
             if (_arg1 !== this.wN)
             {
                 throw (new _03A("Can't unseal mapping without the correct key."));
-            };
+            }
             this.xb = false;
             this.wN = null;
             return (this);
@@ -136,7 +136,7 @@ use namespace SsInternal;
             while ((_local1 is _1E))
             {
                 _local1 = _1E(_local1).provider;
-            };
+            }
             return (_local1);
         }
 
@@ -145,7 +145,7 @@ use namespace SsInternal;
             if (_arg1 == this._0F7)
             {
                 return (this);
-            };
+            }
             var _local2:_1yq = this.Mu();
             this._0F7 = _arg1;
             this._0hc(_local2);
@@ -156,15 +156,15 @@ use namespace SsInternal;
             if (this._1hk)
             {
                 _arg1 = new _0ZK(_arg1);
-            };
+            }
             if (this._0m8)
             {
                 _arg1 = new _88(_arg1);
-            };
+            }
             if (this._0F7)
             {
                 _arg1 = new pf(this._0F7, _arg1);
-            };
+            }
             this._1TN.SsInternal::EH[this._0Wl] = _arg1;
         }
 

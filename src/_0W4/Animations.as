@@ -26,17 +26,17 @@ package _0W4{
                 for each (_local2 in this.en._1fL)
                 {
                     this._11Q.push(_local2.IR(_arg1));
-                };
-            };
+                }
+            }
             if (this._1tG != null)
             {
                 _local4 = this._1tG.getTexture(_arg1);
                 if (_local4 != null)
                 {
                     return (_local4);
-                };
+                }
                 this._1tG = null;
-            };
+            }
             var _local3:int;
             while (_local3 < this._11Q.length)
             {
@@ -51,10 +51,10 @@ package _0W4{
                     {
                         this._1tG = new RunningAnimation(_local2, _local5);
                         return (this._1tG.getTexture(_arg1));
-                    };
-                };
+                    }
+                }
                 _local3++;
-            };
+            }
             return (null);
         }
 
@@ -90,16 +90,16 @@ class RunningAnimation {
             if (this.frameId_ >= (this.animationData_.Bk.length - 1))
             {
                 return (null);
-            };
+            }
             this.frameStart_ = (this.frameStart_ + _local2.time_);
             this.frameId_++;
             _local2 = this.animationData_.Bk[this.frameId_];
             this.texture_ = null;
-        };
+        }
         if (this.texture_ == null)
         {
             this.texture_ = _local2._1lr.getTexture((Math.random() * 100));
-        };
+        }
         return (this.texture_);
     }
 

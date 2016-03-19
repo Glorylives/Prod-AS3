@@ -23,7 +23,7 @@ package 1YL{
         private const 0oh:String = "<font color='#$1'>$2</font>";
         private const 2:Array = [];
         private const 24o:Array = [];
-        private const aM:Object = {};
+        private const aM:Object = {}
 
         private var 1zb:TextField;
         private var 0VA:Console;
@@ -61,7 +61,7 @@ package 1YL{
             {
                 delete this.aM[_arg1];
                 this.24o.splice(this.24o.indexOf(_local2), 1);
-            };
+            }
         }
 
         private function 1t1(_arg1:String):1Qv{
@@ -83,7 +83,7 @@ package 1YL{
             for (_local1 in this.aM)
             {
                 delete this.aM[_local1];
-            };
+            }
         }
 
         public function resize(_arg1:Rectangle):void{

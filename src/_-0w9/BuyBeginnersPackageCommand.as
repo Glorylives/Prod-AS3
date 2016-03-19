@@ -41,7 +41,7 @@ package 0w9{
             } else
             {
                 this.0-Y();
-            };
+            }
         }
 
         private function 1yr():void{
@@ -51,7 +51,7 @@ package 0w9{
             } else
             {
                 this.130();
-            };
+            }
         }
 
         private function 130():void{

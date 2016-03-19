@@ -30,7 +30,7 @@ package 1aj{
             if (_arg1 == -1)
             {
                 return (31);
-            };
+            }
             return ((((_arg1 == IP)) ? this.10U(_arg2) : 1hg[(_arg1 - 1)]));
         }
 
@@ -38,7 +38,7 @@ package 1aj{
             if ((((_arg1 == -1)) || (this.1tz(_arg1))))
             {
                 return (29);
-            };
+            }
             return (28);
         }
 

@@ -21,7 +21,7 @@ package com.google.analytics.debug{
             {
                 _local5 = _arg1.width;
                 _local6 = _arg1.height;
-            };
+            }
             if (((_arg1.stickToEdge) && (!((_arg1.alignement == Align.none)))))
             {
                 switch (_arg1.alignement)
@@ -53,11 +53,11 @@ package com.google.analytics.debug{
                     case Align.center:
                         _arg2.drawRoundRect(0, 0, _local5, _local6, _local7, _local7);
                         break;
-                };
+                }
             } else
             {
                 _arg2.drawRoundRect(0, 0, _local5, _local6, _local7, _local7);
-            };
+            }
         }
 
 

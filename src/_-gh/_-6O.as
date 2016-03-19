@@ -23,7 +23,7 @@ package gh{
             } else
             {
                 this.13i[_arg1] = new 27I(_arg2, _arg3);
-            };
+            }
         }
 
         public function get(_arg1:String){
@@ -64,12 +64,12 @@ package gh{
                 for (_local2 in this.13i)
                 {
                     this.1WY.push(_local2);
-                };
-            };
+                }
+            }
             if (_arg1 < this.1WY.length)
             {
                 return ((_arg1 + 1));
-            };
+            }
             return (0);
         }
 

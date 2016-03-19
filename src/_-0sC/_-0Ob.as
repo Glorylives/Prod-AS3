@@ -62,7 +62,7 @@ package 0sC{
             {
                 this.view.email.07n(du.1uo);
                 this.view.0Eb();
-            };
+            }
         }
 
         private function 0VB():void{
@@ -80,7 +80,7 @@ package 0sC{
             } else
             {
                 this.0n2.dispatch(new 14Y());
-            };
+            }
         }
 
         private function 0-G(_arg1:String):void{

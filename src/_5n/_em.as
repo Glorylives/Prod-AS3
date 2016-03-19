@@ -40,20 +40,20 @@ public class _em extends _1Qv {
                 this._1N6 = (this._1N6 - this._0lz[this.index]);
                 this._1N6 = (this._1N6 + _arg1);
                 this._0lz[this.index] = _arg1;
-            };
+            }
             if (++this.index == COUNT)
             {
                 this.index = 0;
-            };
+            }
             this.mean = (this._1N6 / this.count);
             if (_arg1 > this.max)
             {
                 this.max = _arg1;
-            };
+            }
             if (_arg1 < this.min)
             {
                 this.min = _arg1;
-            };
+            }
             data = _1zy.replace("{NAME}", name).replace("{MEAN}", this.mean).replace("{MIN}", this.min).replace("{MAX}", this.max);
         }
 

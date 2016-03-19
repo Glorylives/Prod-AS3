@@ -24,7 +24,7 @@ package AB{
             for (_local3 in this.va.ZX)
             {
                 ZX[_local3] = this.va.ZX[_local3];
-            };
+            }
             this.Ku(_arg1);
         }
 
@@ -41,7 +41,7 @@ package AB{
                 }).setPrefix(TR.1pw(2-W)).setPostfix(TR.17H());
                 1Tf.pushParams(du.Nk, {effect:innerLineBuilder});
                 ZX[tag.toXMLString()] = true;
-            };
+            }
         }
 
 

@@ -29,7 +29,7 @@ package 0GQ{
         }
 
         private function rM():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             _local1.guid = this.account.getUserId();
             _local1.newGUID = this.data.username;
             _local1.newPassword = this.data.password;

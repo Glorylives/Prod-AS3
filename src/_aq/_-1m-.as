@@ -50,7 +50,7 @@ package aq{
             } else
             {
                 this.0Ez();
-            };
+            }
         }
 
         private function EF():Boolean{

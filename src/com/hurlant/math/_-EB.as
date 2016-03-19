@@ -35,7 +35,7 @@ package com.hurlant.math{
             if ((((_arg1.s < 0)) && ((_local2.0-6(1OU.is) > 0))))
             {
                 this.m.GV(_local2, _local2);
-            };
+            }
             return (_local2);
         }
 
@@ -53,7 +53,7 @@ package com.hurlant.math{
             {
                 var _local5 = _arg1.t++;
                 _arg1.a[_local5] = 0;
-            };
+            }
             var _local2:int;
             while (_local2 < this.m.t)
             {
@@ -68,15 +68,15 @@ package com.hurlant.math{
                     var _local6 = ++_local3;
                     var _local7 = (_local5[_local6] + 1);
                     _local5[_local6] = _local7;
-                };
+                }
                 _local2++;
-            };
+            }
             _arg1.clamp();
             _arg1.0nR(this.m.t, _arg1);
             if (_arg1.0-6(this.m) >= 0)
             {
                 _arg1.GV(this.m, _arg1);
-            };
+            }
         }
 
         public function 1yM(_arg1:1OU, _arg2:1OU):void{

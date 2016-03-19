@@ -31,7 +31,7 @@ package 1zG{
             {
                 this.effects_.push(_arg1.readUnsignedByte());
                 _local3++;
-            };
+            }
             this.damageAmount_ = _arg1.readUnsignedShort();
             this.kill_ = _arg1.readBoolean();
             this.bulletId_ = _arg1.readUnsignedByte();

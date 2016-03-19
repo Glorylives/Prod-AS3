@@ -173,7 +173,7 @@ import flash.text.TextFormatAlign;
             if (_local3.hasOwnProperty("ScaleValue"))
             {
                 _local4 = _local3.ScaleValue;
-            };
+            }
             var _local5:BitmapData = ObjectLibrary.getRedrawnTextureFromType(_arg1, 80, true, true, _local4);
             _local5 = BitmapUtil._0Bs(_local5, 4, 4, (_local5.width - 8), (_local5.height - 8));
             _local2 = new Bitmap(_local5);

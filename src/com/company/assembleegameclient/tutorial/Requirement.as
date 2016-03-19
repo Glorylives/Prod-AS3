@@ -20,12 +20,12 @@ package com.company.assembleegameclient.tutorial{
             if (((!((_local2 == null))) && (!((_local2 == "")))))
             {
                 this.objectType_ = ObjectLibrary.get[_local2];
-            };
+            }
             this.s = String(_arg1.@objectName).replace("tutorial_script", "tutorial");
             if (this.s == null)
             {
                 this.s = "";
-            };
+            }
             this._1fn = int(_arg1.@slot);
             this.radius_ = Number(_arg1.@radius);
         }

@@ -61,7 +61,7 @@ import flash.display.DisplayObjectContainer;
             } else
             {
                 this._1Za._0K("Context has been configured to inherit dependencies but has no way to do so");
-            };
+            }
         }
 
         private function _0sj():void{
@@ -82,8 +82,8 @@ import flash.display.DisplayObjectContainer;
                 } else
                 {
                     this._1Za._0K("Context has been configured to expose its dependencies but has no way to do so");
-                };
-            };
+                }
+            }
         }
 
 

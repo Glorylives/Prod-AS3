@@ -112,7 +112,7 @@ package 0QW{
                     if (_local4 == -1)
                     {
                         return;
-                    };
+                    }
                     this.Zp.1lB(_local4);
                     this.AS.21O(0rp.1ts);
                     break;
@@ -131,10 +131,10 @@ package 0QW{
                         if (_local3 != null)
                         {
                             _local3 = _local3.clone();
-                        };
+                        }
                         this.17z.push(_local3);
                         _local7.push(null);
-                    };
+                    }
                     this.1Rl(_arg1.tiles_, _local7);
                     this.1TR.0n8();
                     this.AS.21O(0rp.1ul);
@@ -147,16 +147,16 @@ package 0QW{
                         if (_local3 != null)
                         {
                             _local3 = _local3.clone();
-                        };
+                        }
                         this.17z.push(_local3);
-                    };
+                    }
                     this.1TR.0n8();
                     this.AS.21O(0rp.1ul);
                     break;
                 case 0rp.1ul:
                     this.1Rl(_arg1.tiles_, this.17z);
                     break;
-            };
+            }
             this.1TR.draw();
         }
 
@@ -177,12 +177,12 @@ package 0QW{
                 } else
                 {
                     _local4.0tz(new Qr(this.1TR, _local5.x_, _local5.y_, _arg2, _local6, _arg3));
-                };
-            };
+                }
+            }
             if (_local4.1Qj())
             {
                 return;
-            };
+            }
             this.23c.0Jo(_local4);
         }
 
@@ -197,11 +197,11 @@ package 0QW{
                 _local6 = this.1TR.0hm(_local5.x_, _local5.y_);
                 _local3.0tz(new 1d9(this.1TR, _local5.x_, _local5.y_, _local6, _arg2[_local4]));
                 _local4++;
-            };
+            }
             if (_local3.1Qj())
             {
                 return;
-            };
+            }
             this.23c.0Jo(_local3);
         }
 
@@ -217,12 +217,12 @@ package 0QW{
                 } else
                 {
                     _local3.0tz(new 4k(this.1TR, _local4.x_, _local4.y_, _local5, _arg2));
-                };
-            };
+                }
+            }
             if (_local3.1Qj())
             {
                 return;
-            };
+            }
             this.23c.0Jo(_local3);
         }
 
@@ -247,7 +247,7 @@ package 0QW{
                     0IB.0pa(this, this.0rP);
                     this.Zp = this.0rP;
                     return;
-            };
+            }
         }
 
         private function 15H(_arg1:0V2):void{
@@ -273,12 +273,12 @@ package 0QW{
                 } else
                 {
                     _local3.0tz(new 14u(this.1TR, _local4.x_, _local4.y_, _local5));
-                };
-            };
+                }
+            }
             if (_local3.1Qj())
             {
                 return;
-            };
+            }
             this.23c.0Jo(_local3);
             this.1TR.draw();
             this.filename_ = null;
@@ -294,11 +294,11 @@ package 0QW{
             if (_local1 == null)
             {
                 return (null);
-            };
-            var _local2:Object = {};
+            }
+            var _local2:Object = {}
             _local2["width"] = int(_local1.width);
             _local2["height"] = int(_local1.height);
-            var _local3:Object = {};
+            var _local3:Object = {}
             var _local4:Array = [];
             var _local5:ByteArray = new ByteArray();
             var _local6:int = _local1.y;
@@ -318,12 +318,12 @@ package 0QW{
                     } else
                     {
                         _local11 = _local3[_local10];
-                    };
+                    }
                     _local5.writeShort(_local11);
                     _local7++;
-                };
+                }
                 _local6++;
-            };
+            }
             _local2["dict"] = _local4;
             _local5.compress();
             _local2["data"] = Base64.encodeByteArray(_local5);
@@ -335,7 +335,7 @@ package 0QW{
             if (_local2 == null)
             {
                 return;
-            };
+            }
             new FileReference().save(_local2, (((this.filename_ == null)) ? "map.jm" : this.filename_));
         }
 
@@ -343,7 +343,7 @@ package 0QW{
             var _local3:Vector.<int>;
             var _local4:String;
             var _local5:Object;
-            var _local2:Object = {};
+            var _local2:Object = {}
             if (_arg1 != null)
             {
                 _local3 = _arg1.18A;
@@ -351,23 +351,23 @@ package 0QW{
                 {
                     _local4 = 0s6.Uq(_local3[1KM.1Xh]);
                     _local2["ground"] = _local4;
-                };
+                }
                 if (_local3[1KM.ti] != -1)
                 {
                     _local4 = ObjectLibrary.Uq(_local3[1KM.ti]);
-                    _local5 = {id:_local4};
+                    _local5 = {id:_local4}
                     if (_arg1.0hD != null)
                     {
                         _local5["name"] = _arg1.0hD;
-                    };
+                    }
                     _local2["objs"] = [_local5];
-                };
+                }
                 if (_local3[1KM.0eT] != -1)
                 {
                     _local4 = T8.Uq(_local3[1KM.0eT]);
                     _local2["regions"] = [{id:_local4}];
-                };
-            };
+                }
+            }
             return (_local2);
         }
 
@@ -387,7 +387,7 @@ package 0QW{
                 loadedFile.load();
             } catch(e:Error)
             {
-            };
+            }
         }
 
         private function 00L(_arg1:Event):void{
@@ -420,7 +420,7 @@ package 0QW{
                     {
                         _local9 = 0s6.get[_local12["ground"]];
                         this.1TR.0j0(_local11, _local10, 1KM.1Xh, _local9);
-                    };
+                    }
                     _local13 = _local12["objs"];
                     if (_local13 != null)
                     {
@@ -435,10 +435,10 @@ package 0QW{
                                 if (_local15.hasOwnProperty("name"))
                                 {
                                     this.1TR.7N(_local11, _local10, _local15["name"]);
-                                };
-                            };
-                        };
-                    };
+                                }
+                            }
+                        }
+                    }
                     _local14 = _local12["regions"];
                     if (_local14 != null)
                     {
@@ -446,12 +446,12 @@ package 0QW{
                         {
                             _local9 = T8.get[_local16["id"]];
                             this.1TR.0j0(_local11, _local10, 1KM.0eT, _local9);
-                        };
-                    };
+                        }
+                    }
                     _local11++;
-                };
+                }
                 _local10++;
-            };
+            }
             this.1TR.draw();
         }
 
@@ -466,7 +466,7 @@ package 0QW{
             if (this.1TR != null)
             {
                 this.1TR.1jY();
-            };
+            }
         }
 
 

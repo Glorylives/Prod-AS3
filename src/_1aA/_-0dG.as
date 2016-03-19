@@ -25,8 +25,8 @@ package _1aA{
                 {
                     this.1ZF(new 1zu(_local2.getIcon(), _local2.X, _local2.16u, _local2.0E0, _local2.0K7, _arg1.0YA()));
                     this.1bJ = true;
-                };
-            };
+                }
+            }
         }
 
         public function 2-8():Boolean{

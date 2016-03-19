@@ -41,23 +41,23 @@ package cA{
                 if ((((((((((eventConfig.dispatcher == dispatcher)) && ((eventConfig.eventString == eventString)))) && ((eventConfig.listener == listener)))) && ((eventConfig.useCapture == useCapture)))) && ((eventConfig.eventClass == eventClass))))
                 {
                     return;
-                };
-            };
+                }
+            }
             if (eventClass != Event)
             {
                 callback = function (_arg1:Event):void{
                     routeEventToListener(_arg1, listener, eventClass);
-                };
+                }
             } else
             {
                 callback = listener;
-            };
+            }
             eventConfig = new 1lk(dispatcher, eventString, listener, eventClass, callback, useCapture);
             currentListeners.push(eventConfig);
             if (!this.08x)
             {
                 dispatcher.addEventListener(eventString, callback, useCapture, priority, useWeakReference);
-            };
+            }
         }
 
         public function xc(_arg1:IEventDispatcher, _arg2:String, _arg3:Function, _arg4:Class=null, _arg5:Boolean=false):void{
@@ -73,11 +73,11 @@ package cA{
                     if (!this.08x)
                     {
                         _arg1.removeEventListener(_arg2, _local6.callback, _arg5);
-                    };
+                    }
                     _local7.splice(_local8, 1);
                     return;
-                };
-            };
+                }
+            }
         }
 
         public function 1Gt():void{
@@ -90,8 +90,8 @@ package cA{
                 {
                     _local3 = _local2.dispatcher;
                     _local3.removeEventListener(_local2.eventString, _local2.callback, _local2.useCapture);
-                };
-            };
+                }
+            }
         }
 
         public function suspend():void{
@@ -100,14 +100,14 @@ package cA{
             if (this.08x)
             {
                 return;
-            };
+            }
             this.08x = true;
             while ((_local1 = this.1L0.pop()))
             {
                 _local2 = _local1.dispatcher;
                 _local2.removeEventListener(_local1.eventString, _local1.callback, _local1.useCapture);
                 this.01u.push(_local1);
-            };
+            }
         }
 
         public function resume():void{
@@ -116,21 +116,21 @@ package cA{
             if (!this.08x)
             {
                 return;
-            };
+            }
             this.08x = false;
             while ((_local1 = this.01u.pop()))
             {
                 _local2 = _local1.dispatcher;
                 _local2.addEventListener(_local1.eventString, _local1.callback, _local1.useCapture);
                 this.1L0.push(_local1);
-            };
+            }
         }
 
         private function routeEventToListener(_arg1:Event, _arg2:Function, _arg3:Class):void{
             if ((_arg1 is _arg3))
             {
                 (_arg2(_arg1));
-            };
+            }
         }
 
 

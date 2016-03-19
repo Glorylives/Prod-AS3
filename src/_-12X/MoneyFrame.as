@@ -80,7 +80,7 @@ package 12X{
             for each (_local2 in 99.050)
             {
                 _local1.push(_local2.label_);
-            };
+            }
             return (_local1);
         }
 
@@ -116,7 +116,7 @@ package 12X{
                 this.0RV.y = (((600 / 2) + (this.6r.h_ / 2)) - 52);
                 this.0RV.setAutoSize(TextFieldAutoSize.RIGHT);
                 addChild(this.0RV);
-            };
+            }
         }
 
         protected function Gu(_arg1:MouseEvent):void{

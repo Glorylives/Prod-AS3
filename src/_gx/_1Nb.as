@@ -19,7 +19,7 @@ package _gx{
             if (((!(_local2)) && ((this.player.objectId_ == _arg1))))
             {
                 _local2 = this.player;
-            };
+            }
             return (_local2);
         }
 

@@ -44,7 +44,7 @@ package 1mG{
         }
 
         private function 0J4():Object{
-            var _local1:Object = {};
+            var _local1:Object = {}
             _local1.timespan = this.timespan.67();
             _local1.accountId = this.player.0YA();
             _local1.charId = this.charId;

@@ -37,11 +37,11 @@ package AB{
             if (_arg1 < 0)
             {
                 return (1Bj);
-            };
+            }
             if (_arg1 > 0)
             {
                 return (1HG);
-            };
+            }
             return (1U4);
         }
 

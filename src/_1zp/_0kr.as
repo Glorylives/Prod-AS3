@@ -36,7 +36,7 @@ package _1zp{
             if (this.callback_ != null)
             {
                 this.callback_();
-            };
+            }
             Parameters.save();
         }
 

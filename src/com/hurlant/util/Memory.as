@@ -17,7 +17,7 @@ package com.hurlant.util{
                 new LocalConnection().connect("foo");
             } catch(e)
             {
-            };
+            }
         }
 
         public static function get used():uint{

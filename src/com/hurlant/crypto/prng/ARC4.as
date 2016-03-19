@@ -21,7 +21,7 @@ package com.hurlant.crypto.prng{
             if (_arg1)
             {
                 this.init(_arg1);
-            };
+            }
         }
 
         public function getPoolSize():uint{
@@ -37,7 +37,7 @@ package com.hurlant.crypto.prng{
             {
                 this.S[_local2] = _local2;
                 _local2++;
-            };
+            }
             _local3 = 0;
             _local2 = 0;
             while (_local2 < 0x0100)
@@ -47,7 +47,7 @@ package com.hurlant.crypto.prng{
                 this.S[_local2] = this.S[_local3];
                 this.S[_local3] = _local4;
                 _local2++;
-            };
+            }
             this.i = 0;
             this.j = 0;
         }
@@ -72,7 +72,7 @@ package com.hurlant.crypto.prng{
             {
                 var _local3 = _local2++;
                 _arg1[_local3] = (_arg1[_local3] ^ this.next());
-            };
+            }
         }
 
         public function decrypt(_arg1:ByteArray):void{
@@ -88,10 +88,10 @@ package com.hurlant.crypto.prng{
                 {
                     this.S[_local1] = (Math.random() * 0x0100);
                     _local1++;
-                };
+                }
                 this.S.length = 0;
                 this.S = null;
-            };
+            }
             this.i = 0;
             this.j = 0;
             Memory.gc();

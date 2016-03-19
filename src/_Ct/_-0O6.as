@@ -60,7 +60,7 @@ package Ct{
             } else
             {
                 this.0n2.dispatch(new ErrorDialog(this.0uk));
-            };
+            }
         }
 
         private function 1cQ(_arg1:int):void{
@@ -73,7 +73,7 @@ package Ct{
             } else
             {
                 this.0n2.dispatch(new ErrorDialog(this.0uk));
-            };
+            }
         }
 
         private function 1qf():void{

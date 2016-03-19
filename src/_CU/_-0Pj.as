@@ -47,8 +47,8 @@ package _CU{
                 if (((!((this.xE == -1))) && (!((this.0P5 == -1)))))
                 {
                     _arg1.setTextWidth((this.xE - (this.0P5 * 2)));
-                };
-            };
+                }
+            }
             _arg1.setBold(true);
             _arg1.setWordWrap(true);
             _arg1.setMultiLine(true);
@@ -58,11 +58,11 @@ package _CU{
             if (_arg2 != -1)
             {
                 _arg1.x = _arg2;
-            };
+            }
             if (_arg3 != -1)
             {
                 _arg1.y = _arg3;
-            };
+            }
             return (_arg1);
         }
 

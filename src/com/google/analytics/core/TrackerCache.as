@@ -33,7 +33,7 @@ package com.google.analytics.core{
             if (tracker == null)
             {
                 return;
-            };
+            }
             if (size() > 0)
             {
                 _local4 = _ar.length;
@@ -45,17 +45,17 @@ package com.google.analytics.core{
                     if (((!((_local2 == null))) && ((_local2 in tracker))))
                     {
                         (tracker[_local2] as Function).apply(tracker, _local3);
-                    };
+                    }
                     _local5++;
-                };
-            };
+                }
+            }
         }
 
         public function enqueue(_arg1:String, ... _args):Boolean{
             if (_arg1 == null)
             {
                 return (false);
-            };
+            }
             _ar.push({
                 name:_arg1,
                 args:_args
@@ -84,7 +84,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'getLinkerUrl' method for the moment."));
-            };
+            }
             return ("");
         }
 
@@ -92,7 +92,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'getClientInfo' method for the moment."));
-            };
+            }
             return (false);
         }
 
@@ -124,7 +124,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'getDetectTitle' method for the moment."));
-            };
+            }
             return (false);
         }
 
@@ -152,7 +152,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'createEventTracker' method for the moment."));
-            };
+            }
             return (null);
         }
 
@@ -176,7 +176,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'addTrans' method for the moment."));
-            };
+            }
         }
 
         public function setCampContentKey(_arg1:String):void{
@@ -191,7 +191,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'getLocalGifPath' method for the moment."));
-            };
+            }
             return ("");
         }
 
@@ -211,7 +211,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'getVersion' method for the moment."));
-            };
+            }
             return ("");
         }
 
@@ -243,7 +243,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'getServiceMode' method for the moment."));
-            };
+            }
             return (null);
         }
 
@@ -259,7 +259,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'getDetectFlash' method for the moment."));
-            };
+            }
             return (false);
         }
 
@@ -299,7 +299,7 @@ package com.google.analytics.core{
             if (CACHE_THROW_ERROR)
             {
                 throw (new IllegalOperationError("The tracker is not ready and you can use the 'getAccount' method for the moment."));
-            };
+            }
             return ("");
         }
 

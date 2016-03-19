@@ -80,7 +80,7 @@ package 0mE{
             if ((((_local1 == null)) || ((_local1 == GameSprite))))
             {
                 _local1 = CharacterSelectionAndNewsScreen;
-            };
+            }
             return (new (_local1)());
         }
 

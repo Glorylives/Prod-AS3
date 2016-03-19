@@ -47,7 +47,7 @@ package 0DE{
             if (_local2)
             {
                 this.0Uu.visible = (0ep.itemId <= 0);
-            };
+            }
             return (_local2);
         }
 

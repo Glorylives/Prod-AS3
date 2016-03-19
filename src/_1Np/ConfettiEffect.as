@@ -40,12 +40,12 @@ package 1Np{
                 } else
                 {
                     _local4 = this.color_;
-                };
+                }
                 _local7 = ((3 + int((Math.random() * 5))) * 20);
                 _local8 = new ConfettiParticle(1.85, _local7, _local4, ((500 * this.lifetime_) + ((Math.random() * 500) * this.lifetime_)), (0.1 + (Math.random() * 0.1)), this.start_, this.end_);
                 map_.addObj(_local8, x_, y_);
                 _local6++;
-            };
+            }
             return (false);
         }
 
@@ -94,7 +94,7 @@ class ConfettiParticle extends Particle {
         if (this.timeLeft_ <= 0)
         {
             return (false);
-        };
+        }
         this.pathX_ = (this.pathX_ + (this.dx_ * _arg2));
         this.pathY_ = (this.pathY_ + (this.dy_ * _arg2));
         var _local3:Number = Math.sin(((this.timeLeft_ / 1000) / this.period_));

@@ -60,7 +60,7 @@ package 1Cr{
             if (_local2 != null)
             {
                 this.0ZR = (this.0ZR - (_local2.height + this.17-));
-            };
+            }
             return ((this.16h.removeChildAt(_arg1) as Sprite));
         }
 
@@ -68,7 +68,7 @@ package 1Cr{
             while (this.16h.numChildren > 0)
             {
                 this.16h.removeChildAt((this.16h.numChildren - 1));
-            };
+            }
             this.0ZR = 0;
         }
 
@@ -77,7 +77,7 @@ package 1Cr{
             if (_arg1)
             {
                 this.ST.1OQ(this._height, this.0ZR);
-            };
+            }
         }
 
         private function ef(_arg1:Event):void{

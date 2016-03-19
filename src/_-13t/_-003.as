@@ -67,7 +67,7 @@ package 13t{
             {
                 this.0rv[(_local2 - 1)] = this.0yA.getChildByName(("indicator_" + _local2));
                 _local2++;
-            };
+            }
             addChild(this.screen);
             this.06x();
         }
@@ -96,9 +96,9 @@ package 13t{
                     {
                         this.0rv[_local1].visible = (_local1 < this.1JH);
                         _local1++;
-                    };
-                };
-            };
+                    }
+                }
+            }
         }
 
         public function 1Fh(_arg1:Animation):void{
@@ -140,10 +140,10 @@ package 13t{
                         {
                             _1JZ.0JF().getInstance(0io).dispatch(new 0mL());
                             TitleView.cC = false;
-                        };
-                    };
-                };
-            };
+                        }
+                    }
+                }
+            }
             var _local1:GTween = new GTween(this, 0JO, {alpha:0});
             _local1.onComplete = this.19;
             mouseEnabled = false;

@@ -36,7 +36,7 @@ package 1mO{
             {
                 this.1p5(0bI.pendingScrollText);
                 0bI.pendingScrollText = "";
-            };
+            }
         }
 
         public static function Vs(_arg1:String):void{
@@ -51,7 +51,7 @@ package 1mO{
             } else
             {
                 return;
-            };
+            }
             this.1pL.text = ((this.0uH + _arg1) + this.1Gx);
             this.timer.addEventListener(TimerEvent.TIMER, this.vx);
             this.22A = 1;
@@ -80,8 +80,8 @@ package 1mO{
                     this.1pL.scrollH = 0;
                     this.timer.removeEventListener(TimerEvent.TIMER, this.vx);
                     this.visible = false;
-                };
-            };
+                }
+            }
         }
 
         private function align():void{

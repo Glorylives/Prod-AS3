@@ -42,7 +42,7 @@ package com.google.analytics.core{
             {
                 _local1 = _info.flashVersion;
                 return (((((_local1.major + ".") + _local1.minor) + " r") + _local1.build));
-            };
+            }
             return ("-");
         }
 

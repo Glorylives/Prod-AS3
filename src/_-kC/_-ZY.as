@@ -40,7 +40,7 @@ package kC{
             } else
             {
                 this.09r();
-            };
+            }
             1d5(_arg1, _arg2);
         }
 
@@ -51,7 +51,7 @@ package kC{
             for each (_local3 in _local2)
             {
                 this.Pe.setValue(_local3[0], _local3[1], _local3[2]);
-            };
+            }
         }
 
         private function 09r():void{

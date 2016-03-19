@@ -114,7 +114,7 @@ package 1oP{
                 this.1kS.x = ((WIDTH / 2) - (this.1kS.width / 2));
                 this.1he.push(this.1kS.textChanged);
                 this.1he.push(this.W8.textChanged);
-            };
+            }
         }
 
         public function 06k(_arg1:Animation):void{

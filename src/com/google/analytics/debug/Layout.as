@@ -47,7 +47,7 @@ package com.google.analytics.debug{
                 case _debug.destroyKey:
                     destroy();
                     return;
-            };
+            }
         }
 
         public function createWarning(_arg1:String):void{
@@ -55,7 +55,7 @@ package com.google.analytics.debug{
             {
                 _warningQueue.push(_arg1);
                 return;
-            };
+            }
             _arg1 = _filterMaxChars(_arg1);
             _hasWarning = true;
             var _local2:Warning = new Warning(_arg1, _debug.warningTimeout);
@@ -64,7 +64,7 @@ package com.google.analytics.debug{
             if (_hasDebug)
             {
                 visualDebug.writeBold(_arg1);
-            };
+            }
         }
 
         public function bringToFront(_arg1:DisplayObject):void{
@@ -80,7 +80,7 @@ package com.google.analytics.debug{
             } else
             {
                 _local2 = new AlertAction("X", "close", "close");
-            };
+            }
             var _local3:Alert = new FailureAlert(_debug, _arg1, [_local2]);
             addToPanel("analytics", _local3);
             if (_hasDebug)
@@ -89,9 +89,9 @@ package com.google.analytics.debug{
                 {
                     _arg1 = _arg1.split("\n").join("");
                     _arg1 = _filterMaxChars(_arg1, 66);
-                };
+                }
                 visualDebug.writeBold(_arg1);
-            };
+            }
         }
 
         public function init():void{
@@ -108,7 +108,7 @@ package com.google.analytics.debug{
             if (_debug.minimizedOnStart)
             {
                 _mainPanel.onToggle();
-            };
+            }
             createVisualDebug();
             _display.stage.addEventListener(KeyboardEvent.KEY_DOWN, onKey, false, 0, true);
         }
@@ -123,7 +123,7 @@ package com.google.analytics.debug{
             } else
             {
                 trace((('panel "' + _arg1) + '" not found'));
-            };
+            }
         }
 
         private function _clearInfo(_arg1:Event):void{
@@ -131,7 +131,7 @@ package com.google.analytics.debug{
             if (_infoQueue.length > 0)
             {
                 createInfo(_infoQueue.shift());
-            };
+            }
         }
 
         private function _filterMaxChars(_arg1:String, _arg2:int=0):String{
@@ -142,7 +142,7 @@ package com.google.analytics.debug{
             if (_arg2 == 0)
             {
                 _arg2 = _maxCharPerLine;
-            };
+            }
             var _local7:int;
             while (_local7 < _local5.length)
             {
@@ -151,10 +151,10 @@ package com.google.analytics.debug{
                 {
                     _local4.push(_local6.substr(0, _arg2));
                     _local6 = _local6.substring(_arg2);
-                };
+                }
                 _local4.push(_local6);
                 _local7++;
-            };
+            }
             return (_local4.join(_local3));
         }
 
@@ -163,7 +163,7 @@ package com.google.analytics.debug{
             if (_GRAlertQueue.length > 0)
             {
                 createGIFRequestAlert.apply(this, _GRAlertQueue.shift());
-            };
+            }
         }
 
         public function createSuccessAlert(_arg1:String):void{
@@ -175,7 +175,7 @@ package com.google.analytics.debug{
             } else
             {
                 _local2 = new AlertAction("X", "close", "close");
-            };
+            }
             var _local3:Alert = new SuccessAlert(_debug, _arg1, [_local2]);
             addToPanel("analytics", _local3);
             if (_hasDebug)
@@ -184,9 +184,9 @@ package com.google.analytics.debug{
                 {
                     _arg1 = _arg1.split("\n").join("");
                     _arg1 = _filterMaxChars(_arg1, 66);
-                };
+                }
                 visualDebug.writeBold(_arg1);
-            };
+            }
         }
 
         public function isAvailable():Boolean{
@@ -200,7 +200,7 @@ package com.google.analytics.debug{
             if (_hasDebug)
             {
                 visualDebug.writeBold(_arg1);
-            };
+            }
         }
 
         public function createInfo(_arg1:String):void{
@@ -208,7 +208,7 @@ package com.google.analytics.debug{
             {
                 _infoQueue.push(_arg1);
                 return;
-            };
+            }
             _arg1 = _filterMaxChars(_arg1);
             _hasInfo = true;
             var _local2:Info = new Info(_arg1, _debug.infoTimeout);
@@ -217,7 +217,7 @@ package com.google.analytics.debug{
             if (_hasDebug)
             {
                 visualDebug.write(_arg1);
-            };
+            }
         }
 
         public function createGIFRequestAlert(_arg1:String, _arg2:URLRequest, _arg3:GIFRequest):void{
@@ -228,11 +228,11 @@ package com.google.analytics.debug{
             {
                 _GRAlertQueue.push([message, request, ref]);
                 return;
-            };
+            }
             _hasGRAlert = true;
             var f:Function = function ():void{
                 ref.sendRequest(request);
-            };
+            }
             message = _filterMaxChars(message);
             var gra:GIFRequestAlert = new GIFRequestAlert(message, [new AlertAction("OK", "ok", f), new AlertAction("Cancel", "cancel", "close")]);
             addToPanel("analytics", gra);
@@ -243,9 +243,9 @@ package com.google.analytics.debug{
                 {
                     message = message.split("\n").join("");
                     message = _filterMaxChars(message, 66);
-                };
+                }
                 visualDebug.write(message);
-            };
+            }
         }
 
         public function createVisualDebug():void{
@@ -256,7 +256,7 @@ package com.google.analytics.debug{
                 visualDebug.stickToEdge = true;
                 addToPanel("analytics", visualDebug);
                 _hasDebug = true;
-            };
+            }
         }
 
         public function addToStage(_arg1:DisplayObject):void{
@@ -268,7 +268,7 @@ package com.google.analytics.debug{
             if (_warningQueue.length > 0)
             {
                 createWarning(_warningQueue.shift());
-            };
+            }
         }
 
         public function createPanel(_arg1:String, _arg2:uint, _arg3:uint):void{

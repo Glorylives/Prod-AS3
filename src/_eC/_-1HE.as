@@ -59,7 +59,7 @@ package eC{
                 this.Un.addChild(_local3);
                 _local1 = (_local1 + (_local2 % 2));
                 _local2++;
-            };
+            }
         }
 
         private function 27V(_arg1:int, _arg2:int):0F0{
@@ -76,7 +76,7 @@ package eC{
             {
                 this.0Qk();
                 this.1d8(_arg1);
-            };
+            }
             this.Un.x = ((this.WIDTH - this.Un.width) / 2);
         }
 
@@ -116,8 +116,8 @@ package eC{
                 if (this.07p == jx)
                 {
                     this.background.alpha = 0;
-                };
-            };
+                }
+            }
         }
 
 

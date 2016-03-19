@@ -33,7 +33,7 @@ package _1aA{
                     break;
                 default:
                     this.1zK = new Sprite();
-            };
+            }
             addChild(this.1zK);
             if (height > 400)
             {
@@ -44,7 +44,7 @@ package _1aA{
                 _local4.endFill();
                 addChild(_local3);
                 mask = _local3;
-            };
+            }
         }
 
         public function Gx(_arg1:Number):void{

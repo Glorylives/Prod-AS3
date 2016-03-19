@@ -40,17 +40,17 @@ package 5I{
                     {
                         this.setSelected(_local3);
                         return;
-                    };
-                };
+                    }
+                }
                 _local2++;
-            };
+            }
         }
 
         protected function setSelected(_arg1:1AD):void{
             if (this.selected_ != null)
             {
                 this.selected_.setSelected(false);
-            };
+            }
             this.selected_ = _arg1;
             this.selected_.setSelected(true);
         }
@@ -67,12 +67,12 @@ package 5I{
             if (stage.focus != null)
             {
                 return;
-            };
+            }
             var _local2:1AD = this.0iy[_arg1.keyCode];
             if (_local2 == null)
             {
                 return;
-            };
+            }
             _local2.callback_(_local2);
         }
 
@@ -84,7 +84,7 @@ package 5I{
             if (this.selected_ == null)
             {
                 this.setSelected(_local5);
-            };
+            }
             this.1FK = (this.1FK + 30);
         }
 

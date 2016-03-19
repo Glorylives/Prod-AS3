@@ -58,7 +58,7 @@ package 0Zf{
                     return (new xY());
                 default:
                     return (new c8());
-            };
+            }
         }
 
         private function 054():0He{

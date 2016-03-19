@@ -58,7 +58,7 @@ package _1aA{
             while (this.0FK.numChildren > 0)
             {
                 this.0FK.removeChildAt(0);
-            };
+            }
             this.0FK.addChild(this.1W3);
         }
 
@@ -77,7 +77,7 @@ package _1aA{
             while (this.0Ua.numChildren > 0)
             {
                 this.0Ua.removeChildAt(0);
-            };
+            }
             this.0Ua.addChild(this.rankText);
         }
 
@@ -90,7 +90,7 @@ package _1aA{
             while (this.24f.numChildren > 0)
             {
                 this.24f.removeChildAt(0);
-            };
+            }
             this.24f.addChild(_local2);
         }
 
