@@ -6,20 +6,18 @@
 package kabam.rotmg.assets.model{
     import flash.display.Sprite;
     import flash.display.Bitmap;
-    import __AS3__.vec.Vector;
     import flash.display.BitmapData;
     import flash.utils.Timer;
     import flash.events.TimerEvent;
-    import __AS3__.vec.*;
 
     public class Animation extends Sprite {
 
-        private const 0t4:int = 200;
-        private const kN:Bitmap = Animation.makeBitmap();
+        private const _0t4:int = 200;
+        private const kN:Bitmap = makeBitmap();
         private const Bk:Vector.<BitmapData> = new <BitmapData>[];
-        private const timer:Timer = Animation.1Ef();
+        private const timer:Timer = _1Ef();
 
-        private var 0i0:Boolean;
+        private var _0i0:Boolean;
         private var index:int;
         private var count:uint;
         private var disposed:Boolean;
@@ -31,21 +29,21 @@ package kabam.rotmg.assets.model{
             return (_local1);
         }
 
-        private function 1Ef():Timer{
-            var _local1:Timer = new Timer(this.0t4);
-            _local1.addEventListener(TimerEvent.TIMER, this.3C);
+        private function _1Ef():Timer{
+            var _local1:Timer = new Timer(this._0t4);
+            _local1.addEventListener(TimerEvent.TIMER, this._3C);
             return (_local1);
         }
 
-        public function 0dU():int{
+        public function _0dU():int{
             return (this.timer.delay);
         }
 
-        public function 1og(_arg1:int):void{
+        public function _1og(_arg1:int):void{
             this.timer.delay = _arg1;
         }
 
-        public function Zx(... _args):void{
+        public function _Zx(... _args):void{
             var _local2:BitmapData;
             this.Bk.length = 0;
             this.index = 0;
@@ -53,35 +51,35 @@ package kabam.rotmg.assets.model{
             {
                 this.count = this.Bk.push(_local2);
             };
-            if (this.0i0)
+            if (this._0i0)
             {
                 this.start();
             } else
             {
-                this.3C();
+                this._3C();
             };
         }
 
-        public function 0ff(_arg1:BitmapData):void{
+        public function _0ff(_arg1:BitmapData):void{
             this.count = this.Bk.push(_arg1);
-            ((this.0i0) && (this.start()));
+            ((this._0i0) && (this.start()));
         }
 
         public function start():void{
-            if (((!(this.0i0)) && ((this.count > 0))))
+            if (((!(this._0i0)) && ((this.count > 0))))
             {
                 this.timer.start();
-                this.3C();
+                this._3C();
             };
-            this.0i0 = true;
+            this._0i0 = true;
         }
 
         public function stop():void{
-            ((this.0i0) && (this.timer.stop()));
-            this.0i0 = false;
+            ((this._0i0) && (this.timer.stop()));
+            this._0i0 = false;
         }
 
-        private function 3C(_arg1:TimerEvent=null):void{
+        private function _3C(_arg1:TimerEvent=null):void{
             this.index = (++this.index % this.count);
             this.kN.bitmapData = this.Bk[this.index];
         }
@@ -100,10 +98,10 @@ package kabam.rotmg.assets.model{
         }
 
         public function gS():Boolean{
-            return (this.0i0);
+            return (this._0i0);
         }
 
-        public function 0JM():Boolean{
+        public function _0JM():Boolean{
             return (this.disposed);
         }
 

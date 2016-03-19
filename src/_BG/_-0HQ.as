@@ -13,7 +13,7 @@ package BG{
     import 0UV.Xq;
     import WZ.0Te;
     import 0UV.1mj;
-    import WZ.NV;
+    import WZ._NV;
     import 1Bt.l-;
     import 1qg.11S;
     import 5n.1IC;
@@ -57,7 +57,7 @@ package BG{
         [Inject]
         public var 1rY:1mj;
         [Inject]
-        public var 8e:NV;
+        public var 8e:_NV;
         [Inject]
         public var 1JK:l-;
         [Inject]

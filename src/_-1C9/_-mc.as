@@ -6,7 +6,7 @@
 package 1C9{
     import 5I.Command;
     import WZ.0Te;
-    import com.company.assembleegameclient.appengine.Cp;
+    import com.company.assembleegameclient.appengine._Cp;
 
     public class mc extends Command {
 
@@ -17,7 +17,7 @@ package 1C9{
 
 
         override public function execute():void{
-            this.model.0C5(new Cp(this.data));
+            this.model.0C5(new _Cp(this.data));
             this.model.qv = false;
         }
 

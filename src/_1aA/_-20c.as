@@ -13,7 +13,7 @@ package _1aA{
     import flash.events.MouseEvent;
     import _CU._13j;
     import com.company.assembleegameclient.objects.ObjectLibrary;
-    import com.company.assembleegameclient.appengine.Cp;
+    import com.company.assembleegameclient.appengine._Cp;
     import com.company.googleanalytics.GA;
     import WZ.0Te;
     import flash.events.Event;
@@ -66,11 +66,11 @@ package _1aA{
                 _local3 = ObjectLibrary.1wa[_local2];
                 _local4 = int(_local3.@type);
                 _local5 = _local3.@id;
-                if (_arg1.0Po(_local5, Cp.1xE))
+                if (_arg1.0Po(_local5, _Cp.1xE))
                 {
                 } else
                 {
-                    _local6 = _arg1.0Po(_local5, Cp.5o);
+                    _local6 = _arg1.0Po(_local5, _Cp.5o);
                     _local7 = new CharacterBox(_local3, _arg1.OO()[_local4], _arg1, _local6);
                     _local7.x = (((50 + (140 * int((_local2 % 5)))) + 70) - (_local7.width / 2));
                     _local7.y = (88 + (140 * int((_local2 / 5))));

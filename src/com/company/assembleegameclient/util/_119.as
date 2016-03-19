@@ -4,7 +4,7 @@
 //com.company.assembleegameclient.util.1l9
 
 package com.company.assembleegameclient.util{
-import __ZS.VA;
+import __ZS._VA;
 import __ZS._4e;
 
 import avmplus.getQualifiedClassName;
@@ -42,7 +42,7 @@ public class _119 {
             Parameters.load();
             Options.rX();
             this._214.load();
-            VA.load();
+            _VA.load();
         }
 
         public function _1bh():void

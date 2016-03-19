@@ -11,7 +11,7 @@ package com.company.assembleegameclient.ui{
     import com.company.assembleegameclient.parameters.Parameters;
     import com.company.util.AssetLibrary;
     import _ZS.0H7;
-    import __ZS.VA;
+    import __ZS._VA;
 
     public class Eo extends Sprite {
 
@@ -35,7 +35,7 @@ package com.company.assembleegameclient.ui{
         private function 09o(_arg1:MouseEvent):void{
             var _local2 = !(((Parameters.data_.playMusic) || (Parameters.data_.playSFX)));
             0H7.rs(_local2);
-            VA.12W(_local2);
+            _VA.12W(_local2);
             Parameters.data_.playPewPew = _local2;
             Parameters.save();
             this.2t();

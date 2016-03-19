@@ -11,7 +11,7 @@ package 1fx{
     import 0Fr.1da;
     import com.company.assembleegameclient.parameters.Parameters;
     import com.company.util.1X3;
-    import com.company.assembleegameclient.appengine.Cp;
+    import com.company.assembleegameclient.appengine._Cp;
 
     public class PurchaseCharacterClassTask extends 1iz {
 
@@ -51,7 +51,7 @@ package 1fx{
         }
 
         private function 9Y():void{
-            this.SP.0gU(this.classType, Cp.5o);
+            this.SP.0gU(this.classType, _Cp.5o);
             1d5(true);
         }
 

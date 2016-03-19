@@ -3,14 +3,12 @@
 
 //1Np.LevelUpEffect
 
-package 1Np{
+package _1Np{
     import com.company.assembleegameclient.objects.GameObject;
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
 
-    public class LevelUpEffect extends 0F- {
+    public class LevelUpEffect extends _0F {
 
-        private static const 0p8:int = 2000;
+        private static const _0p8:int = 2000;
 
         public var go_:GameObject;
         public var parts1_:Vector.<LevelUpParticle>;
@@ -37,7 +35,7 @@ package 1Np{
         override public function update(_arg1:int, _arg2:int):Boolean{
             if (this.go_.map_ == null)
             {
-                this.1Jv();
+                this._1Jv();
                 return (false);
             };
             x_ = this.go_.x_;
@@ -46,10 +44,10 @@ package 1Np{
             {
                 this.startTime_ = _arg1;
             };
-            var _local3:Number = ((_arg1 - this.startTime_) / 0p8);
+            var _local3:Number = ((_arg1 - this.startTime_) / _0p8);
             if (_local3 >= 1)
             {
-                this.1Jv();
+                this._1Jv();
                 return (false);
             };
             this.cG(this.parts1_, 1, 0, _local3);
@@ -57,7 +55,7 @@ package 1Np{
             return (true);
         }
 
-        private function 1Jv():void{
+        private function _1Jv():void{
             var _local1:LevelUpParticle;
             for each (_local1 in this.parts1_)
             {
@@ -109,7 +107,7 @@ package 1Np{
     }
 }//package 1Np
 
-import 1Np.Particle;
+import _1Np.Particle;
 
 class LevelUpParticle extends Particle {
 

@@ -4,6 +4,7 @@
 //com.company.assembleegameclient.util._BJ
 
 package com.company.assembleegameclient.util{
+import com.company.assembleegameclient.map._1C8;
 import com.company.util.Trig;
 
 import flash.display.BitmapData;

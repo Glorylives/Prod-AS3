@@ -7,8 +7,8 @@ package com.company.assembleegameclient.ui{
     import flash.display.Sprite;
     import _Jy._1HZ;
     import _CU._13j;
-    import 1n4.1cA;
-    import 1n4.1WS;
+    import _1n4._1cA;
+    import _1n4._1WS;
     import flash.filters.DropShadowFilter;
     import flash.events.MouseEvent;
     import com.company.assembleegameclient.parameters.Parameters;
@@ -21,27 +21,27 @@ package com.company.assembleegameclient.ui{
         public var w_:int;
         public var h_:int;
         public var color_:uint;
-        public var 9l:uint;
-        public var 11-:uint;
-        public var 1Tw:uint;
+        public var _9l:uint;
+        public var _11:uint;
+        public var _1Tw:uint;
         public var val_:int = -1;
-        public var 22Y:int = -1;
+        public var _22Y:int = -1;
         public var boost_:int = -1;
-        public var 07M:int = -1;
+        public var _07M:int = -1;
         private var labelText_:_13j;
-        private var 0b4:1cA;
+        private var _0b4:_1cA;
         private var rN:_13j;
-        private var 0sS:1WS;
-        private var 14v:_13j;
-        private var 1i8:_13j;
-        public var 1w0:Sprite;
+        private var _0sS:_1WS;
+        private var _14v:_13j;
+        private var _1i8:_13j;
+        public var _1w0:Sprite;
         private var NR:Sprite;
-        private var 08p:Number;
-        private var 0UR:Number;
-        public var 01-:Boolean = false;
-        private var 0Qo:Boolean = false;
-        private var 0vN:int;
-        private var 0o8:int = -1;
+        private var _08p:Number;
+        private var _0UR:Number;
+        public var _01:Boolean = false;
+        private var _0Qo:Boolean = false;
+        private var _0vN:int;
+        private var _0o8:int = -1;
         private var speed:Number = 0.1;
 
         public function StatusBar(_arg1:int, _arg2:int, _arg3:uint, _arg4:uint, _arg5:String=null){
@@ -50,55 +50,55 @@ package com.company.assembleegameclient.ui{
             addChild(this.NR);
             this.w_ = _arg1;
             this.h_ = _arg2;
-            this.08p = (this.color_ = _arg3);
-            this.0UR = (this.9l = _arg4);
-            this.1Tw = 0xFFFFFF;
+            this._08p = (this.color_ = _arg3);
+            this._0UR = (this._9l = _arg4);
+            this._1Tw = 0xFFFFFF;
             if (((!((_arg5 == null))) && (!((_arg5.length == 0)))))
             {
-                this.labelText_ = new _13j().setSize(14).setColor(this.1Tw);
+                this.labelText_ = new _13j().setSize(14).setColor(this._1Tw);
                 this.labelText_.setBold(true);
-                this.0b4 = new 1cA().setParams(_arg5);
-                this.labelText_.setStringBuilder(this.0b4);
-                this.0yy(this.labelText_);
+                this._0b4 = new _1cA().setParams(_arg5);
+                this.labelText_.setStringBuilder(this._0b4);
+                this._0yy(this.labelText_);
                 this.labelText_.filters = [new DropShadowFilter(0, 0, 0)];
                 addChild(this.labelText_);
             };
             this.rN = new _13j().setSize(14).setColor(0xFFFFFF);
             this.rN.setBold(true);
             this.rN.filters = [new DropShadowFilter(0, 0, 0)];
-            this.0yy(this.rN);
-            this.0sS = new 1WS();
-            this.14v = new _13j().setSize(14).setColor(this.1Tw);
-            this.14v.setBold(true);
-            this.14v.alpha = 0.6;
-            this.0yy(this.14v);
-            this.14v.filters = [new DropShadowFilter(0, 0, 0)];
-            this.1w0 = new Sprite();
-            this.1w0.x = (this.w_ - 25);
-            this.1w0.y = -3;
-            this.1w0.graphics.beginFill(0xFF00FF, 0);
-            this.1w0.graphics.drawRect(0, 0, 20, 20);
-            this.1w0.addEventListener(MouseEvent.MOUSE_OVER, this.1g7);
-            this.1w0.addEventListener(MouseEvent.MOUSE_OUT, this.qC);
-            this.1i8 = new _13j().setSize(14).setColor(9493531);
-            this.1i8.setBold(true);
-            this.1i8.setStringBuilder(new 1WS("x2"));
-            this.1i8.filters = [new DropShadowFilter(0, 0, 0)];
-            this.1w0.addChild(this.1i8);
+            this._0yy(this.rN);
+            this._0sS = new _1WS();
+            this._14v = new _13j().setSize(14).setColor(this._1Tw);
+            this._14v.setBold(true);
+            this._14v.alpha = 0.6;
+            this._0yy(this._14v);
+            this._14v.filters = [new DropShadowFilter(0, 0, 0)];
+            this._1w0 = new Sprite();
+            this._1w0.x = (this.w_ - 25);
+            this._1w0.y = -3;
+            this._1w0.graphics.beginFill(0xFF00FF, 0);
+            this._1w0.graphics.drawRect(0, 0, 20, 20);
+            this._1w0.addEventListener(MouseEvent.MOUSE_OVER, this._1g7);
+            this._1w0.addEventListener(MouseEvent.MOUSE_OUT, this.qC);
+            this._1i8 = new _13j().setSize(14).setColor(9493531);
+            this._1i8.setBold(true);
+            this._1i8.setStringBuilder(new _1WS("x2"));
+            this._1i8.filters = [new DropShadowFilter(0, 0, 0)];
+            this._1w0.addChild(this._1i8);
             if (!Parameters.data_.toggleBarText)
             {
                 addEventListener(MouseEvent.ROLL_OVER, this.onMouseOver);
                 addEventListener(MouseEvent.ROLL_OUT, this.onMouseOut);
             };
-            lQ.add(this.1NO);
+            lQ.add(this._1NO);
         }
 
-        public function 0yy(_arg1:_13j):void{
+        public function _0yy(_arg1:_13j):void{
             _arg1.setVerticalAlign(_13j.MIDDLE);
             _arg1.y = ((this.h_ / 2) + 1);
         }
 
-        private function 1g7(_arg1:MouseEvent):void{
+        private function _1g7(_arg1:MouseEvent):void{
             dispatchEvent(new Event("MULTIPLIER_OVER"));
         }
 
@@ -111,33 +111,33 @@ package com.company.assembleegameclient.ui{
             {
                 _arg1 = Math.min(_arg2, Math.max(0, _arg1));
             };
-            if ((((((((_arg1 == this.val_)) && ((_arg2 == this.22Y)))) && ((_arg3 == this.boost_)))) && ((_arg4 == this.07M))))
+            if ((((((((_arg1 == this.val_)) && ((_arg2 == this._22Y)))) && ((_arg3 == this.boost_)))) && ((_arg4 == this._07M))))
             {
                 return;
             };
             this.val_ = _arg1;
-            this.22Y = _arg2;
+            this._22Y = _arg2;
             this.boost_ = _arg3;
-            this.07M = _arg4;
-            this.1xt();
+            this._07M = _arg4;
+            this._1xt();
         }
 
         public function bM(_arg1:String, _arg2:Object=null):void{
-            this.0b4.setParams(_arg1, _arg2);
-            this.labelText_.setStringBuilder(this.0b4);
+            this._0b4.setParams(_arg1, _arg2);
+            this.labelText_.setStringBuilder(this._0b4);
         }
 
-        private function 073(_arg1:uint):void{
-            this.1Tw = _arg1;
-            if (this.14v != null)
+        private function _073(_arg1:uint):void{
+            this._1Tw = _arg1;
+            if (this._14v != null)
             {
-                this.14v.setColor(this.1Tw);
+                this._14v.setColor(this._1Tw);
             };
-            this.rN.setColor(this.1Tw);
+            this.rN.setColor(this._1Tw);
         }
 
-        public function 1NO(_arg1:Boolean):void{
-            this.01- = false;
+        public function _1NO(_arg1:Boolean):void{
+            this._01 = false;
             if (_arg1)
             {
                 removeEventListener(MouseEvent.ROLL_OVER, this.onMouseOver);
@@ -147,14 +147,14 @@ package com.company.assembleegameclient.ui{
                 addEventListener(MouseEvent.ROLL_OVER, this.onMouseOver);
                 addEventListener(MouseEvent.ROLL_OUT, this.onMouseOut);
             };
-            this.1xt();
+            this._1xt();
         }
 
-        private function 1xt():void{
+        private function _1xt():void{
             graphics.clear();
             this.NR.graphics.clear();
             var _local1:uint = 0xFFFFFF;
-            if ((((this.07M > 0)) && (((this.22Y - this.boost_) == this.07M))))
+            if ((((this._07M > 0)) && (((this._22Y - this.boost_) == this._07M))))
             {
                 _local1 = 0xFCDF00;
             } else
@@ -164,22 +164,22 @@ package com.company.assembleegameclient.ui{
                     _local1 = 6206769;
                 };
             };
-            if (this.1Tw != _local1)
+            if (this._1Tw != _local1)
             {
-                this.073(_local1);
+                this._073(_local1);
             };
-            graphics.beginFill(this.9l);
+            graphics.beginFill(this._9l);
             graphics.drawRect(0, 0, this.w_, this.h_);
             graphics.endFill();
-            if (this.0Qo)
+            if (this._0Qo)
             {
-                this.NR.graphics.beginFill(this.11-);
+                this.NR.graphics.beginFill(this._11);
                 this.NR.graphics.drawRect(0, 0, this.w_, this.h_);
             };
             this.NR.graphics.beginFill(this.color_);
-            if (this.22Y > 0)
+            if (this._22Y > 0)
             {
-                this.NR.graphics.drawRect(0, 0, (this.w_ * (this.val_ / this.22Y)), this.h_);
+                this.NR.graphics.drawRect(0, 0, (this.w_ * (this.val_ / this._22Y)), this.h_);
             } else
             {
                 this.NR.graphics.drawRect(0, 0, this.w_, this.h_);
@@ -189,23 +189,23 @@ package com.company.assembleegameclient.ui{
             {
                 removeChild(this.rN);
             };
-            if (contains(this.14v))
+            if (contains(this._14v))
             {
-                removeChild(this.14v);
+                removeChild(this._14v);
             };
-            if (((Parameters.data_.toggleBarText) || (((this.01-) && ((this.h_ > 4))))))
+            if (((Parameters.data_.toggleBarText) || (((this._01) && ((this.h_ > 4))))))
             {
                 this.yQ();
             };
         }
 
         public function yQ():void{
-            if (this.22Y > 0)
+            if (this._22Y > 0)
             {
-                this.rN.setStringBuilder(this.0sS.setString(((this.val_ + "/") + this.22Y)));
+                this.rN.setStringBuilder(this._0sS.setString(((this.val_ + "/") + this._22Y)));
             } else
             {
-                this.rN.setStringBuilder(this.0sS.setString(("" + this.val_)));
+                this.rN.setStringBuilder(this._0sS.setString(("" + this.val_)));
             };
             if (!contains(this.rN))
             {
@@ -215,77 +215,77 @@ package com.company.assembleegameclient.ui{
             };
             if (this.boost_ != 0)
             {
-                this.14v.setStringBuilder(this.0sS.setString((((" (" + (((this.boost_ > 0)) ? "+" : "")) + this.boost_.toString()) + ")")));
-                if (!contains(this.14v))
+                this._14v.setStringBuilder(this._0sS.setString((((" (" + (((this.boost_ > 0)) ? "+" : "")) + this.boost_.toString()) + ")")));
+                if (!contains(this._14v))
                 {
-                    this.14v.mouseEnabled = false;
-                    this.14v.mouseChildren = false;
-                    addChild(this.14v);
+                    this._14v.mouseEnabled = false;
+                    this._14v.mouseChildren = false;
+                    addChild(this._14v);
                 };
-                this.rN.x = ((this.w_ / 2) - ((this.rN.width + this.14v.width) / 2));
-                this.14v.x = (this.rN.x + this.rN.width);
+                this.rN.x = ((this.w_ / 2) - ((this.rN.width + this._14v.width) / 2));
+                this._14v.x = (this.rN.x + this.rN.width);
             } else
             {
                 this.rN.x = ((this.w_ / 2) - (this.rN.width / 2));
-                if (contains(this.14v))
+                if (contains(this._14v))
                 {
-                    removeChild(this.14v);
+                    removeChild(this._14v);
                 };
             };
         }
 
-        public function 01S():void{
-            this.1w0.mouseEnabled = false;
-            this.1w0.mouseChildren = false;
-            addChild(this.1w0);
-            this.0NV(3, 9493531, 0xFFFFFF);
+        public function _01S():void{
+            this._1w0.mouseEnabled = false;
+            this._1w0.mouseChildren = false;
+            addChild(this._1w0);
+            this._0NV(3, 9493531, 0xFFFFFF);
         }
 
-        public function 0zD():void{
-            if (this.1w0.parent)
+        public function _0zD():void{
+            if (this._1w0.parent)
             {
-                removeChild(this.1w0);
+                removeChild(this._1w0);
             };
         }
 
-        public function 0NV(_arg1:Number, _arg2:Number, _arg3:Number):void{
-            this.0Qo = true;
+        public function _0NV(_arg1:Number, _arg2:Number, _arg3:Number):void{
+            this._0Qo = true;
             this.color_ = _arg2;
-            this.11- = _arg3;
-            this.0vN = _arg1;
-            this.1xt();
-            addEventListener(Event.ENTER_FRAME, this.1Bw);
+            this._11 = _arg3;
+            this._0vN = _arg1;
+            this._1xt();
+            addEventListener(Event.ENTER_FRAME, this._1Bw);
         }
 
-        private function 1Bw(_arg1:Event):void{
+        private function _1Bw(_arg1:Event):void{
             if ((((this.NR.alpha > 1)) || ((this.NR.alpha < 0))))
             {
-                this.0o8 = (this.0o8 * -1);
+                this._0o8 = (this._0o8 * -1);
                 if (this.NR.alpha > 1)
                 {
-                    this.0vN--;
-                    if (!this.0vN)
+                    this._0vN--;
+                    if (!this._0vN)
                     {
-                        this.0Qo = false;
-                        this.color_ = this.08p;
-                        this.9l = this.0UR;
+                        this._0Qo = false;
+                        this.color_ = this._08p;
+                        this._9l = this._0UR;
                         this.NR.alpha = 1;
-                        this.1xt();
-                        removeEventListener(Event.ENTER_FRAME, this.1Bw);
+                        this._1xt();
+                        removeEventListener(Event.ENTER_FRAME, this._1Bw);
                     };
                 };
             };
-            this.NR.alpha = (this.NR.alpha + (this.speed * this.0o8));
+            this.NR.alpha = (this.NR.alpha + (this.speed * this._0o8));
         }
 
         private function onMouseOver(_arg1:MouseEvent):void{
-            this.01- = true;
-            this.1xt();
+            this._01 = true;
+            this._1xt();
         }
 
         private function onMouseOut(_arg1:MouseEvent):void{
-            this.01- = false;
-            this.1xt();
+            this._01 = false;
+            this._1xt();
         }
 
 

@@ -27,7 +27,7 @@ package oa{
     import com.company.assembleegameclient.objects.Character;
     import com.company.assembleegameclient.objects.Portal;
     import com.company.assembleegameclient.objects.GuildHallPortal;
-    import com.company.util.Ck;
+    import com.company.util._Ck;
     import __AS3__.vec.*;
 
     public class Dy extends 1a4 {

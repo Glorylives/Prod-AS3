@@ -16,7 +16,7 @@ package _04_{
     import 1Bg.iG;
     import 1fx.1OZ;
     import WZ.0Te;
-    import WZ.NV;
+    import WZ._NV;
     import WZ.07B;
     import 0N9.0Fo;
     import 1C9.0nc;
@@ -90,7 +90,7 @@ package _04_{
 
         private function 9U():void{
             this.kf.map(0Te).1nL();
-            this.kf.map(NV).1nL();
+            this.kf.map(_NV).1nL();
             this.kf.map(07B).1nL();
             this.kf.map(0Fo).1nL();
         }

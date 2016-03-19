@@ -3,45 +3,46 @@
 
 //099.TeleportMenuOption
 
-package 099{
-    import flash.geom.ColorTransform;
+package _099{
+import _AO._du;
+
+import flash.geom.ColorTransform;
     import com.company.assembleegameclient.objects.Player;
     import _CU._13j;
     import flash.display.Shape;
     import com.company.util.AssetLibrary;
-    import AO.du;
-    import 1n4.1cA;
+    import _1n4._1cA;
     import flash.events.Event;
     import flash.events.MouseEvent;
 
-    public class TeleportMenuOption extends 1Nr {
+    public class TeleportMenuOption extends _1Nr {
 
-        private static const 0mV:ColorTransform = new ColorTransform((84 / 0xFF), (84 / 0xFF), (84 / 0xFF));
+        private static const _0mV:ColorTransform = new ColorTransform((84 / 0xFF), (84 / 0xFF), (84 / 0xFF));
 
         private var player_:Player;
-        private var 01-:Boolean = false;
-        private var 1kp:_13j;
-        private var while:int;
-        private var 50:Shape;
+        private var _01:Boolean = false;
+        private var _1kp:_13j;
+        private var _while:int;
+        private var _50:Shape;
 
         public function TeleportMenuOption(_arg1:Player){
-            this.50 = new Shape();
-            super(AssetLibrary.1JR("lofiInterface2", 3), 0xFFFFFF, du.0gm);
+            this._50 = new Shape();
+            super(AssetLibrary._1JR("lofiInterface2", 3), 0xFFFFFF, _du._0gm);
             this.player_ = _arg1;
-            this.1kp = new _13j().setSize(18).setColor(0xFFFFFF);
-            this.1kp.setBold(true);
-            this.1kp.setStringBuilder(new 1cA().setParams(du.0gm));
-            this.1kp.x = (this.50.x = text_.x);
-            this.1kp.y = (this.50.y = text_.y);
-            this.1kp.textChanged.add(this.onTextChanged);
+            this._1kp = new _13j().setSize(18).setColor(0xFFFFFF);
+            this._1kp.setBold(true);
+            this._1kp.setStringBuilder(new _1cA().setParams(_du._0gm));
+            this._1kp.x = (this._50.x = text_.x);
+            this._1kp.y = (this._50.y = text_.y);
+            this._1kp.textChanged.add(this.onTextChanged);
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
 
         private function onTextChanged():void{
-            this.while = this.1kp.textField.width;
-            this.50.graphics.beginFill(0xFF00FF);
-            this.50.graphics.drawRect(0, 0, this.1kp.textField.width, this.1kp.textField.height);
+            this._while = this._1kp.textField.width;
+            this._50.graphics.beginFill(0xFF00FF);
+            this._50.graphics.drawRect(0, 0, this._1kp.textField.width, this._1kp.textField.height);
         }
 
         private function onAddedToStage(_arg1:Event):void{
@@ -54,40 +55,40 @@ package 099{
 
         private function onEnterFrame(_arg1:Event):void{
             var _local3:Number;
-            var _local2:int = this.player_.1pO();
+            var _local2:int = this.player_._1pO();
             if (_local2 > 0)
             {
-                if (!contains(this.1kp))
+                if (!contains(this._1kp))
                 {
-                    addChild(this.1kp);
-                    addChild(this.50);
-                    this.1kp.mask = this.50;
+                    addChild(this._1kp);
+                    addChild(this._50);
+                    this._1kp.mask = this._50;
                 };
-                _local3 = (this.while * (1 - (_local2 / Player.b9)));
-                this.50.width = _local3;
-                0bB(0mV);
+                _local3 = (this._while * (1 - (_local2 / Player.b9)));
+                this._50.width = _local3;
+                _0bB(_0mV);
             } else
             {
-                if (contains(this.1kp))
+                if (contains(this._1kp))
                 {
-                    removeChild(this.1kp);
+                    removeChild(this._1kp);
                 };
-                if (this.01-)
+                if (this._01)
                 {
-                    0bB(0Zb);
+                    _0bB(_0Zb);
                 } else
                 {
-                    0bB(null);
+                    _0bB(null);
                 };
             };
         }
 
         override protected function onMouseOver(_arg1:MouseEvent):void{
-            this.01- = true;
+            this._01 = true;
         }
 
         override protected function onMouseOut(_arg1:MouseEvent):void{
-            this.01- = false;
+            this._01 = false;
         }
 
 

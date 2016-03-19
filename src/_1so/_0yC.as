@@ -12,7 +12,7 @@ package _1so{
     import flash.events.MouseEvent;
     import flash.filters.DropShadowFilter;
     import flash.geom.Rectangle;
-    import com.company.util.Ck;
+    import com.company.util._Ck;
     import com.company.util.Trig;
     import com.company.assembleegameclient.map._1C8;
     import flash.display.Graphics;
@@ -135,7 +135,7 @@ package _1so{
             _local3 = _arg2._0KH;
             _local4 = this.go_._4M[0];
             _local5 = this.go_._4M[1];
-            if (!Ck._1c(_arg2._0KH, 0, 0, _local4, _local5, this._1rV))
+            if (!_Ck._1c(_arg2._0KH, 0, 0, _local4, _local5, this._1rV))
             {
                 this.go_ = null;
                 visible = false;

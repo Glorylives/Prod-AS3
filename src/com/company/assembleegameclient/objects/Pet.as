@@ -4,40 +4,44 @@
 //com.company.assembleegameclient.objects.Pet
 
 package com.company.assembleegameclient.objects{
-    import 0UV.0Hm;
-    import 5z.0tK;
-    import com.company.assembleegameclient.util._BJ;
-    import 5z.zL;
+import _0UV._0Hm;
+
+import _0nG.PetPanel;
+
+import _0qj._1ae;
+import _0qj._6P;
+
+import _5z._0tK;
+
+import _AO._du;
+
+import com.company.assembleegameclient.util._BJ;
     import _04_._1JZ;
-    import 0qj.6P;
-    import AO.du;
-    import 0qj.1ae;
-    import 0nG.PetPanel;
     import com.company.assembleegameclient.game.GameSprite;
     import _ZE.Panel;
-    import com.company.assembleegameclient.util.0s0;
+    import com.company.assembleegameclient.util._0s0;
     import com.company.assembleegameclient.util._V4;
 
-    public class Pet extends GameObject implements 18p {
+    public class Pet extends GameObject implements _18p {
 
-        private var YG:0Hm;
-        public var vo:0tK;
+        private var YG:_0Hm;
+        public var vo:_0tK;
         public var skin:_BJ;
         public var VI:_BJ;
         public var s0:int;
-        public var 13O:Boolean = false;
-        private var 1G5:zL;
+        public var _13O:Boolean = false;
+        private var _1G5:zL;
 
         public function Pet(_arg1:XML){
             super(_arg1);
-            10J = true;
-            this.YG = _1JZ.0JF().getInstance(0Hm);
-            this.1G5 = _1JZ.0JF().getInstance(zL);
-            this.1G5.1tI();
+            _10J = true;
+            this.YG = _1JZ._0JF().getInstance(_0Hm);
+            this._1G5 = _1JZ._0JF().getInstance(zL);
+            this._1G5._1tI();
         }
 
-        public function getTooltip():1ae{
-            var _local1:1ae = new 6P(0x363636, 0x9B9B9B, du.1Mc, du.Oy, 200);
+        public function getTooltip():_1ae{
+            var _local1:_1ae = new _6P(0x363636, 0x9B9B9B, _du._1Mc, _du._Oy, 200);
             return (_local1);
         }
 
@@ -45,38 +49,38 @@ package com.company.assembleegameclient.objects{
             return (new PetPanel(_arg1, this.vo));
         }
 
-        public function 1es(_arg1:int):void{
-            var _local5:0s0;
+        public function _1es(_arg1:int):void{
+            var _local5:_0s0;
             this.s0 = _arg1;
-            var _local2:XML = ObjectLibrary.0vY(ObjectLibrary.Uq(_arg1));
+            var _local2:XML = ObjectLibrary._0vY(ObjectLibrary.Uq(_arg1));
             var _local3:String = _local2.AnimatedTexture.File;
             var _local4:int = _local2.AnimatedTexture.Index;
             if (this.skin == null)
             {
-                this.13O = true;
-                this.skin = _V4.1Q2(_local3, _local4);
+                this._13O = true;
+                this.skin = _V4._1Q2(_local3, _local4);
                 this.VI = this.skin;
             } else
             {
-                this.skin = _V4.1Q2(_local3, _local4);
+                this.skin = _V4._1Q2(_local3, _local4);
             };
-            this.13O = (this.skin == this.VI);
-            _local5 = this.skin.imageFromAngle(0, _BJ.1OS, 0);
-            3q = this.skin;
+            this._13O = (this.skin == this.VI);
+            _local5 = this.skin.imageFromAngle(0, _BJ._1OS, 0);
+            _3q = this.skin;
             texture_ = _local5.image_;
             mask_ = _local5.mask_;
         }
 
-        public function 1uR():void{
-            var _local1:0s0;
+        public function _1uR():void{
+            var _local1:_0s0;
             this.s0 = -1;
             if (this.VI == null)
             {
                 return;
             };
-            _local1 = this.VI.imageFromAngle(0, _BJ.1OS, 0);
-            this.13O = true;
-            3q = this.VI;
+            _local1 = this.VI.imageFromAngle(0, _BJ._1OS, 0);
+            this._13O = true;
+            _3q = this.VI;
             texture_ = _local1.image_;
             mask_ = _local1.mask_;
         }

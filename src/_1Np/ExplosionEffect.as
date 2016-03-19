@@ -3,33 +3,32 @@
 
 //1Np.ExplosionEffect
 
-package 1Np{
-    import __AS3__.vec.Vector;
+package _1Np{
 
-    public class ExplosionEffect extends 0F- {
+    public class ExplosionEffect extends _0F {
 
         public var xq:Vector.<uint>;
-        public var 0hC:int;
+        public var _0hC:int;
 
         public function ExplosionEffect(_arg1:Vector.<uint>, _arg2:int, _arg3:int){
             this.xq = _arg1;
             size_ = _arg2;
             if (ExplosionParticle.total_ >= 250)
             {
-                this.0hC = 2;
+                this._0hC = 2;
             } else
             {
                 if (ExplosionParticle.total_ >= 150)
                 {
-                    this.0hC = 4;
+                    this._0hC = 4;
                 } else
                 {
                     if (ExplosionParticle.total_ >= 90)
                     {
-                        this.0hC = 12;
+                        this._0hC = 12;
                     } else
                     {
-                        this.0hC = _arg3;
+                        this._0hC = _arg3;
                     };
                 };
             };
@@ -47,7 +46,7 @@ package 1Np{
                 return (false);
             };
             var _local3:int;
-            while (_local3 < this.0hC)
+            while (_local3 < this._0hC)
             {
                 _local4 = this.xq[int((this.xq.length * Math.random()))];
                 _local5 = new ExplosionParticle(_local4, 0.5, size_, (200 + (Math.random() * 100)), (Math.random() - 0.5), (Math.random() - 0.5), 0);
@@ -68,9 +67,9 @@ package 1Np{
             {
                 return (false);
             };
-            this.0hC = 2;
+            this._0hC = 2;
             var _local3:int;
-            while (_local3 < this.0hC)
+            while (_local3 < this._0hC)
             {
                 _local4 = this.xq[int((this.xq.length * Math.random()))];
                 _local5 = new ExplosionParticle(_local4, 0.5, size_, (50 + (Math.random() * 100)), (Math.random() - 0.5), (Math.random() - 0.5), 0);
@@ -84,7 +83,8 @@ package 1Np{
     }
 }//package 1Np
 
-import 1Np.Particle;
+import _1Np.Particle;
+
 import flash.geom.Vector3D;
 
 class ExplosionParticle extends Particle {
@@ -112,7 +112,7 @@ class ExplosionParticle extends Particle {
         {
             if (!this.deleted)
             {
-                total-;
+                total_--;
                 this.deleted = true;
             };
             return (false);

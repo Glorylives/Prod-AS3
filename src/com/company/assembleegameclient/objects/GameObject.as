@@ -7,12 +7,31 @@ package com.company.assembleegameclient.objects{
 import _0W4.Animations;
 import _0W4._Zv;
 
+import _1Np.ExplosionEffect;
+
+import _1Np.HitEffect;
+
 import _1Np._0F;
+import _1Np._0Xn;
+
+import _1m9._14d;
+
+import _1n4._1cA;
+
+import _1yZ._1go;
+
+import _5z._0tK;
+import _5z._zL;
 
 import _Jt._4b;
 
+import _ZS._0ZC;
+
+import _g0._1tk;
+
 import com.company.assembleegameclient.engine3d._0oE;
 import com.company.assembleegameclient.engine3d._1hA;
+import com.company.assembleegameclient.util._121;
 
 import flash.filters.ColorMatrixFilter;
     import com.company.util.MoreColorUtil;
@@ -37,7 +56,7 @@ import flash.filters.ColorMatrixFilter;
     import com.company.assembleegameclient.map._1C8;
     import com.company.util.AssetLibrary;
     import com.company.assembleegameclient.util._0s0;
-    import com.company.util.hd;
+    import com.company.util._hd;
     import com.company.assembleegameclient.util.TextureRedrawer;
     import flash.utils.getTimer;
     import com.company.assembleegameclient.parameters.Parameters;
@@ -137,7 +156,7 @@ import flash.filters.ColorMatrixFilter;
             if (_arg1 == null)
             {
                 return;
-            };
+            }
             this.objectType_ = int(_arg1.@type);
             this.props_ = ObjectLibrary._0Ri[this.objectType_];
             _1QM = (this.props_._0Qf > 0);
@@ -149,11 +168,11 @@ import flash.filters.ColorMatrixFilter;
             if (_local2._0Wd != null)
             {
                 this.effect_ = _0F._1qK(_local2._0Wd, this);
-            };
+            }
             if (this.texture_ != null)
             {
                 this._1MJ = (this.texture_.height / 8);
-            };
+            }
             if (_arg1.hasOwnProperty("Model"))
             {
                 this._0rb = _1hA._0ux(String(_arg1.Model));
@@ -161,23 +180,23 @@ import flash.filters.ColorMatrixFilter;
                 if (this.texture_ != null)
                 {
                     this._6Q._11F(this.texture_);
-                };
-            };
+                }
+            }
             var _local3:_Zv = ObjectLibrary.Kx[this.objectType_];
             if (_local3 != null)
             {
                 this._0dP = new Animations(_local3);
-            };
+            }
             z_ = this.props_.z_;
             this.flying_ = this.props_.flying_;
             if (_arg1.hasOwnProperty("MaxHitPoints"))
             {
                 this._1VZ = (this.ba = int(_arg1.MaxHitPoints));
-            };
+            }
             if (_arg1.hasOwnProperty("Defense"))
             {
                 this._1vs = int(_arg1.Defense);
-            };
+            }
             if (_arg1.hasOwnProperty("SlotTypes"))
             {
                 this.px = ConversionUtil._0HU(_arg1.SlotTypes);
@@ -187,28 +206,28 @@ import flash.filters.ColorMatrixFilter;
                 {
                     this._1Wz[_local4] = -1;
                     _local4++;
-                };
-            };
+                }
+            }
             if (_arg1.hasOwnProperty("Tex1"))
             {
                 this.tex1Id_ = int(_arg1.Tex1);
-            };
+            }
             if (_arg1.hasOwnProperty("Tex2"))
             {
                 this.tex2Id_ = int(_arg1.Tex2);
-            };
+            }
             if (_arg1.hasOwnProperty("StunImmune"))
             {
                 this._1Du = true;
-            };
+            }
             if (_arg1.hasOwnProperty("ParalyzeImmune"))
             {
                 this._0to = true;
-            };
+            }
             if (_arg1.hasOwnProperty("DazedImmune"))
             {
                 this._0Iw = true;
-            };
+            }
             this.props_._0l5();
         }
 
@@ -222,22 +241,22 @@ import flash.filters.ColorMatrixFilter;
                 if ((_arg4[ConditionEffect._26x] & ConditionEffect._1Z4) != 0)
                 {
                     _local5 = (_local5 * 2);
-                };
-            };
+                }
+            }
             var _local6:int = ((_arg1 * 3) / 20);
             var _local7:int = Math.max(_local6, (_arg1 - _local5));
             if ((_arg4[ConditionEffect._26x] & ConditionEffect.uW) != 0)
             {
                 _local7 = 0;
-            };
+            }
             if ((_arg4[ConditionEffect.ex] & ConditionEffect._1GL) != 0)
             {
                 _local7 = (_local7 * 0.9);
-            };
+            }
             if ((_arg4[ConditionEffect.ex] & ConditionEffect._0Du) != 0)
             {
                 _local7 = (_local7 * 1.2);
-            };
+            }
             return (_local7);
         }
 
@@ -254,8 +273,8 @@ import flash.filters.ColorMatrixFilter;
                 if (this._6Q != null)
                 {
                     this._6Q._11F(this.texture_);
-                };
-            };
+                }
+            }
         }
 
         public function _0OD(_arg1:int):void{
@@ -270,8 +289,8 @@ import flash.filters.ColorMatrixFilter;
                 if (_local3 == null)
                 {
                     return;
-                };
-            };
+                }
+            }
             this.texture_ = _local3.texture_;
             this.mask_ = _local3.mask_;
             this._3q = _local3._3q;
@@ -279,22 +298,22 @@ import flash.filters.ColorMatrixFilter;
             {
                 map_.removeObj(this.effect_.objectId_);
                 this.effect_ = null;
-            };
+            }
             if (_local3._0Wd != null)
             {
                 this.effect_ = _0F._1qK(_local3._0Wd, this);
                 if (map_ != null)
                 {
                     map_.addObj(this.effect_, x_, y_);
-                };
-            };
+                }
+            }
         }
 
         public function setTex1(_arg1:int):void{
             if (_arg1 == this.tex1Id_)
             {
                 return;
-            };
+            }
             this.tex1Id_ = _arg1;
             this._0Rx = new Dictionary();
             this._0Sz = null;
@@ -304,7 +323,7 @@ import flash.filters.ColorMatrixFilter;
             if (_arg1 == this.tex2Id_)
             {
                 return;
-            };
+            }
             this.tex2Id_ = _arg1;
             this._0Rx = new Dictionary();
             this._0Sz = null;
@@ -326,7 +345,7 @@ import flash.filters.ColorMatrixFilter;
             {
                 this._0Sz.dispose();
                 this._0Sz = null;
-            };
+            }
             if (this._0Rx != null)
             {
                 for each (_local1 in this._0Rx)
@@ -344,29 +363,29 @@ import flash.filters.ColorMatrixFilter;
                             if (_local5 != null)
                             {
                                 _local5.dispose();
-                            };
-                        };
-                    };
-                };
+                            }
+                        }
+                    }
+                }
                 this._0Rx = null;
-            };
+            }
             if (this._0rb != null)
             {
                 this._0rb.dispose();
                 this._0rb = null;
-            };
+            }
             if (this._6Q != null)
             {
                 this._6Q.dispose();
                 this._6Q = null;
-            };
+            }
             this.px = null;
             this._1Wz = null;
             if (this._1LO != null)
             {
                 this._1LO.dispose();
                 this._1LO = null;
-            };
+            }
             this._0mZ = null;
             this._1wR = null;
             this.bitmapFill_ = null;
@@ -384,22 +403,22 @@ import flash.filters.ColorMatrixFilter;
                 this._0ND.commands = null;
                 this._0ND.data = null;
                 this._0ND = null;
-            };
+            }
         }
 
-        public function 1tx():Boolean{
+        public function _1tx():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._0Iy) == 0)));
         }
 
-        public function 0RC():Boolean{
+        public function _0RC():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._1a6) == 0)));
         }
 
-        public function 19q():Boolean{
+        public function _19q():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._0dL) == 0)));
         }
 
-        public function 1Mb():Boolean{
+        public function _1Mb():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._124) == 0)));
         }
 
@@ -407,7 +426,7 @@ import flash.filters.ColorMatrixFilter;
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect.wl) == 0)));
         }
 
-        public function 05R():Boolean{
+        public function _05R():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._1LC) == 0)));
         }
 
@@ -419,7 +438,7 @@ import flash.filters.ColorMatrixFilter;
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect.wO) == 0)));
         }
 
-        public function 3g():Boolean{
+        public function _3g():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect.Ox) == 0)));
         }
 
@@ -427,15 +446,15 @@ import flash.filters.ColorMatrixFilter;
             return (((!(((this.condition_[ConditionEffect._26x] & ConditionEffect._0MN) == 0))) || (this._1Du)));
         }
 
-        public function 1vK():Boolean{
-            return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._2-d) == 0)));
+        public function _1vK():Boolean{
+            return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._2d) == 0)));
         }
 
-        public function 0G7():Boolean{
+        public function _0G7():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._189) == 0)));
         }
 
-        public function 0Wy():Boolean{
+        public function _0Wy():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._1Vc) == 0)));
         }
 
@@ -443,19 +462,19 @@ import flash.filters.ColorMatrixFilter;
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._1Cl) == 0)));
         }
 
-        public function 1VL():Boolean{
+        public function _1VL():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._1M2) == 0)));
         }
 
-        public function 0tJ():Boolean{
+        public function _0tJ():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect.mk) == 0)));
         }
 
-        public function 1Ka():Boolean{
+        public function _1Ka():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect.sf) == 0)));
         }
 
-        public function  use():Boolean{
+        public function  _use():Boolean{
             return (!(((this.condition_[ConditionEffect._26x] & ConditionEffect._0Tq) == 0)));
         }
 
@@ -540,9 +559,9 @@ import flash.filters.ColorMatrixFilter;
                     if ((((_local3 < _arg1)) && ((_local4 < _arg1))))
                     {
                         return (false);
-                    };
-                };
-            };
+                    }
+                }
+            }
             return (true);
         }
 
@@ -574,7 +593,7 @@ import flash.filters.ColorMatrixFilter;
             {
                 this._0Fg = false;
                 this.Xd = false;
-            };
+            }
         }
 
         public function _0MR(_arg1:Boolean):void{
@@ -585,7 +604,7 @@ import flash.filters.ColorMatrixFilter;
             {
                 this.ty = false;
                 this._0iG = false;
-            };
+            }
         }
 
         override public function addTo(_arg1:Map, _arg2:Number, _arg3:Number):Boolean{
@@ -596,11 +615,11 @@ import flash.filters.ColorMatrixFilter;
             {
                 map_ = null;
                 return (false);
-            };
+            }
             if (this.effect_ != null)
             {
                 map_.addObj(this.effect_, _arg2, _arg3);
-            };
+            }
             return (true);
         }
 
@@ -610,13 +629,13 @@ import flash.filters.ColorMatrixFilter;
                 if (xy.obj_ == this)
                 {
                     xy.obj_ = null;
-                };
+                }
                 xy = null;
-            };
+            }
             if (this.effect_ != null)
             {
                 map_.removeObj(this.effect_.objectId_);
-            };
+            }
             super.removeFromMap();
             this.dispose();
         }
@@ -626,7 +645,7 @@ import flash.filters.ColorMatrixFilter;
             if (_local3 == null)
             {
                 return (false);
-            };
+            }
             x_ = _arg1;
             y_ = _arg2;
             if (this.props_.static_)
@@ -634,18 +653,18 @@ import flash.filters.ColorMatrixFilter;
                 if (xy != null)
                 {
                     xy.obj_ = null;
-                };
+                }
                 _local3.obj_ = this;
-            };
+            }
             xy = _local3;
             if (this._0rb != null)
             {
                 this._0rb.setPosition(x_, y_, 0, this.props_.rotation_);
-            };
+            }
             if (this._6Q != null)
             {
                 this._6Q.setPosition(x_, y_, 0, this.props_.rotation_);
-            };
+            }
             return (true);
         }
 
@@ -668,9 +687,9 @@ import flash.filters.ColorMatrixFilter;
                     _local6 = (this._1VG.y + (_local4 * this.moveVec_.y));
                     this.moveTo(_local5, _local6);
                     _local3 = true;
-                };
-            };
-            if (this.props_._0m- != null)
+                }
+            }
+            if (this.props_._0m != null)
             {
                 if (!_local3)
                 {
@@ -678,14 +697,14 @@ import flash.filters.ColorMatrixFilter;
                     this.flying_ = this.props_.flying_;
                 } else
                 {
-                    z_ = this.props_._0m-.z_;
-                    this.flying_ = this.props_._0m-.flying_;
-                };
-            };
+                    z_ = this.props_._0m.z_;
+                    this.flying_ = this.props_._0m.flying_;
+                }
+            }
             return (true);
         }
 
-        public function 1Sn(_arg1:Number, _arg2:Number, _arg3:int):void{
+        public function _1Sn(_arg1:Number, _arg2:Number, _arg3:int):void{
             this.moveTo(_arg1, _arg2);
             this._1rj = _arg3;
             this._00D.x = _arg1;
@@ -724,7 +743,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             if (this._0Tz < map_.gs_.gsc_.lastTickId_)
             {
                 this.moveTo(this._00D.x, this._00D.y);
-            };
+            }
             this._1rj = map_.gs_.lastUpdate_;
             this._00D.x = _arg1;
             this._00D.y = _arg2;
@@ -740,7 +759,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             var _local9:uint;
             var _local10:ConditionEffect;
             var _local11:_1zh;
-            var _local12:zL;
+            var _local12:_zL;
             var _local13:_0tK;
             var _local14:String;
             var _local15:Boolean;
@@ -758,14 +777,14 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                         _local10 = null;
                         if (((((!((_arg5 == null))) && (_arg5.gF._0b6))) && (_arg5.gF._0b6[_local9])))
                         {
-                            _local12 = _1JZ._0JF().getInstance(zL);
+                            _local12 = _1JZ._0JF().getInstance(_zL);
                             _local13 = _local12._1tI();
                             if (_local13 != null)
                             {
                                 _local10 = ConditionEffect.effects_[_local9];
                                 this._1Um(_local8, _local10.name_);
                                 _local8 = (_local8 + 500);
-                            };
+                            }
                         } else
                         {
                             switch (_local9)
@@ -784,94 +803,94 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                                 case ConditionEffect._0vs:
                                 case ConditionEffect.A1:
                                 case ConditionEffect._1RI:
-                                case ConditionEffect.69:
+                                case ConditionEffect._69:
                                 case ConditionEffect._0nk:
-                                case ConditionEffect._1a-:
+                                case ConditionEffect._1a:
                                 case ConditionEffect.xW:
                                 case ConditionEffect._0Dx:
                                     _local10 = ConditionEffect.effects_[_local9];
                                     break;
                                 case ConditionEffect._02b:
-                                    if (this._1E-())
+                                    if (this._1E())
                                     {
                                         _local11 = new _1zh(this, 0xFF0000, 3000);
-                                        _local11.setStringBuilder(new 1cA().setParams(_du._1Tm));
+                                        _local11.setStringBuilder(new _1cA().setParams(_du._1Tm));
                                         map_.mapOverlay_.addStatusText(_local11);
                                     } else
                                     {
                                         _local10 = ConditionEffect.effects_[_local9];
-                                    };
+                                    }
                                     break;
                                 case ConditionEffect.Ei:
                                     if (this._1ag())
                                     {
-                                        _local11 = new 1zh(this, 0xFF0000, 3000);
-                                        _local11.setStringBuilder(new 1cA().setParams(du._1Tm));
+                                        _local11 = new _1zh(this, 0xFF0000, 3000);
+                                        _local11.setStringBuilder(new _1cA().setParams(_du._1Tm));
                                         map_.mapOverlay_.addStatusText(_local11);
                                     } else
                                     {
                                         _local10 = ConditionEffect.effects_[_local9];
-                                    };
+                                    }
                                     break;
                                 case ConditionEffect._1KS:
                                     if (this.Fq())
                                     {
-                                        _local11 = new 1zh(this, 0xFF0000, 3000);
-                                        _local11.setStringBuilder(new 1cA().setParams(du._1Tm));
+                                        _local11 = new _1zh(this, 0xFF0000, 3000);
+                                        _local11.setStringBuilder(new _1cA().setParams(_du._1Tm));
                                         map_.mapOverlay_.addStatusText(_local11);
                                     } else
                                     {
                                         _local10 = ConditionEffect.effects_[_local9];
-                                    };
+                                    }
                                     break;
                                 case ConditionEffect._1Kw:
                                     if (this._0ya())
                                     {
-                                        _local11 = new 1zh(this, 0xFF0000, 3000);
-                                        _local11.setStringBuilder(new 1cA().setParams(du._1Tm));
+                                        _local11 = new _1zh(this, 0xFF0000, 3000);
+                                        _local11.setStringBuilder(new _1cA().setParams(_du._1Tm));
                                         map_.mapOverlay_.addStatusText(_local11);
                                     } else
                                     {
                                         _local10 = ConditionEffect.effects_[_local9];
-                                    };
+                                    }
                                     break;
                                 case ConditionEffect._1tv:
                                     if (this.y4())
                                     {
-                                        _local11 = new 1zh(this, 0xFF0000, 3000);
-                                        _local11.setStringBuilder(new 1cA().setParams(du._1Tm));
+                                        _local11 = new _1zh(this, 0xFF0000, 3000);
+                                        _local11.setStringBuilder(new _1cA().setParams(_du._1Tm));
                                         map_.mapOverlay_.addStatusText(_local11);
                                     } else
                                     {
                                         _local10 = ConditionEffect.effects_[_local9];
-                                    };
+                                    }
                                     break;
                                 case ConditionEffect.E7:
                                     if (this.b6())
                                     {
-                                        _local11 = new 1zh(this, 0xFF0000, 3000);
-                                        _local11.setStringBuilder(new 1cA().setParams(du._1Tm));
+                                        _local11 = new _1zh(this, 0xFF0000, 3000);
+                                        _local11.setStringBuilder(new _1cA().setParams(_du._1Tm));
                                         map_.mapOverlay_.addStatusText(_local11);
                                     } else
                                     {
                                         _local10 = ConditionEffect.effects_[_local9];
-                                    };
+                                    }
                                     break;
                                 case ConditionEffect._0gF:
                                     if (this._01G())
                                     {
-                                        _local11 = new 1zh(this, 0xFF0000, 3000);
-                                        _local11.setStringBuilder(new 1cA().setParams(du._1Tm));
+                                        _local11 = new _1zh(this, 0xFF0000, 3000);
+                                        _local11.setStringBuilder(new _1cA().setParams(_du._1Tm));
                                         map_.mapOverlay_.addStatusText(_local11);
                                     } else
                                     {
                                         _local10 = ConditionEffect.effects_[_local9];
-                                    };
+                                    }
                                     break;
                                 case ConditionEffect._14N:
                                     _local6 = true;
                                     break;
-                            };
+                            }
                             if (_local10 != null)
                             {
                                 if (_local9 < ConditionEffect._1mQ)
@@ -882,16 +901,16 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                                 {
                                     if ((this.condition_[ConditionEffect.ex] | _local10.bit_) == this.condition_[ConditionEffect.ex]) continue;
                                     this.condition_[ConditionEffect.ex] = (this.condition_[ConditionEffect.ex] | _local10.bit_);
-                                };
+                                }
                                 _local14 = _local10._03v;
                                 this._1H4(_local8, _local14);
                                 _local8 = (_local8 + 500);
-                            };
-                        };
-                    };
-                };
-            };
-            var _local7:Vector.<uint> = 121.pY(this.objectType_, this.texture_, this.props_.kF, this.props_._0jq);
+                            }
+                        }
+                    }
+                }
+            }
+            var _local7:Vector.<uint> = _121.pY(this.objectType_, this.texture_, this.props_.kF, this.props_._0jq);
             if (this.RK)
             {
                 map_.addObj(new ExplosionEffect(_local7, this.size_, 30), x_, y_);
@@ -903,31 +922,31 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 } else
                 {
                     map_.addObj(new ExplosionEffect(_local7, this.size_, 10), x_, y_);
-                };
-            };
+                }
+            }
             if (_arg2 > 0)
             {
-                _local15 = ((((this.jK()) || (((!((_arg5 == null))) && (_arg5.gF._0f-))))) || (_local6));
+                _local15 = ((((this.jK()) || (((!((_arg5 == null))) && (_arg5.gF._0f))))) || (_local6));
                 this.Wx(_arg2, _local15);
-            };
+            }
         }
 
-        public function 1H4(_arg1:int, _arg2:String):void{
-            var _local3:1zh = new 1zh(this, 0xFF0000, 3000, _arg1);
-            _local3.setStringBuilder(new 1cA().setParams(_arg2));
+        public function _1H4(_arg1:int, _arg2:String):void{
+            var _local3:_1zh = new _1zh(this, 0xFF0000, 3000, _arg1);
+            _local3.setStringBuilder(new _1cA().setParams(_arg2));
             map_.mapOverlay_.addStatusText(_local3);
         }
 
-        public function 1Um(_arg1:int, _arg2:String):void{
-            var _local3:1zh = new 1zh(this, 0xFF0000, 3000, _arg1);
-            _local3.setStringBuilder(new 1WS(("Pet " + _arg2)));
+        public function _1Um(_arg1:int, _arg2:String):void{
+            var _local3:_1zh = new _1zh(this, 0xFF0000, 3000, _arg1);
+            _local3.setStringBuilder(new _1WS(("Pet " + _arg2)));
             map_.mapOverlay_.addStatusText(_local3);
         }
 
         public function Wx(_arg1:int, _arg2:Boolean):void{
             var _local3:String = ("-" + _arg1);
-            var _local4:1zh = new 1zh(this, ((_arg2) ? 0x9000FF : 0xFF0000), 1000);
-            _local4.setStringBuilder(new 1WS(_local3));
+            var _local4:_1zh = new _1zh(this, ((_arg2) ? 0x9000FF : 0xFF0000), 1000);
+            _local4.setStringBuilder(new _1WS(_local3));
             map_.mapOverlay_.addStatusText(_local4);
         }
 
@@ -943,7 +962,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 this._1LO = this.makeNameBitmapData();
                 this._0mZ = new GraphicsBitmapFill(null, new Matrix(), false, false);
                 this._1wR = new GraphicsPath(tu._0xS, new Vector.<Number>());
-            };
+            }
             var _local3:int = ((this._1LO.width / 2) + 1);
             var _local4:int = 30;
             var _local5:Vector.<Number> = this._1wR.data;
@@ -962,7 +981,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             if (this._1R6 == null)
             {
                 this._1R6 = AssetLibrary._1JR("lofiChar8x8", int((Math.random() * 239)));
-            };
+            }
             return (this._1R6);
         }
 
@@ -970,7 +989,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             var _local6:Pet;
             var _local7:Number;
             var _local8:int;
-            var _local9:0s0;
+            var _local9:_0s0;
             var _local10:int;
             var _local11:BitmapData;
             var _local12:int;
@@ -983,48 +1002,48 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                     if (_local6.s0 != 32912)
                     {
                         _local6._1es(32912);
-                    };
+                    }
                 } else
                 {
                     if (!_local6._13O)
                     {
                         _local6._1uR();
-                    };
-                };
-            };
+                    }
+                }
+            }
             var _local3:BitmapData = this.texture_;
             var _local4:int = this.size_;
             var _local5:BitmapData;
-            if (this.3q != null)
+            if (this._3q != null)
             {
                 _local7 = 0;
-                _local8 = BJ._1OS;
-                if (_arg2 < (this._0FE + 25X))
+                _local8 = _BJ._1OS;
+                if (_arg2 < (this._0FE + _25X))
                 {
-                    if (!this.props_.4)
+                    if (!this.props_._4)
                     {
                         this.Kn = this.SB;
-                    };
-                    _local7 = (((_arg2 - this._0FE) % 25X) / 25X);
-                    _local8 = BJ._1Br;
+                    }
+                    _local7 = (((_arg2 - this._0FE) % _25X) / _25X);
+                    _local8 = _BJ._1Br;
                 } else
                 {
                     if (((!((this.moveVec_.x == 0))) || (!((this.moveVec_.y == 0)))))
                     {
                         _local10 = (0.5 / this.moveVec_.length);
                         _local10 = (_local10 + (400 - (_local10 % 400)));
-                        if ((((((((this.moveVec_.x > sq)) || ((this.moveVec_.x < 0BR)))) || ((this.moveVec_.y > sq)))) || ((this.moveVec_.y < 0BR))))
+                        if ((((((((this.moveVec_.x > sq)) || ((this.moveVec_.x < _0BR)))) || ((this.moveVec_.y > sq)))) || ((this.moveVec_.y < _0BR))))
                         {
                             this.Kn = Math.atan2(this.moveVec_.y, this.moveVec_.x);
-                            _local8 = BJ._1xM;
+                            _local8 = _BJ._1xM;
                         } else
                         {
-                            _local8 = BJ._1OS;
-                        };
+                            _local8 = _BJ._1OS;
+                        }
                         _local7 = ((_arg2 % _local10) / _local10);
-                    };
-                };
-                _local9 = this.3q.imageFromFacing(this.Kn, _arg1, _local8, _local7);
+                    }
+                }
+                _local9 = this._3q.imageFromFacing(this.Kn, _arg1, _local8, _local7);
                 _local3 = _local9.image_;
                 _local5 = _local9.mask_;
             } else
@@ -1035,28 +1054,28 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                     if (_local11 != null)
                     {
                         _local3 = _local11;
-                    };
-                };
-            };
+                    }
+                }
+            }
             if (((this.props_.EP) || (!((this._0rb == null)))))
             {
                 return (_local3);
-            };
+            }
             if (_arg1._1kT)
             {
                 _local12 = (((_local3 == null)) ? 8 : _local3.width);
                 _local3 = this.XZ();
                 _local5 = null;
                 _local4 = (this.size_ * Math.min(1.5, (_local12 / _local3.width)));
-            };
+            }
             if (((this.oe()) && (!((this is Pet)))))
             {
-                _local3 = hd._1H9(_local3, kH);
-            };
+                _local3 = _hd._1H9(_local3, kH);
+            }
             if (((((this._0Iz()) || (this._0fu()))) && (!((this is Pet)))))
             {
-                _local3 = hd._1H9(_local3, 1hD);
-            };
+                _local3 = _hd._1H9(_local3, _1hD);
+            }
             if ((((this.tex1Id_ == 0)) && ((this.tex2Id_ == 0))))
             {
                 _local3 = TextureRedrawer.redraw(_local3, _local4, false, 0);
@@ -1069,19 +1088,19 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 } else
                 {
                     _local13 = this._0Rx[_local3];
-                };
+                }
                 if (_local13 == null)
                 {
                     _local13 = TextureRedrawer.resize(_local3, _local5, _local4, false, this.tex1Id_, this.tex2Id_);
-                    _local13 = 1go._0Lr(_local13, 0);
+                    _local13 = _1go._0Lr(_local13, 0);
                     this._0Rx[_local3] = _local13;
-                };
+                }
                 _local3 = _local13;
-            };
+            }
             return (_local3);
         }
 
-        public function 1ix(_arg1:String, _arg2:int):void{
+        public function _1ix(_arg1:String, _arg2:int):void{
             this.texture_ = AssetLibrary._1JR(_arg1, _arg2);
             this._1MJ = (this.texture_.height / 8);
         }
@@ -1094,8 +1113,8 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 _local1 = (((this.props_._0Sz)!=null) ? this.props_._0Sz.getTexture() : this.texture_);
                 _local2 = ((4 / _local1.width) * 100);
                 this._0Sz = TextureRedrawer.resize(_local1, this.mask_, _local2, true, this.tex1Id_, this.tex2Id_);
-                this._0Sz = 1go._0Lr(this._0Sz, 0);
-            };
+                this._0Sz = _1go._0Lr(this._0Sz, 0);
+            }
             return (this._0Sz);
         }
 
@@ -1104,11 +1123,11 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             this._0FE = getTimer();
         }
 
-        override public function draw3d(_arg1:Vector.<4b>):void{
+        override public function draw3d(_arg1:Vector.<_4b>):void{
             if (this._6Q != null)
             {
                 _arg1.push(this._6Q);
-            };
+            }
         }
 
         protected function Lg(_arg1:Vector.<IGraphicsData>, _arg2:int):void{
@@ -1117,10 +1136,10 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             if (this._0IY == null)
             {
                 this._1h7 = new GraphicsSolidFill();
-                this.V- = new GraphicsPath(tu._0xS, new Vector.<Number>());
-                this._1-M = new GraphicsSolidFill(0x10FF00);
+                this.V = new GraphicsPath(tu._0xS, new Vector.<Number>());
+                this._1M = new GraphicsSolidFill(0x10FF00);
                 this._0IY = new GraphicsPath(tu._0xS, new Vector.<Number>());
-            };
+            }
             var _local3:Number = this.ba;
             if (this._1VZ <= _local3)
             {
@@ -1129,26 +1148,26 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             } else
             {
                 this._1h7.color = 0x545454;
-            };
+            }
             var _local4:int = 20;
             var _local5:int = 4;
             var _local6:int = 6;
-            this.V-.data.length = 0;
-            this.V-.data.push((_4M[0] - _local4), (_4M[1] + _local5), (_4M[0] + _local4), (_4M[1] + _local5), (_4M[0] + _local4), ((_4M[1] + _local5) + _local6), (_4M[0] - _local4), ((_4M[1] + _local5) + _local6));
+            this.V.data.length = 0;
+            this.V.data.push((_4M[0] - _local4), (_4M[1] + _local5), (_4M[0] + _local4), (_4M[1] + _local5), (_4M[0] + _local4), ((_4M[1] + _local5) + _local6), (_4M[0] - _local4), ((_4M[1] + _local5) + _local6));
             _arg1.push(this._1h7);
-            _arg1.push(this.V-);
+            _arg1.push(this.V);
             _arg1.push(tu.END_FILL);
             if (this._1VZ > 0)
             {
                 _local8 = (((this._1VZ / this.ba) * 2) * _local4);
                 this._0IY.data.length = 0;
                 this._0IY.data.push((_4M[0] - _local4), (_4M[1] + _local5), ((_4M[0] - _local4) + _local8), (_4M[1] + _local5), ((_4M[0] - _local4) + _local8), ((_4M[1] + _local5) + _local6), (_4M[0] - _local4), ((_4M[1] + _local5) + _local6));
-                _arg1.push(this._1-M);
+                _arg1.push(this._1M);
                 _arg1.push(this._0IY);
                 _arg1.push(tu.END_FILL);
-            };
-            14d.MM(this._1-M, true);
-            14d.MM(this._1h7, true);
+            }
+            _14d.MM(this._1M, true);
+            _14d.MM(this._1h7, true);
         }
 
         override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
@@ -1161,7 +1180,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 if (xy.faces_.length == 0)
                 {
                     return;
-                };
+                }
                 this.path_.data = xy.faces_[0].face_.vout_;
                 this.bitmapFill_.bitmapData = _local4;
                 xy.baseTexMatrix_.calculateTextureMatrix(this.path_.data);
@@ -1170,38 +1189,38 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 _arg1.push(this.path_);
                 _arg1.push(tu.END_FILL);
                 return;
-            };
+            }
             if (((!((this._0rb == null))) && (!(Parameters.TP()))))
             {
                 this._0rb.draw(_arg1, _arg2, this.props_.color_, _local4);
                 return;
-            };
+            }
             if (((!((this._0rb == null))) && (Parameters.TP())))
             {
                 _arg1.push(null);
                 return;
-            };
+            }
             var _local5:int = _local4.width;
             var _local6:int = _local4.height;
             var _local7:int = (xy.sink_ + this._0Km);
             if ((((_local7 > 0)) && (((this.flying_) || (((!((xy.obj_ == null))) && (xy.obj_.props_.protectFromSink_)))))))
             {
                 _local7 = 0;
-            };
+            }
             if (Parameters.TP())
             {
                 if (_local7 != 0)
                 {
-                    14d._0GJ(this.bitmapFill_, Math.max((((_local7 / _local6) * 1.65) - 0._02), 0));
-                    _local7 = (-(_local7) + 0._02);
+                    _14d._0GJ(this.bitmapFill_, Math.max((((_local7 / _local6) * 1.65) - 0.02), 0));
+                    _local7 = (-(_local7) + 0.02);
                 } else
                 {
-                    if ((((_local7 == 0)) && (!((14d.p(this.bitmapFill_) == 0)))))
+                    if ((((_local7 == 0)) && (!((_14d.p(this.bitmapFill_) == 0)))))
                     {
-                        14d.Qe(this.bitmapFill_);
-                    };
-                };
-            };
+                        _14d.Qe(this.bitmapFill_);
+                    }
+                }
+            }
             this.vS_.length = 0;
             this.vS_.push((_4M[3] - (_local5 / 2)), ((_4M[4] - _local6) + _local7), (_4M[3] + (_local5 / 2)), ((_4M[4] - _local6) + _local7), (_4M[3] + (_local5 / 2)), _4M[4], (_4M[3] - (_local5 / 2)), _4M[4]);
             this.path_.data = this.vS_;
@@ -1215,39 +1234,39 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                     } else
                     {
                         _local4 = this._1Ia.apply(_local4, _arg3);
-                    };
+                    }
                 } else
                 {
                     this._1Ia = null;
-                };
-            };
+                }
+            }
             if (((this._0Fg) && (!(this.Xd))))
             {
                 if (Parameters.TP())
                 {
-                    14d._0bB(_local4, new ColorTransform(-1, -1, -1, 1, 0xFF, 0xFF, 0xFF, 0));
+                    _14d._0bB(_local4, new ColorTransform(-1, -1, -1, 1, 0xFF, 0xFF, 0xFF, 0));
                 } else
                 {
                     _local8 = _local4.clone();
                     _local8.colorTransform(_local8.rect, new ColorTransform(-1, -1, -1, 1, 0xFF, 0xFF, 0xFF, 0));
-                    _local8 = hd._1H9(_local8, new ColorMatrixFilter(MoreColorUtil._1Z6));
+                    _local8 = _hd._1H9(_local8, new ColorMatrixFilter(MoreColorUtil._1Z6));
                     _local4 = _local8;
-                };
+                }
                 this.Xd = true;
-            };
+            }
             if (((this.ty) && (!(this._0iG))))
             {
                 if (Parameters.TP())
                 {
-                    14d._0bB(_local4, new ColorTransform(1, 1, 1, 1, 0xFF, 0xFF, 0xFF, 0));
+                    _14d._0bB(_local4, new ColorTransform(1, 1, 1, 1, 0xFF, 0xFF, 0xFF, 0));
                 } else
                 {
                     _local8 = _local4.clone();
                     _local8.colorTransform(_local8.rect, new ColorTransform(1, 1, 1, 1, 0xFF, 0xFF, 0xFF, 0));
                     _local4 = _local8;
-                };
+                }
                 this._0iG = true;
-            };
+            }
             this.bitmapFill_.bitmapData = _local4;
             this._1rx.identity();
             this._1rx.translate(this.vS_[0], this.vS_[1]);
@@ -1258,27 +1277,27 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             if (((((((!(this.isPaused())) && (((this.condition_[ConditionEffect._26x]) || (this.condition_[ConditionEffect.ex]))))) && (!(Parameters._1Wc)))) && (!((this is Pet)))))
             {
                 this.WR(_arg1, _arg2, _arg3);
-            };
-            if (((((this.props_.9A) && (!((this.name_ == null))))) && (!((this.name_.length == 0)))))
+            }
+            if (((((this.props_._9A) && (!((this.name_ == null))))) && (!((this.name_.length == 0)))))
             {
                 this._0lq(_arg1, _arg2);
-            };
+            }
             if (((((((((this.props_) && (((this.props_.isEnemy_) || (this.props_.a3))))) && (!(this._1vK())))) && (!(this._1lC())))) && (!(this.props_.rP))))
             {
                 _local9 = ((_local4.getPixel32((_local4.width / 4), (_local4.height / 4)) | _local4.getPixel32((_local4.width / 2), (_local4.height / 2))) | _local4.getPixel32(((_local4.width * 3) / 4), ((_local4.height * 3) / 4)));
                 _local10 = (_local9 >> 24);
                 if (_local10 != 0)
                 {
-                    1QM = true;
+                    _1QM = true;
                     if (Parameters.data_.HPBar)
                     {
                         this.Lg(_arg1, _arg3);
-                    };
+                    }
                 } else
                 {
-                    1QM = false;
-                };
-            };
+                    _1QM = false;
+                }
+            }
         }
 
         public function WR(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
@@ -1293,7 +1312,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 this._1e = new Vector.<BitmapData>();
                 this._0id = new Vector.<GraphicsBitmapFill>();
                 this._1pH = new Vector.<GraphicsPath>();
-            };
+            }
             this._1e.length = 0;
             var _local4:int = (_arg3 / 500);
             ConditionEffect._1xP(this.condition_[ConditionEffect._26x], this._1e, _local4);
@@ -1309,7 +1328,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 {
                     this._0id.push(new GraphicsBitmapFill(null, new Matrix(), false, false));
                     this._1pH.push(new GraphicsPath(tu._0xS, new Vector.<Number>()));
-                };
+                }
                 _local10 = this._0id[_local8];
                 _local11 = this._1pH[_local8];
                 _local10.bitmapData = _local9;
@@ -1324,7 +1343,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
                 _arg1.push(_local11);
                 _arg1.push(tu.END_FILL);
                 _local8++;
-            };
+            }
         }
 
         override public function drawShadow(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
@@ -1332,7 +1351,7 @@ public function FH(_arg1:Number, _arg2:Number, _arg3:int, _arg4:int):void{
             {
                 this._0xz = new GraphicsGradientFill(GradientType.RADIAL, [this.props_._0Mn, this.props_._0Mn], [0.5, 0], null, new Matrix());
                 this._0ND = new GraphicsPath(tu._0xS, new Vector.<Number>());
-            };
+            }
             var _local4:Number = (((this.size_ / 100) * (this.props_._0Qf / 100)) * this._1MJ);
             var _local5:Number = (30 * _local4);
             var _local6:Number = (15 * _local4);

@@ -17,7 +17,7 @@ package com.company.assembleegameclient.game{
     import 1mO.0bI;
     import 1UB.ve;
     import 1UB.0Ja;
-    import WZ.NV;
+    import WZ._NV;
     import 1Bt.l-;
     import 1g8.Bd;
     import 1tt.0jv;
@@ -58,7 +58,7 @@ package com.company.assembleegameclient.game{
     import flash.events.Event;
     import 01c.0h3;
     import 01c.0-7;
-    import com.company.util.hd;
+    import com.company.util._hd;
     import com.company.assembleegameclient.util.TextureRedrawer;
     import com.company.assembleegameclient.objects.Projectile;
     import com.company.googleanalytics.GA;
@@ -82,7 +82,7 @@ package com.company.assembleegameclient.game{
         public var _1ro:_0bI;
         public var _0pK:ve;
         public var _1kM:_0Ja;
-        public var _8e:NV;
+        public var _8e:_NV;
         public var _1JK:l;
         public var _1ji:Bd;
         public var _1IO:_1HZ;

@@ -5,6 +5,7 @@
 
 package _0IN{
 import _0uE.FusionStrength;
+import _0uE.PetAbilityMeter;
 import _0uE._1sD;
 import _0uE._IJ;
 import _0uE._qZ;
@@ -14,7 +15,8 @@ import _1n4._1cA;
 import _AO._du;
     import _CU._13j;
 
-import com.company.ui.setColor;
+import com.company.assembleegameclient.ui._1p;
+
 
 import flash.text.TextFormatAlign;
     import flash.filters.DropShadowFilter;
@@ -60,18 +62,18 @@ import flash.text.TextFormatAlign;
         private static function _1D5():PetAbilityMeter{
             var _local1:PetAbilityMeter;
             _local1 = new PetAbilityMeter();
-            _local1.y = h.zw;
+            _local1.y = _h.zw;
             return (_local1);
         }
 
         public static function _1jn():Vector.<PetAbilityMeter>{
-            return (Vector.<PetAbilityMeter>([1D5(), 1D5(), 1D5()]));
+            return (Vector.<PetAbilityMeter>([_1D5(), _1D5(), _1D5()]));
         }
 
         public static function _04T():_13j{
             var _local1:_13j = new _13j();
             _local1.setStringBuilder(new _1cA().setParams(_du._1Vr));
-            _local1.setTextWidth((h._1h9 - 20)).setWordWrap(true).setHorizontalAlign(TextFormatAlign.CENTER).setSize(h._04D).setColor(0xB3B3B3);
+            _local1.setTextWidth((_h._1h9 - 20)).setWordWrap(true).setHorizontalAlign(TextFormatAlign.CENTER).setSize(_h._04D).setColor(0xB3B3B3);
             _local1.y = 42;
             return (_local1);
         }
@@ -79,51 +81,51 @@ import flash.text.TextFormatAlign;
         public static function aT():_13j{
             var _local1:_13j;
             _local1 = new _13j();
-            _local1.setSize(h._04D).setColor(0xB3B3B3).setBold(true).setHorizontalAlign(TextFormatAlign.CENTER).setWordWrap(true).setTextWidth(100);
+            _local1.setSize(_h._04D).setColor(0xB3B3B3).setBold(true).setHorizontalAlign(TextFormatAlign.CENTER).setWordWrap(true).setTextWidth(100);
             _local1.filters = [new DropShadowFilter(0, 0, 0)];
-            _local1.y = h.Wg;
+            _local1.y = _h.Wg;
             return (_local1);
         }
 
         public static function _1eg(_arg1:uint, _arg2:uint):_13j{
             var _local3:_13j = new _13j();
-            _local3.setSize(h.04D).setColor(_arg1).setBold(true).setHorizontalAlign(TextFormatAlign.CENTER).setWordWrap(true).setTextWidth(_arg2);
+            _local3.setSize(_h._04D).setColor(_arg1).setBold(true).setHorizontalAlign(TextFormatAlign.CENTER).setWordWrap(true).setTextWidth(_arg2);
             return (_local3);
         }
 
         public static function wj():PetFeeder{
             var _local1:PetFeeder = new PetFeeder();
-            _local1.y = h.0gZ;
+            _local1.y = _h._0gZ;
             return (_local1);
         }
 
         public static function _0f0():PetFuser{
             var _local1:PetFuser = new PetFuser();
-            _local1.y = (h.0gZ + 50);
+            _local1.y = (_h._0gZ + 50);
             return (_local1);
         }
 
-        public static function _1Eb():1w6{
-            var _local1:1w6;
-            _local1 = new 1w6();
-            _local1.x = h.25;
-            _local1.y = h.0sp;
+        public static function _1Eb():_1w6{
+            var _local1:_1w6;
+            _local1 = new _1w6();
+            _local1.x = _h._25;
+            _local1.y = _h._0sp;
             return (_local1);
         }
 
-        public static function _1Vt():0YK{
-            var _local1:0YK = new 0YK();
-            _local1.x = (h.25 + 35);
-            _local1.0LZ(true);
+        public static function _1Vt():_0YK{
+            var _local1:_0YK = new _0YK();
+            _local1.x = (_h._25 + 35);
+            _local1._0LZ(true);
             return (_local1);
         }
 
-        public static function gy():0U-{
-            var _local1:0U-;
-            _local1 = new 0U-();
-            _local1.x = (h.25 + 35);
-            _local1.0LZ(true);
-            _local1.1U7 = true;
+        public static function gy():_0U{
+            var _local1:_0U;
+            _local1 = new _0U();
+            _local1.x = (_h._25 + 35);
+            _local1._0LZ(true);
+            _local1._1U7 = true;
             return (_local1);
         }
 
@@ -156,7 +158,7 @@ import flash.text.TextFormatAlign;
             return (new Bitmap(ObjectLibrary.getRedrawnTextureFromType(_arg1, _arg2, true)));
         }
 
-        public static function _2j():Bitmap{
+        public static function _2xj():Bitmap{
             return (_1AI(6466));
         }
 

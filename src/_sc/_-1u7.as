@@ -6,7 +6,7 @@
 package sC{
     import 1uF.1Mf;
     import ZE.0t6;
-    import WZ.NV;
+    import WZ._NV;
     import 5z.zL;
     import com.company.assembleegameclient.objects.18p;
     import com.company.assembleegameclient.objects.Pet;
@@ -16,7 +16,7 @@ package sC{
         [Inject]
         public var view:0t6;
         [Inject]
-        public var 8e:NV;
+        public var 8e:_NV;
         [Inject]
         public var 1G5:zL;
         private var 1l-:18p;

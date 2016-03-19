@@ -3,9 +3,8 @@
 
 //099.Menu
 
-package 099{
+package _099{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import flash.display.GraphicsSolidFill;
@@ -18,41 +17,40 @@ package 099{
     import flash.events.Event;
     import flash.events.MouseEvent;
     import flash.geom.Rectangle;
-    import com.company.util.Ck;
-    import __AS3__.vec.*;
-    import 1PB.*;
+    import com.company.util._Ck;
+    import _1PB.*;
 
-    public class Menu extends Sprite implements 0Ge {
+    public class Menu extends Sprite implements _0Ge {
 
-        private const graphicsData_:Vector.<IGraphicsData> = new <flash.display.IGraphicsData>[Menu.1F4, Menu.0B9, Menu.path_, com.company.util._tu.END_FILL, com.company.util._tu.1l4];
+        private const graphicsData_:Vector.<IGraphicsData> = new <flash.display.IGraphicsData>[_1F4, _0B9, path_, com.company.util._tu.END_FILL, com.company.util._tu._1l4];
 
-        private var 0B9:GraphicsSolidFill;
+        private var _0B9:GraphicsSolidFill;
         private var outlineFill_:GraphicsSolidFill;
-        private var 1F4:GraphicsStroke;
+        private var _1F4:GraphicsStroke;
         private var path_:GraphicsPath;
         private var background_:uint;
-        private var 01i:uint;
-        protected var 1lj:int;
+        private var _01i:uint;
+        protected var _1lj:int;
 
         public function Menu(_arg1:uint, _arg2:uint){
-            this.0B9 = new GraphicsSolidFill(0, 1);
+            this._0B9 = new GraphicsSolidFill(0, 1);
             this.outlineFill_ = new GraphicsSolidFill(0, 1);
-            this.1F4 = new GraphicsStroke(1, false, LineScaleMode.NORMAL, CapsStyle.NONE, JointStyle.ROUND, 3, this.outlineFill_);
+            this._1F4 = new GraphicsStroke(1, false, LineScaleMode.NORMAL, CapsStyle.NONE, JointStyle.ROUND, 3, this.outlineFill_);
             this.path_ = new GraphicsPath(new Vector.<int>(), new Vector.<Number>());
             super();
             this.background_ = _arg1;
-            this.01i = _arg2;
-            this.1lj = 40;
+            this._01i = _arg2;
+            this._1lj = 40;
             filters = [new DropShadowFilter(0, 0, 0, 1, 16, 16)];
             addEventListener(Event.ADDED_TO_STAGE, this.onAddedToStage);
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
         }
 
-        protected function 6h(_arg1:1Nr):void{
+        protected function _6h(_arg1:_1Nr):void{
             _arg1.x = 8;
-            _arg1.y = this.1lj;
+            _arg1.y = this._1lj;
             addChild(_arg1);
-            this.1lj = (this.1lj + 28);
+            this._1lj = (this._1lj + 28);
         }
 
         protected function onAddedToStage(_arg1:Event):void{
@@ -73,7 +71,7 @@ package 099{
                 return;
             };
             var _local2:Rectangle = getRect(stage);
-            var _local3:Number = Ck.18O(_local2, stage.mouseX, stage.mouseY);
+            var _local3:Number = _Ck._18O(_local2, stage.mouseX, stage.mouseY);
             if (_local3 > 40)
             {
                 this.remove();
@@ -121,11 +119,11 @@ package 099{
         }
 
         protected function draw():void{
-            this.0B9.color = this.background_;
-            this.outlineFill_.color = this.01i;
+            this._0B9.color = this.background_;
+            this.outlineFill_.color = this._01i;
             graphics.clear();
             _tu.ln(this.path_);
-            _tu.0S-(-6, -6, Math.max(154, (width + 12)), (height + 12), 4, [1, 1, 1, 1], this.path_);
+            _tu._0S(-6, -6, Math.max(154, (width + 12)), (height + 12), 4, [1, 1, 1, 1], this.path_);
             graphics.drawGraphicsData(this.graphicsData_);
         }
 

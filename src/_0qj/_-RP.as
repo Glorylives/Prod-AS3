@@ -13,7 +13,7 @@ package 0qj{
     import com.company.assembleegameclient.util._BJ;
     import com.company.assembleegameclient.util.0s0;
     import com.company.assembleegameclient.util.TextureRedrawer;
-    import com.company.util.hd;
+    import com.company.util._hd;
     import flash.geom.ColorTransform;
     import 1n4.1cA;
     import flash.filters.DropShadowFilter;
@@ -23,7 +23,7 @@ package 0qj{
     import com.company.assembleegameclient.util.09g;
     import WZ.0Te;
     import com.company.assembleegameclient.appengine.1WG;
-    import com.company.assembleegameclient.appengine.Cp;
+    import com.company.assembleegameclient.appengine._Cp;
 
     public class RP extends 1ae {
 
@@ -55,7 +55,7 @@ package 0qj{
             this.0CS = this.1fS(_arg2, _arg1);
             if (this.0CS)
             {
-                _local7 = hd.07J(_local7, new ColorTransform(0, 0, 0, 0.5, 0, 0, 0, 0));
+                _local7 = _hd.07J(_local7, new ColorTransform(0, 0, 0, 0.5, 0, 0, 0, 0));
             };
             this.0Sz = new Bitmap();
             this.0Sz.bitmapData = _local7;
@@ -167,7 +167,7 @@ package 0qj{
         }
 
         private function 1fS(_arg1:0Te, _arg2:XML):Boolean{
-            var _local3:Boolean = _arg1.0Po(String(_arg2.@id), Cp.5o);
+            var _local3:Boolean = _arg1.0Po(String(_arg2.@id), _Cp.5o);
             var _local4:Boolean = _arg1.1if(int(_arg2.@type));
             return (((!(_local3)) && (!(_local4))));
         }

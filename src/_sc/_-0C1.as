@@ -6,7 +6,7 @@
 package sC{
     import 1uF.1Mf;
     import h0.1mR;
-    import WZ.NV;
+    import WZ._NV;
     import WZ.0Te;
     import gx.1z1;
     import 0xo.lZ;
@@ -44,7 +44,7 @@ package sC{
         [Inject]
         public var view:1mR;
         [Inject]
-        public var 8e:NV;
+        public var 8e:_NV;
         [Inject]
         public var SP:0Te;
         [Inject]

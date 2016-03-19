@@ -3,37 +3,37 @@
 
 //0uE.PetFeeder
 
-package 0uE{
-    import flash.display.Sprite;
+package _0uE{
+import _0IN._1qO;
+
+import _0Z._0U;
+
+import flash.display.Sprite;
     import _Jy._1HZ;
-    import 5z.0tK;
-    import 0Z-.0U-;
-    import 0Z-.0YK;
-    import 5z.0TC;
-    import 0IN.1qO;
+    import _5z._0tK;
 
     public class PetFeeder extends Sprite {
 
-        public const 1oD:_1HZ = new _1HZ();
-        public const 1Ua:_1HZ = new _1HZ(Boolean, 0tK);
-        public const 1KD:_1HZ = new _1HZ(0tK);
+        public const _1oD:_1HZ = new _1HZ();
+        public const _1Ua:_1HZ = new _1HZ(Boolean, _0tK);
+        public const _1KD:_1HZ = new _1HZ(_0tK);
 
-        private var 1LD:0U-;
-        private var Ba:1w6;
-        private var nL:0YK;
-        private var state:0TC;
+        private var _1LD:_0U;
+        private var Ba:_1w6;
+        private var nL:_0YK;
+        private var state:_0TC;
 
         public function PetFeeder(){
-            this.1LD = new 0U-();
-            this.Ba = 1qO.1Eb();
-            this.nL = 1qO.1Vt();
+            this._1LD = new _0U();
+            this.Ba = _1qO._1Eb();
+            this.nL = _1qO._1Vt();
             super();
-            addChild(this.1LD);
+            addChild(this._1LD);
             addChild(this.Ba);
             addChild(this.nL);
-            this.1LD.1oD.addOnce(this.21K);
+            this._1LD._1oD.addOnce(this._21K);
             this.nL.Ma.add(this.0JJ);
-            this.nL.1F3.add(this.1oq);
+            this.nL._1F3.add(this.1oq);
         }
 
         public function initialize(_arg1:0TC):void{

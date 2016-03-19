@@ -4,13 +4,14 @@
 //com.company.assembleegameclient.objects.GuildMerchant
 
 package com.company.assembleegameclient.objects{
-    import com.company.assembleegameclient.util.Currency;
+import _0qj._1ae;
+import _0qj._6P;
+
+import com.company.assembleegameclient.util.Currency;
     import com.company.assembleegameclient.util.GuildUtil;
-    import 0qj.6P;
-    import 0qj.1ae;
     import flash.display.BitmapData;
 
-    public class GuildMerchant extends SellableObject implements 18p {
+    public class GuildMerchant extends SellableObject implements _18p {
 
         public var description_:String;
 
@@ -19,11 +20,11 @@ package com.company.assembleegameclient.objects{
             price_ = int(_arg1.Price);
             currency_ = Currency.py;
             this.description_ = _arg1.Description;
-            1fK = GuildUtil.Tx;
+            _1fK = GuildUtil.Tx;
         }
 
         override public function soldObjectName():String{
-            return (ObjectLibrary.118[objectType_]);
+            return (ObjectLibrary._118[objectType_]);
         }
 
         override public function soldObjectInternalName():String{
@@ -31,8 +32,8 @@ package com.company.assembleegameclient.objects{
             return (_local1.@id.toString());
         }
 
-        override public function getTooltip():1ae{
-            var _local1:1ae = new 6P(0x363636, 0x9B9B9B, this.soldObjectName(), this.description_, 200);
+        override public function getTooltip():_1ae{
+            var _local1:_1ae = new _6P(0x363636, 0x9B9B9B, this.soldObjectName(), this.description_, 200);
             return (_local1);
         }
 

@@ -8,17 +8,60 @@ import _04_._1JZ;
 
 import _0OG._22M;
 
+import _0Px._1zw;
+
+import _0UV._0rh;
+
+import _0xo._1Js;
+
+import _1Np.LevelUpEffect;
+import _1Np._0t0;
+
+import _1m9._14d;
+
+import _1n4._1Jo;
+import _1n4._1WS;
+
+import _1n4._1cA;
+
+import _1yZ._1go;
+
+import _9T._1zh;
+
+import _CU._1CD;
+
+import _ZS._0ZC;
+
+import _eC._0A3;
+
+import com.company.assembleegameclient.map.Square;
+import com.company.assembleegameclient.map._1C8;
+import com.company.assembleegameclient.tutorial.Tutorial;
+import com.company.assembleegameclient.tutorial.doneAction;
+import com.company.assembleegameclient.util.ConditionEffect;
+import com.company.assembleegameclient.util.TextureRedrawer;
+import com.company.assembleegameclient.util._09g;
+import com.company.assembleegameclient.util._0s0;
+
 import com.company.assembleegameclient.util._BJ;
 import com.company.util.ConversionUtil;
 import com.company.util.IntPoint;
+import com.company.util.MoreColorUtil;
+import com.company.util.Trig;
+
+import flash.display.BitmapData;
 
 import flash.display.GraphicsPath;
 
 import flash.display.GraphicsSolidFill;
+import flash.display.IGraphicsData;
 
 import flash.geom.Matrix;
 import flash.geom.Point;
+import flash.geom.Vector3D;
 import flash.utils.Dictionary;
+
+import kabam.rotmg.assets.services._0Vx;
 
 public class Player extends Character {
 
@@ -148,42 +191,45 @@ public class Player extends Character {
         }
 
 
-        public function 1qR(_arg1:Number, _arg2:Number, _arg3:Number):void{
+        public function _1qR(_arg1:Number, _arg2:Number, _arg3:Number):void{
             var _local4:Number;
-            if (this.1MS == null)
+            if (this._1MS == null)
             {
-                this.1MS = new Point();
+                this._1MS = new Point();
             };
-            this.1x7 = _arg1;
-            this.1MS.x = _arg2;
-            this.1MS.y = _arg3;
-            if (3g())
+            this._1x7 = _arg1;
+            this._1MS.x = _arg2;
+            this._1MS.y = _arg3;
+            if (_3g())
             {
-                _local4 = this.1MS.x;
-                this.1MS.x = -(this.1MS.y);
-                this.1MS.y = -(_local4);
-                this.1x7 = -(this.1x7);
+                _local4 = this._1MS.x;
+                this._1MS.x = -(this._1MS.y);
+                this._1MS.y = -(_local4);
+                this._1x7 = -(this._1x7);
             };
         }
 
-        public function 1Ep(_arg1:int):void{
+        public function _1Ep(_arg1:int):void{
             this.credits_ = _arg1;
         }
 
 import _AO._du;
 
+import com.company.assembleegameclient.objects.Player;
+
 import com.company.util.PointUtil;
-import com.company.util.hd;
+import com.company.util._hd;
 
 import flash.geom.ColorTransform;
 
 import flash.geom.Point;
+import flash.utils.getTimer;
 
 public function setTokens(_arg1:int):void{
-            this.0NG = _arg1;
+            this._0NG = _arg1;
         }
 
-        public function 1E5(_arg1:String):void{
+        public function _1E5(_arg1:String):void{
             var _local3:GameObject;
             var _local4:Player;
             var _local5:Boolean;
@@ -196,49 +242,49 @@ public function setTokens(_arg1:int):void{
                     _local4 = (_local3 as Player);
                     if (((!((_local4 == null))) && (!((_local4 == this)))))
                     {
-                        _local4.1E5(_local4.guildName_);
+                        _local4._1E5(_local4.guildName_);
                     };
                 };
             } else
             {
                 _local5 = ((((((!((_local2 == null))) && (!((_local2.guildName_ == null))))) && (!((_local2.guildName_ == ""))))) && ((_local2.guildName_ == this.guildName_)));
-                if (_local5 != this.0kh)
+                if (_local5 != this._0kh)
                 {
-                    this.0kh = _local5;
-                    1LO = null;
+                    this._0kh = _local5;
+                    _1LO = null;
                 };
             };
         }
 
-        public function 0dw(_arg1:Player):Boolean{
-            return (!(((_arg1.isPaused()) || (_arg1.1vK()))));
+        public function _0dw(_arg1:Player):Boolean{
+            return (!(((_arg1.isPaused()) || (_arg1._1vK()))));
         }
 
-        public function 1pO():int{
+        public function _1pO():int{
             var _local1:int = getTimer();
             return (Math.max(0, (this.IQ - _local1)));
         }
 
-        public function 1oB(_arg1:Player):Boolean{
+        public function _1oB(_arg1:Player):Boolean{
             if (isPaused())
             {
-                this.12K.dispatch(this.0Bb(du.a6));
+                this._12K.dispatch(this._0Bb(_du._a6));
                 return (false);
             };
-            var _local2:int = this.1pO();
+            var _local2:int = this._1pO();
             if (_local2 > 0)
             {
-                this.12K.dispatch(this.0Bb(du.Ha, {seconds:int(((_local2 / 1000) + 1))}));
+                this._12K.dispatch(this._0Bb(_du._Ha, {seconds:int(((_local2 / 1000) + 1))}));
                 return (false);
             };
-            if (!this.0dw(_arg1))
+            if (!this._0dw(_arg1))
             {
-                if (_arg1.1vK())
+                if (_arg1._1vK())
                 {
-                    this.12K.dispatch(this.0Bb(du.17d, {player:_arg1.name_}));
+                    this._12K.dispatch(this._0Bb(_du._17d, {player:_arg1.name_}));
                 } else
                 {
-                    this.12K.dispatch(this.0Bb(du.20Y, {player:_arg1.name_}));
+                    this._12K.dispatch(this._0Bb(_du._20Y, {player:_arg1.name_}));
                 };
                 return (false);
             };
@@ -247,32 +293,32 @@ public function setTokens(_arg1:int):void{
             return (true);
         }
 
-        private function 0Bb(_arg1:String, _arg2:Object=null):1Ys{
-            return (1Ys.make(Parameters.1Wj, _arg1, -1, -1, "", false, _arg2));
+        private function _0Bb(_arg1:String, _arg2:Object=null):_1Ys{
+            return (_1Ys.make(Parameters._1Wj, _arg1, -1, -1, "", false, _arg2));
         }
 
         public function Cc(_arg1:String, _arg2:Boolean=true):void{
             if (_arg2)
             {
-                this.8k();
+                this._8k();
             };
-            var _local3:0A3 = new 0A3(this, new 1cA().setParams(_arg1), 0xFF00, 2000);
+            var _local3:_0A3 = new _0A3(this, new _1cA().setParams(_arg1), 0xFF00, 2000);
             map_.mapOverlay_.addQueuedText(_local3);
         }
 
-        public function 0qF(_arg1:Boolean):void{
-            0ZC.play("level_up");
+        public function _0qF(_arg1:Boolean):void{
+            _0ZC.play("level_up");
             if (_arg1)
             {
-                this.Cc(du.0hu, false);
-                this.Cc(du.03F);
+                this.Cc(_du._0hu, false);
+                this.Cc(_du._03F);
             } else
             {
-                this.Cc(du.03F);
+                this.Cc(_du._03F);
             };
         }
 
-        public function 8k(_arg1:uint=0xFF00FF00):void{
+        public function _8k(_arg1:uint=0xFF00FF00):void{
             map_.addObj(new LevelUpEffect(this, _arg1, 20), x_, y_);
         }
 
@@ -282,7 +328,7 @@ public function setTokens(_arg1:int):void{
                 return;
             };
             var _local2:_1zh = new _1zh(this, 0xFF00, 1000);
-            _local2.setStringBuilder(new 1cA().setParams(_du._ev, {exp:_arg1}));
+            _local2.setStringBuilder(new _1cA().setParams(_du._ev, {exp:_arg1}));
             map_.mapOverlay_.addStatusText(_local2);
         }
 
@@ -318,8 +364,8 @@ public function setTokens(_arg1:int):void{
             return (_local3);
         }
 
-        public function 0Ww(_arg1:Number, _arg2:Number, _arg3:Point):void{
-            if (((0G7()) || (0fu())))
+        public function _0Ww(_arg1:Number, _arg2:Number, _arg3:Point):void{
+            if (((_0G7()) || (_0fu())))
             {
                 _arg3.x = x_;
                 _arg3.y = y_;
@@ -329,7 +375,7 @@ public function setTokens(_arg1:int):void{
             var _local5:Number = (_arg2 - y_);
             if ((((((((_local4 < hy)) && ((_local4 > -(hy))))) && ((_local5 < hy)))) && ((_local5 > -(hy)))))
             {
-                this.0pi(_arg1, _arg2, _arg3);
+                this._0pi(_arg1, _arg2, _arg3);
                 return;
             };
             var _local6:Number = (hy / Math.max(Math.abs(_local4), Math.abs(_local5)));
@@ -344,17 +390,17 @@ public function setTokens(_arg1:int):void{
                     _local6 = (1 - _local7);
                     _local8 = true;
                 };
-                this.0pi((_arg3.x + (_local4 * _local6)), (_arg3.y + (_local5 * _local6)), _arg3);
+                this._0pi((_arg3.x + (_local4 * _local6)), (_arg3.y + (_local5 * _local6)), _arg3);
                 _local7 = (_local7 + _local6);
             };
         }
 
-        public function 0pi(_arg1:Number, _arg2:Number, _arg3:Point):void{
+        public function _0pi(_arg1:Number, _arg2:Number, _arg3:Point):void{
             var _local6:Number;
             var _local7:Number;
             var _local4:Boolean = ((((((x_ % 0.5) == 0)) && (!((_arg1 == x_))))) || (!((int((x_ / 0.5)) == int((_arg1 / 0.5))))));
             var _local5:Boolean = ((((((y_ % 0.5) == 0)) && (!((_arg2 == y_))))) || (!((int((y_ / 0.5)) == int((_arg2 / 0.5))))));
-            if (((((!(_local4)) && (!(_local5)))) || (this.0co(_arg1, _arg2))))
+            if (((((!(_local4)) && (!(_local5)))) || (this._0co(_arg1, _arg2))))
             {
                 _arg3.x = _arg1;
                 _arg3.y = _arg2;
@@ -400,13 +446,13 @@ public function setTokens(_arg1:int):void{
             var _local9:Number = (((_arg2)>y_) ? (_arg2 - _local7) : (_local7 - _arg2));
             if (_local8 > _local9)
             {
-                if (this.0co(_arg1, _local7))
+                if (this._0co(_arg1, _local7))
                 {
                     _arg3.x = _arg1;
                     _arg3.y = _local7;
                     return;
                 };
-                if (this.0co(_local6, _arg2))
+                if (this._0co(_local6, _arg2))
                 {
                     _arg3.x = _local6;
                     _arg3.y = _arg2;
@@ -414,13 +460,13 @@ public function setTokens(_arg1:int):void{
                 };
             } else
             {
-                if (this.0co(_local6, _arg2))
+                if (this._0co(_local6, _arg2))
                 {
                     _arg3.x = _local6;
                     _arg3.y = _arg2;
                     return;
                 };
-                if (this.0co(_arg1, _local7))
+                if (this._0co(_arg1, _local7))
                 {
                     _arg3.x = _arg1;
                     _arg3.y = _local7;
@@ -442,9 +488,9 @@ public function setTokens(_arg1:int):void{
             };
         }
 
-        public function 0co(_arg1:Number, _arg2:Number):Boolean{
+        public function _0co(_arg1:Number, _arg2:Number):Boolean{
             var _local3:Square = map_.getSquare(_arg1, _arg2);
-            if (((!((xy == _local3))) && ((((_local3 == null)) || (!(_local3.0BK()))))))
+            if (((!((xy == _local3))) && ((((_local3 == null)) || (!(_local3._0BK()))))))
             {
                 return (false);
             };
@@ -452,13 +498,13 @@ public function setTokens(_arg1:int):void{
             var _local5:Number = (_arg2 - int(_arg2));
             if (_local4 < 0.5)
             {
-                if (this.20I((_arg1 - 1), _arg2))
+                if (this._20I((_arg1 - 1), _arg2))
                 {
                     return (false);
                 };
                 if (_local5 < 0.5)
                 {
-                    if (((this.20I(_arg1, (_arg2 - 1))) || (this.20I((_arg1 - 1), (_arg2 - 1)))))
+                    if (((this._20I(_arg1, (_arg2 - 1))) || (this._20I((_arg1 - 1), (_arg2 - 1)))))
                     {
                         return (false);
                     };
@@ -466,7 +512,7 @@ public function setTokens(_arg1:int):void{
                 {
                     if (_local5 > 0.5)
                     {
-                        if (((this.20I(_arg1, (_arg2 + 1))) || (this.20I((_arg1 - 1), (_arg2 + 1)))))
+                        if (((this._20I(_arg1, (_arg2 + 1))) || (this._20I((_arg1 - 1), (_arg2 + 1)))))
                         {
                             return (false);
                         };
@@ -476,13 +522,13 @@ public function setTokens(_arg1:int):void{
             {
                 if (_local4 > 0.5)
                 {
-                    if (this.20I((_arg1 + 1), _arg2))
+                    if (this._20I((_arg1 + 1), _arg2))
                     {
                         return (false);
                     };
                     if (_local5 < 0.5)
                     {
-                        if (((this.20I(_arg1, (_arg2 - 1))) || (this.20I((_arg1 + 1), (_arg2 - 1)))))
+                        if (((this._20I(_arg1, (_arg2 - 1))) || (this._20I((_arg1 + 1), (_arg2 - 1)))))
                         {
                             return (false);
                         };
@@ -490,7 +536,7 @@ public function setTokens(_arg1:int):void{
                     {
                         if (_local5 > 0.5)
                         {
-                            if (((this.20I(_arg1, (_arg2 + 1))) || (this.20I((_arg1 + 1), (_arg2 + 1)))))
+                            if (((this._20I(_arg1, (_arg2 + 1))) || (this._20I((_arg1 + 1), (_arg2 + 1)))))
                             {
                                 return (false);
                             };
@@ -500,7 +546,7 @@ public function setTokens(_arg1:int):void{
                 {
                     if (_local5 < 0.5)
                     {
-                        if (this.20I(_arg1, (_arg2 - 1)))
+                        if (this._20I(_arg1, (_arg2 - 1)))
                         {
                             return (false);
                         };
@@ -508,7 +554,7 @@ public function setTokens(_arg1:int):void{
                     {
                         if (_local5 > 0.5)
                         {
-                            if (this.20I(_arg1, (_arg2 + 1)))
+                            if (this._20I(_arg1, (_arg2 + 1)))
                             {
                                 return (false);
                             };
@@ -519,7 +565,7 @@ public function setTokens(_arg1:int):void{
             return (true);
         }
 
-        public function 20I(_arg1:Number, _arg2:Number):Boolean{
+        public function _20I(_arg1:Number, _arg2:Number):Boolean{
             var _local3:Square = map_.lookupSquare(_arg1, _arg2);
             return ((((((_local3 == null)) || ((_local3.tileType_ == 0xFF)))) || (((!((_local3.obj_ == null))) && (_local3.obj_.props_.yk)))));
         }
@@ -532,35 +578,35 @@ public function setTokens(_arg1:int):void{
             var _local7:Number;
             var _local8:int;
             var _local9:Vector.<uint>;
-            if (((this.198) && (!(isPaused()))))
+            if (((this._198) && (!(isPaused()))))
             {
-                this.198 = (this.198 - _arg2);
-                if (this.198 < 0)
+                this._198 = (this._198 - _arg2);
+                if (this._198 < 0)
                 {
-                    this.198 = 0;
+                    this._198 = 0;
                 };
             };
-            if (((this.0OA) && (!(isPaused()))))
+            if (((this._0OA) && (!(isPaused()))))
             {
-                this.0OA = (this.0OA - _arg2);
-                if (this.0OA < 0)
+                this._0OA = (this._0OA - _arg2);
+                if (this._0OA < 0)
                 {
-                    this.0OA = 0;
+                    this._0OA = 0;
                 };
             };
-            if (((this.0bF) && (!(isPaused()))))
+            if (((this._0bF) && (!(isPaused()))))
             {
-                this.0bF = (this.0bF - _arg2);
-                if (this.0bF < 0)
+                this._0bF = (this._0bF - _arg2);
+                if (this._0bF < 0)
                 {
-                    this.0bF = 0;
+                    this._0bF = 0;
                 };
             };
-            if (((0tJ()) && (!(isPaused()))))
+            if (((_0tJ()) && (!(isPaused()))))
             {
                 if (this.eu == null)
                 {
-                    this.eu = new 0t0(this);
+                    this.eu = new _0t0(this);
                     map_.addObj(this.eu, x_, y_);
                 };
             } else
@@ -575,18 +621,18 @@ public function setTokens(_arg1:int):void{
             {
                 return (true);
             };
-            if (this.1MS != null)
+            if (this._1MS != null)
             {
                 _local3 = Parameters.data_.cameraAngle;
-                if (this.1x7 != 0)
+                if (this._1x7 != 0)
                 {
-                    _local3 = (_local3 + ((_arg2 * Parameters.0g8) * this.1x7));
+                    _local3 = (_local3 + ((_arg2 * Parameters._0g8) * this._1x7));
                     Parameters.data_.cameraAngle = _local3;
                 };
-                if (((!((this.1MS.x == 0))) || (!((this.1MS.y == 0)))))
+                if (((!((this._1MS.x == 0))) || (!((this._1MS.y == 0)))))
                 {
-                    _local4 = this.1t5();
-                    _local5 = Math.atan2(this.1MS.y, this.1MS.x);
+                    _local4 = this._1t5();
+                    _local5 = Math.atan2(this._1MS.y, this._1MS.x);
                     if (xy.props_.slideAmount_ > 0)
                     {
                         _local6 = new Vector3D();
@@ -629,12 +675,12 @@ public function setTokens(_arg1:int):void{
                     return (false);
                 };
             };
-            if ((((((((((map_.player_ == this)) && ((xy.props_.maxDamage_ > 0)))) && (((xy.lastDamage_ + 500) < _arg1)))) && (!(0mQ())))) && ((((xy.obj_ == null)) || (!(xy.obj_.props_.protectFromGroundDamage_))))))
+            if ((((((((((map_.player_ == this)) && ((xy.props_.maxDamage_ > 0)))) && (((xy.lastDamage_ + 500) < _arg1)))) && (!(_0mQ())))) && ((((xy.obj_ == null)) || (!(xy.obj_.props_.protectFromGroundDamage_))))))
             {
                 _local8 = map_.gs_.gsc_.getNextDamage(xy.props_.minDamage_, xy.props_.maxDamage_);
                 _local9 = new Vector.<uint>();
-                _local9.push(ConditionEffect.14N);
-                damage(-1, _local8, _local9, (1VZ <= _local8), null);
+                _local9.push(ConditionEffect._14N);
+                damage(-1, _local8, _local9, (_1VZ <= _local8), null);
                 map_.gs_.gsc_.groundDamage(_arg1, x_, y_);
                 xy.lastDamage_ = _arg1;
             };
@@ -647,103 +693,103 @@ public function setTokens(_arg1:int):void{
                 return;
             };
             var _local1:Square = map_.getSquare(x_, y_);
-            if (_local1.props_.1rv)
+            if (_local1.props_._1rv)
             {
-                0Km = Math.min((0Km + 1), Parameters.0vd);
-                this.TG = (0.1 + ((1 - (0Km / Parameters.0vd)) * (_local1.props_.speed_ - 0.1)));
+                _0Km = Math.min((_0Km + 1), Parameters._0vd);
+                this.TG = (0.1 + ((1 - (_0Km / Parameters._0vd)) * (_local1.props_.speed_ - 0.1)));
             } else
             {
-                0Km = 0;
+                _0Km = 0;
                 this.TG = _local1.props_.speed_;
             };
         }
 
         override protected function makeNameBitmapData():BitmapData{
-            var _local1:1Jo = new 1WS(name_);
-            var _local2:1CD = _1JZ.0JF().getInstance(1CD);
-            var _local3:BitmapData = _local2.make(_local1, 16, this.lu(), true, 0pG, true);
-            _local3.draw(09g.0YP(this.numStars_), 6Z);
+            var _local1:_1Jo = new _1WS(name_);
+            var _local2:_1CD = _1JZ._0JF().getInstance(_1CD);
+            var _local3:BitmapData = _local2.make(_local1, 16, this.lu(), true, _0pG, true);
+            _local3.draw(_09g._0YP(this.numStars_), _6Z);
             return (_local3);
         }
 
         private function lu():uint{
-            if (this.0kh)
+            if (this._0kh)
             {
-                return (Parameters.19c);
+                return (Parameters._19c);
             };
-            if (this.1TS)
+            if (this._1TS)
             {
-                return (Parameters.0zj);
+                return (Parameters._0zj);
             };
             return (0xFFFFFF);
         }
 
-        protected function 23A(_arg1:Vector.<IGraphicsData>, _arg2:int):void{
+        protected function _23A(_arg1:Vector.<IGraphicsData>, _arg2:int):void{
             var _local7:Number;
             var _local8:Number;
-            if (this.24R == null)
+            if (this._24R == null)
             {
-                this.0XC = new GraphicsSolidFill();
-                this.gD = new GraphicsPath(tu.0xS, new Vector.<Number>());
+                this._0XC = new GraphicsSolidFill();
+                this.gD = new GraphicsPath(tu._0xS, new Vector.<Number>());
                 this.nc = new GraphicsSolidFill(2542335);
-                this.24R = new GraphicsPath(tu.0xS, new Vector.<Number>());
+                this._24R = new GraphicsPath(tu._0xS, new Vector.<Number>());
             };
             if (this.breath_ <= Parameters.kk)
             {
                 _local7 = ((Parameters.kk - this.breath_) / Parameters.kk);
-                this.0XC.color = MoreColorUtil.0pA(0x545454, 0xFF0000, (Math.abs(Math.sin((_arg2 / 300))) * _local7));
+                this._0XC.color = MoreColorUtil._0pA(0x545454, 0xFF0000, (Math.abs(Math.sin((_arg2 / 300))) * _local7));
             } else
             {
-                this.0XC.color = 0x545454;
+                this._0XC.color = 0x545454;
             };
             var _local3:int = 20;
             var _local4:int = 8;
             var _local5:int = 6;
             var _local6:Vector.<Number> = (this.gD.data as Vector.<Number>);
             _local6.length = 0;
-            _local6.push((4M[0] - _local3), (4M[1] + _local4), (4M[0] + _local3), (4M[1] + _local4), (4M[0] + _local3), ((4M[1] + _local4) + _local5), (4M[0] - _local3), ((4M[1] + _local4) + _local5));
-            _arg1.push(this.0XC);
+            _local6.push((_4M[0] - _local3), (_4M[1] + _local4), (_4M[0] + _local3), (_4M[1] + _local4), (_4M[0] + _local3), ((_4M[1] + _local4) + _local5), (_4M[0] - _local3), ((_4M[1] + _local4) + _local5));
+            _arg1.push(this._0XC);
             _arg1.push(this.gD);
             _arg1.push(tu.END_FILL);
             if (this.breath_ > 0)
             {
                 _local8 = (((this.breath_ / 100) * 2) * _local3);
-                this.24R.data.length = 0;
-                _local6 = (this.24R.data as Vector.<Number>);
+                this._24R.data.length = 0;
+                _local6 = (this._24R.data as Vector.<Number>);
                 _local6.length = 0;
-                _local6.push((4M[0] - _local3), (4M[1] + _local4), ((4M[0] - _local3) + _local8), (4M[1] + _local4), ((4M[0] - _local3) + _local8), ((4M[1] + _local4) + _local5), (4M[0] - _local3), ((4M[1] + _local4) + _local5));
+                _local6.push((_4M[0] - _local3), (_4M[1] + _local4), ((_4M[0] - _local3) + _local8), (_4M[1] + _local4), ((_4M[0] - _local3) + _local8), ((_4M[1] + _local4) + _local5), (_4M[0] - _local3), ((_4M[1] + _local4) + _local5));
                 _arg1.push(this.nc);
-                _arg1.push(this.24R);
+                _arg1.push(this._24R);
                 _arg1.push(tu.END_FILL);
             };
-            14d.MM(this.nc, true);
-            14d.MM(this.0XC, true);
+            _14d.MM(this.nc, true);
+            _14d.MM(this._0XC, true);
         }
 
-        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:int):void{
+        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             super.draw(_arg1, _arg2, _arg3);
             if (this != map_.player_)
             {
-                if (!Parameters.1Wc)
+                if (!Parameters._1Wc)
                 {
-                    0lq(_arg1, _arg2);
+                    _0lq(_arg1, _arg2);
                 };
             } else
             {
                 if (this.breath_ >= 0)
                 {
-                    this.23A(_arg1, _arg3);
+                    this._23A(_arg1, _arg3);
                 };
             };
         }
 
-        private function 1t5():Number{
-            if (19q())
+        private function _1t5():Number{
+            if (_19q())
             {
                 return ((Rq * this.TG));
             };
-            var _local1:Number = (Rq + ((this.speed_ / 75) * (01k - Rq)));
-            if (((0Wy()) || (ul())))
+            var _local1:Number = (Rq + ((this.speed_ / 75) * (_01k - Rq)));
+            if (((_0Wy()) || (ul())))
             {
                 _local1 = (_local1 * 1.5);
             };
@@ -754,23 +800,23 @@ public function setTokens(_arg1:int):void{
         public function Au():Number{
             if (c6())
             {
-                return (0Ox);
+                return (_0Ox);
             };
-            var _local1:Number = (0Ox + ((this.0B0 / 75) * (0Ck - 0Ox)));
-            if ( use())
+            var _local1:Number = (_0Ox + ((this._0B0 / 75) * (_0Ck - _0Ox)));
+            if ( _use())
             {
                 _local1 = (_local1 * 1.5);
             };
             return (_local1);
         }
 
-        private function 0NN():Number{
-            if (0RC())
+        private function _0NN():Number{
+            if (_0RC())
             {
-                return (0I9);
+                return (_0I9);
             };
-            var _local1:Number = (0I9 + ((this.17R / 75) * (0eV - 0I9)));
-            if (1Ka())
+            var _local1:Number = (_0I9 + ((this._17R / 75) * (_0eV - _0I9)));
+            if (_1Ka())
             {
                 _local1 = (_local1 * 1.5);
             };
@@ -778,135 +824,135 @@ public function setTokens(_arg1:int):void{
         }
 
         private function hM():void{
-            var _local1:0s0 = this.skin.imageFromAngle(0, BJ.1OS, 0);
-            3q = this.skin;
+            var _local1:_0s0 = this.skin.imageFromAngle(0, _BJ._1OS, 0);
+            _3q = this.skin;
             texture_ = _local1.image_;
             mask_ = _local1.mask_;
-            this.13O = true;
+            this._13O = true;
         }
 
-        private function 0IX():void{
-            var _local1:Vector.<XML> = ObjectLibrary.0XI;
+        private function _0IX():void{
+            var _local1:Vector.<XML> = ObjectLibrary._0XI;
             var _local2:uint = Math.floor((Math.random() * _local1.length));
             var _local3:int = _local1[_local2].@type;
-            var _local4:27S = ObjectLibrary.hE[_local3];
+            var _local4:_27S = ObjectLibrary.hE[_local3];
             texture_ = _local4.texture_;
             mask_ = _local4.mask_;
-            3q = _local4.3q;
+            _3q = _local4._3q;
             this.13O = false;
         }
 
-        override protected function getTexture(_arg1:1C8, _arg2:int):BitmapData{
-            var _local5:0s0;
+        override protected function getTexture(_arg1:_1C8, _arg2:int):BitmapData{
+            var _local5:_0s0;
             var _local10:int;
             var _local11:Dictionary;
             var _local12:Number;
             var _local13:int;
             var _local14:ColorTransform;
             var _local3:Number = 0;
-            var _local4:int = BJ.1OS;
-            if (((this.isShooting) || ((_arg2 < (0FE + this.1ff)))))
+            var _local4:int = _BJ._1OS;
+            if (((this.isShooting) || ((_arg2 < (_0FE + this._1ff)))))
             {
                 Kn = SB;
-                _local3 = (((_arg2 - 0FE) % this.1ff) / this.1ff);
-                _local4 = BJ.1Br;
+                _local3 = (((_arg2 - _0FE) % this._1ff) / this._1ff);
+                _local4 = _BJ._1Br;
             } else
             {
                 if (((!((moveVec_.x == 0))) || (!((moveVec_.y == 0)))))
                 {
-                    _local10 = (3.5 / this.1t5());
+                    _local10 = (3.5 / this._1t5());
                     if (((!((moveVec_.y == 0))) || (!((moveVec_.x == 0)))))
                     {
                         Kn = Math.atan2(moveVec_.y, moveVec_.x);
                     };
                     _local3 = ((_arg2 % _local10) / _local10);
-                    _local4 = BJ.1xM;
+                    _local4 = _BJ._1xM;
                 };
             };
             if (this.AG())
             {
-                ((this.13O) && (this.0IX()));
+                ((this._13O) && (this._0IX()));
             } else
             {
-                if (!this.13O)
+                if (!this._13O)
                 {
                     this.hM();
                 };
             };
-            if (_arg1.1kT)
+            if (_arg1._1kT)
             {
-                _local5 = new 0s0(XZ(), null);
+                _local5 = new _0s0(XZ(), null);
             } else
             {
-                _local5 = 3q.imageFromFacing(Kn, _arg1, _local4, _local3);
+                _local5 = _3q.imageFromFacing(Kn, _arg1, _local4, _local3);
             };
             var _local6:int = tex1Id_;
             var _local7:int = tex2Id_;
             var _local8:BitmapData;
-            if (this.3)
+            if (this._3)
             {
-                _local11 = 0Rx[this.3];
+                _local11 = _0Rx[this._3];
                 if (_local11 == null)
                 {
-                    0Rx[this.3] = new Dictionary();
+                    _0Rx[this._3] = new Dictionary();
                 } else
                 {
                     _local8 = _local11[_local5];
                 };
-                _local6 = this.3.getTex1Id(tex1Id_);
-                _local7 = this.3.getTex2Id(tex2Id_);
+                _local6 = this._3.getTex1Id(tex1Id_);
+                _local7 = this._3.getTex2Id(tex2Id_);
             } else
             {
-                _local8 = 0Rx[_local5];
+                _local8 = _0Rx[_local5];
             };
             if (_local8 == null)
             {
                 _local8 = TextureRedrawer.resize(_local5.image_, _local5.mask_, size_, false, _local6, _local7);
-                if (this.3 != null)
+                if (this._3 != null)
                 {
-                    0Rx[this.3][_local5] = _local8;
+                    _0Rx[this.3][_local5] = _local8;
                 } else
                 {
-                    0Rx[_local5] = _local8;
+                    _0Rx[_local5] = _local8;
                 };
             };
-            if (1VZ < (ba * 0.2))
+            if (_1VZ < (ba * 0.2))
             {
                 _local12 = (int((Math.abs(Math.sin((_arg2 / 200))) * 10)) / 10);
                 _local13 = 128;
                 _local14 = new ColorTransform(1, 1, 1, 1, (_local12 * _local13), (-(_local12) * _local13), (-(_local12) * _local13));
-                _local8 = hd.07J(_local8, _local14);
+                _local8 = _hd._07J(_local8, _local14);
             };
-            var _local9:BitmapData = 0Rx[_local8];
+            var _local9:BitmapData = _0Rx[_local8];
             if (_local9 == null)
             {
-                _local9 = 1go.0Lr(_local8, (((this.0Lv == -1)) ? 0 : 0xFF0000));
-                0Rx[_local8] = _local9;
+                _local9 = _1go._0Lr(_local8, (((this._0Lv == -1)) ? 0 : 0xFF0000));
+                _0Rx[_local8] = _local9;
             };
-            if (((((isPaused()) || (0Iz()))) || (0fu())))
+            if (((((isPaused()) || (_0Iz()))) || (_0fu())))
             {
-                _local9 = hd.1H9(_local9, 1hD);
+                _local9 = _hd._1H9(_local9, _1hD);
             } else
             {
-                if (1vK())
+                if (_1vK())
                 {
-                    _local9 = hd.1Ko(_local9, 0.4);
+                    _local9 = _hd._1Ko(_local9, 0.4);
                 };
             };
             return (_local9);
         }
 
         override public function getPortrait():BitmapData{
-            var _local1:0s0;
+            var _local1:_0s0;
             var _local2:int;
-            if (0Sz == null)
+            if (_0Sz == null)
             {
-                _local1 = 3q.imageFromDir(BJ.RIGHT, BJ.1OS, 0);
+                _local1 = _3q.imageFromDir(_BJ.RIGHT, _BJ._1OS, 0);
                 _local2 = ((4 / _local1.image_.width) * 100);
-                0Sz = TextureRedrawer.resize(_local1.image_, _local1.mask_, _local2, true, tex1Id_, tex2Id_);
-                0Sz = 1go.0Lr(0Sz, 0);
+                _0Sz = TextureRedrawer.resize(_local1.image_, _local1.mask_, _local2, true, tex1Id_, tex2Id_);
+                _0Sz = _1go._0Lr(_0Sz, 0);
             };
-            return (0Sz);
+            return (_0Sz);
         }
 
         public function useAltWeapon(_arg1:Number, _arg2:Number, _arg3:int):Boolean{
@@ -919,7 +965,7 @@ public function setTokens(_arg1:int):void{
             {
                 return (false);
             };
-            var _local4:int = 1Wz[1];
+            var _local4:int = _1Wz[1];
             if (_local4 == -1)
             {
                 return (false);
@@ -932,32 +978,32 @@ public function setTokens(_arg1:int):void{
             var _local6:Point = map_.pSTopW(_arg1, _arg2);
             if (_local6 == null)
             {
-                0ZC.play("error");
+                _0ZC.play("error");
                 return (false);
             };
             for each (_local7 in _local5.Activate)
             {
-                if (_local7.toString() == 0MX.TELEPORT)
+                if (_local7.toString() == _0MX.TELEPORT)
                 {
-                    if (!this.0co(_local6.x, _local6.y))
+                    if (!this._0co(_local6.x, _local6.y))
                     {
-                        0ZC.play("error");
+                        _0ZC.play("error");
                         return (false);
                     };
                 };
             };
             _local8 = getTimer();
-            if (_arg3 == 12v.1Oc)
+            if (_arg3 == _12v._1Oc)
             {
-                if (_local8 < this.0T6)
+                if (_local8 < this._0T6)
                 {
-                    0ZC.play("error");
+                    _0ZC.play("error");
                     return (false);
                 };
                 _local10 = int(_local5.MpCost);
-                if (_local10 > this.12a)
+                if (_local10 > this._12a)
                 {
-                    0ZC.play("no_mana");
+                    _0ZC.play("no_mana");
                     return (false);
                 };
                 _local11 = 500;
@@ -965,12 +1011,12 @@ public function setTokens(_arg1:int):void{
                 {
                     _local11 = (Number(_local5.Cooldown) * 1000);
                 };
-                this.0T6 = (_local8 + _local11);
+                this._0T6 = (_local8 + _local11);
                 map_.gs_.gsc_.useItem(_local8, objectId_, 1, _local4, _local6.x, _local6.y, _arg3);
-                if (_local5.Activate == 0MX.SHOOT)
+                if (_local5.Activate == _0MX.SHOOT)
                 {
                     _local9 = Math.atan2(_arg2, _arg1);
-                    this.04U(_local8, _local4, _local5, (Parameters.data_.cameraAngle + _local9), false);
+                    this._04U(_local8, _local4, _local5, (Parameters.data_.cameraAngle + _local9), false);
                 };
             } else
             {
@@ -978,7 +1024,7 @@ public function setTokens(_arg1:int):void{
                 {
                     map_.gs_.gsc_.useItem(_local8, objectId_, 1, _local4, _local6.x, _local6.y, _arg3);
                     _local10 = int(_local5.MpEndCost);
-                    if (_local10 <= this.12a)
+                    if (_local10 <= this._12a)
                     {
                         _local9 = Math.atan2(_arg2, _arg1);
                         this.04U(_local8, _local4, _local5, (Parameters.data_.cameraAngle + _local9), false);
@@ -999,36 +1045,36 @@ public function setTokens(_arg1:int):void{
                 return;
             };
             var _local4:Number = Number(_local3.RateOfFire);
-            this.1ff = ((1 / this.Au()) * (1 / _local4));
+            this._1ff = ((1 / this.Au()) * (1 / _local4));
             super.setAttack(_arg1, _arg2);
         }
 
         private function shoot(_arg1:Number):void{
-            if ((((((((map_ == null)) || (05R()))) || (isPaused()))) || (0fu())))
+            if ((((((((map_ == null)) || (_05R()))) || (isPaused()))) || (_0fu())))
             {
                 return;
             };
-            var _local2:int = 1Wz[0];
+            var _local2:int = _1Wz[0];
             if (_local2 == -1)
             {
-                this.12K.dispatch(1Ys.make(Parameters.1Wj, du.0tb));
+                this._12K.dispatch(_1Ys.make(Parameters._1Wj, _du._0tb));
                 return;
             };
             var _local3:XML = ObjectLibrary.GD[_local2];
             var _local4:int = getTimer();
             var _local5:Number = Number(_local3.RateOfFire);
-            this.1ff = ((1 / this.Au()) * (1 / _local5));
-            if (_local4 < (0FE + this.1ff))
+            this._1ff = ((1 / this.Au()) * (1 / _local5));
+            if (_local4 < (_0FE + this._1ff))
             {
                 return;
             };
-            doneAction(map_.gs_, Tutorial.1i3);
+            doneAction(map_.gs_, Tutorial._1i3);
             SB = _arg1;
-            0FE = _local4;
-            this.04U(0FE, _local2, _local3, SB, true);
+            _0FE = _local4;
+            this._04U(_0FE, _local2, _local3, SB, true);
         }
 
-        private function 04U(_arg1:int, _arg2:int, _arg3:XML, _arg4:Number, _arg5:Boolean):void{
+        private function _04U(_arg1:int, _arg2:int, _arg3:XML, _arg4:Number, _arg5:Boolean):void{
             var _local11:uint;
             var _local12:Projectile;
             var _local13:int;
@@ -1043,27 +1089,27 @@ public function setTokens(_arg1:int):void{
             var _local10:int;
             while (_local10 < _local6)
             {
-                _local11 = 0E1();
-                _local12 = (0Ep.sH(Projectile) as Projectile);
-                if (((_arg5) && (!((this.0ib == "")))))
+                _local11 = _0E1();
+                _local12 = (_0Ep.sH(Projectile) as Projectile);
+                if (((_arg5) && (!((this._0ib == "")))))
                 {
-                    _local12.reset(_arg2, 0, objectId_, _local11, _local9, _arg1, this.0ib, this.0Q3);
+                    _local12.reset(_arg2, 0, objectId_, _local11, _local9, _arg1, this._0ib, this._0Q3);
                 } else
                 {
                     _local12.reset(_arg2, 0, objectId_, _local11, _local9, _arg1);
                 };
                 _local13 = int(_local12.gF.minDamage_);
                 _local14 = int(_local12.gF.maxDamage_);
-                _local15 = ((_arg5) ? this.0NN() : 1);
+                _local15 = ((_arg5) ? this._0NN() : 1);
                 _local16 = (map_.gs_.gsc_.getNextDamage(_local13, _local14) * _local15);
                 if (_arg1 > (map_.gs_.moveRecords_.lastClearTime_ + 600))
                 {
                     _local16 = 0;
                 };
-                _local12.1gy(_local16);
-                if ((((_local10 == 0)) && (!((_local12.0Q == null)))))
+                _local12._1gy(_local16);
+                if ((((_local10 == 0)) && (!((_local12._0Q == null)))))
                 {
-                    0ZC.play(_local12.0Q, 0.75, false);
+                    _0ZC.play(_local12._0Q, 0.75, false);
                 };
                 map_.addObj(_local12, (x_ + (Math.cos(_arg4) * 0.3)), (y_ + (Math.sin(_arg4) * 0.3)));
                 map_.gs_.gsc_.playerShoot(_arg1, _local12);
@@ -1073,15 +1119,15 @@ public function setTokens(_arg1:int):void{
         }
 
         public function AG():Boolean{
-            return (!(((condition_[ConditionEffect.26x] & ConditionEffect.1QC) == 0)));
+            return (!(((condition_[ConditionEffect._26x] & ConditionEffect._1QC) == 0)));
         }
 
-        public function 9V():Boolean{
-            var _local1:int = 1Wz.length;
+        public function _9V():Boolean{
+            var _local1:int = _1Wz.length;
             var _local2:uint = 4;
             while (_local2 < _local1)
             {
-                if (1Wz[_local2] <= 0)
+                if (_1Wz[_local2] <= 0)
                 {
                     return (false);
                 };
@@ -1091,11 +1137,11 @@ public function setTokens(_arg1:int):void{
         }
 
         public function nextAvailableInventorySlot():int{
-            var _local1:int = ((this.0Th) ? 1Wz.length : (1Wz.length - 1zw.1dg));
+            var _local1:int = ((this._0Th) ? _1Wz.length : (_1Wz.length - _1zw._1dg));
             var _local2:uint = 4;
             while (_local2 < _local1)
             {
-                if (1Wz[_local2] <= 0)
+                if (_1Wz[_local2] <= 0)
                 {
                     return (_local2);
                 };
@@ -1104,13 +1150,13 @@ public function setTokens(_arg1:int):void{
             return (-1);
         }
 
-        public function 0b0():int{
-            var _local1:int = ((this.0Th) ? 1Wz.length : (1Wz.length - 1zw.1dg));
+        public function _0b0():int{
+            var _local1:int = ((this._0Th) ? _1Wz.length : (_1Wz.length - _1zw._1dg));
             var _local2:int;
             var _local3:uint = 4;
             while (_local3 < _local1)
             {
-                if (1Wz[_local3] <= 0)
+                if (_1Wz[_local3] <= 0)
                 {
                     _local2++;
                 };
@@ -1122,23 +1168,23 @@ public function setTokens(_arg1:int):void{
         public function swapInventoryIndex(_arg1:String):int{
             var _local2:int;
             var _local3:int;
-            if (!this.0Th)
+            if (!this._0Th)
             {
                 return (-1);
             };
-            if (_arg1 == 1Js.1yQ)
+            if (_arg1 == _1Js._1yQ)
             {
-                _local2 = 1zw.1ye;
-                _local3 = (1zw.1ye + 1zw.1dg);
+                _local2 = _1zw._1ye;
+                _local3 = (_1zw._1ye + _1zw._1dg);
             } else
             {
-                _local2 = (1zw.1ye + 1zw.1dg);
-                _local3 = 1Wz.length;
+                _local2 = (_1zw._1ye + _1zw._1dg);
+                _local3 = _1Wz.length;
             };
             var _local4:uint = _local2;
             while (_local4 < _local3)
             {
-                if (1Wz[_local4] <= 0)
+                if (_1Wz[_local4] <= 0)
                 {
                     return (_local4);
                 };
@@ -1150,10 +1196,10 @@ public function setTokens(_arg1:int):void{
         public function getPotionCount(_arg1:int):int{
             switch (_arg1)
             {
-                case 1z1.0Rl:
-                    return (this.0R8);
-                case 1z1.Ww:
-                    return (this.03y);
+                case _1z1._0Rl:
+                    return (this._0R8);
+                case _1z1.Ww:
+                    return (this._03y);
             };
             return (0);
         }
