@@ -9,7 +9,7 @@ package 0hd{
     import 1qg.0io;
     import 1qg.11S;
     import 1ay.tG;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import WZ.0Te;
     import com.company.util.1X3;
 
@@ -26,7 +26,7 @@ package 0hd{
         [Inject]
         public var 057:tG;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var SP:0Te;
         private var name:String;

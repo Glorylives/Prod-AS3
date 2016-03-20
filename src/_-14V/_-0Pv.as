@@ -8,7 +8,7 @@ package 14V{
     import aq.Account;
     import jH.1wW;
     import 0Fr.1da;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import flash.utils.getTimer;
     import com.company.assembleegameclient.util.offer.Offers;
 
@@ -21,7 +21,7 @@ package 14V{
         [Inject]
         public var u3:1da;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         private var target:String;
         private var guid:String;
 

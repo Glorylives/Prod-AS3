@@ -8,7 +8,7 @@ package 0av{
     import aq.Account;
     import 1PV.aN;
     import 1qg.0io;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 1t6.tg;
 
     public class 0nW extends 1iz {
@@ -22,7 +22,7 @@ package 0av{
         [Inject]
         public var 0n2:0io;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
 
 
         override protected function startTask():void{

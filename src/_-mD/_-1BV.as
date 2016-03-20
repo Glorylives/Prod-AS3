@@ -7,7 +7,7 @@ package mD{
     import 1cI.1iz;
     import aq.Account;
     import 1Bt.l-;
-    import _0BB.Fu;
+    import _0BB._Fu;
 
     public class 1BV extends 1iz {
 
@@ -16,7 +16,7 @@ package mD{
         [Inject]
         public var model:l-;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
 
 
         override protected function startTask():void{

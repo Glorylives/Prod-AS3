@@ -4,20 +4,22 @@
 //_ZE.GuildChroniclePanel
 
 package _ZE{
-    import AO.du;
-    import com.company.assembleegameclient.game.GameSprite;
-    import 3S.uI;
+
+import _AO._du;
+
+import com.company.assembleegameclient.game.GameSprite;
+    import _3S._uI;
     import flash.events.MouseEvent;
 
-    public class GuildChroniclePanel extends 1jX {
+    public class GuildChroniclePanel extends _1jX {
 
         public function GuildChroniclePanel(_arg1:GameSprite){
-            super(_arg1, du.qM, du.1vP);
+            super(_arg1, _du._qM, _du._1vP);
         }
 
         override protected function onButtonClick(_arg1:MouseEvent):void{
             gs_.mui_.clearInput();
-            gs_.addChild(new uI(gs_));
+            gs_.addChild(new _uI(gs_));
         }
 
 

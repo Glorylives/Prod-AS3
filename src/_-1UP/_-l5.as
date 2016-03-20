@@ -5,7 +5,7 @@
 
 package 1UP{
     import 1cI.1iz;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 1qg.0io;
     import 0sk.26Z;
     import 1qQ.0Uh;
@@ -21,7 +21,7 @@ package 1UP{
         private static const OF:int = 600;
 
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var 0n2:0io;
         [Inject]

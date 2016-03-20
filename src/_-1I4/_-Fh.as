@@ -8,7 +8,7 @@ package 1I4{
     import aq.Account;
     import c4.Mo;
     import 1qg.0io;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 1tr.0SX;
     import Av.TV;
     import 14V.*;
@@ -22,7 +22,7 @@ package 1I4{
         [Inject]
         public var 0n2:0io;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         private var kabam:0SX;
 
 

@@ -7,7 +7,7 @@ package 0GQ{
     import 1cI.1iz;
     import aq.Account;
     import 1Bg.fQ;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 1fx.1Zh;
     import 14V.*;
 
@@ -18,7 +18,7 @@ package 0GQ{
         [Inject]
         public var Ud:fQ;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
 
 
         override protected function startTask():void{

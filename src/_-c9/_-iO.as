@@ -4,7 +4,7 @@
 //c9.iO
 
 package c9{
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
     import 0-O.O6;
     import 1qg.0io;
@@ -14,7 +14,7 @@ package c9{
     public class iO {
 
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var account:Account;
         [Inject]

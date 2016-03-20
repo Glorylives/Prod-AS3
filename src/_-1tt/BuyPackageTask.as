@@ -5,7 +5,7 @@
 
 package 1tt{
     import 1cI.1iz;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
     import WZ.0Te;
     import com.company.assembleegameclient.map.04H;
@@ -18,7 +18,7 @@ package 1tt{
         private static const 0jQ:Array = ["Package is not Available", "Package is not Available Right Now", "Invalid PackageId"];
 
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var account:Account;
         [Inject]

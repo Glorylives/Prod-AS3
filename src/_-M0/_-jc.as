@@ -5,7 +5,7 @@
 
 package M0{
     import 1cI.1iz;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 1Gb.1aM;
     import aq.Account;
     import 0Fr.1da;
@@ -24,7 +24,7 @@ package M0{
         private static var version:String = "0";
 
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var WV:1g;
         [Inject]

@@ -9,7 +9,7 @@ package 0av{
     import aq.0VE;
     import 1qg.0io;
     import 0Fr.1da;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import com.company.assembleegameclient.util.offer.Offer;
     import 1t6.tg;
     import 14V.*;
@@ -25,9 +25,9 @@ package 0av{
         [Inject]
         public var u3:1da;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
-        public var FC:Fu;
+        public var FC:_Fu;
         private var offer:Offer;
 
 

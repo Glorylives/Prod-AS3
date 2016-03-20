@@ -17,7 +17,7 @@ package 1kr{
     import flash.utils.ByteArray;
     import _0BB.*;
 
-    public class 0-x implements lG {
+    public class 0-x implements _lG {
 
         private const 0vw:_04t = new _04t(Boolean);
 

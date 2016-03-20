@@ -10,7 +10,7 @@ package 1kr{
     import 1fx.1Zh;
     import _0BB.*;
 
-    public class 0wo implements Fu {
+    public class 0wo implements _Fu {
 
         [Inject]
         public var Ud:fQ;

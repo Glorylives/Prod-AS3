@@ -6,7 +6,7 @@
 package 1tt{
     import 1cI.1iz;
     import flash.utils.Timer;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
     import 0Fr.1da;
     import 1qQ.0Uh;
@@ -19,7 +19,7 @@ package 1tt{
 
         public var timer:Timer;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var 2M:0jv;
         [Inject]

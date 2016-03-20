@@ -6,7 +6,7 @@
 package 14V{
     import 1cI.1iz;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 1qg.0io;
     import WZ.0Te;
 
@@ -17,7 +17,7 @@ package 14V{
         [Inject]
         public var price:int;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var 0n2:0io;
         [Inject]

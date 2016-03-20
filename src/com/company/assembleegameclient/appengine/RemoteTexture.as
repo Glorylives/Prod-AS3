@@ -8,7 +8,7 @@ package com.company.assembleegameclient.appengine{
     import _04_._1JZ;
     import _0OG._22M;
     import 1kr.0-x;
-    import _0BB.lG;
+    import _0BB._lG;
     import flash.net.URLLoaderDataFormat;
     import 1hz.1Dv;
     import flash.display.BitmapData;
@@ -39,7 +39,7 @@ package com.company.assembleegameclient.appengine{
             var _local3:Object = {}
             _local3.id = this.id_;
             _local3.time = 07h;
-            var _local4:lG = new 0-x();
+            var _local4:_lG = new 0-x();
             _local4.19U(URLLoaderDataFormat.BINARY);
             _local4.complete.addOnce(this.onComplete);
             _local4.sendRequest(_local2, _local3);

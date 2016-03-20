@@ -7,20 +7,19 @@ package com.company.assembleegameclient.objects{
     import _ZE.ArenaPortalPanel;
     import com.company.assembleegameclient.game.GameSprite;
     import _ZE.Panel;
-    import __AS3__.vec.Vector;
     import flash.display.IGraphicsData;
-    import com.company.assembleegameclient.map.1C8;
-    import 1n4.1WS;
-    import 1n4.1Jo;
+    import com.company.assembleegameclient.map._1C8;
+    import _1n4._1WS;
+    import _1n4._1Jo;
     import _04_._1JZ;
-    import _CU.1CD;
+    import _CU._1CD;
     import flash.display.BitmapData;
 
-    public class ArenaPortal extends Portal implements 18p {
+    public class ArenaPortal extends Portal implements _18p {
 
         public function ArenaPortal(_arg1:XML){
             super(_arg1);
-            10J = true;
+            _10J = true;
             name_ = "";
         }
 
@@ -28,15 +27,15 @@ package com.company.assembleegameclient.objects{
             return (new ArenaPortalPanel(_arg1, this));
         }
 
-        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:1C8, _arg3:int):void{
+        override public function draw(_arg1:Vector.<IGraphicsData>, _arg2:_1C8, _arg3:int):void{
             super.draw(_arg1, _arg2, _arg3);
-            0lq(_arg1, _arg2);
+            _0lq(_arg1, _arg2);
         }
 
         override protected function makeNameBitmapData():BitmapData{
-            var _local1:1Jo = new 1WS(name_);
-            var _local2:1CD = _1JZ.0JF().getInstance(1CD);
-            return (_local2.make(_local1, 16, 0xFFFFFF, true, 1Ab, true));
+            var _local1:_1Jo = new _1WS(name_);
+            var _local2:_1CD = _1JZ._0JF().getInstance(_1CD);
+            return (_local2.make(_local1, 16, 0xFFFFFF, true, _1Ab, true));
         }
 
 

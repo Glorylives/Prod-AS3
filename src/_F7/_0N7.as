@@ -3,19 +3,19 @@
 
 //F7.0N7
 
-package F7{
+package _F7{
     import flash.events.Event;
-    import 1zG.1r9;
+    import _1zG._1r9;
 
-    public class 0N7 extends Event {
+    public class _0N7 extends Event {
 
         public static const NAMERESULTEVENT:String = "NAMERESULTEVENT";
 
-        public var 1wA:1r9;
+        public var _1wA:_1r9;
 
-        public function 0N7(_arg1:1r9){
+        public function _0N7(_arg1:_1r9){
             super(NAMERESULTEVENT);
-            this.1wA = _arg1;
+            this._1wA = _arg1;
         }
 
     }

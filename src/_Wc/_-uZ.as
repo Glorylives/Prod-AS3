@@ -7,7 +7,7 @@ package Wc{
     import flash.display.Sprite;
     import flash.display.Shape;
     import 1t6.Dialog;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import flash.display.Graphics;
     import _04_._1JZ;
     import aq.Account;
@@ -22,7 +22,7 @@ package Wc{
         private var text_:String;
         private var 17G:fd;
         private var 2-L:0bO;
-        private var client:Fu;
+        private var client:_Fu;
 
         public function uZ(_arg1:Boolean){
             this.j7 = _arg1;
@@ -38,7 +38,7 @@ package Wc{
 
         private function load():void{
             var _local1:Account = _1JZ.0JF().getInstance(Account);
-            this.client = _1JZ.0JF().getInstance(Fu);
+            this.client = _1JZ.0JF().getInstance(_Fu);
             this.client.complete.addOnce(this.0Gw);
             this.client.sendRequest("/guild/getBoard", _local1.1Y());
             this.1wE = new Dialog(null, "Loading...", null, null, null);

@@ -8,10 +8,10 @@ package com.company.assembleegameclient.game{
     import com.company.util.MoreColorUtil;
     import _Jy._1HZ;
     import com.company.assembleegameclient.objects.Player;
-    import 0Fa.Chat;
+    import _0Fa.Chat;
     import com.company.assembleegameclient.ui.RankText;
-    import com.company.assembleegameclient.ui.1sK;
-    import BG.02I;
+    import com.company.assembleegameclient.ui._1sK;
+    import _BG.02I;
     import BG.GiftStatusDisplay;
     import BG.17B;
     import 1mO.0bI;
@@ -38,10 +38,10 @@ package com.company.assembleegameclient.game{
     import 1PB.yi;
     import aq.Account;
     import 0Ln.1zI;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import com.company.util.1X3;
     import com.company.assembleegameclient.parameters.Parameters;
-    import yA.oF;
+    import yA._oF;
     import bD.0A-;
     import 0sk.26Z;
     import 0Ux.0tu;
@@ -54,7 +54,7 @@ package com.company.assembleegameclient.game{
     import com.company.util.PointUtil;
     import 1m9.0lt;
     import flash.utils.getTimer;
-    import F7.Ig;
+    import F7._Ig;
     import flash.events.Event;
     import 01c.0h3;
     import 01c.0-7;

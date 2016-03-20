@@ -14,7 +14,7 @@ package 12X{
     import _04_._1JZ;
     import flash.events.MouseEvent;
     import com.company.util.1wL;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import com.company.util.1X3;
     import _CU._13j;
     import 1n4.1cA;
@@ -81,11 +81,11 @@ package 12X{
         }
 
         private function 03a(_arg1:MouseEvent):void{
-            var _local2:Fu;
+            var _local2:_Fu;
             var _local3:Object;
             if (this.0n5())
             {
-                _local2 = _1JZ.0JF().getInstance(Fu);
+                _local2 = _1JZ.0JF().getInstance(_Fu);
                 _local2.complete.addOnce(this.onComplete);
                 _local3 = {newGuid:this.0G1.text()}
                 1X3.1J7(_local3, this.account.1Y());

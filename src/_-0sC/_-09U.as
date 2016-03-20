@@ -7,7 +7,7 @@ package 0sC{
     import 12X.0Q6;
     import _Jy._1HZ;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import OZ.0c1;
     import flash.utils.Timer;
     import _04_._1JZ;
@@ -22,8 +22,8 @@ package 0sC{
         public var eO:_1HZ;
         private var 1Dk:_1HZ;
         private var account:Account;
-        private var client:Fu;
-        private var 1j9:Fu;
+        private var client:_Fu;
+        private var 1j9:_Fu;
         private var 0Yl:Number = 0;
         private var total:Number = 100;
         private var 078:3W;
@@ -42,7 +42,7 @@ package 0sC{
             this.PF("OK");
             this.account = _arg1;
             this.status = _arg2;
-            this.client = _1JZ.0JF().getInstance(Fu);
+            this.client = _1JZ.0JF().getInstance(_Fu);
             this.1Dk = new lY(this.9u, MouseEvent.CLICK);
             cancel = new lY(this.0er, MouseEvent.CLICK);
             this.eO = new _1HZ();

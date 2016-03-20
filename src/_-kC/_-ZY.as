@@ -8,7 +8,7 @@ package kC{
     import 1qQ.0Uh;
     import 1qQ.0oB;
     import 1qg.0io;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 1t6.ErrorDialog;
 
     public class ZY extends 1iz {
@@ -22,7 +22,7 @@ package kC{
         [Inject]
         public var 0n2:0io;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         private var language:String;
 
 

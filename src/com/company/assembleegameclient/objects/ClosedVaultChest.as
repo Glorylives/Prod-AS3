@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.objects.ClosedVaultChest
 
 package com.company.assembleegameclient.objects{
-    import AO.du;
-    import 0qj.6P;
-    import 0qj.1ae;
+    import _AO._du;
+    import _0qj._6P;
+    import _0qj._1ae;
     import flash.display.BitmapData;
 
     public class ClosedVaultChest extends SellableObject {
@@ -16,15 +16,15 @@ package com.company.assembleegameclient.objects{
         }
 
         override public function soldObjectName():String{
-            return (du.1rI);
+            return (_du._1rI);
         }
 
         override public function soldObjectInternalName():String{
             return ("Vault Chest");
         }
 
-        override public function getTooltip():1ae{
-            var _local1:1ae = new 6P(0x363636, 0x9B9B9B, this.soldObjectName(), du.hu, 200);
+        override public function getTooltip():_1ae{
+            var _local1:_1ae = new _6P(0x363636, 0x9B9B9B, this.soldObjectName(), _du._hu, 200);
             return (_local1);
         }
 

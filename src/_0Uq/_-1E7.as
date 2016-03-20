@@ -6,7 +6,7 @@
 package 0Uq{
     import 1cI.1iz;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import zf.1M6;
     import Wn.1Ev;
     import __AS3__.vec.Vector;
@@ -20,7 +20,7 @@ package 0Uq{
         [Inject]
         public var account:Account;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var factory:0uI;
         [Inject]

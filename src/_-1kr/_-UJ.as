@@ -4,16 +4,16 @@
 //1kr.UJ
 
 package 1kr{
-    import _0BB.lG;
+    import _0BB._lG;
     import qG.0bJ;
     import flash.net.URLLoaderDataFormat;
     import _Jy._04t;
     import _0BB.*;
 
-    public class UJ implements Fu {
+    public class UJ implements _Fu {
 
         [Inject]
-        public var loader:lG;
+        public var loader:_lG;
         [Inject]
         public var setup:0bJ;
         private var 0Hx:Boolean;

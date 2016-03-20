@@ -1,10 +1,17 @@
 ﻿// Decompiled by AS3 Sorcerer 1.40
 // http://www.as3sorcerer.com/
 
-//yA.Ch
+//yA._Ch
 
 package yA{
-    import 12X.0Q6;
+    import
+import _0gd.GTween;
+
+import _1n4._1cA;
+
+import _OZ._08g;
+
+12X.0Q6;
     import _Jy._1HZ;
     import 0xk.09v;
     import OZ.08g;
@@ -34,36 +41,36 @@ package yA{
     import flash.filters.DropShadowFilter;
     import flash.text.TextFieldAutoSize;
 
-    public class Ch extends 0Q6 {
+    public class __Ch extends _0Q6 {
 
         public static const closed:_1HZ = new _1HZ();
         public static const jO:int = 600;
-        public static const 1YC:int = 600;
+        public static const _1YC:int = 600;
 
-        public static var ga:Class = 1U6;
-        public static var SH:Class = 1hv;
-        public static var 1lz:Class = z1;
-        public static var 6B:Class = 1DU;
+        public static var ga:Class = _1U6;
+        public static var SH:Class = _1hv;
+        public static var _1lz:Class = z1;
+        public static var _6B:Class = _1DU;
 
-        private var nL:09v;
-        private var ay:09v;
-        private var 1HC:09v;
-        public var WB:08g;
-        private var mV:0Rq;
-        private var 1c5:DisplayObject;
-        private var 17x:int = -1;
+        private var nL:_09v;
+        private var ay:_09v;
+        private var _1HC:_09v;
+        public var WB:_08g;
+        private var mV:_0Rq;
+        private var _1c5:DisplayObject;
+        private var _17x:int = -1;
         private var cH:DisplayObject;
 
-        public function Ch():void{
-            this.WB = new 08g("Turn in!", 36, 0, Currency.INVALID, true);
-            this.mV = new 1ZG();
-            super(jO, 1YC);
+        public function _Ch():void{
+            this.WB = new _08g("Turn in!", 36, 0, Currency.INVALID, true);
+            this.mV = new _1ZG();
+            super(jO, _1YC);
             this.nL = new 09v(true, true);
-            this.nL.0LZ(false);
+            this.nL._0LZ(false);
             this.ay = new 09v();
-            this.ay.0LZ(true);
-            this.1HC = new 09v();
-            this.1HC.0LZ(true);
+            this.ay._0LZ(true);
+            this._1HC = new _09v();
+            this._1HC._0LZ(true);
         }
 
         public function init(_arg1:int, _arg2:int, _arg3:String, _arg4:String):void{
@@ -71,14 +78,14 @@ package yA{
             var _local10:TextFormat;
             var _local5:String = ("Tier " + _arg1.toString());
             setTitle(_local5, true);
-            this.cH = new 1lz();
+            this.cH = new _1lz();
             addChild(this.cH);
-            this.cH.x = (((0l4 / 4) * 1.1) - (this.cH.width / 2));
-            this.cH.y = ((0oc / 20) + 2);
+            this.cH.x = (((_0l4 / 4) * 1.1) - (this.cH.width / 2));
+            this.cH.y = ((_0oc / 20) + 2);
             this.17x = (this.cH.x + (this.cH.width / 2));
             title.setSize(20);
             title.setColor(16689154);
-            title.x = (((0l4 / 4) * 1.1) - (title.width / 2));
+            title.x = (((_0l4 / 4) * 1.1) - (title.width / 2));
             title.y = ((this.cH.y + this.cH.height) + 5);
             title.setBold(false);
             if (title.textField != null)
@@ -102,18 +109,18 @@ package yA{
             _local7.alpha = 0.8;
             _local7.selectable = false;
             addChild(_local7);
-            var _local8:String = 1cA.1SQ(ObjectLibrary.118[_arg2]);
-            this.0xR(_arg3, _local8);
-            this.03w();
+            var _local8:String = _1cA._1SQ(ObjectLibrary._118[_arg2]);
+            this._0xR(_arg3, _local8);
+            this._03w();
             addEventListener(Event.REMOVED_FROM_STAGE, this.onRemovedFromStage);
             addChild(this.nL);
             addChild(this.ay);
-            this.ay.11I();
+            this.ay._11I();
             if (_arg1 == 1)
             {
                 this.ay.visible = false;
             }
-            addChild(this.1HC);
+            addChild(this._1HC);
             this.1HC.1Re();
             this.nL.27L("Drag the item from your inventory into the slot", 14, 0xFFFF);
             this.nL.0fS(this.WB);
@@ -129,10 +136,10 @@ package yA{
             this.mV.contentLoaderInfo.addEventListener(IOErrorEvent.DISK_ERROR, this.0Az);
             this.mV.contentLoaderInfo.addEventListener(IOErrorEvent.NETWORK_ERROR, this.0Az);
             this.mV.load(new URLRequest(_arg4));
-            this.1bZ();
+            this._1bZ();
         }
 
-        private function 1bZ():void{
+        private function _1bZ():void{
             this.nL.x = (this.17x - (this.nL.width / 2));
             this.nL.y = 350;
             this.ay.width = (this.ay.width * 0.8);
@@ -169,7 +176,7 @@ package yA{
             new GTween(this.1c5, 1.25, {alpha:1});
         }
 
-        private function 1P-(_arg1:Event):void{
+        private function _1P(_arg1:Event):void{
             this.mV.removeEventListener(Event.COMPLETE, this.1P-);
             this.mV.removeEventListener(IOErrorEvent.IO_ERROR, this.0Az);
             this.mV.removeEventListener(IOErrorEvent.DISK_ERROR, this.0Az);
@@ -182,26 +189,26 @@ package yA{
             this.jZ();
         }
 
-        private function 0Az(_arg1:IOErrorEvent):void{
+        private function _0Az(_arg1:IOErrorEvent):void{
             this.mV.removeEventListener(Event.COMPLETE, this.1P-);
             this.mV.removeEventListener(IOErrorEvent.IO_ERROR, this.0Az);
             this.mV.removeEventListener(IOErrorEvent.DISK_ERROR, this.0Az);
             this.mV.removeEventListener(IOErrorEvent.NETWORK_ERROR, this.0Az);
         }
 
-        public function BN():09v{
+        public function BN():_09v{
             return (this.nL);
         }
 
-        public function 1ew():08g{
+        public function _1ew():_08g{
             return (this.WB);
         }
 
         private function onRemovedFromStage(_arg1:Event):void{
-            1tf.clicked.remove(this.1qf);
+            _1tf.clicked.remove(this._1qf);
         }
 
-        private function 1qf():void{
+        private function _1qf():void{
             closed.dispatch();
         }
 
@@ -209,23 +216,23 @@ package yA{
             x = 0;
             var _local1:Sprite = new Sprite();
             var _local2:DisplayObject = new ga();
-            _local2.width = 0l4;
-            _local2.height = 0oc;
+            _local2.width = _0l4;
+            _local2.height = _0oc;
             _local2.alpha = 0.74;
             _local1.addChild(_local2);
             return (_local1);
         }
 
-        private function 03w():void{
-            var _local1:KC = new KC(0.82);
+        private function _03w():void{
+            var _local1:_KC = new KC(0.82);
             addChild(_local1);
             _local1.y = 4;
             _local1.x = ((0l4 - _local1.width) - 5);
-            _local1.clicked.add(this.1qf);
-            1tf = _local1;
+            _local1.clicked.add(this._1qf);
+            _1tf = _local1;
         }
 
-        public function 0EZ():void{
+        public function _0EZ():void{
             this.03w();
             var _local1:TextField = new TextField();
             var _local2 = "ALL QUESTS COMPLETED!";
@@ -255,7 +262,7 @@ package yA{
             addChild(_local1);
         }
 
-        public function 0xR(_arg1:String, _arg2:String=""):void{
+        public function _0xR(_arg1:String, _arg2:String=""):void{
             var _local4:String;
             var _local6:TextFormat;
             var _local3:int = _arg1.indexOf("{goal}");
@@ -318,7 +325,7 @@ package yA{
         }
 
         public function ok():void{
-            this.nL.041(-1);
+            this.nL._041(-1);
         }
 
 

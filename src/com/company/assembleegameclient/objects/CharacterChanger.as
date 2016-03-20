@@ -8,11 +8,11 @@ package com.company.assembleegameclient.objects{
     import com.company.assembleegameclient.game.GameSprite;
     import _ZE.Panel;
 
-    public class CharacterChanger extends GameObject implements 18p {
+    public class CharacterChanger extends GameObject implements _18p {
 
         public function CharacterChanger(_arg1:XML){
             super(_arg1);
-            10J = true;
+            _10J = true;
         }
 
         public function getPanel(_arg1:GameSprite):Panel{

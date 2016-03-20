@@ -5,7 +5,7 @@
 
 package 1qa{
     import flash.display.Sprite;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
     import vF.MysteryBoxInfo;
     import __AS3__.vec.Vector;
@@ -63,7 +63,7 @@ package 1qa{
         private const youWonString:String = "MysteryBoxRollModal.youWonString";
         private const rewardsInVaultString:String = "MysteryBoxRollModal.rewardsInVaultString";
 
-        public var client:Fu;
+        public var client:_Fu;
         public var account:Account;
         public var ZJ:MysteryBoxSelectModal;
         private var state:int;
@@ -135,7 +135,7 @@ package 1qa{
             this.lI.alpha = 0;
             addChild(this.lI);
             var _local3:_22M = _1JZ.0JF();
-            this.client = _local3.getInstance(Fu);
+            this.client = _local3.getInstance(_Fu);
             this.account = _local3.getInstance(Account);
             var _local4:uint;
             while (_local4 < this.1Eg.ft.length)

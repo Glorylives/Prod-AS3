@@ -3,12 +3,12 @@
 
 //F7.19s
 
-package F7{
+package _F7{
     import flash.events.Event;
-    import 0y3.Server;
+    import _0y3.Server;
     import flash.utils.ByteArray;
 
-    public class 19s extends Event {
+    public class _19s extends Event {
 
         public static const RECONNECT:String = "RECONNECT_EVENT";
 
@@ -20,7 +20,7 @@ package F7{
         public var key_:ByteArray;
         public var isFromArena_:Boolean;
 
-        public function 19s(_arg1:Server, _arg2:int, _arg3:Boolean, _arg4:int, _arg5:int, _arg6:ByteArray, _arg7:Boolean){
+        public function _19s(_arg1:Server, _arg2:int, _arg3:Boolean, _arg4:int, _arg5:int, _arg6:ByteArray, _arg7:Boolean){
             super(RECONNECT);
             this.server_ = _arg1;
             this.gameId_ = _arg2;
@@ -32,7 +32,7 @@ package F7{
         }
 
         override public function clone():Event{
-            return (new 19s(this.server_, this.gameId_, this.lk, this.charId_, this.keyTime_, this.key_, this.isFromArena_));
+            return (new _19s(this.server_, this.gameId_, this.lk, this.charId_, this.keyTime_, this.key_, this.isFromArena_));
         }
 
         override public function toString():String{

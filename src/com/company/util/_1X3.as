@@ -4,10 +4,10 @@
 //com.company.util.1X3
 
 package com.company.util{
-    public class 1X3 {
+    public class _1X3 {
 
 
-        public static function 1J7(_arg1:Object, _arg2:Object):void{
+        public static function _1J7(_arg1:Object, _arg2:Object):void{
             var _local3:String;
             for (_local3 in _arg2)
             {

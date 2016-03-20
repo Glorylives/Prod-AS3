@@ -7,7 +7,6 @@ package _9T{
 import _0xo._lZ;
 
 import flash.display.Sprite;
-    import __AS3__.vec.Vector;
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import com.company.assembleegameclient.objects.GameObject;
@@ -24,16 +23,15 @@ import flash.display.Sprite;
     import flash.display.GraphicsPathCommand;
     import flash.filters.DropShadowFilter;
     import flash.events.MouseEvent;
-    import 0xo.lZ;
+    import _0xo._lZ;
     import com.company.assembleegameclient.objects.Player;
     import _04_._1JZ;
     import com.company.assembleegameclient.parameters.Parameters;
-    import com.company.assembleegameclient.map.1C8;
-    import __AS3__.vec.*;
+    import com.company.assembleegameclient.map._1C8;
 
     public class _0b7 extends Sprite implements _0CC {
 
-        private const graphicsData_:Vector.<IGraphicsData> = new <flash.display.IGraphicsData>[_0b7._1F4, _0b7._0B9, _0b7.path_, com.company.util._tu.END_FILL, com.company.util._tu.1l4];
+        private const graphicsData_:Vector.<IGraphicsData> = new <flash.display.IGraphicsData>[_1F4, _0B9, path_, com.company.util._tu.END_FILL, com.company.util._tu._1l4];
 
         public var go_:GameObject;
         public var lifetime_:int;
@@ -108,16 +106,16 @@ import flash.display.Sprite;
                 if (((((!((hmod.ja.map.goDict_[playerObjectId] == null))) && ((hmod.ja.map.goDict_[playerObjectId] is Player)))) && (!((hmod.ja.map.player_.objectId_ == playerObjectId)))))
                 {
                     aPlayer = (hmod.ja.map.goDict_[playerObjectId] as Player);
-                    hmod.ja.FP(aPlayer, e.stageX, e.stageY);
+                    hmod.ja.Fv(aPlayer, e.stageX, e.stageY);
                 } else
                 {
-                    if (((((((!(this._17n)) && (!((this._1vT == null))))) && (!((this._1vT == ""))))) && (!((hmod.ja.map.player_.name_ == this.1vT)))))
+                    if (((((((!(this._17n)) && (!((this._1vT == null))))) && (!((this._1vT == ""))))) && (!((hmod.ja.map.player_.name_ == this._1vT)))))
                     {
-                        hmod.ja.FP(null, e.stageX, e.stageY, this._1vT, this._140);
+                        hmod.ja._FP(null, e.stageX, e.stageY, this._1vT, this._140);
                     }
                 else
                     {
-                        if (((((((this._17n) && (!((this._1vT == null))))) && (!((this._1vT == ""))))) && (!((hmod.ja.map.player_.name_ == this.1vT)))))
+                        if (((((((this._17n) && (!((this._1vT == null))))) && (!((this._1vT == ""))))) && (!((hmod.ja.map.player_.name_ == this._1vT)))))
                         {
                             hmod.ja.FP(null, e.stageX, e.stageY, this._1vT, false, true);
                         }
@@ -128,7 +126,7 @@ import flash.display.Sprite;
             }
         }
 
-        public function draw(_arg1:1C8, _arg2:int):Boolean{
+        public function draw(_arg1:_1C8, _arg2:int):Boolean{
             if (this.startTime_ == 0)
             {
                 this.startTime_ = _arg2;
@@ -138,23 +136,23 @@ import flash.display.Sprite;
             {
                 return (false);
             }
-            if ((((this.go_ == null)) || (!(this.go_.1th))))
+            if ((((this.go_ == null)) || (!(this.go_._1th))))
             {
                 visible = false;
                 return (true);
             }
-            if (((this.08V) && (!(Parameters.data_.textBubbles))))
+            if (((this._08V) && (!(Parameters.data_.textBubbles))))
             {
                 visible = false;
                 return (true);
             }
             visible = true;
-            x = int((this.go_.4M[0] + this.0aO.x));
-            y = int((this.go_.4M[1] + this.0aO.y));
+            x = int((this.go_._4M[0] + this._0aO.x));
+            y = int((this.go_._4M[1] + this._0aO.y));
             return (true);
         }
 
-        public function 1db():GameObject{
+        public function _1db():GameObject{
             return (this.go_);
         }
 

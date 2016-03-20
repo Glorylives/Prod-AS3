@@ -3,14 +3,14 @@
 
 //N.08e
 
-package N{
+package _N{
     import _Jy._1HZ;
-    import 1zG.1lm;
+    import _1zG._1lm;
 
-    public class 08e extends _1HZ {
+    public class _08e extends _1HZ {
 
-        public function 08e(){
-            super(1lm);
+        public function _08e(){
+            super(_1lm);
         }
 
     }

@@ -9,7 +9,7 @@ package 0ud{
     import 1ki.0e0;
     import qs.1T5;
     import 1cs.1Ch;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 14V.*;
 
     public class 12I extends 1iz implements 0jk {
@@ -25,7 +25,7 @@ package 0ud{
         [Inject]
         public var 0AJ:1Ch;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
 
 
         override protected function startTask():void{

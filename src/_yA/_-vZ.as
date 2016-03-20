@@ -14,7 +14,7 @@ package yA{
     public class vZ extends 1Mf {
 
         [Inject]
-        public var view:oF;
+        public var view:_oF;
         [Inject]
         public var d:0An;
         [Inject]
@@ -23,7 +23,7 @@ package yA{
 
         override public function initialize():void{
             this.view.init();
-            if (oF.08Y())
+            if (_oF.08Y())
             {
                 if (!1MN.1Bx)
                 {
@@ -31,13 +31,13 @@ package yA{
                     WebMain._0Kr.addEventListener(KeyboardEvent.KEY_DOWN, this.1lw);
                 } else
                 {
-                    Ch.closed.add(this.0FO);
+                    _Ch.closed.add(this.0FO);
                 }
             }
         }
 
         override public function destroy():void{
-            Ch.closed.remove(this.0FO);
+            _Ch.closed.remove(this.0FO);
             this.view.1kJ.removeEventListener(MouseEvent.CLICK, this.oq);
             WebMain._0Kr.removeEventListener(KeyboardEvent.KEY_DOWN, this.1lw);
             super.destroy();
@@ -49,7 +49,7 @@ package yA{
                 this.d.dispatch(new 1MN());
                 this.view.1kJ.removeEventListener(MouseEvent.CLICK, this.oq);
                 WebMain._0Kr.removeEventListener(KeyboardEvent.KEY_DOWN, this.1lw);
-                Ch.closed.add(this.0FO);
+                _Ch.closed.add(this.0FO);
             }
         }
 

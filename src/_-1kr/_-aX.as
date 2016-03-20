@@ -9,7 +9,7 @@ package 1kr{
     import flash.utils.getTimer;
     import _0BB.*;
 
-    public class aX extends EventDispatcher implements Fu {
+    public class aX extends EventDispatcher implements _Fu {
 
         [Inject]
         public var stats:AppEngineRequestStats;

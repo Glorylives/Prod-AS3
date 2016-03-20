@@ -11,7 +11,7 @@ package 0pT{
     import OZ.0c1;
     import 0uE.KC;
     import OZ.1om;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
     import 1Gb.1aM;
     import b4.f1;
@@ -95,7 +95,7 @@ package 0pT{
         private var 06p:KC;
         private var 0KJ:int = -1;
         private var k2:1om;
-        public var client:Fu;
+        public var client:_Fu;
         public var account:Account;
         public var model:1aM;
         public var Wz:f1;
@@ -145,7 +145,7 @@ package 0pT{
             this.06p.y = 4;
             this.06p.x = ((0l4 - this.06p.width) - 5);
             var _local2:_22M = _1JZ.0JF();
-            this.client = _local2.getInstance(Fu);
+            this.client = _local2.getInstance(_Fu);
             this.account = _local2.getInstance(Account);
             this.model = _local2.getInstance(1aM);
             this.Wz = this.model.getFortune();

@@ -6,7 +6,7 @@
 package 0Uq{
     import 1cI.1iz;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import Wn.07w;
 
     public class 11B extends 1iz {
@@ -16,7 +16,7 @@ package 0Uq{
         [Inject]
         public var account:Account;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var 0WE:07w;
 

@@ -11,7 +11,7 @@ package 0av{
     import 1qg.0io;
     import 1Bg.0vt;
     import 0Fr.1da;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import lq.1r8;
     import flash.utils.setTimeout;
     import 1t6.tg;
@@ -34,9 +34,9 @@ package 0av{
         [Inject]
         public var u3:1da;
         [Inject]
-        public var first:Fu;
+        public var first:_Fu;
         [Inject]
-        public var FC:Fu;
+        public var FC:_Fu;
         [Inject]
         public var 7X:1r8;
 

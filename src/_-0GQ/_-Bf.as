@@ -6,7 +6,7 @@
 package 0GQ{
     import 1cI.1iz;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import qs.1T5;
     import flash.net.SharedObject;
     import com.company.assembleegameclient.util.GUID;
@@ -17,7 +17,7 @@ package 0GQ{
         [Inject]
         public var account:Account;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         private var data:1T5;
 
 

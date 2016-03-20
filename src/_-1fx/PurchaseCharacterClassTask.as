@@ -6,7 +6,7 @@
 package 1fx{
     import 1cI.1iz;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import WZ.0Te;
     import 0Fr.1da;
     import com.company.assembleegameclient.parameters.Parameters;
@@ -20,7 +20,7 @@ package 1fx{
         [Inject]
         public var account:Account;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var SP:0Te;
         [Inject]

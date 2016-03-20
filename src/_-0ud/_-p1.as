@@ -7,7 +7,7 @@ package 0ud{
     import 1cI.1iz;
     import aq.Account;
     import 1ki.0e0;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 14V.*;
 
     public class p1 extends 1iz implements 27Q {
@@ -19,7 +19,7 @@ package 0ud{
         [Inject]
         public var local:Z8;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
 
 
         override protected function startTask():void{

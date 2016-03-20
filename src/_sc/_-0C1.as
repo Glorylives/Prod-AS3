@@ -23,7 +23,7 @@ package sC{
     import eC.WK;
     import 0Z-.0YK;
     import com.company.assembleegameclient.util.Yj;
-    import yA.Ch;
+    import yA._Ch;
     import com.company.assembleegameclient.map.Map;
     import 1r4.1T2;
     import 0Px.0J9;
@@ -90,7 +90,7 @@ package sC{
             var _local7:0YK;
             var _local8:int;
             var _local2:14l = _arg1.tile;
-            var _local3:* = Yj.0j4(_local2.0dV(), WK, 14l, 0YK, Ch, Map);
+            var _local3:* = Yj.0j4(_local2.0dV(), WK, 14l, 0YK, _Ch, Map);
             if ((((_local2.mh() == 1z1.0Rl)) || ((((_local2.mh() == 1z1.Ww)) && (!(Boolean((_local3 as 0YK))))))))
             {
                 this.1lW(_arg1);

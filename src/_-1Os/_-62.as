@@ -6,7 +6,7 @@
 package 1Os{
     import 1cI.1iz;
     import tn.1iY;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
     import WZ.0Te;
     import 1qg.0io;
@@ -18,7 +18,7 @@ package 1Os{
         [Inject]
         public var skin:1iY;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var account:Account;
         [Inject]

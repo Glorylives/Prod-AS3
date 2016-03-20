@@ -6,7 +6,7 @@
 package 0D5{
     import 1cI.1iz;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import gx.1Nb;
     import WZ.0Te;
     import flash.utils.Timer;
@@ -20,7 +20,7 @@ package 0D5{
         [Inject]
         public var account:Account;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var 0j3:1Nb;
         [Inject]

@@ -11,8 +11,8 @@ package com.company.assembleegameclient.map{
 
         public var map_:Map;
         public var objectId_:int = -1;
-        private var 2-9:int = 0;
-        private var 1AN:int = 0;
+        private var _29:int = 0;
+        private var _1AN:int = 0;
 
         public function Quest(_arg1:Map){
             this.map_ = _arg1;
@@ -21,19 +21,19 @@ package com.company.assembleegameclient.map{
         public function setObject(_arg1:int):void{
             if ((((this.objectId_ == -1)) && (!((_arg1 == -1)))))
             {
-                this.2-9 = (getTimer() + 4000);
-                this.1AN = (this.2-9 + 2000);
+                this._29 = (getTimer() + 4000);
+                this._1AN = (this._29 + 2000);
             }
             this.objectId_ = _arg1;
         }
 
         public function completed():void{
-            this.2-9 = ((getTimer() + 15000) - (Math.random() * 10000));
-            this.1AN = (this.2-9 + 2000);
+            this._29 = ((getTimer() + 15000) - (Math.random() * 10000));
+            this._1AN = (this._29 + 2000);
         }
 
         public function getObject(_arg1:int):GameObject{
-            if (_arg1 < this.2-9)
+            if (_arg1 < this._29)
             {
                 return (null);
             }
@@ -41,7 +41,7 @@ package com.company.assembleegameclient.map{
         }
 
         public function isNew(_arg1:int):Boolean{
-            return ((_arg1 < this.1AN));
+            return ((_arg1 < this._1AN));
         }
 
 

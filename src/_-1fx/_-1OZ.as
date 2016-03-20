@@ -6,7 +6,7 @@
 package 1fx{
     import 1cI.1iz;
     import 0Fr.1da;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
     import 1Bg.uc;
     import 0Zf.OJ;
@@ -16,7 +16,7 @@ package 1fx{
         [Inject]
         public var u3:1da;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var account:Account;
         [Inject]

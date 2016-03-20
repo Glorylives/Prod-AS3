@@ -33,7 +33,7 @@ import flash.display.Sprite;
     import flash.events.MouseEvent;
     import flash.display.Graphics;
     import _04_._1JZ;
-    import _0BB.Fu;
+    import _0BB._Fu;
     public class TOSPopup extends Sprite {
 
         public static const LEFT_BUTTON:String = "dialogLeftButton";
@@ -193,7 +193,7 @@ import flash.display.Sprite;
         }
 
         protected function _0Bt(_arg1:MouseEvent):void{
-            var _local2:Fu = _1JZ._0JF().getInstance(Fu);
+            var _local2:_Fu = _1JZ._0JF().getInstance(_Fu);
             var _local3:Account = _1JZ._0JF().getInstance(Account);
             var _local4:Object = _local3._1Y();
             _local2.sendRequest("account/acceptTOS", _local4);

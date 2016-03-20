@@ -8,7 +8,7 @@ package 1IY{
     import rz.1Qt;
     import 1Hx.Mw;
     import 1f1.76;
-    import yA.oF;
+    import yA._oF;
     import yA.vZ;
     import yA.1MN;
     import yA.0d;
@@ -29,7 +29,7 @@ package 1IY{
 
 
         public function configure():void{
-            this.mediatorMap.map(oF).1TU(vZ);
+            this.mediatorMap.map(_oF).1TU(vZ);
             this.mediatorMap.map(1MN).1TU(0d);
             this.kf.map(08e).1nL();
             this.kf.map(1dw).1nL();

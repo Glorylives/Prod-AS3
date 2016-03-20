@@ -10,7 +10,7 @@ package 0sC{
     import 1qg.11S;
     import 1Bg.1AE;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import _04_._1JZ;
     import AO.du;
 
@@ -42,13 +42,13 @@ package 0sC{
         }
 
         private function 1c0():void{
-            var _local1:Fu;
+            var _local1:_Fu;
             var _local2:Object;
             if (((((this.0Ec()) && (this.1pD()))) && (this.YF())))
             {
                 this.view.0qp();
                 this.view.disable();
-                _local1 = _1JZ.0JF().getInstance(Fu);
+                _local1 = _1JZ.0JF().getInstance(_Fu);
                 _local2 = {}
                 _local2.password = this.view.password_.text();
                 this.newPassword = this.view.rr.text();

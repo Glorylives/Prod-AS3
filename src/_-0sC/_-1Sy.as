@@ -13,7 +13,7 @@ package 0sC{
     import 0eZ.0b8;
     import 1fx.1Zh;
     import _04_._1JZ;
-    import _0BB.Fu;
+    import _0BB._Fu;
 
     public class 1Sy extends 1Mf {
 
@@ -71,7 +71,7 @@ package 0sC{
         }
 
         private function 03a():void{
-            var _local1:Fu = _1JZ.0JF().getInstance(Fu);
+            var _local1:_Fu = _1JZ.0JF().getInstance(_Fu);
             _local1.complete.addOnce(this.onComplete);
             _local1.sendRequest("/account/sendVerifyEmail", this.account.1Y());
         }

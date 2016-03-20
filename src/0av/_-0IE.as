@@ -9,7 +9,7 @@ package 0av{
     import 1PV.aN;
     import qs.1T5;
     import 0Fr.1da;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 14V.*;
 
     public class 0IE extends 1iz implements 1Cc {
@@ -23,7 +23,7 @@ package 0av{
         [Inject]
         public var u3:1da;
         [Inject]
-        private var client:Fu;
+        private var client:_Fu;
 
 
         override protected function startTask():void{

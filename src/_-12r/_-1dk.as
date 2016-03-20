@@ -6,7 +6,7 @@
 package 12r{
     import 1cI.1iz;
     import com.company.assembleegameclient.appengine.SavedCharacter;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
     import 0OB.Ze;
 
@@ -15,7 +15,7 @@ package 12r{
         [Inject]
         public var character:SavedCharacter;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var account:Account;
         [Inject]

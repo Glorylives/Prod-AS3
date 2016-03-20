@@ -3,49 +3,46 @@
 
 //yA.0d
 
-package yA{
-    import 1uF.1Mf;
-    import 1qg.0io;
-    import 1qg.11S;
+package _yA{
+    import _1uF._1Mf;
+    import _1qg._0io;
+    import _1qg._11S;
     import _0OG._22M;
-    import 0xo.lZ;
-    import N.08e;
-    import N.1dw;
-    import 0xk.09v;
-    import OZ.08g;
-    import 1r4.1T2;
-    import 0gd.GTween;
-    import 0pT.1qk;
-    import flash.events.TimerEvent;
-    import 1zG.1lm;
+    import _0xo._lZ;
+    import _N._08e;
+    import _0gd.GTween;
+
+import _OZ._08g;
+
+import flash.events.TimerEvent;
+    import _1zG._1lm;
     import flash.events.MouseEvent;
-    import 1zG.1fI;
 
-    public class 0d extends 1Mf {
+    public class _0d extends _1Mf {
 
-        public static var 1E0:Number = -1;
+        public static var _1E0:Number = -1;
 
         [Inject]
-        public var container:1MN;
+        public var container:_1MN;
         [Inject]
-        public var 0n2:0io;
+        public var _0n2:_0io;
         [Inject]
-        public var closeDialogs:11S;
+        public var closeDialogs:_11S;
         [Inject]
         public var kf:_22M;
         [Inject]
-        public var 11u:lZ;
+        public var _11u:_lZ;
         [Inject]
-        public var Fn:08e;
+        public var Fn:_08e;
         [Inject]
-        public var 1HQ:1dw;
-        public var 0pM:int = -1;
-        public var 1w5:09v;
-        public var WB:08g;
-        public var 0iP:1T2;
+        public var _1HQ:_1dw;
+        public var _0pM:int = -1;
+        public var _1w5:_09v;
+        public var WB:_08g;
+        public var _0iP:_1T2;
         private var view:Ch;
         private var iH:Ch;
-        private var 1qG:Boolean = false;
+        private var _1qG:Boolean = false;
 
 
         override public function initialize():void{
@@ -56,7 +53,7 @@ package yA{
             var _local1:Number = 0.2;
             if (((!((this.view == null))) && (!((this.view.parent == null)))))
             {
-                this.93();
+                this._93();
                 this.iH = this.view;
                 this.resetVars();
                 new GTween(this.iH, 0.4, {alpha:0});
@@ -67,23 +64,23 @@ package yA{
             this.container.addChild(this.view);
             this.view.alpha = 0;
             new GTween(this.view, _local1, {alpha:1});
-            if (((((!((this.11u == null))) && (!((this.11u.ja == null))))) && (!((this.11u.ja.gsc_ == null)))))
+            if (((((!((this._11u == null))) && (!((this._11u.ja == null))))) && (!((this._11u.ja.gsc_ == null)))))
             {
-                this.0iP = this.11u.ja.gsc_;
-                this.0iP.questFetch();
+                this._0iP = this._11u.ja.gsc_;
+                this._0iP.questFetch();
                 this.view.Jl(true);
             } else
             {
                 this.D2();
                 return;
             }
-            this.Fn.add(this.1xm);
-            this.1HQ.add(this.CP);
+            this.Fn.add(this._1xm);
+            this._1HQ.add(this.CP);
             Ch.closed.add(this.D2);
         }
 
-        private function 1bY():void{
-            this.93();
+        private function _1bY():void{
+            this._93();
             this.initialize();
         }
 
@@ -96,11 +93,11 @@ package yA{
 
         private function D2():void{
             Ch.closed.removeAll();
-            this.93();
+            this._93();
             this.closeDialogs.dispatch();
         }
 
-        private function 2-k(_arg1:TimerEvent):void{
+        private function _2k(_arg1:TimerEvent):void{
             if (Math.random() < 0.5)
             {
                 this.view.init(1, 3205, "AAAAAAHHH we are in need _of this {goal} now. Help help help.", "http://i.imgur.com/ceobPxd.png");
@@ -110,66 +107,66 @@ package yA{
             }
         }
 
-        private function 1xm(_arg1:1lm):void{
-            this.0pM = int(_arg1.goal);
+        private function _1xm(_arg1:_1lm):void{
+            this._0pM = int(_arg1.goal);
             var _local2:int = _arg1.tier;
             if (_local2 > 0)
             {
-                this.view.init(int(_arg1.tier), this.0pM, _arg1.description, _arg1.image);
-                this.1Ag();
+                this.view.init(int(_arg1.tier), this._0pM, _arg1.description, _arg1.image);
+                this._1Ag();
             } else
             {
                 if (_local2 == -1)
                 {
                     if (((!((this.iH == null))) || (((!((1E0 == -1))) && ((1E0 == new Date().dayUTC))))))
                     {
-                        this.view.0EZ();
-                        1E0 = new Date().dayUTC;
+                        this.view._0EZ();
+                        _1E0 = new Date().dayUTC;
                     } else
                     {
                         this.D2();
                     }
                 } else
                 {
-                    this.view.0xR(_arg1.description);
+                    this.view._0xR(_arg1.description);
                 }
             }
         }
 
-        private function CP(_arg1:1fI):void{
+        private function CP(_arg1:_1fI):void{
             var _local2:Boolean = Boolean(_arg1.ok);
             var _local3:String = String(_arg1.message);
-            this.1qG = false;
+            this._1qG = false;
             if (this.WB != null)
             {
-                this.WB.addEventListener(MouseEvent.CLICK, this.2-5);
-                this.WB.1gl();
-                this.WB.1wG("OK");
-                this.WB.05w(0x545454);
+                this.WB.addEventListener(MouseEvent.CLICK, this._25);
+                this.WB._1gl();
+                this.WB._1wG("OK");
+                this.WB._05w(0x545454);
                 this.WB.draw();
-                this.1w5.11I();
+                this._1w5._11I();
                 this.view.Sb();
             }
         }
 
-        private function 1Ag():void{
-            this.1w5 = this.view.BN();
-            this.WB = this.view.1ew();
-            this.1w5.Ma.remove(this.0yV);
-            this.1w5.Ma.add(this.0yV);
-            this.1w5.1F3.remove(this.TZ);
-            this.1w5.1F3.add(this.TZ);
+        private function _1Ag():void{
+            this._1w5 = this.view.BN();
+            this.WB = this.view._1ew();
+            this._1w5.Ma.remove(this._0yV);
+            this._1w5.Ma.add(this._0yV);
+            this._1w5._1F3.remove(this.TZ);
+            this._1w5._1F3.add(this.TZ);
             this.WB.removeEventListener(MouseEvent.CLICK, this.ok);
-            this.WB.removeEventListener(MouseEvent.CLICK, this.2-5);
+            this.WB.removeEventListener(MouseEvent.CLICK, this._25);
         }
 
-        private function 93():void{
-            this.Fn.remove(this.1xm);
-            this.1HQ.remove(this.1xm);
-            if (this.1w5 != null)
+        private function _93():void{
+            this.Fn.remove(this._1xm);
+            this._1HQ.remove(this._1xm);
+            if (this._1w5 != null)
             {
-                this.1w5.Ma.remove(this.0yV);
-                this.1w5.1F3.remove(this.TZ);
+                this._1w5.Ma.remove(this._0yV);
+                this._1w5._1F3.remove(this.TZ);
             }
             if (this.WB != null)
             {
@@ -179,33 +176,33 @@ package yA{
         }
 
         private function resetVars():void{
-            this.0pM = -1;
-            this.1w5 = null;
+            this._0pM = -1;
+            this._1w5 = null;
             this.WB = null;
-            this.0pM = -1;
-            this.1w5 = null;
+            this._0pM = -1;
+            this._1w5 = null;
             this.WB = null;
-            this.0iP = null;
+            this._0iP = null;
         }
 
         override public function destroy():void{
-            this.93();
+            this._93();
         }
 
-        private function 0yV(_arg1:int):void{
-            if (((!((this.1w5 == null))) && (!(this.1qG))))
+        private function _0yV(_arg1:int):void{
+            if (((!((this._1w5 == null))) && (!(this._1qG))))
             {
-                if (_arg1 == this.0pM)
+                if (_arg1 == this._0pM)
                 {
                     this.WB.addEventListener(MouseEvent.CLICK, this.ok);
-                    this.1w5.0LZ(false);
-                    this.1w5.1Qj = false;
-                    this.1w5.updateTitle();
+                    this._1w5._0LZ(false);
+                    this._1w5._1Qj = false;
+                    this._1w5.updateTitle();
                 } else
                 {
-                    this.1w5.0Ve();
-                    this.1w5.1T0();
-                    this.1w5.0LZ(true);
+                    this._1w5._0Ve();
+                    this._1w5._1T0();
+                    this._1w5._0LZ(true);
                 }
             }
         }
@@ -214,19 +211,19 @@ package yA{
         }
 
         private function ok(_arg1:MouseEvent):void{
-            if (this.0iP != null)
+            if (this._0iP != null)
             {
                 this.WB.removeEventListener(MouseEvent.CLICK, this.ok);
-                this.WB.1wG("Tinkering");
-                this.WB.05w(0x545454);
+                this.WB._1wG("Tinkering");
+                this.WB._05w(0x545454);
                 this.WB.draw();
-                this.1qG = true;
-                this.0iP.questRedeem(this.1w5.objectId, this.1w5.w, this.1w5.itemId);
+                this._1qG = true;
+                this._0iP.questRedeem(this._1w5.objectId, this._1w5.w, this._1w5.itemId);
                 this.view.ok();
             }
         }
 
-        private function 2-5(_arg1:MouseEvent):void{
+        private function _25(_arg1:MouseEvent):void{
             this.initialize();
         }
 

@@ -7,7 +7,7 @@ package 0GQ{
     import 1cI.1iz;
     import aq.Account;
     import qs.1T5;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 14V.*;
 
     public class 0cB extends 1iz implements 27Q {
@@ -17,7 +17,7 @@ package 0GQ{
         [Inject]
         public var data:1T5;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
 
 
         override protected function startTask():void{

@@ -3,17 +3,17 @@
 
 //1zG.1lm
 
-package 1zG{
+package _1zG{
     import flash.utils.IDataInput;
 
-    public class 1lm extends 11g {
+    public class _1lm extends _11g {
 
         public var tier:int;
         public var goal:String;
         public var description:String;
         public var image:String;
 
-        public function 1lm(_arg1:uint, _arg2:Function){
+        public function _1lm(_arg1:uint, _arg2:Function){
             super(_arg1, _arg2);
         }
 

@@ -7,7 +7,7 @@ package 14V{
     import 1cI.1iz;
     import aq.Account;
     import WZ.0Te;
-    import _0BB.Fu;
+    import _0BB._Fu;
 
     public class 1xn extends 1iz {
 
@@ -16,7 +16,7 @@ package 14V{
         [Inject]
         public var SP:0Te;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
 
 
         override protected function startTask():void{

@@ -5,13 +5,13 @@
 
 package 0Kp{
     import 1cI.1iz;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import aq.Account;
 
     public class 0GW extends 1iz {
 
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var account:Account;
         public var 1Oi:String;

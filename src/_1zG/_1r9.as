@@ -3,15 +3,15 @@
 
 //1zG.1r9
 
-package 1zG{
+package _1zG{
     import flash.utils.IDataInput;
 
-    public class 1r9 extends 11g {
+    public class _1r9 extends _11g {
 
         public var success_:Boolean;
         public var errorText_:String;
 
-        public function 1r9(_arg1:uint, _arg2:Function){
+        public function _1r9(_arg1:uint, _arg2:Function){
             super(_arg1, _arg2);
         }
 

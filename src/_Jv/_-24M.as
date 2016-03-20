@@ -5,7 +5,7 @@
 
 package Jv{
     import 1cI.1iz;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 1qg.0io;
     import tn.0ec;
     import kabam.rotmg.assets.model.0Ug;
@@ -19,7 +19,7 @@ package Jv{
     public class 24M extends 1iz {
 
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var 0n2:0io;
         [Inject]

@@ -8,7 +8,7 @@ package 0GQ{
     import qs.1T5;
     import aq.Account;
     import WZ.0Te;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import 14V.*;
 
     public class rG extends 1iz implements 1Cc {
@@ -20,7 +20,7 @@ package 0GQ{
         [Inject]
         public var model:0Te;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
 
 
         override protected function startTask():void{

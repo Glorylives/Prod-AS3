@@ -5,7 +5,7 @@
 
 package 0Qa{
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import qG.0bJ;
     import flash.events.ErrorEvent;
     import com.company.util.080;
@@ -15,7 +15,7 @@ package 0Qa{
         [Inject]
         public var account:Account;
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var setup:0bJ;
         [Inject]

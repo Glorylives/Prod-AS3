@@ -3,12 +3,12 @@
 
 //F7.0BP
 
-package F7{
+package _F7{
     import flash.events.Event;
     import flash.display.BitmapData;
     import com.company.assembleegameclient.objects.Player;
 
-    public class 0BP extends Event {
+    public class _0BP extends Event {
 
         public static const DEATH:String = "DEATH";
 
@@ -17,7 +17,7 @@ package F7{
         public var accountId_:int;
         public var charId_:int;
 
-        public function 0BP(_arg1:BitmapData, _arg2:int, _arg3:int){
+        public function _0BP(_arg1:BitmapData, _arg2:int, _arg3:int){
             super(DEATH);
             this.background_ = _arg1;
             this.accountId_ = _arg2;

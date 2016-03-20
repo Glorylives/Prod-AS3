@@ -4,15 +4,15 @@
 //com.company.assembleegameclient.objects.ReskinVendor
 
 package com.company.assembleegameclient.objects{
-    import 23a.ReskinPanel;
+    import _23a.ReskinPanel;
     import com.company.assembleegameclient.game.GameSprite;
     import _ZE.Panel;
 
-    public class ReskinVendor extends GameObject implements 18p {
+    public class ReskinVendor extends GameObject implements _18p {
 
         public function ReskinVendor(_arg1:XML){
             super(_arg1);
-            10J = true;
+            _10J = true;
         }
 
         public function getPanel(_arg1:GameSprite):Panel{

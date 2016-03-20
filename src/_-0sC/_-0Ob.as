@@ -10,7 +10,7 @@ package 0sC{
     import 1qg.11S;
     import 1Bg.1AE;
     import aq.Account;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import _04_._1JZ;
     import AO.du;
     import qs.1T5;
@@ -46,12 +46,12 @@ package 0sC{
         }
 
         private function 1Mi(_arg1:1T5):void{
-            var _local2:Fu;
+            var _local2:_Fu;
             this.view.email.0qp();
             this.view.disable();
             if (this.account.getUserId().toLowerCase() == _arg1.username.toLowerCase())
             {
-                _local2 = _1JZ.0JF().getInstance(Fu);
+                _local2 = _1JZ.0JF().getInstance(_Fu);
                 _local2.sendRequest("/account/verify", {
                     guid:_arg1.username,
                     password:_arg1.password,

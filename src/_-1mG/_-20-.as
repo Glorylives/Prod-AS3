@@ -5,7 +5,7 @@
 
 package 1mG{
     import 1cI.1iz;
-    import _0BB.Fu;
+    import _0BB._Fu;
     import WZ.0Te;
     import 8u.56;
     import 8u.18i;
@@ -16,7 +16,7 @@ package 1mG{
     public class 20- extends 1iz {
 
         [Inject]
-        public var client:Fu;
+        public var client:_Fu;
         [Inject]
         public var player:0Te;
         [Inject]
