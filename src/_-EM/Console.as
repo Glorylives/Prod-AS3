@@ -25,7 +25,7 @@ package EM{
     import 2-g.0kO;
     import flash.display.DisplayObjectContainer;
     import flash.utils.getTimer;
-    import gh.Dq;
+    import gh._Dq;
 
     public class Console extends Sprite {
 

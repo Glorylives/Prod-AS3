@@ -29,7 +29,7 @@ package sC{
     import 0Px.0J9;
     import com.company.assembleegameclient.objects.OneWayContainer;
     import com.company.assembleegameclient.objects.Container;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.objects.ObjectLibrary;
     import 0DE.k;
     import h0.1cg;

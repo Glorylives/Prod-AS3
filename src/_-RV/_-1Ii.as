@@ -5,7 +5,7 @@
 
 package RV{
     import flash.display.DisplayObject;
-    import __AS3__.vec.Vector;
+
     import 0q4.*;
 
     public class 1Ii implements Layout {

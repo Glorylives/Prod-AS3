@@ -4,8 +4,8 @@
 //1aj.14n
 
 package 1aj{
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
 
     public class 14n {
 

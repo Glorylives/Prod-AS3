@@ -5,7 +5,7 @@
 
 package 1oP{
     import kabam.rotmg.assets.services.0Vx;
-    import __AS3__.vec.Vector;
+
     import tn.1iY;
     import flash.display.DisplayObject;
     import tn.0a0;
@@ -14,7 +14,7 @@ package 1oP{
     import com.company.assembleegameclient.util.Currency;
     import flash.display.BitmapData;
     import flash.display.Bitmap;
-    import __AS3__.vec.*;
+
 
     public class 1H {
 

@@ -5,10 +5,10 @@
 
 package yo{
     import g0.1tk;
-    import __AS3__.vec.Vector;
+
     import g0.wb;
     import flash.utils.IDataOutput;
-    import __AS3__.vec.*;
+
 
     public class 0GI extends 0j1 {
 

@@ -5,11 +5,11 @@
 
 package _1aA{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import 0y3.Server;
     import flash.events.MouseEvent;
     import com.company.assembleegameclient.parameters.Parameters;
-    import __AS3__.vec.*;
+
 
     public class 086 extends Sprite {
 

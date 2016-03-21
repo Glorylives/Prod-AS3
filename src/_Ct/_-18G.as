@@ -12,7 +12,7 @@ package Ct{
     import AO.du;
     import 0uE.PetFeeder;
     import 0uE.KC;
-    import __AS3__.vec.Vector;
+
     import 0uE.PetAbilityMeter;
     import com.company.assembleegameclient.ui.1-p;
     import _Jy._1HZ;
@@ -23,7 +23,7 @@ package Ct{
     import 5z.0tK;
     import 5z.25U;
     import 1PB.cO;
-    import __AS3__.vec.*;
+
 
     public class 18G extends 23L {
 

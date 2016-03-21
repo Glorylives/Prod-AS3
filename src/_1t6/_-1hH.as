@@ -5,7 +5,7 @@
 
 package 1t6{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import flash.display.Shape;
@@ -27,7 +27,7 @@ package 1t6{
     import com.company.googleanalytics.GA;
     import flash.display.Graphics;
     import flash.events.Event;
-    import __AS3__.vec.*;
+
 
     public class 1hH extends Sprite {
 

@@ -8,7 +8,7 @@ package 1RB{
     import _Jy._1HZ;
     import 8u.Timespan;
     import 8u.1QY;
-    import __AS3__.vec.Vector;
+
     import _CU._13j;
     import _1aA.Lz;
     import com.company.assembleegameclient.ui.0DJ;
@@ -22,7 +22,7 @@ package 1RB{
     import com.company.rotmg.graphics.ScreenGraphic;
     import flash.events.MouseEvent;
     import flash.events.Event;
-    import __AS3__.vec.*;
+
 
     public class aU extends Sprite {
 

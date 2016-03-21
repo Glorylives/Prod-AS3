@@ -9,9 +9,9 @@ package com.company.assembleegameclient.map{
     import flash.display.GradientType;
     import com.company.util._tu;
     import flash.display.GraphicsPath;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
-    import __AS3__.vec.*;
+
 
     public class Js extends Shape {
 

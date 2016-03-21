@@ -5,8 +5,8 @@
 
 package 1nd{
     import _Jy._1HZ;
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
     import 1nd.*;
 
     final class 9O {

@@ -4,7 +4,7 @@
 //0lB.P4
 
 package 0lB{
-    import __AS3__.vec.Vector;
+
 
     public class P4 {
 

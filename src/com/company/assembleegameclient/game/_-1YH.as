@@ -4,9 +4,9 @@
 //com.company.assembleegameclient.game.1YH
 
 package com.company.assembleegameclient.game{
-    import __AS3__.vec.Vector;
+
     import g0.wb;
-    import __AS3__.vec.*;
+
 
     public class 1YH {
 

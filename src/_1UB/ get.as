@@ -3,7 +3,7 @@
 
 //1UB. get
 
-package 1UB{
+package _1UB{
     import 1uF.1Mf;
     import _0OG._22M;
     import 1qg.11S;
@@ -19,16 +19,16 @@ package 1UB{
         [Inject]
         public var view:ArenaLeaderboard;
         [Inject]
-        public var closeDialogs:11S;
+        public var closeDialogs:_11S;
         [Inject]
-        public var RM:1M6;
+        public var RM:_1M6;
         [Inject]
-        public var 1RS:0In;
+        public var _1RS:_0In;
 
 
         override public function initialize():void{
             this.RM.add(this.N7);
-            this.view.0vk.add(this.eM);
+            this.view._0vk.add(this.eM);
             this.view.close.add(this.D2);
             this.view.init();
         }

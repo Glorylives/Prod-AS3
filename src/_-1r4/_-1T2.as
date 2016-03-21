@@ -10,7 +10,7 @@ package 1r4{
     import flash.utils.ByteArray;
     import 1E8.Rc;
     import com.company.assembleegameclient.objects.GameObject;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.objects.Projectile;
     import com.company.assembleegameclient.objects.Player;
 

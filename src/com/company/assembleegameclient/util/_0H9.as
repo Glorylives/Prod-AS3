@@ -4,7 +4,7 @@
 //com.company.assembleegameclient.util.0H9
 
 package com.company.assembleegameclient.util{
-import com.company.util.J2;
+import com.company.util._J2;
 
 import flash.display.BitmapData;
 
@@ -18,12 +18,12 @@ public class _0H9 {
         }
 
         public function addFromBitmapData(_arg1:BitmapData, _arg2:BitmapData, _arg3:int, _arg4:int):void{
-            var _local5:J2 = new J2();
+            var _local5:_J2 = new _J2();
             _local5.addFromBitmapData(_arg1, _arg3, _arg4);
-            var _local6:J2;
+            var _local6:_J2;
             if (_arg2 != null)
             {
-                _local6 = new J2();
+                _local6 = new _J2();
                 _local6.addFromBitmapData(_arg2, _arg3, _arg4);
             }
             var _local7:int;

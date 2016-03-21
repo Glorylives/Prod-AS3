@@ -5,7 +5,7 @@
 
 package 0q4{
     import flash.display.DisplayObject;
-    import __AS3__.vec.Vector;
+
 
     public interface gc {
 

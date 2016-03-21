@@ -7,10 +7,10 @@ package 0sk{
     import 1wn.1t;
     import 1wn.1DZ;
     import aq.Account;
-    import __AS3__.vec.Vector;
+
     import 1mO.x5;
     import com.company.assembleegameclient.parameters.Parameters;
-    import __AS3__.vec.*;
+
 
     public class 26Z {
 

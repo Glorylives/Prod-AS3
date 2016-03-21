@@ -5,7 +5,7 @@
 
 package Wc{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import com.company.ui._eG;
@@ -23,7 +23,7 @@ package Wc{
     import flash.events.Event;
     import AO.du;
     import flash.events.MouseEvent;
-    import __AS3__.vec.*;
+
     import Wc.*;
 
     class fd extends Sprite {

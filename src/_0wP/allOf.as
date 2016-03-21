@@ -3,16 +3,16 @@
 
 //0wp.allOf
 
-package 0wp{
-    import 1i-.1o;
+package _0wP{
+    import _1i._1o;
 
-    public function allOf(... _args):1o{
+    public function allOf(... _args):_1o{
         var _local2:Array = _args;
         if ((((_args.length == 1)) && ((_args[0] is Array))))
         {
             _local2 = _args[0];
         }
-        return (new 0Zw(_local2));
+        return (new _0Zw(_local2));
     }
 
 }//package 0wp

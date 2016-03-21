@@ -10,7 +10,7 @@ package com.company.assembleegameclient.ui{
     import AO.du;
     import flash.events.MouseEvent;
     import 1zG.ff;
-    import __AS3__.vec.Vector;
+
 
     public class 1Hs extends Sprite {
 

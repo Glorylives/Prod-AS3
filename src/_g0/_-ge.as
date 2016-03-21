@@ -4,11 +4,11 @@
 //g0.ge
 
 package g0{
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.util.0Ep;
     import flash.utils.IDataInput;
     import flash.utils.IDataOutput;
-    import __AS3__.vec.*;
+
 
     public class ge {
 

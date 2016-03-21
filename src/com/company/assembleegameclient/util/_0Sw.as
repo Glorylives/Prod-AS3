@@ -6,7 +6,7 @@
 package com.company.assembleegameclient.util{
     import flash.geom.Rectangle;
     import flash.geom.Point;
-    import com.company.util.J2;
+    import com.company.util._J2;
     import flash.utils.ByteArray;
     import flash.display.BitmapData;
     import com.company.assembleegameclient.parameters.Parameters;
@@ -34,7 +34,7 @@ package com.company.assembleegameclient.util{
         private static const _0zT:int = 3;
         private static const INNERP1:int = 4;
         private static const INNERP2:int = 5;
-        private static const MV:Vector.<Vector.<J2>> = _127();
+        private static const MV:Vector.<Vector.<_J2>> = _127();
         private static const RECT01:Rectangle = new Rectangle(0, 0, 8, 4);
         private static const RECT13:Rectangle = new Rectangle(4, 0, 4, 8);
         private static const RECT23:Rectangle = new Rectangle(0, 4, 8, 4);
@@ -165,7 +165,7 @@ package com.company.assembleegameclient.util{
             return (_local5);
         }
 
-        private static function _1tK(_arg1:BitmapData, _arg2:Rectangle, _arg3:Point, _arg4:Vector.<J2>, _arg5:uint, _arg6:uint, _arg7:uint, _arg8:uint):void{
+        private static function _1tK(_arg1:BitmapData, _arg2:Rectangle, _arg3:Point, _arg4:Vector.<_J2>, _arg5:uint, _arg6:uint, _arg7:uint, _arg8:uint):void{
             var _local9:BitmapData;
             var _local10:BitmapData;
             if ((((_arg5 == _arg6)) && ((_arg5 == _arg8))))
@@ -233,23 +233,23 @@ package com.company.assembleegameclient.util{
             return (_local2);
         }
 
-        private static function _127():Vector.<Vector.<J2>>{
-            var _local1:Vector.<Vector.<J2>> = new Vector.<Vector.<J2>>();
+        private static function _127():Vector.<Vector.<_J2>>{
+            var _local1:Vector.<Vector.<_J2>> = new Vector.<Vector.<_J2>>();
             _1vG(_local1, AssetLibrary._0wJ("inner_mask"), AssetLibrary._0wJ("sides_mask"), AssetLibrary._0wJ("outer_mask"), AssetLibrary._0wJ("innerP1_mask"), AssetLibrary._0wJ("innerP2_mask"));
             return (_local1);
         }
 
-        private static function _1vG(_arg1:Vector.<Vector.<J2>>, _arg2:J2, _arg3:J2, _arg4:J2, _arg5:J2, _arg6:J2):void{
+        private static function _1vG(_arg1:Vector.<Vector.<_J2>>, _arg2:_J2, _arg3:_J2, _arg4:_J2, _arg5:_J2, _arg6:_J2):void{
             var _local7:int;
             for each (_local7 in [-1, 0, 2, 1])
             {
-                _arg1.push(new <J2>[_1V8(_arg2, _local7), _1V8(_arg3, (_local7 - 1)), _1V8(_arg3, _local7), _1V8(_arg4, _local7), _1V8(_arg5, _local7), _1V8(_arg6, _local7)]);
+                _arg1.push(new <_J2>[_1V8(_arg2, _local7), _1V8(_arg3, (_local7 - 1)), _1V8(_arg3, _local7), _1V8(_arg4, _local7), _1V8(_arg5, _local7), _1V8(_arg6, _local7)]);
             }
         }
 
-        private static function _1V8(_arg1:J2, _arg2:int):J2{
+        private static function _1V8(_arg1:_J2, _arg2:int):_J2{
             var _local4:BitmapData;
-            var _local3:J2 = new J2();
+            var _local3:_J2 = new _J2();
             for each (_local4 in _arg1._7D)
             {
                 _local3.add(BitmapUtil._0E6(_local4, _arg2));

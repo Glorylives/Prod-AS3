@@ -7,7 +7,7 @@ package 0xk{
     import 0Z-.0YK;
     import flash.text.TextField;
     import OZ.08g;
-    import __AS3__.vec.Vector;
+
     import flash.display.Shape;
     import flash.display.Bitmap;
     import flash.display.Sprite;
@@ -21,7 +21,7 @@ package 0xk{
     import _04_._1JZ;
     import flash.geom.ColorTransform;
     import flash.utils.getTimer;
-    import __AS3__.vec.*;
+
 
     public class 09v extends 0YK {
 

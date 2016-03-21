@@ -6,14 +6,14 @@
 package 0pT{
     import flash.display.Sprite;
     import flash.display.Bitmap;
-    import __AS3__.vec.Vector;
+
     import flash.display.BitmapData;
     import com.company.util.AssetLibrary;
     import com.company.assembleegameclient.util.TextureRedrawer;
     import flash.filters.ColorMatrixFilter;
     import com.company.util.MoreColorUtil;
     import flash.events.Event;
-    import __AS3__.vec.*;
+
 
     public class 0Jh extends Sprite {
 

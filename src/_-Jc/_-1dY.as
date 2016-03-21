@@ -6,8 +6,8 @@
 package Jc{
     import 0y3.Server;
     import com.company.assembleegameclient.parameters.Parameters;
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
     import 0y3.*;
 
     public class 1dY implements 0gx {

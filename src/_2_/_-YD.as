@@ -7,9 +7,9 @@ package 2--{
     import flash.display.Sprite;
     import OZ.1v8;
     import 0q4.Size;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
-    import __AS3__.vec.*;
+
 
     public class YD extends Sprite {
 

@@ -6,9 +6,9 @@
 package 1PB{
     import flash.display.Sprite;
     import mx.core.BitmapAsset;
-    import __AS3__.vec.Vector;
+
     import 0xo.1hX;
-    import __AS3__.vec.*;
+
 
     public class xh extends Sprite {
 

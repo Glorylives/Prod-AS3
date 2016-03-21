@@ -6,7 +6,7 @@
 package 1Cr{
     import flash.display.Sprite;
     import _Jy._1HZ;
-    import __AS3__.vec.Vector;
+
     import eC.1u2;
     import flash.events.MouseEvent;
     import com.company.ui._eG;
@@ -17,7 +17,7 @@ package 1Cr{
     import flash.display.GraphicsPath;
     import flash.display.IGraphicsData;
     import com.company.util._tu;
-    import __AS3__.vec.*;
+
 
     public class 1pi extends Sprite {
 

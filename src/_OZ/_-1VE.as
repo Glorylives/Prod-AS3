@@ -15,9 +15,9 @@ package OZ{
     import flash.display.GraphicsPath;
     import com.company.util._tu;
     import flash.display.IGraphicsData;
-    import __AS3__.vec.Vector;
+
     import flash.display.Graphics;
-    import __AS3__.vec.*;
+
 
     public class 1VE extends Sprite {
 

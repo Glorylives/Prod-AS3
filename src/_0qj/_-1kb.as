@@ -4,14 +4,14 @@
 //0qj.1kb
 
 package 0qj{
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.objects.Player;
     import com.company.assembleegameclient.ui.0S7;
     import _CU._13j;
     import 1n4.1cA;
     import AO.du;
     import flash.filters.DropShadowFilter;
-    import __AS3__.vec.*;
+
 
     public class 1kb extends 1ae {
 

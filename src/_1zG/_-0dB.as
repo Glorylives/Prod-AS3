@@ -4,9 +4,9 @@
 //1zG.0dB
 
 package 1zG{
-    import __AS3__.vec.Vector;
+
     import flash.utils.IDataInput;
-    import __AS3__.vec.*;
+
 
     public class 0dB extends 11g {
 

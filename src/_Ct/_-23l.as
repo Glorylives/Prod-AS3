@@ -10,11 +10,11 @@ package Ct{
     import 21k.0LB;
     import 5z.zL;
     import 2--.PetPicker;
-    import __AS3__.vec.Vector;
+
     import 5z.0tK;
     import 5z.0cu;
     import 5z.1Vb;
-    import __AS3__.vec.*;
+
 
     public class 23l extends 1Mf {
 

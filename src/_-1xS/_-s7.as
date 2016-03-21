@@ -5,7 +5,7 @@
 
 package 1xS{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import com.company.ui._eG;
     import flash.events.MouseEvent;
     import flash.events.Event;

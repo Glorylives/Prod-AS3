@@ -11,7 +11,7 @@ package OZ{
     import com.company.util.MoreColorUtil;
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsPath;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import 1PB.cO;
@@ -21,7 +21,7 @@ package OZ{
     import flash.display.Bitmap;
     import com.company.assembleegameclient.util.Currency;
     import 1n4.1Jo;
-    import __AS3__.vec.*;
+
 
     public class 0DR extends Sprite {
 

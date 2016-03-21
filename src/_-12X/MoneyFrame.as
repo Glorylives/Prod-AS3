@@ -16,12 +16,12 @@ package 12X{
     import com.company.assembleegameclient.ui.1im;
     import com.company.assembleegameclient.util.offer.Offer;
     import flash.events.MouseEvent;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.parameters.Parameters;
     import com.company.assembleegameclient.util.99;
     import flash.display.Shape;
     import flash.text.TextFieldAutoSize;
-    import __AS3__.vec.*;
+
 
     public class MoneyFrame extends Sprite {
 

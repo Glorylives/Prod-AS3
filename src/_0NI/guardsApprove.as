@@ -3,7 +3,7 @@
 
 //0NI.guardsApprove
 
-package 0NI{
+package _0NI{
     import _0OG._22M;
 
     public function guardsApprove(_arg1:Array, _arg2:_22M=null):Boolean{

@@ -4,14 +4,14 @@
 //1Gb.1aM
 
 package _1Gb{
-    import b4.f1;
+    import b4._f1;
     import _Jy._1HZ;
 
     public class _1aM {
 
         public static var _0ui:Boolean = false;
 
-        private var fortune:f1;
+        private var fortune:_f1;
         private var initialized:Boolean = false;
         private var _07O:Boolean = false;
         public var _0P2:_1HZ;
@@ -21,11 +21,11 @@ package _1Gb{
             super();
         }
 
-        public function getFortune():f1{
+        public function getFortune():_f1{
             return (this.fortune);
         }
 
-        public function _1Po(_arg1:f1):void{
+        public function _1Po(_arg1:_f1):void{
             this.fortune = _arg1;
             this.initialized = true;
             _0ui = true;

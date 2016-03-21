@@ -9,9 +9,9 @@ package 0uE{
     import _Jy._1HZ;
     import RV.1Ii;
     import flash.display.DisplayObject;
-    import __AS3__.vec.Vector;
+
     import flash.events.MouseEvent;
-    import __AS3__.vec.*;
+
 
     public class 0t8 extends each  {
 

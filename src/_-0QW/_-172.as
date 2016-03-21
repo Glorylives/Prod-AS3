@@ -4,8 +4,8 @@
 //0QW.172
 
 package 0QW{
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
 
     public class 172 {
 

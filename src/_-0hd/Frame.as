@@ -5,7 +5,7 @@
 
 package 0hd{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import _CU._13j;
@@ -23,7 +23,7 @@ package 0hd{
     import 0sC.1xl;
     import flash.display.DisplayObject;
     import com.company.googleanalytics.GA;
-    import __AS3__.vec.*;
+
 
     public class Frame extends Sprite {
 

@@ -7,7 +7,7 @@ package com.company.assembleegameclient.ui{
     import flash.display.Sprite;
     import flash.display.Shape;
     import _CU.sb;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import flash.utils.getTimer;
     import flash.text.TextFieldAutoSize;
@@ -22,7 +22,7 @@ package com.company.assembleegameclient.ui{
     import flash.display.LineScaleMode;
     import flash.display.CapsStyle;
     import flash.display.JointStyle;
-    import __AS3__.vec.*;
+
 
     public class 0yR extends 1Ri {
 

@@ -5,11 +5,11 @@
 
 package 2H{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import 1PB.cO;
     import flash.events.Event;
     import flash.events.MouseEvent;
-    import __AS3__.vec.*;
+
 
     public class y extends Sprite {
 

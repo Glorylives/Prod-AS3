@@ -5,14 +5,14 @@
 
 package 0uE{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsPath;
     import flash.display.GraphicsPathWinding;
     import flash.geom.ColorTransform;
-    import __AS3__.vec.*;
+
 
     public class 1w6 extends Sprite {
 

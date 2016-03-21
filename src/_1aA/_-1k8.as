@@ -7,7 +7,7 @@ package _1aA{
     import flash.display.Sprite;
     import flash.geom.Rectangle;
     import flash.display.Shape;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.ui.0DJ;
     import flash.events.Event;
     import AO.du;
@@ -17,7 +17,7 @@ package _1aA{
     import flash.display.Bitmap;
     import flash.utils.getTimer;
     import flash.display.DisplayObject;
-    import __AS3__.vec.*;
+
 
     public class 1k8 extends Sprite {
 

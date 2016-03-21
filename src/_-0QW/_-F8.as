@@ -5,7 +5,7 @@
 
 package 0QW{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import 0QW.0VH;
@@ -19,7 +19,7 @@ package 0QW{
     import flash.display.JointStyle;
     import flash.events.Event;
     import flash.events.MouseEvent;
-    import __AS3__.vec.*;
+
     import 0QW.*;
 
     class F8 extends Sprite {

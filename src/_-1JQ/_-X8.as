@@ -10,7 +10,7 @@ package 1JQ{
     import rz.lo;
     import rK.0HA;
     import 114.250;
-    import rK.jr;
+    import rK._jr;
     import flash.display.DisplayObject;
     import rz.*;
     import tB.*;
@@ -33,7 +33,7 @@ package 1JQ{
         }
 
         public function map(_arg1:Class):250{
-            var _local2:0HA = new jr().allOf(_arg1);
+            var _local2:0HA = new _jr().allOf(_arg1);
             return (this.0zg(_local2));
         }
 
@@ -42,7 +42,7 @@ package 1JQ{
         }
 
         public function sJ(_arg1:Class):0ME{
-            var _local2:0HA = new jr().allOf(_arg1);
+            var _local2:0HA = new _jr().allOf(_arg1);
             return (this.1w3(_local2));
         }
 

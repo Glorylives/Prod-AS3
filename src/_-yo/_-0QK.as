@@ -4,9 +4,9 @@
 //yo.0QK
 
 package yo{
-    import __AS3__.vec.Vector;
+
     import flash.utils.IDataOutput;
-    import __AS3__.vec.*;
+
 
     public class 0QK extends 0j1 {
 

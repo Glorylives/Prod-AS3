@@ -5,7 +5,7 @@
 
 package 0QW{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import com.company.util.IntPoint;
     import flash.display.Shape;
     import flash.display.Graphics;

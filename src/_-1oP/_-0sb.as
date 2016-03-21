@@ -6,7 +6,7 @@
 package 1oP{
     import flash.display.Sprite;
     import OZ.1v8;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
     import 0q4.Size;
 

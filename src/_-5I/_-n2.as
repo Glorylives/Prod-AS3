@@ -4,8 +4,8 @@
 //5I.n2
 
 package 5I{
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
 
     public class n2 {
 

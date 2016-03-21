@@ -7,13 +7,13 @@ package 1r4{
     import flash.display.Sprite;
     import 1n4.1cA;
     import _CU._13j;
-    import __AS3__.vec.Vector;
+
     import flash.text.TextFieldAutoSize;
     import flash.filters.DropShadowFilter;
     import flash.events.Event;
     import flash.utils.getTimer;
     import AO.du;
-    import __AS3__.vec.*;
+
 
     public class JitterWatcher extends Sprite {
 

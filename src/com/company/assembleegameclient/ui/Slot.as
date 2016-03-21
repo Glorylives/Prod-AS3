@@ -11,7 +11,7 @@ package com.company.assembleegameclient.ui{
     import flash.display.Bitmap;
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsPath;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import flash.geom.Point;
@@ -20,7 +20,7 @@ package com.company.assembleegameclient.ui{
     import com.company.util.AssetLibrary;
     import _04_._1JZ;
     import 1n4.1WS;
-    import __AS3__.vec.*;
+
 
     public class Slot extends Sprite {
 

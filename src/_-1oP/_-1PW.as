@@ -6,7 +6,7 @@
 package 1oP{
     import 1uF.1Mf;
     import tn.0ec;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
     import tn.0dE;
 

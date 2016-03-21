@@ -5,11 +5,11 @@
 
 package 06I{
     import flash.events.EventDispatcher;
-    import __AS3__.vec.Vector;
+
     import flash.utils.Dictionary;
     import flash.display.DisplayObjectContainer;
     import flash.display.DisplayObject;
-    import __AS3__.vec.*;
+
 
     public class Dc extends EventDispatcher {
 

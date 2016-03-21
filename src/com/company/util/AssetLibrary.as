@@ -26,7 +26,7 @@ package com.company.util{
 
         public function _1Rx5(_arg1:String, _arg2:BitmapData, _arg3:int, _arg4:int):void{
             _7D[_arg1] = _arg2;
-            var _local5:J2 = new J2();
+            var _local5:_J2 = new _J2();
             _local5.addFromBitmapData(_arg2, _arg3, _arg4);
             _13D[_arg1] = _local5;
             var _local6:int;
@@ -38,10 +38,10 @@ package com.company.util{
         }
 
         public static function _01H(_arg1:String, _arg2:BitmapData):void{
-            var _local3:J2 = _13D[_arg1];
+            var _local3:_J2 = _13D[_arg1];
             if (_local3 == null)
             {
-                _local3 = new J2();
+                _local3 = new _J2();
                 _13D[_arg1] = _local3;
             }
             _local3.add(_arg2);
@@ -66,12 +66,12 @@ package com.company.util{
             return (_7D[_arg1]);
         }
 
-        public static function _0wJ(_arg1:String):J2{
+        public static function _0wJ(_arg1:String):_J2{
             return (_13D[_arg1]);
         }
 
         public static function _1JR(_arg1:String, _arg2:int):BitmapData{
-            var _local3:J2 = _13D[_arg1];
+            var _local3:_J2 = _13D[_arg1];
             return (_local3._7D[_arg2]);
         }
 

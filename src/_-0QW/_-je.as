@@ -5,7 +5,7 @@
 
 package 0QW{
     import flash.events.Event;
-    import __AS3__.vec.Vector;
+
     import com.company.util.IntPoint;
 
     class je extends Event {

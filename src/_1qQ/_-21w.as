@@ -6,8 +6,8 @@
 package 1qQ{
     import flash.net.SharedObject;
     import flash.utils.Dictionary;
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
 
     public class 21w implements 0Uh {
 

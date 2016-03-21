@@ -4,17 +4,17 @@
 //_ZE.GuildBoardPanel
 
 package _ZE{
-    import AO.du;
+    import _AO._du;
     import com.company.assembleegameclient.game.GameSprite;
     import com.company.assembleegameclient.objects.Player;
     import Wc.uZ;
     import com.company.assembleegameclient.util.GuildUtil;
     import flash.events.MouseEvent;
 
-    public class GuildBoardPanel extends 1jX {
+    public class GuildBoardPanel extends _1jX {
 
         public function GuildBoardPanel(_arg1:GameSprite){
-            super(_arg1, du.vI, du.1vP);
+            super(_arg1, _du._vI, _du._1vP);
         }
 
         override protected function onButtonClick(_arg1:MouseEvent):void{

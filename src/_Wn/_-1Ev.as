@@ -4,7 +4,7 @@
 //Wn.1Ev
 
 package Wn{
-    import __AS3__.vec.Vector;
+
 
     public class 1Ev {
 

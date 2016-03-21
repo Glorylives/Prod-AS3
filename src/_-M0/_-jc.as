@@ -13,7 +13,7 @@ package M0{
     import 1qg.0io;
     import 0Zf.OJ;
     import flash.utils.getTimer;
-    import b4.f1;
+    import b4._f1;
     import com.company.assembleegameclient.util.1ze;
     import vF.MysteryBoxInfo;
 

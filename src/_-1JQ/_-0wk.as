@@ -12,7 +12,7 @@ package 1JQ{
     import rz.0Hp;
     import 0NI.guardsApprove;
     import 0NI.applyHooks;
-    import __AS3__.vec.Vector;
+
     import rz.*;
 
     public class 0wk extends EventDispatcher implements lo {

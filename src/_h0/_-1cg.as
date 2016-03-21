@@ -4,11 +4,11 @@
 //h0.1cg
 
 package h0{
-    import __AS3__.vec.Vector;
+
     import 0DE.0WY;
     import com.company.assembleegameclient.objects.GameObject;
     import com.company.assembleegameclient.objects.Player;
-    import __AS3__.vec.*;
+
 
     public class 1cg extends 1mR {
 

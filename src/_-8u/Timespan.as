@@ -5,8 +5,8 @@
 
 package 8u{
     import AO.du;
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
 
     public class Timespan {
 

@@ -4,12 +4,12 @@
 //Jc.0da
 
 package Jc{
-    import __AS3__.vec.Vector;
+
     import 0y3.Server;
     import WZ.0Te;
     import 0y3.1O7;
     import com.company.assembleegameclient.parameters.Parameters;
-    import __AS3__.vec.*;
+
     import 0y3.*;
 
     public class 0da implements 0gx {

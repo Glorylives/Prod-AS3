@@ -10,7 +10,7 @@ package OZ{
     import RV.each ;
     import 0q4.Size;
     import flash.display.DisplayObject;
-    import __AS3__.vec.Vector;
+
     import 0q4.*;
 
     public class 1v8 extends Sprite implements gc {

@@ -6,7 +6,7 @@
 package 0-O{
     import 0y3.0gx;
     import 0Kp.0GW;
-    import __AS3__.vec.Vector;
+
     import flash.utils.Dictionary;
     import 0y3.Server;
     import _Jy._1HZ;
@@ -15,7 +15,7 @@ package 0-O{
     import com.company.assembleegameclient.objects.Player;
     import com.company.assembleegameclient.util.09g;
     import com.company.assembleegameclient.parameters.Parameters;
-    import __AS3__.vec.*;
+
 
     public class 0E8 {
 

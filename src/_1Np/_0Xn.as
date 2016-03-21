@@ -9,7 +9,7 @@ package _1Np{
     import com.company.assembleegameclient.objects.GameObject;
     import flash.utils.Timer;
     import com.company.util.AssetLibrary;
-    import com.company.util.J2;
+    import com.company.util._J2;
     import com.company.assembleegameclient.util.TextureRedrawer;
     import flash.events.TimerEvent;
 
@@ -46,7 +46,7 @@ package _1Np{
         private function _1iw():void{
             var _local2:uint;
             _8y = new Vector.<BitmapData>();
-            var _local1:J2 = AssetLibrary._0wJ("lofiParticlesShocker");
+            var _local1:_J2 = AssetLibrary._0wJ("lofiParticlesShocker");
             var _local3:uint = 9;
             _local2 = 0;
             while (_local2 < _local3)

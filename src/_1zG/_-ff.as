@@ -4,11 +4,11 @@
 //1zG.ff
 
 package 1zG{
-    import __AS3__.vec.Vector;
+
     import g0.1RN;
     import com.company.assembleegameclient.util.0Ep;
     import flash.utils.IDataInput;
-    import __AS3__.vec.*;
+
 
     public class ff extends 11g {
 

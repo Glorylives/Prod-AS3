@@ -6,9 +6,9 @@
 package 0LT{
     import 0y3.0gx;
     import 0y3.Server;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.parameters.Parameters;
-    import __AS3__.vec.*;
+
 
     public class 0an {
 

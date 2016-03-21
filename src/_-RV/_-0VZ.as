@@ -4,7 +4,7 @@
 //RV.0VZ
 
 package RV{
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
     import 0q4.*;
 

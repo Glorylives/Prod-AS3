@@ -7,12 +7,12 @@ package eC{
     import flash.display.Sprite;
     import gx.StatModel;
     import AO.du;
-    import __AS3__.vec.Vector;
+
     import XF.1eq;
     import flash.events.MouseEvent;
     import com.company.assembleegameclient.objects.Player;
     import flash.filters.GlowFilter;
-    import __AS3__.vec.*;
+
 
     public class 1HE extends Sprite {
 

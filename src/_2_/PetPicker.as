@@ -5,11 +5,11 @@
 
 package 2--{
     import _Jy._1HZ;
-    import __AS3__.vec.Vector;
+
     import 5z.0tK;
     import flash.display.DisplayObject;
     import flash.events.MouseEvent;
-    import __AS3__.vec.*;
+
 
     public class PetPicker extends YD implements _ZS {
 

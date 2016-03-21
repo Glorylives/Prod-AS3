@@ -3,14 +3,14 @@
 
 //0wp.not
 
-package 0wp{
-    import 1i-.1o;
-    import 1Xd.equalTo;
+package _0wP{
+    import _1i._1o;
+    import _1Xd.equalTo;
 
-    public function not(_arg1:Object):1o{
-        if ((_arg1 is 1o))
+    public function not(_arg1:Object):_1o{
+        if ((_arg1 is _1o))
         {
-            return (new lj((_arg1 as 1o)));
+            return (new _lj((_arg1 as _1o)));
         }
         return (not(equalTo(_arg1)));
     }

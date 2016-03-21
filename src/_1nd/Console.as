@@ -6,7 +6,7 @@
 package 1nd{
     import 1HH.0xD;
     import _Jy._1HZ;
-    import __AS3__.vec.Vector;
+
 
     public final class Console {
 

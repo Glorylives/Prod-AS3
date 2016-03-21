@@ -14,7 +14,7 @@ package com.company.assembleegameclient.screens.charrects{
     import com.company.assembleegameclient.appengine.1WG;
     import _04_._1JZ;
     import _0OG._22M;
-    import __AS3__.vec.Vector;
+
     import flash.events.MouseEvent;
     import tn.1iY;
     import flash.display.BitmapData;

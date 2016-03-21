@@ -9,16 +9,18 @@ import _0Fr._dW;
 import _0OG._22M;
     import _0Fr.*;
 
-    public class _0sf implements _dW {
+import _1i._1o;
+
+public class _0sf implements _dW {
 
         private const dM:_22M = new _22M();
         private const _1NG:String = _0cf.create(_0sf);
         private const _14b:_1DR = new _1DR();
-        private const _1Rf:Yq = new Yq();
+        private const _1Rf:_Yq = new _Yq();
 
         private var _1eO:_03u;
         private var jq:_13;
-        private var _0WA:eY;
+        private var _0WA:_eY;
         private var _1Za:_1da;
 
         public function _0sf(){
@@ -109,7 +111,7 @@ import _0OG._22M;
             this._1Za = this._14b._1uk(this);
             this._1eO = new _03u(this);
             this.jq = new _13(this);
-            this._0WA = new eY(this);
+            this._0WA = new _eY(this);
             this._1eO._7i(this._7i);
             this._1eO._0qQ(this._0qQ);
             this._1eO._0Sh(this._0Sh);

@@ -6,7 +6,7 @@
 package 0pT{
     import 12X.0Q6;
     import _Jy._1HZ;
-    import __AS3__.vec.Vector;
+
     import flash.text.TextField;
     import OZ.0c1;
     import 0uE.KC;
@@ -14,7 +14,7 @@ package 0pT{
     import _0BB._Fu;
     import aq.Account;
     import 1Gb.1aM;
-    import b4.f1;
+    import b4._f1;
     import com.company.assembleegameclient.map.Jw;
     import flash.utils.Timer;
     import zD.4q;
@@ -50,7 +50,7 @@ package 0pT{
     import 1Np.1wN;
     import g0.1tk;
     import 1Np.Bg;
-    import __AS3__.vec.*;
+
 
     public class 1IT extends 0Q6 {
 
@@ -98,7 +98,7 @@ package 0pT{
         public var client:_Fu;
         public var account:Account;
         public var model:1aM;
-        public var Wz:f1;
+        public var Wz:_f1;
         public var state:int = 1;
         private var jF:Jw;
         private var jQ:Timer;

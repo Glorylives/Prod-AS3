@@ -10,14 +10,14 @@ package 1Np{
     import flash.geom.Vector3D;
     import flash.display.GraphicsBitmapFill;
     import flash.display.GraphicsPath;
-    import __AS3__.vec.Vector;
+
     import flash.geom.Matrix;
     import com.company.util._tu;
     import com.company.assembleegameclient.map.Square;
     import com.company.assembleegameclient.util.TextureRedrawer;
     import flash.display.IGraphicsData;
     import com.company.assembleegameclient.map.1C8;
-    import __AS3__.vec.*;
+
 
     public class yB extends BasicObject {
 

@@ -27,7 +27,7 @@ package BG{
     import flash.events.MouseEvent;
     import flash.events.KeyboardEvent;
     import com.company.assembleegameclient.game.GameSprite;
-    import b4.f1;
+    import b4._f1;
     import OZ.06j;
     import 1qg.0io;
     import 12X.0KD;
@@ -103,7 +103,7 @@ package BG{
         }
 
         private function 1aG(_arg1:MouseEvent):void{
-            var _local2:f1;
+            var _local2:_f1;
             if (this.nJ == null)
             {
                 _local2 = _1JZ.0JF().getInstance(1aM).getFortune();

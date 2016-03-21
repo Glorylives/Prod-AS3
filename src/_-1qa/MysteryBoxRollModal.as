@@ -8,7 +8,7 @@ package 1qa{
     import _0BB._Fu;
     import aq.Account;
     import vF.MysteryBoxInfo;
-    import __AS3__.vec.Vector;
+
     import flash.display.Bitmap;
     import 0pT.g-;
     import 0uE.KC;
@@ -45,7 +45,7 @@ package 1qa{
     import 1t6.NotEnoughFameDialog;
     import 0gd.GTween;
     import 0G6.4t;
-    import __AS3__.vec.*;
+
 
     public class MysteryBoxRollModal extends Sprite {
 

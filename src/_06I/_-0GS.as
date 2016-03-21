@@ -5,10 +5,10 @@
 
 package 06I{
     import flash.events.EventDispatcher;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObjectContainer;
     import tB.LC;
-    import __AS3__.vec.*;
+
     import tB.*;
 
     public class 0GS extends EventDispatcher implements AF {

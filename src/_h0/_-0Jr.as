@@ -4,14 +4,14 @@
 //h0.0Jr
 
 package h0{
-    import __AS3__.vec.Vector;
+
     import 0DE.1f;
     import com.company.assembleegameclient.objects.GameObject;
     import com.company.assembleegameclient.objects.Player;
     import com.company.util.Vb;
     import 1aj.1rh;
     import com.company.util.0Rw;
-    import __AS3__.vec.*;
+
 
     public class 0Jr extends 1mR {
 

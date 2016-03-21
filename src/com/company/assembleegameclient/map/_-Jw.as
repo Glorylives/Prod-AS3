@@ -4,7 +4,7 @@
 //com.company.assembleegameclient.map.Jw
 
 package com.company.assembleegameclient.map{
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.objects.BasicObject;
     import flash.display.IGraphicsData;
     import flash.events.Event;
@@ -15,7 +15,7 @@ package com.company.assembleegameclient.map{
     import g0.1tk;
     import 1Np.ConfettiEffect;
     import 1Np.Bg;
-    import __AS3__.vec.*;
+
 
     public class Jw extends Map {
 

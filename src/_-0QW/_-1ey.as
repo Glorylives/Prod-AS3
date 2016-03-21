@@ -5,10 +5,10 @@
 
 package 0QW{
     import 0QW.1KM;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.objects.ObjectLibrary;
     import com.company.util.1N9;
-    import __AS3__.vec.*;
+
     import 0QW.*;
 
     class 1ey extends F8 {

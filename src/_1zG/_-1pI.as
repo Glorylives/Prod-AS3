@@ -4,9 +4,9 @@
 //1zG.1pI
 
 package 1zG{
-    import __AS3__.vec.Vector;
+
     import flash.utils.IDataInput;
-    import __AS3__.vec.*;
+
 
     public class 1pI extends 11g {
 

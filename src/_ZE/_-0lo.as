@@ -5,7 +5,7 @@
 
 package _ZE{
     import flash.display.DisplayObjectContainer;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.ui.0DH;
     import 099.PlayerMenu;
     import com.company.assembleegameclient.objects.08T;
@@ -17,7 +17,7 @@ package _ZE{
     import flash.geom.ColorTransform;
     import flash.utils.getTimer;
     import com.company.util.MoreColorUtil;
-    import __AS3__.vec.*;
+
 
     public class 0lo extends Panel {
 

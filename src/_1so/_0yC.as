@@ -4,7 +4,11 @@
 //1so.0yC
 
 package _1so{
-    import flash.display.Sprite;
+import _099.Menu;
+
+import _0qj._1ae;
+
+import flash.display.Sprite;
     import flash.display.DisplayObjectContainer;
     import com.company.assembleegameclient.objects.GameObject;
     import flash.display.Shape;
@@ -66,12 +70,12 @@ package _1so{
 
 
         protected function onMouseOver(_arg1:MouseEvent):void{
-            this._01- = true;
+            this._01 = true;
             this._24v();
         }
 
         protected function onMouseOut(_arg1:MouseEvent):void{
-            this._01- = false;
+            this._01 = false;
             this._24v();
         }
 
@@ -247,7 +251,7 @@ package _1so{
         private function _24v():void{
             var _local1:Graphics = this._1NH.graphics;
             _local1.clear();
-            var _local2:int = ((((this.tP) || (this._01-))) ? _continue : pi);
+            var _local2:int = ((((this.tP) || (this._01))) ? _continue : pi);
             _local1.lineStyle(1, this._1Ux);
             _local1.beginFill(this._0ah);
             _local1.moveTo(i9, 0);

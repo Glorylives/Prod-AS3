@@ -4,13 +4,13 @@
 //0g5.0GN
 
 package 0g5{
-    import __AS3__.vec.Vector;
+
     import 1f1.1Mq;
     import 0Xi.fE;
     import flash.events.IEventDispatcher;
     import _0OG._22M;
     import flash.utils.describeType;
-    import __AS3__.vec.*;
+
     import 1f1.*;
 
     public class 0GN implements 0bs {

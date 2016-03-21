@@ -10,7 +10,7 @@ package com.company.assembleegameclient.ui{
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsStroke;
     import flash.display.GraphicsPath;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import _CU.1CD;
     import flash.display.LineScaleMode;
@@ -28,7 +28,7 @@ package com.company.assembleegameclient.ui{
     import 1Bg.of;
     import 1jB.1Ha;
     import com.company.assembleegameclient.objects.Player;
-    import __AS3__.vec.*;
+
     import 1r-.*;
 
     public class 07I extends Slot implements u- {

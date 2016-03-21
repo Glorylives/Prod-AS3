@@ -19,7 +19,7 @@ package 2-g{
     import EM.Console;
     import flash.ui.Keyboard;
     import flash.geom.ColorTransform;
-    import gh.Dq;
+    import gh._Dq;
     import 1Tb.1-T;
     import 1Tb.xi;
     import flash.net.FileReference;
@@ -389,7 +389,7 @@ package 2-g{
 
         private function 0D2():void{
             var _local1 = "";
-            var _local2:Dq = console.logs.first;
+            var _local2:_Dq = console.logs.first;
             var _local3 = !((this.oZ.length == 1));
             var _local4:Boolean = (((this.Ke == 0)) && ((this.oZ.length == 0)));
             while (_local2)
@@ -428,7 +428,7 @@ package 2-g{
             var _local1 = "";
             var _local2:int = Math.round((this.0qo.height / style.traceFontSize));
             var _local3:int = Math.round(((this.0qo.width * 5) / style.traceFontSize));
-            var _local4:Dq = console.logs.last;
+            var _local4:_Dq = console.logs.last;
             var _local5 = !((this.oZ.length == 1));
             while (_local4)
             {
@@ -460,7 +460,7 @@ package 2-g{
             this.1T7();
         }
 
-        private function KE(_arg1:Dq):Boolean{
+        private function KE(_arg1:_Dq):Boolean{
             return ((((((this.Ke == 0)) || ((_arg1.priority >= this.Ke)))) && (((((this.1SI(_arg1.ch)) || (((((this.0iS) && ((this.oZ.indexOf(Console.Dk) >= 0)))) && ((_arg1.text.toLowerCase().indexOf(this.0iS) >= 0)))))) || (((((this.NZ) && ((this.oZ.indexOf(Console.Dk) >= 0)))) && ((_arg1.text.search(this.NZ) >= 0))))))));
         }
 
@@ -575,7 +575,7 @@ package 2-g{
             }
         }
 
-        private function 08O(_arg1:Dq, _arg2:Boolean):String{
+        private function 08O(_arg1:_Dq, _arg2:Boolean):String{
             var _local3 = "<p>";
             if (_arg2)
             {
@@ -1208,7 +1208,7 @@ package 2-g{
         private function d6(_arg1:Boolean):void{
             var _local3:uint;
             var _local2:uint = 10;
-            var _local4:Dq = console.logs.last;
+            var _local4:_Dq = console.logs.last;
             var _local5:int = this.Ke;
             this.Ke = 0;
             var _local6:uint = 0x7D00;

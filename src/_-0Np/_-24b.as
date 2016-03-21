@@ -12,7 +12,7 @@ package 0Np{
     import com.company.rotmg.graphics.ScreenGraphic;
     import flash.events.MouseEvent;
     import flash.events.Event;
-    import __AS3__.vec.Vector;
+
     import 1n4.1cA;
     import AO.du;
     import flash.text.TextFieldAutoSize;

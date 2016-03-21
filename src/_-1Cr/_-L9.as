@@ -7,7 +7,7 @@ package 1Cr{
     import flash.display.Sprite;
     import 0uE.KC;
     import 0IN.1qO;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import _Jy._1HZ;
@@ -30,7 +30,7 @@ package 1Cr{
     import 1n4.1cA;
     import com.company.ui._eG;
     import flash.text.TextFormatAlign;
-    import __AS3__.vec.*;
+
     import 1t6.*;
 
     public class L9 extends Sprite implements 0DY {

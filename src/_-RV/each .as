@@ -8,12 +8,12 @@ package RV{
     import 0q4.Layout;
     import 0q4.Size;
     import _Jy._1HZ;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
     import flash.display.Shape;
     import flash.geom.Rectangle;
     import flash.display.Graphics;
-    import __AS3__.vec.*;
+
     import 0q4.*;
 
     public class each  extends Sprite implements gc {

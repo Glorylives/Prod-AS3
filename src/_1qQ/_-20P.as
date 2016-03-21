@@ -4,9 +4,9 @@
 //1qQ.20P
 
 package 1qQ{
-    import __AS3__.vec.Vector;
+
     import AO.vR;
-    import __AS3__.vec.*;
+
 
     public class 20P implements 0oB {
 

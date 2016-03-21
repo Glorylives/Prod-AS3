@@ -6,7 +6,7 @@
 package 0hd{
     import flash.display.Sprite;
     import 1PB.cO;
-    import __AS3__.vec.Vector;
+
     import 0lB.P4;
     import flash.events.MouseEvent;
     import 0lB.156;
@@ -14,7 +14,7 @@ package 0hd{
     import flash.display.DisplayObject;
     import RV.qj;
     import 0q4.Layout;
-    import __AS3__.vec.*;
+
 
     public class 0Ia extends Sprite {
 

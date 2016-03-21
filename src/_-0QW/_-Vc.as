@@ -5,7 +5,7 @@
 
 package 0QW{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import com.company.ui._eG;
@@ -21,7 +21,7 @@ package 0QW{
     import com.company.assembleegameclient.map.0s6;
     import com.company.assembleegameclient.objects.ObjectLibrary;
     import com.company.assembleegameclient.map.T8;
-    import __AS3__.vec.*;
+
 
     public class Vc extends Sprite {
 

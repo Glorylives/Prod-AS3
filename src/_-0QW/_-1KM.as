@@ -4,8 +4,8 @@
 //0QW.1KM
 
 package 0QW{
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
 
     public class 1KM {
 

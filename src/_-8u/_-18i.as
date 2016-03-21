@@ -7,11 +7,11 @@ package 8u{
     import WZ.0Te;
     import tn.0ec;
     import kabam.rotmg.assets.services.0Vx;
-    import __AS3__.vec.Vector;
+
     import tn.0dE;
     import tn.1iY;
     import com.company.util.ConversionUtil;
-    import __AS3__.vec.*;
+
 
     public class 18i {
 

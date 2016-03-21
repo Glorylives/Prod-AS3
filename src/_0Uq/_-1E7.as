@@ -9,7 +9,7 @@ package 0Uq{
     import _0BB._Fu;
     import zf.1M6;
     import Wn.1Ev;
-    import __AS3__.vec.Vector;
+
     import Wn.0EB;
     import com.company.util.1X3;
 

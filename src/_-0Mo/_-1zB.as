@@ -11,7 +11,7 @@ package 0Mo{
     import 1oP.1H;
     import 23a.ReskinCharacterView;
     import tn.0a0;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
 
     public class 1zB {

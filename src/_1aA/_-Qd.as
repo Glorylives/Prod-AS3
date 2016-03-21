@@ -8,7 +8,7 @@ package _1aA{
     import _CU._13j;
     import flash.display.Shape;
     import com.company.assembleegameclient.ui.0DJ;
-    import __AS3__.vec.Vector;
+
     import 0y3.Server;
     import _Jy._1HZ;
     import zD.05l;

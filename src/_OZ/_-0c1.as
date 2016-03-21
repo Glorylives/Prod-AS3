@@ -11,7 +11,7 @@ package OZ{
     import com.company.util.MoreColorUtil;
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsPath;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import 1PB.cO;
@@ -29,7 +29,7 @@ package OZ{
     import flash.display.CapsStyle;
     import flash.display.JointStyle;
     import flash.display.Graphics;
-    import __AS3__.vec.*;
+
 
     public class 0c1 extends Lr {
 

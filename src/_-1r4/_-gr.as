@@ -10,7 +10,7 @@ package 1r4{
     import 5z.25U;
     import 5z.0tK;
     import com.company.assembleegameclient.objects.Pet;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.util.ConditionEffect;
 
     public class gr {

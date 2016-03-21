@@ -4,12 +4,12 @@
 //1Np.02L
 
 package 1Np{
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.objects.GameObject;
     import flash.display.BitmapData;
     import com.company.util.AssetLibrary;
     import com.company.assembleegameclient.util.TextureRedrawer;
-    import __AS3__.vec.*;
+
 
     public class 02L extends 0F- {
 

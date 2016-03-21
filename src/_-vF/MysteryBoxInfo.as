@@ -6,7 +6,7 @@
 package vF{
     import flash.display.DisplayObject;
     import 19Z.0Rq;
-    import __AS3__.vec.Vector;
+
     import 19Z.1ZG;
     import flash.events.Event;
     import flash.events.IOErrorEvent;
@@ -14,7 +14,7 @@ package vF{
     import flash.utils.Dictionary;
     import com.company.assembleegameclient.util.1ze;
     import 1n4.1cA;
-    import __AS3__.vec.*;
+
 
     public class MysteryBoxInfo {
 

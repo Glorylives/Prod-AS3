@@ -8,7 +8,7 @@ package eC{
     import _Jy._1HZ;
     import D5.1c8;
     import com.company.assembleegameclient.objects.1F9;
-    import __AS3__.vec.Vector;
+
     import D5.IconButton;
     import flash.events.MouseEvent;
     import AO.du;
@@ -18,7 +18,7 @@ package eC{
     import com.company.util._tu;
     import flash.display.Bitmap;
     import com.company.ui._eG;
-    import __AS3__.vec.*;
+
 
     public class WK extends Sprite {
 

@@ -5,10 +5,10 @@
 
 package _1aA{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.appengine.1AQ;
     import WZ.0Te;
-    import __AS3__.vec.*;
+
 
     public class 0dG extends Sprite {
 

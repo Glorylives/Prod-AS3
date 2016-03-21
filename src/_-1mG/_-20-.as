@@ -10,7 +10,7 @@ package 1mG{
     import 8u.56;
     import 8u.18i;
     import 8u.Timespan;
-    import __AS3__.vec.Vector;
+
     import 8u.1QY;
 
     public class 20- extends 1iz {

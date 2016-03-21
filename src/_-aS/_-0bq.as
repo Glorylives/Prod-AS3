@@ -4,7 +4,7 @@
 //aS.0bq
 
 package aS{
-    import __AS3__.vec.Vector;
+
     import 1f1.1Mq;
     import _Jy.23R;
     import _0OG._22M;
@@ -12,7 +12,7 @@ package aS{
     import flash.utils.describeType;
     import 0NI.guardsApprove;
     import 0NI.applyHooks;
-    import __AS3__.vec.*;
+
     import 1f1.*;
 
     public class 0bq implements 0bs {

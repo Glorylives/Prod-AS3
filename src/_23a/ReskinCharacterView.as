@@ -16,7 +16,7 @@ package 23a{
     import flash.text.TextFieldAutoSize;
     import 1n4.1cA;
     import AO.du;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
     import flash.display.LineScaleMode;
     import flash.display.CapsStyle;

@@ -4,7 +4,7 @@
 //8u.56
 
 package 8u{
-    import __AS3__.vec.Vector;
+
 
     public class 56 {
 

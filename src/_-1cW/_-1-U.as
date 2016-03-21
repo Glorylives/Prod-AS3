@@ -4,8 +4,8 @@
 //1cW.1-U
 
 package 1cW{
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
 
     public class 1-U implements 08S {
 

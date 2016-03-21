@@ -6,7 +6,7 @@
 package 1wn{
     import _Jy._1HZ;
     import 0sk.BZ;
-    import __AS3__.vec.*;
+
 
     public class 1t extends _1HZ {
 

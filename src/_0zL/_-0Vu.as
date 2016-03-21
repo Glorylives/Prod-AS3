@@ -5,14 +5,14 @@
 
 package 0zL{
     import 1cI.1iz;
-    import __AS3__.vec.Vector;
+
     import 0r6.1a2;
     import _0OG._22M;
     import 0Fr.1da;
     import 08k.0Vn;
     import 08k.Dg;
     import 1cI.9f;
-    import __AS3__.vec.*;
+
 
     public class 0Vu extends 1iz {
 

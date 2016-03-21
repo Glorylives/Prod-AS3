@@ -4,60 +4,56 @@
 //com.company.assembleegameclient.game.GameSprite
 
 package com.company.assembleegameclient.game{
-    import flash.filters.ColorMatrixFilter;
+import _099.PlayerMenu;
+
+import _0Fa.Chat;
+
+import _1UB._0Ja;
+import _1UB._ve;
+
+import _1g8._Bd;
+
+import _1mO._0bI;
+
+import _1tt._0jv;
+
+import _BG._02I;
+
+import _WZ._0Te;
+import _WZ._NV;
+
+import com.company.assembleegameclient.ui._1sK;
+
+import flash.filters.ColorMatrixFilter;
     import com.company.util.MoreColorUtil;
     import _Jy._1HZ;
     import com.company.assembleegameclient.objects.Player;
-    import _0Fa.Chat;
     import com.company.assembleegameclient.ui.RankText;
-    import com.company.assembleegameclient.ui._1sK;
-    import _BG.02I;
     import BG.GiftStatusDisplay;
-    import BG.17B;
-    import 1mO.0bI;
-    import 1UB.ve;
-    import 1UB.0Ja;
-    import WZ._NV;
-    import 1Bt.l-;
-    import 1g8.Bd;
-    import 1tt.0jv;
+    import _BG._17B;
+    import _1Bt._l;
     import com.company.assembleegameclient.objects.GameObject;
     import flash.display.DisplayObject;
-    import 099.PlayerMenu;
+    import _099.PlayerMenu;
     import flash.display.Sprite;
     import com.company.assembleegameclient.map.Map;
-    import 1r4.2-c;
     import flash.events.MouseEvent;
-    import 0y3.Server;
+    import _0y3.Server;
     import flash.utils.ByteArray;
-    import WZ.0Te;
     import _04_._1JZ;
-    import 0a-.0iQ;
-    import 1zG.0BS;
-    import 0a-.1lD;
-    import 1PB.yi;
-    import aq.Account;
-    import 0Ln.1zI;
+    import _aq.Account;
     import _0BB._Fu;
-    import com.company.util.1X3;
+    import com.company.util._1X3;
     import com.company.assembleegameclient.parameters.Parameters;
-    import yA._oF;
-    import bD.0A-;
-    import 0sk.26Z;
-    import 0Ux.0tu;
     import TN.PackageButton;
     import flash.external.ExternalInterface;
     import com.company.assembleegameclient.tutorial.Tutorial;
-    import com.company.assembleegameclient.objects.18p;
-    import 0Px.1zw;
+    import com.company.assembleegameclient.objects._18p;
+    import _0Px._1zw;
     import com.company.assembleegameclient.objects.Pet;
     import com.company.util.PointUtil;
-    import 1m9.0lt;
     import flash.utils.getTimer;
-    import F7._Ig;
     import flash.events.Event;
-    import 01c.0h3;
-    import 01c.0-7;
     import com.company.util._hd;
     import com.company.assembleegameclient.util.TextureRedrawer;
     import com.company.assembleegameclient.objects.Projectile;
@@ -80,11 +76,11 @@ package com.company.assembleegameclient.game{
         public var I1:GiftStatusDisplay;
         public var f4:_17B;
         public var _1ro:_0bI;
-        public var _0pK:ve;
+        public var _0pK:_ve;
         public var _1kM:_0Ja;
         public var _8e:_NV;
-        public var _1JK:l;
-        public var _1ji:Bd;
+        public var _1JK:_l;
+        public var _1ji:_Bd;
         public var _1IO:_1HZ;
         public var _2M:_0jv;
         private var focus:GameObject;
@@ -96,34 +92,41 @@ package com.company.assembleegameclient.game{
         private var jm:Number;
         public var _0ZL:PlayerMenu;
 
-        public function GameSprite(_arg1:Server, _arg2:int, _arg3:Boolean, _arg4:int, _arg5:int, _arg6:ByteArray, _arg7:0Te, _arg8:String, _arg9:Boolean){
-            this.1IO = new _1HZ();
+        public function GameSprite(_arg1:Server, _arg2:int, _arg3:Boolean, _arg4:int, _arg5:int, _arg6:ByteArray, _arg7:_0Te, _arg8:String, _arg9:Boolean){
+            this._1IO = new _1HZ();
             this.V3 = new Sprite();
             super();
             this.model = _arg7;
             map = new Map(this);
             addChild(map);
-            gsc_ = new 2-c(this, _arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg8, _arg9);
-            mui_ = new 0Df(this);
-            this.4S = new Chat();
-            this.4S.list.addEventListener(MouseEvent.MOUSE_DOWN, this.Dj);
-            this.4S.list.addEventListener(MouseEvent.MOUSE_UP, this.9i);
-            addChild(this.4S);
-            this.0E9 = new 0lO();
+            gsc_ = new _2c(this, _arg1, _arg2, _arg3, _arg4, _arg5, _arg6, _arg8, _arg9);
+            mui_ = new _0Df(this);
+            this._4S = new Chat();
+            this._4S.list.addEventListener(MouseEvent.MOUSE_DOWN, this.Dj);
+            this._4S.list.addEventListener(MouseEvent.MOUSE_UP, this._9i);
+            addChild(this._4S);
+            this._0E9 = new _0lO();
         }
 
-        public static function 0VF(_arg1:0BS):void{
-            var _local2:0iQ = _1JZ.0JF().getInstance(0iQ);
+        public static function _0VF(_arg1:_0BS):void{
+            var _local2:_0iQ = _1JZ._0JF().getInstance(_0iQ);
             ((_local2) && (_local2.dispatch(_arg1)));
         }
 
-        private static function 1H3():void{
+        private static function _1H3():void{
             var _local1:1lD = _1JZ.0JF().getInstance(1lD);
             ((_local1) && (_local1.dispatch()));
         }
 
+import _099.PlayerMenu;
 
-        public function Dj(_arg1:MouseEvent):void{
+import com.company.assembleegameclient.objects.GameObject;
+import com.company.assembleegameclient.objects.Player;
+
+import flash.events.MouseEvent;
+
+
+public function Dj(_arg1:MouseEvent):void{
             if (this.0ZL != null)
             {
                 this.1tj();
@@ -131,7 +134,7 @@ package com.company.assembleegameclient.game{
             mui_.onMouseDown(_arg1);
         }
 
-        public function 9i(_arg1:MouseEvent):void{
+        public function _9i(_arg1:MouseEvent):void{
             mui_.onMouseUp(_arg1);
         }
 
@@ -140,27 +143,27 @@ package com.company.assembleegameclient.game{
             this.focus = _arg1;
         }
 
-        public function FP(_arg1:Player, _arg2:Number, _arg3:Number, _arg4:String=null, _arg5:Boolean=false, _arg6:Boolean=false):void{
-            this.1tj();
-            this.0ZL = new PlayerMenu();
+        public function _FP(_arg1:Player, _arg2:Number, _arg3:Number, _arg4:String=null, _arg5:Boolean=false, _arg6:Boolean=false):void{
+            this._1tj();
+            this._0ZL = new PlayerMenu();
             if (_arg4 == null)
             {
-                this.0ZL.init(this, _arg1);
+                this._0ZL.init(this, _arg1);
             } else
             {
                 if (_arg6)
                 {
-                    this.0ZL.Us(this, _arg4, _arg5, _arg6);
+                    this._0ZL.Us(this, _arg4, _arg5, _arg6);
                 } else
                 {
                     if ((((_arg4.length > 0)) && ((((((_arg4.charAt(0) == "#")) || ((_arg4.charAt(0) == "*")))) || ((_arg4.charAt(0) == "@"))))))
                     {
                         return;
                     }
-                    this.0ZL.Us(this, _arg4, _arg5);
+                    this._0ZL.Us(this, _arg4, _arg5);
                 }
             }
-            addChild(this.0ZL);
+            addChild(this._0ZL);
             this.0ZL.x = _arg2;
             this.0ZL.y = (_arg3 - this.0ZL.height);
         }

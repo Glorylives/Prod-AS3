@@ -13,7 +13,7 @@ package 1PB{
     import ZE.0t6;
     import com.company.assembleegameclient.ui.1Hs;
     import com.company.assembleegameclient.game.GameSprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsPath;
@@ -24,7 +24,7 @@ package 1PB{
     import 1zG.1pI;
     import 1zG.0dB;
     import com.company.util.0IB;
-    import __AS3__.vec.*;
+
 
     public class yi extends Sprite implements 0Ge {
 

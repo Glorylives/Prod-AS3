@@ -146,7 +146,7 @@ package 1r4{
     import 1ay.1v2;
     import com.company.assembleegameclient.objects.SellableObject;
     import com.company.assembleegameclient.util.Currency;
-    import __AS3__.vec.Vector;
+
     import com.hurlant.util.der.PEM;
     import com.hurlant.crypto.rsa.RSAKey;
     import com.hurlant.util.Base64;
@@ -215,7 +215,7 @@ package 1r4{
     import 1t6.Dialog;
     import flash.events.Event;
     import com.company.assembleegameclient.objects.*;
-    import __AS3__.vec.*;
+
     import 1Np.*;
     import 1zG.*;
     import yo.*;

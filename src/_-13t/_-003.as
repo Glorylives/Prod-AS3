@@ -7,7 +7,7 @@ package 13t{
     import flash.display.Sprite;
     import flash.display.DisplayObjectContainer;
     import _CU._13j;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
     import flash.display.MovieClip;
     import kabam.rotmg.assets.model.Animation;
@@ -21,7 +21,7 @@ package 13t{
     import 0sC.0Tp;
     import 0sC.0mL;
     import 0gd.GTween;
-    import __AS3__.vec.*;
+
 
     public class 003 extends Sprite {
 

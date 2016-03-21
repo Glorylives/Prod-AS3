@@ -9,7 +9,7 @@ package zD{
     import _Jy._1HZ;
     import flash.display.GraphicsSolidFill;
     import flash.display.GraphicsPath;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import _CU._13j;
     import flash.display.Bitmap;
@@ -29,7 +29,7 @@ package zD{
     import com.company.assembleegameclient.objects.ObjectLibrary;
     import com.company.assembleegameclient.parameters.Parameters;
     import 1n4.1WS;
-    import __AS3__.vec.*;
+
 
     public class 1Zk extends Sprite {
 

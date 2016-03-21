@@ -8,7 +8,7 @@ package com.company.assembleegameclient.ui{
     import com.company.assembleegameclient.game.nx;
     import com.company.ui._eG;
     import _CU._13j;
-    import __AS3__.vec.Vector;
+
     import g0.1RN;
     import flash.filters.DropShadowFilter;
     import 0Px.1zw;
@@ -16,7 +16,7 @@ package com.company.assembleegameclient.ui{
     import AO.du;
     import 1n4.1cA;
     import flash.events.Event;
-    import __AS3__.vec.*;
+
 
     public class TradeInventory extends Sprite {
 

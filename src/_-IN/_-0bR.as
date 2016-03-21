@@ -12,8 +12,8 @@ package IN{
     import tn.Lm;
     import tn.0dS;
     import tn.1Ta;
-    import __AS3__.vec.Vector;
-    import __AS3__.vec.*;
+
+
 
     public class 0bR {
 

@@ -4,13 +4,13 @@
 //0QW.0bW
 
 package 0QW{
-    import __AS3__.vec.Vector;
+
     import flash.display.BitmapData;
     import flash.geom.Rectangle;
     import flash.geom.Matrix;
     import flash.display.Bitmap;
     import flash.display.Sprite;
-    import __AS3__.vec.*;
+
 
     public class 0bW {
 

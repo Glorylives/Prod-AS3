@@ -11,10 +11,10 @@ package 1UP{
     import 1qQ.0Uh;
     import flash.utils.getTimer;
     import 0sk.BZ;
-    import __AS3__.vec.Vector;
+
     import 0sk.1Of;
     import 1t6.ErrorDialog;
-    import __AS3__.vec.*;
+
 
     public class l5 extends 1iz implements 0cw {
 

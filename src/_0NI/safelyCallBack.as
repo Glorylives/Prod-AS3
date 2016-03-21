@@ -3,7 +3,7 @@
 
 //0NI.safelyCallBack
 
-package 0NI{
+package _0NI{
     public function safelyCallBack(_arg1:Function, _arg2:Object=null, _arg3:Object=null):void{
         if (_arg1.length == 0)
         {

@@ -5,7 +5,7 @@
 
 package 0g5{
     import 1f1.0bs;
-    import __AS3__.vec.Vector;
+
     import 1f1.1Mq;
     import 0Xi.fE;
     import _0OG._22M;

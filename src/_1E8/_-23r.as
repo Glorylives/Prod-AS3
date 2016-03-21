@@ -4,10 +4,10 @@
 //1E8.23r
 
 package 1E8{
-    import __AS3__.vec.Vector;
+
     import _0OG._22M;
     import 0qs.1rz;
-    import __AS3__.vec.*;
+
     import 0qs.*;
 
     public class 23r implements 0MV, J1 {

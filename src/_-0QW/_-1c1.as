@@ -15,7 +15,7 @@ package 0QW{
     import com.company.util.AssetLibrary;
     import flash.events.Event;
     import 0QW.172;
-    import __AS3__.vec.Vector;
+
     import flash.geom.Rectangle;
     import flash.events.MouseEvent;
     import flash.events.KeyboardEvent;
@@ -28,7 +28,7 @@ package 0QW{
     import flash.display.Graphics;
     import flash.geom.Matrix;
     import com.company.util.PointUtil;
-    import __AS3__.vec.*;
+
     import 0QW.*;
 
     class 1c1 extends Sprite {

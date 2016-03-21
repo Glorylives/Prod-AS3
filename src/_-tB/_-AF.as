@@ -4,7 +4,7 @@
 //tB.AF
 
 package tB{
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObjectContainer;
     import flash.events.*;
 

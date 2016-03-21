@@ -4,9 +4,9 @@
 //yo.23K
 
 package yo{
-    import __AS3__.vec.Vector;
+
     import flash.utils.IDataOutput;
-    import __AS3__.vec.*;
+
 
     public class 23K extends 0j1 {
 

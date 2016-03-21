@@ -4,9 +4,9 @@
 //Wn.0In
 
 package Wn{
-    import __AS3__.vec.Vector;
+
     import AO.du;
-    import __AS3__.vec.*;
+
 
     public class 0In {
 

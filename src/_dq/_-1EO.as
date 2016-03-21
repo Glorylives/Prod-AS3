@@ -10,7 +10,7 @@ package dq{
     public class 1EO {
 
         private static const 6D:String = "Package Purchased";
-        private static const 0DO:String = "You've already purchased this package!";
+        private static const 0DO:String = "You'_ve already purchased this package!";
         private static const 24Z:String = "Please check your vault for any items purchased";
 
         [Inject]

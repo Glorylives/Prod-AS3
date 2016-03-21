@@ -5,7 +5,7 @@
 
 package 1Np{
     import com.company.assembleegameclient.objects.BasicObject;
-    import __AS3__.vec.Vector;
+
     import flash.geom.Matrix;
     import flash.display.GraphicsPath;
     import flash.display.GraphicsBitmapFill;
@@ -13,7 +13,7 @@ package 1Np{
     import flash.display.BitmapData;
     import flash.display.IGraphicsData;
     import com.company.assembleegameclient.map.1C8;
-    import __AS3__.vec.*;
+
 
     public class 1uO extends BasicObject {
 

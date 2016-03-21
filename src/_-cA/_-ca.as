@@ -4,10 +4,10 @@
 //cA.ca
 
 package cA{
-    import __AS3__.vec.Vector;
+
     import flash.events.IEventDispatcher;
     import flash.events.Event;
-    import __AS3__.vec.*;
+
     import 1-6.*;
 
     public class ca implements 2-f {

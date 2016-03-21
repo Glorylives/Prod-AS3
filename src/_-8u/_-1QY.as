@@ -4,7 +4,7 @@
 //8u.1QY
 
 package 8u{
-    import __AS3__.vec.Vector;
+
     import flash.display.BitmapData;
     import 0ci.*;
 

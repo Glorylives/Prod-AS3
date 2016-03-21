@@ -4,9 +4,9 @@
 //1zG.Damage
 
 package 1zG{
-    import __AS3__.vec.Vector;
+
     import flash.utils.IDataInput;
-    import __AS3__.vec.*;
+
 
     public class Damage extends 11g {
 

@@ -11,7 +11,7 @@ package Ct{
     import 0uE.KC;
     import 0IN.h;
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import com.company.assembleegameclient.ui.1nN;
     import XF.1eq;
     import AO.du;

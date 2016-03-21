@@ -5,12 +5,12 @@
 
 package 1UB{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.DisplayObject;
     import OZ.1v8;
     import 0q4.Size;
     import Wn.0EB;
-    import __AS3__.vec.*;
+
 
     public class 1Tt extends Sprite {
 

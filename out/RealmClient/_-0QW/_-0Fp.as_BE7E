@@ -5,7 +5,7 @@
 
 package 0QW{
     import 0QW.0VH;
-    import __AS3__.vec.Vector;
+
     import flash.display.Shape;
     import flash.display.IGraphicsData;
     import com.company.assembleegameclient.map.1C8;
@@ -16,7 +16,7 @@ package 0QW{
     import com.company.assembleegameclient.map.1Ad;
     import 0QW.09K;
     import 0qj.1ae;
-    import __AS3__.vec.*;
+
     import 0QW.*;
 
     class 0Fp extends 0VH {

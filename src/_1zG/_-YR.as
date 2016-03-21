@@ -4,11 +4,11 @@
 //1zG.YR
 
 package 1zG{
-    import __AS3__.vec.Vector;
+
     import g0.ge;
     import com.company.assembleegameclient.util.0Ep;
     import flash.utils.IDataInput;
-    import __AS3__.vec.*;
+
 
     public class YR extends 11g {
 

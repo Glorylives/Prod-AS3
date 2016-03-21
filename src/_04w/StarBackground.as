@@ -8,7 +8,7 @@ import com.company.assembleegameclient.map._1C8;
 
 import flash.display.IGraphicsData;
     import com.company.util.AssetLibrary;
-    import com.company.util.J2;
+    import com.company.util._J2;
     import com.company.util.PointUtil;
 
     public class StarBackground extends Background {
@@ -41,7 +41,7 @@ import flash.display.IGraphicsData;
 
         private function _07r():void{
             var _local3:Star;
-            var _local1:J2 = AssetLibrary._0wJ("stars");
+            var _local1:_J2 = AssetLibrary._0wJ("stars");
             var _local2:Star = new Star(((Math.random() * 1000) - 500), ((Math.random() * 1000) - 500), (4 * (0.5 + (0.5 * Math.random()))), _local1._7D[int((_local1._7D.length * Math.random()))]);
             for each (_local3 in this._20S)
             {

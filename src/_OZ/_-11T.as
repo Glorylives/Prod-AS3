@@ -5,11 +5,11 @@
 
 package OZ{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import com.company.rotmg.graphics.StarGraphic;
     import flash.display.Graphics;
     import flash.geom.ColorTransform;
-    import __AS3__.vec.*;
+
 
     public class 11T extends Sprite {
 

@@ -9,7 +9,7 @@ package 1UB{
     import Wn.1Ev;
     import _CU.sb;
     import flash.display.Bitmap;
-    import __AS3__.vec.Vector;
+
     import _1aA.Lz;
     import 1RM.rf;
     import com.company.rotmg.graphics.ScreenGraphic;
@@ -28,7 +28,7 @@ package 1UB{
     import _CU._13j;
     import flash.display.Shape;
     import flash.display.Graphics;
-    import __AS3__.vec.*;
+
 
     public class ArenaLeaderboard extends Sprite {
 

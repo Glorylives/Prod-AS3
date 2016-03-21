@@ -3,16 +3,16 @@
 
 //0NI.MessageDispatcher
 
-package 0NI{
+package _0NI{
     import flash.utils.Dictionary;
-    import 0Fr.*;
+    import _0Fr.*;
 
-    public final class MessageDispatcher implements SI {
+    public final class MessageDispatcher implements _SI {
 
         private const _handlers:Dictionary = new Dictionary();
 
 
-        public function 1XH(_arg1:Object, _arg2:Function):void{
+        public function _1XH(_arg1:Object, _arg2:Function):void{
             var _local3:Array = this._handlers[_arg1];
             if (_local3)
             {
@@ -30,7 +30,7 @@ package 0NI{
             return (this._handlers[_arg1]);
         }
 
-        public function 1yt(_arg1:Object, _arg2:Function):void{
+        public function _1yt(_arg1:Object, _arg2:Function):void{
             var _local3:Array;
             _local3 = this._handlers[_arg1];
             var _local4:int = ((_local3) ? _local3.indexOf(_arg2) : -1);
@@ -61,7 +61,7 @@ package 0NI{
     }
 }//package 0NI
 
-import 0NI.safelyCallBack;
+import _0NI.safelyCallBack;
 
 class MessageRunner {
 

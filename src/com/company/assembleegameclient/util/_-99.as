@@ -5,13 +5,13 @@
 
 package com.company.assembleegameclient.util{
     import AO.du;
-    import __AS3__.vec.Vector;
+
     import _04_._1JZ;
     import aq.Account;
     import qG.0bJ;
     import flash.net.URLVariables;
     import com.company.assembleegameclient.util.offer.Offer;
-    import __AS3__.vec.*;
+
 
     public class 99 {
 

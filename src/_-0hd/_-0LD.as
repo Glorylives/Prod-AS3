@@ -7,7 +7,7 @@ package 0hd{
     import flash.display.Sprite;
     import com.company.assembleegameclient.util.offer.Offers;
     import jH.0eh;
-    import __AS3__.vec.Vector;
+
     import 0lB.P4;
     import flash.events.MouseEvent;
     import com.company.assembleegameclient.util.offer.Offer;
@@ -15,7 +15,7 @@ package 0hd{
     import flash.display.DisplayObject;
     import RV.1Ii;
     import 0q4.Layout;
-    import __AS3__.vec.*;
+
 
     public class 0LD extends Sprite {
 

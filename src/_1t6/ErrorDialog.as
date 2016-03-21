@@ -5,7 +5,7 @@
 
 package 1t6{
     import flash.display.Sprite;
-    import __AS3__.vec.Vector;
+
     import flash.display.IGraphicsData;
     import com.company.util._tu;
     import _Jy._1HZ;
@@ -28,7 +28,7 @@ package 1t6{
     import com.company.googleanalytics.GA;
     import flash.display.Graphics;
     import flash.events.Event;
-    import __AS3__.vec.*;
+
 
     public class ErrorDialog extends Sprite {
 

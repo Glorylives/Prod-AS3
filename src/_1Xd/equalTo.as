@@ -3,11 +3,11 @@
 
 //1Xd.equalTo
 
-package 1Xd{
-    import 1i-.1o;
+package _1Xd{
+    import _1i._1o;
 
-    public function equalTo(_arg1:Object):1o{
-        return (new 2m(_arg1));
+    public function equalTo(_arg1:Object):_1o{
+        return (new _2m(_arg1));
     }
 
 }//package 1Xd

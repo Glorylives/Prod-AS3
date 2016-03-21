@@ -9,7 +9,7 @@ package 0QW{
     import 5I.n2;
     import 1xS.s7;
     import Yz.0Vd;
-    import __AS3__.vec.Vector;
+
     import flash.net.FileReference;
     import zD.05l;
     import _1aA.01l;
@@ -27,7 +27,7 @@ package 0QW{
     import com.company.assembleegameclient.map.T8;
     import flash.net.FileFilter;
     import flash.events.IOErrorEvent;
-    import __AS3__.vec.*;
+
 
     public class 25Y extends Sprite {
 
